@@ -1,0 +1,19 @@
+{
+    "required": [
+        "application",
+        "slave-unit",
+        "rtos"
+    ],
+    "additionalProperties": false,
+    "properties": {
+        "application": {
+            "$ref": "application.schema.json#"
+        },
+        "slave-unit": {
+            "$ref": "slave.schema.json#"
+        },
+        "rtos": {
+            "$ref": "rtos.schema.json#"
+        }
+    }
+}
