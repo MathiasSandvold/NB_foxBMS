@@ -1,0 +1,88 @@
+FormatVersion=6.0 // Do not edit this line!
+Title="Untitled"
+
+{SENDRECEIVE}
+
+[AlarmsWarningsBattery]
+ID=359h
+Len=8
+Var=HighCurrentDischargeLimitAlarm unsigned 0,1 -m
+Var=LowTempAlarm unsigned 3,1 -m
+Var=HighTempAlarm unsigned 4,1 -m
+Var=LowVoltageAlarm unsigned 5,1 -m
+Var=HighVoltageAlarm unsigned 6,1 -m
+Var=CellImbalanceAlarm unsigned 11,1 -m
+Var=BMSInternalAlarm unsigned 12,1 -m
+Var=HighCurrentChargeLimitAlarm unsigned 15,1 -m
+Var=HighCurrentDischargeLimitWarning unsigned 16,1 -m
+Var=LowTempWarning unsigned 19,1 -m
+Var=HighTempWarning unsigned 20,1 -m
+Var=LowVoltageWarning unsigned 21,1 -m
+Var=HighVoltageWarning unsigned 22,1 -m
+Var=CellImbalanceWarning unsigned 27,1 -m
+Var=BMSInternalWarning unsigned 28,1 -m
+Var=HighCurrentChargeLimitWarning unsigned 31,1 -m
+
+[BatteryLimits]
+ID=351h
+Len=8
+Var=BatteryMaxChargeVoltage unsigned 0,16 -m /max:1
+
+[BatteryMeasurements]
+ID=356h
+Len=8
+Var=BatteryVoltage unsigned 0,16 -m /max:1
+Var=BatteryCurrent unsigned 16,16 -m /max:1
+
+[AlarmsWarningsModule]
+ID=71Ah
+Len=8
+Var=UnderSOHAlarm unsigned 1,1 -m
+Var=DischargeLimitAlarm unsigned 2,1 -m
+Var=TempDifferenceAlarm unsigned 4,1 -m
+Var="Reserved(LowSOCAlarm)" unsigned 6,1 -m
+Var=ChargeLimitAlarm unsigned 3,1 -m
+Var=LowTempAlarm unsigned 8,1 -m
+Var="Reserved(HighSOCAlarm)" unsigned 7,1 -m
+Var=HighTempAlarm unsigned 9,1 -m
+Var=HighDischargeCurrentAlarm unsigned 10,1 -m
+Var=HighChargeCurrentAlarm unsigned 11,1 -m
+Var=LowCellVoltAlarm unsigned 12,1 -m
+Var=HighCellVoltAlarm unsigned 13,1 -m
+Var="Reserved(HighSOCWarning)" unsigned 20,1 -m
+Var="Reserved(LowSOCWarning)" unsigned 21,1 -m
+Var=DischargeLimitWarning unsigned 22,1 -m
+Var=ChargeLimitWarning unsigned 23,1 -m
+Var=CellVoltDifferenceWarning unsigned 25,1 -m
+Var=LowTempWarning unsigned 26,1 -m
+Var=HighTempWarning unsigned 27,1 -m
+Var=HighDischargeCurrentWarning unsigned 28,1 -m
+Var=HighChargeCurrentWarning unsigned 29,1 -m
+Var=LowCellVoltWarning unsigned 30,1 -m
+Var=HighCellVoltWarning unsigned 31,1 -m
+
+[ModuleStateEstimation]
+ID=71Bh
+Len=8
+Var=SOC unsigned 0,16 -m /max:1
+Var=ModuleVoltage unsigned 32,16 -m /max:1
+Var=ModuleCurrent unsigned 48,16 -m /max:1
+
+[CellMeasurments]
+ID=71Ch
+Len=8
+Var=MinCellVoltage unsigned 0,16 -m /max:1
+Var=MaxCellVoltage unsigned 16,16 -m /max:1
+Var=AvgCellVoltage unsigned 32,16 -m /max:1
+
+[ModuleLimits]
+ID=71Dh
+Len=8
+Var=ModuleDCChargeCurrentLimit unsigned 0,16 -m /max:1
+Var=ModuleDCDischargeCurrentLimit unsigned 16,16 -m /max:1
+
+[ModuleTemp]
+ID=71Eh
+Len=8
+Var=ModuleTemp1 unsigned 0,16 -m /max:1
+Var=ModuleTemp2 unsigned 16,16 -m /max:1
