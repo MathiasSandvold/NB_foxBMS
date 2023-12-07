@@ -1,0 +1,108 @@
+VERSION "HIPBNYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY/4/%%%/4/'%**4YYY///"
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+
+BS_:
+
+BU_: BMS Pixii
+
+
+BO_ 773 Heartbeat: 0 Pixii
+
+BO_ 849 BatteryLimitations: 6 BMS
+ SG_ MaxChargeVoltage : 0|16@1+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ DcChargeCurrentLim : 16|16@1- (0.1,0) [0|0] "A" Vector__XXX
+ SG_ DcDischargeCurrentLim : 32|16@1- (0.1,0) [0|0] "A" Vector__XXX
+
+BO_ 857 AlarmsAndWarnings: 4 BMS
+ SG_ HighVoltageAlarm : 1|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LowVoltageAlarm : 2|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HighTempAlarm : 3|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LowTempAlarm : 4|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HighCurrentDischargeLimitationAlarm : 7|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HighCurrentChargeLimitationAlarm : 8|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BmsInternalAlarm : 11|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CellImbalanceAlarm : 12|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HighVoltageWarn : 17|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LowVoltageWarn : 18|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HighTempWarn : 19|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ LowTempWarn : 20|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HighCurrentDischargeLimitationWarn : 23|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ HighCurrentChargeLimitationWarn : 24|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ BmsInternalWarn : 27|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ CellImbalanceWarn : 28|1@1+ (1,0) [0|1] "" Vector__XXX
+
+BO_ 854 BatteryMeasurements: 6 BMS
+ SG_ BatteryVoltageAvg : 0|16@1- (0.01,0) [0|0] "V" Vector__XXX
+ SG_ BatteryCurrentSum : 16|16@1- (0.1,0) [0|0] "A" Vector__XXX
+ SG_ BatteryTempMax : 32|16@1- (0.1,0) [0|0] "degC" Vector__XXX
+
+BO_ 1823 Command: 7 Pixii
+ SG_ CommandHeader0 : 0|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CommandHeader1 : 8|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CommandHeader2 : 16|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ CommandHeader3 : 24|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ ModuleNumber : 32|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Shutdown : 40|8@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ LedCommand : 48|8@1+ (1,0) [0|0] "" Vector__XXX
+
+BO_ 1819 Measurements: 8 BMS
+ SG_ SOC : 7|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ SOH : 23|16@0+ (0.1,0) [0|0] "%" Vector__XXX
+ SG_ Voltage : 39|16@0+ (0.1,0) [0|0] "V" Vector__XXX
+ SG_ Current : 55|16@0- (0.1,0) [0|0] "A" Vector__XXX
+
+BO_ 1820 CellVoltageStatus: 8 BMS
+ SG_ MinCellVoltage : 7|16@0+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ MaxCellVoltage : 23|16@0+ (0.001,0) [0|0] "V" Vector__XXX
+ SG_ AvgCellVoltage : 39|16@0+ (0.001,0) [0|0] "V" Vector__XXX
+
+BO_ 1821 ChargeDischargeLimitations: 8 BMS
+ SG_ DcChargeCurrentLimit : 7|16@0+ (1,0) [0|0] "A" Vector__XXX
+ SG_ DcDischargeCurrentLimit : 23|16@0+ (1,0) [0|0] "A" Vector__XXX
+ SG_ DcChargePowerLimit : 39|16@0+ (1,0) [0|0] "W" Vector__XXX
+ SG_ DcDischargePowerLimit : 55|16@0+ (1,0) [0|0] "W" Vector__XXX
+
+BO_ 1822 Temperature: 8 BMS
+ SG_ Temperature1 : 7|16@0- (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ Temperature2 : 23|16@0- (0.1,0) [0|0] "degC" Vector__XXX
+ SG_ TemperatureAvg : 39|16@0- (0.1,0) [0|0] "degC" Vector__XXX
+
+BO_ 1818 AlarmsWarningsFaults: 8 BMS
+ SG_ AlarmsBitfield : 0|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ WarningsBitfield : 16|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Faults1Bitfield : 32|16@1+ (1,0) [0|0] "" Vector__XXX
+ SG_ Faults2Bitfield : 48|16@1+ (1,0) [0|0] "" Vector__XXX
+
+
+CM_ SG_ 854 BatteryVoltageAvg "Average of module voltages";
+CM_ SG_ 854 BatteryCurrentSum "Sum of module currents";
+CM_ SG_ 854 BatteryTempMax "Max temperature of modules";
+CM_ SG_ 1823 CommandHeader0 "0xAA";
+CM_ SG_ 1823 CommandHeader1 "0x16";
+CM_ SG_ 1823 CommandHeader2 "0x07";
+CM_ SG_ 1823 CommandHeader3 "0x01";
+CM_ SG_ 1820 MinCellVoltage "";
+CM_ SG_ 1821 DcChargeCurrentLimit "";
+CM_ SG_ 1822 Temperature2 "";
