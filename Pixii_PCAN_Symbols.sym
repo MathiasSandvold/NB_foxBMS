@@ -82,6 +82,8 @@ ID=71Dh
 Len=8
 Var=ModuleDCChargeCurrentLimit unsigned 0,16 -m /max:1
 Var=ModuleDCDischargeCurrentLimit unsigned 16,16 -m /max:1
+Var=ModuleDCChargePowerLimit unsigned 32,16 -m /u:W /max:1
+Var=ModuleDCDischargePowerLimit unsigned 48,16 -m /u:W /max:1
 
 [ModuleTemp]
 ID=71Eh

@@ -187,6 +187,44 @@ extern uint32_t BatteryLimits(
     return 0;
 }
 
+extern uint32_t ModuleLimits(
+    CAN_MESSAGE_PROPERTIES_s message,
+    uint8_t *pCanData,
+    uint8_t *pMuxId,
+    const CAN_SHIM_s *const kpkCanShim) {
+    /* pMuxId is not used here, therefore has to be NULL_PTR */
+    FAS_ASSERT(pMuxId == NULL_PTR);
+    FAS_ASSERT(message.id == MODULE_LIMITS_ID);
+    FAS_ASSERT(message.idType == MODULE_LIMITS_ID_TYPE);
+    FAS_ASSERT(message.dlc == CAN_FOXBMS_MESSAGES_DEFAULT_DLC);
+    FAS_ASSERT(pCanData != NULL_PTR);
+    FAS_ASSERT(kpkCanShim != NULL_PTR);
+    uint64_t messageData = 0u;
+
+    DATA_READ_DATA(kpkCanShim->pTableSof);
+
+    /* AXIVION Disable Style Generic-NoMagicNumbers: Signal data defined in .dbc file. */
+    /* maximum charge current */
+    float_t signalData = (float_t)kpkCanShim->pTableSof->recommendedContinuousPackChargeCurrent_mA;
+    float_t offset     = 0.0f;
+    float_t factor     = 0.004f; /* convert mA to 250mA */
+    signalData         = (signalData + offset) * factor;
+    uint64_t data      = (int64_t)signalData;
+    /* set data in CAN frame */
+    CAN_TxSetMessageDataWithSignalData(&messageData, 7u, 16u, data, message.endianness);
+
+    /* maximum discharge current */
+    signalData = (float_t)kpkCanShim->pTableSof->recommendedContinuousPackDischargeCurrent_mA;
+    offset     = 0.0f;
+    factor     = 0.004f; /* convert mA to 250mA */
+    signalData = (signalData + offset) * factor;
+    data       = (int64_t)signalData;
+    /* set data in CAN frame */
+    CAN_TxSetMessageDataWithSignalData(&messageData, 23u, 16u, data, message.endianness);
+
+    return 0;
+}
+
 /*========== Externalized Static Function Implementations (Unit Test) =======*/
 #ifdef UNITY_UNIT_TEST
 #endif
