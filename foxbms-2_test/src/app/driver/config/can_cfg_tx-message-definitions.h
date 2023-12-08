@@ -156,6 +156,18 @@
 #define CANTX_MINIMUM_MAXIMUM_VALUES_ENDIANNESS (CAN_LITTLE_ENDIAN)
 /**@}*/
 
+/** CAN message properties for minimum and maximum values. Required properties are:
+ * - Message ID
+ * - Identifier type (standard or extended)
+ * - Message period and phase in ms
+ * - Endianness of message data @{*/
+#define CELL_MEASUREMENTS_ID         (0x71Cu)
+#define CELL_MEASUREMENTS_ID_TYPE    (CAN_STANDARD_IDENTIFIER_11_BIT)
+#define CELL_MEASUREMENTS_PERIOD_ms  (100u)
+#define CELL_MEASUREMENTS_PHASE_ms   (40u)
+#define CELL_MEASUREMENTS_ENDIANNESS (CAN_big_ENDIAN)
+/**@}*/
+
 /** CAN message properties for pack state estimation values. Required properties are:
  * - Message ID
  * - Identifier type (standard or extended)
@@ -313,6 +325,17 @@
     },                                                                                                   \
     {                                                                                                    \
         .period = CANTX_MINIMUM_MAXIMUM_VALUES_PERIOD_ms, .phase = CANTX_MINIMUM_MAXIMUM_VALUES_PHASE_ms \
+    }
+
+#define CELL_MEASUREMENTS_MESSAGE                                                             \
+    {                                                                                                    \
+        .id         = CELL_MEASUREMENTS_ID,                                                   \
+        .idType     = CELL_MEASUREMENTS_ID_TYPE,                                              \
+        .dlc        = CAN_DEFAULT_DLC,                                                                   \
+        .endianness = CELL_MEASUREMENTS_ENDIANNESS,                                           \
+    },                                                                                                   \
+    {                                                                                                    \
+        .period = CELL_MEASUREMENTS_PERIOD_ms, .phase = CELL_MEASUREMENTS_PHASE_ms \
     }
 
 #define CANTX_LIMIT_VALUES_MESSAGE                                                   \
