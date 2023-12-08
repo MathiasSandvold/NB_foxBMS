@@ -93,6 +93,7 @@ const CAN_TX_MESSAGE_TYPE_s can_txMessages[] = {
     {CAN_NODE_1, CANTX_MINIMUM_MAXIMUM_VALUES_MESSAGE, &CANTX_MinimumMaximumValues, NULL_PTR},
     {CAN_NODE_1, CANTX_PACK_STATE_ESTIMATION_MESSAGE, &CANTX_PackStateEstimation, NULL_PTR},
     {CAN_NODE_1, CANTX_PACK_VALUES_MESSAGE, &CANTX_PackValues, NULL_PTR},
+    {CAN_NODE_1, BATTERY_MEASUREMENTS_MESSAGE, &BatteryMeasurements, NULL_PTR},
     {CAN_NODE_1, CANTX_STRING_STATE_MESSAGE, &CANTX_StringState, &cantx_stringStateMux},
     {CAN_NODE_1, CANTX_STRING_MIN_MAX_VALUES_MESSAGE, &CANTX_StringMinimumMaximumValues, &cantx_stringMinMaxMux},
     {CAN_NODE_1, CANTX_STRING_STATE_ESTIMATION_MESSAGE, &CANTX_StringStateEstimation, &cantx_stringStateEstimationMux},

@@ -180,6 +180,18 @@
 #define CANTX_PACK_VALUES_ENDIANNESS (CAN_LITTLE_ENDIAN)
 /**@}*/
 
+/** CAN message properties for pack values. Required properties are:
+ * - Message ID
+ * - Identifier type (standard or extended)
+ * - Message period and phase in ms
+ * - Endianness of message data @{*/
+#define BATTERY_MEASUREMENTS_ID         (0x356u)
+#define BATTERY_MEASUREMENTS_ID_TYPE    (CAN_STANDARD_IDENTIFIER_11_BIT)
+#define BATTERY_MEASUREMENTS_PERIOD_ms  (100u)
+#define BATTERY_MEASUREMENTS_PHASE_ms   (60u)
+#define BATTERY_MEASUREMENTS_ENDIANNESS (CAN_BIG_ENDIAN)
+/**@}*/
+
 /** TX messages - string related */
 
 /** CAN message properties for string state. Required properties are:
@@ -356,6 +368,17 @@
     },                                                                             \
     {                                                                              \
         .period = CANTX_PACK_VALUES_PERIOD_ms, .phase = CANTX_PACK_VALUES_PHASE_ms \
+    }
+
+#define BATTERY_MEASUREMENTS_MESSAGE                                                  \
+    {                                                                              \
+        .id         = BATTERY_MEASUREMENTS_ID,                                        \
+        .idType     = BATTERY_MEASUREMENTS_ID_TYPE,                                   \
+        .dlc        = CAN_DEFAULT_DLC,                                             \
+        .endianness = BATTERY_MEASUREMENTS_ENDIANNESS,                                \
+    },                                                                             \
+    {                                                                              \
+        .period = BATTERY_MEASUREMENTS_PERIOD_ms, .phase = BATTERY_MEASUREMENTS_PHASE_ms \
     }
 
 #define CANTX_STRING_STATE_MESSAGE                                                   \

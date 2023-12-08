@@ -176,6 +176,18 @@ extern uint32_t CANTX_PackValues(
     uint8_t *pMuxId,
     const CAN_SHIM_s *const kpkCanShim);
 /**
+ * @brief can tx callback function for pack values values
+ * @param[in] message     contains the message ID, DLC and endianness
+ * @param[in] pCanData    payload of can frame
+ * @param[in] pMuxId      multiplexer for multiplexed CAN messages
+ * @param[in] kpkCanShim  shim to the database entries
+ */
+extern uint32_t BatteryMeasurements(
+    CAN_MESSAGE_PROPERTIES_s message,
+    uint8_t *pCanData,
+    uint8_t *pMuxId,
+    const CAN_SHIM_s *const kpkCanShim);
+/**
  * @brief can tx callback function for string state values
  * @param[in] message     contains the message ID, DLC and endianness
  * @param[in] pCanData    payload of can frame
