@@ -192,6 +192,18 @@
 #define CANTX_PACK_STATE_ESTIMATION_ENDIANNESS (CAN_LITTLE_ENDIAN)
 /**@}*/
 
+/** CAN message properties for pack state estimation values. Required properties are:
+ * - Message ID
+ * - Identifier type (standard or extended)
+ * - Message period and phase in ms
+ * - Endianness of message data @{*/
+#define MODULE_STATE_ESTIMATION_ID         (0x71Bu)
+#define MODULE_STATE_ESTIMATION_ID_TYPE    (CAN_STANDARD_IDENTIFIER_11_BIT)
+#define MODULE_STATE_ESTIMATION_PERIOD_ms  (1000u)
+#define MODULE_STATE_ESTIMATION_PHASE_ms   (50u)
+#define MODULE_STATE_ESTIMATION_ENDIANNESS (CAN_BIG_ENDIAN)
+/**@}*/
+
 /** CAN message properties for pack values. Required properties are:
  * - Message ID
  * - Identifier type (standard or extended)
@@ -403,6 +415,17 @@
     },                                                                                                 \
     {                                                                                                  \
         .period = CANTX_PACK_STATE_ESTIMATION_PERIOD_ms, .phase = CANTX_PACK_STATE_ESTIMATION_PHASE_ms \
+    }
+
+#define MODULE_STATE_ESTIMATION_MESSAGE                                                            \
+    {                                                                                                  \
+        .id         = MODULE_STATE_ESTIMATION_ID,                                                  \
+        .idType     = MODULE_STATE_ESTIMATION_ID_TYPE,                                             \
+        .dlc        = CAN_DEFAULT_DLC,                                                                 \
+        .endianness = MODULE_STATE_ESTIMATION_ENDIANNESS,                                          \
+    },                                                                                                 \
+    {                                                                                                  \
+        .period = MODULE_STATE_ESTIMATION_PERIOD_ms, .phase = MODULE_STATE_ESTIMATION_PHASE_ms \
     }
 
 #define CANTX_PACK_VALUES_MESSAGE                                                  \

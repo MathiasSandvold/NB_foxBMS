@@ -189,6 +189,93 @@ extern uint32_t CANTX_PackStateEstimation(
     return 0;
 }
 
+extern uint32_t ModuleStateEstimation(
+    CAN_MESSAGE_PROPERTIES_s message,
+    uint8_t *pCanData,
+    uint8_t *pMuxId,
+    const CAN_SHIM_s *const kpkCanShim) {
+    FAS_ASSERT(message.id == MODULE_STATE_ESTIMATION_ID);
+    FAS_ASSERT(message.idType == MODULE_STATE_ESTIMATION_ID_TYPE);
+    FAS_ASSERT(message.dlc <= CAN_MAX_DLC);
+    FAS_ASSERT(pCanData != NULL_PTR);
+    FAS_ASSERT(pMuxId == NULL_PTR); /* pMuxId is not used here, therefore has to be NULL_PTR */
+    FAS_ASSERT(kpkCanShim != NULL_PTR);
+    uint64_t messageData = 0u;
+
+    float_t minimumStringSoc_perc   = FLT_MAX;
+    float_t maximumStringSoc_perc   = FLT_MIN;
+
+    DATA_READ_DATA(kpkCanShim->pTableSox);
+    /* Read database entry */
+    DATA_READ_DATA(kpkCanShim->pTablePackValues);
+
+    /* Check current direction  */
+    if (BMS_GetBatterySystemState() == BMS_CHARGING) {
+        /* If battery system is charging use maximum values */
+        for (uint8_t s = 0u; s < BS_NR_OF_STRINGS; s++) {
+            if (BMS_IsStringClosed(s) == true) {
+                if (maximumStringSoc_perc < kpkCanShim->pTableSox->maximumSoc_perc[s]) {
+                    maximumStringSoc_perc = kpkCanShim->pTableSox->maximumSoc_perc[s];
+                }
+            }
+        }
+    } else {
+        /* If battery system is discharging or at rest use minimum values */
+        for (uint8_t s = 0u; s < BS_NR_OF_STRINGS; s++) {
+            if (BMS_IsStringClosed(s) == true) {
+                if (minimumStringSoc_perc > kpkCanShim->pTableSox->minimumSoc_perc[s]) {
+                    minimumStringSoc_perc = kpkCanShim->pTableSox->minimumSoc_perc[s];
+                }
+            }
+        }
+    }
+
+    float_t packSoc_perc       = 0.0f;
+
+    /* Calculate pack value */
+    if (BMS_GetNumberOfConnectedStrings() != 0u) {
+        if (BMS_GetBatterySystemState() == BMS_CHARGING) {
+            packSoc_perc = (BMS_GetNumberOfConnectedStrings() * maximumStringSoc_perc) / BS_NR_OF_STRINGS;
+        } else {
+            packSoc_perc = (BMS_GetNumberOfConnectedStrings() * minimumStringSoc_perc) / BS_NR_OF_STRINGS;
+        }
+    } else {
+        packSoc_perc      = 0.0f;
+    }
+
+    /* SOC */
+    float_t signalData = packSoc_perc;
+    float_t offset     = 0.0f;
+    float_t factor     = 100.0f; /* convert from perc to 0.01perc */
+    signalData         = (signalData + offset) * factor;
+    uint64_t data      = (int64_t)signalData;
+    /* set data in CAN frame */
+    CAN_TxSetMessageDataWithSignalData(&messageData, 7u, 16u, data, message.endianness);
+
+    /* Battery voltage */
+    float_t signalData = kpkCanShim->pTablePackValues->batteryVoltage_mV;
+    float_t offset     = 0.0f;
+    float_t factor     = 0.01f; /* convert mV to 100mV */
+    signalData         = (signalData + offset) * factor;
+    uint64_t data      = (uint64_t)signalData;
+    /* set data in CAN frame */
+    CAN_TxSetMessageDataWithSignalData(&messageData, 39u, 16u, data, message.endianness);
+
+    /* System current */
+    signalData = kpkCanShim->pTablePackValues->packCurrent_mA;
+    offset     = 0.0f;
+    factor     = 0.1f; /* convert mA to 10mA */
+    signalData = (signalData + offset) * factor;
+    data       = (int64_t)signalData;
+    /* set data in CAN frame */
+    CAN_TxSetMessageDataWithSignalData(&messageData, 55u, 16u, data, message.endianness);
+
+    /* now copy data in the buffer that will be used to send data */
+    CAN_TxSetCanDataWithMessageData(messageData, pCanData, message.endianness);
+
+    return 0;
+}
+
 /*========== Externalized Static Function Implementations (Unit Test) =======*/
 #ifdef UNITY_UNIT_TEST
 #endif
