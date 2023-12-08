@@ -277,6 +277,27 @@ extern uint32_t BatteryMeasurements(
 
     /* Read database entry */
     DATA_READ_DATA(kpkCanShim->pTablePackValues);
+    DATA_READ_DATA(kpkCanShim->pTableMinMax);
+
+    int16_t packMaximumTemperature_ddegC = INT16_MIN;
+
+    if (0u == BMS_GetNumberOfConnectedStrings()) {
+        /* Calculate min/max values of complete pack if all slice switches are open */
+        for (uint8_t s = 0u; s < BS_NR_OF_STRINGS; s++) {
+            if (kpkCanShim->pTableMinMax->maximumCellVoltage_mV[s] >= packMaximumVoltage_mV) {
+                packMaximumVoltage_mV = kpkCanShim->pTableMinMax->maximumCellVoltage_mV[s];
+            }
+        }
+    } else {
+        /* Calculate min/max values of connected slices */
+        for (uint8_t s = 0u; s < BS_NR_OF_STRINGS; s++) {
+            if (BMS_IsStringClosed(s) == true) {
+                if (kpkCanShim->pTableMinMax->maximumCellVoltage_mV[s] >= packMaximumVoltage_mV) {
+                    packMaximumVoltage_mV = kpkCanShim->pTableMinMax->maximumCellVoltage_mV[s];
+                }
+            }
+        }
+    }
 
     /* AXIVION Disable Style Generic-NoMagicNumbers: Signal data defined in .dbc file. */
     /* Battery voltage */
@@ -296,6 +317,16 @@ extern uint32_t BatteryMeasurements(
     data       = (int64_t)signalData;
     /* set data in CAN frame */
     CAN_TxSetMessageDataWithSignalData(&messageData, 23u, 16u, data, message.endianness);
+
+    /* Maximum cell temperature */
+    signalData = (float_t)packMaximumTemperature_ddegC;
+    offset     = 0.0f;
+    factor     = 0.1f; /* convert ddegC to degC */
+    signalData = (signalData + offset) * factor;
+    data       = (int64_t)signalData;
+    /* set data in CAN frame */
+    CAN_TxSetMessageDataWithSignalData(&messageData, 39u, 16u, data, message.endianness);
+    /* AXIVION Enable Style Generic-NoMagicNumbers: */
 
     /* now copy data in the buffer that will be used to send data */
     CAN_TxSetCanDataWithMessageData(messageData, pCanData, message.endianness);
