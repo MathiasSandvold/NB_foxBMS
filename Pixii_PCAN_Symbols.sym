@@ -27,6 +27,8 @@ Var=HighCurrentChargeLimitWarning unsigned 31,1 -m
 ID=351h
 Len=8
 Var=BatteryMaxChargeVoltage unsigned 0,16 -m /max:1
+Var=DCChargeCurrentLimit unsigned 16,16 -m /u:A /max:1
+Var=DCDischargeCurrentLimit unsigned 32,16 -m /u:A /max:1
 
 [BatteryMeasurements]
 ID=356h

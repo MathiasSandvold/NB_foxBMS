@@ -132,6 +132,18 @@
 #define CANTX_LIMIT_VALUES_ENDIANNESS (CAN_LITTLE_ENDIAN)
 /**@}*/
 
+/** CAN message properties for BMS limit values. Required properties are:
+ * - Message ID
+ * - Identifier type (standard or extended)
+ * - Message period and phase in ms
+ * - Endianness of message data @{*/
+#define BATTERY_LIMITS_ID         (0x351u)
+#define BATTERY_LIMITS_ID_TYPE    (CAN_STANDARD_IDENTIFIER_11_BIT)
+#define BATTERY_LIMITS_PERIOD_ms  (100u)
+#define BATTERY_LIMITS_PHASE_ms   (30u)
+#define BATTERY_LIMITS_ENDIANNESS (CAN_BIG_ENDIAN)
+/**@}*/
+
 /** CAN message properties for minimum and maximum values. Required properties are:
  * - Message ID
  * - Identifier type (standard or extended)
@@ -300,6 +312,17 @@
     },                                                                               \
     {                                                                                \
         .period = CANTX_LIMIT_VALUES_PERIOD_ms, .phase = CANTX_LIMIT_VALUES_PHASE_ms \
+    }
+
+#define BATTERY_LIMITS_MESSAGE                                                   \
+    {                                                                                \
+        .id         = BATTERY_LIMITS_ID,                                         \
+        .idType     = BATTERY_LIMITS_ID_TYPE,                                    \
+        .dlc        = CAN_DEFAULT_DLC,                                               \
+        .endianness = BATTERY_LIMITS_ENDIANNESS,                                 \
+    },                                                                               \
+    {                                                                                \
+        .period = BATTERY_LIMITS_PERIOD_ms, .phase = BATTERY_LIMITS_PHASE_ms \
     }
 
 #define CANTX_CELL_TEMPERATURES_MESSAGE                                                        \
