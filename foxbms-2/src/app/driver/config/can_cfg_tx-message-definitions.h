@@ -132,6 +132,30 @@
 #define CANTX_LIMIT_VALUES_ENDIANNESS (CAN_LITTLE_ENDIAN)
 /**@}*/
 
+/** CAN message properties for BMS limit values. Required properties are:
+ * - Message ID
+ * - Identifier type (standard or extended)
+ * - Message period and phase in ms
+ * - Endianness of message data @{*/
+#define BATTERY_LIMITS_ID         (0x351u)
+#define BATTERY_LIMITS_ID_TYPE    (CAN_STANDARD_IDENTIFIER_11_BIT)
+#define BATTERY_LIMITS_PERIOD_ms  (100u)
+#define BATTERY_LIMITS_PHASE_ms   (30u)
+#define BATTERY_LIMITS_ENDIANNESS (CAN_LITTLE_ENDIAN)
+/**@}*/
+
+/** CAN message properties for BMS limit values. Required properties are:
+ * - Message ID
+ * - Identifier type (standard or extended)
+ * - Message period and phase in ms
+ * - Endianness of message data @{*/
+#define MODULE_LIMITS_ID         (0x71Du)
+#define MODULE_LIMITS_ID_TYPE    (CAN_STANDARD_IDENTIFIER_11_BIT)
+#define MODULE_LIMITS_PERIOD_ms  (100u)
+#define MODULE_LIMITS_PHASE_ms   (30u)
+#define MODULE_LIMITS_ENDIANNESS (CAN_BIG_ENDIAN)
+/**@}*/
+
 /** CAN message properties for minimum and maximum values. Required properties are:
  * - Message ID
  * - Identifier type (standard or extended)
@@ -142,6 +166,18 @@
 #define CANTX_MINIMUM_MAXIMUM_VALUES_PERIOD_ms  (100u)
 #define CANTX_MINIMUM_MAXIMUM_VALUES_PHASE_ms   (40u)
 #define CANTX_MINIMUM_MAXIMUM_VALUES_ENDIANNESS (CAN_LITTLE_ENDIAN)
+/**@}*/
+
+/** CAN message properties for minimum and maximum values. Required properties are:
+ * - Message ID
+ * - Identifier type (standard or extended)
+ * - Message period and phase in ms
+ * - Endianness of message data @{*/
+#define CELL_MEASUREMENTS_ID         (0x71Cu)
+#define CELL_MEASUREMENTS_ID_TYPE    (CAN_STANDARD_IDENTIFIER_11_BIT)
+#define CELL_MEASUREMENTS_PERIOD_ms  (100u)
+#define CELL_MEASUREMENTS_PHASE_ms   (40u)
+#define CELL_MEASUREMENTS_ENDIANNESS (CAN_BIG_ENDIAN)
 /**@}*/
 
 /** CAN message properties for pack state estimation values. Required properties are:
@@ -156,6 +192,18 @@
 #define CANTX_PACK_STATE_ESTIMATION_ENDIANNESS (CAN_LITTLE_ENDIAN)
 /**@}*/
 
+/** CAN message properties for pack state estimation values. Required properties are:
+ * - Message ID
+ * - Identifier type (standard or extended)
+ * - Message period and phase in ms
+ * - Endianness of message data @{*/
+#define MODULE_STATE_ESTIMATION_ID         (0x71Bu)
+#define MODULE_STATE_ESTIMATION_ID_TYPE    (CAN_STANDARD_IDENTIFIER_11_BIT)
+#define MODULE_STATE_ESTIMATION_PERIOD_ms  (1000u)
+#define MODULE_STATE_ESTIMATION_PHASE_ms   (50u)
+#define MODULE_STATE_ESTIMATION_ENDIANNESS (CAN_BIG_ENDIAN)
+/**@}*/
+
 /** CAN message properties for pack values. Required properties are:
  * - Message ID
  * - Identifier type (standard or extended)
@@ -166,6 +214,18 @@
 #define CANTX_PACK_VALUES_PERIOD_ms  (100u)
 #define CANTX_PACK_VALUES_PHASE_ms   (60u)
 #define CANTX_PACK_VALUES_ENDIANNESS (CAN_LITTLE_ENDIAN)
+/**@}*/
+
+/** CAN message properties for pack values. Required properties are:
+ * - Message ID
+ * - Identifier type (standard or extended)
+ * - Message period and phase in ms
+ * - Endianness of message data @{*/
+#define BATTERY_MEASUREMENTS_ID         (0x356u)
+#define BATTERY_MEASUREMENTS_ID_TYPE    (CAN_STANDARD_IDENTIFIER_11_BIT)
+#define BATTERY_MEASUREMENTS_PERIOD_ms  (100u)
+#define BATTERY_MEASUREMENTS_PHASE_ms   (60u)
+#define BATTERY_MEASUREMENTS_ENDIANNESS (CAN_LITTLE_ENDIAN)
 /**@}*/
 
 /** TX messages - string related */
@@ -291,6 +351,17 @@
         .period = CANTX_MINIMUM_MAXIMUM_VALUES_PERIOD_ms, .phase = CANTX_MINIMUM_MAXIMUM_VALUES_PHASE_ms \
     }
 
+#define CELL_MEASUREMENTS_MESSAGE                                                  \
+    {                                                                              \
+        .id         = CELL_MEASUREMENTS_ID,                                        \
+        .idType     = CELL_MEASUREMENTS_ID_TYPE,                                   \
+        .dlc        = CAN_DEFAULT_DLC,                                             \
+        .endianness = CELL_MEASUREMENTS_ENDIANNESS,                                \
+    },                                                                             \
+    {                                                                              \
+        .period = CELL_MEASUREMENTS_PERIOD_ms, .phase = CELL_MEASUREMENTS_PHASE_ms \
+    }
+
 #define CANTX_LIMIT_VALUES_MESSAGE                                                   \
     {                                                                                \
         .id         = CANTX_LIMIT_VALUES_ID,                                         \
@@ -300,6 +371,28 @@
     },                                                                               \
     {                                                                                \
         .period = CANTX_LIMIT_VALUES_PERIOD_ms, .phase = CANTX_LIMIT_VALUES_PHASE_ms \
+    }
+
+#define BATTERY_LIMITS_MESSAGE                                               \
+    {                                                                        \
+        .id         = BATTERY_LIMITS_ID,                                     \
+        .idType     = BATTERY_LIMITS_ID_TYPE,                                \
+        .dlc        = CAN_DEFAULT_DLC,                                       \
+        .endianness = BATTERY_LIMITS_ENDIANNESS,                             \
+    },                                                                       \
+    {                                                                        \
+        .period = BATTERY_LIMITS_PERIOD_ms, .phase = BATTERY_LIMITS_PHASE_ms \
+    }
+
+#define MODULE_LIMITS_MESSAGE                                              \
+    {                                                                      \
+        .id         = MODULE_LIMITS_ID,                                    \
+        .idType     = MODULE_LIMITS_ID_TYPE,                               \
+        .dlc        = CAN_DEFAULT_DLC,                                     \
+        .endianness = MODULE_LIMITS_ENDIANNESS,                            \
+    },                                                                     \
+    {                                                                      \
+        .period = MODULE_LIMITS_PERIOD_ms, .phase = MODULE_LIMITS_PHASE_ms \
     }
 
 #define CANTX_CELL_TEMPERATURES_MESSAGE                                                        \
@@ -324,6 +417,17 @@
         .period = CANTX_PACK_STATE_ESTIMATION_PERIOD_ms, .phase = CANTX_PACK_STATE_ESTIMATION_PHASE_ms \
     }
 
+#define MODULE_STATE_ESTIMATION_MESSAGE                                                        \
+    {                                                                                          \
+        .id         = MODULE_STATE_ESTIMATION_ID,                                              \
+        .idType     = MODULE_STATE_ESTIMATION_ID_TYPE,                                         \
+        .dlc        = CAN_DEFAULT_DLC,                                                         \
+        .endianness = MODULE_STATE_ESTIMATION_ENDIANNESS,                                      \
+    },                                                                                         \
+    {                                                                                          \
+        .period = MODULE_STATE_ESTIMATION_PERIOD_ms, .phase = MODULE_STATE_ESTIMATION_PHASE_ms \
+    }
+
 #define CANTX_PACK_VALUES_MESSAGE                                                  \
     {                                                                              \
         .id         = CANTX_PACK_VALUES_ID,                                        \
@@ -333,6 +437,17 @@
     },                                                                             \
     {                                                                              \
         .period = CANTX_PACK_VALUES_PERIOD_ms, .phase = CANTX_PACK_VALUES_PHASE_ms \
+    }
+
+#define BATTERY_MEASUREMENTS_MESSAGE                                                     \
+    {                                                                                    \
+        .id         = BATTERY_MEASUREMENTS_ID,                                           \
+        .idType     = BATTERY_MEASUREMENTS_ID_TYPE,                                      \
+        .dlc        = CAN_DEFAULT_DLC,                                                   \
+        .endianness = BATTERY_MEASUREMENTS_ENDIANNESS,                                   \
+    },                                                                                   \
+    {                                                                                    \
+        .period = BATTERY_MEASUREMENTS_PERIOD_ms, .phase = BATTERY_MEASUREMENTS_PHASE_ms \
     }
 
 #define CANTX_STRING_STATE_MESSAGE                                                   \

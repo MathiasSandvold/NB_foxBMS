@@ -128,6 +128,30 @@ extern uint32_t CANTX_LimitValues(
     uint8_t *pMuxId,
     const CAN_SHIM_s *const kpkCanShim);
 /**
+ * @brief can tx callback function for limit values
+ * @param[in] message     contains the message ID, DLC and endianness
+ * @param[in] pCanData    payload of can frame
+ * @param[in] pMuxId      multiplexer for multiplexed CAN messages
+ * @param[in] kpkCanShim  shim to the database entries
+ */
+extern uint32_t BatteryLimits(
+    CAN_MESSAGE_PROPERTIES_s message,
+    uint8_t *pCanData,
+    uint8_t *pMuxId,
+    const CAN_SHIM_s *const kpkCanShim);
+/**
+ * @brief can tx callback function for limit values
+ * @param[in] message     contains the message ID, DLC and endianness
+ * @param[in] pCanData    payload of can frame
+ * @param[in] pMuxId      multiplexer for multiplexed CAN messages
+ * @param[in] kpkCanShim  shim to the database entries
+ */
+extern uint32_t ModuleLimits(
+    CAN_MESSAGE_PROPERTIES_s message,
+    uint8_t *pCanData,
+    uint8_t *pMuxId,
+    const CAN_SHIM_s *const kpkCanShim);
+/**
  * @brief can tx callback function for min/max values
  * @param[in] message     contains the message ID, DLC and endianness
  * @param[in] pCanData    payload of can frame
@@ -135,6 +159,18 @@ extern uint32_t CANTX_LimitValues(
  * @param[in] kpkCanShim  shim to the database entries
  */
 extern uint32_t CANTX_MinimumMaximumValues(
+    CAN_MESSAGE_PROPERTIES_s message,
+    uint8_t *pCanData,
+    uint8_t *pMuxId,
+    const CAN_SHIM_s *const kpkCanShim);
+/**
+ * @brief can tx callback function for min/max values
+ * @param[in] message     contains the message ID, DLC and endianness
+ * @param[in] pCanData    payload of can frame
+ * @param[in] pMuxId      multiplexer for multiplexed CAN messages
+ * @param[in] kpkCanShim  shim to the database entries
+ */
+extern uint32_t CellMeasurements(
     CAN_MESSAGE_PROPERTIES_s message,
     uint8_t *pCanData,
     uint8_t *pMuxId,
@@ -152,6 +188,18 @@ extern uint32_t CANTX_PackStateEstimation(
     uint8_t *pMuxId,
     const CAN_SHIM_s *const kpkCanShim);
 /**
+ * @brief can tx callback function for state estimation values
+ * @param[in] message     contains the message ID, DLC and endianness
+ * @param[in] pCanData    payload of can frame
+ * @param[in] pMuxId      multiplexer for multiplexed CAN messages
+ * @param[in] kpkCanShim  shim to the database entries
+ */
+extern uint32_t ModuleStateEstimation(
+    CAN_MESSAGE_PROPERTIES_s message,
+    uint8_t *pCanData,
+    uint8_t *pMuxId,
+    const CAN_SHIM_s *const kpkCanShim);
+/**
  * @brief can tx callback function for pack values values
  * @param[in] message     contains the message ID, DLC and endianness
  * @param[in] pCanData    payload of can frame
@@ -159,6 +207,18 @@ extern uint32_t CANTX_PackStateEstimation(
  * @param[in] kpkCanShim  shim to the database entries
  */
 extern uint32_t CANTX_PackValues(
+    CAN_MESSAGE_PROPERTIES_s message,
+    uint8_t *pCanData,
+    uint8_t *pMuxId,
+    const CAN_SHIM_s *const kpkCanShim);
+/**
+ * @brief can tx callback function for pack values values
+ * @param[in] message     contains the message ID, DLC and endianness
+ * @param[in] pCanData    payload of can frame
+ * @param[in] pMuxId      multiplexer for multiplexed CAN messages
+ * @param[in] kpkCanShim  shim to the database entries
+ */
+extern uint32_t BatteryMeasurements(
     CAN_MESSAGE_PROPERTIES_s message,
     uint8_t *pCanData,
     uint8_t *pMuxId,

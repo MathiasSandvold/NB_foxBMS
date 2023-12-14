@@ -243,6 +243,73 @@ extern uint32_t CANTX_StringMinimumMaximumValues(
     return 0;
 }
 
+extern uint32_t CellMeasurements(
+    CAN_MESSAGE_PROPERTIES_s message,
+    uint8_t *pCanData,
+    uint8_t *pMuxId,
+    const CAN_SHIM_s *const kpkCanShim) {
+    FAS_ASSERT(message.id == CELL_MEASUREMENTS_ID);
+    FAS_ASSERT(message.idType == CELL_MEASUREMENTS_ID_TYPE);
+    FAS_ASSERT(message.dlc == CAN_FOXBMS_MESSAGES_DEFAULT_DLC);
+    FAS_ASSERT(pCanData != NULL_PTR);
+    FAS_ASSERT(pMuxId == NULL_PTR); /* pMuxId is not used here, therefore has to be NULL_PTR */
+    FAS_ASSERT(kpkCanShim != NULL_PTR);
+    uint64_t messageData = 0u;
+
+    DATA_READ_DATA(kpkCanShim->pTableMinMax);
+
+    int16_t packMaximumVoltage_mV        = INT16_MIN;
+    int16_t packMinimumVoltage_mV        = INT16_MAX;
+
+    if (0u == BMS_GetNumberOfConnectedStrings()) {
+        /* Calculate min/max values of complete pack if all slice switches are open */
+        for (uint8_t s = 0u; s < BS_NR_OF_STRINGS; s++) {
+            if (kpkCanShim->pTableMinMax->maximumCellVoltage_mV[s] >= packMaximumVoltage_mV) {
+                packMaximumVoltage_mV = kpkCanShim->pTableMinMax->maximumCellVoltage_mV[s];
+            }
+            if (kpkCanShim->pTableMinMax->minimumCellVoltage_mV[s] <= packMinimumVoltage_mV) {
+                packMinimumVoltage_mV = kpkCanShim->pTableMinMax->minimumCellVoltage_mV[s];
+            }
+        }
+    } else {
+        /* Calculate min/max values of connected slices */
+        for (uint8_t s = 0u; s < BS_NR_OF_STRINGS; s++) {
+            if (BMS_IsStringClosed(s) == true) {
+                if (kpkCanShim->pTableMinMax->maximumCellVoltage_mV[s] >= packMaximumVoltage_mV) {
+                    packMaximumVoltage_mV = kpkCanShim->pTableMinMax->maximumCellVoltage_mV[s];
+                }
+                if (kpkCanShim->pTableMinMax->minimumCellVoltage_mV[s] <= packMinimumVoltage_mV) {
+                    packMinimumVoltage_mV = kpkCanShim->pTableMinMax->minimumCellVoltage_mV[s];
+                }
+            }
+        }
+    }
+
+    /* AXIVION Disable Style Generic-NoMagicNumbers: Signal data defined in .dbc file. */
+    /* Minimum cell voltage */
+    float_t signalData = (float_t)packMinimumVoltage_mV;
+    float_t offset     = 0.0f;
+    float_t factor     = 1.0f;
+    signalData         = (signalData + offset) * factor;
+    uint64_t data      = (int64_t)signalData;
+    /* set data in CAN frame */
+    CAN_TxSetMessageDataWithSignalData(&messageData, 39u, 16u, data, message.endianness);
+
+    /* Maximum cell voltage */
+    signalData = (float_t)packMaximumVoltage_mV;
+    offset     = 0.0f;
+    factor     = 1.0f;
+    signalData = (signalData + offset) * factor;
+    data       = (int64_t)signalData;
+    /* set data in CAN frame */
+    CAN_TxSetMessageDataWithSignalData(&messageData, 7u, 16u, data, message.endianness);
+
+    /* now copy data in the buffer that will be used to send data */
+    CAN_TxSetCanDataWithMessageData(messageData, pCanData, message.endianness);
+
+    return 0;
+}
+
 /*========== Externalized Static Function Implementations (Unit Test) =======*/
 #ifdef UNITY_UNIT_TEST
 #endif
