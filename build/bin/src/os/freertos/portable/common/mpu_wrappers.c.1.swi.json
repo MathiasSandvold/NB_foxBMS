@@ -1,0 +1,9 @@
+{
+    "file:": "src\\os\\freertos\\portable\\common\\mpu_wrappers.c",
+    "functions": [
+        {
+            "c-name": "xPortRaisePrivilege",
+            "entry": "1"
+        }
+    ]
+}

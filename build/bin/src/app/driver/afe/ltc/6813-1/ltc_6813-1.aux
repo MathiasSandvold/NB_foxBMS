@@ -1,0 +1,660 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{30F964E2-BB50-44C3-96DF-EA83134271F8}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Mon Dec 11 10:26:39 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitl                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitf                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbit                                       |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormall                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormalf                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormal                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanf                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnan                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinfl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinff                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinf                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitel                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitef                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinite                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyl                                   |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyf                                   |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassify                                    |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_CheckReEntrance                             |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_IsFirstMeasurementCycleFinished             |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SetFirstMeasurementCycleFinished            |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_TransferStateRequest                        |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_StateTransition                             |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_CheckPec                                    |
++-------------------------------------------------------------+
+Stack usage:   48 bytes
+
+Called functions:
+   memset
+   LTC_CalculatePec15
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_PortExpanderSaveValuesTi                    |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   DATA_Read1DataBlock
+   DATA_Write1DataBlock
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_ReadRegister                                |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   SPI_TransmitDummyByte
+   SPI_TransmitReceiveDataDma
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_CondBasedStateTransition                    |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   DIAG_Handler
+   LTC_StateTransition
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_I2cClock                                    |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   SPI_TransmitDummyByte
+   SPI_TransmitData
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_WriteRegister                               |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   memset
+   LTC_CalculatePec15
+   SPI_TransmitDummyByte
+   SPI_TransmitReceiveDataDma
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_GetPortExpanderInputTi                      |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   DATA_Read1DataBlock
+   LTC_WriteRegister
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SetPortExpanderDirectionTi                  |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   DATA_Read1DataBlock
+   LTC_WriteRegister
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SetPortExpanderOutputTi                     |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   DATA_Read1DataBlock
+   LTC_WriteRegister
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_StartOpenWireMeasurement                    |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   SPI_TransmitDummyByte
+   SPI_TransmitData
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_GetMeasurementTimeCycle                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SaveBalancingFeedback                       |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   DATA_Write1DataBlock
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_StartGpioMeasurement                        |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   SPI_TransmitDummyByte
+   SPI_TransmitData
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SendI2cCommand                              |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   LTC_WriteRegister
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_TempSensSaveTemp                            |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   DATA_Read1DataBlock
+   DATA_Write1DataBlock
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SetEepromWriteCommand                       |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   DATA_Read1DataBlock
+   DATA_Write1DataBlock
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SendEepromWriteCommand                      |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   LTC_SetEepromWriteCommand
+   LTC_WriteRegister
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_EepromSaveReadValue                         |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   DATA_Read1DataBlock
+   DATA_Write1DataBlock
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SetEepromReadCommand                        |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   DATA_Read1DataBlock
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SendEepromReadCommand                       |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   LTC_SetEepromReadCommand
+   LTC_WriteRegister
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_PortExpanderSaveValues                      |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   DATA_Read1DataBlock
+   DATA_Write1DataBlock
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SetPortExpander                             |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   DATA_Read1DataBlock
+   LTC_WriteRegister
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SaveRxToGpioBuffer                          |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   __aeabi_uidivmod
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SaveAllGpioMeasurement                      |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   DATA_Write1DataBlock
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_GetBalancingControlValues                   |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
+Called functions:
+   DATA_Read1DataBlock
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_BalanceControl                              |
++-------------------------------------------------------------+
+Stack usage:   56 bytes
+
+Called functions:
+   LTC_GetBalancingControlValues
+   LTC_CalculatePec15
+   SPI_TransmitDummyByte
+   SPI_TransmitReceiveDataDma
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SaveMuxMeasurement                          |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   LTC_ConvertMuxVoltagesToTemperatures
+   __aeabi_uidivmod
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_I2cCheckAck                                 |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SaveTemperatures                            |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   AFE_PlausibilityCheckTempMinMax
+   DIAG_CheckEvent
+   DATA_Write1DataBlock
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SetMuxChCommand                             |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SetMuxChannel                               |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   LTC_SetMuxChCommand
+   LTC_WriteRegister
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SaveRxToVoltageBuffer                       |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SaveVoltages                                |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   AFE_PlausibilityCheckVoltageMeasurementRange
+   DIAG_CheckEvent
+   DATA_Write1DataBlock
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_GetSpiClock                                 |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   __aeabi_uidivmod
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SetTransferTimes                            |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   LTC_GetSpiClock
+   __aeabi_uidivmod
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SaveLastStates                              |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_Init                                        |
++-------------------------------------------------------------+
+Stack usage:   48 bytes
+
+Called functions:
+   LTC_CalculatePec15
+   SPI_TransmitDummyByte
+   SPI_TransmitReceiveDataDma
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_InitializeDatabase                          |
++-------------------------------------------------------------+
+Stack usage:   88 bytes
+
+Called functions:
+   DATA_Write4DataBlocks
+   DATA_Write2DataBlocks
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_ResetErrorTable                             |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_StartVoltageMeasurement                     |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   SPI_TransmitDummyByte
+   SPI_TransmitData
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_Trigger                                     |
++-------------------------------------------------------------+
+Stack usage:   56 bytes
+
+Called functions:
+   LTC_CheckReEntrance
+   AFE_IsTransmitOngoing
+   LTC_IsFirstMeasurementCycleFinished
+   LTC_SetFirstMeasurementCycleFinished
+   LTC_TransferStateRequest
+   LTC_StateTransition
+   DIAG_Handler
+   LTC_CheckPec
+   LTC_PortExpanderSaveValuesTi
+   AFE_SetTransmitOngoing
+   LTC_ReadRegister
+   LTC_CondBasedStateTransition
+   LTC_I2cClock
+   LTC_GetPortExpanderInputTi
+   LTC_SetPortExpanderDirectionTi
+   LTC_SetPortExpanderOutputTi
+   LTC_StartOpenWireMeasurement
+   LTC_GetMeasurementTimeCycle
+   DATA_Write1DataBlock
+   LTC_SaveBalancingFeedback
+   LTC_StartGpioMeasurement
+   LTC_SendI2cCommand
+   LTC_TempSensSaveTemp
+   LTC_SendEepromWriteCommand
+   LTC_EepromSaveReadValue
+   LTC_SendEepromReadCommand
+   LTC_PortExpanderSaveValues
+   LTC_SetPortExpander
+   DIAG_CheckEvent
+   LTC_SaveRxToGpioBuffer
+   LTC_SaveAllGpioMeasurement
+   LTC_BalanceControl
+   LTC_SaveMuxMeasurement
+   LTC_I2cCheckAck
+   LTC_SaveTemperatures
+   LTC_SetMuxChannel
+   LTC_SaveRxToVoltageBuffer
+   LTC_SaveVoltages
+   LTC_SetTransferTimes
+   LTC_SaveLastStates
+   LTC_Init
+   SPI_TransmitDummyByte
+   LTC_InitializeDatabase
+   LTC_ResetErrorTable
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   LTC_StartVoltageMeasurement
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_CheckStateRequest                           |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_SetStateRequest                             |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   LTC_CheckStateRequest
+   OS_ExitTaskCritical
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_InitializeMonitoringPin                     |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   PEX_SetPinDirectionOutput
+   PEX_SetPin
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_GetStateRequest                             |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  LTC_GetState                                    |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+

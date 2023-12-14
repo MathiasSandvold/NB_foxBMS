@@ -1,0 +1,9 @@
+{
+    "file:": "src\\app\\main\\include\\fsystem.h",
+    "functions": [
+        {
+            "c-name": "FSYS_RaisePrivilege",
+            "entry": "1"
+        }
+    ]
+}

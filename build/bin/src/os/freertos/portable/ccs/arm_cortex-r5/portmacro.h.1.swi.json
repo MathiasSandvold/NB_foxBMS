@@ -1,0 +1,29 @@
+{
+    "file:": "src\\os\\freertos\\portable\\ccs\\arm_cortex-r5\\portmacro.h",
+    "functions": [
+        {
+            "c-name": "vPortEnterCritical",
+            "entry": "2"
+        },
+        {
+            "c-name": "vPortExitCritical",
+            "entry": "3"
+        },
+        {
+            "c-name": "vPortDisableInterrupts",
+            "entry": "5"
+        },
+        {
+            "c-name": "vPortEnableInterrupts",
+            "entry": "6"
+        },
+        {
+            "c-name": "vPortYield",
+            "entry": "0"
+        },
+        {
+            "c-name": "vPortTaskUsesFPU",
+            "entry": "4"
+        }
+    ]
+}

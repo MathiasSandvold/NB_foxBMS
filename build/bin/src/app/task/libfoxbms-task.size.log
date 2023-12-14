@@ -1,0 +1,7 @@
+   text	   data	    bss	    dec	    hex	filename
+   2064	    143	      0	   2207	    89f	ftask_cfg.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\task\libfoxbms-task.a)
+   2508	      0	      0	   2508	    9cc	ftask.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\task\libfoxbms-task.a)
+   3116	  13113	     12	  16241	   3f71	ftask_freertos.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\task\libfoxbms-task.a)
+   2112	     16	      0	   2128	    850	os.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\task\libfoxbms-task.a)
+   2544	    676	      0	   3220	    c94	os_freertos.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\task\libfoxbms-task.a)
+  12344	  13948	     12	  26304	   66c0	(TOTALS)

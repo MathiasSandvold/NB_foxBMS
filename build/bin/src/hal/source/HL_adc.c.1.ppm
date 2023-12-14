@@ -1,0 +1,411 @@
+#define __unsigned_chars__ 1	/* Predefined */
+#define __PRAGMA_REDEFINE_EXTNAME 1	/* Predefined */
+#define __DATE__ "Dec 11 2023"	/* Predefined */
+#define __TIME__ "10:46:29"	/* Predefined */
+#define __STDC__ 1	/* Predefined */
+#define __STDC_VERSION__ 201112L	/* Predefined */
+#define __STDC_UTF_16__ 1	/* Predefined */
+#define __STDC_UTF_32__ 1	/* Predefined */
+#define __STDC_HOSTED__ 1	/* Predefined */
+#define __TI_C99_COMPLEX_ENABLED__ 1	/* Predefined */
+#define __STDC_NO_THREADS__ 1	/* Predefined */
+#define __edg_front_end__ 1	/* Predefined */
+#define __EDG_VERSION__ 413	/* Predefined */
+#define __EDG_SIZE_TYPE__ unsigned int	/* Predefined */
+#define __EDG_PTRDIFF_TYPE__ int	/* Predefined */
+#define __VERSION__ "EDG gcc 4.8 mode"	/* Predefined */
+#define __CHAR16_TYPE__ unsigned short	/* Predefined */
+#define __CHAR32_TYPE__ unsigned int	/* Predefined */
+#define __TI_COMPILER_VERSION__ 20002004	/* Predefined */
+#define __COMPILER_VERSION__ 20002004	/* Predefined */
+#define __TI_COMPILER_VERSION_QUAL_ID__ 20344	/* Predefined */
+#define __TI_COMPILER_VERSION_QUAL__ QUAL_LETTER	/* Predefined */
+#define __TMS470__ 1	/* Predefined */
+#define __TI_ARM__ 1	/* Predefined */
+#define __ARM_BIG_ENDIAN 1	/* Predefined */
+#define __32bis__ 1	/* Predefined */
+#define __eabi__ 1	/* Predefined */
+#define __TI_EABI_SUPPORT__ 1	/* Predefined */
+#define __TI_VFPV3D16_SUPPORT__ 1	/* Predefined */
+#define __ARM_FP 12	/* Predefined */
+#define __TI_VFP_SUPPORT__ 1	/* Predefined */
+#define __ARM_FP16_ARGS 1	/* Predefined */
+#define __ARM_FP16_FORMAT_IEEE 1	/* Predefined */
+#define __ARM_PCS_VFP 1	/* Predefined */
+#define __TI_TMS470_V7__ 1	/* Predefined */
+#define __TI_ARM_V7__ 1	/* Predefined */
+#define __ARM_32BIT_STATE 1	/* Predefined */
+#define __ARM_ARCH 7	/* Predefined */
+#define __ARM_ARCH_ISA_THUMB 2	/* Predefined */
+#define __ARM_FEATURE_CLZ 1	/* Predefined */
+#define __ARM_FEATURE_SAT 1	/* Predefined */
+#define __ARM_FEATURE_UNALIGNED 1	/* Predefined */
+#define __ARM_FEATURE_LDREX 15	/* Predefined */
+#define __TI_TMS470_V7R4__ 1	/* Predefined */
+#define __TI_ARM_V7R4__ 1	/* Predefined */
+#define __TI_TMS470_V7R5__ 1	/* Predefined */
+#define __TI_ARM_V7R5__ 1	/* Predefined */
+#define __ARM_ARCH_PROFILE 82	/* Predefined */
+#define __ARM_ACLE 200	/* Predefined */
+#define __ARM_PCS 1	/* Predefined */
+#define __ARM_ARCH_ISA_ARM 1	/* Predefined */
+#define __ARM_FEATURE_DSP 1	/* Predefined */
+#define __ARM_FEATURE_SIMD32 1	/* Predefined */
+#define __SIZE_T_TYPE__ unsigned	/* Predefined */
+#define __PTRDIFF_T_TYPE__ int	/* Predefined */
+#define __ARM_SIZEOF_MINIMAL_ENUM 1	/* Predefined */
+#define __WCHAR_T_TYPE__ unsigned short	/* Predefined */
+#define __ARM_SIZEOF_WCHAR_T 2	/* Predefined */
+#define __TI_EABI__ 1	/* Predefined */
+#define __ELF__ 1	/* Predefined */
+#define __big_endian__ 1	/* Predefined */
+#define __BIG_ENDIAN__ 1	/* Predefined */
+#define __TI_STRICT_ANSI_MODE__ 0	/* Predefined */
+#define __TI_WCHAR_T_BITS__ 16	/* Predefined */
+#define __TI_GNU_ATTRIBUTE_SUPPORT__ 1	/* Predefined */
+#define __TI_STRICT_FP_MODE__ 1	/* Predefined */
+#define __CHAR_BIT__ 8	/* Predefined */
+#define __SCHAR_MAX__ 127	/* Predefined */
+#define __SHRT_MAX__ 32767	/* Predefined */
+#define __INT_MAX__ 2147483647	/* Predefined */
+#define __LONG_MAX__ 2147483647	/* Predefined */
+#define __LONG_LONG_MAX__ 9223372036854775807	/* Predefined */
+#define __SIZEOF_INT__ 4	/* Predefined */
+#define __SIZEOF_SHORT__ 2	/* Predefined */
+#define __SIZEOF_LONG__ 4	/* Predefined */
+#define __SIZEOF_LONG_LONG__ 8	/* Predefined */
+#define __SIZEOF_WCHAR_T__ 2	/* Predefined */
+#define __SIZEOF_FLOAT__ 4	/* Predefined */
+#define __SIZEOF_DOUBLE__ 8	/* Predefined */
+#define __SIZEOF_LONG_DOUBLE__ 8	/* Predefined */
+#define __SIZEOF_SIZE_T__ 4	/* Predefined */
+#define __SIZEOF_WINT_T__ 2	/* Predefined */
+#define __SIZEOF_PTRDIFF_T__ 4	/* Predefined */
+#define _OPTIMIZE_FOR_SPACE 1
+#define FOXBMS_AFE_DRIVER_TYPE_FSM 1
+#define FOXBMS_AFE_DRIVER_TYPE_NO_FSM 0
+#define FOXBMS_USES_FREERTOS 1
+#define _INLINE 1
+#define __ADC_H__ 	/* src\hal\include\HL_adc.h */
+#define __REG_ADC_H__ 	/* src\hal\include\HL_reg_adc.h */
+#define __SYS_COMMON_H__ 	/* src\hal\include\HL_sys_common.h */
+#define __HAL_STDTYPES_H__ 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _STDINT_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdint.h */
+#define __TI_CONFIG_H 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_PROPRIETARY_PRAGMA(arg) _Pragma(arg)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define __TI_PROPRIETARY_STRICT_ANSI_MACRO __TI_STRICT_ANSI_MODE__	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define __TI_PROPRIETARY_STRICT_FP_MACRO __TI_STRICT_FP_MODE__	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define __TI_PROPRIETARY_UNSIGNED_CHARS__ __unsigned_chars__	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_NORETURN _Noreturn	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_NOEXCEPT 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_C99LIB 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_C11LIB 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_NOEXCEPT_CPP14 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _LINKAGE 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _CODE_ACCESS 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _DATA_ACCESS 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _DATA_ACCESS_NEAR 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _IDECL static __inline	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _IDEFN static __inline	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define __STDINT40_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_stdint40.h */
+#define _SYS_STDINT_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define _SYS_CDEFS_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __BEGIN_DECLS 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __END_DECLS 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GNUCLIKE___TYPEOF 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GNUCLIKE___OFFSETOF 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GNUCLIKE___SECTION 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS_INLINE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS___INLINE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS___INLINE__ 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS___FUNC__ 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS_WARNING 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS_VARADIC_XXX 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS_DYNAMIC_ARRAY_INIT 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GNUC_PREREQ__(ma,mi) 0	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __P(protos) protos	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CONCAT1(x,y) x ## y	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CONCAT(x,y) __CONCAT1(x,y)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __STRING(x) #x	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __XSTRING(x) __STRING(x)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __const const	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __signed signed	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __volatile volatile	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __weak_symbol __attribute__((__weak__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __dead2 __attribute__((__noreturn__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __pure2 __attribute__((__const__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __unused __attribute__((__unused__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __used __attribute__((__used__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __packed __attribute__((__packed__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __aligned(x) __attribute__((__aligned__(x)))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __section(x) __attribute__((__section__(x)))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __alloc_size(x) __attribute__((__alloc_size__(x)))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __alloc_align(x) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __alignof(x) __alignof__(x)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __generic(expr,t,yes,no) _Generic(expr, t: yes, default: no)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __min_size(x) (x)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __malloc_like 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __pure 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __always_inline __attribute__((__always_inline__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __noinline __attribute__ ((__noinline__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __fastcall 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __result_use_check 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __returns_twice 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __unreachable() ((void)0)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __LONG_LONG_SUPPORTED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __predict_true(exp) (exp)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __predict_false(exp) (exp)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __null_sentinel 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __exported 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __hidden 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __offsetof(type,field) ((__size_t)(__uintptr_t)((const volatile void *)&((type *)0)->field))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __rangeof(type,start,end) (__offsetof(type, end) - __offsetof(type, start))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __containerof(x,s,m) __DEQUALIFY(s *, (const volatile char *)(x) - __offsetof(s, m))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __printflike(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __scanflike(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __format_arg(fmtarg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __strfmonlike(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __strftimelike(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __printf0like(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GLOBL1(sym) __asm__(".globl " #sym)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GLOBL(sym) __GLOBL1(sym)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __IDSTRING(name,string) static const char name[] __unused = string	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __extension__ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __FBSDID(s) __IDSTRING(__CONCAT(__rcsid_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __RCSID(s) __IDSTRING(__CONCAT(__rcsid_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __RCSID_SOURCE(s) __IDSTRING(__CONCAT(__rcsid_source_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __SCCSID(s) __IDSTRING(__CONCAT(__sccsid_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __COPYRIGHT(s) __IDSTRING(__CONCAT(__copyright_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __DECONST(type,var) ((type)(__uintptr_t)(const void *)(var))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __DEVOLATILE(type,var) ((type)(__uintptr_t)(volatile void *)(var))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __DEQUALIFY(type,var) ((type)(__uintptr_t)(const volatile void *)(var))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __POSIX_VISIBLE 200809	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __XSI_VISIBLE 700	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __BSD_VISIBLE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __ISO_C_VISIBLE 2011	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __EXT1_VISIBLE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define _Nonnull 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define _Nullable 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define _Null_unspecified 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __NULLABILITY_PRAGMA_PUSH 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __NULLABILITY_PRAGMA_POP 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __arg_type_tag(arg_kind,arg_idx,type_tag_idx) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __datatype_type_tag(kind,type) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __lock_annotate(x) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __lockable __lock_annotate(lockable)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __locks_exclusive(__VA_ARGS__...) __lock_annotate(exclusive_lock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __locks_shared(__VA_ARGS__...) __lock_annotate(shared_lock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __trylocks_exclusive(__VA_ARGS__...) __lock_annotate(exclusive_trylock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __trylocks_shared(__VA_ARGS__...) __lock_annotate(shared_trylock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __unlocks(__VA_ARGS__...) __lock_annotate(unlock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __asserts_exclusive(__VA_ARGS__...) __lock_annotate(assert_exclusive_lock(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __asserts_shared(__VA_ARGS__...) __lock_annotate(assert_shared_lock(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __requires_exclusive(__VA_ARGS__...) __lock_annotate(exclusive_locks_required(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __requires_shared(__VA_ARGS__...) __lock_annotate(shared_locks_required(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __requires_unlocked(__VA_ARGS__...) __lock_annotate(locks_excluded(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __no_lock_analysis __lock_annotate(no_thread_safety_analysis)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __guarded_by(x) __lock_annotate(guarded_by(x))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __pt_guarded_by(x) __lock_annotate(pt_guarded_by(x))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define _SYS__TYPES_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_types.h */
+#define _MACHINE__TYPES_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_types.h */
+#define __WCHAR_MIN 0	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_types.h */
+#define __WCHAR_MAX 0xffffu	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_types.h */
+#define __INO64 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_types.h */
+#define _MACHINE__STDINT_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT8_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT16_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT32_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT64_C(c) (c ## LL)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT8_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT16_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT32_C(c) (c ## U)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT64_C(c) (c ## ULL)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTMAX_C(c) INT64_C(c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINTMAX_C(c) UINT64_C(c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT8_MIN (-0x7f-1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT16_MIN (-0x7fff-1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT32_MIN (-0x7fffffff-1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT64_MIN (-0x7fffffffffffffffLL-1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT8_MAX 0x7f	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT16_MAX 0x7fff	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT32_MAX 0x7fffffff	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT64_MAX 0x7fffffffffffffffLL	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT8_MAX 0xff	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT16_MAX 0xffff	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT32_MAX 0xffffffffU	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT64_MAX 0xffffffffffffffffULL	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST8_MIN INT8_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST16_MIN INT16_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST32_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST64_MIN INT64_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST8_MAX INT8_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST16_MAX INT16_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST32_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST64_MAX INT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_LEAST8_MAX UINT8_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_LEAST16_MAX UINT16_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_LEAST32_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_LEAST64_MAX UINT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST8_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST16_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST32_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST64_MIN INT64_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST8_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST16_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST32_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST64_MAX INT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_FAST8_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_FAST16_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_FAST32_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_FAST64_MAX UINT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTPTR_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTPTR_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINTPTR_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTMAX_MIN INT64_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTMAX_MAX INT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINTMAX_MAX UINT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define PTRDIFF_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define PTRDIFF_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define SIG_ATOMIC_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define SIG_ATOMIC_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define SIZE_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define WINT_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define WINT_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define _SYS__STDINT_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INT8_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INT16_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INT32_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INT64_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINT8_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINT16_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINT32_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINT64_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INTPTR_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINTPTR_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INTMAX_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINTMAX_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define __WORDSIZE 32	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define WCHAR_MIN __WCHAR_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define WCHAR_MAX __WCHAR_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define RSIZE_MAX (SIZE_MAX >> 1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define __bool_true_false_are_defined 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdbool.h */
+#define false 0	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdbool.h */
+#define true 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdbool.h */
+#define bool _Bool	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdbool.h */
+#define _UINT64_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _UINT32_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _UINT16_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _UINT8_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _BOOLEAN_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _SINT64_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _SINT32_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _SINT16_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _SINT8_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _FLOAT32_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _FLOAT64_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define STATUSTYPEDEFINED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define E_OK 0x00U	/* src\hal\include\HL_hal_stdtypes.h */
+#define E_NOT_OK 0x01U	/* src\hal\include\HL_hal_stdtypes.h */
+#define STD_ON 0x01U	/* src\hal\include\HL_hal_stdtypes.h */
+#define STD_OFF 0x00U	/* src\hal\include\HL_hal_stdtypes.h */
+#define NULL ((void *) 0U)	/* src\hal\include\HL_hal_stdtypes.h */
+#define TRUE true	/* src\hal\include\HL_hal_stdtypes.h */
+#define FALSE false	/* src\hal\include\HL_hal_stdtypes.h */
+#define NULL_PTR ((void *)0x0U)	/* src\hal\include\HL_hal_stdtypes.h */
+#define _TBOOLEAN_DECLARED 	/* src\hal\include\HL_sys_common.h */
+#define __little_endian__ 0	/* src\hal\include\HL_sys_common.h */
+#define __LITTLE_ENDIAN__ 0	/* src\hal\include\HL_sys_common.h */
+#define ASSERT(expr) 	/* src\hal\include\HL_sys_common.h */
+#define adcREG1 ((adcBASE_t *)0xFFF7C000U)	/* src\hal\include\HL_reg_adc.h */
+#define adcREG2 ((adcBASE_t *)0xFFF7C200U)	/* src\hal\include\HL_reg_adc.h */
+#define adcRAM1 (*(volatile uint32 *)0xFF3E0000U)	/* src\hal\include\HL_reg_adc.h */
+#define adcRAM2 (*(volatile uint32 *)0xFF3A0000U)	/* src\hal\include\HL_reg_adc.h */
+#define adcPARRAM1 (*(volatile uint32 *)(0xFF3E0000U + 0x1000U))	/* src\hal\include\HL_reg_adc.h */
+#define adcPARRAM2 (*(volatile uint32 *)(0xFF3A0000U + 0x1000U))	/* src\hal\include\HL_reg_adc.h */
+#define adcLUT1 ((adcLUT_t *) (0xFF3E0000U + 0x2000U))	/* src\hal\include\HL_reg_adc.h */
+#define adcGROUP0 0U	/* src\hal\include\HL_adc.h */
+#define adcGROUP1 1U	/* src\hal\include\HL_adc.h */
+#define adcGROUP2 2U	/* src\hal\include\HL_adc.h */
+#define ADC_12_BIT_MODE 0x80000000U	/* src\hal\include\HL_adc.h */
+#define ADC1_OPMODECR_CONFIGVALUE 0x81140001U	/* src\hal\include\HL_adc.h */
+#define ADC1_CLOCKCR_CONFIGVALUE (9U)	/* src\hal\include\HL_adc.h */
+#define ADC1_G0MODECR_CONFIGVALUE ((uint32)ADC_12_BIT | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_adc.h */
+#define ADC1_G1MODECR_CONFIGVALUE ((uint32)ADC_12_BIT | (uint32)0x00000020U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_adc.h */
+#define ADC1_G2MODECR_CONFIGVALUE ((uint32)ADC_12_BIT | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_adc.h */
+#define ADC1_G0SRC_CONFIGVALUE ((uint32)0x00000000U | (uint32)ADC1_GIOB0)	/* src\hal\include\HL_adc.h */
+#define ADC1_G1SRC_CONFIGVALUE ((uint32)0x00000000U | (uint32)ADC1_GIOB0)	/* src\hal\include\HL_adc.h */
+#define ADC1_G2SRC_CONFIGVALUE ((uint32)0x00000000U | (uint32)ADC1_GIOB0)	/* src\hal\include\HL_adc.h */
+#define ADC1_BNDCR_CONFIGVALUE ((uint32)((uint32)0U << 16U)|(0U + 32U))	/* src\hal\include\HL_adc.h */
+#define ADC1_BNDEND_CONFIGVALUE (2U)	/* src\hal\include\HL_adc.h */
+#define ADC1_G0SAMP_CONFIGVALUE (1U)	/* src\hal\include\HL_adc.h */
+#define ADC1_G1SAMP_CONFIGVALUE (1U)	/* src\hal\include\HL_adc.h */
+#define ADC1_G2SAMP_CONFIGVALUE (1U)	/* src\hal\include\HL_adc.h */
+#define ADC1_G0SAMPDISEN_CONFIGVALUE ((uint32)((uint32)0U << 8U) | 0x00000000U)	/* src\hal\include\HL_adc.h */
+#define ADC1_G1SAMPDISEN_CONFIGVALUE ((uint32)((uint32)0U << 8U) | 0x00000000U)	/* src\hal\include\HL_adc.h */
+#define ADC1_G2SAMPDISEN_CONFIGVALUE ((uint32)((uint32)0U << 8U) | 0x00000000U)	/* src\hal\include\HL_adc.h */
+#define ADC1_PARCR_CONFIGVALUE (0x0000000AU)	/* src\hal\include\HL_adc.h */
+#define ADC2_OPMODECR_CONFIGVALUE 0x81140001U	/* src\hal\include\HL_adc.h */
+#define ADC2_CLOCKCR_CONFIGVALUE (9U)	/* src\hal\include\HL_adc.h */
+#define ADC2_G0MODECR_CONFIGVALUE ((uint32)ADC_12_BIT | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_adc.h */
+#define ADC2_G1MODECR_CONFIGVALUE ((uint32)ADC_12_BIT | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_adc.h */
+#define ADC2_G2MODECR_CONFIGVALUE ((uint32)ADC_12_BIT | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_adc.h */
+#define ADC2_G0SRC_CONFIGVALUE ((uint32)0x00000000U | (uint32)ADC2_GIOB1)	/* src\hal\include\HL_adc.h */
+#define ADC2_G1SRC_CONFIGVALUE ((uint32)0x00000000U | (uint32)ADC2_GIOB1)	/* src\hal\include\HL_adc.h */
+#define ADC2_G2SRC_CONFIGVALUE ((uint32)0x00000000U | (uint32)ADC2_GIOB1)	/* src\hal\include\HL_adc.h */
+#define ADC2_BNDCR_CONFIGVALUE ((uint32)((uint32)8U << 16U)|(8U + 8U))	/* src\hal\include\HL_adc.h */
+#define ADC2_BNDEND_CONFIGVALUE (2U)	/* src\hal\include\HL_adc.h */
+#define ADC2_G0SAMP_CONFIGVALUE (1U)	/* src\hal\include\HL_adc.h */
+#define ADC2_G1SAMP_CONFIGVALUE (1U)	/* src\hal\include\HL_adc.h */
+#define ADC2_G2SAMP_CONFIGVALUE (1U)	/* src\hal\include\HL_adc.h */
+#define ADC2_G0SAMPDISEN_CONFIGVALUE ((uint32)((uint32)0U << 8U) | 0x00000000U)	/* src\hal\include\HL_adc.h */
+#define ADC2_G1SAMPDISEN_CONFIGVALUE ((uint32)((uint32)0U << 8U) | 0x00000000U)	/* src\hal\include\HL_adc.h */
+#define ADC2_G2SAMPDISEN_CONFIGVALUE ((uint32)((uint32)0U << 8U) | 0x00000000U)	/* src\hal\include\HL_adc.h */
+#define ADC2_PARCR_CONFIGVALUE (0x0000000AU)	/* src\hal\include\HL_adc.h */
+#define __SYS_VIM_H__ 	/* src\hal\include\HL_sys_vim.h */
+#define __REG_VIM_H__ 	/* src\hal\include\HL_reg_vim.h */
+#define vimREG ((vimBASE_t *)0xFFFFFD00U)	/* src\hal\include\HL_reg_vim.h */
+#define VIM_CHANNELS 128U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_ECCSTAT (*(volatile uint32 *)0xFFFFFDECU)	/* src\hal\include\HL_sys_vim.h */
+#define VIM_ECCCTL (*(volatile uint32 *)0xFFFFFDF0U)	/* src\hal\include\HL_sys_vim.h */
+#define VIM_UERRADDR (*(volatile uint32 *)0xFFFFFDF4U)	/* src\hal\include\HL_sys_vim.h */
+#define VIM_FBVECADDR (*(volatile uint32 *)0xFFFFFDF8U)	/* src\hal\include\HL_sys_vim.h */
+#define VIM_SBERRADDR (*(volatile uint32 *)0xFFFFFDFCU)	/* src\hal\include\HL_sys_vim.h */
+#define VIMRAMECCLOC (*(volatile uint32 *)0xFFF82400U)	/* src\hal\include\HL_sys_vim.h */
+#define VIMRAMLOC (*(volatile uint32 *)0xFFF82000U)	/* src\hal\include\HL_sys_vim.h */
+#define VIM_FIRQPR0_CONFIGVALUE ((uint32)((uint32)SYS_FIQ << 0U) |(uint32)((uint32)SYS_FIQ << 1U) |(uint32)((uint32)SYS_IRQ << 2U) |(uint32)((uint32)SYS_IRQ << 3U) |(uint32)((uint32)SYS_IRQ << 4U) |(uint32)((uint32)SYS_IRQ << 5U) |(uint32)((uint32)SYS_IRQ << 6U) |(uint32)((uint32)SYS_IRQ << 7U) |(uint32)((uint32)SYS_IRQ << 8U) |(uint32)((uint32)SYS_IRQ << 9U) |(uint32)((uint32)SYS_IRQ << 10U) |(uint32)((uint32)SYS_IRQ << 11U) |(uint32)((uint32)SYS_IRQ << 12U) |(uint32)((uint32)SYS_IRQ << 13U) |(uint32)((uint32)SYS_IRQ << 14U) |(uint32)((uint32)SYS_IRQ << 15U) |(uint32)((uint32)SYS_IRQ << 16U) |(uint32)((uint32)SYS_IRQ << 17U) |(uint32)((uint32)SYS_IRQ << 18U) |(uint32)((uint32)SYS_IRQ << 19U) |(uint32)((uint32)SYS_IRQ << 20U) |(uint32)((uint32)SYS_IRQ << 21U) |(uint32)((uint32)SYS_IRQ << 22U) |(uint32)((uint32)SYS_IRQ << 23U) |(uint32)((uint32)SYS_IRQ << 24U) |(uint32)((uint32)SYS_IRQ << 25U) |(uint32)((uint32)SYS_IRQ << 26U) |(uint32)((uint32)SYS_IRQ << 27U) |(uint32)((uint32)SYS_IRQ << 28U) |(uint32)((uint32)SYS_IRQ << 29U) |(uint32)((uint32)SYS_IRQ << 30U) |(uint32)((uint32)SYS_IRQ << 31U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_FIRQPR1_CONFIGVALUE ((uint32)((uint32)SYS_IRQ << 0U) |(uint32)((uint32)SYS_IRQ << 1U) |(uint32)((uint32)SYS_IRQ << 2U) |(uint32)((uint32)SYS_IRQ << 3U) |(uint32)((uint32)SYS_IRQ << 4U) |(uint32)((uint32)SYS_IRQ << 5U) |(uint32)((uint32)SYS_IRQ << 6U) |(uint32)((uint32)SYS_IRQ << 7U) |(uint32)((uint32)SYS_IRQ << 8U) |(uint32)((uint32)SYS_IRQ << 9U) |(uint32)((uint32)SYS_IRQ << 10U) |(uint32)((uint32)SYS_IRQ << 11U) |(uint32)((uint32)SYS_IRQ << 12U) |(uint32)((uint32)SYS_IRQ << 13U) |(uint32)((uint32)SYS_IRQ << 14U) |(uint32)((uint32)SYS_IRQ << 15U) |(uint32)((uint32)SYS_IRQ << 16U) |(uint32)((uint32)SYS_IRQ << 17U) |(uint32)((uint32)SYS_IRQ << 18U) |(uint32)((uint32)SYS_IRQ << 19U) |(uint32)((uint32)SYS_IRQ << 20U) |(uint32)((uint32)SYS_IRQ << 21U) |(uint32)((uint32)SYS_IRQ << 22U) |(uint32)((uint32)SYS_IRQ << 23U) |(uint32)((uint32)SYS_IRQ << 24U) |(uint32)((uint32)SYS_IRQ << 25U) |(uint32)((uint32)SYS_IRQ << 26U) |(uint32)((uint32)SYS_IRQ << 27U) |(uint32)((uint32)SYS_IRQ << 28U) |(uint32)((uint32)SYS_IRQ << 29U) |(uint32)((uint32)SYS_IRQ << 30U) |(uint32)((uint32)SYS_IRQ << 31U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_FIRQPR2_CONFIGVALUE ((uint32)((uint32)SYS_IRQ << 0U) |(uint32)((uint32)SYS_IRQ << 1U) |(uint32)((uint32)SYS_IRQ << 2U) |(uint32)((uint32)SYS_IRQ << 3U) |(uint32)((uint32)SYS_IRQ << 4U) |(uint32)((uint32)SYS_IRQ << 5U) |(uint32)((uint32)SYS_IRQ << 6U) |(uint32)((uint32)SYS_IRQ << 7U) |(uint32)((uint32)SYS_IRQ << 8U) |(uint32)((uint32)SYS_IRQ << 9U) |(uint32)((uint32)SYS_IRQ << 10U) |(uint32)((uint32)SYS_IRQ << 11U) |(uint32)((uint32)SYS_IRQ << 12U) |(uint32)((uint32)SYS_IRQ << 13U) |(uint32)((uint32)SYS_IRQ << 14U) |(uint32)((uint32)SYS_IRQ << 15U) |(uint32)((uint32)SYS_IRQ << 16U) |(uint32)((uint32)SYS_IRQ << 17U) |(uint32)((uint32)SYS_IRQ << 18U) |(uint32)((uint32)SYS_IRQ << 19U) |(uint32)((uint32)SYS_IRQ << 20U) |(uint32)((uint32)SYS_IRQ << 21U) |(uint32)((uint32)SYS_IRQ << 22U) |(uint32)((uint32)SYS_IRQ << 23U) |(uint32)((uint32)SYS_IRQ << 24U) |(uint32)((uint32)SYS_IRQ << 25U) |(uint32)((uint32)SYS_IRQ << 26U) |(uint32)((uint32)SYS_IRQ << 27U) |(uint32)((uint32)SYS_IRQ << 28U) |(uint32)((uint32)SYS_IRQ << 29U) |(uint32)((uint32)SYS_IRQ << 30U) |(uint32)((uint32)SYS_IRQ << 31U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_FIRQPR3_CONFIGVALUE ((uint32)((uint32)SYS_IRQ << 0U) |(uint32)((uint32)SYS_IRQ << 1U) |(uint32)((uint32)SYS_IRQ << 2U) |(uint32)((uint32)SYS_IRQ << 3U) |(uint32)((uint32)SYS_IRQ << 4U) |(uint32)((uint32)SYS_IRQ << 5U) |(uint32)((uint32)SYS_IRQ << 6U) |(uint32)((uint32)SYS_IRQ << 7U) |(uint32)((uint32)SYS_IRQ << 8U) |(uint32)((uint32)SYS_IRQ << 9U) |(uint32)((uint32)SYS_IRQ << 10U) |(uint32)((uint32)SYS_IRQ << 11U) |(uint32)((uint32)SYS_IRQ << 12U) |(uint32)((uint32)SYS_IRQ << 13U) |(uint32)((uint32)SYS_IRQ << 14U) |(uint32)((uint32)SYS_IRQ << 15U) |(uint32)((uint32)SYS_IRQ << 16U) |(uint32)((uint32)SYS_IRQ << 17U) |(uint32)((uint32)SYS_IRQ << 18U) |(uint32)((uint32)SYS_IRQ << 19U) |(uint32)((uint32)SYS_IRQ << 20U) |(uint32)((uint32)SYS_IRQ << 21U) |(uint32)((uint32)SYS_IRQ << 22U) |(uint32)((uint32)SYS_IRQ << 23U) |(uint32)((uint32)SYS_IRQ << 24U) |(uint32)((uint32)SYS_IRQ << 25U) |(uint32)((uint32)SYS_IRQ << 26U) |(uint32)((uint32)SYS_IRQ << 27U) |(uint32)((uint32)SYS_IRQ << 28U) |(uint32)((uint32)SYS_IRQ << 29U) |(uint32)((uint32)SYS_IRQ << 30U) |(uint32)((uint32)SYS_IRQ << 31U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_REQMASKSET0_CONFIGVALUE ((uint32)((uint32)1U << 0U) |(uint32)((uint32)1U << 1U) |(uint32)((uint32)1U << 2U) |(uint32)((uint32)0U << 3U) |(uint32)((uint32)0U << 4U) |(uint32)((uint32)0U << 5U) |(uint32)((uint32)0U << 6U) |(uint32)((uint32)0U << 7U) |(uint32)((uint32)0U << 8U) |(uint32)((uint32)0U << 9U) |(uint32)((uint32)0U << 10U) |(uint32)((uint32)0U << 11U) |(uint32)((uint32)0U << 12U) |(uint32)((uint32)0U << 13U) |(uint32)((uint32)0U << 14U) |(uint32)((uint32)0U << 15U) |(uint32)((uint32)1U << 16U) |(uint32)((uint32)0U << 17U) |(uint32)((uint32)0U << 18U) |(uint32)((uint32)0U << 19U) |(uint32)((uint32)0U << 20U) |(uint32)((uint32)1U << 21U) |(uint32)((uint32)0U << 22U) |(uint32)((uint32)0U << 23U) |(uint32)((uint32)0U << 24U) |(uint32)((uint32)0U << 25U) |(uint32)((uint32)0U << 26U) |(uint32)((uint32)0U << 27U) |(uint32)((uint32)0U << 28U) |(uint32)((uint32)1U << 29U) |(uint32)((uint32)0U << 30U) |(uint32)((uint32)0U << 31U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_REQMASKSET1_CONFIGVALUE ((uint32)((uint32)0U << 0U) |(uint32)((uint32)0U << 1U) |(uint32)((uint32)1U << 2U) |(uint32)((uint32)1U << 3U) |(uint32)((uint32)0U << 4U) |(uint32)((uint32)0U << 5U) |(uint32)((uint32)0U << 6U) |(uint32)((uint32)0U << 7U) |(uint32)((uint32)1U << 8U) |(uint32)((uint32)0U << 9U) |(uint32)((uint32)1U << 10U) |(uint32)((uint32)0U << 11U) |(uint32)((uint32)1U << 12U) |(uint32)((uint32)0U << 13U) |(uint32)((uint32)1U << 14U) |(uint32)((uint32)0U << 15U) |(uint32)((uint32)0U << 16U) |(uint32)((uint32)0U << 17U) |(uint32)((uint32)0U << 18U) |(uint32)((uint32)0U << 19U) |(uint32)((uint32)0U << 20U) |(uint32)((uint32)0U << 21U) |(uint32)((uint32)0U << 22U) |(uint32)((uint32)0U << 23U) |(uint32)((uint32)0U << 24U) |(uint32)((uint32)0U << 25U) |(uint32)((uint32)0U << 26U) |(uint32)((uint32)0U << 27U) |(uint32)((uint32)0U << 28U) |(uint32)((uint32)0U << 29U) |(uint32)((uint32)0U << 30U) |(uint32)((uint32)0U << 31U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_REQMASKSET2_CONFIGVALUE ((uint32)((uint32)0U << 0U) |(uint32)((uint32)0U << 1U) |(uint32)((uint32)1U << 2U) |(uint32)((uint32)0U << 3U) |(uint32)((uint32)0U << 4U) |(uint32)((uint32)0U << 5U) |(uint32)((uint32)0U << 6U) |(uint32)((uint32)0U << 7U) |(uint32)((uint32)0U << 8U) |(uint32)((uint32)0U << 9U) |(uint32)((uint32)0U << 10U) |(uint32)((uint32)0U << 11U) |(uint32)((uint32)0U << 12U) |(uint32)((uint32)0U << 13U) |(uint32)((uint32)0U << 14U) |(uint32)((uint32)0U << 15U) |(uint32)((uint32)0U << 16U) |(uint32)((uint32)0U << 17U) |(uint32)((uint32)0U << 18U) |(uint32)((uint32)0U << 19U) |(uint32)((uint32)0U << 20U) |(uint32)((uint32)0U << 21U) |(uint32)((uint32)0U << 22U) |(uint32)((uint32)0U << 23U) |(uint32)((uint32)0U << 24U) |(uint32)((uint32)0U << 25U) |(uint32)((uint32)0U << 26U) |(uint32)((uint32)0U << 27U) |(uint32)((uint32)0U << 28U) |(uint32)((uint32)0U << 29U) |(uint32)((uint32)0U << 30U) |(uint32)((uint32)0U << 31U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_REQMASKSET3_CONFIGVALUE ((uint32)((uint32)0U << 0U) |(uint32)((uint32)0U << 1U) |(uint32)((uint32)0U << 2U) |(uint32)((uint32)0U << 3U) |(uint32)((uint32)0U << 4U) |(uint32)((uint32)0U << 5U) |(uint32)((uint32)0U << 6U) |(uint32)((uint32)0U << 7U) |(uint32)((uint32)1U << 8U) |(uint32)((uint32)0U << 9U) |(uint32)((uint32)0U << 10U) |(uint32)((uint32)0U << 11U) |(uint32)((uint32)0U << 12U) |(uint32)((uint32)0U << 13U) |(uint32)((uint32)0U << 14U) |(uint32)((uint32)0U << 15U) |(uint32)((uint32)0U << 16U) |(uint32)((uint32)0U << 17U) |(uint32)((uint32)0U << 18U) |(uint32)((uint32)0U << 19U) |(uint32)((uint32)0U << 20U) |(uint32)((uint32)0U << 21U) |(uint32)((uint32)0U << 22U) |(uint32)((uint32)0U << 23U) |(uint32)((uint32)0U << 24U) |(uint32)((uint32)0U << 25U) |(uint32)((uint32)0U << 26U) |(uint32)((uint32)0U << 27U) |(uint32)((uint32)0U << 28U) |(uint32)((uint32)0U << 29U) |(uint32)((uint32)0U << 30U) |(uint32)((uint32)0U << 31U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_WAKEMASKSET0_CONFIGVALUE 0xFFFFFFFFU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_WAKEMASKSET1_CONFIGVALUE 0xFFFFFFFFU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_WAKEMASKSET2_CONFIGVALUE 0xFFFFFFFFU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_WAKEMASKSET3_CONFIGVALUE 0xFFFFFFFFU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CAPEVT_CONFIGVALUE ((uint32)((uint32)0U << 0U) | (uint32)((uint32)0U << 16U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL0_CONFIGVALUE 0x00010203U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL1_CONFIGVALUE 0x04050607U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL2_CONFIGVALUE 0x08090A0BU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL3_CONFIGVALUE 0x0C0D0E0FU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL4_CONFIGVALUE 0x10111213U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL5_CONFIGVALUE 0x14151617U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL6_CONFIGVALUE 0x18191A1BU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL7_CONFIGVALUE 0x1C1D1E1FU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL8_CONFIGVALUE 0x20212223U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL9_CONFIGVALUE 0x24252627U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL10_CONFIGVALUE 0x28292A2BU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL11_CONFIGVALUE 0x2C2D2E2FU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL12_CONFIGVALUE 0x30313233U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL13_CONFIGVALUE 0x34353637U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL14_CONFIGVALUE 0x38393A3BU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL15_CONFIGVALUE 0x3C3D3E3FU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL16_CONFIGVALUE 0x40414243U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL17_CONFIGVALUE 0x44454647U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL18_CONFIGVALUE 0x48494A4BU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL19_CONFIGVALUE 0x4C4D4E4FU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL20_CONFIGVALUE 0x50515253U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL21_CONFIGVALUE 0x54555657U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL22_CONFIGVALUE 0x58595A5BU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL23_CONFIGVALUE 0x5C5D5E5FU	/* src\hal\include\HL_sys_vim.h */

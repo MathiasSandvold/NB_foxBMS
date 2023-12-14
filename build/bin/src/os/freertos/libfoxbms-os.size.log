@@ -1,0 +1,12 @@
+   text	   data	    bss	    dec	    hex	filename
+      0	      0	      0	      0	      0	croutine.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\os\freertos\libfoxbms-os.a)
+   1040	      0	      0	   1040	    410	event_groups.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\os\freertos\libfoxbms-os.a)
+    272	      0	      0	    272	    110	list.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\os\freertos\libfoxbms-os.a)
+   3324	      0	      0	   3324	    cfc	queue.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\os\freertos\libfoxbms-os.a)
+   2540	      0	      0	   2540	    9ec	stream_buffer.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\os\freertos\libfoxbms-os.a)
+   9328	    452	      8	   9788	   263c	tasks.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\os\freertos\libfoxbms-os.a)
+      0	      0	      0	      0	      0	timers.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\os\freertos\libfoxbms-os.a)
+    560	      8	      0	    568	    238	port.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\os\freertos\libfoxbms-os.a)
+   1200	      0	      0	   1200	    4b0	portasm.asm.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\os\freertos\libfoxbms-os.a)
+   2708	      0	      0	   2708	    a94	mpu_wrappers.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\os\freertos\libfoxbms-os.a)
+  20972	    460	      8	  21440	   53c0	(TOTALS)

@@ -1,0 +1,829 @@
+#define __unsigned_chars__ 1	/* Predefined */
+#define __PRAGMA_REDEFINE_EXTNAME 1	/* Predefined */
+#define __DATE__ "Dec 11 2023"	/* Predefined */
+#define __TIME__ "10:46:45"	/* Predefined */
+#define __STDC__ 1	/* Predefined */
+#define __STDC_VERSION__ 201112L	/* Predefined */
+#define __STDC_UTF_16__ 1	/* Predefined */
+#define __STDC_UTF_32__ 1	/* Predefined */
+#define __STDC_HOSTED__ 1	/* Predefined */
+#define __TI_C99_COMPLEX_ENABLED__ 1	/* Predefined */
+#define __STDC_NO_THREADS__ 1	/* Predefined */
+#define __edg_front_end__ 1	/* Predefined */
+#define __EDG_VERSION__ 413	/* Predefined */
+#define __EDG_SIZE_TYPE__ unsigned int	/* Predefined */
+#define __EDG_PTRDIFF_TYPE__ int	/* Predefined */
+#define __TI_COMPILER_VERSION__ 20002004	/* Predefined */
+#define __COMPILER_VERSION__ 20002004	/* Predefined */
+#define __TI_COMPILER_VERSION_QUAL_ID__ 20344	/* Predefined */
+#define __TI_COMPILER_VERSION_QUAL__ QUAL_LETTER	/* Predefined */
+#define __TMS470__ 1	/* Predefined */
+#define __TI_ARM__ 1	/* Predefined */
+#define __ARM_BIG_ENDIAN 1	/* Predefined */
+#define __32bis__ 1	/* Predefined */
+#define __eabi__ 1	/* Predefined */
+#define __TI_EABI_SUPPORT__ 1	/* Predefined */
+#define __TI_VFPV3D16_SUPPORT__ 1	/* Predefined */
+#define __ARM_FP 12	/* Predefined */
+#define __TI_VFP_SUPPORT__ 1	/* Predefined */
+#define __ARM_FP16_ARGS 1	/* Predefined */
+#define __ARM_FP16_FORMAT_IEEE 1	/* Predefined */
+#define __ARM_PCS_VFP 1	/* Predefined */
+#define __TI_TMS470_V7__ 1	/* Predefined */
+#define __TI_ARM_V7__ 1	/* Predefined */
+#define __ARM_32BIT_STATE 1	/* Predefined */
+#define __ARM_ARCH 7	/* Predefined */
+#define __ARM_ARCH_ISA_THUMB 2	/* Predefined */
+#define __ARM_FEATURE_CLZ 1	/* Predefined */
+#define __ARM_FEATURE_SAT 1	/* Predefined */
+#define __ARM_FEATURE_UNALIGNED 1	/* Predefined */
+#define __ARM_FEATURE_LDREX 15	/* Predefined */
+#define __TI_TMS470_V7R4__ 1	/* Predefined */
+#define __TI_ARM_V7R4__ 1	/* Predefined */
+#define __TI_TMS470_V7R5__ 1	/* Predefined */
+#define __TI_ARM_V7R5__ 1	/* Predefined */
+#define __ARM_ARCH_PROFILE 82	/* Predefined */
+#define __ARM_ACLE 200	/* Predefined */
+#define __ARM_PCS 1	/* Predefined */
+#define __ARM_ARCH_ISA_ARM 1	/* Predefined */
+#define __ARM_FEATURE_DSP 1	/* Predefined */
+#define __ARM_FEATURE_SIMD32 1	/* Predefined */
+#define __SIZE_T_TYPE__ unsigned	/* Predefined */
+#define __PTRDIFF_T_TYPE__ int	/* Predefined */
+#define __ARM_SIZEOF_MINIMAL_ENUM 1	/* Predefined */
+#define __WCHAR_T_TYPE__ unsigned short	/* Predefined */
+#define __ARM_SIZEOF_WCHAR_T 2	/* Predefined */
+#define __TI_EABI__ 1	/* Predefined */
+#define __ELF__ 1	/* Predefined */
+#define __big_endian__ 1	/* Predefined */
+#define __BIG_ENDIAN__ 1	/* Predefined */
+#define __TI_STRICT_ANSI_MODE__ 1	/* Predefined */
+#define __TI_WCHAR_T_BITS__ 16	/* Predefined */
+#define __TI_GNU_ATTRIBUTE_SUPPORT__ 1	/* Predefined */
+#define __TI_STRICT_FP_MODE__ 1	/* Predefined */
+#define __CHAR_BIT__ 8	/* Predefined */
+#define __SCHAR_MAX__ 127	/* Predefined */
+#define __SHRT_MAX__ 32767	/* Predefined */
+#define __INT_MAX__ 2147483647	/* Predefined */
+#define __LONG_MAX__ 2147483647	/* Predefined */
+#define __LONG_LONG_MAX__ 9223372036854775807	/* Predefined */
+#define __SIZEOF_INT__ 4	/* Predefined */
+#define __SIZEOF_SHORT__ 2	/* Predefined */
+#define __SIZEOF_LONG__ 4	/* Predefined */
+#define __SIZEOF_LONG_LONG__ 8	/* Predefined */
+#define __SIZEOF_WCHAR_T__ 2	/* Predefined */
+#define __SIZEOF_FLOAT__ 4	/* Predefined */
+#define __SIZEOF_DOUBLE__ 8	/* Predefined */
+#define __SIZEOF_LONG_DOUBLE__ 8	/* Predefined */
+#define __SIZEOF_SIZE_T__ 4	/* Predefined */
+#define __SIZEOF_WINT_T__ 2	/* Predefined */
+#define __SIZEOF_PTRDIFF_T__ 4	/* Predefined */
+#define _OPTIMIZE_FOR_SPACE 1
+#define FOXBMS_AFE_DRIVER_TYPE_FSM 1
+#define FOXBMS_AFE_DRIVER_TYPE_NO_FSM 0
+#define FOXBMS_USES_FREERTOS 1
+#define _INLINE 1
+#define _STDLIB_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdlib.h */
+#define __TI_CONFIG_H 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_PROPRIETARY_PRAGMA(arg) _Pragma(arg)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define __TI_PROPRIETARY_STRICT_ANSI_MACRO __TI_STRICT_ANSI_MODE__	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define __TI_PROPRIETARY_STRICT_FP_MACRO __TI_STRICT_FP_MODE__	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define __TI_PROPRIETARY_UNSIGNED_CHARS__ __unsigned_chars__	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_NORETURN _Noreturn	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_NOEXCEPT 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_C99LIB 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_C11LIB 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_NOEXCEPT_CPP14 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _LINKAGE 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _CODE_ACCESS 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _DATA_ACCESS 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _DATA_ACCESS_NEAR 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _IDECL static __inline	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _IDEFN static __inline	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define __ATTRIBUTE(attr) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdlib.h */
+#define _LLONG_AVAILABLE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdlib.h */
+#define MB_CUR_MAX 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdlib.h */
+#define NULL 0	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdlib.h */
+#define _SIZE_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdlib.h */
+#define _WCHAR_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdlib.h */
+#define EXIT_FAILURE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdlib.h */
+#define EXIT_SUCCESS 0	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdlib.h */
+#define RAND_MAX 32767	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdlib.h */
+#define _SYS_CDEFS_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __BEGIN_DECLS 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __END_DECLS 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GNUCLIKE___TYPEOF 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GNUCLIKE___OFFSETOF 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GNUCLIKE___SECTION 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS_INLINE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS___INLINE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS___INLINE__ 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS___FUNC__ 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS_WARNING 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS_VARADIC_XXX 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS_DYNAMIC_ARRAY_INIT 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GNUC_PREREQ__(ma,mi) 0	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __P(protos) protos	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CONCAT1(x,y) x ## y	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CONCAT(x,y) __CONCAT1(x,y)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __STRING(x) #x	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __XSTRING(x) __STRING(x)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __const const	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __signed signed	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __volatile volatile	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __weak_symbol __attribute__((__weak__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __dead2 __attribute__((__noreturn__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __pure2 __attribute__((__const__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __unused __attribute__((__unused__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __used __attribute__((__used__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __packed __attribute__((__packed__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __aligned(x) __attribute__((__aligned__(x)))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __section(x) __attribute__((__section__(x)))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __alloc_size(x) __attribute__((__alloc_size__(x)))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __alloc_align(x) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __alignof(x) __alignof__(x)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __generic(expr,t,yes,no) _Generic(expr, t: yes, default: no)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __min_size(x) (x)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __malloc_like 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __pure 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __always_inline __attribute__((__always_inline__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __noinline __attribute__ ((__noinline__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __fastcall 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __result_use_check 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __returns_twice 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __unreachable() ((void)0)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __LONG_LONG_SUPPORTED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __predict_true(exp) (exp)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __predict_false(exp) (exp)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __null_sentinel 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __exported 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __hidden 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __offsetof(type,field) ((__size_t)(__uintptr_t)((const volatile void *)&((type *)0)->field))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __rangeof(type,start,end) (__offsetof(type, end) - __offsetof(type, start))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __containerof(x,s,m) __DEQUALIFY(s *, (const volatile char *)(x) - __offsetof(s, m))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __printflike(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __scanflike(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __format_arg(fmtarg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __strfmonlike(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __strftimelike(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __printf0like(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GLOBL1(sym) __asm__(".globl " #sym)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GLOBL(sym) __GLOBL1(sym)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __IDSTRING(name,string) static const char name[] __unused = string	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __extension__ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __FBSDID(s) __IDSTRING(__CONCAT(__rcsid_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __RCSID(s) __IDSTRING(__CONCAT(__rcsid_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __RCSID_SOURCE(s) __IDSTRING(__CONCAT(__rcsid_source_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __SCCSID(s) __IDSTRING(__CONCAT(__sccsid_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __COPYRIGHT(s) __IDSTRING(__CONCAT(__copyright_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __DECONST(type,var) ((type)(__uintptr_t)(const void *)(var))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __DEVOLATILE(type,var) ((type)(__uintptr_t)(volatile void *)(var))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __DEQUALIFY(type,var) ((type)(__uintptr_t)(const volatile void *)(var))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __POSIX_VISIBLE 200809	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __XSI_VISIBLE 700	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __BSD_VISIBLE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __ISO_C_VISIBLE 2011	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __EXT1_VISIBLE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define _Nonnull 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define _Nullable 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define _Null_unspecified 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __NULLABILITY_PRAGMA_PUSH 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __NULLABILITY_PRAGMA_POP 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __arg_type_tag(arg_kind,arg_idx,type_tag_idx) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __datatype_type_tag(kind,type) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __lock_annotate(x) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __lockable __lock_annotate(lockable)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __locks_exclusive(...) __lock_annotate(exclusive_lock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __locks_shared(...) __lock_annotate(shared_lock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __trylocks_exclusive(...) __lock_annotate(exclusive_trylock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __trylocks_shared(...) __lock_annotate(shared_trylock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __unlocks(...) __lock_annotate(unlock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __asserts_exclusive(...) __lock_annotate(assert_exclusive_lock(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __asserts_shared(...) __lock_annotate(assert_shared_lock(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __requires_exclusive(...) __lock_annotate(exclusive_locks_required(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __requires_shared(...) __lock_annotate(shared_locks_required(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __requires_unlocked(...) __lock_annotate(locks_excluded(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __no_lock_analysis __lock_annotate(no_thread_safety_analysis)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __guarded_by(x) __lock_annotate(guarded_by(x))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __pt_guarded_by(x) __lock_annotate(pt_guarded_by(x))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define _STRING_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\string.h */
+#define _OPT_IDECL 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\string.h */
+#define MPU_WRAPPERS_INCLUDED_FROM_API_FILE 	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define INC_FREERTOS_H 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define _STDDEF 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stddef.h */
+#define __DEFINED_max_align_t 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stddef.h */
+#define offsetof(_type,_ident) ((size_t)__intaddr__(&(((_type *)0)->_ident)))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stddef.h */
+#define _STDINT_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdint.h */
+#define __STDINT40_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_stdint40.h */
+#define _SYS_STDINT_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define _SYS__TYPES_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_types.h */
+#define _MACHINE__TYPES_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_types.h */
+#define __WCHAR_MIN 0	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_types.h */
+#define __WCHAR_MAX 0xffffu	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_types.h */
+#define __INO64 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_types.h */
+#define _MACHINE__STDINT_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT8_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT16_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT32_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT64_C(c) (c ## LL)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT8_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT16_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT32_C(c) (c ## U)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT64_C(c) (c ## ULL)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTMAX_C(c) INT64_C(c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINTMAX_C(c) UINT64_C(c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT8_MIN (-0x7f-1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT16_MIN (-0x7fff-1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT32_MIN (-0x7fffffff-1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT64_MIN (-0x7fffffffffffffffLL-1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT8_MAX 0x7f	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT16_MAX 0x7fff	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT32_MAX 0x7fffffff	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT64_MAX 0x7fffffffffffffffLL	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT8_MAX 0xff	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT16_MAX 0xffff	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT32_MAX 0xffffffffU	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT64_MAX 0xffffffffffffffffULL	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST8_MIN INT8_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST16_MIN INT16_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST32_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST64_MIN INT64_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST8_MAX INT8_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST16_MAX INT16_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST32_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST64_MAX INT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_LEAST8_MAX UINT8_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_LEAST16_MAX UINT16_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_LEAST32_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_LEAST64_MAX UINT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST8_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST16_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST32_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST64_MIN INT64_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST8_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST16_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST32_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST64_MAX INT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_FAST8_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_FAST16_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_FAST32_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_FAST64_MAX UINT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTPTR_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTPTR_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINTPTR_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTMAX_MIN INT64_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTMAX_MAX INT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINTMAX_MAX UINT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define PTRDIFF_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define PTRDIFF_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define SIG_ATOMIC_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define SIG_ATOMIC_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define SIZE_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define WINT_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define WINT_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define _SYS__STDINT_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INT8_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INT16_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INT32_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INT64_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINT8_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINT16_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINT32_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINT64_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INTPTR_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINTPTR_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INTMAX_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINTMAX_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define __WORDSIZE 32	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define WCHAR_MIN __WCHAR_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define WCHAR_MAX __WCHAR_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define RSIZE_MAX (SIZE_MAX >> 1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define FREERTOS_CONFIG_H 	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define CONFIG_CPU_CLOCK_HZ_H_ 	/* src\hal\include\config_cpu_clock_hz.h */
+#define HALCOGEN_CPU_CLOCK_HZ (100000000)	/* src\hal\include\config_cpu_clock_hz.h */
+#define configUSE_PREEMPTION ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configUSE_PORT_OPTIMISED_TASK_SELECTION ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configUSE_FPU ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configUSE_TASK_FPU_SUPPORT ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configUSE_IDLE_HOOK ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configUSE_TICK_HOOK ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configUSE_TRACE_FACILITY ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configUSE_16_BIT_TICKS ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configCPU_CLOCK_HZ ( ( unsigned portLONG ) HALCOGEN_CPU_CLOCK_HZ )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configTICK_RATE_HZ ( ( TickType_t ) 1000 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configMAX_PRIORITIES ( 15 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configMINIMAL_STACK_SIZE ( ( unsigned portSHORT ) 128 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configTOTAL_HEAP_SIZE ( ( size_t ) 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configMAX_TASK_NAME_LEN ( 40 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configIDLE_SHOULD_YIELD ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configUSE_TASK_NOTIFICATIONS ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configTASK_NOTIFICATION_ARRAY_ENTRIES ( 3 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configGENERATE_RUN_TIME_STATS ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configUSE_MALLOC_FAILED_HOOK ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configCHECK_FOR_STACK_OVERFLOW ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configRECORD_STACK_HIGH_ADDRESS ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configAPPLICATION_ALLOCATED_HEAP ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configSUPPORT_STATIC_ALLOCATION ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configSUPPORT_DYNAMIC_ALLOCATION ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configNUM_THREAD_LOCAL_STORAGE_POINTERS ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configUSE_TICKLESS_IDLE ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configUSE_CO_ROUTINES ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configMAX_CO_ROUTINE_PRIORITIES ( 2 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configUSE_MUTEXES ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configUSE_RECURSIVE_MUTEXES ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configUSE_COUNTING_SEMAPHORES ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configUSE_TIMERS ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configTIMER_TASK_PRIORITY ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configTIMER_QUEUE_LENGTH ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configTIMER_TASK_STACK_DEPTH ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define INCLUDE_vTaskPrioritySet ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define INCLUDE_uxTaskPriorityGet ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define INCLUDE_vTaskDelete ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define INCLUDE_vTaskCleanUpResources ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define INCLUDE_vTaskSuspend ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define INCLUDE_xTaskResumeFromISR ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define INCLUDE_vTaskDelayUntil ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define INCLUDE_vTaskDelay ( 0 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define INCLUDE_xTaskGetSchedulerState ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define INCLUDE_uxTaskGetStackHighWaterMark ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define INCLUDE_xTaskGetCurrentTaskHandle ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define INCLUDE_xTaskAbortDelay ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define INCLUDE_eTaskGetState ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define INCLUDE_xTaskGetHandle ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define INCLUDE_xTaskGetIdleTaskHandle ( 1 )	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define configASSERT(x) if( ( x ) == pdFALSE ) { taskDISABLE_INTERRUPTS(); for( ; ; ) {; } }	/* ..\..\src\os\freertos\include\FreeRTOSConfig.h */
+#define PROJDEFS_H 	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdMS_TO_TICKS(xTimeInMs) ( ( TickType_t ) ( ( ( TickType_t ) ( xTimeInMs ) * ( TickType_t ) configTICK_RATE_HZ ) / ( TickType_t ) 1000U ) )	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFALSE ( ( BaseType_t ) 0 )	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdTRUE ( ( BaseType_t ) 1 )	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdPASS ( pdTRUE )	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFAIL ( pdFALSE )	/* ..\..\src\os\freertos\include\projdefs.h */
+#define errQUEUE_EMPTY ( ( BaseType_t ) 0 )	/* ..\..\src\os\freertos\include\projdefs.h */
+#define errQUEUE_FULL ( ( BaseType_t ) 0 )	/* ..\..\src\os\freertos\include\projdefs.h */
+#define errCOULD_NOT_ALLOCATE_REQUIRED_MEMORY ( -1 )	/* ..\..\src\os\freertos\include\projdefs.h */
+#define errQUEUE_BLOCKED ( -4 )	/* ..\..\src\os\freertos\include\projdefs.h */
+#define errQUEUE_YIELD ( -5 )	/* ..\..\src\os\freertos\include\projdefs.h */
+#define configUSE_LIST_DATA_INTEGRITY_CHECK_BYTES 0	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdINTEGRITY_CHECK_VALUE 0x5a5a5a5aUL	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_NONE 0	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_ENOENT 2	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EINTR 4	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EIO 5	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_ENXIO 6	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EBADF 9	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EAGAIN 11	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EWOULDBLOCK 11	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_ENOMEM 12	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EACCES 13	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EFAULT 14	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EBUSY 16	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EEXIST 17	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EXDEV 18	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_ENODEV 19	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_ENOTDIR 20	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EISDIR 21	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EINVAL 22	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_ENOSPC 28	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_ESPIPE 29	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EROFS 30	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EUNATCH 42	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EBADE 50	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EFTYPE 79	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_ENMFILE 89	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_ENOTEMPTY 90	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_ENAMETOOLONG 91	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EOPNOTSUPP 95	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_ENOBUFS 105	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_ENOPROTOOPT 109	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EADDRINUSE 112	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_ETIMEDOUT 116	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EINPROGRESS 119	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EALREADY 120	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EADDRNOTAVAIL 125	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EISCONN 127	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_ENOTCONN 128	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_ENOMEDIUM 135	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_EILSEQ 138	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_ERRNO_ECANCELED 140	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_LITTLE_ENDIAN 0	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdFREERTOS_BIG_ENDIAN 1	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdLITTLE_ENDIAN pdFREERTOS_LITTLE_ENDIAN	/* ..\..\src\os\freertos\include\projdefs.h */
+#define pdBIG_ENDIAN pdFREERTOS_BIG_ENDIAN	/* ..\..\src\os\freertos\include\projdefs.h */
+#define PORTABLE_H 	/* ..\..\src\os\freertos\include\portable.h */
+#define DEPRECATED_DEFINITIONS_H 	/* ..\..\src\os\freertos\include\deprecated_definitions.h */
+#define __PORTMACRO_H__ 	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portCHAR char	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portFLOAT float	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portDOUBLE double	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portLONG long	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portSHORT short	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portSTACK_TYPE uint32_t	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portBASE_TYPE long	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMAX_DELAY ( TickType_t ) 0xFFFFFFFFF	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portTICK_TYPE_IS_ATOMIC 1	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portSTACK_GROWTH ( -1 )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portTICK_PERIOD_MS ( ( TickType_t ) 1000 / configTICK_RATE_HZ )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portBYTE_ALIGNMENT 8	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portENTER_CRITICAL() vPortEnterCritical()	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portEXIT_CRITICAL() vPortExitCritical()	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portDISABLE_INTERRUPTS() vPortDisableInterrupts()	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portENABLE_INTERRUPTS() vPortEnableInterrupts()	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portYIELD() vPortYield()	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portSYS_SSIR1_REG ( *( ( volatile uint32_t * ) 0xFFFFFFB0 ) )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portSYS_SSIR1_SSKEY ( 0x7500UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portYIELD_WITHIN_API() { portSYS_SSIR1_REG = portSYS_SSIR1_SSKEY; __asm( " DSB " ); __asm( " ISB " ); }	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portYIELD_FROM_ISR(x) do { if( x != pdFALSE ) { portSYS_SSIR1_REG = portSYS_SSIR1_SSKEY; ( void ) portSYS_SSIR1_REG; } } while( 0 )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portRECORD_READY_PRIORITY(uxPriority,uxReadyPriorities) ( uxReadyPriorities ) |= ( 1UL << ( uxPriority ) )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portRESET_READY_PRIORITY(uxPriority,uxReadyPriorities) ( uxReadyPriorities ) &= ~( 1UL << ( uxPriority ) )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portGET_HIGHEST_PRIORITY(uxTopPriority,uxReadyPriorities) uxTopPriority = ( 31 - ulPortCountLeadingZeros( ( uxReadyPriorities ) ) )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portTASK_FUNCTION(vFunction,pvParameters) void vFunction( void * pvParameters )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portTASK_FUNCTION_PROTO(vFunction,pvParameters) void vFunction( void * pvParameters )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portUSING_MPU_WRAPPERS 1	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portPRIVILEGE_BIT ( 0x80000000UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_REGION_READ_WRITE ( 0x03UL << 8UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_REGION_PRIVILEGED_READ_ONLY ( 0x05UL << 8UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_REGION_READ_ONLY ( 0x06UL << 8UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_REGION_PRIVILEGED_READ_WRITE ( 0x01UL << 8UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_REGION_STRONGLY_ORDERED ( 0x00UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_REGION_DEVICE ( 0x01UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_REGION_CACHEABLE_BUFFERABLE ( 0x03UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_REGION_EXECUTE_NEVER ( 0x01UL << 12UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_STRONGLYORDERED_SHAREABLE ( 0x0000UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_DEVICE_SHAREABLE ( 0x0001UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_NORMAL_OIWTNOWA_NONSHARED ( 0x0002UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_NORMAL_OIWBNOWA_NONSHARED ( 0x0003UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_NORMAL_OIWTNOWA_SHARED ( 0x0006UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_NORMAL_OIWBNOWA_SHARED ( 0x0007UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_NORMAL_OINC_NONSHARED ( 0x0008UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_NORMAL_OIWBWA_NONSHARED ( 0x000BUL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_NORMAL_OINC_SHARED ( 0x000CUL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_NORMAL_OIWBWA_SHARED ( 0x000FUL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_DEVICE_NONSHAREABLE ( 0x0010UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_PRIV_NA_USER_NA_EXEC ( 0x0000UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_PRIV_RW_USER_NA_EXEC ( 0x0100UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_PRIV_RW_USER_RO_EXEC ( 0x0200UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_PRIV_RW_USER_RW_EXEC ( 0x0300UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_PRIV_RO_USER_NA_EXEC ( 0x0500UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_PRIV_RO_USER_RO_EXEC ( 0x0600UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_PRIV_NA_USER_NA_NOEXEC ( 0x1000UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_PRIV_RW_USER_NA_NOEXEC ( 0x1100UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_PRIV_RW_USER_RO_NOEXEC ( 0x1200UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_PRIV_RW_USER_RW_NOEXEC ( 0x1300UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_PRIV_RO_USER_NA_NOEXEC ( 0x1500UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_PRIV_RO_USER_RO_NOEXEC ( 0x1600UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_REGION_ENABLE ( 0x01UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_TOTAL_REGIONS ( 16UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SUBREGION_0_DISABLE ( 0x1UL << 8UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SUBREGION_1_DISABLE ( 0x1UL << 9UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SUBREGION_2_DISABLE ( 0x1UL << 10UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SUBREGION_3_DISABLE ( 0x1UL << 11UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SUBREGION_4_DISABLE ( 0x1UL << 12UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SUBREGION_5_DISABLE ( 0x1UL << 13UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SUBREGION_6_DISABLE ( 0x1UL << 14UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SUBREGION_7_DISABLE ( 0x1UL << 15UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_32B ( 0x04UL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_64B ( 0x05UL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_128B ( 0x06UL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_256B ( 0x07UL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_512B ( 0x08UL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_1KB ( 0x09UL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_2KB ( 0x0AUL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_4KB ( 0x0BUL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_8KB ( 0x0CUL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_16KB ( 0x0DUL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_32KB ( 0x0EUL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_64KB ( 0x0FUL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_128KB ( 0x10UL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_256KB ( 0x11UL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_512KB ( 0x12UL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_1MB ( 0x13UL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_2MB ( 0x14UL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_4MB ( 0x15UL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_8MB ( 0x16UL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_16MB ( 0x17UL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_32MB ( 0x18UL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_64MB ( 0x19UL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_128MB ( 0x1AUL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_256MB ( 0x1BUL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_512MB ( 0x1CUL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_1GB ( 0x1DUL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_2GB ( 0x1EUL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portMPU_SIZE_4GB ( 0x1FUL << 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portUNPRIVILEGED_FLASH_REGION ( 0UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portPRIVILEGED_FLASH_REGION ( 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portPRIVILEGED_RAM_REGION ( 2UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portGENERAL_PERIPHERALS_REGION ( 3UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portSTACK_REGION ( 12UL - 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portFIRST_CONFIGURABLE_REGION ( 13UL - 1UL )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portLAST_CONFIGURABLE_REGION ( portMPU_TOTAL_REGIONS - 2 )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portPRIVILEGED_SYSTEM_REGION ( portMPU_TOTAL_REGIONS - 1 )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portNUM_CONFIGURABLE_REGIONS ( ( portLAST_CONFIGURABLE_REGION - portFIRST_CONFIGURABLE_REGION ) + 1 )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portTOTAL_NUM_REGIONS ( portNUM_CONFIGURABLE_REGIONS + 1 )	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portSWITCH_TO_USER_MODE() { __asm( " CPS #0x10" ); }	/* ..\..\src\os\freertos\portable\ccs\arm_cortex-r5\portmacro.h */
+#define portBYTE_ALIGNMENT_MASK ( 0x0007 )	/* ..\..\src\os\freertos\include\portable.h */
+#define portHAS_STACK_OVERFLOW_CHECKING 0	/* ..\..\src\os\freertos\include\portable.h */
+#define portARCH_NAME NULL	/* ..\..\src\os\freertos\include\portable.h */
+#define configSTACK_ALLOCATION_FROM_SEPARATE_HEAP 0	/* ..\..\src\os\freertos\include\portable.h */
+#define MPU_WRAPPERS_H 	/* ..\..\src\os\freertos\include\mpu_wrappers.h */
+#define PRIVILEGED_FUNCTION __attribute__( ( section( ".kernelTEXT" ) ) )	/* ..\..\src\os\freertos\include\mpu_wrappers.h */
+#define PRIVILEGED_DATA __attribute__( ( section( ".kernelBSS" ) ) )	/* ..\..\src\os\freertos\include\mpu_wrappers.h */
+#define FREERTOS_SYSTEM_CALL __attribute__( ( section( ".syscallTEXT" ) ) )	/* ..\..\src\os\freertos\include\mpu_wrappers.h */
+#define pvPortMallocStack pvPortMalloc	/* ..\..\src\os\freertos\include\portable.h */
+#define vPortFreeStack vPortFree	/* ..\..\src\os\freertos\include\portable.h */
+#define configUSE_NEWLIB_REENTRANT 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define INCLUDE_xTaskDelayUntil INCLUDE_vTaskDelayUntil	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define INCLUDE_xQueueGetMutexHolder 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define INCLUDE_xSemaphoreGetMutexHolder INCLUDE_xQueueGetMutexHolder	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define INCLUDE_uxTaskGetStackHighWaterMark2 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define INCLUDE_xTimerPendFunctionCall 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configUSE_DAEMON_TASK_STARTUP_HOOK 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configUSE_APPLICATION_TASK_TAG 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configUSE_ALTERNATIVE_API 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portCRITICAL_NESTING_IN_TCB 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configASSERT_DEFINED 1	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configPRECONDITION(X) configASSERT( X )	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configPRECONDITION_DEFINED 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portMEMORY_BARRIER() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portSOFTWARE_BARRIER() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portSET_INTERRUPT_MASK_FROM_ISR() 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portCLEAR_INTERRUPT_MASK_FROM_ISR(uxSavedStatusValue) ( void ) uxSavedStatusValue	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portCLEAN_UP_TCB(pxTCB) ( void ) pxTCB	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portPRE_TASK_DELETE_HOOK(pvTaskToDelete,pxYieldPending) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portSETUP_TCB(pxTCB) ( void ) pxTCB	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configQUEUE_REGISTRY_SIZE 0U	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define vQueueAddToRegistry(xQueue,pcName) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define vQueueUnregisterQueue(xQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define pcQueueGetName(xQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portPOINTER_SIZE_TYPE uint32_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceSTART() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceEND() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_SWITCHED_IN() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceINCREASE_TICK_COUNT(x) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceLOW_POWER_IDLE_BEGIN() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceLOW_POWER_IDLE_END() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_SWITCHED_OUT() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_PRIORITY_INHERIT(pxTCBOfMutexHolder,uxInheritedPriority) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_PRIORITY_DISINHERIT(pxTCBOfMutexHolder,uxOriginalPriority) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceBLOCKING_ON_QUEUE_RECEIVE(pxQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceBLOCKING_ON_QUEUE_PEEK(pxQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceBLOCKING_ON_QUEUE_SEND(pxQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configINCLUDE_FREERTOS_TASK_C_ADDITIONS_H 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceMOVED_TASK_TO_READY_STATE(pxTCB) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define tracePOST_MOVED_TASK_TO_READY_STATE(pxTCB) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_CREATE(pxNewQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_CREATE_FAILED(ucQueueType) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceCREATE_MUTEX(pxNewQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceCREATE_MUTEX_FAILED() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceGIVE_MUTEX_RECURSIVE(pxMutex) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceGIVE_MUTEX_RECURSIVE_FAILED(pxMutex) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTAKE_MUTEX_RECURSIVE(pxMutex) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTAKE_MUTEX_RECURSIVE_FAILED(pxMutex) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceCREATE_COUNTING_SEMAPHORE() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceCREATE_COUNTING_SEMAPHORE_FAILED() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_SET_SEND traceQUEUE_SEND	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_SEND(pxQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_SEND_FAILED(pxQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_RECEIVE(pxQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_PEEK(pxQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_PEEK_FAILED(pxQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_PEEK_FROM_ISR(pxQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_RECEIVE_FAILED(pxQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_SEND_FROM_ISR(pxQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_SEND_FROM_ISR_FAILED(pxQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_RECEIVE_FROM_ISR(pxQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_RECEIVE_FROM_ISR_FAILED(pxQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_PEEK_FROM_ISR_FAILED(pxQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_DELETE(pxQueue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_CREATE(pxNewTCB) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_CREATE_FAILED() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_DELETE(pxTaskToDelete) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_DELAY_UNTIL(x) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_DELAY() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_PRIORITY_SET(pxTask,uxNewPriority) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_SUSPEND(pxTaskToSuspend) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_RESUME(pxTaskToResume) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_RESUME_FROM_ISR(pxTaskToResume) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_INCREMENT_TICK(xTickCount) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTIMER_CREATE(pxNewTimer) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTIMER_CREATE_FAILED() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTIMER_COMMAND_SEND(xTimer,xMessageID,xMessageValueValue,xReturn) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTIMER_EXPIRED(pxTimer) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTIMER_COMMAND_RECEIVED(pxTimer,xMessageID,xMessageValue) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceMALLOC(pvAddress,uiSize) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceFREE(pvAddress,uiSize) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceEVENT_GROUP_CREATE(xEventGroup) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceEVENT_GROUP_CREATE_FAILED() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceEVENT_GROUP_SYNC_BLOCK(xEventGroup,uxBitsToSet,uxBitsToWaitFor) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceEVENT_GROUP_SYNC_END(xEventGroup,uxBitsToSet,uxBitsToWaitFor,xTimeoutOccurred) ( void ) xTimeoutOccurred	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceEVENT_GROUP_WAIT_BITS_BLOCK(xEventGroup,uxBitsToWaitFor) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceEVENT_GROUP_WAIT_BITS_END(xEventGroup,uxBitsToWaitFor,xTimeoutOccurred) ( void ) xTimeoutOccurred	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceEVENT_GROUP_CLEAR_BITS(xEventGroup,uxBitsToClear) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceEVENT_GROUP_CLEAR_BITS_FROM_ISR(xEventGroup,uxBitsToClear) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceEVENT_GROUP_SET_BITS(xEventGroup,uxBitsToSet) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceEVENT_GROUP_SET_BITS_FROM_ISR(xEventGroup,uxBitsToSet) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceEVENT_GROUP_DELETE(xEventGroup) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define tracePEND_FUNC_CALL(xFunctionToPend,pvParameter1,ulParameter2,ret) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define tracePEND_FUNC_CALL_FROM_ISR(xFunctionToPend,pvParameter1,ulParameter2,ret) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceQUEUE_REGISTRY_ADD(xQueue,pcQueueName) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_NOTIFY_TAKE_BLOCK(uxIndexToWait) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_NOTIFY_TAKE(uxIndexToWait) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_NOTIFY_WAIT_BLOCK(uxIndexToWait) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_NOTIFY_WAIT(uxIndexToWait) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_NOTIFY(uxIndexToNotify) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_NOTIFY_FROM_ISR(uxIndexToNotify) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceTASK_NOTIFY_GIVE_FROM_ISR(uxIndexToNotify) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceSTREAM_BUFFER_CREATE_FAILED(xIsMessageBuffer) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceSTREAM_BUFFER_CREATE_STATIC_FAILED(xReturn,xIsMessageBuffer) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceSTREAM_BUFFER_CREATE(pxStreamBuffer,xIsMessageBuffer) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceSTREAM_BUFFER_DELETE(xStreamBuffer) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceSTREAM_BUFFER_RESET(xStreamBuffer) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceBLOCKING_ON_STREAM_BUFFER_SEND(xStreamBuffer) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceSTREAM_BUFFER_SEND(xStreamBuffer,xBytesSent) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceSTREAM_BUFFER_SEND_FAILED(xStreamBuffer) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceSTREAM_BUFFER_SEND_FROM_ISR(xStreamBuffer,xBytesSent) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceBLOCKING_ON_STREAM_BUFFER_RECEIVE(xStreamBuffer) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceSTREAM_BUFFER_RECEIVE(xStreamBuffer,xReceivedLength) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceSTREAM_BUFFER_RECEIVE_FAILED(xStreamBuffer) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define traceSTREAM_BUFFER_RECEIVE_FROM_ISR(xStreamBuffer,xReceivedLength) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portCONFIGURE_TIMER_FOR_RUN_TIME_STATS() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portSUPPRESS_TICKS_AND_SLEEP(xExpectedIdleTime) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configEXPECTED_IDLE_TIME_BEFORE_SLEEP 2	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configPRE_SUPPRESS_TICKS_AND_SLEEP_PROCESSING(x) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configPRE_SLEEP_PROCESSING(x) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configPOST_SLEEP_PROCESSING(x) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configUSE_QUEUE_SETS 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portTASK_USES_FLOATING_POINT() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portALLOCATE_SECURE_CONTEXT(ulSecureStackSize) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portDONT_DISCARD 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configUSE_TIME_SLICING 1	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configINCLUDE_APPLICATION_DEFINED_PRIVILEGED_FUNCTIONS 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configUSE_STATS_FORMATTING_FUNCTIONS 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portASSERT_IF_INTERRUPT_PRIORITY_INVALID() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define mtCOVERAGE_TEST_MARKER() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define mtCOVERAGE_TEST_DELAY() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portASSERT_IF_IN_ISR() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configUSE_POSIX_ERRNO 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configSTACK_DEPTH_TYPE uint16_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configRUN_TIME_COUNTER_TYPE uint32_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configMESSAGE_BUFFER_LENGTH_TYPE size_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configINITIAL_TICK_COUNT 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portTICK_TYPE_ENTER_CRITICAL() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portTICK_TYPE_EXIT_CRITICAL() 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portTICK_TYPE_SET_INTERRUPT_MASK_FROM_ISR() 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portTICK_TYPE_CLEAR_INTERRUPT_MASK_FROM_ISR(x) ( void ) x	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configENABLE_BACKWARD_COMPATIBILITY 1	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configPRINTF(X) 	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configMAX(a,b) ( ( ( a ) > ( b ) ) ? ( a ) : ( b ) )	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configMIN(a,b) ( ( ( a ) < ( b ) ) ? ( a ) : ( b ) )	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define eTaskStateGet eTaskGetState	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portTickType TickType_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define xTaskHandle TaskHandle_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define xQueueHandle QueueHandle_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define xSemaphoreHandle SemaphoreHandle_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define xQueueSetHandle QueueSetHandle_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define xQueueSetMemberHandle QueueSetMemberHandle_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define xTimeOutType TimeOut_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define xMemoryRegion MemoryRegion_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define xTaskParameters TaskParameters_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define xTaskStatusType TaskStatus_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define xTimerHandle TimerHandle_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define xCoRoutineHandle CoRoutineHandle_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define pdTASK_HOOK_CODE TaskHookFunction_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define portTICK_RATE_MS portTICK_PERIOD_MS	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define pcTaskGetTaskName pcTaskGetName	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define pcTimerGetTimerName pcTimerGetName	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define pcQueueGetQueueName pcQueueGetName	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define vTaskGetTaskInfo vTaskGetInfo	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define xTaskGetIdleRunTimeCounter ulTaskGetIdleRunTimeCounter	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define tmrTIMER_CALLBACK TimerCallbackFunction_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define pdTASK_CODE TaskFunction_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define xListItem ListItem_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define xList List_t	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define pxContainer pvContainer	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configENABLE_MPU 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configENABLE_FPU 1	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configENABLE_TRUSTZONE 1	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configRUN_FREERTOS_SECURE_ONLY 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define configRUN_ADDITIONAL_TESTS 0	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define tskSTATIC_AND_DYNAMIC_ALLOCATION_POSSIBLE ( ( ( portUSING_MPU_WRAPPERS == 0 ) && ( configSUPPORT_DYNAMIC_ALLOCATION == 1 ) && ( configSUPPORT_STATIC_ALLOCATION == 1 ) ) || ( ( portUSING_MPU_WRAPPERS == 1 ) && ( configSUPPORT_DYNAMIC_ALLOCATION == 1 ) ) )	/* ..\..\src\os\freertos\include\FreeRTOS.h */
+#define INC_TASK_H 	/* ..\..\src\os\freertos\include\task.h */
+#define LIST_H 	/* ..\..\src\os\freertos\include\list.h */
+#define configLIST_VOLATILE 	/* ..\..\src\os\freertos\include\list.h */
+#define listFIRST_LIST_ITEM_INTEGRITY_CHECK_VALUE 	/* ..\..\src\os\freertos\include\list.h */
+#define listSECOND_LIST_ITEM_INTEGRITY_CHECK_VALUE 	/* ..\..\src\os\freertos\include\list.h */
+#define listFIRST_LIST_INTEGRITY_CHECK_VALUE 	/* ..\..\src\os\freertos\include\list.h */
+#define listSECOND_LIST_INTEGRITY_CHECK_VALUE 	/* ..\..\src\os\freertos\include\list.h */
+#define listSET_FIRST_LIST_ITEM_INTEGRITY_CHECK_VALUE(pxItem) 	/* ..\..\src\os\freertos\include\list.h */
+#define listSET_SECOND_LIST_ITEM_INTEGRITY_CHECK_VALUE(pxItem) 	/* ..\..\src\os\freertos\include\list.h */
+#define listSET_LIST_INTEGRITY_CHECK_1_VALUE(pxList) 	/* ..\..\src\os\freertos\include\list.h */
+#define listSET_LIST_INTEGRITY_CHECK_2_VALUE(pxList) 	/* ..\..\src\os\freertos\include\list.h */
+#define listTEST_LIST_ITEM_INTEGRITY(pxItem) 	/* ..\..\src\os\freertos\include\list.h */
+#define listTEST_LIST_INTEGRITY(pxList) 	/* ..\..\src\os\freertos\include\list.h */
+#define listSET_LIST_ITEM_OWNER(pxListItem,pxOwner) ( ( pxListItem )->pvOwner = ( void * ) ( pxOwner ) )	/* ..\..\src\os\freertos\include\list.h */
+#define listGET_LIST_ITEM_OWNER(pxListItem) ( ( pxListItem )->pvOwner )	/* ..\..\src\os\freertos\include\list.h */
+#define listSET_LIST_ITEM_VALUE(pxListItem,xValue) ( ( pxListItem )->xItemValue = ( xValue ) )	/* ..\..\src\os\freertos\include\list.h */
+#define listGET_LIST_ITEM_VALUE(pxListItem) ( ( pxListItem )->xItemValue )	/* ..\..\src\os\freertos\include\list.h */
+#define listGET_ITEM_VALUE_OF_HEAD_ENTRY(pxList) ( ( ( pxList )->xListEnd ).pxNext->xItemValue )	/* ..\..\src\os\freertos\include\list.h */
+#define listGET_HEAD_ENTRY(pxList) ( ( ( pxList )->xListEnd ).pxNext )	/* ..\..\src\os\freertos\include\list.h */
+#define listGET_NEXT(pxListItem) ( ( pxListItem )->pxNext )	/* ..\..\src\os\freertos\include\list.h */
+#define listGET_END_MARKER(pxList) ( ( ListItem_t const * ) ( &( ( pxList )->xListEnd ) ) )	/* ..\..\src\os\freertos\include\list.h */
+#define listLIST_IS_EMPTY(pxList) ( ( ( pxList )->uxNumberOfItems == ( UBaseType_t ) 0 ) ? pdTRUE : pdFALSE )	/* ..\..\src\os\freertos\include\list.h */
+#define listCURRENT_LIST_LENGTH(pxList) ( ( pxList )->uxNumberOfItems )	/* ..\..\src\os\freertos\include\list.h */
+#define listGET_OWNER_OF_NEXT_ENTRY(pxTCB,pxList) { List_t * const pxConstList = ( pxList ); ( pxConstList )->pxIndex = ( pxConstList )->pxIndex->pxNext; if( ( void * ) ( pxConstList )->pxIndex == ( void * ) &( ( pxConstList )->xListEnd ) ) { ( pxConstList )->pxIndex = ( pxConstList )->pxIndex->pxNext; } ( pxTCB ) = ( pxConstList )->pxIndex->pvOwner; }	/* ..\..\src\os\freertos\include\list.h */
+#define listREMOVE_ITEM(pxItemToRemove) { List_t * const pxList = ( pxItemToRemove )->pxContainer; ( pxItemToRemove )->pxNext->pxPrevious = ( pxItemToRemove )->pxPrevious; ( pxItemToRemove )->pxPrevious->pxNext = ( pxItemToRemove )->pxNext; if( pxList->pxIndex == ( pxItemToRemove ) ) { pxList->pxIndex = ( pxItemToRemove )->pxPrevious; } ( pxItemToRemove )->pxContainer = NULL; ( pxList->uxNumberOfItems )--; }	/* ..\..\src\os\freertos\include\list.h */
+#define listINSERT_END(pxList,pxNewListItem) { ListItem_t * const pxIndex = ( pxList )->pxIndex; listTEST_LIST_INTEGRITY( ( pxList ) ); listTEST_LIST_ITEM_INTEGRITY( ( pxNewListItem ) ); ( pxNewListItem )->pxNext = pxIndex; ( pxNewListItem )->pxPrevious = pxIndex->pxPrevious; pxIndex->pxPrevious->pxNext = ( pxNewListItem ); pxIndex->pxPrevious = ( pxNewListItem ); ( pxNewListItem )->pxContainer = ( pxList ); ( ( pxList )->uxNumberOfItems )++; }	/* ..\..\src\os\freertos\include\list.h */
+#define listGET_OWNER_OF_HEAD_ENTRY(pxList) ( ( &( ( pxList )->xListEnd ) )->pxNext->pvOwner )	/* ..\..\src\os\freertos\include\list.h */
+#define listIS_CONTAINED_WITHIN(pxList,pxListItem) ( ( ( pxListItem )->pxContainer == ( pxList ) ) ? ( pdTRUE ) : ( pdFALSE ) )	/* ..\..\src\os\freertos\include\list.h */
+#define listLIST_ITEM_CONTAINER(pxListItem) ( ( pxListItem )->pxContainer )	/* ..\..\src\os\freertos\include\list.h */
+#define listLIST_IS_INITIALISED(pxList) ( ( pxList )->xListEnd.xItemValue == portMAX_DELAY )	/* ..\..\src\os\freertos\include\list.h */
+#define tskKERNEL_VERSION_NUMBER "V10.4.5"	/* ..\..\src\os\freertos\include\task.h */
+#define tskKERNEL_VERSION_MAJOR 10	/* ..\..\src\os\freertos\include\task.h */
+#define tskKERNEL_VERSION_MINOR 4	/* ..\..\src\os\freertos\include\task.h */
+#define tskKERNEL_VERSION_BUILD 5	/* ..\..\src\os\freertos\include\task.h */
+#define tskMPU_REGION_READ_ONLY ( 1UL << 0UL )	/* ..\..\src\os\freertos\include\task.h */
+#define tskMPU_REGION_READ_WRITE ( 1UL << 1UL )	/* ..\..\src\os\freertos\include\task.h */
+#define tskMPU_REGION_EXECUTE_NEVER ( 1UL << 2UL )	/* ..\..\src\os\freertos\include\task.h */
+#define tskMPU_REGION_NORMAL_MEMORY ( 1UL << 3UL )	/* ..\..\src\os\freertos\include\task.h */
+#define tskMPU_REGION_DEVICE_MEMORY ( 1UL << 4UL )	/* ..\..\src\os\freertos\include\task.h */
+#define tskDEFAULT_INDEX_TO_NOTIFY ( 0 )	/* ..\..\src\os\freertos\include\task.h */
+#define tskIDLE_PRIORITY ( ( UBaseType_t ) 0U )	/* ..\..\src\os\freertos\include\task.h */
+#define taskYIELD() portYIELD()	/* ..\..\src\os\freertos\include\task.h */
+#define taskENTER_CRITICAL() portENTER_CRITICAL()	/* ..\..\src\os\freertos\include\task.h */
+#define taskENTER_CRITICAL_FROM_ISR() portSET_INTERRUPT_MASK_FROM_ISR()	/* ..\..\src\os\freertos\include\task.h */
+#define taskEXIT_CRITICAL() portEXIT_CRITICAL()	/* ..\..\src\os\freertos\include\task.h */
+#define taskEXIT_CRITICAL_FROM_ISR(x) portCLEAR_INTERRUPT_MASK_FROM_ISR( x )	/* ..\..\src\os\freertos\include\task.h */
+#define taskDISABLE_INTERRUPTS() portDISABLE_INTERRUPTS()	/* ..\..\src\os\freertos\include\task.h */
+#define taskENABLE_INTERRUPTS() portENABLE_INTERRUPTS()	/* ..\..\src\os\freertos\include\task.h */
+#define taskSCHEDULER_SUSPENDED ( ( BaseType_t ) 0 )	/* ..\..\src\os\freertos\include\task.h */
+#define taskSCHEDULER_NOT_STARTED ( ( BaseType_t ) 1 )	/* ..\..\src\os\freertos\include\task.h */
+#define taskSCHEDULER_RUNNING ( ( BaseType_t ) 2 )	/* ..\..\src\os\freertos\include\task.h */
+#define vTaskDelayUntil(pxPreviousWakeTime,xTimeIncrement) { ( void ) xTaskDelayUntil( pxPreviousWakeTime, xTimeIncrement ); }	/* ..\..\src\os\freertos\include\task.h */
+#define xTaskNotify(xTaskToNotify,ulValue,eAction) xTaskGenericNotify( ( xTaskToNotify ), ( tskDEFAULT_INDEX_TO_NOTIFY ), ( ulValue ), ( eAction ), NULL )	/* ..\..\src\os\freertos\include\task.h */
+#define xTaskNotifyIndexed(xTaskToNotify,uxIndexToNotify,ulValue,eAction) xTaskGenericNotify( ( xTaskToNotify ), ( uxIndexToNotify ), ( ulValue ), ( eAction ), NULL )	/* ..\..\src\os\freertos\include\task.h */
+#define xTaskNotifyAndQuery(xTaskToNotify,ulValue,eAction,pulPreviousNotifyValue) xTaskGenericNotify( ( xTaskToNotify ), ( tskDEFAULT_INDEX_TO_NOTIFY ), ( ulValue ), ( eAction ), ( pulPreviousNotifyValue ) )	/* ..\..\src\os\freertos\include\task.h */
+#define xTaskNotifyAndQueryIndexed(xTaskToNotify,uxIndexToNotify,ulValue,eAction,pulPreviousNotifyValue) xTaskGenericNotify( ( xTaskToNotify ), ( uxIndexToNotify ), ( ulValue ), ( eAction ), ( pulPreviousNotifyValue ) )	/* ..\..\src\os\freertos\include\task.h */
+#define xTaskNotifyFromISR(xTaskToNotify,ulValue,eAction,pxHigherPriorityTaskWoken) xTaskGenericNotifyFromISR( ( xTaskToNotify ), ( tskDEFAULT_INDEX_TO_NOTIFY ), ( ulValue ), ( eAction ), NULL, ( pxHigherPriorityTaskWoken ) )	/* ..\..\src\os\freertos\include\task.h */
+#define xTaskNotifyIndexedFromISR(xTaskToNotify,uxIndexToNotify,ulValue,eAction,pxHigherPriorityTaskWoken) xTaskGenericNotifyFromISR( ( xTaskToNotify ), ( uxIndexToNotify ), ( ulValue ), ( eAction ), NULL, ( pxHigherPriorityTaskWoken ) )	/* ..\..\src\os\freertos\include\task.h */
+#define xTaskNotifyAndQueryIndexedFromISR(xTaskToNotify,uxIndexToNotify,ulValue,eAction,pulPreviousNotificationValue,pxHigherPriorityTaskWoken) xTaskGenericNotifyFromISR( ( xTaskToNotify ), ( uxIndexToNotify ), ( ulValue ), ( eAction ), ( pulPreviousNotificationValue ), ( pxHigherPriorityTaskWoken ) )	/* ..\..\src\os\freertos\include\task.h */
+#define xTaskNotifyAndQueryFromISR(xTaskToNotify,ulValue,eAction,pulPreviousNotificationValue,pxHigherPriorityTaskWoken) xTaskGenericNotifyFromISR( ( xTaskToNotify ), ( tskDEFAULT_INDEX_TO_NOTIFY ), ( ulValue ), ( eAction ), ( pulPreviousNotificationValue ), ( pxHigherPriorityTaskWoken ) )	/* ..\..\src\os\freertos\include\task.h */
+#define xTaskNotifyWait(ulBitsToClearOnEntry,ulBitsToClearOnExit,pulNotificationValue,xTicksToWait) xTaskGenericNotifyWait( tskDEFAULT_INDEX_TO_NOTIFY, ( ulBitsToClearOnEntry ), ( ulBitsToClearOnExit ), ( pulNotificationValue ), ( xTicksToWait ) )	/* ..\..\src\os\freertos\include\task.h */
+#define xTaskNotifyWaitIndexed(uxIndexToWaitOn,ulBitsToClearOnEntry,ulBitsToClearOnExit,pulNotificationValue,xTicksToWait) xTaskGenericNotifyWait( ( uxIndexToWaitOn ), ( ulBitsToClearOnEntry ), ( ulBitsToClearOnExit ), ( pulNotificationValue ), ( xTicksToWait ) )	/* ..\..\src\os\freertos\include\task.h */
+#define xTaskNotifyGive(xTaskToNotify) xTaskGenericNotify( ( xTaskToNotify ), ( tskDEFAULT_INDEX_TO_NOTIFY ), ( 0 ), eIncrement, NULL )	/* ..\..\src\os\freertos\include\task.h */
+#define xTaskNotifyGiveIndexed(xTaskToNotify,uxIndexToNotify) xTaskGenericNotify( ( xTaskToNotify ), ( uxIndexToNotify ), ( 0 ), eIncrement, NULL )	/* ..\..\src\os\freertos\include\task.h */
+#define vTaskNotifyGiveFromISR(xTaskToNotify,pxHigherPriorityTaskWoken) vTaskGenericNotifyGiveFromISR( ( xTaskToNotify ), ( tskDEFAULT_INDEX_TO_NOTIFY ), ( pxHigherPriorityTaskWoken ) );	/* ..\..\src\os\freertos\include\task.h */
+#define vTaskNotifyGiveIndexedFromISR(xTaskToNotify,uxIndexToNotify,pxHigherPriorityTaskWoken) vTaskGenericNotifyGiveFromISR( ( xTaskToNotify ), ( uxIndexToNotify ), ( pxHigherPriorityTaskWoken ) );	/* ..\..\src\os\freertos\include\task.h */
+#define ulTaskNotifyTake(xClearCountOnExit,xTicksToWait) ulTaskGenericNotifyTake( ( tskDEFAULT_INDEX_TO_NOTIFY ), ( xClearCountOnExit ), ( xTicksToWait ) )	/* ..\..\src\os\freertos\include\task.h */
+#define ulTaskNotifyTakeIndexed(uxIndexToWaitOn,xClearCountOnExit,xTicksToWait) ulTaskGenericNotifyTake( ( uxIndexToWaitOn ), ( xClearCountOnExit ), ( xTicksToWait ) )	/* ..\..\src\os\freertos\include\task.h */
+#define xTaskNotifyStateClear(xTask) xTaskGenericNotifyStateClear( ( xTask ), ( tskDEFAULT_INDEX_TO_NOTIFY ) )	/* ..\..\src\os\freertos\include\task.h */
+#define xTaskNotifyStateClearIndexed(xTask,uxIndexToClear) xTaskGenericNotifyStateClear( ( xTask ), ( uxIndexToClear ) )	/* ..\..\src\os\freertos\include\task.h */
+#define ulTaskNotifyValueClear(xTask,ulBitsToClear) ulTaskGenericNotifyValueClear( ( xTask ), ( tskDEFAULT_INDEX_TO_NOTIFY ), ( ulBitsToClear ) )	/* ..\..\src\os\freertos\include\task.h */
+#define ulTaskNotifyValueClearIndexed(xTask,uxIndexToClear,ulBitsToClear) ulTaskGenericNotifyValueClear( ( xTask ), ( uxIndexToClear ), ( ulBitsToClear ) )	/* ..\..\src\os\freertos\include\task.h */
+#define TIMERS_H 	/* ..\..\src\os\freertos\include\timers.h */
+#define tmrCOMMAND_EXECUTE_CALLBACK_FROM_ISR ( ( BaseType_t ) -2 )	/* ..\..\src\os\freertos\include\timers.h */
+#define tmrCOMMAND_EXECUTE_CALLBACK ( ( BaseType_t ) -1 )	/* ..\..\src\os\freertos\include\timers.h */
+#define tmrCOMMAND_START_DONT_TRACE ( ( BaseType_t ) 0 )	/* ..\..\src\os\freertos\include\timers.h */
+#define tmrCOMMAND_START ( ( BaseType_t ) 1 )	/* ..\..\src\os\freertos\include\timers.h */
+#define tmrCOMMAND_RESET ( ( BaseType_t ) 2 )	/* ..\..\src\os\freertos\include\timers.h */
+#define tmrCOMMAND_STOP ( ( BaseType_t ) 3 )	/* ..\..\src\os\freertos\include\timers.h */
+#define tmrCOMMAND_CHANGE_PERIOD ( ( BaseType_t ) 4 )	/* ..\..\src\os\freertos\include\timers.h */
+#define tmrCOMMAND_DELETE ( ( BaseType_t ) 5 )	/* ..\..\src\os\freertos\include\timers.h */
+#define tmrFIRST_FROM_ISR_COMMAND ( ( BaseType_t ) 6 )	/* ..\..\src\os\freertos\include\timers.h */
+#define tmrCOMMAND_START_FROM_ISR ( ( BaseType_t ) 6 )	/* ..\..\src\os\freertos\include\timers.h */
+#define tmrCOMMAND_RESET_FROM_ISR ( ( BaseType_t ) 7 )	/* ..\..\src\os\freertos\include\timers.h */
+#define tmrCOMMAND_STOP_FROM_ISR ( ( BaseType_t ) 8 )	/* ..\..\src\os\freertos\include\timers.h */
+#define tmrCOMMAND_CHANGE_PERIOD_FROM_ISR ( ( BaseType_t ) 9 )	/* ..\..\src\os\freertos\include\timers.h */
+#define xTimerStart(xTimer,xTicksToWait) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_START, ( xTaskGetTickCount() ), NULL, ( xTicksToWait ) )	/* ..\..\src\os\freertos\include\timers.h */
+#define xTimerStop(xTimer,xTicksToWait) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_STOP, 0U, NULL, ( xTicksToWait ) )	/* ..\..\src\os\freertos\include\timers.h */
+#define xTimerChangePeriod(xTimer,xNewPeriod,xTicksToWait) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_CHANGE_PERIOD, ( xNewPeriod ), NULL, ( xTicksToWait ) )	/* ..\..\src\os\freertos\include\timers.h */
+#define xTimerDelete(xTimer,xTicksToWait) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_DELETE, 0U, NULL, ( xTicksToWait ) )	/* ..\..\src\os\freertos\include\timers.h */
+#define xTimerReset(xTimer,xTicksToWait) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_RESET, ( xTaskGetTickCount() ), NULL, ( xTicksToWait ) )	/* ..\..\src\os\freertos\include\timers.h */
+#define xTimerStartFromISR(xTimer,pxHigherPriorityTaskWoken) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_START_FROM_ISR, ( xTaskGetTickCountFromISR() ), ( pxHigherPriorityTaskWoken ), 0U )	/* ..\..\src\os\freertos\include\timers.h */
+#define xTimerStopFromISR(xTimer,pxHigherPriorityTaskWoken) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_STOP_FROM_ISR, 0, ( pxHigherPriorityTaskWoken ), 0U )	/* ..\..\src\os\freertos\include\timers.h */
+#define xTimerChangePeriodFromISR(xTimer,xNewPeriod,pxHigherPriorityTaskWoken) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_CHANGE_PERIOD_FROM_ISR, ( xNewPeriod ), ( pxHigherPriorityTaskWoken ), 0U )	/* ..\..\src\os\freertos\include\timers.h */
+#define xTimerResetFromISR(xTimer,pxHigherPriorityTaskWoken) xTimerGenericCommand( ( xTimer ), tmrCOMMAND_RESET_FROM_ISR, ( xTaskGetTickCountFromISR() ), ( pxHigherPriorityTaskWoken ), 0U )	/* ..\..\src\os\freertos\include\timers.h */
+#define STACK_MACROS_H 	/* ..\..\src\os\freertos\include\stack_macros.h */
+#define portSTACK_LIMIT_PADDING 0	/* ..\..\src\os\freertos\include\stack_macros.h */
+#define taskCHECK_FOR_STACK_OVERFLOW() 	/* ..\..\src\os\freertos\include\stack_macros.h */
+#undef MPU_WRAPPERS_INCLUDED_FROM_API_FILE	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define taskYIELD_IF_USING_PREEMPTION() portYIELD_WITHIN_API()	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define taskNOT_WAITING_NOTIFICATION ( ( uint8_t ) 0 )	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define taskWAITING_NOTIFICATION ( ( uint8_t ) 1 )	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define taskNOTIFICATION_RECEIVED ( ( uint8_t ) 2 )	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define tskSTACK_FILL_BYTE ( 0xa5U )	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define tskDYNAMICALLY_ALLOCATED_STACK_AND_TCB ( ( uint8_t ) 0 )	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define tskSTATICALLY_ALLOCATED_STACK_ONLY ( ( uint8_t ) 1 )	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define tskSTATICALLY_ALLOCATED_STACK_AND_TCB ( ( uint8_t ) 2 )	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define tskSET_NEW_STACKS_TO_KNOWN_VALUE 1	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define tskRUNNING_CHAR ( 'X' )	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define tskBLOCKED_CHAR ( 'B' )	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define tskREADY_CHAR ( 'R' )	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define tskDELETED_CHAR ( 'D' )	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define tskSUSPENDED_CHAR ( 'S' )	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define configIDLE_TASK_NAME "IDLE"	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define taskRECORD_READY_PRIORITY(uxPriority) portRECORD_READY_PRIORITY( uxPriority, uxTopReadyPriority )	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define taskSELECT_HIGHEST_PRIORITY_TASK() { UBaseType_t uxTopPriority; portGET_HIGHEST_PRIORITY( uxTopPriority, uxTopReadyPriority ); configASSERT( listCURRENT_LIST_LENGTH( &( pxReadyTasksLists[ uxTopPriority ] ) ) > 0 ); listGET_OWNER_OF_NEXT_ENTRY( pxCurrentTCB, &( pxReadyTasksLists[ uxTopPriority ] ) ); }	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define taskRESET_READY_PRIORITY(uxPriority) { if( listCURRENT_LIST_LENGTH( &( pxReadyTasksLists[ ( uxPriority ) ] ) ) == ( UBaseType_t ) 0 ) { portRESET_READY_PRIORITY( ( uxPriority ), ( uxTopReadyPriority ) ); } }	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define taskSWITCH_DELAYED_LISTS() { List_t * pxTemp; configASSERT( ( listLIST_IS_EMPTY( pxDelayedTaskList ) ) ); pxTemp = pxDelayedTaskList; pxDelayedTaskList = pxOverflowDelayedTaskList; pxOverflowDelayedTaskList = pxTemp; xNumOfOverflows++; prvResetNextTaskUnblockTime(); }	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define prvAddTaskToReadyList(pxTCB) traceMOVED_TASK_TO_READY_STATE( pxTCB ); taskRECORD_READY_PRIORITY( ( pxTCB )->uxPriority ); listINSERT_END( &( pxReadyTasksLists[ ( pxTCB )->uxPriority ] ), &( ( pxTCB )->xStateListItem ) ); tracePOST_MOVED_TASK_TO_READY_STATE( pxTCB )	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define prvGetTCBFromHandle(pxHandle) ( ( ( pxHandle ) == NULL ) ? pxCurrentTCB : ( pxHandle ) )	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */
+#define taskEVENT_LIST_ITEM_VALUE_IN_USE 0x80000000UL	/* C:\Users\Smit\Documents\foxbms-2\src\os\freertos\tasks.c */

@@ -1,0 +1,507 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{C83B1C6F-F512-4362-8299-CF1724979E4B}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Mon Dec 11 10:43:34 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvTaskIsTaskSuspended                          |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskResumeFromISR                              |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   prvTaskIsTaskSuspended
+   uxListRemove
+   vListInsertEnd
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvResetNextTaskUnblockTime                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskIncrementTick                              |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   prvResetNextTaskUnblockTime
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskResumeAll                                  |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   vPortEnterCritical
+   prvResetNextTaskUnblockTime
+   xTaskIncrementTick
+   vPortExitCritical
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskRemoveFromEventList                        |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   prvResetNextTaskUnblockTime
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskGetTickCountFromISR                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskGetTickCount                               |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskGetSchedulerState                          |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskGetIdleTaskHandle                          |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskSuspendAll                                 |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvSearchForNameWithinSingleList                |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskGetHandle                                  |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   strlen
+   vTaskSuspendAll
+   prvSearchForNameWithinSingleList
+   xTaskResumeAll
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskGetCurrentTaskHandle                       |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvAddCurrentTaskToDelayedList                  |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   uxListRemove
+   vListInsert
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskGenericNotifyWait                          |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   vPortEnterCritical
+   prvAddCurrentTaskToDelayedList
+   vPortExitCritical
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskGenericNotifyStateClear                    |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   vPortEnterCritical
+   vPortExitCritical
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskGenericNotifyFromISR                       |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskGenericNotify                              |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   vPortEnterCritical
+   vPortDisableInterrupts
+   prvResetNextTaskUnblockTime
+   vPortExitCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskDelayUntil                                 |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vTaskSuspendAll
+   prvAddCurrentTaskToDelayedList
+   xTaskResumeAll
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvInitialiseNewTask                            |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   memset
+   vListInitialiseItem
+   vPortStoreTaskMPUSettings
+   pxPortInitialiseStack
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvAddNewTaskToReadyList                        |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   vPortEnterCritical
+   vListInitialise
+   vPortExitCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskCreateStatic                               |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   prvInitialiseNewTask
+   prvAddNewTaskToReadyList
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskCreateRestrictedStatic                     |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   prvInitialiseNewTask
+   prvAddNewTaskToReadyList
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskInternalSetTimeOutState                    |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskCheckForTimeOut                            |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   vPortEnterCritical
+   vPortExitCritical
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskCatchUpTicks                               |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vTaskSuspendAll
+   xTaskResumeAll
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  eTaskGetState                                   |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   vPortEnterCritical
+   vPortExitCritical
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xTaskAbortDelay                                 |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   eTaskGetState
+   uxListRemove
+   vPortEnterCritical
+   vPortExitCritical
+   xTaskResumeAll
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskSwitchContext                              |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   ulPortCountLeadingZeros
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskSuspend                                    |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   vPortEnterCritical
+   uxListRemove
+   vListInsertEnd
+   vPortExitCritical
+   prvResetNextTaskUnblockTime
+   vTaskSwitchContext
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskStepTick                                   |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskStartScheduler                             |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   vApplicationGetIdleTaskMemory
+   xTaskCreateStatic
+   vPortDisableInterrupts
+   xPortStartScheduler
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskSetTimeOutState                            |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortEnterCritical
+   vPortExitCritical
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskSetThreadLocalStoragePointer               |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskResume                                     |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   vPortEnterCritical
+   prvTaskIsTaskSuspended
+   uxListRemove
+   vPortExitCritical
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskRemoveFromUnorderedEventList               |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   prvResetNextTaskUnblockTime
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskPrioritySet                                |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   vPortEnterCritical
+   uxListRemove
+   vPortExitCritical
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskPlaceOnUnorderedEventList                  |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   prvAddCurrentTaskToDelayedList
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskPlaceOnEventList                           |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vListInsert
+   prvAddCurrentTaskToDelayedList
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskMissedYield                                |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskGenericNotifyGiveFromISR                   |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskEndScheduler                               |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortDisableInterrupts
+   vPortEndScheduler
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvDeleteTCB                                    |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskDelete                                     |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   vPortEnterCritical
+   uxListRemove
+   prvResetNextTaskUnblockTime
+   vListInsertEnd
+   vPortExitCritical
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vTaskAllocateMPURegions                         |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
+Called functions:
+   vPortStoreTaskMPUSettings
+
++-------------------------------------------------------------+
+|  FUNCTION:  uxTaskResetEventItemValue                       |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  uxTaskPriorityGetFromISR                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  uxTaskPriorityGet                               |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortEnterCritical
+   vPortExitCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  uxTaskGetStackHighWaterMark                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  uxTaskGetNumberOfTasks                          |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  ulTaskGenericNotifyValueClear                   |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   vPortEnterCritical
+   vPortExitCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  ulTaskGenericNotifyTake                         |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   vPortEnterCritical
+   prvAddCurrentTaskToDelayedList
+   vPortExitCritical
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  pvTaskGetThreadLocalStoragePointer              |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvGetExpectedIdleTime                          |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvIdleTask                                     |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   prvGetExpectedIdleTime
+   xTaskResumeAll
+   vPortYield
+   vApplicationIdleHook
+   vPortDisableInterrupts
+   vPortEnterCritical
+   uxListRemove
+   vPortExitCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  pcTaskGetName                                   |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  eTaskConfirmSleepModeStatus                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+

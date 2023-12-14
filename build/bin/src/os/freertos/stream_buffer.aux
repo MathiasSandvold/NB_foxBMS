@@ -1,0 +1,216 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{808038BD-17E7-4D9D-A9BB-B35FAA27E2DE}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Mon Dec 11 10:43:33 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  xStreamBufferSpacesAvailable                    |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xStreamBufferSetTriggerLevel                    |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvWriteBytesToBuffer                           |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   vPortDisableInterrupts
+   memcpy
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvWriteMessageToBuffer                         |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   prvWriteBytesToBuffer
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvBytesInBuffer                                |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  xStreamBufferSendFromISR                        |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   xStreamBufferSpacesAvailable
+   prvWriteMessageToBuffer
+   prvBytesInBuffer
+   xTaskGenericNotifyFromISR
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xStreamBufferSendCompletedFromISR               |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   xTaskGenericNotifyFromISR
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xStreamBufferSend                               |
++-------------------------------------------------------------+
+Stack usage:   48 bytes
+
+Called functions:
+   vTaskSetTimeOutState
+   vPortEnterCritical
+   xStreamBufferSpacesAvailable
+   xTaskGenericNotifyStateClear
+   xTaskGetCurrentTaskHandle
+   vPortExitCritical
+   xTaskGenericNotifyWait
+   xTaskCheckForTimeOut
+   vPortDisableInterrupts
+   prvWriteMessageToBuffer
+   prvBytesInBuffer
+   vTaskSuspendAll
+   xTaskGenericNotify
+   xTaskResumeAll
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvInitialiseNewStreamBuffer                    |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   memset
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xStreamBufferReset                              |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   vPortEnterCritical
+   prvInitialiseNewStreamBuffer
+   vPortExitCritical
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvReadBytesFromBuffer                          |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   vPortDisableInterrupts
+   memcpy
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvReadMessageFromBuffer                        |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   prvReadBytesFromBuffer
+
++-------------------------------------------------------------+
+|  FUNCTION:  xStreamBufferReceiveFromISR                     |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   prvBytesInBuffer
+   prvReadMessageFromBuffer
+   xTaskGenericNotifyFromISR
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xStreamBufferReceiveCompletedFromISR            |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   xTaskGenericNotifyFromISR
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xStreamBufferReceive                            |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   vPortEnterCritical
+   prvBytesInBuffer
+   xTaskGenericNotifyStateClear
+   xTaskGetCurrentTaskHandle
+   vPortExitCritical
+   xTaskGenericNotifyWait
+   vPortDisableInterrupts
+   prvReadMessageFromBuffer
+   vTaskSuspendAll
+   xTaskGenericNotify
+   xTaskResumeAll
+
++-------------------------------------------------------------+
+|  FUNCTION:  xStreamBufferNextMessageLengthBytes             |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   prvBytesInBuffer
+   vPortDisableInterrupts
+   prvReadBytesFromBuffer
+
++-------------------------------------------------------------+
+|  FUNCTION:  xStreamBufferIsFull                             |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   xStreamBufferSpacesAvailable
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xStreamBufferIsEmpty                            |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xStreamBufferGenericCreateStatic                |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   prvInitialiseNewStreamBuffer
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xStreamBufferBytesAvailable                     |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   prvBytesInBuffer
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vStreamBufferDelete                             |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortDisableInterrupts
+   memset
+

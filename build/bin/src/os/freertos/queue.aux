@@ -1,0 +1,233 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{D70E6B13-498D-410E-AC33-5816CE6CE2D1}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Mon Dec 11 10:43:33 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvIsQueueEmpty                                 |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortEnterCritical
+   vPortExitCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvUnlockQueue                                  |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   vPortEnterCritical
+   xTaskRemoveFromEventList
+   vTaskMissedYield
+   vPortExitCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  xQueueSemaphoreTake                             |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   xTaskGetSchedulerState
+   vPortDisableInterrupts
+   prvIsQueueEmpty
+   vTaskPlaceOnEventList
+   prvUnlockQueue
+   xTaskResumeAll
+   vPortEnterCritical
+   vPortExitCritical
+   vTaskInternalSetTimeOutState
+   vTaskSuspendAll
+   xTaskCheckForTimeOut
+   xTaskRemoveFromEventList
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvCopyDataFromQueue                            |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
+Called functions:
+   memcpy
+
++-------------------------------------------------------------+
+|  FUNCTION:  xQueueReceiveFromISR                            |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   vPortDisableInterrupts
+   prvCopyDataFromQueue
+   xTaskRemoveFromEventList
+
++-------------------------------------------------------------+
+|  FUNCTION:  xQueueReceive                                   |
++-------------------------------------------------------------+
+Stack usage:   48 bytes
+
+Called functions:
+   vPortDisableInterrupts
+   xTaskGetSchedulerState
+   prvIsQueueEmpty
+   vTaskPlaceOnEventList
+   prvUnlockQueue
+   xTaskResumeAll
+   vPortEnterCritical
+   vPortExitCritical
+   vTaskInternalSetTimeOutState
+   vTaskSuspendAll
+   xTaskCheckForTimeOut
+   prvCopyDataFromQueue
+   xTaskRemoveFromEventList
+
++-------------------------------------------------------------+
+|  FUNCTION:  xQueuePeekFromISR                               |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   vPortDisableInterrupts
+   prvCopyDataFromQueue
+
++-------------------------------------------------------------+
+|  FUNCTION:  xQueuePeek                                      |
++-------------------------------------------------------------+
+Stack usage:   48 bytes
+
+Called functions:
+   vPortDisableInterrupts
+   xTaskGetSchedulerState
+   prvIsQueueEmpty
+   vTaskPlaceOnEventList
+   prvUnlockQueue
+   xTaskResumeAll
+   vPortEnterCritical
+   vPortExitCritical
+   vTaskInternalSetTimeOutState
+   vTaskSuspendAll
+   xTaskCheckForTimeOut
+   prvCopyDataFromQueue
+   xTaskRemoveFromEventList
+
++-------------------------------------------------------------+
+|  FUNCTION:  xQueueIsQueueFullFromISR                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xQueueIsQueueEmptyFromISR                       |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xQueueGiveFromISR                               |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortDisableInterrupts
+   xTaskRemoveFromEventList
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvCopyDataToQueue                              |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   memcpy
+
++-------------------------------------------------------------+
+|  FUNCTION:  xQueueGenericSendFromISR                        |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   vPortDisableInterrupts
+   prvCopyDataToQueue
+   xTaskRemoveFromEventList
+
++-------------------------------------------------------------+
+|  FUNCTION:  xQueueGenericSend                               |
++-------------------------------------------------------------+
+Stack usage:   48 bytes
+
+Called functions:
+   vPortDisableInterrupts
+   xTaskGetSchedulerState
+   vPortExitCritical
+   vTaskInternalSetTimeOutState
+   vTaskSuspendAll
+   vPortEnterCritical
+   xTaskCheckForTimeOut
+   prvUnlockQueue
+   xTaskResumeAll
+   vTaskPlaceOnEventList
+   prvCopyDataToQueue
+   xTaskRemoveFromEventList
+
++-------------------------------------------------------------+
+|  FUNCTION:  xQueueGenericReset                              |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   __aeabi_uidivmod
+   vPortEnterCritical
+   xTaskRemoveFromEventList
+   vListInitialise
+   vPortExitCritical
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xQueueGenericCreateStatic                       |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   xQueueGenericReset
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vQueueDelete                                    |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  uxQueueSpacesAvailable                          |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   vPortEnterCritical
+   vPortExitCritical
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  uxQueueMessagesWaitingFromISR                   |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  uxQueueMessagesWaiting                          |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortEnterCritical
+   vPortExitCritical
+   vPortDisableInterrupts
+

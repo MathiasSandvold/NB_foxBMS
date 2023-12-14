@@ -1,0 +1,50 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{4819BD52-A66A-450F-82DC-9222B1026220}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Mon Dec 11 10:26:34 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  ALGO_UnlockInitialization                       |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  ALGO_MonitorExecutionTime                       |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   OS_GetTickCount
+
++-------------------------------------------------------------+
+|  FUNCTION:  ALGO_Initialization                             |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Function contains indirect calls.
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   __aeabi_uidivmod
+
++-------------------------------------------------------------+
+|  FUNCTION:  ALGO_MainFunction                               |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Function contains indirect calls.
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+   ALGO_Initialization
+   __aeabi_uidivmod
+   OS_GetTickCount
+   ALGO_MarkAsDone
+   ALGO_UnlockInitialization
+

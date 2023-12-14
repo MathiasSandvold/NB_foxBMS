@@ -1,0 +1,1847 @@
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+# pragma diag_push
+# pragma CHECK_MISRA("-19.7")
+# pragma CHECK_MISRA("-19.4")
+# pragma CHECK_MISRA("-19.1")
+# pragma CHECK_MISRA("-19.15")
+# pragma diag_pop
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("CHECK_MISRA(\"-19.1\")")
+_Pragma("CHECK_MISRA(\"-19.6\")")
+
+
+
+ 
+
+
+
+ 
+
+ 
+  
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+#pragma diag_push
+#pragma CHECK_MISRA("-19.4")  
+
+ 
+
+
+ 
+ 
+ 
+
+#pragma diag_pop
+
+
+_Pragma("diag_pop")
+
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.1\")")  
+_Pragma("CHECK_MISRA(\"-19.7\")")  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.7\")")  
+
+
+
+
+
+
+ 
+
+
+
+_Pragma("diag_pop")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"none\")")
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+_Pragma("diag_pop")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+_Pragma("diag_push")
+ 
+_Pragma("CHECK_MISRA(\"-6.3\")")
+
+
+
+
+ 
+typedef	signed char		__int8_t;
+typedef	unsigned char		__uint8_t;
+typedef	short			__int16_t;
+typedef	unsigned short		__uint16_t;
+typedef	int			__int32_t;
+typedef	unsigned int		__uint32_t;
+
+ 
+typedef	long long		__int64_t;
+
+ 
+typedef	unsigned long long	__uint64_t;
+
+
+
+ 
+typedef	__uint32_t	__clock_t;		 
+typedef	__int32_t	__critical_t;
+typedef	double		__double_t;
+typedef	float		__float_t;
+typedef	__int32_t	__intfptr_t;
+typedef	__int64_t	__intmax_t;
+typedef	__int32_t	__intptr_t;
+typedef	__int32_t	__int_fast8_t;
+typedef	__int32_t	__int_fast16_t;
+typedef	__int32_t	__int_fast32_t;
+typedef	__int64_t	__int_fast64_t;
+typedef	__int8_t	__int_least8_t;
+typedef	__int16_t	__int_least16_t;
+typedef	__int32_t	__int_least32_t;
+typedef	__int64_t	__int_least64_t;
+typedef	__int32_t	__ptrdiff_t;		 
+typedef	__int32_t	__register_t;
+typedef	__int32_t	__segsz_t;		 
+typedef	__uint32_t	__size_t;		 
+typedef	__int32_t	__ssize_t;		 
+typedef __uint32_t      __time_t;
+typedef	__uint32_t	__uintfptr_t;
+typedef	__uint64_t	__uintmax_t;
+typedef	__uint32_t	__uintptr_t;
+typedef	__uint32_t	__uint_fast8_t;
+typedef	__uint32_t	__uint_fast16_t;
+typedef	__uint32_t	__uint_fast32_t;
+typedef	__uint64_t	__uint_fast64_t;
+typedef	__uint8_t	__uint_least8_t;
+typedef	__uint16_t	__uint_least16_t;
+typedef	__uint32_t	__uint_least32_t;
+typedef	__uint64_t	__uint_least64_t;
+typedef	__uint32_t	__u_register_t;
+typedef	__uint32_t	__vm_offset_t;
+typedef	__uint32_t	__vm_paddr_t;
+typedef	__uint32_t	__vm_size_t;
+
+typedef	unsigned short ___wchar_t;
+
+
+
+
+
+ 
+typedef long _off_t;
+
+
+
+ 
+typedef struct __va_list_t {
+    void * __ap;
+} __va_list;
+
+_Pragma("diag_pop")
+
+
+_Pragma("diag_push")
+ 
+_Pragma("CHECK_MISRA(\"-6.3\")")
+
+
+
+ 
+typedef	__int32_t	__blksize_t;	 
+typedef	__int64_t	__blkcnt_t;	 
+typedef	__int32_t	__clockid_t;	 
+typedef	__uint32_t	__fflags_t;	 
+typedef	__uint64_t	__fsblkcnt_t;
+typedef	__uint64_t	__fsfilcnt_t;
+typedef	__uint32_t	__gid_t;
+typedef	__int64_t	__id_t;		 
+typedef	__uint64_t	__ino_t;	 
+typedef	long		__key_t;	 
+typedef	__int32_t	__lwpid_t;	 
+typedef	__uint16_t	__mode_t;	 
+typedef	int		__accmode_t;	 
+typedef	int		__nl_item;
+typedef	__uint64_t	__nlink_t;	 
+typedef	_off_t	        __off_t;	 
+typedef	__int64_t	__off64_t;	 
+typedef	__int32_t	__pid_t;	 
+typedef	__int64_t	__rlim_t;	 
+					 
+					 
+typedef	__uint8_t	__sa_family_t;
+typedef	__uint32_t	__socklen_t;
+typedef	long		__suseconds_t;	 
+typedef	struct __timer	*__timer_t;	 
+typedef	struct __mq	*__mqd_t;	 
+typedef	__uint32_t	__uid_t;
+typedef	unsigned int	__useconds_t;	 
+typedef	int		__cpuwhich_t;	 
+typedef	int		__cpulevel_t;	 
+typedef int		__cpusetid_t;	 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+typedef	int		__ct_rune_t;	 
+
+typedef	__ct_rune_t	__rune_t;	 
+typedef	__ct_rune_t	__wint_t;	 
+
+ 
+typedef	__uint_least16_t __char16_t;
+typedef	__uint_least32_t __char32_t;
+ 
+
+typedef struct {
+	long long __max_align1 __attribute__((aligned(_Alignof(long long))));
+	long double __max_align2 __attribute__((aligned(_Alignof(long double))));
+} __max_align_t;
+
+typedef	__uint64_t	__dev_t;	 
+
+typedef	__uint32_t	__fixpt_t;	 
+
+
+
+
+ 
+
+typedef int _Mbstatet;
+
+typedef _Mbstatet __mbstate_t;
+
+typedef __uintmax_t     __rman_res_t;
+
+
+
+
+
+ 
+
+_Pragma("diag_pop")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+_Pragma("diag_push")
+ 
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("CHECK_MISRA(\"-19.7\")")
+_Pragma("CHECK_MISRA(\"-19.13\")")
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+ 
+
+ 
+
+
+
+
+ 
+ 
+
+ 
+
+ 
+
+
+
+
+ 
+ 
+
+ 
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+
+_Pragma("diag_pop")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+typedef	__int8_t		int8_t;
+
+typedef	__int16_t		int16_t;
+
+typedef	__int32_t		int32_t;
+
+typedef	__int64_t		int64_t;
+
+typedef	__uint8_t		uint8_t;
+
+typedef	__uint16_t		uint16_t;
+
+typedef	__uint32_t		uint32_t;
+
+typedef	__uint64_t		uint64_t;
+
+typedef	__intptr_t		intptr_t;
+typedef	__uintptr_t		uintptr_t;
+typedef	__intmax_t		intmax_t;
+typedef	__uintmax_t		uintmax_t;
+
+
+typedef	__int_least8_t		int_least8_t;
+typedef	__int_least16_t		int_least16_t;
+typedef	__int_least32_t		int_least32_t;
+typedef	__int_least64_t		int_least64_t;
+
+typedef	__uint_least8_t		uint_least8_t;
+typedef	__uint_least16_t	uint_least16_t;
+typedef	__uint_least32_t	uint_least32_t;
+typedef	__uint_least64_t	uint_least64_t;
+
+typedef	__int_fast8_t		int_fast8_t;
+typedef	__int_fast16_t		int_fast16_t;
+typedef	__int_fast32_t		int_fast32_t;
+typedef	__int_fast64_t		int_fast64_t;
+
+typedef	__uint_fast8_t		uint_fast8_t;
+typedef	__uint_fast16_t		uint_fast16_t;
+typedef	__uint_fast32_t		uint_fast32_t;
+typedef	__uint_fast64_t		uint_fast64_t;
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-10.1\")")
+ 
+_Pragma("diag_pop")
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+ 
+_Pragma("diag_pop")
+
+ 
+
+
+_Pragma("diag_pop")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+ 
+ 
+
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("CHECK_MISRA(\"-19.11\")")
+
+
+
+
+
+_Pragma("diag_pop")
+
+
+ 
+ 
+ 
+ 
+ 
+typedef uint64_t uint64;
+
+typedef uint32_t uint32;
+
+typedef uint16_t uint16;
+
+typedef uint8_t uint8;
+
+typedef _Bool boolean;
+
+typedef int64_t sint64;
+
+typedef int32_t sint32;
+
+typedef int16_t sint16;
+
+typedef int8_t sint8;
+
+typedef float float32;
+
+typedef double float64;
+
+
+typedef uint8 Std_ReturnType;
+
+typedef struct
+{
+    uint16 vendorID;
+    uint16 moduleID;
+    uint8  instanceID;
+    uint8  sw_major_version;
+    uint8  sw_minor_version;
+    uint8  sw_patch_version;
+} Std_VersionInfoType;
+
+ 
+ 
+ 
+
+  typedef unsigned char StatusType;
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+ 
+
+ 
+ 
+ 
+
+typedef boolean tBoolean;
+
+
+
+ 
+
+
+
+
+ 
+typedef enum loopBackType 
+{
+    Digital_Lbk = 0U, 
+    Analog_Lbk = 1U
+}loopBackType_t;
+
+
+
+ 
+
+
+
+
+ 
+typedef enum config_value_type
+{
+	InitialValue,
+	CurrentValue
+}config_value_type_t;
+
+
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+ 
+
+ 
+
+
+
+
+ 
+ 
+
+ 
+
+
+
+
+ 
+typedef volatile struct emifBase
+{
+    uint32 MIDR;           
+    uint32 AWCC;           
+    uint32 SDCR;           
+    uint32 SDRCR ;         
+    uint32 CE2CFG;         
+    uint32 CE3CFG;         
+    uint32 CE4CFG;         
+    uint32 CE5CFG;         
+    uint32 SDTIMR;         
+    uint32 dummy1[6];      
+    uint32 SDSRETR;        
+    uint32 INTRAW;         
+    uint32 INTMSK;         
+    uint32 INTMSKSET;      
+    uint32 INTMSKCLR;      
+    uint32 dummy2[6];      
+    uint32 PMCR;           
+
+} emifBASE_t;
+
+
+ 
+ 
+
+
+
+
+ 
+ 
+
+
+
+
+ 
+enum emif_pins
+{
+    emif_wait_pin0 = 0U,
+    emif_wait_pin1 = 1U
+};
+
+
+
+
+
+ 
+enum emif_size
+{
+    elements_256 = 0U,
+    elements_512 = 1U,
+    elements_1024 = 2U,
+    elements_2048 = 3U
+};
+
+
+
+
+ 
+enum emif_port
+{
+    emif_8_bit_port = 0U,
+    emif_16_bit_port = 1U
+};
+
+
+
+
+
+ 
+enum emif_pagesize
+{
+    emif_4_words = 0U,
+    emif_8_words = 1U
+};
+
+
+
+
+ 
+enum emif_wait_polarity
+{
+    emif_pin_low = 0U,
+    emif_pin_high = 1U
+};
+
+
+
+
+ 
+typedef struct emif_config_reg
+{
+    uint32 CONFIG_AWCC;     
+    uint32 CONFIG_SDCR;     
+    uint32 CONFIG_SDRCR ;   
+    uint32 CONFIG_CE2CFG;   
+    uint32 CONFIG_CE3CFG;   
+    uint32 CONFIG_CE4CFG;   
+    uint32 CONFIG_CE5CFG;   
+    uint32 CONFIG_SDTIMR;       
+    uint32 CONFIG_SDSRETR;  
+    uint32 CONFIG_INTMSK;       
+    uint32 CONFIG_PMCR;
+} emif_config_reg_t;
+
+
+ 
+								
+								
+
+
+								
+								
+								
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+void emif_SDRAMInit(void);
+void emif_SDRAM_StartupInit(void);
+void emif_ASYNC1Init(void);
+void emif_ASYNC2Init(void);
+void emif_ASYNC3Init(void);
+void emifGetConfigValue(emif_config_reg_t *config_reg, config_value_type_t type);
+
+ 
+ 
+
+ 
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+ 
+ 
+void emif_SDRAMInit(void)
+{
+
+ 
+ 
+
+ 
+ 
+}
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void emif_ASYNC1Init(void)
+{
+ 
+ 
+    ((emifBASE_t *)0xFCFFE800U)->CE2CFG = 0x00000000U;
+    ((emifBASE_t *)0xFCFFE800U)->CE2CFG = (uint32)((uint32)0U << 31U)|
+                      (uint32)((uint32)0U << 30U)|
+                      (uint32)((uint32)1U << 26U)|
+                      (uint32)((uint32)2U << 20U)|
+                      (uint32)((uint32)2U << 17U)|
+                      (uint32)((uint32)3U << 13U)|
+                      (uint32)((uint32)2U << 7U)|
+                      (uint32)((uint32)1U << 4U)|
+                      (uint32)((uint32)1U << 2U)|
+                      (uint32)((uint32)emif_16_bit_port);
+
+    ((emifBASE_t *)0xFCFFE800U)->AWCC   = (((emifBASE_t *)0xFCFFE800U)->AWCC & 0xC0FF0000U)|
+                      (uint32)((uint32)emif_pin_high << 29U)|
+                      (uint32)((uint32)emif_pin_low << 28U)|
+                      (uint32)((uint32)emif_wait_pin0 << 16U)|
+                      (uint32)((uint32)0U);
+
+    ((emifBASE_t *)0xFCFFE800U)->PMCR   = (((emifBASE_t *)0xFCFFE800U)->PMCR & 0xFFFFFF00U)|
+                      (uint32)((uint32)0U << 2U)|
+                      (uint32)((uint32)emif_8_words << 1U)|
+                      (uint32)((uint32)0U);
+ 
+ 
+}
+
+
+
+
+
+ 
+ 
+ 
+ 
+void emif_ASYNC2Init(void)
+{
+ 
+ 
+
+    ((emifBASE_t *)0xFCFFE800U)->CE3CFG = 0x00000000U;
+    ((emifBASE_t *)0xFCFFE800U)->CE3CFG = (uint32)((uint32)0U << 31U)|
+                      (uint32)((uint32)0U << 30U)|
+                      (uint32)((uint32)1U << 26U)|
+                      (uint32)((uint32)2U << 20U)|
+                      (uint32)((uint32)2U << 17U)|
+                      (uint32)((uint32)3U << 13U)|
+                      (uint32)((uint32)2U << 7U)|
+                      (uint32)((uint32)1U << 4U)|
+                      (uint32)((uint32)1U << 2U)|
+                      (uint32)((uint32)emif_16_bit_port);
+
+    ((emifBASE_t *)0xFCFFE800U)->AWCC   = (((emifBASE_t *)0xFCFFE800U)->AWCC & 0xC0FF0000U)|
+                      (uint32)((uint32)emif_pin_high << 29U)|
+                      (uint32)((uint32)emif_pin_low << 28U)|
+                      (uint32)((uint32)emif_wait_pin0 << 18U)|
+                      (uint32)((uint32)0U);
+
+    ((emifBASE_t *)0xFCFFE800U)->PMCR   = (((emifBASE_t *)0xFCFFE800U)->PMCR & 0xFFFF00FFU)|
+                      (uint32)((uint32)0U << 10U)|
+                      (uint32)((uint32)emif_8_words << 9U)|
+                      (uint32)((uint32)0U << 8U);
+ 
+ 
+
+}
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void emif_ASYNC3Init(void)
+{
+ 
+ 
+
+    ((emifBASE_t *)0xFCFFE800U)->CE4CFG = 0x00000000U;
+    ((emifBASE_t *)0xFCFFE800U)->CE4CFG = (uint32)((uint32)0U << 31U)|
+                      (uint32)((uint32)0U << 30U)|
+                      (uint32)((uint32)1U << 26U)|
+                      (uint32)((uint32)2U << 20U)|
+                      (uint32)((uint32)2U << 17U)|
+                      (uint32)((uint32)3U << 13U)|
+                      (uint32)((uint32)2U << 7U)|
+                      (uint32)((uint32)1U << 4U)|
+                      (uint32)((uint32)1U << 2U)|
+                      (uint32)((uint32)emif_16_bit_port);
+
+    ((emifBASE_t *)0xFCFFE800U)->AWCC   = (((emifBASE_t *)0xFCFFE800U)->AWCC & 0xC0FF0000U)|
+                      (uint32)((uint32)emif_pin_high << 29U)|
+                      (uint32)((uint32)emif_pin_low << 28U)|
+                      (uint32)((uint32)emif_wait_pin0 << 20U)|
+                      (uint32)((uint32)0U);
+
+    ((emifBASE_t *)0xFCFFE800U)->PMCR   = (((emifBASE_t *)0xFCFFE800U)->PMCR & 0xFF00FFFFU) |
+                      (uint32)((uint32)0U << 18U)|
+                      (uint32)((uint32)emif_8_words << 17U)|
+                      (uint32)((uint32)0U << 16U);
+
+ 
+ 
+}
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void emifGetConfigValue(emif_config_reg_t *config_reg, config_value_type_t type)
+{
+    if (type == InitialValue)
+    {
+        config_reg->CONFIG_AWCC    = ((uint32)((uint32)emif_pin_high << 29U) | (uint32)((uint32)emif_pin_low << 28U) | (uint32)((uint32)emif_wait_pin0 << 16U) | (uint32)((uint32)emif_wait_pin0 << 18U) | (uint32)((uint32)emif_wait_pin0 << 20U) | (uint32)((uint32)0U) | (uint32)0xC0000000U);
+        config_reg->CONFIG_SDCR    = ((uint32)((uint32)1U << 31U) | (uint32)((uint32)1U << 14U) | (uint32)((uint32)2U << 9U) | (uint32)((uint32)2U << 4U) | (uint32)((uint32)elements_1024));
+        config_reg->CONFIG_SDRCR   = 8191U;
+        config_reg->CONFIG_CE2CFG  = ((uint32)((uint32)0U << 31U) | (uint32)((uint32)0U << 30U) | (uint32)((uint32)1U << 26U) | (uint32)((uint32)2U << 20U) | (uint32)((uint32)2U << 17U) | (uint32)((uint32)3U << 13U) | (uint32)((uint32)2U << 7U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)emif_16_bit_port));
+        config_reg->CONFIG_CE3CFG  = ((uint32)((uint32)0U << 31U) | (uint32)((uint32)0U << 30U) | (uint32)((uint32)1U << 26U) | (uint32)((uint32)2U << 20U) | (uint32)((uint32)2U << 17U) | (uint32)((uint32)3U << 13U) | (uint32)((uint32)2U << 7U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)emif_16_bit_port));
+        config_reg->CONFIG_CE4CFG  = ((uint32)((uint32)0U << 31U) | (uint32)((uint32)0U << 30U) | (uint32)((uint32)1U << 26U) | (uint32)((uint32)2U << 20U) | (uint32)((uint32)2U << 17U) | (uint32)((uint32)3U << 13U) | (uint32)((uint32)2U << 7U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)emif_16_bit_port));
+        config_reg->CONFIG_CE5CFG  = 0x3FFFFFFDU;
+        config_reg->CONFIG_SDTIMR  = ((uint32)((uint32)6U << 27U) | (uint32)((uint32)1U << 24U) | (uint32)((uint32)1U << 20U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)3U << 12U) | (uint32)((uint32)6U << 8U) | (uint32)((uint32)1U << 4U) | 0x00000000U);
+        config_reg->CONFIG_SDSRETR = 7U;
+        config_reg->CONFIG_INTMSK  = 0x00000000U;
+        config_reg->CONFIG_PMCR    = (0xFC000000U | (uint32)((uint32)0U << 2U) | (uint32)((uint32)emif_8_words << 1U) | (uint32)((uint32)0U) | (uint32)((uint32)0U << 10U) | (uint32)((uint32)emif_8_words << 9U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)0U << 18U) | (uint32)((uint32)emif_8_words << 17U) | (uint32)((uint32)0U << 16U));
+    }
+    else
+    {
+     
+        config_reg->CONFIG_AWCC     = ((emifBASE_t *)0xFCFFE800U)->AWCC;
+        config_reg->CONFIG_SDCR     = ((emifBASE_t *)0xFCFFE800U)->SDCR;
+        config_reg->CONFIG_SDRCR    = ((emifBASE_t *)0xFCFFE800U)->SDRCR ;
+        config_reg->CONFIG_CE2CFG   = ((emifBASE_t *)0xFCFFE800U)->CE2CFG;
+        config_reg->CONFIG_CE3CFG   = ((emifBASE_t *)0xFCFFE800U)->CE3CFG;
+        config_reg->CONFIG_CE4CFG   = ((emifBASE_t *)0xFCFFE800U)->CE4CFG;
+        config_reg->CONFIG_CE5CFG   = ((emifBASE_t *)0xFCFFE800U)->CE5CFG;
+        config_reg->CONFIG_SDTIMR   = ((emifBASE_t *)0xFCFFE800U)->SDTIMR;
+        config_reg->CONFIG_SDSRETR  = ((emifBASE_t *)0xFCFFE800U)->SDSRETR;
+        config_reg->CONFIG_INTMSK   = ((emifBASE_t *)0xFCFFE800U)->INTMSK;
+        config_reg->CONFIG_PMCR     = ((emifBASE_t *)0xFCFFE800U)->PMCR;
+    }
+}
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+ 
+ 
+void emif_SDRAM_StartupInit(void)
+{
+ 
+ 
+
+	volatile uint32 buffer;
+
+	 
+
+	 
+	((emifBASE_t *)0xFCFFE800U)->SDTIMR  = (uint32)((uint32)6U << 27U)|
+					   (uint32)((uint32)1U << 24U)|
+					   (uint32)((uint32)0U << 23U)|
+					   (uint32)((uint32)1U << 20U)|
+					   (uint32)((uint32)0U << 19U)|
+					   (uint32)((uint32)1U << 16U)|
+					   (uint32)((uint32)3U << 12U)|
+					   (uint32)((uint32)6U << 8U)|
+					   (uint32)((uint32)0U << 7U)|
+					   (uint32)((uint32)1U << 4U)|
+					   (uint32)((uint32)0U << 3U);
+
+	((emifBASE_t *)0xFCFFE800U)->SDSRETR = (uint32)7U;
+
+	 
+	((emifBASE_t *)0xFCFFE800U)->SDRCR   = 1005U;
+
+	 
+	
+
+
+
+
+
+ 
+	((emifBASE_t *)0xFCFFE800U)->SDCR   = (uint32)((uint32)0U << 31U)|
+					  (uint32)((uint32)1U << 14U)|
+					  (uint32)((uint32)2U << 9U)|
+					  (uint32)((uint32)1U << 8U)|
+					  (uint32)((uint32)2U << 4U)|
+					  (uint32)((uint32)elements_1024);
+
+	 
+	buffer           = *((volatile uint32 *)(0x80000000U));
+	 
+	buffer           = buffer;
+
+	 
+	((emifBASE_t *)0xFCFFE800U)->SDRCR   = 8191U;
+
+	 
+	 
+	 
+	 
+       *((unsigned char *)(&((emifBASE_t *)0xFCFFE800U)->SDCR) + 0x0U) = 0x80U;
+
+ 
+ 
+}

@@ -1,0 +1,2566 @@
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+# pragma diag_push
+# pragma CHECK_MISRA("-19.7")
+# pragma CHECK_MISRA("-19.4")
+# pragma CHECK_MISRA("-19.1")
+# pragma CHECK_MISRA("-19.15")
+# pragma diag_pop
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("CHECK_MISRA(\"-19.1\")")
+_Pragma("CHECK_MISRA(\"-19.6\")")
+
+
+
+ 
+
+
+
+ 
+
+ 
+  
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+#pragma diag_push
+#pragma CHECK_MISRA("-19.4")  
+
+ 
+
+
+ 
+ 
+ 
+
+#pragma diag_pop
+
+
+_Pragma("diag_pop")
+
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.1\")")  
+_Pragma("CHECK_MISRA(\"-19.7\")")  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.7\")")  
+
+
+
+
+
+
+ 
+
+
+
+_Pragma("diag_pop")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"none\")")
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+_Pragma("diag_pop")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+_Pragma("diag_push")
+ 
+_Pragma("CHECK_MISRA(\"-6.3\")")
+
+
+
+
+ 
+typedef	signed char		__int8_t;
+typedef	unsigned char		__uint8_t;
+typedef	short			__int16_t;
+typedef	unsigned short		__uint16_t;
+typedef	int			__int32_t;
+typedef	unsigned int		__uint32_t;
+
+ 
+typedef	long long		__int64_t;
+
+ 
+typedef	unsigned long long	__uint64_t;
+
+
+
+ 
+typedef	__uint32_t	__clock_t;		 
+typedef	__int32_t	__critical_t;
+typedef	double		__double_t;
+typedef	float		__float_t;
+typedef	__int32_t	__intfptr_t;
+typedef	__int64_t	__intmax_t;
+typedef	__int32_t	__intptr_t;
+typedef	__int32_t	__int_fast8_t;
+typedef	__int32_t	__int_fast16_t;
+typedef	__int32_t	__int_fast32_t;
+typedef	__int64_t	__int_fast64_t;
+typedef	__int8_t	__int_least8_t;
+typedef	__int16_t	__int_least16_t;
+typedef	__int32_t	__int_least32_t;
+typedef	__int64_t	__int_least64_t;
+typedef	__int32_t	__ptrdiff_t;		 
+typedef	__int32_t	__register_t;
+typedef	__int32_t	__segsz_t;		 
+typedef	__uint32_t	__size_t;		 
+typedef	__int32_t	__ssize_t;		 
+typedef __uint32_t      __time_t;
+typedef	__uint32_t	__uintfptr_t;
+typedef	__uint64_t	__uintmax_t;
+typedef	__uint32_t	__uintptr_t;
+typedef	__uint32_t	__uint_fast8_t;
+typedef	__uint32_t	__uint_fast16_t;
+typedef	__uint32_t	__uint_fast32_t;
+typedef	__uint64_t	__uint_fast64_t;
+typedef	__uint8_t	__uint_least8_t;
+typedef	__uint16_t	__uint_least16_t;
+typedef	__uint32_t	__uint_least32_t;
+typedef	__uint64_t	__uint_least64_t;
+typedef	__uint32_t	__u_register_t;
+typedef	__uint32_t	__vm_offset_t;
+typedef	__uint32_t	__vm_paddr_t;
+typedef	__uint32_t	__vm_size_t;
+
+typedef	unsigned short ___wchar_t;
+
+
+
+
+
+ 
+typedef long _off_t;
+
+
+
+ 
+typedef struct __va_list_t {
+    void * __ap;
+} __va_list;
+
+_Pragma("diag_pop")
+
+
+_Pragma("diag_push")
+ 
+_Pragma("CHECK_MISRA(\"-6.3\")")
+
+
+
+ 
+typedef	__int32_t	__blksize_t;	 
+typedef	__int64_t	__blkcnt_t;	 
+typedef	__int32_t	__clockid_t;	 
+typedef	__uint32_t	__fflags_t;	 
+typedef	__uint64_t	__fsblkcnt_t;
+typedef	__uint64_t	__fsfilcnt_t;
+typedef	__uint32_t	__gid_t;
+typedef	__int64_t	__id_t;		 
+typedef	__uint64_t	__ino_t;	 
+typedef	long		__key_t;	 
+typedef	__int32_t	__lwpid_t;	 
+typedef	__uint16_t	__mode_t;	 
+typedef	int		__accmode_t;	 
+typedef	int		__nl_item;
+typedef	__uint64_t	__nlink_t;	 
+typedef	_off_t	        __off_t;	 
+typedef	__int64_t	__off64_t;	 
+typedef	__int32_t	__pid_t;	 
+typedef	__int64_t	__rlim_t;	 
+					 
+					 
+typedef	__uint8_t	__sa_family_t;
+typedef	__uint32_t	__socklen_t;
+typedef	long		__suseconds_t;	 
+typedef	struct __timer	*__timer_t;	 
+typedef	struct __mq	*__mqd_t;	 
+typedef	__uint32_t	__uid_t;
+typedef	unsigned int	__useconds_t;	 
+typedef	int		__cpuwhich_t;	 
+typedef	int		__cpulevel_t;	 
+typedef int		__cpusetid_t;	 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+typedef	int		__ct_rune_t;	 
+
+typedef	__ct_rune_t	__rune_t;	 
+typedef	__ct_rune_t	__wint_t;	 
+
+ 
+typedef	__uint_least16_t __char16_t;
+typedef	__uint_least32_t __char32_t;
+ 
+
+typedef struct {
+	long long __max_align1 __attribute__((aligned(_Alignof(long long))));
+	long double __max_align2 __attribute__((aligned(_Alignof(long double))));
+} __max_align_t;
+
+typedef	__uint64_t	__dev_t;	 
+
+typedef	__uint32_t	__fixpt_t;	 
+
+
+
+
+ 
+
+typedef int _Mbstatet;
+
+typedef _Mbstatet __mbstate_t;
+
+typedef __uintmax_t     __rman_res_t;
+
+
+
+
+
+ 
+
+_Pragma("diag_pop")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+_Pragma("diag_push")
+ 
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("CHECK_MISRA(\"-19.7\")")
+_Pragma("CHECK_MISRA(\"-19.13\")")
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+ 
+
+ 
+
+
+
+
+ 
+ 
+
+ 
+
+ 
+
+
+
+
+ 
+ 
+
+ 
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+
+_Pragma("diag_pop")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+typedef	__int8_t		int8_t;
+
+typedef	__int16_t		int16_t;
+
+typedef	__int32_t		int32_t;
+
+typedef	__int64_t		int64_t;
+
+typedef	__uint8_t		uint8_t;
+
+typedef	__uint16_t		uint16_t;
+
+typedef	__uint32_t		uint32_t;
+
+typedef	__uint64_t		uint64_t;
+
+typedef	__intptr_t		intptr_t;
+typedef	__uintptr_t		uintptr_t;
+typedef	__intmax_t		intmax_t;
+typedef	__uintmax_t		uintmax_t;
+
+
+typedef	__int_least8_t		int_least8_t;
+typedef	__int_least16_t		int_least16_t;
+typedef	__int_least32_t		int_least32_t;
+typedef	__int_least64_t		int_least64_t;
+
+typedef	__uint_least8_t		uint_least8_t;
+typedef	__uint_least16_t	uint_least16_t;
+typedef	__uint_least32_t	uint_least32_t;
+typedef	__uint_least64_t	uint_least64_t;
+
+typedef	__int_fast8_t		int_fast8_t;
+typedef	__int_fast16_t		int_fast16_t;
+typedef	__int_fast32_t		int_fast32_t;
+typedef	__int_fast64_t		int_fast64_t;
+
+typedef	__uint_fast8_t		uint_fast8_t;
+typedef	__uint_fast16_t		uint_fast16_t;
+typedef	__uint_fast32_t		uint_fast32_t;
+typedef	__uint_fast64_t		uint_fast64_t;
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-10.1\")")
+ 
+_Pragma("diag_pop")
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+ 
+_Pragma("diag_pop")
+
+ 
+
+
+_Pragma("diag_pop")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+ 
+ 
+
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("CHECK_MISRA(\"-19.11\")")
+
+
+
+
+
+_Pragma("diag_pop")
+
+
+ 
+ 
+ 
+ 
+ 
+typedef uint64_t uint64;
+
+typedef uint32_t uint32;
+
+typedef uint16_t uint16;
+
+typedef uint8_t uint8;
+
+typedef _Bool boolean;
+
+typedef int64_t sint64;
+
+typedef int32_t sint32;
+
+typedef int16_t sint16;
+
+typedef int8_t sint8;
+
+typedef float float32;
+
+typedef double float64;
+
+
+typedef uint8 Std_ReturnType;
+
+typedef struct
+{
+    uint16 vendorID;
+    uint16 moduleID;
+    uint8  instanceID;
+    uint8  sw_major_version;
+    uint8  sw_minor_version;
+    uint8  sw_patch_version;
+} Std_VersionInfoType;
+
+ 
+ 
+ 
+
+  typedef unsigned char StatusType;
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+ 
+
+ 
+ 
+ 
+
+typedef boolean tBoolean;
+
+
+
+ 
+
+
+
+
+ 
+typedef enum loopBackType 
+{
+    Digital_Lbk = 0U, 
+    Analog_Lbk = 1U
+}loopBackType_t;
+
+
+
+ 
+
+
+
+
+ 
+typedef enum config_value_type
+{
+	InitialValue,
+	CurrentValue
+}config_value_type_t;
+
+
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+ 
+
+ 
+
+
+
+ 
+ 
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+typedef volatile struct pcrBase
+{
+    uint32 PMPROTSET0;     
+    uint32 PMPROTSET1;     
+    uint32 rsvd1[2U];      
+    uint32 PMPROTCLR0;     
+    uint32 PMPROTCLR1;     
+    uint32 rsvd2[2U];      
+    uint32 PPROTSET0;      
+    uint32 PPROTSET1;      
+    uint32 PPROTSET2;      
+    uint32 PPROTSET3;      
+    uint32 rsvd3[4U];      
+    uint32 PPROTCLR0;      
+    uint32 PPROTCLR1;      
+    uint32 PPROTCLR2;      
+    uint32 PPROTCLR3;      
+    uint32 rsvd4[4U];      
+    uint32 PCSPWRDWNSET0;  
+    uint32 PCSPWRDWNSET1;  
+    uint32 rsvd5[2U];      
+    uint32 PCSPWRDWNCLR0;  
+    uint32 PCSPWRDWNCLR1;  
+    uint32 rsvd6[2U];      
+    uint32 PSPWRDWNSET0;   
+    uint32 PSPWRDWNSET1;   
+    uint32 PSPWRDWNSET2;   
+    uint32 PSPWRDWNSET3;   
+    uint32 rsvd7[4U];      
+    uint32 PSPWRDWNCLR0;   
+    uint32 PSPWRDWNCLR1;   
+    uint32 PSPWRDWNCLR2;   
+    uint32 PSPWRDWNCLR3;   
+    uint32 rsvd8[4U];      
+    uint32 PDPWRDWNSET;    
+    uint32 PDPWRDWNCLR;    
+    uint32 rsvd9[78U];     
+    uint32 MSTIDWRENA;     
+    uint32 MSTIDENA;       
+    uint32 MSTIDDIAGCTRL;  
+    uint32 rsvd10[61U];    
+    struct
+    {
+        uint32 PSxMSTID_L;
+        uint32 PSxMSTID_H;
+    }PSxMSTID[32];             
+    struct
+    {
+        uint32 PPSxMSTID_L;
+        uint32 PPSxMSTID_H;
+    }PPSxMSTID[8];             
+    struct
+    {
+        uint32 PPSExMSTID_L;
+        uint32 PPSExMSTID_H;
+    }PPSExMSTID[32];             
+    uint32 PCSxMSTID[32];     
+    uint32 PPCSxMSTID[8];     
+} pcrBASE_t;
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+ 
+ 
+
+
+typedef enum
+{
+	PS0 = 0U,	PS1,	PS2,	PS3,
+	PS4,		PS5,	PS6,	PS7,
+	PS8,		PS9,	PS10,	PS11,
+	PS12,		PS13,	PS14,	PS15,
+	PS16,		PS17,	PS18,	PS19,
+	PS20,		PS21,	PS22,	PS23,
+	PS24,		PS25,	PS26,	PS27,
+	PS28,		PS29,	PS30,	PS31
+}peripheral_Frame_t;
+
+typedef enum
+{
+	PPS0 = 0U,	PPS1,	PPS2,	PPS3,
+	PPS4,		PPS5,	PPS6,	PPS7
+}privileged_Peripheral_Frame_t;
+
+typedef enum
+{
+	PPSE0 = 0U,	PPSE1,	PPSE2,	PPSE3,
+	PPSE4,		PPSE5,	PPSE6,	PPSE7,
+	PPSE8,		PPSE9,	PPSE10,	PPSE11,
+	PPSE12,		PPSE13,	PPSE14,	PPSE15,
+	PPSE16,		PPSE17,	PPSE18,	PPSE19,
+	PPSE20,		PPSE21,	PPSE22,	PPSE23,
+	PPSE24,		PPSE25,	PPSE26,	PPSE27,
+	PPSE28,		PPSE29,	PPSE30,	PPSE31
+}privileged_Peripheral_Extended_Frame_t;
+
+typedef enum
+{
+	PCS0 = 0U,	PCS1,	PCS2,	PCS3,
+	PCS4,		PCS5,	PCS6,	PCS7,
+	PCS8,		PCS9,	PCS10,	PCS11,
+	PCS12,		PCS13,	PCS14,	PCS15,
+	PCS16,		PCS17,	PCS18,	PCS19,
+	PCS20,		PCS21,	PCS22,	PCS23,
+	PCS24,		PCS25,	PCS26,	PCS27,
+	PCS28,		PCS29,	PCS30,	PCS31,
+	PCS32,		PCS33,	PCS34,	PCS35,
+	PCS36,		PCS37,	PCS38,	PCS39,
+	PCS40,		PCS41,	PCS42,	PCS43,
+	PCS44,		PCS45,	PCS46,	PCS47,
+	PCS48,		PCS49,	PCS50,	PCS51,
+	PCS52,		PCS53,	PCS54,	PCS55,
+	PCS56,		PCS57,	PCS58,	PCS59,
+	PCS60,		PCS61,	PCS62,	PCS63
+}peripheral_Memory_t;
+
+typedef enum
+{
+	PPCS0 = 0U,	PPCS1,	PPCS2,	PPCS3,
+	PPCS4,		PPCS5,	PPCS6,	PPCS7,
+	PPCS8,		PPCS9,	PPCS10,	PPCS11,
+	PPCS12,		PPCS13,	PPCS14,	PPCS15
+}privileged_Peripheral_Memory_t;
+
+typedef enum
+{
+	Master_CPU0 = 0U,
+	Master_CPU1 = 1U,  
+	Master_DMA  = 2U,
+	Master_HTU1 = 3U,
+	Master_HTU2 = 4U,
+	Master_FTU  = 5U,
+	Master_DMM  = 7U,
+	Master_DAP  = 9U,
+	Master_EMAC = 10U
+}master_ID_t;
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+void peripheral_Memory_Protection_Set(pcrBASE_t *pcr, peripheral_Memory_t PCS);
+void peripheral_Memory_Protection_Clr(pcrBASE_t *pcr, peripheral_Memory_t PCS);
+void peripheral_Frame_Protection_Set (pcrBASE_t *pcr, peripheral_Frame_t PS, uint32 quadrant);
+void peripheral_Frame_Protection_Clr (pcrBASE_t *pcr, peripheral_Frame_t PS, uint32 quadrant);
+
+void peripheral_Memory_PowerDown_Set(pcrBASE_t *pcr, peripheral_Memory_t PCS);
+void peripheral_Memory_PowerDown_Clr(pcrBASE_t *pcr, peripheral_Memory_t PCS);
+void peripheral_Frame_PowerDown_Set (pcrBASE_t *pcr, peripheral_Frame_t PS, uint32 quadrant);
+void peripheral_Frame_PowerDown_Clr (pcrBASE_t *pcr, peripheral_Frame_t PS, uint32 quadrant);
+
+void peripheral_Frame_MasterIDFilter_Disable(pcrBASE_t *pcr, peripheral_Frame_t PS, uint32 quadrant, master_ID_t master);
+void peripheral_Frame_MasterIDFilter_Enable (pcrBASE_t *pcr, peripheral_Frame_t PS, uint32 quadrant, master_ID_t master);
+void privileged_Peripheral_Frame_MasterIDFilter_Disable(pcrBASE_t *pcr, privileged_Peripheral_Frame_t PPS, uint32 quadrant, master_ID_t master);
+void privileged_Peripheral_Frame_MasterIDFilter_Enable (pcrBASE_t *pcr, privileged_Peripheral_Frame_t PPS, uint32 quadrant, master_ID_t master);
+void privileged_Peripheral_Extended_Frame_MasterIDFilter_Disable(pcrBASE_t *pcr, privileged_Peripheral_Extended_Frame_t PPSE, uint32 quadrant, master_ID_t master);
+void privileged_Peripheral_Extended_Frame_MasterIDFilter_Enable (pcrBASE_t *pcr, privileged_Peripheral_Extended_Frame_t PPSE, uint32 quadrant, master_ID_t master);
+
+void peripheral_Memory_MasterIDFilter_Disable(pcrBASE_t *pcr, peripheral_Memory_t PCS, master_ID_t master);
+void peripheral_Memory_MasterIDFilter_Enable (pcrBASE_t *pcr, peripheral_Memory_t PCS, master_ID_t master);
+void privileged_Peripheral_Memory_MasterIDFilter_Disable(pcrBASE_t *pcr, privileged_Peripheral_Memory_t PPCS, master_ID_t master);
+void privileged_Peripheral_Memory_MasterIDFilter_Enable (pcrBASE_t *pcr, privileged_Peripheral_Memory_t PPCS, master_ID_t master);
+
+void pcrEnableMasterIDCheck (pcrBASE_t *pcr);
+void pcrDisableMasterIDCheck(pcrBASE_t *pcr);
+
+ 
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void peripheral_Memory_Protection_Set(pcrBASE_t *pcr, peripheral_Memory_t PCS)
+{
+ 
+ 
+
+	if (PCS < 32U)
+	{
+		pcr->PMPROTSET0 = (uint32)1U << PCS;
+	}
+	else
+	{
+		pcr->PMPROTSET1 = (uint32)1U << (PCS - 32U);
+	}
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void peripheral_Memory_Protection_Clr(pcrBASE_t *pcr, peripheral_Memory_t PCS)
+{
+ 
+ 
+
+	if (PCS < 32U)
+	{
+		pcr->PMPROTCLR0 = (uint32)1U << PCS;
+	}
+	else
+	{
+		pcr->PMPROTCLR1 = (uint32)1U << (PCS - 32U);
+	}
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void peripheral_Frame_Protection_Set(pcrBASE_t *pcr, peripheral_Frame_t PS, uint32 quadrant)
+{
+ 
+ 
+
+	quadrant = quadrant & 0xFU;
+
+	if (PS < 8U)
+	{
+		pcr->PPROTSET0 = quadrant << PS * 4U;
+	}
+	else if (PS < 16U)
+	{
+		pcr->PPROTSET1 = quadrant << ((PS - 8U) * 4U);
+	}
+	else if (PS < 24U)
+	{
+		pcr->PPROTSET2 = quadrant << ((PS - 16U) * 4U);
+	}
+	else
+	{
+		pcr->PPROTSET3 = quadrant << ((PS - 24U) * 4U);
+	}
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void peripheral_Frame_Protection_Clr(pcrBASE_t *pcr, peripheral_Frame_t PS, uint32 quadrant)
+{
+ 
+ 
+
+	quadrant = quadrant & 0xFU;
+
+	if (PS < 8U)
+	{
+		pcr->PPROTCLR0 = quadrant << PS * 4U;
+	}
+	else if (PS < 16U)
+	{
+		pcr->PPROTCLR1 = quadrant << ((PS - 8U) * 4U);
+	}
+	else if (PS < 24U)
+	{
+		pcr->PPROTCLR2 = quadrant << ((PS - 16U) * 4U);
+	}
+	else
+	{
+		pcr->PPROTCLR3 = quadrant << ((PS - 24U) * 4U);
+	}
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void peripheral_Memory_PowerDown_Set(pcrBASE_t *pcr, peripheral_Memory_t PCS)
+{
+ 
+ 
+
+	if (PCS < 32U)
+	{
+		pcr->PCSPWRDWNSET0 = (uint32)1U << PCS;
+	}
+	else
+	{
+		pcr->PCSPWRDWNSET1 = (uint32)1U << (PCS - 32U);
+	}
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void peripheral_Memory_PowerDown_Clr(pcrBASE_t *pcr, peripheral_Memory_t PCS)
+{
+ 
+ 
+
+	if (PCS < 32U)
+	{
+		pcr->PCSPWRDWNCLR0 = (uint32)1U << PCS;
+	}
+	else
+	{
+		pcr->PCSPWRDWNCLR1 = (uint32)1U << (PCS - 32U);
+	}
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void peripheral_Frame_PowerDown_Set(pcrBASE_t *pcr, peripheral_Frame_t PS, uint32 quadrant)
+{
+ 
+ 
+
+	quadrant = quadrant & 0xFU;
+
+	if (PS < 8U)
+	{
+		pcr->PSPWRDWNSET0 = quadrant << (PS * 4U);
+	}
+	else if (PS < 16U)
+	{
+		pcr->PSPWRDWNSET1 = quadrant << ((PS - 8U) * 4U);
+	}
+	else if (PS < 24U)
+	{
+		pcr->PSPWRDWNSET2 = quadrant << ((PS - 16U) * 4U);
+	}
+	else
+	{
+		pcr->PSPWRDWNSET3 = quadrant << ((PS - 24U) * 4U);
+	}
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void peripheral_Frame_PowerDown_Clr(pcrBASE_t *pcr, peripheral_Frame_t PS, uint32 quadrant)
+{
+ 
+ 
+
+	quadrant = quadrant & 0xFU;
+
+	if (PS < 8U)
+	{
+		pcr->PSPWRDWNCLR0 = quadrant << (PS * 4U);
+	}
+	else if (PS < 16U)
+	{
+		pcr->PSPWRDWNCLR1 = quadrant << ((PS - 8U) * 4U);
+	}
+	else if (PS < 24U)
+	{
+		pcr->PSPWRDWNCLR2 = quadrant << ((PS - 16U) * 4U);
+	}
+	else
+	{
+		pcr->PSPWRDWNCLR3 = quadrant << ((PS - 24U) * 4U);
+	}
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void peripheral_Frame_MasterIDFilter_Enable(pcrBASE_t *pcr, peripheral_Frame_t PS, uint32 quadrant, master_ID_t master)
+{
+ 
+ 
+
+	quadrant = quadrant & 0xFU;
+
+	 
+	pcr->MSTIDWRENA = 0xAU;
+
+	if ((quadrant & 1U) != 0U)
+	{
+		 
+		pcr->PSxMSTID[PS].PSxMSTID_L |= (uint32)1U << master;
+	}
+
+	if ((quadrant & 2U) != 0U)
+	{
+		 
+		pcr->PSxMSTID[PS].PSxMSTID_L |= (uint32)1U << (master + 16U);
+	}
+
+	if ((quadrant & 4U) != 0U)
+	{
+		 
+		pcr->PSxMSTID[PS].PSxMSTID_H |= (uint32)1U << master;
+	}
+
+	if ((quadrant & 8U) != 0U)
+	{
+		 
+		pcr->PSxMSTID[PS].PSxMSTID_H |= (uint32)1U << (master + 16U);
+	}
+
+	 
+	pcr->MSTIDWRENA = 0x5U;
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void peripheral_Frame_MasterIDFilter_Disable(pcrBASE_t *pcr, peripheral_Frame_t PS, uint32 quadrant, master_ID_t master)
+{
+ 
+ 
+
+	quadrant = quadrant & 0xFU;
+
+	 
+	pcr->MSTIDWRENA = 0xAU;
+
+	if ((quadrant & 1U) != 0U)
+	{
+		 
+		pcr->PSxMSTID[PS].PSxMSTID_L &= ~((uint32)1U << master);
+	}
+
+	if ((quadrant & 2U) != 0U)
+	{
+		 
+		pcr->PSxMSTID[PS].PSxMSTID_L &= ~((uint32)1U << (master + 16U));
+	}
+
+	if ((quadrant & 4U) != 0U)
+	{
+		 
+		pcr->PSxMSTID[PS].PSxMSTID_H &= ~((uint32)1U << master);
+	}
+
+	if ((quadrant & 8U) != 0U)
+	{
+		 
+		pcr->PSxMSTID[PS].PSxMSTID_H &= ~((uint32)1U << (master + 16U));
+	}
+
+	 
+	pcr->MSTIDWRENA = 0x5U;
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void privileged_Peripheral_Frame_MasterIDFilter_Enable(pcrBASE_t *pcr, privileged_Peripheral_Frame_t PPS, uint32 quadrant, master_ID_t master)
+{
+ 
+ 
+
+	quadrant = quadrant & 0xFU;
+
+	 
+	pcr->MSTIDWRENA = 0xAU;
+
+	if ((quadrant & 1U) != 0U)
+	{
+		 
+		pcr->PPSxMSTID[PPS].PPSxMSTID_L |= (uint32)1U << master;
+	}
+
+	if ((quadrant & 2U) != 0U)
+	{
+		 
+		pcr->PPSxMSTID[PPS].PPSxMSTID_L |= (uint32)1U << (master + 16U);
+	}
+
+	if ((quadrant & 4U) != 0U)
+	{
+		 
+		pcr->PPSxMSTID[PPS].PPSxMSTID_H |= (uint32)1U << master;
+	}
+
+	if ((quadrant & 8U) != 0U)
+	{
+		 
+		pcr->PPSxMSTID[PPS].PPSxMSTID_H |= (uint32)1U << (master + 16U);
+	}
+
+	 
+	pcr->MSTIDWRENA = 0x5U;
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void privileged_Peripheral_Frame_MasterIDFilter_Disable(pcrBASE_t *pcr, privileged_Peripheral_Frame_t PPS, uint32 quadrant, master_ID_t master)
+{
+ 
+ 
+
+	quadrant = quadrant & 0xFU;
+
+	 
+	pcr->MSTIDWRENA = 0xAU;
+
+	if ((quadrant & 1U) != 0U)
+	{
+		 
+		pcr->PPSxMSTID[PPS].PPSxMSTID_L &= ~((uint32)1U << master);
+	}
+
+	if ((quadrant & 2U) != 0U)
+	{
+		 
+		pcr->PPSxMSTID[PPS].PPSxMSTID_L &= ~((uint32)1U << (master + 16U));
+	}
+
+	if ((quadrant & 4U) != 0U)
+	{
+		 
+		pcr->PPSxMSTID[PPS].PPSxMSTID_H &= ~((uint32)1U << master);
+	}
+
+	if ((quadrant & 8U) != 0U)
+	{
+		 
+		pcr->PPSxMSTID[PPS].PPSxMSTID_H &= ~((uint32)1U << (master + 16U));
+	}
+
+	 
+	pcr->MSTIDWRENA = 0x5U;
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void privileged_Peripheral_Extended_Frame_MasterIDFilter_Enable(pcrBASE_t *pcr, privileged_Peripheral_Extended_Frame_t PPSE, uint32 quadrant, master_ID_t master)
+{
+ 
+ 
+
+	quadrant = quadrant & 0xFU;
+
+	 
+	pcr->MSTIDWRENA = 0xAU;
+
+	if ((quadrant & 1U) != 0U)
+	{
+		 
+		pcr->PPSExMSTID[PPSE].PPSExMSTID_L |= (uint32)1U << master;
+	}
+
+	if ((quadrant & 2U) != 0U)
+	{
+		 
+		pcr->PPSExMSTID[PPSE].PPSExMSTID_L |= (uint32)1U << (master + 16U);
+	}
+
+	if ((quadrant & 4U) != 0U)
+	{
+		 
+		pcr->PPSExMSTID[PPSE].PPSExMSTID_H |= (uint32)1U << master;
+	}
+
+	if ((quadrant & 8U) != 0U)
+	{
+		 
+		pcr->PPSExMSTID[PPSE].PPSExMSTID_H |= (uint32)1U << (master + 16U);
+	}
+
+	 
+	pcr->MSTIDWRENA = 0x5U;
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void privileged_Peripheral_Extended_Frame_MasterIDFilter_Disable(pcrBASE_t *pcr, privileged_Peripheral_Extended_Frame_t PPSE, uint32 quadrant, master_ID_t master)
+{
+ 
+ 
+
+	quadrant = quadrant & 0xFU;
+
+	 
+	pcr->MSTIDWRENA = 0xAU;
+
+	if ((quadrant & 1U) != 0U)
+	{
+		 
+		pcr->PPSExMSTID[PPSE].PPSExMSTID_L &= ~((uint32)1U << master);
+	}
+
+	if ((quadrant & 2U) != 0U)
+	{
+		 
+		pcr->PPSExMSTID[PPSE].PPSExMSTID_L &= ~((uint32)1U << (master + 16U));
+	}
+
+	if ((quadrant & 4U) != 0U)
+	{
+		 
+		pcr->PPSExMSTID[PPSE].PPSExMSTID_H &= ~((uint32)1U << master);
+	}
+
+	if ((quadrant & 8U) != 0U)
+	{
+		 
+		pcr->PPSExMSTID[PPSE].PPSExMSTID_H &= ~((uint32)1U << (master + 16U));
+	}
+
+	 
+	pcr->MSTIDWRENA = 0x5U;
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void peripheral_Memory_MasterIDFilter_Enable(pcrBASE_t *pcr, peripheral_Memory_t PCS, master_ID_t master)
+{
+	uint8 i, j;
+
+ 
+ 
+
+	 
+	pcr->MSTIDWRENA = 0xAU;
+
+	i = PCS / 2U;
+	j = PCS % 2U;
+	j = j * 16U;   
+
+	pcr->PCSxMSTID[i] |= (uint32)1U << (master + j);
+
+	 
+	pcr->MSTIDWRENA = 0x5U;
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void peripheral_Memory_MasterIDFilter_Disable(pcrBASE_t *pcr, peripheral_Memory_t PCS, master_ID_t master)
+{
+	uint8 i, j;
+
+ 
+ 
+
+	 
+	pcr->MSTIDWRENA = 0xAU;
+
+	i = PCS / 2U;
+	j = PCS % 2U;
+	j = j * 16U;   
+
+	pcr->PCSxMSTID[i] &= ~((uint32)1U << (master + j));
+
+	 
+	pcr->MSTIDWRENA = 0x5U;
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void privileged_Peripheral_Memory_MasterIDFilter_Enable(pcrBASE_t *pcr, privileged_Peripheral_Memory_t PPCS, master_ID_t master)
+{
+	uint8 i, j;
+
+ 
+ 
+
+	 
+	pcr->MSTIDWRENA = 0xAU;
+
+	i = PPCS / 2U;
+	j = PPCS % 2U;
+	j = j * 16U;   
+
+	pcr->PPCSxMSTID[i] |= (uint32)1U << (master + j);
+
+	 
+	pcr->MSTIDWRENA = 0x5U;
+
+ 
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void privileged_Peripheral_Memory_MasterIDFilter_Disable(pcrBASE_t *pcr, privileged_Peripheral_Memory_t PPCS, master_ID_t master)
+{
+	uint8 i, j;
+
+ 
+ 
+
+	 
+	pcr->MSTIDWRENA = 0xAU;
+
+	i = PPCS / 2U;    
+	j = PPCS % 2U;    
+	j = j * 16U;      
+
+	pcr->PPCSxMSTID[i] &= ~((uint32)1U << (master + j));
+
+	 
+	pcr->MSTIDWRENA = 0x5U;
+
+ 
+ 
+}
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void pcrEnableMasterIDCheck(pcrBASE_t *pcr)
+{
+ 
+ 
+
+	pcr->MSTIDENA = 0xAU;
+
+ 
+ 
+}
+
+
+
+
+
+
+
+ 
+ 
+ 
+ 
+void pcrDisableMasterIDCheck(pcrBASE_t *pcr)
+{
+ 
+ 
+
+	pcr->MSTIDENA = 0x5U;
+
+ 
+ 
+}

@@ -1,0 +1,290 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{8031FDAC-FA20-459D-9A1A-156483034A51}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Mon Dec 11 10:35:32 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitl                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitf                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbit                                       |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormall                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormalf                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormal                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanf                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnan                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinfl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinff                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinf                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitel                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitef                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinite                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyl                                   |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyf                                   |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassify                                    |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  SBC_UpdateMainRegister                          |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SBC_UpdateFailSafeRegister                      |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SBC_UpdateRegister                              |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   SBC_UpdateMainRegister
+   SBC_UpdateFailSafeRegister
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SBC_ReadBackRegister                            |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   FS8x_ReadRegister
+   SBC_UpdateRegister
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SBC_CheckRegisterValues                         |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  SBC_TriggerWatchdog                             |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   FS8x_WD_Refresh
+   SBC_ReadBackRegister
+   SBC_CheckRegisterValues
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  MCU_SPI_TransferData                            |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   SPI_TransmitReceiveData
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SBC_WriteBackRegisterFsInit                     |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   FS8x_WriteRegisterInit
+   FS8x_ReadRegister
+   SBC_UpdateRegister
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SBC_WriteRegisterFsInit                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FS8x_WriteRegisterInit
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SBC_PerformPathCheckRstb                        |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   MINFO_GetResetSource
+   FRAM_ReadData
+   DIAG_Handler
+   SBC_ReadBackRegister
+   SBC_CheckRegisterValues
+   SBC_WriteBackRegisterFsInit
+   FRAM_WriteData
+   FSYS_RaisePrivilege
+   IO_PinReset
+   MCU_Delay_us
+   IO_PinSet
+   SBC_WriteRegisterFsInit
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SBC_PerformPathCheckFs0b                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  FS85_SafetyPathChecks                           |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   SBC_PerformPathCheckRstb
+   FS8x_FS0B_Release
+   SBC_PerformPathCheckFs0b
+   FRAM_WriteData
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  FS85_InitializeNumberOfRequiredWatchdogRefreshes|
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   SBC_ReadBackRegister
+   FS8x_GetFaultErrorCounterValue
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SBC_ClearRegisterFlags                          |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   FS8x_WriteRegister
+   FS8x_ReadRegister
+   SBC_UpdateRegister
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SBC_ReadBackAllRegisters                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   SBC_ReadBackRegister
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  FS85_InitializeFsPhase                          |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   SBC_ReadBackRegister
+   SBC_CheckRegisterValues
+   MINFO_SetDebugProbeConnectionState
+   SBC_WriteRegisterFsInit
+   SBC_WriteBackRegisterFsInit
+   SBC_TriggerWatchdog
+   MCU_Delay_us
+   SBC_ClearRegisterFlags
+   SBC_ReadBackAllRegisters
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  FS85_CheckFaultErrorCounter                     |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FS8x_GetFaultErrorCounterValue
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+

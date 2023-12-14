@@ -1,0 +1,67 @@
+[
+    {
+        "file:": "src\\app\\main\\include\\fassert.h",
+        "functions": [
+            {
+                "c-name": "FAS_DisableInterrupts",
+                "entry": "5",
+                "asm-function": "swiPortDisableInterrupts"
+            }
+        ]
+    },
+    {
+        "file:": "src\\app\\main\\include\\fsystem.h",
+        "functions": [
+            {
+                "c-name": "FSYS_RaisePrivilege",
+                "entry": "1",
+                "asm-function": "swiRaisePrivilege"
+            }
+        ]
+    },
+    {
+        "file:": "src\\os\\freertos\\portable\\ccs\\arm_cortex-r5\\portmacro.h",
+        "functions": [
+            {
+                "c-name": "vPortEnterCritical",
+                "entry": "2",
+                "asm-function": "swiPortEnterCritical"
+            },
+            {
+                "c-name": "vPortExitCritical",
+                "entry": "3",
+                "asm-function": "swiPortExitCritical"
+            },
+            {
+                "c-name": "vPortDisableInterrupts",
+                "entry": "5",
+                "asm-function": "swiPortDisableInterrupts"
+            },
+            {
+                "c-name": "vPortEnableInterrupts",
+                "entry": "6",
+                "asm-function": "swiPortEnableInterrupts"
+            },
+            {
+                "c-name": "vPortYield",
+                "entry": "0",
+                "asm-function": "swiPortYield"
+            },
+            {
+                "c-name": "vPortTaskUsesFPU",
+                "entry": "4",
+                "asm-function": "swiPortTaskUsesFPU"
+            }
+        ]
+    },
+    {
+        "file:": "src\\os\\freertos\\portable\\common\\mpu_wrappers.c",
+        "functions": [
+            {
+                "c-name": "xPortRaisePrivilege",
+                "entry": "1",
+                "asm-function": "swiRaisePrivilege"
+            }
+        ]
+    }
+]

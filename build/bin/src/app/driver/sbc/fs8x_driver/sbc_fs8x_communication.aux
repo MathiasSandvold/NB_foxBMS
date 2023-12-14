@@ -1,0 +1,72 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{FC03068A-E215-45E4-BE61-7FBE4AA67ABA}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Mon Dec 11 10:26:53 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  FS8x_CalcCRC                                    |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  FS8x_SPI_CreateSendFrame                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FS8x_CalcCRC
+
++-------------------------------------------------------------+
+|  FUNCTION:  FS8x_CheckCRC                                   |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FS8x_CalcCRC
+
++-------------------------------------------------------------+
+|  FUNCTION:  FS8x_SPI_TransferData                           |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   memset
+   FS8x_SPI_CreateSendFrame
+   MCU_SPI_TransferData
+   FS8x_CheckCRC
+
++-------------------------------------------------------------+
+|  FUNCTION:  FS8x_WriteRegister                              |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   FS8x_SPI_TransferData
+
++-------------------------------------------------------------+
+|  FUNCTION:  FS8x_WriteRegisterInit                          |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   FS8x_WriteRegister
+
++-------------------------------------------------------------+
+|  FUNCTION:  FS8x_ReadRegister                               |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   FS8x_SPI_TransferData
+
++-------------------------------------------------------------+
+|  FUNCTION:  FS8x_UpdateRegister                             |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   FS8x_ReadRegister
+   FS8x_WriteRegister
+

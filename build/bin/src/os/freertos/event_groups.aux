@@ -1,0 +1,106 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{56A2A062-EEF4-48B0-9D49-45B489F20CB8}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Mon Dec 11 10:43:35 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  prvTestWaitCondition                            |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  xEventGroupWaitBits                             |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   xTaskGetSchedulerState
+   vTaskSuspendAll
+   prvTestWaitCondition
+   vTaskPlaceOnUnorderedEventList
+   xTaskResumeAll
+   uxTaskResetEventItemValue
+   vPortEnterCritical
+   vPortExitCritical
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xEventGroupSetBits                              |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   vTaskSuspendAll
+   xTaskResumeAll
+   vTaskRemoveFromUnorderedEventList
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xEventGroupSync                                 |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   xTaskGetSchedulerState
+   vTaskSuspendAll
+   xEventGroupSetBits
+   vTaskPlaceOnUnorderedEventList
+   xTaskResumeAll
+   uxTaskResetEventItemValue
+   vPortEnterCritical
+   vPortExitCritical
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xEventGroupGetBitsFromISR                       |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  xEventGroupCreateStatic                         |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   vListInitialise
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  xEventGroupClearBits                            |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   vPortEnterCritical
+   vPortExitCritical
+   vPortDisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  vEventGroupSetBitsCallback                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
+Called functions:
+   xEventGroupSetBits
+
++-------------------------------------------------------------+
+|  FUNCTION:  vEventGroupDelete                               |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   vPortDisableInterrupts
+   vTaskSuspendAll
+   vTaskRemoveFromUnorderedEventList
+   xTaskResumeAll
+
++-------------------------------------------------------------+
+|  FUNCTION:  vEventGroupClearBitsCallback                    |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
+Called functions:
+   xEventGroupClearBits
+

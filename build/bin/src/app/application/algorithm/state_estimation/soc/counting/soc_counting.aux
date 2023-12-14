@@ -1,0 +1,183 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{91EE615B-3733-457F-B35C-9DF42761D2D6}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Mon Dec 11 10:26:29 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitl                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitf                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbit                                       |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormall                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormalf                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormal                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanf                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnan                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinfl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinff                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinf                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitel                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitef                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinite                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyl                                   |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyf                                   |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassify                                    |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  SOC_GetStringSocPercentageFromCharge            |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  SOC_CheckDatabaseSocPercentageLimits            |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SE_InitializeStateOfCharge                      |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   DATA_Read1DataBlock
+   FRAM_ReadData
+   SOC_GetStringSocPercentageFromCharge
+   SOC_CheckDatabaseSocPercentageLimits
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SE_GetStateOfChargeFromVoltage                  |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   MATH_LinearInterpolation
+
++-------------------------------------------------------------+
+|  FUNCTION:  SOC_UpdateNvmValues                             |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SOC_SetValue                                    |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   SOC_GetStringSocPercentageFromCharge
+   SOC_CheckDatabaseSocPercentageLimits
+   SOC_UpdateNvmValues
+   FRAM_WriteData
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SOC_RecalibrateViaLookupTable                   |
++-------------------------------------------------------------+
+Stack usage:   72 bytes
+
+Called functions:
+   memcpy
+   DATA_Read1DataBlock
+   SE_GetStateOfChargeFromVoltage
+   SOC_SetValue
+   FRAM_WriteData
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SE_CalculateStateOfCharge                       |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   DATA_Read1DataBlock
+   BMS_GetBatterySystemState
+   SOC_CheckDatabaseSocPercentageLimits
+   SOC_UpdateNvmValues
+   FRAM_WriteData
+   SOC_RecalibrateViaLookupTable
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+

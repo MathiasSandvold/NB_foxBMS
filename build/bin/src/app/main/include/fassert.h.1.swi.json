@@ -1,0 +1,9 @@
+{
+    "file:": "src\\app\\main\\include\\fassert.h",
+    "functions": [
+        {
+            "c-name": "FAS_DisableInterrupts",
+            "entry": "5"
+        }
+    ]
+}
