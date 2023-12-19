@@ -1,0 +1,13 @@
+<map id="vishay_ntcle317e4103sba.c" name="vishay_ntcle317e4103sba.c">
+<area shape="rect" id="node1" title="Resistive divider used for measuring temperature." alt="" coords="227,5,408,32"/>
+<area shape="rect" id="node2" href="$vishay__ntcle317e4103sba_8h.html" title="Resistive divider used for measuring temperature." alt="" coords="227,87,408,114"/>
+<area shape="rect" id="node3" title=" " alt="" coords="285,169,350,196"/>
+<area shape="rect" id="node4" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="80,87,152,114"/>
+<area shape="rect" id="node5" title=" " alt="" coords="5,169,80,196"/>
+<area shape="rect" id="node7" href="$foxmath_8h.html" title="math library for often used math functions" alt="" coords="646,87,725,114"/>
+<area shape="rect" id="node8" title=" " alt="" coords="570,169,633,196"/>
+<area shape="rect" id="node11" href="$temperature__sensor__defs_8h.html" title="TODO." alt="" coords="433,80,570,121"/>
+<area shape="rect" id="node6" title=" " alt="" coords="105,169,205,196"/>
+<area shape="rect" id="node9" title=" " alt="" coords="657,169,714,196"/>
+<area shape="rect" id="node10" title=" " alt="" coords="739,169,803,196"/>
+</map>

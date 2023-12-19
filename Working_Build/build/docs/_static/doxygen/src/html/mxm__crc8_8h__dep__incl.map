@@ -1,0 +1,14 @@
+<map id="mxm_crc8.h" name="mxm_crc8.h">
+<area shape="rect" id="node1" title="Headers for the CRC8 calculation for Maxim Integrated Monitoring devices." alt="" coords="679,5,774,32"/>
+<area shape="rect" id="node2" href="$mxm__1785x_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="484,229,588,256"/>
+<area shape="rect" id="node6" href="$mxm__battery__management_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="397,80,587,107"/>
+<area shape="rect" id="node12" href="$mxm__crc8_8c.html" title="CRC8 calculation for Maxim Integrated Monitoring devices." alt="" coords="765,80,859,107"/>
+<area shape="rect" id="node3" href="$mxm__afe_8c.html" title="AFE driver implementation." alt="" coords="537,304,623,331"/>
+<area shape="rect" id="node4" href="$mxm__1785x_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="5,304,109,331"/>
+<area shape="rect" id="node5" href="$mxm__17852_8c.html" title="Operation state machine implementation for the MAX17852." alt="" coords="339,304,443,331"/>
+<area shape="rect" id="node7" href="$mxm__1785x__tools_8h.html" title="This is a collection of helper functions for the MAX1785x ICs." alt="" coords="183,155,321,181"/>
+<area shape="rect" id="node11" href="$mxm__battery__management_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="397,155,587,181"/>
+<area shape="rect" id="node8" href="$mxm__1785x__tools_8c.html" title="This is a collection of helper functions for the MAX1785x ICs." alt="" coords="33,229,172,256"/>
+<area shape="rect" id="node9" href="$mxm__registry_8h.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="196,229,308,256"/>
+<area shape="rect" id="node10" href="$mxm__registry_8c.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="196,304,308,331"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="can_cfg_rx&#45;message&#45;definitions.h" name="can_cfg_rx&#45;message&#45;definitions.h">
+<area shape="rect" id="node1" title="Header for the driver for the CAN module." alt="" coords="415,5,558,47"/>
+<area shape="rect" id="node2" href="$can__cbs__rx__current-sensor_8c.html" title="CAN driver Rx callback implementation." alt="" coords="5,95,141,136"/>
+<area shape="rect" id="node3" href="$can__cbs__rx__debug_8c.html" title="CAN driver Rx callback implementation." alt="" coords="166,102,309,129"/>
+<area shape="rect" id="node4" href="$can__cbs__rx__imd_8c.html" title="CAN driver Rx callback implementation." alt="" coords="333,102,461,129"/>
+<area shape="rect" id="node5" href="$can__cbs__rx__state-request_8c.html" title="CAN driver Rx callback implementation." alt="" coords="486,102,669,129"/>
+<area shape="rect" id="node6" href="$can__cfg__rx_8c.html" title="Configuration for the CAN module." alt="" coords="693,102,789,129"/>
+<area shape="rect" id="node7" href="$bender__iso165c_8c.html" title="Driver for the insulation monitoring." alt="" coords="814,102,938,129"/>
+</map>

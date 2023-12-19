@@ -1,0 +1,4 @@
+<map id="testDIAG_FramErrorDoNothingOnWrongId" name="testDIAG_FramErrorDoNothingOnWrongId">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,205,47"/>
+<area shape="rect" id="node2" href="$diag__cbs_8h.html#ad8eaedde2bf758650999ca89e629a8c8" title="diagnosis callback function for FRAM related events" alt="" coords="253,13,372,39"/>
+</map>

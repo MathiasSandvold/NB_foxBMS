@@ -1,0 +1,353 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.5. Batch and Shell Coding Guidelines &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2.6. YAML Coding Guidelines" href="guidelines_yaml.html" />
+    <link rel="prev" title="2.4. reStructuredText Coding Guidelines" href="guidelines_rst.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">1. Preface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="style-guide.html">2. Style Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="guidelines_general.html">2.1. General Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_c.html">2.2. C Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_python.html">2.3. Python Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_rst.html">2.4. reStructuredText Coding Guidelines</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.5. Batch and Shell Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_yaml.html">2.6. YAML Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_overview.html">2.7. Table of Rules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="style-guide.html"><span class="section-number">2. </span>Style Guide</a> &raquo;</li>
+      <li><span class="section-number">2.5. </span>Batch and Shell Coding Guidelines</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/developer-manual/style-guide/guidelines_batch_shell.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="batch-and-shell-coding-guidelines">
+<span id="id1"></span><h1><span class="section-number">2.5. </span>Batch and Shell Coding Guidelines<a class="headerlink" href="#batch-and-shell-coding-guidelines" title="Permalink to this headline"></a></h1>
+<p>These coding guidelines <strong>MUST</strong> be applied to all batch/shell scripts.</p>
+<div class="section" id="batch">
+<span id="rules-batch"></span><h2><span class="section-number">2.5.1. </span>Batch<a class="headerlink" href="#batch" title="Permalink to this headline"></a></h2>
+<p>The following rules generally apply and follow the naming schema
+<code class="docutils literal notranslate"><span class="pre">BATCH:&lt;ongoing-number&gt;</span></code>.</p>
+<div class="section" id="filenames-batch-001">
+<span id="rule-batch-filenames"></span><h3><span class="section-number">2.5.1.1. </span>Filenames (<code class="docutils literal notranslate"><span class="pre">BATCH:001</span></code>)<a class="headerlink" href="#filenames-batch-001" title="Permalink to this headline"></a></h3>
+<p>The following rules apply for filenames of batch scripts.</p>
+<div class="admonition-batch-script-filenames admonition">
+<p class="admonition-title">Batch script filenames</p>
+<ul class="simple">
+<li><p>The general file naming rules <strong>MUST</strong> be applied (see
+<a class="reference internal" href="guidelines_general.html#rule-general-filenames"><span class="std std-numref">Section 2.1.1</span></a>).</p></li>
+<li><p>Batch scripts <strong>MUST</strong> use <code class="docutils literal notranslate"><span class="pre">.bat</span></code> as file extension.</p></li>
+</ul>
+</div>
+<p>For example the valid file names for batch scripts are</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">hello.bat</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">my-script.bat</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="header-batch-002">
+<span id="rule-batch-header"></span><h3><span class="section-number">2.5.1.2. </span>Header (<code class="docutils literal notranslate"><span class="pre">BATCH:002</span></code>)<a class="headerlink" href="#header-batch-002" title="Permalink to this headline"></a></h3>
+<div class="admonition-batch-script-header admonition">
+<p class="admonition-title">Batch script header</p>
+<p>Batch scripts <strong>MUST</strong> start with the following header:</p>
+<div class="literal-block-wrapper docutils container" id="file-header-batch">
+<div class="code-block-caption"><span class="caption-number">Listing 2.42 </span><span class="caption-text">File header for batch scripts.</span><a class="headerlink" href="#file-header-batch" title="Permalink to this code"></a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="go">@REM Copyright (c) 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V.</span>
+<span class="linenos"> 2</span><span class="go">@REM All rights reserved.</span>
+<span class="linenos"> 3</span><span class="go">@REM</span>
+<span class="linenos"> 4</span><span class="go">@REM SPDX-License-Identifier: BSD-3-Clause</span>
+<span class="linenos"> 5</span><span class="go">@REM</span>
+<span class="linenos"> 6</span><span class="go">@REM Redistribution and use in source and binary forms, with or without</span>
+<span class="linenos"> 7</span><span class="go">@REM modification, are permitted provided that the following conditions are met:</span>
+<span class="linenos"> 8</span><span class="go">@REM</span>
+<span class="linenos"> 9</span><span class="go">@REM 1. Redistributions of source code must retain the above copyright notice, this</span>
+<span class="linenos">10</span><span class="go">@REM    list of conditions and the following disclaimer.</span>
+<span class="linenos">11</span><span class="go">@REM</span>
+<span class="linenos">12</span><span class="go">@REM 2. Redistributions in binary form must reproduce the above copyright notice,</span>
+<span class="linenos">13</span><span class="go">@REM    this list of conditions and the following disclaimer in the documentation</span>
+<span class="linenos">14</span><span class="go">@REM    and/or other materials provided with the distribution.</span>
+<span class="linenos">15</span><span class="go">@REM</span>
+<span class="linenos">16</span><span class="go">@REM 3. Neither the name of the copyright holder nor the names of its</span>
+<span class="linenos">17</span><span class="go">@REM    contributors may be used to endorse or promote products derived from</span>
+<span class="linenos">18</span><span class="go">@REM    this software without specific prior written permission.</span>
+<span class="linenos">19</span><span class="go">@REM</span>
+<span class="linenos">20</span><span class="go">@REM THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</span>
+<span class="linenos">21</span><span class="go">@REM AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span>
+<span class="linenos">22</span><span class="go">@REM IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE</span>
+<span class="linenos">23</span><span class="go">@REM DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE</span>
+<span class="linenos">24</span><span class="go">@REM FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL</span>
+<span class="linenos">25</span><span class="go">@REM DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR</span>
+<span class="linenos">26</span><span class="go">@REM SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER</span>
+<span class="linenos">27</span><span class="go">@REM CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,</span>
+<span class="linenos">28</span><span class="go">@REM OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</span>
+<span class="linenos">29</span><span class="go">@REM OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="linenos">30</span><span class="go">@REM</span>
+<span class="linenos">31</span><span class="go">@REM We kindly request you to use one or more of the following phrases to refer to</span>
+<span class="linenos">32</span><span class="go">@REM foxBMS in your hardware, software, documentation or advertising materials:</span>
+<span class="linenos">33</span><span class="go">@REM</span>
+<span class="linenos">34</span><span class="go">@REM - &quot;This product uses parts of foxBMS&amp;reg;&quot;</span>
+<span class="linenos">35</span><span class="go">@REM - &quot;This product includes parts of foxBMS&amp;reg;&quot;</span>
+<span class="linenos">36</span><span class="go">@REM - &quot;This product is derived from foxBMS&amp;reg;&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="shell">
+<span id="rules-shell"></span><h2><span class="section-number">2.5.2. </span>Shell<a class="headerlink" href="#shell" title="Permalink to this headline"></a></h2>
+<p>The following rules generally apply and follow the naming schema
+<code class="docutils literal notranslate"><span class="pre">SHELL:&lt;ongoing-number&gt;</span></code>.</p>
+<div class="section" id="filenames-shell-001">
+<span id="rule-shell-filenames"></span><h3><span class="section-number">2.5.2.1. </span>Filenames (<code class="docutils literal notranslate"><span class="pre">SHELL:001</span></code>)<a class="headerlink" href="#filenames-shell-001" title="Permalink to this headline"></a></h3>
+<p>The following rules apply for filenames of shell scripts.</p>
+<div class="admonition-shell-script-filenames admonition">
+<p class="admonition-title">Shell script filenames</p>
+<ul class="simple">
+<li><p>The general file naming rules <strong>MUST</strong> be applied (see
+<a class="reference internal" href="guidelines_general.html#rule-general-filenames"><span class="std std-numref">Section 2.1.1</span></a>).</p></li>
+<li><p>Shell scripts <strong>MUST</strong> use <code class="docutils literal notranslate"><span class="pre">.sh</span></code> as file extension.</p></li>
+</ul>
+</div>
+<p>For example the valid file names for shell scripts are</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">hello.sh</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">my-script.sh</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="header-shell-002">
+<span id="rule-shell-header"></span><h3><span class="section-number">2.5.2.2. </span>Header (<code class="docutils literal notranslate"><span class="pre">SHELL:002</span></code>)<a class="headerlink" href="#header-shell-002" title="Permalink to this headline"></a></h3>
+<div class="admonition-shell-script-header admonition">
+<p class="admonition-title">Shell script header</p>
+<p>Shell scripts <strong>MUST</strong> start with the following header:</p>
+<div class="literal-block-wrapper docutils container" id="file-header-shell">
+<div class="code-block-caption"><span class="caption-number">Listing 2.43 </span><span class="caption-text">File header for shell scripts.</span><a class="headerlink" href="#file-header-shell" title="Permalink to this code"></a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="gp">#</span>!/usr/bin/env bash
+<span class="linenos"> 2</span><span class="gp">#</span>
+<span class="linenos"> 3</span><span class="gp"># </span>Copyright <span class="o">(</span>c<span class="o">)</span> <span class="m">2010</span> - <span class="m">2023</span>, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V.
+<span class="linenos"> 4</span><span class="gp"># </span>All rights reserved.
+<span class="linenos"> 5</span><span class="gp">#</span>
+<span class="linenos"> 6</span><span class="gp"># </span>SPDX-License-Identifier: BSD-3-Clause
+<span class="linenos"> 7</span><span class="gp">#</span>
+<span class="linenos"> 8</span><span class="gp"># </span>Redistribution and use <span class="k">in</span> <span class="nb">source</span> and binary forms, with or without
+<span class="linenos"> 9</span><span class="gp"># </span>modification, are permitted provided that the following conditions are met:
+<span class="linenos">10</span><span class="gp">#</span>
+<span class="linenos">11</span><span class="gp"># </span><span class="m">1</span>. Redistributions of <span class="nb">source</span> code must retain the above copyright notice, this
+<span class="linenos">12</span><span class="gp">#    </span>list of conditions and the following disclaimer.
+<span class="linenos">13</span><span class="gp">#</span>
+<span class="linenos">14</span><span class="gp"># </span><span class="m">2</span>. Redistributions <span class="k">in</span> binary form must reproduce the above copyright notice,
+<span class="linenos">15</span><span class="gp">#    </span>this list of conditions and the following disclaimer <span class="k">in</span> the documentation
+<span class="linenos">16</span><span class="gp">#    </span>and/or other materials provided with the distribution.
+<span class="linenos">17</span><span class="gp">#</span>
+<span class="linenos">18</span><span class="gp"># </span><span class="m">3</span>. Neither the name of the copyright holder nor the names of its
+<span class="linenos">19</span><span class="gp">#    </span>contributors may be used to endorse or promote products derived from
+<span class="linenos">20</span><span class="gp">#    </span>this software without specific prior written permission.
+<span class="linenos">21</span><span class="gp">#</span>
+<span class="linenos">22</span><span class="gp"># </span>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS <span class="s2">&quot;AS IS&quot;</span>
+<span class="linenos">23</span><span class="gp"># </span>AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+<span class="linenos">24</span><span class="gp"># </span>IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+<span class="linenos">25</span><span class="gp"># </span>DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+<span class="linenos">26</span><span class="gp"># </span>FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+<span class="linenos">27</span><span class="gp"># </span>DAMAGES <span class="o">(</span>INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+<span class="linenos">28</span><span class="gp"># </span>SERVICES<span class="p">;</span> LOSS OF USE, DATA, OR PROFITS<span class="p">;</span> OR BUSINESS INTERRUPTION<span class="o">)</span> HOWEVER
+<span class="linenos">29</span><span class="gp"># </span>CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+<span class="linenos">30</span><span class="gp"># </span>OR TORT <span class="o">(</span>INCLUDING NEGLIGENCE OR OTHERWISE<span class="o">)</span> ARISING IN ANY WAY OUT OF THE USE
+<span class="linenos">31</span><span class="gp"># </span>OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+<span class="linenos">32</span><span class="gp">#</span>
+<span class="linenos">33</span><span class="gp"># </span>We kindly request you to use one or more of the following phrases to refer to
+<span class="linenos">34</span><span class="gp"># </span>foxBMS <span class="k">in</span> your hardware, software, documentation or advertising materials:
+<span class="linenos">35</span><span class="gp">#</span>
+<span class="linenos">36</span><span class="gp"># </span>- <span class="s2">&quot;This product uses parts of foxBMS&amp;reg;&quot;</span>
+<span class="linenos">37</span><span class="gp"># </span>- <span class="s2">&quot;This product includes parts of foxBMS&amp;reg;&quot;</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="file-templates">
+<h2><span class="section-number">2.5.3. </span>File Templates<a class="headerlink" href="#file-templates" title="Permalink to this headline"></a></h2>
+<p>These file templates below show how these rules are correctly applied.
+They <strong>SHOULD</strong> be used as basis for new files.</p>
+<ul class="simple">
+<li><p>Batch script <a class="reference download internal" download="" href="../../_downloads/b19064a7d97a4ab7fdb2111c184299e1/batch.bat"><code class="xref download docutils literal notranslate"><span class="pre">batch.bat</span></code></a></p></li>
+<li><p>Shell script <a class="reference download internal" download="" href="../../_downloads/40de9192a10c8e960a35b19744246afc/shell.sh"><code class="xref download docutils literal notranslate"><span class="pre">shell.sh</span></code></a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="guidelines_rst.html" class="btn btn-neutral float-left" title="2.4. reStructuredText Coding Guidelines" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="guidelines_yaml.html" class="btn btn-neutral float-right" title="2.6. YAML Coding Guidelines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

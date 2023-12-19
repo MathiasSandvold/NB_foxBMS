@@ -1,0 +1,5 @@
+<map id="TEST_SOF_CalculateTemperatureBasedCurrentLimit" name="TEST_SOF_CalculateTemperatureBasedCurrentLimit">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,227,47"/>
+<area shape="rect" id="node2" href="$sof__trapezoid_8c.html#a09f81cc818c5389fd0244448fb90511f" title="calculates the SoF from temperature data (i.e., minimum and maximum temperature of cells)" alt="" coords="275,5,457,47"/>
+<area shape="rect" id="node3" href="$foxmath_8c.html#a2db263df23dd46c7d63c6b0f2bc0f00d" title="Returns the minimum of the passed float values." alt="" coords="505,13,696,39"/>
+</map>

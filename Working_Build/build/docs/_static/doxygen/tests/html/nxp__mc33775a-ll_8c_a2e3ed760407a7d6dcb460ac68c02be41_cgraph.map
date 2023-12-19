@@ -1,0 +1,4 @@
+<map id="N775_WaitForTxCompletedNotification" name="N775_WaitForTxCompletedNotification">
+<area shape="rect" id="node1" title="Wait for the SPI transmit communication to complete, using notifications." alt="" coords="5,5,251,32"/>
+<area shape="rect" id="node2" href="$os__freertos_8c.html#a7578e983d03af6f03fd3fe09f293cdb1" title="Wait for a notification, with index." alt="" coords="299,5,501,32"/>
+</map>

@@ -1,0 +1,13 @@
+<map id="EG_RunStateMachine" name="EG_RunStateMachine">
+<area shape="rect" id="node1" title="Defines the state transitions." alt="" coords="5,157,156,184"/>
+<area shape="rect" id="node2" href="$state-machine_8c.html#a51658c68059aa58dfb6581179e5f31f6" title="Processes the initialization state." alt="" coords="209,91,373,133"/>
+<area shape="rect" id="node7" href="$state-machine_8c.html#a65d2c2b586cb8968ef08333a963d90b8" title="Processes the running state." alt="" coords="204,208,379,235"/>
+<area shape="rect" id="node11" href="$state-machine_8c.html#afa3fd8e1fa7eaf5fb998d3e4cbdc84a6" title="Sets the next state, the next substate and the timer value of the state variable." alt="" coords="242,157,341,184"/>
+<area shape="rect" id="node3" href="$state-machine_8c.html#a27e6bf1e63e5507058042fc4e00e6d09" title="Sets the next substate and the timer value of the state variable." alt="" coords="478,157,598,184"/>
+<area shape="rect" id="node4" href="$state-machine_8c.html#abc5b63fdac232a38e1e55b9ba977ba6a" title="dummy function for initialization substate EG_FSM_SUBSTATE_INITIALIZATION_0" alt="" coords="435,5,641,32"/>
+<area shape="rect" id="node5" href="$state-machine_8c.html#acf61fa89edeeb7cf538a82c8aa7f5b50" title="dummy function for initialization substate EG_FSM_SUBSTATE_INITIALIZATION_1" alt="" coords="435,56,641,83"/>
+<area shape="rect" id="node6" href="$state-machine_8c.html#a3c4d32401332809e5191abb9f2ae01e0" title="dummy function to check if the initialization step of the state machine was successful (EG_FSM_SUBSTA..." alt="" coords="427,107,649,133"/>
+<area shape="rect" id="node8" href="$state-machine_8c.html#a5b18110f9557d9ce53f25cfb945f64f9" title="dummy function making a test to determine the outcome of substate EG_FSM_SUBSTATE_RUNNING_0" alt="" coords="445,259,631,285"/>
+<area shape="rect" id="node9" href="$state-machine_8c.html#ad311c5570a313742fa9b70d385fd94d9" title="dummy function making a test to determine the outcome of substate EG_FSM_SUBSTATE_RUNNING_1" alt="" coords="445,309,631,336"/>
+<area shape="rect" id="node10" href="$state-machine_8c.html#a53dd436c1fa002c363967f4f3f7995a5" title="dummy function making a test to determine the outcome of substate EG_FSM_SUBSTATE_RUNNING_2" alt="" coords="445,208,631,235"/>
+</map>

@@ -1,0 +1,258 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{CF74DD0A-7FBE-46A2-BFDC-164424E70394}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Thu Sep  7 11:08:16 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitl                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitf                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbit                                       |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormall                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormalf                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormal                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanf                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnan                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinfl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinff                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinf                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitel                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitef                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinite                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyl                                   |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyf                                   |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassify                                    |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPS_GetChannelAffiliation                       |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPS_RequestChannelState                         |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPS_RequestGeneralIoState                       |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   SPS_GetChannelAffiliation
+   SPS_RequestChannelState
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPS_RequestContactorState                       |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   SPS_GetChannelAffiliation
+   SPS_RequestChannelState
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPS_InitializeIo                                |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
+Called functions:
+   IO_PinSet
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPS_GetChannelPexFeedback                       |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   PEX_GetPin
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPS_GetChannelCurrentFeedback                   |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPS_GlobalRegisterRead                          |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPS_GlobalRegisterWrite                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPS_SetCommandTxBuffer                          |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
+Called functions:
+   SPS_GlobalRegisterRead
+   SPS_GlobalRegisterWrite
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPS_SingleDeviceRegisterWrite                   |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPS_SetContactorsTxBuffer                       |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   SPS_SingleDeviceRegisterWrite
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPS_Transmit                                    |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   SPI_TransmitReceiveData
+   MCU_Delay_us
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPS_GlobalReadCurrent                           |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPS_InitializeBuffers                           |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   SPS_SingleDeviceRegisterWrite
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPS_Ctrl                                        |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   SPS_SetCommandTxBuffer
+   SPS_SetContactorsTxBuffer
+   SPS_Transmit
+   SPS_GlobalReadCurrent
+   SPI_SpsInterfaceSwitchToHighSpeed
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   IO_PinSet
+   IO_PinReset
+   SPI_SpsInterfaceSwitchToLowSpeed
+   SPS_InitializeBuffers
+

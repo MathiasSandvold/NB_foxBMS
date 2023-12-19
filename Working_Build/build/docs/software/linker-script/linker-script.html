@@ -1,0 +1,328 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>9. Linker Script &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="10. Software Architecture" href="../architecture/architecture.html" />
+    <link rel="prev" title="8.2.11. How to Build A Library and Link it in a foxBMS 2 Project" href="../build-process/library-project_how-to.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><span class="section-number">9. </span>Linker Script</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/software/linker-script/linker-script.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="linker-script">
+<span id="id1"></span><h1><span class="section-number">9. </span>Linker Script<a class="headerlink" href="#linker-script" title="Permalink to this headline"></a></h1>
+<div class="section" id="memory-map">
+<h2><span class="section-number">9.1. </span>Memory Map<a class="headerlink" href="#memory-map" title="Permalink to this headline"></a></h2>
+<p>The relevant parts of the memory map of the TMS 570LC4375 for configuring the
+linker script are:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>┌────────────────────────────────────────┬────────────┐
+│              ...                       │            │
+│                                        │            │
+├────────────────────────────────────────┼────────────┤
+│              Flash                     │ 0xF047FFFF │
+│  (Flash ECC, OTP and EEPROM accesses)  │ 0xF0000000 │
+├────────────────────────────────────────┼────────────┤
+│              ...                       │            │
+│                                        │            │
+├────────────────────────────────────────┼────────────┤
+│              RAM (512KB)               │ 0x0807FFFF │
+│                                        │ 0x08000000 │
+├────────────────────────────────────────┼────────────┤
+│              ...                       │            │
+│                                        │            │
+├────────────────────────────────────────┼────────────┤
+│              Flash (4MB)               │ 0x003FFFFF │
+│                                        │ 0x00000000 │
+└────────────────────────────────────────┴────────────┘
+</pre></div>
+</div>
+<p>The Flash bank is divided into two equally sized banks with a length of
+<code class="docutils literal notranslate"><span class="pre">0x200000</span></code> (i.e., <code class="docutils literal notranslate"><span class="pre">FLASH_BANK_LENGTH</span></code>), i.e., the total flash size is
+<code class="docutils literal notranslate"><span class="pre">2</span> <span class="pre">*</span> <span class="pre">0x200000</span></code>.</p>
+<p>Detail information for the Flash ECC:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>┌────────────────────────────────────────┬────────────┐
+│          Flash Data Space ECC          │ 0xF05FFFFF │
+│                                        │ 0xF047FFFF │
+└────────────────────────────────────────┴────────────┘
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2><span class="section-number">9.2. </span>Linker Script<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h2>
+<p>The main linker script is found at <code class="docutils literal notranslate"><span class="pre">src\app\main\linker_script_elf.cmd</span></code>.
+A derived hex-linker script is found at <code class="docutils literal notranslate"><span class="pre">src\app\main\linker_script_hex.cmd</span></code>.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">MEMORY</span></code> and <code class="docutils literal notranslate"><span class="pre">SECTIONS</span></code> directives can be used to configure the
+allocation process.
+The <code class="docutils literal notranslate"><span class="pre">ECC</span></code> directive can be used to configure the Error-correcting code of the
+memory.</p>
+<p>The <code class="docutils literal notranslate"><span class="pre">MEMORY</span></code> directive tells the linker the location and the size of memory
+blocks.
+The task of the <code class="docutils literal notranslate"><span class="pre">SECTIONS</span></code> directive is to tell the linker how to map input
+sections into output sections, and how to place the output sections in memory,
+i.e., specific sections can be placed in particular memory regions.</p>
+<div class="section" id="memory-layout-configuration">
+<h3><span class="section-number">9.2.1. </span>Memory Layout Configuration<a class="headerlink" href="#memory-layout-configuration" title="Permalink to this headline"></a></h3>
+<p>Flash:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>┌────────────────────────────────────────┬────────────┐
+│              VECTORS_TABLE             │ 0x00000000 │
+│              (0x20)                    │ 0x0000001F │
+├────────────────────────────────────────┼────────────┤
+│              KERNEL_FUNCTIONS          │ 0x00000020 │
+│              (0x8000)                  │ 0x0000801F │
+├────────────────────────────────────────┼────────────┤
+│              FLASH                     │ 0x00008020 │
+│              (0x3F7F20)                │ 0x003FFF3F │
+├────────────────────────────────────────┼────────────┤
+│              VER_VERSION_INFORMATION   │ 0x003FFF40 │
+│              (0xC0)                    │ 0x003FFFFF │
+└────────────────────────────────────────┴────────────┘
+</pre></div>
+</div>
+<p>RAM:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>┌────────────────────────────────────────┬────────────┐
+│              STACKS                    │ 0x08000000 │
+│              (0x800)                   │ 0x080007FF │
+├────────────────────────────────────────┼────────────┤
+│              KERNEL_DATA               │ 0x08000800 │
+│              (0x800)                   │ 0x08000FFF │
+├────────────────────────────────────────┼────────────┤
+│              RAM                       │ 0x08001000 │
+│              (0x7E000)                 │ 0x0807EFFF │
+├────────────────────────────────────────┼────────────┤
+│              SHARED_RAM                │ 0x0807F000 │
+│              (0x1000)                  │ 0x0807FFFF │
+└────────────────────────────────────────┴────────────┘
+</pre></div>
+</div>
+<p>Flash ECC:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>┌────────────────────────────────────────┬────────────┐
+│              ECC_VECTORS_TABLE         │ 0xF0400000 │
+│              (0x4)                     │ 0xF0400003 │
+├────────────────────────────────────────┼────────────┤
+│              ECC_KERNEL_FUNCTIONS      │ 0xF0400004 │
+│              (0x1000)                  │ 0xF0401003 │
+├────────────────────────────────────────┼────────────┤
+│              ECC_FLASH                 │ 0xF0401004 │
+│              (0x7EFE4)                 │ 0xF047FFE7 │
+├────────────────────────────────────────┼────────────┤
+│              ECC_VERSION_INFORMATION   │ 0xF047FFE8 │
+│              (0x18)                    │ 0xF047FFFF │
+└────────────────────────────────────────┴────────────┘
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="common-linker-script-related-abbreviations">
+<h2><span class="section-number">9.3. </span>Common Linker Script related Abbreviations<a class="headerlink" href="#common-linker-script-related-abbreviations" title="Permalink to this headline"></a></h2>
+<table class="docutils align-default" id="id3">
+<caption><span class="caption-number">Table 9.1 </span><span class="caption-text">Common Linker Script related Abbreviations</span><a class="headerlink" href="#id3" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Meaning</p></th>
+<th class="head"><p>Explanation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">bss</span></code>/<code class="docutils literal notranslate"><span class="pre">.bss</span></code></p></td>
+<td><p>block starting symbol</p></td>
+<td><p>global and static data, that is <strong>not</strong> initialized at declaration</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">data</span></code>/<code class="docutils literal notranslate"><span class="pre">.data</span></code></p></td>
+<td><p>-</p></td>
+<td><p>global and static data, that is initialized at declaration</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">const</span></code>/<code class="docutils literal notranslate"><span class="pre">.const</span></code></p></td>
+<td><p>constant</p></td>
+<td><p>constant variables</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">text</span></code>/<code class="docutils literal notranslate"><span class="pre">.text</span></code></p></td>
+<td><p>-</p></td>
+<td><p>executable instructions of the program</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../build-process/library-project_how-to.html" class="btn btn-neutral float-left" title="8.2.11. How to Build A Library and Link it in a foxBMS 2 Project" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../architecture/architecture.html" class="btn btn-neutral float-right" title="10. Software Architecture" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

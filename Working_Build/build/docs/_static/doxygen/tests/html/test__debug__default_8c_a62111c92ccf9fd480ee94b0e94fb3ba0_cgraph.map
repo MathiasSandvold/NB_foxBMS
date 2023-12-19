@@ -1,0 +1,8 @@
+<map id="testFAKE_SetFirstMeasurementCycleFinished" name="testFAKE_SetFirstMeasurementCycleFinished">
+<area shape="rect" id="node1" title=" " alt="" coords="5,27,216,69"/>
+<area shape="rect" id="node2" href="$test__debug__default_8c.html#a5cd05b07b07ffce7494c12e326065b4f" title=" " alt="" coords="283,5,473,32"/>
+<area shape="rect" id="node3" href="$debug__default_8c.html#ac96817bef03815581b6b2345651a5e54" title=" " alt="" coords="264,57,492,98"/>
+<area shape="rect" id="node4" href="$debug__default_8c.html#a1a89964c5c8faba29fe50b76e53271f1" title="Sets the indicator that one full measurement cycles was successful." alt="" coords="540,57,729,98"/>
+<area shape="rect" id="node5" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="777,39,924,65"/>
+<area shape="rect" id="node6" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="781,89,920,116"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="MEAS_RequestEepromWrite" name="MEAS_RequestEepromWrite">
+<area shape="rect" id="node1" title="Makes the request to the AFE state machine to write to the external EEPROM on slaves." alt="" coords="5,81,196,108"/>
+<area shape="rect" id="node2" href="$afe_8h.html#a0957e75c9c3201d46962d11616df2454" title="Makes the request to the AFE state machine to write to the external EEPROM on slaves." alt="" coords="244,81,423,108"/>
+<area shape="rect" id="node3" href="$ltc__6806_8c.html#a4bb4d1d651bd80b2151b62d35e3a2699" title="sets the current state request of the state variable ltc_state." alt="" coords="485,56,635,83"/>
+<area shape="rect" id="node7" href="$nxp__afe_8h.html#a92a8cbcb4da5da018cc2975389f2bfd9" title=" " alt="" coords="471,107,649,133"/>
+<area shape="rect" id="node4" href="$ltc__6806_8c.html#a42d4f8653843aeee6f118782dfff2c20" title="checks the state requests that are made." alt="" coords="697,5,865,32"/>
+<area shape="rect" id="node5" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="708,56,855,83"/>
+<area shape="rect" id="node6" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="712,107,851,133"/>
+</map>

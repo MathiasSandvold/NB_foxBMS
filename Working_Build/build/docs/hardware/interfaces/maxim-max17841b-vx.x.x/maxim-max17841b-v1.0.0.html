@@ -1,0 +1,628 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6.3.2. Interface MAX17841B v1.0.0 &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="1. System Introduction" href="../../../system/system-introduction.html" />
+    <link rel="prev" title="6.3.1. Changelog for Interface MAX17841B" href="maxim-max17841b-changelog.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../interfaces.html">6. Interfaces Overview</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../ltc-ltc6820-vx.x.x/ltc-ltc6820-changelog.html">6.1.1. Changelog for Interface LTC6820</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ltc-ltc6820-vx.x.x/ltc-ltc6820-v1.0.3.html">6.1.2. Interface LTC-6820 <code class="docutils literal notranslate"><span class="pre">v1.0.3</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nxp-mc33664-vx.x.x/nxp-mc33664-changelog.html">6.2.1. Changelog for Interface MC33664</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../nxp-mc33664-vx.x.x/nxp-mc33664-v1.0.2.html">6.2.2. Interface MC33664 <code class="docutils literal notranslate"><span class="pre">v1.0.2</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="maxim-max17841b-changelog.html">6.3.1. Changelog for Interface MAX17841B</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">6.3.2. Interface MAX17841B <code class="docutils literal notranslate"><span class="pre">v1.0.0</span></code></a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../interfaces.html"><span class="section-number">6. </span>Interfaces Overview</a> &raquo;</li>
+      <li><span class="section-number">6.3.2. </span>Interface MAX17841B <code class="docutils literal notranslate"><span class="pre">v1.0.0</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/hardware/interfaces/maxim-max17841b-vx.x.x/maxim-max17841b-v1.0.0.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="interface-max17841b-v1-0-0">
+<span id="id1"></span><h1><span class="section-number">6.3.2. </span>Interface MAX17841B <code class="docutils literal notranslate"><span class="pre">v1.0.0</span></code><a class="headerlink" href="#interface-max17841b-v1-0-0" title="Permalink to this headline"></a></h1>
+<div class="section" id="overview">
+<h2><span class="section-number">6.3.2.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this headline"></a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The following description only applies for the MAX17841B-based
+BMS-Interface Board hardware version <code class="docutils literal notranslate"><span class="pre">1.0.0</span></code>.</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>All connector pinouts described below follow the
+<a class="reference internal" href="../../connectors.html#convention-for-molex-3-0-connector-pin-numbering"><span class="std std-ref">Convention for Molex Micro-Fit 3.0 Connector Pin Numbering</span></a> and
+<a class="reference internal" href="../../connectors.html#convention-for-samtec-edge-rate-connector-pin-numbering"><span class="std std-ref">Convention for Samtec Edge Rate connectors</span></a>.</p>
+</div>
+<p>The BMS-Interface Board is used to enable communication between the BMS-Master Board
+and the BMS-Slave Boards.
+A 3D rendering from the TOP side view of the BMS-Interface Board is shown in
+<a class="reference internal" href="#interface-max17841b-v1-0-0-rendering"><span class="std std-numref">Fig. 6.4</span></a>.
+The BMS-Interface Board is intended to be used together with a BMS-Master Board.</p>
+<div class="figure align-default" id="id2">
+<span id="interface-max17841b-v1-0-0-rendering"></span><a class="reference internal image-reference" href="../../../_images/maxim-max17841b-v1.0.0_rendering.png"><img alt="../../../_images/maxim-max17841b-v1.0.0_rendering.png" src="../../../_images/maxim-max17841b-v1.0.0_rendering.png" style="width: 80%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 6.4 </span><span class="caption-text">3D rendering of the BMS-Interface Board</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</div>
+</div>
+<div class="section" id="specifications">
+<h2><span class="section-number">6.3.2.2. </span>Specifications<a class="headerlink" href="#specifications" title="Permalink to this headline"></a></h2>
+<div class="section" id="mechanical-dimensions">
+<h3><span class="section-number">6.3.2.2.1. </span>Mechanical Dimensions<a class="headerlink" href="#mechanical-dimensions" title="Permalink to this headline"></a></h3>
+<p>The size of the PCB is 70 mm x 120 mm. A 3D-model and a
+drawing of the PCB can be found in <a class="reference internal" href="../../design-resources.html#design-resources"><span class="std std-ref">Design Resources</span></a></p>
+</div>
+<div class="section" id="battery-management-uart-insulation">
+<h3><span class="section-number">6.3.2.2.2. </span>Battery Management UART Insulation<a class="headerlink" href="#battery-management-uart-insulation" title="Permalink to this headline"></a></h3>
+<p>The interface board is designed for a maximum continuous insulation voltage of
+1250 V DC between all two Maxim Battery Management UART channels and
+between each Maxim Battery Management UART channel and the BMS-Master Board.</p>
+<p>The insulation is designed according to DIN EN 60664-1:2008-01 under
+the following conditions:</p>
+<ul class="simple">
+<li><p>Type of insulation: functional</p></li>
+<li><p>Electrical field: homogeneous</p></li>
+<li><p>Pollution degree: 2</p></li>
+<li><p>PCB insulator class: 3b</p></li>
+<li><p>Transient voltage: 4300 V DC</p></li>
+<li><p>Continuous (working) voltage: 1250 V DC (selected due to design
+space constraints on PCB)</p></li>
+</ul>
+<p>The PCB design complies with the following parameters:</p>
+<ul class="simple">
+<li><p>Clearance: 1.3 mm</p></li>
+<li><p>Creepage distance: 12.5 mm</p></li>
+</ul>
+</div>
+<div class="section" id="block-diagram">
+<h3><span class="section-number">6.3.2.2.3. </span>Block Diagram<a class="headerlink" href="#block-diagram" title="Permalink to this headline"></a></h3>
+<p>A block diagram of the BMS-Interface Board is shown in
+<a class="reference internal" href="#interface-max17841b-v1-0-0-block-diagram"><span class="std std-numref">Fig. 6.5</span></a>.</p>
+<div class="figure align-default" id="id3">
+<span id="interface-max17841b-v1-0-0-block-diagram"></span><a class="reference internal image-reference" href="../../../_images/maxim-max17841b-v1.0.0_block_diagram.png"><img alt="../../../_images/maxim-max17841b-v1.0.0_block_diagram.png" src="../../../_images/maxim-max17841b-v1.0.0_block_diagram.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 6.5 </span><span class="caption-text">Block diagram of the BMS-Interface Board</span><a class="headerlink" href="#id3" title="Permalink to this image"></a></p>
+</div>
+<p>Each MAX17841B communication chip from Maxim Integrated provides one UART channel.
+Each channel is comprised of a RX and a TX signal, each using one insulation
+transformer.
+The MAX17841B chips are directly connected to the MCU via SPI.</p>
+</div>
+<div class="section" id="schematic-and-board-layout">
+<h3><span class="section-number">6.3.2.2.4. </span>Schematic and Board Layout<a class="headerlink" href="#schematic-and-board-layout" title="Permalink to this headline"></a></h3>
+<p>More information about the board schematic and layout files can be found in
+section <a class="reference internal" href="../../design-resources.html#design-resources"><span class="std std-ref">Design Resources</span></a>.
+For better debugging, there are test-points on the PCB for all relevant IO
+signals.
+In addition to test-points, a pin header (J101) allows an easier connection to
+a logic analyzer.</p>
+</div>
+</div>
+<div class="section" id="functions">
+<h2><span class="section-number">6.3.2.3. </span>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
+<div class="section" id="maxim-battery-management-uart-communication">
+<h3><span class="section-number">6.3.2.3.1. </span>Maxim Battery Management UART communication<a class="headerlink" href="#maxim-battery-management-uart-communication" title="Permalink to this headline"></a></h3>
+<p>The BMS-Interface Board offers up to two isolated Maxim Battery Management UART
+communication channels using the MAX17841B transceiver chip from Maxim Integrated.
+The MAX17841B transceivers are controlled by the SPI signals from the
+BMS-Master Board.
+The UART RX signals are available on the connectors J102 and J104.
+The pinout of the connectors is described in
+<a class="reference internal" href="#interface-max17841b-v1-0-0-uartrx-connectors"><span class="std std-numref">Table 6.3</span></a>.</p>
+<table class="docutils align-default" id="interface-max17841b-v1-0-0-uartrx-connectors">
+<caption><span class="caption-number">Table 6.3 </span><span class="caption-text">UART RX Input Connectors</span><a class="headerlink" href="#interface-max17841b-v1-0-0-uartrx-connectors" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Signal</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>UART_RX_p</p></td>
+<td><p>UART RX positive</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>UART_RX_n</p></td>
+<td><p>UART RX negative</p></td>
+</tr>
+</tbody>
+</table>
+<p>The UART TX signals are available on the connectors J103 and J105.
+The pinout of the connectors is described in
+<a class="reference internal" href="#interface-max17841b-v1-0-0-uarttx-connectors"><span class="std std-numref">Table 6.4</span></a>.</p>
+<table class="docutils align-default" id="interface-max17841b-v1-0-0-uarttx-connectors">
+<caption><span class="caption-number">Table 6.4 </span><span class="caption-text">UART TX Output Connectors</span><a class="headerlink" href="#interface-max17841b-v1-0-0-uarttx-connectors" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Signal</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>UART_TX_p</p></td>
+<td><p>UART TX positive</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>UART_TX_n</p></td>
+<td><p>UART TX negative</p></td>
+</tr>
+</tbody>
+</table>
+<p>For the connection to the BMS-Master Board, a 40-pole mezzanine connector (J100)
+is used. The pinout and pin usage is described in
+<a class="reference internal" href="#interface-max17841b-v1-0-0-master-connector"><span class="std std-numref">Table 6.5</span></a></p>
+<table class="docutils align-default" id="interface-max17841b-v1-0-0-master-connector">
+<caption><span class="caption-number">Table 6.5 </span><span class="caption-text">Signal connector to BMS-Master Board</span><a class="headerlink" href="#interface-max17841b-v1-0-0-master-connector" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Signal</p></th>
+<th class="head"><p>Description</p></th>
+<th class="head"><p>Usage on BMS-Interface Board</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI1.SOMI0</span></code></p></td>
+<td><p>-</p></td>
+<td><p>UART channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI1.SOMI1</span></code></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI1.SIMO0</span></code></p></td>
+<td><p>-</p></td>
+<td><p>UART channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI1.SIMO1</span></code></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI1.CLK</span></code></p></td>
+<td><p>-</p></td>
+<td><p>UART channel 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI1.CS1</span></code></p></td>
+<td><p>-</p></td>
+<td><p>UART channel 1</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI1.CS2</span></code></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI1.CS3</span></code></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI1.CS4</span></code></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI1.CS5</span></code></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI4.SOMI</span></code></p></td>
+<td><p>-</p></td>
+<td><p>UART channel 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI4.SIMO</span></code></p></td>
+<td><p>-</p></td>
+<td><p>UART channel 2</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI4.CLK</span></code></p></td>
+<td><p>-</p></td>
+<td><p>UART channel 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI4.CS0</span></code></p></td>
+<td><p>-</p></td>
+<td><p>UART channel 2</p></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI4.CS1</span></code></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI4.CS2</span></code></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>17</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI4.CS3</span></code></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI4.CS4</span></code></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>19</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI4.CS5</span></code></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>20</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IF_INT0</span></code></p></td>
+<td><p>Interrupt pin, connected to MCU GIOA_2</p></td>
+<td><p>UART channel 1 [max17841b] interrupt</p></td>
+</tr>
+<tr class="row-even"><td><p>21</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IF_INT1</span></code></p></td>
+<td><p>Interrupt pin, connected to MCU GIOA_3</p></td>
+<td><p>UART channel 1 [max17841b] enable</p></td>
+</tr>
+<tr class="row-odd"><td><p>22</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IF_INT2</span></code></p></td>
+<td><p>Interrupt pin, connected to MCU GIOA_4</p></td>
+<td><p>UART channel 2 [max17841b] interrupt</p></td>
+</tr>
+<tr class="row-even"><td><p>23</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IF_INT3</span></code></p></td>
+<td><p>Interrupt pin, connected to MCU GIOA_6</p></td>
+<td><p>UART channel 2 [max17841b] enable</p></td>
+</tr>
+<tr class="row-odd"><td><p>24</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IF_GPIO.0</span></code></p></td>
+<td><p>GPIO pin, connected to port expander 3 IO1_0</p></td>
+<td><p>UART channel 1 [max17841b] enable</p></td>
+</tr>
+<tr class="row-even"><td><p>25</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IF_GPIO.1</span></code></p></td>
+<td><p>GPIO pin, connected to port expander 3 IO1_1</p></td>
+<td><p>UART channel 2 [max17841b] enable</p></td>
+</tr>
+<tr class="row-odd"><td><p>26</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IF_GPIO.2</span></code></p></td>
+<td><p>GPIO pin, connected to port expander 3 IO1_2</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>27</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IF_GPIO.3</span></code></p></td>
+<td><p>GPIO pin, connected to port expander 3 IO1_3</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>28</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IF_GPIO.4</span></code></p></td>
+<td><p>GPIO pin, connected to port expander 3 IO1_4</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>29</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IF_GPIO.5</span></code></p></td>
+<td><p>GPIO pin, connected to port expander 3 IO1_5</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>30</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IF_GPIO.6</span></code></p></td>
+<td><p>GPIO pin, connected to port expander 3 IO1_6</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>31</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IF_GPIO.7</span></code></p></td>
+<td><p>GPIO pin, connected to port expander 3 IO1_7</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>32</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">GND</span></code></p></td>
+<td><p>Power supply ground</p></td>
+<td><p>Power supply ground</p></td>
+</tr>
+<tr class="row-even"><td><p>33</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">GND</span></code></p></td>
+<td><p>Power supply ground</p></td>
+<td><p>Power supply ground</p></td>
+</tr>
+<tr class="row-odd"><td><p>34</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PER_3.3V</span></code></p></td>
+<td><p>3.3 V from peripheral SBC</p></td>
+<td><p>3.3 V power supply</p></td>
+</tr>
+<tr class="row-even"><td><p>35</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PER_3.3V</span></code></p></td>
+<td><p>3.3 V from peripheral SBC</p></td>
+<td><p>3.3 V power supply</p></td>
+</tr>
+<tr class="row-odd"><td><p>36</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PER_5.0V</span></code></p></td>
+<td><p>5.0 V from peripheral SBC</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>37</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">PER_5.0V</span></code></p></td>
+<td><p>5.0 V from peripheral SBC</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>38</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">VBB_12V</span></code></p></td>
+<td><p>12 V from buck-boost converter</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>39</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">VSUP</span></code></p></td>
+<td><p>Master supply voltage (after protection circuits)</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>40</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">VSUP</span></code></p></td>
+<td><p>Master supply voltage (after protection circuits)</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p>All important IO signals are connected to a pin header (J101) to provide an
+easy connection to a logic analyzer. The pinout of this header is described in
+<a class="reference internal" href="#interface-max17841b-v1-0-0-debug-connector"><span class="std std-numref">Table 6.6</span></a></p>
+<table class="docutils align-default" id="interface-max17841b-v1-0-0-debug-connector">
+<caption><span class="caption-number">Table 6.6 </span><span class="caption-text">Debug connector</span><a class="headerlink" href="#interface-max17841b-v1-0-0-debug-connector" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Signal</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">GND</span></code></p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">GND</span></code></p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI4.CS0</span></code></p></td>
+<td><p>UART channel 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI1.CS1</span></code></p></td>
+<td><p>UART channel 1</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI4.SIMO</span></code></p></td>
+<td><p>UART channel 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI1.SIMO0</span></code></p></td>
+<td><p>UART channel 1</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI4.SOMI</span></code></p></td>
+<td><p>UART channel 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI1.SOMI0</span></code></p></td>
+<td><p>UART channel 1</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI4.CLK</span></code></p></td>
+<td><p>UART channel 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">MCU_SPI1.CLK</span></code></p></td>
+<td><p>UART channel 1</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IF_INT2</span></code></p></td>
+<td><p>UART channel 2 [max17841b] interrupt</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IF_INT0</span></code></p></td>
+<td><p>UART channel 1 [max17841b] interrupt</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="maxim-max17841b-changelog.html" class="btn btn-neutral float-left" title="6.3.1. Changelog for Interface MAX17841B" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../../system/system-introduction.html" class="btn btn-neutral float-right" title="1. System Introduction" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

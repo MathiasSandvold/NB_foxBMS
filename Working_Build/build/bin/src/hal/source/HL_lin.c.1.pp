@@ -1,0 +1,2835 @@
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+ 
+# pragma diag_push
+# pragma CHECK_MISRA("-19.7")
+# pragma CHECK_MISRA("-19.4")
+# pragma CHECK_MISRA("-19.1")
+# pragma CHECK_MISRA("-19.15")
+# pragma diag_pop
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("CHECK_MISRA(\"-19.1\")")
+_Pragma("CHECK_MISRA(\"-19.6\")")
+
+
+
+ 
+
+
+
+ 
+
+ 
+  
+
+
+
+
+
+
+
+ 
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+#pragma diag_push
+#pragma CHECK_MISRA("-19.4")  
+
+ 
+
+
+ 
+ 
+ 
+
+#pragma diag_pop
+
+
+_Pragma("diag_pop")
+
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.1\")")  
+_Pragma("CHECK_MISRA(\"-19.7\")")  
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.7\")")  
+
+
+
+
+
+
+ 
+
+
+
+_Pragma("diag_pop")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"none\")")
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+
+
+
+
+
+ 
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+ 
+
+_Pragma("diag_pop")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+_Pragma("diag_push")
+ 
+_Pragma("CHECK_MISRA(\"-6.3\")")
+
+
+
+
+ 
+typedef	signed char		__int8_t;
+typedef	unsigned char		__uint8_t;
+typedef	short			__int16_t;
+typedef	unsigned short		__uint16_t;
+typedef	int			__int32_t;
+typedef	unsigned int		__uint32_t;
+
+ 
+typedef	long long		__int64_t;
+
+ 
+typedef	unsigned long long	__uint64_t;
+
+
+
+ 
+typedef	__uint32_t	__clock_t;		 
+typedef	__int32_t	__critical_t;
+typedef	double		__double_t;
+typedef	float		__float_t;
+typedef	__int32_t	__intfptr_t;
+typedef	__int64_t	__intmax_t;
+typedef	__int32_t	__intptr_t;
+typedef	__int32_t	__int_fast8_t;
+typedef	__int32_t	__int_fast16_t;
+typedef	__int32_t	__int_fast32_t;
+typedef	__int64_t	__int_fast64_t;
+typedef	__int8_t	__int_least8_t;
+typedef	__int16_t	__int_least16_t;
+typedef	__int32_t	__int_least32_t;
+typedef	__int64_t	__int_least64_t;
+typedef	__int32_t	__ptrdiff_t;		 
+typedef	__int32_t	__register_t;
+typedef	__int32_t	__segsz_t;		 
+typedef	__uint32_t	__size_t;		 
+typedef	__int32_t	__ssize_t;		 
+typedef __uint32_t      __time_t;
+typedef	__uint32_t	__uintfptr_t;
+typedef	__uint64_t	__uintmax_t;
+typedef	__uint32_t	__uintptr_t;
+typedef	__uint32_t	__uint_fast8_t;
+typedef	__uint32_t	__uint_fast16_t;
+typedef	__uint32_t	__uint_fast32_t;
+typedef	__uint64_t	__uint_fast64_t;
+typedef	__uint8_t	__uint_least8_t;
+typedef	__uint16_t	__uint_least16_t;
+typedef	__uint32_t	__uint_least32_t;
+typedef	__uint64_t	__uint_least64_t;
+typedef	__uint32_t	__u_register_t;
+typedef	__uint32_t	__vm_offset_t;
+typedef	__uint32_t	__vm_paddr_t;
+typedef	__uint32_t	__vm_size_t;
+
+typedef	unsigned short ___wchar_t;
+
+
+
+
+
+ 
+typedef long _off_t;
+
+
+
+ 
+typedef struct __va_list_t {
+    void * __ap;
+} __va_list;
+
+_Pragma("diag_pop")
+
+
+_Pragma("diag_push")
+ 
+_Pragma("CHECK_MISRA(\"-6.3\")")
+
+
+
+ 
+typedef	__int32_t	__blksize_t;	 
+typedef	__int64_t	__blkcnt_t;	 
+typedef	__int32_t	__clockid_t;	 
+typedef	__uint32_t	__fflags_t;	 
+typedef	__uint64_t	__fsblkcnt_t;
+typedef	__uint64_t	__fsfilcnt_t;
+typedef	__uint32_t	__gid_t;
+typedef	__int64_t	__id_t;		 
+typedef	__uint64_t	__ino_t;	 
+typedef	long		__key_t;	 
+typedef	__int32_t	__lwpid_t;	 
+typedef	__uint16_t	__mode_t;	 
+typedef	int		__accmode_t;	 
+typedef	int		__nl_item;
+typedef	__uint64_t	__nlink_t;	 
+typedef	_off_t	        __off_t;	 
+typedef	__int64_t	__off64_t;	 
+typedef	__int32_t	__pid_t;	 
+typedef	__int64_t	__rlim_t;	 
+					 
+					 
+typedef	__uint8_t	__sa_family_t;
+typedef	__uint32_t	__socklen_t;
+typedef	long		__suseconds_t;	 
+typedef	struct __timer	*__timer_t;	 
+typedef	struct __mq	*__mqd_t;	 
+typedef	__uint32_t	__uid_t;
+typedef	unsigned int	__useconds_t;	 
+typedef	int		__cpuwhich_t;	 
+typedef	int		__cpulevel_t;	 
+typedef int		__cpusetid_t;	 
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+typedef	int		__ct_rune_t;	 
+
+typedef	__ct_rune_t	__rune_t;	 
+typedef	__ct_rune_t	__wint_t;	 
+
+ 
+typedef	__uint_least16_t __char16_t;
+typedef	__uint_least32_t __char32_t;
+ 
+
+typedef struct {
+	long long __max_align1 __attribute__((aligned(_Alignof(long long))));
+	long double __max_align2 __attribute__((aligned(_Alignof(long double))));
+} __max_align_t;
+
+typedef	__uint64_t	__dev_t;	 
+
+typedef	__uint32_t	__fixpt_t;	 
+
+
+
+
+ 
+
+typedef int _Mbstatet;
+
+typedef _Mbstatet __mbstate_t;
+
+typedef __uintmax_t     __rman_res_t;
+
+
+
+
+
+ 
+
+_Pragma("diag_pop")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+_Pragma("diag_push")
+ 
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("CHECK_MISRA(\"-19.7\")")
+_Pragma("CHECK_MISRA(\"-19.13\")")
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+
+ 
+
+ 
+
+
+
+
+ 
+ 
+
+ 
+
+ 
+
+
+
+
+ 
+ 
+
+ 
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+ 
+
+ 
+
+ 
+
+ 
+
+
+_Pragma("diag_pop")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+typedef	__int8_t		int8_t;
+
+typedef	__int16_t		int16_t;
+
+typedef	__int32_t		int32_t;
+
+typedef	__int64_t		int64_t;
+
+typedef	__uint8_t		uint8_t;
+
+typedef	__uint16_t		uint16_t;
+
+typedef	__uint32_t		uint32_t;
+
+typedef	__uint64_t		uint64_t;
+
+typedef	__intptr_t		intptr_t;
+typedef	__uintptr_t		uintptr_t;
+typedef	__intmax_t		intmax_t;
+typedef	__uintmax_t		uintmax_t;
+
+
+typedef	__int_least8_t		int_least8_t;
+typedef	__int_least16_t		int_least16_t;
+typedef	__int_least32_t		int_least32_t;
+typedef	__int_least64_t		int_least64_t;
+
+typedef	__uint_least8_t		uint_least8_t;
+typedef	__uint_least16_t	uint_least16_t;
+typedef	__uint_least32_t	uint_least32_t;
+typedef	__uint_least64_t	uint_least64_t;
+
+typedef	__int_fast8_t		int_fast8_t;
+typedef	__int_fast16_t		int_fast16_t;
+typedef	__int_fast32_t		int_fast32_t;
+typedef	__int_fast64_t		int_fast64_t;
+
+typedef	__uint_fast8_t		uint_fast8_t;
+typedef	__uint_fast16_t		uint_fast16_t;
+typedef	__uint_fast32_t		uint_fast32_t;
+typedef	__uint_fast64_t		uint_fast64_t;
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-10.1\")")
+ 
+_Pragma("diag_pop")
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+ 
+_Pragma("diag_pop")
+
+ 
+
+
+_Pragma("diag_pop")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+ 
+ 
+ 
+
+
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("CHECK_MISRA(\"-19.11\")")
+
+
+
+
+
+_Pragma("diag_pop")
+
+
+ 
+ 
+ 
+ 
+ 
+typedef uint64_t uint64;
+
+typedef uint32_t uint32;
+
+typedef uint16_t uint16;
+
+typedef uint8_t uint8;
+
+typedef _Bool boolean;
+
+typedef int64_t sint64;
+
+typedef int32_t sint32;
+
+typedef int16_t sint16;
+
+typedef int8_t sint8;
+
+typedef float float32;
+
+typedef double float64;
+
+
+typedef uint8 Std_ReturnType;
+
+typedef struct
+{
+    uint16 vendorID;
+    uint16 moduleID;
+    uint8  instanceID;
+    uint8  sw_major_version;
+    uint8  sw_minor_version;
+    uint8  sw_patch_version;
+} Std_VersionInfoType;
+
+ 
+ 
+ 
+
+  typedef unsigned char StatusType;
+
+
+
+
+
+
+ 
+ 
+ 
+
+
+ 
+
+
+
+ 
+
+
+
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+ 
+ 
+
+ 
+ 
+ 
+
+typedef boolean tBoolean;
+
+
+
+ 
+
+
+
+
+ 
+typedef enum loopBackType 
+{
+    Digital_Lbk = 0U, 
+    Analog_Lbk = 1U
+}loopBackType_t;
+
+
+
+ 
+
+
+
+
+ 
+typedef enum config_value_type
+{
+	InitialValue,
+	CurrentValue
+}config_value_type_t;
+
+
+
+ 
+ 
+
+ 
+ 
+ 
+ 
+
+ 
+ 
+
+
+ 
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+ 
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+typedef volatile struct gioBase
+{
+    uint32 GCR0;       
+    uint32   rsvd;     
+    uint32 INTDET;     
+    uint32 POL;        
+    uint32 ENASET;     
+    uint32 ENACLR;     
+    uint32 LVLSET;     
+    uint32 LVLCLR;     
+    uint32 FLG;        
+    uint32 OFF1;       
+    uint32 OFF2;       
+    uint32 EMU1;       
+	uint32 EMU2;       
+} gioBASE_t;
+
+
+
+
+ 
+
+
+
+
+ 
+typedef volatile struct gioPort
+{
+    uint32 DIR;     
+    uint32 DIN;     
+    uint32 DOUT;    
+    uint32 DSET;    
+    uint32 DCLR;    
+    uint32 PDR;     
+    uint32 PULDIS;  
+    uint32 PSL;     
+} gioPORT_t;
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+ 
+ 
+
+
+
+
+
+ 
+ 
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+
+typedef volatile struct linBase
+{
+    uint32      GCR0;          
+    uint32      GCR1;          
+    uint32      GCR2;          
+    uint32      SETINT;        
+    uint32      CLEARINT;      
+    uint32      SETINTLVL;     
+    uint32      CLEARINTLVL;   
+    uint32      FLR;           
+    uint32      INTVECT0;      
+    uint32      INTVECT1;      
+    uint32      FORMAT;        	
+    uint32      BRS;           
+    uint32      ED;            
+    uint32      RD;            
+    uint32      TD;            
+    uint32      PIO0;          
+    uint32      PIO1;          
+    uint32      PIO2;          
+    uint32      PIO3;          
+    uint32      PIO4;          
+    uint32      PIO5;          
+    uint32      PIO6;          
+    uint32      PIO7;          
+    uint32      PIO8;          
+    uint32      COMP;          
+    uint8       RDx[8U];       
+    uint32      MASK;          
+    uint32      ID;            	
+    uint8       TDx[8U];       
+    uint32      MBRSR;         
+    uint32      rsvd1[4U];     
+    uint32      IODFTCTRL;     
+} linBASE_t;
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+ 
+ 
+
+
+
+
+ 
+ 
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+
+enum linPinSelect
+{
+    PIN_LIN_TX = 4U,
+    PIN_LIN_RX = 2U
+};
+
+ 
+typedef struct lin_config_reg
+{
+    uint32 CONFIG_GCR0;
+    uint32 CONFIG_GCR1;
+    uint32 CONFIG_GCR2;
+    uint32 CONFIG_SETINT;
+    uint32 CONFIG_SETINTLVL;
+    uint32 CONFIG_FORMAT;
+    uint32 CONFIG_BRSR;
+    uint32 CONFIG_FUN;
+    uint32 CONFIG_DIR;
+    uint32 CONFIG_ODR;
+    uint32 CONFIG_PD;	
+	uint32 CONFIG_PSL;
+	uint32 CONFIG_COMP;	
+	uint32 CONFIG_MASK;
+	uint32 CONFIG_MBRSR;
+} lin_config_reg_t;
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+ 
+void   linInit(void);
+void   linSetFunctional(linBASE_t *lin, uint32 port);
+void   linSendHeader(linBASE_t *lin, uint8 identifier);
+void   linSendWakupSignal(linBASE_t *lin);
+void   linEnterSleep(linBASE_t *lin);
+void   linSoftwareReset(linBASE_t *lin);
+uint32 linIsTxReady(linBASE_t *lin);
+void   linSetLength(linBASE_t *lin, uint32 length);
+void   linSend(linBASE_t *lin, uint8 * data);
+uint32 linIsRxReady(linBASE_t *lin);
+uint32 linTxRxError(linBASE_t *lin);
+uint32 linGetIdentifier(linBASE_t *lin);
+void   linGetData(linBASE_t *lin, uint8 * const data);
+void   linEnableNotification(linBASE_t *lin, uint32 flags);
+void   linDisableNotification(linBASE_t *lin, uint32 flags);
+void   linEnableLoopback(linBASE_t *lin, loopBackType_t Loopbacktype);
+void   linDisableLoopback(linBASE_t *lin);
+void     lin1GetConfigValue(lin_config_reg_t *config_reg, config_value_type_t type);
+uint32   linGetStatusFlag(linBASE_t *lin);
+void     linClearStatusFlag(linBASE_t *lin, uint32 flags);
+
+
+
+
+
+
+
+
+
+ 
+void linNotification(linBASE_t *lin, uint32 flags);
+
+ 
+ 
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+ 
+ 
+
+ 
+
+
+
+
+ 
+
+
+
+
+ 
+typedef volatile struct vimBase
+{
+    uint32      rsvd1[59U];        
+    uint32      ECCSTAT;           
+    uint32      ECCCTL;            	
+    uint32      UERRADDR;          
+    uint32      FBVECADDR;         
+    uint32      SBERRADDR;         	
+    uint32      IRQINDEX;          
+    uint32      FIQINDEX;          	
+    uint32      rsvd2;             
+    uint32      rsvd3;             
+    uint32      FIRQPR0;           
+    uint32      FIRQPR1;           
+    uint32      FIRQPR2;           
+    uint32      FIRQPR3;           
+    uint32      INTREQ0;           
+    uint32      INTREQ1;           
+    uint32      INTREQ2;           
+    uint32      INTREQ3;           
+    uint32      REQMASKSET0;       
+    uint32      REQMASKSET1;       
+    uint32      REQMASKSET2;       
+    uint32      REQMASKSET3;       
+    uint32      REQMASKCLR0;       
+    uint32      REQMASKCLR1;       
+    uint32      REQMASKCLR2;       
+    uint32      REQMASKCLR3;       
+    uint32      WAKEMASKSET0;      
+    uint32      WAKEMASKSET1;      
+    uint32      WAKEMASKSET2;      
+    uint32      WAKEMASKSET3;      
+    uint32      WAKEMASKCLR0;      
+    uint32      WAKEMASKCLR1;      
+    uint32      WAKEMASKCLR2;      
+    uint32      WAKEMASKCLR3;      
+    uint32      IRQVECREG;         
+    uint32      FIQVECREG;         
+    uint32      CAPEVT;            	
+    uint32      rsvd4;             
+    uint32      CHANCTRL[32U];     
+} vimBASE_t;
+
+
+ 
+ 
+
+
+
+ 
+ 
+
+
+ 
+
+
+
+
+
+ 
+typedef void (*t_isrFuncPTR)(void);
+
+
+
+
+
+
+
+ 
+typedef enum systemInterrupt
+{
+    SYS_IRQ = 0U,  
+    SYS_FIQ = 1U   
+}systemInterrupt_t;
+
+ 
+ 
+
+
+ 
+
+
+ 
+ 
+
+ 
+
+extern void esmHighInterrupt(void);
+extern void phantomInterrupt(void);
+extern void vPortPreemptiveTick(void);
+extern void can1HighLevelInterrupt(void);
+extern void vPortYieldWithinAPI(void);
+extern void can1LowLevelInterrupt(void);
+extern void dmaLFSAInterrupt(void);
+extern void can2HighLevelInterrupt(void);
+extern void dmaBTCAInterrupt(void);
+extern void can2LowLevelInterrupt(void);
+extern void phantomInterrupt(void);
+extern void phantomInterrupt(void);
+extern void i2cInterrupt(void);
+extern void ecap1Interrupt(void);
+
+ 
+ 
+
+
+
+ 
+typedef struct vim_config_reg
+{
+    uint32 CONFIG_FIRQPR0;
+    uint32 CONFIG_FIRQPR1;
+    uint32 CONFIG_FIRQPR2;
+    uint32 CONFIG_FIRQPR3;
+    uint32 CONFIG_REQMASKSET0;
+    uint32 CONFIG_REQMASKSET1;
+    uint32 CONFIG_REQMASKSET2;
+    uint32 CONFIG_REQMASKSET3;
+    uint32 CONFIG_WAKEMASKSET0;
+    uint32 CONFIG_WAKEMASKSET1;
+    uint32 CONFIG_WAKEMASKSET2;
+    uint32 CONFIG_WAKEMASKSET3;
+    uint32 CONFIG_CAPEVT;
+    uint32 CONFIG_CHANCTRL[24U];
+} vim_config_reg_t;
+
+ 
+					
+
+                    
+                    
+                        
+                        
+                        
+						
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+ 
+void vimInit(void);
+void vimChannelMap(uint32 request, uint32 channel, t_isrFuncPTR handler);
+void vimEnableInterrupt(uint32 channel, systemInterrupt_t inttype);
+void vimDisableInterrupt(uint32 channel);
+void vimGetConfigValue(vim_config_reg_t *config_reg, config_value_type_t type);
+ 
+
+ 
+ 
+
+ 
+ 
+ 
+
+
+
+
+ 
+void linInit(void)
+{
+ 
+ 
+     
+
+     
+    ((linBASE_t *)0xFFF7E400U)->GCR0 = 1U;
+
+    
+
+ 
+    ((linBASE_t *)0xFFF7E400U)->GCR1 = 0U;
+
+	 
+    ((linBASE_t *)0xFFF7E400U)->GCR1 = 0x40U;
+	
+    
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    ((linBASE_t *)0xFFF7E400U)->GCR1|= 0x03000C40U 
+                 | (uint32)((uint32)1U << 12U)
+                 | (uint32)((uint32)1U << 2U)
+				 | (uint32)((uint32)1U << 5U);
+					
+     
+    ((linBASE_t *)0xFFF7E400U)->MBRSR = (uint32)4507U;
+
+     
+    ((linBASE_t *)0xFFF7E400U)->BRS = (uint32)312U;
+
+     
+    ((linBASE_t *)0xFFF7E400U)->MASK = ((uint32)((uint32)0xFFU << 16U) | (uint32)0xFFU);
+
+    
+
+
+ 
+    ((linBASE_t *)0xFFF7E400U)->COMP = ((uint32)((uint32)(1U - 1U) << 8U) | ((uint32)13U - 13U));
+
+     
+    ((linBASE_t *)0xFFF7E400U)->FORMAT = ((((linBASE_t *)0xFFF7E400U)->FORMAT & 0xFFF8FFFFU) | (uint32)(((uint32)8U - 1U) << 16U));
+
+    
+
+
+
+ 
+    ((linBASE_t *)0xFFF7E400U)->PIO0 = ((uint32)4U | (uint32)2U | (uint32)0U);
+
+    
+
+
+
+ 
+    ((linBASE_t *)0xFFF7E400U)->PIO3 = ((uint32)0U | (uint32)0U | (uint32)0U);
+
+    
+
+
+
+ 
+    ((linBASE_t *)0xFFF7E400U)->PIO1 = ((uint32)0U | (uint32)0U | (uint32)0U);
+
+    
+
+
+
+ 
+    ((linBASE_t *)0xFFF7E400U)->PIO6 = ((uint32)0U | (uint32)0U | (uint32)0U);
+
+    
+
+
+
+ 
+    ((linBASE_t *)0xFFF7E400U)->PIO7 = ((uint32)4U | (uint32)2U | (uint32)0U);
+
+    
+
+
+
+ 
+    ((linBASE_t *)0xFFF7E400U)->PIO8 = ((uint32)4U | (uint32)2U | (uint32)1U);
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    ((linBASE_t *)0xFFF7E400U)->SETINTLVL = ((uint32)0x00000000U
+                       | (uint32)0x00000000U
+                       | (uint32)0x00000000U
+                       | (uint32)0x00000000U
+                       | (uint32)0x00000000U
+                       | (uint32)0x00000000U
+                       | (uint32)0x00000000U
+                       | (uint32)0x00000000U
+                       | (uint32)0x00000000U
+                       | (uint32)0x00000000U
+                       | (uint32)0x00000000U
+                       | (uint32)0x00000000U
+                       | (uint32)0x00000000U
+                       | (uint32)0x00000000U
+                       | (uint32)0x00000000U
+                       | (uint32)0x00000000U);
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+    ((linBASE_t *)0xFFF7E400U)->SETINT = ((uint32)0x80000000U
+                    | (uint32)0x40000000U
+                    | (uint32)0x20000000U
+                    | (uint32)0x10000000U
+                    | (uint32)0x08000000U
+                    | (uint32)0x04000000U
+                    | (uint32)0x02000000U
+                    | (uint32)0x01000000U
+                    | (uint32)0x00002000U
+                    | (uint32)0x00000200U
+                    | (uint32)0x00000000U
+                    | (uint32)0x00000080U
+                    | (uint32)0x00000040U
+                    | (uint32)0x00000010U
+                    | (uint32)0x00000002U
+                    | (uint32)0x00000000U);
+
+     
+    ((linBASE_t *)0xFFF7E400U)->GCR1 |= 0x00000080U;
+	
+
+ 
+ 
+}
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+ 
+void linSetFunctional(linBASE_t *lin, uint32 port)
+{
+ 
+ 
+
+    lin->PIO0 = port;
+
+ 
+ 
+}
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+void linSendHeader(linBASE_t *lin, uint8 identifier)
+{
+ 
+ 
+
+    lin->ID = ((lin->ID & 0xFFFFFF00U) | (uint32)identifier);
+
+ 
+ 
+}
+
+
+ 
+ 
+ 
+
+
+
+
+
+ 
+void linSendWakupSignal(linBASE_t *lin)
+{
+ 
+ 
+
+    lin->TDx[0U] = 0xF0U;
+    lin->GCR2  |= 0x00000100U;
+
+ 
+ 
+}
+
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+void linEnterSleep(linBASE_t *lin)
+{
+ 
+ 
+      lin->GCR2  |= 0x00000001U;
+ 
+ 
+}
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+ 
+void linSoftwareReset(linBASE_t *lin)
+{
+ 
+ 
+
+    lin->GCR1 &= ~(uint32)(0x00000080U);
+    lin->GCR1 |=  0x00000080U;
+
+ 
+ 
+}
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+ 
+uint32 linIsTxReady(linBASE_t *lin)
+{
+ 
+ 
+
+    return lin->FLR & 0x00000100U;
+}
+
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+void linSetLength(linBASE_t *lin, uint32 length)
+{
+ 
+ 
+
+    lin->FORMAT = ((lin->FORMAT & 0xFFF8FFFFU) | ((length - 1U) << 16U));
+
+ 
+ 
+}
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+ 
+void linSend(linBASE_t *lin, uint8 * data)
+{
+    uint32           i;
+    uint32           length = (uint32)((uint32)(lin->FORMAT & 0x00070000U) >> 16U);
+	 
+     
+	uint8 * pData = data + length;
+
+ 
+ 
+
+    for (i=0U; i<=length; i++)
+    {
+	     
+        lin->TDx[length-i] = *pData;
+		 
+		 
+		pData--;
+    }
+
+ 
+ 
+}
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+ 
+uint32 linIsRxReady(linBASE_t *lin)
+{
+ 
+ 
+
+    return lin->FLR & 0x00000200U;
+}
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+ 
+uint32 linTxRxError(linBASE_t *lin)
+{
+    uint32 status = lin->FLR & (0x80000000U 
+                    | 0x40000000U 
+                    | 0x20000000U 
+                    | 0x10000000U 
+                    | 0x08000000U 
+                    | 0x04000000U 
+                    | 0x02000000U 
+                    | 0x01000000U     
+                    | 0x00000080U 
+                    | 0x00000040U 
+                    | 0x00000010U);
+
+    lin->FLR = 0x80000000U 
+             | 0x40000000U 
+             | 0x20000000U 
+             | 0x10000000U 
+             | 0x08000000U 
+             | 0x04000000U 
+             | 0x02000000U 
+             | 0x01000000U     
+             | 0x00000080U 
+             | 0x00000040U 
+             | 0x00000010U;
+
+ 
+ 
+
+    return status;
+}
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+ 
+uint32 linGetIdentifier(linBASE_t *lin)
+{
+ 
+ 
+    return (uint32)((uint32)(lin->ID & 0x00FF0000U) >> 16U);
+}
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+void linGetData(linBASE_t *lin, uint8 * const data)
+{
+    uint32      i;
+    uint32      length = (uint32)((uint32)(lin->FORMAT & 0x00070000U) >> 16U);
+    uint8 * pData = data;
+
+ 
+ 
+
+    for (i = 0U; i <= length; i++)
+    {
+	     
+        *pData = lin->RDx[i];
+		 
+		pData++;
+    }
+
+ 
+ 
+}
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+ 
+void linEnableLoopback(linBASE_t *lin, loopBackType_t Loopbacktype)
+{
+ 
+ 
+    
+	 
+	lin->IODFTCTRL = 0U;
+	
+	 
+    lin->IODFTCTRL = ((uint32)(0x00000A00U)
+                   | (uint32)((uint32)Loopbacktype << 1U));
+	
+ 
+ 
+}
+
+ 
+ 
+ 
+
+
+
+
+
+ 
+void linDisableLoopback(linBASE_t *lin)
+{
+ 
+ 
+    
+	 
+    lin->IODFTCTRL = 0x00000500U;
+	
+ 
+ 
+}
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+void linEnableNotification(linBASE_t *lin, uint32 flags)
+{
+ 
+ 
+
+    lin->SETINT = flags;
+
+ 
+ 
+}
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+void linDisableNotification(linBASE_t *lin, uint32 flags)
+{
+ 
+ 
+
+    lin->CLEARINT = flags;
+
+ 
+ 
+}
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+void lin1GetConfigValue(lin_config_reg_t *config_reg, config_value_type_t type)
+{
+	if (type == InitialValue)
+	{
+		config_reg->CONFIG_GCR0      = 0x00000001U;
+		config_reg->CONFIG_GCR1      = (0x03000CC0U | (uint32)((uint32)1U << 12U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 5U));
+		config_reg->CONFIG_GCR2      = 0x00000000U;
+		config_reg->CONFIG_SETINT    = (0x80000000U | 0x40000000U | 0x20000000U | 0x10000000U | 0x08000000U | 0x04000000U | 0x02000000U | 0x01000000U | 0x00002000U | 0x00000200U | 0x00000000U | 0x00000080U | 0x00000040U | 0x00000010U | 0x00000002U | 0x00000000U);
+		config_reg->CONFIG_SETINTLVL = (0x00000000U | 0x00000000U | 0x00000000U | 0x00000000U | 0x00000000U | 0x00000000U | 0x00000000U | 0x00000000U | 0x00000000U | 0x00000000U | 0x00000000U | 0x00000000U | 0x00000000U | 0x00000000U | 0x00000000U | 0x00000000U);
+		config_reg->CONFIG_FORMAT    = ((uint32)((uint32)(8U - 1U) << 16U));
+		config_reg->CONFIG_BRSR      = (312U);
+		config_reg->CONFIG_FUN       = (4U | 2U | 0U);
+		config_reg->CONFIG_DIR       = (0U | 0U | 0U);
+		config_reg->CONFIG_ODR       = (0U | 0U | 0U);
+		config_reg->CONFIG_PD	     = (4U | 2U | 0U);
+		config_reg->CONFIG_PSL       = (4U | 2U | 1U);	
+		config_reg->CONFIG_COMP	     = ((uint32)((uint32)(1U - 1U) << 8U) | (13U - 13U));		
+		config_reg->CONFIG_MASK      = ((uint32)((uint32)0xFFU << 16U) | 0xFFU);	
+		config_reg->CONFIG_MBRSR     = (4507U);	
+	}
+	else
+	{
+	 
+		config_reg->CONFIG_GCR0      = ((linBASE_t *)0xFFF7E400U)->GCR0;
+		config_reg->CONFIG_GCR1      = ((linBASE_t *)0xFFF7E400U)->GCR1; 
+		config_reg->CONFIG_GCR2      = ((linBASE_t *)0xFFF7E400U)->GCR2; 
+		config_reg->CONFIG_SETINT    = ((linBASE_t *)0xFFF7E400U)->SETINT; 
+		config_reg->CONFIG_SETINTLVL = ((linBASE_t *)0xFFF7E400U)->SETINTLVL; 
+		config_reg->CONFIG_FORMAT    = ((linBASE_t *)0xFFF7E400U)->FORMAT; 
+		config_reg->CONFIG_BRSR      = ((linBASE_t *)0xFFF7E400U)->BRS; 
+		config_reg->CONFIG_FUN       = ((linBASE_t *)0xFFF7E400U)->PIO0; 
+		config_reg->CONFIG_DIR       = ((linBASE_t *)0xFFF7E400U)->PIO1; 
+		config_reg->CONFIG_ODR       = ((linBASE_t *)0xFFF7E400U)->PIO6; 
+		config_reg->CONFIG_PD	     = ((linBASE_t *)0xFFF7E400U)->PIO7;	 
+		config_reg->CONFIG_PSL       = ((linBASE_t *)0xFFF7E400U)->PIO8; 
+		config_reg->CONFIG_COMP	     = ((linBASE_t *)0xFFF7E400U)->COMP;	 
+		config_reg->CONFIG_MASK      = ((linBASE_t *)0xFFF7E400U)->MASK;
+		config_reg->CONFIG_MBRSR     = ((linBASE_t *)0xFFF7E400U)->MBRSR;
+	}
+}
+
+
+
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+ 
+uint32 linGetStatusFlag(linBASE_t *lin)
+{
+    return lin->FLR;
+}
+
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+void linClearStatusFlag(linBASE_t *lin, uint32 flags)
+{
+ 
+ 
+    lin->FLR = flags;
+ 
+ 
+	
+}
+
+

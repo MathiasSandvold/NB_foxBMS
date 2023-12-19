@@ -1,0 +1,4 @@
+<map id="testResetToReadyFromBlocked" name="testResetToReadyFromBlocked">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,212,32"/>
+<area shape="rect" id="node2" href="$algorithm__cfg_8c.html#ae4de9ff0cd89fabb1f2245d4d6f0f78b" title="Mark the current algorithm as done (will reset to ALGO_READY if possible)" alt="" coords="260,5,400,32"/>
+</map>

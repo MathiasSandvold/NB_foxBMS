@@ -1,0 +1,4 @@
+<map id="testDIAG_ErrorOvertemperatureDischargeInvalidInput" name="testDIAG_ErrorOvertemperatureDischargeInvalidInput">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,211,47"/>
+<area shape="rect" id="node2" href="$diag__cbs_8h.html#a315f73bd645601559bc5ce7a40dff485" title="diagnosis callback function for overtemperature discharge events" alt="" coords="259,5,441,47"/>
+</map>

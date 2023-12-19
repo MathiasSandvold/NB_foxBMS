@@ -1,0 +1,4 @@
+<map id="MXM_GetSPIStateReady" name="MXM_GetSPIStateReady">
+<area shape="rect" id="node1" title="Return whether SPI interface is ready." alt="" coords="5,5,173,32"/>
+<area shape="rect" id="node2" href="$spi_8c.html#a4e790e1a3c19c32a5f02a32053e96040" title="Returns STD_OK if the SPI interface can be used again." alt="" coords="221,5,408,32"/>
+</map>

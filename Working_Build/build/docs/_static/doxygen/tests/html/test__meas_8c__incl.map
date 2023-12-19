@@ -1,0 +1,10 @@
+<map id="test_meas.c" name="test_meas.c">
+<area shape="rect" id="node1" title="Tests for the meas module." alt="" coords="137,5,231,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,67,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="91,80,173,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="198,80,277,107"/>
+<area shape="rect" id="node5" href="$meas_8h.html" title="Headers for the driver for the measurements needed by the BMS (e.g., I,V,T)." alt="" coords="301,80,366,107"/>
+<area shape="rect" id="node6" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="203,155,296,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="258,229,323,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="371,155,445,181"/>
+</map>

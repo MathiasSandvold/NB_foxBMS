@@ -1,0 +1,23 @@
+<map id="TEST_MXM_ParseVoltagesIntoDB" name="TEST_MXM_ParseVoltagesIntoDB">
+<area shape="rect" id="node1" title=" " alt="" coords="5,239,227,265"/>
+<area shape="rect" id="node2" href="$mxm__1785x_8c.html#a920e0ec9a500bdd62f13a6c2f57a9163" title="Copies measured voltage data into the database." alt="" coords="275,239,457,265"/>
+<area shape="rect" id="node3" href="$afe__plausibility_8c.html#a5f0f388fcad363cade4b5e340f06e211" title="Cell temperature plausibility check." alt="" coords="522,49,709,90"/>
+<area shape="rect" id="node6" href="$afe__plausibility_8c.html#ae3a0cab9bf3aeded2ce65f1d28bdda8b" title="Cell voltage measurement range plausibility check." alt="" coords="516,173,715,214"/>
+<area shape="rect" id="node7" href="$mxm__registry_8c.html#a15356e31103a0135dcadefd3a7a44096" title="check if a device is connected" alt="" coords="505,239,725,265"/>
+<area shape="rect" id="node8" href="$mxm__1785x__tools_8c.html#a2be80ff605cfe34cece5301f5a4c11a0" title="Get the string and module number from a global module number." alt="" coords="520,289,711,316"/>
+<area shape="rect" id="node9" href="$tsi_8h.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="545,371,686,397"/>
+<area shape="rect" id="node4" href="$tsi_8h.html#a161bdb7af8c149fe72731f43f0619dd9" title="Return the maximum plausible temperature." alt="" coords="773,5,1024,32"/>
+<area shape="rect" id="node5" href="$tsi_8h.html#a9bf06d1c58f3a5ee9c9c8b1d611d1323" title="Return the minimum plausible temperature." alt="" coords="775,56,1022,83"/>
+<area shape="rect" id="node10" href="$epcos__b57251v5103j060_8c.html#a60e7e40bc4662b44093a0a2b464bd395" title="returns temperature based on measured ADC voltage" alt="" coords="787,107,1010,133"/>
+<area shape="rect" id="node12" href="$epcos__b57251v5103j060_8c.html#a22b8fc0a39278f0c1a61c1cca7482b5a" title="returns temperature based on measured ADC voltage" alt="" coords="796,158,1001,199"/>
+<area shape="rect" id="node13" href="$epcos__b57861s0103f045_8c.html#a8bb26a9001e051fc2fee6ba77027b1b6" title="returns temperature based on measured ADC voltage" alt="" coords="787,224,1010,251"/>
+<area shape="rect" id="node14" href="$epcos__b57861s0103f045_8c.html#a3aca9a6a710bb21efc1a5d4ccf49b3e0" title="returns temperature based on measured ADC voltage" alt="" coords="796,275,1001,317"/>
+<area shape="rect" id="node15" href="$fake__none_8c.html#a8519235f1cb368c712566dc0a6615a8a" title="returns a fake temperature" alt="" coords="787,341,1010,368"/>
+<area shape="rect" id="node16" href="$fake__none_8c.html#a8d502a27efdeb0f048997819e3ae4fc4" title="returns a fake temperature" alt="" coords="797,393,1001,434"/>
+<area shape="rect" id="node17" href="$murata__ncu15xh103f6sxx_8c.html#a0e6cfeee0f7fdf5504234ed54ddfc9b7" title="returns temperature based on measured ADC voltage." alt="" coords="787,459,1010,485"/>
+<area shape="rect" id="node18" href="$murata__ncu15xh103f6sxx_8c.html#a255c099fbd405cdc3b51c39a415c18e3" title="returns temperature based on measured ADC voltage" alt="" coords="797,510,1001,551"/>
+<area shape="rect" id="node19" href="$vishay__ntcalug01a103g_8c.html#a865b7c323eb0bdbd7420518e6b56cede" title="returns temperature based on measured ADC voltage." alt="" coords="789,576,1008,603"/>
+<area shape="rect" id="node20" href="$vishay__ntcalug01a103g_8c.html#a47e088f4023835e56cac22e035c66be8" title="returns temperature based on measured ADC voltage" alt="" coords="798,627,999,669"/>
+<area shape="rect" id="node21" href="$vishay__ntcle317e4103sba_8c.html#ae917bb4796f0f8fa36201dbd92aae38c" title="returns temperature based on measured ADC voltage." alt="" coords="789,693,1008,720"/>
+<area shape="rect" id="node11" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="1072,459,1243,485"/>
+</map>

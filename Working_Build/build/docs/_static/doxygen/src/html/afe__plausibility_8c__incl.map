@@ -1,0 +1,9 @@
+<map id="afe_plausibility.c" name="afe_plausibility.c">
+<area shape="rect" id="node1" title="AFE plausibility checks for cell voltage and cell temperatures." alt="" coords="225,5,343,32"/>
+<area shape="rect" id="node2" href="$afe__plausibility_8h.html" title="plausibility checks for cell voltage and cell temperatures" alt="" coords="93,80,211,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="167,229,233,256"/>
+<area shape="rect" id="node7" href="$tsi_8h.html" title="Temperature Sensor Interface on Slave Unit driver header." alt="" coords="322,80,369,107"/>
+<area shape="rect" id="node3" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="7,155,79,181"/>
+<area shape="rect" id="node6" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="153,155,247,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,229,80,256"/>
+</map>

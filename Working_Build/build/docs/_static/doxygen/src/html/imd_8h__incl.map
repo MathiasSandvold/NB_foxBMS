@@ -1,0 +1,18 @@
+<map id="imd.h" name="imd.h">
+<area shape="rect" id="node1" title="API header for the insulation monitoring device." alt="" coords="701,5,756,32"/>
+<area shape="rect" id="node2" href="$can__cfg_8h.html" title="Headers for the configuration for the CAN module." alt="" coords="728,80,807,107"/>
+<area shape="rect" id="node4" href="$database_8h.html" title="Database module header." alt="" coords="556,155,643,181"/>
+<area shape="rect" id="node10" title=" " alt="" coords="445,603,511,629"/>
+<area shape="rect" id="node16" href="$ftask__cfg_8h.html" title="Task configuration header." alt="" coords="687,379,773,405"/>
+<area shape="rect" id="node3" title=" " alt="" coords="727,155,805,181"/>
+<area shape="rect" id="node5" href="$database__cfg_8h.html" title="Database configuration header." alt="" coords="244,304,355,331"/>
+<area shape="rect" id="node11" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="474,528,567,555"/>
+<area shape="rect" id="node14" href="$database__helper_8h.html" title="Database module header." alt="" coords="374,229,502,256"/>
+<area shape="rect" id="node15" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="581,453,628,480"/>
+<area shape="rect" id="node6" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="115,379,262,405"/>
+<area shape="rect" id="node9" title=" " alt="" coords="78,603,153,629"/>
+<area shape="rect" id="node12" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="42,528,101,555"/>
+<area shape="rect" id="node13" title=" " alt="" coords="337,379,400,405"/>
+<area shape="rect" id="node7" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="198,453,273,480"/>
+<area shape="rect" id="node8" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="125,528,197,555"/>
+</map>

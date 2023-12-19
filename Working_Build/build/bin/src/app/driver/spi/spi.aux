@@ -1,0 +1,190 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{FF6FDAB7-BEA2-4BA7-80C2-255EB0BE5672}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Thu Sep  7 11:08:19 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  spiNotification                                 |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPI_Unlock                                      |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPI_GetSpiIndex                                 |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPI_TransmitReceiveDataDma                      |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   SPI_GetSpiIndex
+   OS_EnterTaskCritical
+   FSYS_RaisePrivilege
+   dmaSetChEnable
+   OS_ExitTaskCritical
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPI_Lock                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPI_TransmitReceiveData                         |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   SPI_GetSpiIndex
+   SPI_Lock
+   IO_PinReset
+   spiTransmitAndReceiveData
+   IO_PinSet
+   SPI_Unlock
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPI_TransmitData                                |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   SPI_GetSpiIndex
+   SPI_Lock
+   IO_PinReset
+   spiTransmitData
+   IO_PinSet
+   SPI_Unlock
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPI_TransmitDummyByte                           |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   memset
+   SPI_TransmitData
+   MCU_Delay_us
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPI_SlaveSetReceiveDataDma                      |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   FSYS_RaisePrivilege
+   SPI_GetSpiIndex
+   dmaSetChEnable
+   OS_ExitTaskCritical
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPI_SetFunctional                               |
++-------------------------------------------------------------+
+Stack usage:   72 bytes
+
+Called functions:
+   memcpy
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   spi5GetConfigValue
+   spi4GetConfigValue
+   spi3GetConfigValue
+   spi2GetConfigValue
+   spi1GetConfigValue
+   spiSetFunctional
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPI_GetHardwareChipSelectPin                    |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPI_GetChipSelectPin                            |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   SPI_GetHardwareChipSelectPin
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPI_InitializeChipSelects                       |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   SPI_GetChipSelectPin
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPI_Initialize                                  |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   spiInit
+   SPI_InitializeChipSelects
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPI_FramTransmitReceiveData                     |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   spiTransmitAndReceiveData
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPI_DmaSendLastByte                             |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SPI_CheckInterfaceAvailable                     |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   SpiTxStatus
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+

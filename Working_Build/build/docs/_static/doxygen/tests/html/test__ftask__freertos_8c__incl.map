@@ -1,0 +1,26 @@
+<map id="test_ftask_freertos.c" name="test_ftask_freertos.c">
+<area shape="rect" id="node1" title="Test of the ftask implementation for FreeRTOS." alt="" coords="360,5,500,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="53,80,114,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="138,80,255,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="280,80,439,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="463,80,541,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="565,80,684,107"/>
+<area shape="rect" id="node7" href="$ftask_8h.html" title="Header of task driver implementation." alt="" coords="709,80,770,107"/>
+<area shape="rect" id="node8" href="$can__cfg_8h.html" title="Headers for the configuration for the CAN module." alt="" coords="572,155,651,181"/>
+<area shape="rect" id="node10" href="$database_8h.html" title="Database module header." alt="" coords="463,229,549,256"/>
+<area shape="rect" id="node16" title=" " alt="" coords="471,677,536,704"/>
+<area shape="rect" id="node22" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="639,528,685,555"/>
+<area shape="rect" id="node23" href="$ftask__cfg_8h.html" title="Task configuration header." alt="" coords="827,453,913,480"/>
+<area shape="rect" id="node24" href="$rtc_8h.html" title="Header file of the RTC driver." alt="" coords="738,528,786,555"/>
+<area shape="rect" id="node9" title=" " alt="" coords="574,229,651,256"/>
+<area shape="rect" id="node11" href="$database__cfg_8h.html" title="Database configuration header." alt="" coords="245,379,356,405"/>
+<area shape="rect" id="node18" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="591,603,685,629"/>
+<area shape="rect" id="node21" href="$database__helper_8h.html" title="Database module header." alt="" coords="338,304,466,331"/>
+<area shape="rect" id="node12" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="79,453,226,480"/>
+<area shape="rect" id="node15" title=" " alt="" coords="130,677,205,704"/>
+<area shape="rect" id="node19" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="255,603,314,629"/>
+<area shape="rect" id="node20" title=" " alt="" coords="352,453,415,480"/>
+<area shape="rect" id="node13" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="131,528,206,555"/>
+<area shape="rect" id="node14" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="58,603,130,629"/>
+<area shape="rect" id="node17" title=" " alt="" coords="5,677,105,704"/>
+</map>

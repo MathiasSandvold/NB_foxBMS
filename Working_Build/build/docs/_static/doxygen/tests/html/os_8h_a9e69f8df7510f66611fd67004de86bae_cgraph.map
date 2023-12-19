@@ -1,0 +1,4 @@
+<map id="OS_IncrementTimer" name="OS_IncrementTimer">
+<area shape="rect" id="node1" title="Increments the system timer os_timer." alt="" coords="5,5,143,32"/>
+<area shape="rect" id="node2" href="$rtc_8c.html#a0009ce4edb79510d4e3be56302eaf0a0" title="increment the RTC system timer." alt="" coords="191,5,375,32"/>
+</map>

@@ -1,0 +1,9 @@
+   text	   data	    bss	    dec	    hex	filename
+   1590	     24	      0	   1614	    64e	ltc_6813-1_cfg.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\driver\afe\ltc\6813-1\libfoxbms-afe-driver.a)
+  31518	   1817	      0	  33335	   8237	ltc_6813-1.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\driver\afe\ltc\6813-1\libfoxbms-afe-driver.a)
+   2228	      0	      0	   2228	    8b4	ltc_afe.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\driver\afe\ltc\6813-1\libfoxbms-afe-driver.a)
+      0	      0	      0	      0	      0	ltc_afe_dma_cfg.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\driver\afe\ltc\6813-1\libfoxbms-afe-driver.a)
+   1720	      0	      0	   1720	    6b8	ltc_afe_dma.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\driver\afe\ltc\6813-1\libfoxbms-afe-driver.a)
+    664	      0	      0	    664	    298	ltc_pec.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\driver\afe\ltc\6813-1\libfoxbms-afe-driver.a)
+    176	      0	      0	    176	     b0	afe_plausibility.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\driver\afe\ltc\6813-1\libfoxbms-afe-driver.a)
+  37896	   1841	      0	  39737	   9b39	(TOTALS)

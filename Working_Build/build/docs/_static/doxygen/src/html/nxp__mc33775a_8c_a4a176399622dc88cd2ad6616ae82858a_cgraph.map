@@ -1,0 +1,23 @@
+<map id="N775_SetMuxChannel" name="N775_SetMuxChannel">
+<area shape="rect" id="node1" title="sets mux channel." alt="" coords="5,479,156,506"/>
+<area shape="rect" id="node2" href="$nxp__mc33775a-ll_8c.html#ac7c3bbdc384429e36a82340281a4eb13" title="Read a value from a specific register in a specific device." alt="" coords="204,374,383,401"/>
+<area shape="rect" id="node16" href="$nxp__mc33775a-ll_8c.html#a9184e5d6d106688f9a701245d749987d" title="Write a value into a specific register in a specific device." alt="" coords="453,479,633,506"/>
+<area shape="rect" id="node19" href="$nxp__mc33775a_8c.html#afc150ee43bb68b0ee5a389d8535c734a" title="waits for a definite amount of time in ms." alt="" coords="238,530,349,557"/>
+<area shape="rect" id="node3" href="$nxp__mc33775a-ll_8c.html#a05b00b3020b3f7d8df2fc4e2ca529274" title="Read multiple values from specific registers in a specific device." alt="" coords="431,294,655,321"/>
+<area shape="rect" id="node4" href="$nxp__mc33775a-ll_8c.html#add44c631a1af3073bdf7c3bf91ae2de6" title="Composes a message." alt="" coords="724,472,928,513"/>
+<area shape="rect" id="node5" href="$nxp__mc33775a-ll_8c.html#a1ed98da6256705c1d38cf5529e2509bb" title="Decomposes and analysis a message." alt="" coords="717,51,935,92"/>
+<area shape="rect" id="node6" href="$nxp__mc33775a-ll_8c.html#a8f9a40f5c6c25d931b57b51703e7e0f3" title="Copies a message to the buffer to be passed to the SPI transmit functions." alt="" coords="725,421,927,447"/>
+<area shape="rect" id="node7" href="$nxp__mc33775a-ll_8c.html#a6cce353892b34e03c69c9ab238ad7b80" title="Wait for the SPI receive communication to complete, using notifications." alt="" coords="703,370,949,397"/>
+<area shape="rect" id="node9" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1025,319,1172,346"/>
+<area shape="rect" id="node10" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1029,117,1168,143"/>
+<area shape="rect" id="node11" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="1038,269,1159,295"/>
+<area shape="rect" id="node12" href="$spi_8c.html#a997dce9b156595fa4486a547f7c55453" title="Transmits and receives data on SPI with DMA." alt="" coords="726,167,926,194"/>
+<area shape="rect" id="node15" href="$spi_8c.html#a2a0f36d8cb7e54304284f758cc108c36" title="Transmits and receives data on SPI with DMA." alt="" coords="727,218,925,245"/>
+<area shape="rect" id="node8" href="$os__freertos_8c.html#a7578e983d03af6f03fd3fe09f293cdb1" title="Wait for a notification, with index." alt="" coords="997,530,1200,557"/>
+<area shape="rect" id="node13" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="1026,167,1171,194"/>
+<area shape="rect" id="node14" href="$fsystem_8h.html#af23205627be1616c6b1dcdb684060322" title="Switch back to user mode." alt="" coords="1011,218,1187,245"/>
+<area shape="rect" id="node17" href="$nxp__mc33775a-ll_8c.html#a2e3ed760407a7d6dcb460ac68c02be41" title="Wait for the SPI transmit communication to complete, using notifications." alt="" coords="703,690,949,717"/>
+<area shape="rect" id="node18" href="$os__freertos_8c.html#a25b7418eb914b83dd88bbc0424333139" title="Clear pending notification of a task, with index." alt="" coords="733,639,919,666"/>
+<area shape="rect" id="node20" href="$os__freertos_8c.html#a3ac9f783e38ae9f9c8cfe0634bb3b8fe" title="Delay a task until a specified time." alt="" coords="475,530,610,557"/>
+<area shape="rect" id="node21" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="479,581,606,607"/>
+</map>

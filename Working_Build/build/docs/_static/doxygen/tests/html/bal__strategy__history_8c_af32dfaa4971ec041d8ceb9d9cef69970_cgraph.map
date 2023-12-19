@@ -1,0 +1,10 @@
+<map id="BAL_ProcessStateCheckBalancing" name="BAL_ProcessStateCheckBalancing">
+<area shape="rect" id="node1" title="State machine subfunction to check if balancing is allowed." alt="" coords="5,81,232,108"/>
+<area shape="rect" id="node2" href="$bal__strategy__history_8c.html#a9f236a369bc16aa1bb4428e5ef0b0417" title=" " alt="" coords="300,5,457,32"/>
+<area shape="rect" id="node3" href="$bal__strategy__history_8c.html#acf508466d14bd8560c1f5b538e86fd94" title=" " alt="" coords="293,56,465,83"/>
+<area shape="rect" id="node7" href="$bal__strategy__history_8c.html#ab608144bd63e5fa96224e95cec7a3fb3" title="Deactivates history based balancing." alt="" coords="321,107,436,133"/>
+<area shape="rect" id="node8" href="$bms_8c.html#ab900910af6e3c584a5e3650018fe4ed7" title="Returns current battery system state (charging/discharging, resting or in relaxation phase)" alt="" coords="280,157,477,184"/>
+<area shape="rect" id="node4" href="$bal__cfg_8c.html#ae6943eea06cdd64870ce62e3ce1b60c2" title="get balancing threshold" alt="" coords="531,31,746,57"/>
+<area shape="rect" id="node5" href="$group__state-estimation-api.html#ga74af4e2bdb5a3caa9696292fb9217311" title="look&#45;up table for SOC initialization" alt="" coords="525,81,752,108"/>
+<area shape="rect" id="node6" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="800,81,971,108"/>
+</map>

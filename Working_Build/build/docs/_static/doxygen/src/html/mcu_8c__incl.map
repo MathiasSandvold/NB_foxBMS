@@ -1,0 +1,8 @@
+<map id="mcu.c" name="mcu.c">
+<area shape="rect" id="node1" title="Driver for the MCU module." alt="" coords="151,5,209,32"/>
+<area shape="rect" id="node2" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="41,80,100,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="105,155,170,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="175,80,273,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="298,80,361,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,80,181"/>
+</map>

@@ -1,0 +1,640 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5. Unit Tests &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6. Build Process" href="../build-process/build-process.html" />
+    <link rel="prev" title="4.41. FASSERT Module" href="../modules/main/fassert.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><span class="section-number">5. </span>Unit Tests</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/software/unit-tests/unit-tests.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="unit-tests">
+<span id="id1"></span><h1><span class="section-number">5. </span>Unit Tests<a class="headerlink" href="#unit-tests" title="Permalink to this headline"></a></h1>
+<p>We are using the <a class="reference external" href="https://github.com/ThrowTheSwitch/Ceedling">ceedling framework</a>
+for unit testing.
+It is a tool based on rake that automatically generates the mocks (with
+<a class="reference external" href="https://github.com/ThrowTheSwitch/CMock">CMock</a>) and test-runners and
+executes the unit tests with <a class="reference external" href="https://github.com/ThrowTheSwitch/Unity">Unity</a>
+as assertion toolset.</p>
+<p><a class="reference external" href="https://en.wikipedia.org/wiki/Unit_testing">Unit testing</a> tries to test
+properties of the interfaces of the smallest units in your software.
+(The linked Wikipedia article is a good read for getting into the topic.)
+This test tries not to catch every detail of the implementation on the specific
+MCU or the behavior of modules to each other.
+For this reason the tests are compiled on a development machine instead of the
+target.</p>
+<div class="section" id="usage">
+<h2><span class="section-number">5.1. </span>Usage<a class="headerlink" href="#usage" title="Permalink to this headline"></a></h2>
+<p>The tool is encapsulated in our waf-script.
+Additionally it is automatically executed on our CI-jobs.
+The usage as a waf-tool is explained in
+<a class="reference internal" href="unit-tests_how-to.html#how-to-use-unit-tests"><span class="std std-ref">How to Use Unit tests</span></a>.
+This part also explains how to use the tool directly in a shell.
+The benefit is that the output in the shell is colored and single tests can be
+executed.</p>
+</div>
+<div class="section" id="writing-tests">
+<h2><span class="section-number">5.2. </span>Writing tests<a class="headerlink" href="#writing-tests" title="Permalink to this headline"></a></h2>
+<p>A unit test should always cover exactly one file from our source code.
+See the test-files in the <code class="docutils literal notranslate"><span class="pre">tests/unit</span></code> subdirectory for reference.</p>
+<div class="section" id="headers-of-unit-tests">
+<h3><span class="section-number">5.2.1. </span>Headers of unit tests<a class="headerlink" href="#headers-of-unit-tests" title="Permalink to this headline"></a></h3>
+<p>Typically, the header of a unit-test-file consists of three parts.</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/* part one: include the unity-header */</span><span class="w"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;unity.h&quot;</span><span class="cp"></span>
+
+<span class="cm">/* part two: include Mocks */</span><span class="w"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;MockHL_spi.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Mockbeta.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Mockdatabase.h&quot;</span><span class="cp"></span>
+
+<span class="cm">/* part three: include the code under test */</span><span class="w"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;adc.h&quot;</span><span class="cp"></span>
+</pre></div>
+</div>
+<p>With this information ceedling will gather all necessary c-files to these
+headers and compile a test-runner.</p>
+</div>
+<div class="section" id="using-mocks">
+<h3><span class="section-number">5.2.2. </span>Using mocks<a class="headerlink" href="#using-mocks" title="Permalink to this headline"></a></h3>
+<p>Most of the time the code that we want to test will rely on other parts of the
+codebase.
+A proper unit test should however only test single units and not more.
+(This would otherwise be a integration- or high-level-test.)</p>
+<p>In order to isolate our code from the rest, we can replace the calls to the
+surrounding software with so-called
+<a class="reference external" href="https://en.wikipedia.org/wiki/Mock_object">Mocks</a>.</p>
+<p>You can tell ceedling to create a mock of a file by including the header file
+and prepending the word <code class="docutils literal notranslate"><span class="pre">Mock</span></code> to it.
+The mocks will be created on demand.
+If you are running into issues with certain parts of the API not being
+available in your Mock, then check the generated header file, if they are
+present.
+Ceedling will have issues parsing the header if the functions are marked with
+special attributes or if they are defined as inline.
+In this case it might be necessary to tell CMock that those attributes are
+“strippable” with the <code class="docutils literal notranslate"><span class="pre">:strippables:</span></code> yaml in <code class="docutils literal notranslate"><span class="pre">project.yml</span></code>.</p>
+<p>Before calling a function in your test that is calling one of your mocked
+functions internally, you must tell the test-runner that you are expecting the
+mock to be called.
+The generated mocks will have a <code class="docutils literal notranslate"><span class="pre">*_Expect</span></code>-function for this.</p>
+<p>For further information on using CMock please refer to the linked documents
+in <a class="reference internal" href="#ceedling-further-reading"><span class="std std-ref">Further reading</span></a>.</p>
+</div>
+<div class="section" id="using-assertions">
+<h3><span class="section-number">5.2.3. </span>Using assertions<a class="headerlink" href="#using-assertions" title="Permalink to this headline"></a></h3>
+<p>The main part of a test will be asserting that the output of a function is as
+expected.
+Unity supplies many assertions that are summed up pretty well on
+<a class="reference external" href="https://github.com/ThrowTheSwitch/Unity/blob/master/docs/UnityAssertionsReference.md">GitHub</a>.</p>
+<p>A typical usage might look like this:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cm">/* the function to be tested is sum(a, b) */</span><span class="w"></span>
+<span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="n">sum</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">));</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="getting-started-with-a-new-test">
+<h3><span class="section-number">5.2.4. </span>Getting started with a new test<a class="headerlink" href="#getting-started-with-a-new-test" title="Permalink to this headline"></a></h3>
+<p>As a start for a unit test you can create an empty file that compiles a
+test-runner together with all needed mocks and the file under test.</p>
+<p>You can start this by creating the test-c-file.
+If the file that you want to test is called <code class="docutils literal notranslate"><span class="pre">adc.c</span></code> with header <code class="docutils literal notranslate"><span class="pre">adc.h</span></code>
+then you would name the unit test <code class="docutils literal notranslate"><span class="pre">test_adc.c</span></code>.
+The directory structure of our application is mirrored in the
+unit-test-directory.</p>
+<p>Start with the basic includes:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;unity.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;adc.h&quot;</span><span class="cp"></span>
+</pre></div>
+</div>
+<p>When you compile with this, the test-runner will complain about missing
+symbols.
+Read the output closely and find where the called functions are defined.
+Then add mocks for those by including their headers:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;unity.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;MockHL_spi.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Mockbeta.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Mockdatabase.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Mockepcos_b57251v5103j060.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;adc.h&quot;</span><span class="cp"></span>
+</pre></div>
+</div>
+<p>When you are done with that there will sometimes still be missing variables.
+In this example definitions from <code class="docutils literal notranslate"><span class="pre">spi_cfg.c</span></code> are missing.
+You have two options:
+add the variables directly to the test-file (this can be useful if you have to
+access them in the unit test) or adding the header that introduces those
+variables:</p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;unity.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;MockHL_spi.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Mockbeta.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Mockdatabase.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Mockepcos_b57251v5103j060.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;spi_cfg.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;adc.h&quot;</span><span class="cp"></span>
+</pre></div>
+</div>
+<p>You can start with this variant in order to get the unit test to compile and
+then later on add the variables directly to your test and remove the added
+header.</p>
+<p>Special care has to be taken when registers are directly accessed in code.
+This will most certainly lead to a SEGFAULT in the test-runner, as this access
+to some random address is not allowed or sensible on the native-platform.
+Ceedling has a <a class="reference external" href="http://www.throwtheswitch.org/build/native">guide</a> on
+replacing these register accesses with variables, but since we are using a HAL
+it can often be enough to just replace HAL-calls with mocks.</p>
+<p>To finish it, your test needs a startup and teardown function.
+These functions will be called between each single test in a file.</p>
+</div>
+<div class="section" id="do-not-be-too-explicit">
+<h3><span class="section-number">5.2.5. </span>Do not be too explicit<a class="headerlink" href="#do-not-be-too-explicit" title="Permalink to this headline"></a></h3>
+<p>Take care to make your tests not too explicit.
+That means that you should not care to much about internals of the functions
+that you are testing. Focus on the public interfaces of the functions.</p>
+<p>One option is to ignore the calls to irrelevant mock functions.
+You can add a call of <code class="docutils literal notranslate"><span class="pre">*_Ignore()</span></code>-mocks at the start of your test.</p>
+<p>If necessary, tests can be supported with helper functions in the file under
+test.
+For example it is possible to add a getter in order to obtain the internal
+instance of the struct that tracks the state of a state-machine of a module.
+This should however be kept to a minimum. If a function is not testable at all,
+it is better to rewrite the function than to try to add complicated tests for
+it.</p>
+</div>
+<div class="section" id="checklist-for-unit-tests">
+<h3><span class="section-number">5.2.6. </span>Checklist for unit tests<a class="headerlink" href="#checklist-for-unit-tests" title="Permalink to this headline"></a></h3>
+<p>This section aims to be a help for writing complete unit tests.
+It is an adaption of the checklist described in <span id="id2">[<a class="reference internal" href="../../misc/bibliography.html#id5" title="Michael Medoff and Rainer Faller. Functional safety – An IEC 61508 SIL 3 compliant development process. exida, Sellersville, Pa, 2014. ISBN 9781934977088.">MF14</a>]</span> with
+comments based on experience.</p>
+<ol class="arabic simple">
+<li><p>Unit tests <strong>MUST</strong> show that the module under test performs its intended
+action. For example if a module transforms values, then a test should show
+this mechanism in action.</p></li>
+<li><p>Unit tests <strong>SHOULD</strong> show that the module under test does not perform any
+unintended side effects.
+This is not a strict requirement, as it is hard to prove.
+Generally, side effects should be omitted whenever possible in
+order to make the code clearer and in the end more testable.
+During development and execution of the unit tests special care should be
+taken in order to spot potential side effects.</p></li>
+<li><p>Equivalence classes <strong>SHALL</strong> be created for every input of a module.
+An equivalence class describes which class of input values takes the same
+internal path inside the function.
+For example, when writing plausibility checks, all values that are plausible
+would be one group and the values that are not plausible would be another
+group.
+All values that are loaded by the module or are passed to the module when
+calling it are considered input.</p></li>
+<li><p>Boundary values <strong>MUST</strong> be tested for every equivalence class.
+By testing the values at the limits of an equivalence class, it is made sure
+that the function is able to handle the outer limits.
+This is for many implementations a good heuristic.</p></li>
+<li><p>The value Zero <strong>SHALL</strong> be tested as input value.
+This applies to both variables and pointers.
+Zero value is a good indicator for unveiling critical edge-cases such as a
+division by zero or access to a null-pointer.</p></li>
+<li><p>Outputs <strong>SHALL</strong> be forced to their limits.
+By writing a test that forces the output values to their maximum values, it
+can be made sure that the function is able to handle them.</p></li>
+<li><p>Outputs <strong>SHOULD</strong> be forced above their limits.
+Depending on the module and its implementation, it can be impossible to
+force the output values of the module beyond its limits.
+Otherwise, this should be tested.</p></li>
+<li><p>The first and last element of a sequence <strong>SHALL</strong> be tested.
+Especially for arrays, the first and last element shall be checked.
+This can help to unveil off-by-one and out-of-bounds-access to arrays.</p></li>
+<li><p>Sequences <strong>SHALL</strong> be tested with zero, one, two and maximum elements.
+If the module under test consumes a sequence such as an array, the cases
+where the array has zero, one, two and the maximum number of elements shall
+be tested.</p></li>
+<li><p>The test <strong>SHOULD</strong> reach full branch and line-coverage.
+This is only a requirement for safety critical modules.
+However, it is helpful nevertheless for writing better code by avoiding
+untestable conditions.</p></li>
+</ol>
+</div>
+</div>
+<div class="section" id="typical-test-failures">
+<h2><span class="section-number">5.3. </span>Typical test failures<a class="headerlink" href="#typical-test-failures" title="Permalink to this headline"></a></h2>
+<p>This part tries to sum up typical causes for failing unit tests.</p>
+<div class="section" id="ceedling-crash">
+<h3><span class="section-number">5.3.1. </span>Ceedling crash<a class="headerlink" href="#ceedling-crash" title="Permalink to this headline"></a></h3>
+<p>Sometimes you will see a unit test failing locally with output similar to
+the following:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Test &#39;test_bal.c&#39;</span>
+<span class="go">-----------------</span>
+<span class="go">ERROR: Ceedling Failed</span>
+
+<span class="go">ERROR: Shell command failed.</span>
+<span class="go">&gt; Shell executed command:</span>
+<span class="go">[gcc call redacted, not relevant here]</span>
+<span class="go">&gt; And exited with status: [1].</span>
+
+<span class="go">rake aborted!</span>
+<span class="go">ShellExecutionException: ShellExecutionException</span>
+<span class="go">ceedling:23:in &#39;load&#39;</span>
+<span class="go">ceedling:23:in &#39;&lt;main&gt;&#39;</span>
+<span class="go">Tasks: TOP =&gt; test:all</span>
+<span class="gp gp-VirtualEnv">(See full trace by running task with --trace)</span>
+</pre></div>
+</div>
+<p>This happens most of the time on the first run after changing the branch.
+It seems to be an internal issue with how we are using ceedling, but is
+resolved by simply executing the task again (which will then work normally).</p>
+</div>
+<div class="section" id="missing-coverage">
+<h3><span class="section-number">5.3.2. </span>Missing coverage<a class="headerlink" href="#missing-coverage" title="Permalink to this headline"></a></h3>
+<p>On CI (or when computing the coverage locally), you can encounter error
+messages similar to this:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">Could not find coverage results for ../../src/app/driver/io/io.c</span>
+
+<span class="go">[...]</span>
+
+<span class="go">There were files with no coverage results: aborting.</span>
+</pre></div>
+</div>
+<p>This means that new files have been introduced that are not covered by any
+unit test (this test can be even empty).
+In order to solve this you have two options:</p>
+<ol class="arabic simple">
+<li><p>add the offending file to <code class="docutils literal notranslate"><span class="pre">:uncovered_ignore_list:</span></code> in <code class="docutils literal notranslate"><span class="pre">project.yml</span></code></p></li>
+<li><p>add an (empty) test to the unit tests.</p></li>
+</ol>
+<p>While the first option is quicker, it is preferred to use mainly the second
+option.
+This way we can have a good overview of the actual coverage of our code.</p>
+</div>
+<div class="section" id="segfault-of-the-test-runner">
+<h3><span class="section-number">5.3.3. </span>SEGFAULT of the test-runner<a class="headerlink" href="#segfault-of-the-test-runner" title="Permalink to this headline"></a></h3>
+<p>If the test-runner aborts an ceedling provides not much output this most of the
+time means that you have run into a segmentation fault.
+This happens when the code that is currently tested tries to access a register
+of the MCU directly.
+In a native build this register address lies outside of the program space and
+will thus be terminated by your operating system.</p>
+</div>
+<div class="section" id="linker-issues-and-unknown-symbols">
+<h3><span class="section-number">5.3.4. </span>Linker issues and unknown symbols<a class="headerlink" href="#linker-issues-and-unknown-symbols" title="Permalink to this headline"></a></h3>
+<p>In most other cases it will be a missing symbol during compilation or linking.
+Read the output closely and try to mock or add any symbols that are missing.</p>
+</div>
+</div>
+<div class="section" id="using-coverage-reports">
+<h2><span class="section-number">5.4. </span>Using coverage reports<a class="headerlink" href="#using-coverage-reports" title="Permalink to this headline"></a></h2>
+<p>When you build the unit tests with coverage enabled you will find a coverage
+report locally in <code class="docutils literal notranslate"><span class="pre">build/unit_test/artifacts/gcov</span></code> as HTML.</p>
+<p>This report knows two metrics: line-coverage and branch-coverage.
+Line-coverage is the percentage of lines of code that have been passed while
+running the unit test.
+Branch-coverage is the percentage of decisions (e.g., when passing an
+if-instruction) that have been covered by the test-code.</p>
+<p>The goal is to find uncovered lines and branches and to extend the unit tests
+in order to reach finally 100% coverage.</p>
+</div>
+<div class="section" id="full-example-of-a-unit-test">
+<h2><span class="section-number">5.5. </span>Full example of a unit test<a class="headerlink" href="#full-example-of-a-unit-test" title="Permalink to this headline"></a></h2>
+<p>This section explores how a full unit test could look like.
+As an example we have a <code class="docutils literal notranslate"><span class="pre">math.h</span></code>:</p>
+<div class="literal-block-wrapper docutils container" id="math-h">
+<div class="code-block-caption"><span class="caption-number">Listing 5.1 </span><span class="caption-text">Header for <code class="docutils literal notranslate"><span class="pre">math.h</span></code></span><a class="headerlink" href="#math-h" title="Permalink to this code"></a></div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">extern</span><span class="w"> </span><span class="kt">uint16_t</span><span class="w"> </span><span class="nf">addition</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">b</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<p>This header is implemented in <code class="docutils literal notranslate"><span class="pre">math.c</span></code>:</p>
+<div class="literal-block-wrapper docutils container" id="math-c">
+<div class="code-block-caption"><span class="caption-number">Listing 5.2 </span><span class="caption-text">Implementation of <code class="docutils literal notranslate"><span class="pre">math.h</span></code></span><a class="headerlink" href="#math-c" title="Permalink to this code"></a></div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;math.h&quot;</span><span class="cp"></span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="kt">uint16_t</span><span class="w"> </span><span class="nf">addition</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">4</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">5</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<p>In order to make sure that the function is implemented as expected, we can
+test its properties with a unit test. Since this is an addition-function it
+should be commutative.
+That means <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">+</span> <span class="pre">b</span> <span class="pre">==</span> <span class="pre">b</span> <span class="pre">+</span> <span class="pre">a</span></code>. Another issue could be that the implementation
+has an overflow when adding two full-scale <cite>uint8_t</cite>.
+The following unit-test-fixture has two tests that will be executed one after
+another.</p>
+<div class="literal-block-wrapper docutils container" id="test-math-c">
+<div class="code-block-caption"><span class="caption-number">Listing 5.3 </span><span class="caption-text">Unit test for <code class="docutils literal notranslate"><span class="pre">math.h</span></code></span><a class="headerlink" href="#test-math-c" title="Permalink to this code"></a></div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/* The test-library */</span><span class="w"></span>
+<span class="linenos"> 2</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;unity.h&quot;</span><span class="cp"></span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="cm">/* The file under test */</span><span class="w"></span>
+<span class="linenos"> 5</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;math.h&quot;</span><span class="cp"></span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 8</span><span class="w">    </span><span class="cm">/* this function is called before executing a test;</span>
+<span class="linenos"> 9</span><span class="cm">    we can use it in more complex setups in order to initialize</span>
+<span class="linenos">10</span><span class="cm">    the code under test into a defined state */</span><span class="w"></span>
+<span class="linenos">11</span><span class="p">}</span><span class="w"></span>
+<span class="linenos">12</span>
+<span class="linenos">13</span><span class="kt">void</span><span class="w"> </span><span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">14</span><span class="w">    </span><span class="cm">/* this function is called after executing a test;</span>
+<span class="linenos">15</span><span class="cm">    we can use it for cleaning up if needed */</span><span class="w"></span>
+<span class="linenos">16</span><span class="p">}</span><span class="w"></span>
+<span class="linenos">17</span>
+<span class="linenos">18</span><span class="cm">/* The title that we use should be as explicit as possible */</span><span class="w"></span>
+<span class="linenos">19</span><span class="kt">void</span><span class="w"> </span><span class="nf">testAdditionIsCommutative</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">20</span><span class="w">    </span><span class="cm">/* In order to test whether this function is commutative we have</span>
+<span class="linenos">21</span><span class="cm">    different options. For a unit test it is OK to have hard-coded values. */</span><span class="w"></span>
+<span class="linenos">22</span>
+<span class="linenos">23</span><span class="w">    </span><span class="cm">/* we call the function addition with 2 and 3 and</span>
+<span class="linenos">24</span><span class="cm">    expect the output to be 5 */</span><span class="w"></span>
+<span class="linenos">25</span><span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">5u</span><span class="p">,</span><span class="w"> </span><span class="n">addition</span><span class="p">(</span><span class="mi">2u</span><span class="p">,</span><span class="w"> </span><span class="mi">3u</span><span class="p">));</span><span class="w"></span>
+<span class="linenos">26</span>
+<span class="linenos">27</span><span class="w">    </span><span class="cm">/* the other way around calling the function with 3 and 2</span>
+<span class="linenos">28</span><span class="cm">    should also return 5 */</span><span class="w"></span>
+<span class="linenos">29</span><span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">5u</span><span class="p">,</span><span class="w"> </span><span class="n">addition</span><span class="p">(</span><span class="mi">3u</span><span class="p">,</span><span class="w"> </span><span class="mi">2u</span><span class="p">));</span><span class="w"></span>
+<span class="linenos">30</span><span class="p">}</span><span class="w"></span>
+<span class="linenos">31</span>
+<span class="linenos">32</span><span class="kt">void</span><span class="w"> </span><span class="nf">testAdditionOfTwoUint8Max</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">33</span><span class="w">    </span><span class="cm">/* The result of adding two UINT8_MAX should be 510 */</span><span class="w"></span>
+<span class="linenos">34</span><span class="w">    </span><span class="n">TEST_ASSERT_EQUAL</span><span class="p">(</span><span class="mi">510</span><span class="p">,</span><span class="w"> </span><span class="n">addition</span><span class="p">(</span><span class="n">UINT8_MAX</span><span class="p">,</span><span class="w"> </span><span class="n">UINT8_MAX</span><span class="p">));</span><span class="w"></span>
+<span class="linenos">35</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<p>When we run these tests, ceedling will automatically search the dependencies,
+generate the boilerplate-code for an executable, compile all fragments, link
+a test-runner and run this test-runner in order to check that the assertions
+are correct.</p>
+<p>The described code is isolated from any other code.
+In “real” implementations, however, we will often find code that depends on
+other modules and functions.
+Unit testing aims to test code-fragments in insulation.
+Therefore it is often used with a mocking-framework which replaces dependencies
+with stubs whose behavior can be controlled by test.</p>
+<p>Let’s assume that we want to test a function in another module that depends on
+<code class="docutils literal notranslate"><span class="pre">math.h</span></code>.
+This modules checks the plausibility of two values of which the sum should be
+same as a third value.</p>
+<div class="literal-block-wrapper docutils container" id="plausibility-h">
+<div class="code-block-caption"><span class="caption-number">Listing 5.4 </span><span class="caption-text">Header of <code class="docutils literal notranslate"><span class="pre">plausibility.h</span></code></span><a class="headerlink" href="#plausibility-h" title="Permalink to this code"></a></div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="cm">/* return 0 if values are not plausible, 1 if plausible */</span><span class="w"></span>
+<span class="linenos">2</span><span class="k">extern</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="nf">check_values_plausible</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">voltage_1</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">3</span><span class="w">                                      </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">voltage_2</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">4</span><span class="w">                                      </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">sum_of_voltage</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="plausibility-c">
+<div class="code-block-caption"><span class="caption-number">Listing 5.5 </span><span class="caption-text">Implementation of <code class="docutils literal notranslate"><span class="pre">plausibility.h</span></code></span><a class="headerlink" href="#plausibility-c" title="Permalink to this code"></a></div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/* These values would be filled in from some other function in this module */</span><span class="w"></span>
+<span class="linenos"> 2</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">voltage_1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">6</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 3</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">voltage_2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">12</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 4</span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">sum_of_voltage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">18</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="kt">uint8_t</span><span class="w"> </span><span class="nf">check_values_plausible</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">voltage_1</span><span class="p">,</span><span class="w"></span>
+<span class="linenos"> 7</span><span class="w">                               </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">voltage_2</span><span class="p">,</span><span class="w"></span>
+<span class="linenos"> 8</span><span class="w">                               </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">sum_of_voltage</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="w">    </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">calculated_sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">addition</span><span class="p">(</span><span class="n">voltage_1</span><span class="p">,</span><span class="w"> </span><span class="n">voltage_2</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">10</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">calculated_sum</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">sum_of_voltage</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">11</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<p>In the unit test we replace addition with a mock.
+That means we do not care if <code class="docutils literal notranslate"><span class="pre">math.h</span></code> is implemented correctly and replace
+it with our own implementation.</p>
+<div class="literal-block-wrapper docutils container" id="test-plausibility-c">
+<div class="code-block-caption"><span class="caption-number">Listing 5.6 </span><span class="caption-text">Unit test for <code class="docutils literal notranslate"><span class="pre">plausibility.h</span></code></span><a class="headerlink" href="#test-plausibility-c" title="Permalink to this code"></a></div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;unity.h&quot;</span><span class="cp"></span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="cm">/* ceedling will recognize by this that we want to create a mock of</span>
+<span class="linenos"> 4</span><span class="cm">math.h and analyze the file and create it */</span><span class="w"></span>
+<span class="linenos"> 5</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;Mockmath.h&quot;</span><span class="cp"></span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="cm">/* this is the file under test */</span><span class="w"></span>
+<span class="linenos"> 8</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;plausibility.h&quot;</span><span class="cp"></span>
+<span class="linenos"> 9</span>
+<span class="linenos">10</span><span class="kt">void</span><span class="w"> </span><span class="nf">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">11</span><span class="p">}</span><span class="w"></span>
+<span class="linenos">12</span>
+<span class="linenos">13</span><span class="kt">void</span><span class="w"> </span><span class="nf">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">14</span><span class="p">}</span><span class="w"></span>
+<span class="linenos">15</span>
+<span class="linenos">16</span><span class="kt">void</span><span class="w"> </span><span class="nf">testCheckValuesPlausibleWithPlausibleValues</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">17</span><span class="w">    </span><span class="cm">/* we tell the mock to expect that it is called with 5 and 4 and that</span>
+<span class="linenos">18</span><span class="cm">    it should return 9; This will be added to a list and the mocks will</span>
+<span class="linenos">19</span><span class="cm">    be &quot;consumed&quot; from this list during execution */</span><span class="w"></span>
+<span class="linenos">20</span><span class="w">    </span><span class="n">addition_ExpectAndReturn</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">21</span>
+<span class="linenos">22</span><span class="w">    </span><span class="cm">/* assert that check_values_plausible returns true */</span><span class="w"></span>
+<span class="linenos">23</span><span class="w">    </span><span class="n">TEST_ASSERT</span><span class="p">(</span><span class="n">check_values_plausible</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">));</span><span class="w"></span>
+<span class="linenos">24</span><span class="p">}</span><span class="w"></span>
+<span class="linenos">25</span>
+<span class="linenos">26</span><span class="kt">void</span><span class="w"> </span><span class="nf">testCheckValuesPlausibleWithImplausibleValues</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">27</span><span class="w">    </span><span class="n">addition_ExpectAndReturn</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">9</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">28</span>
+<span class="linenos">29</span><span class="w">    </span><span class="cm">/* assert that implausible values will return false */</span><span class="w"></span>
+<span class="linenos">30</span><span class="w">    </span><span class="n">TEST_ASSERT_FALSE</span><span class="p">(</span><span class="n">check_values_plausible</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="mi">10</span><span class="p">));</span><span class="w"></span>
+<span class="linenos">31</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<p>Both tests should pass.
+The second test asserts that function returns false if the values are not
+plausible.
+For both tests the mock is told what it will receive and what it should return.
+Variants of these mock-functions exist that allow to ignore calls to this
+function, or to add a callback for more complex return values.</p>
+</div>
+<div class="section" id="further-reading">
+<h2><span class="section-number">5.6. </span>Further reading<a class="headerlink" href="#further-reading" title="Permalink to this headline"></a></h2>
+<ul class="simple" id="ceedling-further-reading">
+<li><p><a class="reference external" href="https://github.com/ThrowTheSwitch/Ceedling/blob/master/docs/CeedlingPacket.md">Ceedling command line interface</a></p></li>
+<li><p><a class="reference external" href="http://www.throwtheswitch.org/cmock">Introduction to CMock and mocking</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ThrowTheSwitch/CMock/blob/master/docs/CMock_Summary.md">API of CMock</a></p></li>
+<li><p><a class="reference external" href="https://github.com/ThrowTheSwitch/Unity/blob/master/docs/UnityAssertionsReference.md">Assertion summary of Unity</a></p></li>
+<li><p>Further tutorials can be found in the
+<a class="reference external" href="https://github.com/ThrowTheSwitch/Ceedling/tree/master/docs">GitHub-project of ceedling</a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../modules/main/fassert.html" class="btn btn-neutral float-left" title="4.41. FASSERT Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../build-process/build-process.html" class="btn btn-neutral float-right" title="6. Build Process" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

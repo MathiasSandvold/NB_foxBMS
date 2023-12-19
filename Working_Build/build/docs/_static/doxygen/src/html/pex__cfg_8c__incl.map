@@ -1,0 +1,16 @@
+<map id="pex_cfg.c" name="pex_cfg.c">
+<area shape="rect" id="node1" title="Configuration for the NXP PCA9539 port expander module." alt="" coords="711,5,790,32"/>
+<area shape="rect" id="node2" href="$pex__cfg_8h.html" title="Headers for the configuration for the NXP PCA9539 port expander module." alt="" coords="610,80,689,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="515,603,581,629"/>
+<area shape="rect" id="node3" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="79,379,225,405"/>
+<area shape="rect" id="node9" href="$database_8h.html" title="Database module header." alt="" coords="555,155,642,181"/>
+<area shape="rect" id="node4" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="115,453,189,480"/>
+<area shape="rect" id="node5" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="36,528,108,555"/>
+<area shape="rect" id="node6" title=" " alt="" coords="71,603,145,629"/>
+<area shape="rect" id="node8" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="367,528,460,555"/>
+<area shape="rect" id="node10" href="$database__cfg_8h.html" title="Database configuration header." alt="" coords="277,304,387,331"/>
+<area shape="rect" id="node13" href="$database__helper_8h.html" title="Database module header." alt="" coords="484,229,612,256"/>
+<area shape="rect" id="node14" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="495,453,542,480"/>
+<area shape="rect" id="node11" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="233,528,292,555"/>
+<area shape="rect" id="node12" title=" " alt="" coords="301,379,363,405"/>
+</map>

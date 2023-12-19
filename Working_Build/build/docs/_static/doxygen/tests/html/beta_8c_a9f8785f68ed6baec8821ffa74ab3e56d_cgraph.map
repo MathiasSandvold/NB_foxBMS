@@ -1,0 +1,4 @@
+<map id="BETA_GetTemperatureFromBeta" name="BETA_GetTemperatureFromBeta">
+<area shape="rect" id="node1" title="returns temperature based on measured ADC voltage" alt="" coords="5,5,219,32"/>
+<area shape="rect" id="node2" href="$beta_8c.html#a205bebd1946851fcfe5ba3b1aac8c785" title="returns temperature corresponding to NTC resistance" alt="" coords="267,5,497,32"/>
+</map>

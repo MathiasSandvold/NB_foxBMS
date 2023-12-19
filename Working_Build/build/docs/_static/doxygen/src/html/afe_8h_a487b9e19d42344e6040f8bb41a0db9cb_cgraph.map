@@ -1,0 +1,9 @@
+<map id="AFE_IsFirstMeasurementCycleFinished" name="AFE_IsFirstMeasurementCycleFinished">
+<area shape="rect" id="node1" title="Checks if the first AFE measurement cycle was made." alt="" coords="5,99,208,140"/>
+<area shape="rect" id="node2" href="$debug__default_8c.html#aab8534c5be8d61cb3f1f9f335d15e652" title="return whether the first measurement cycle is finished" alt="" coords="507,33,719,75"/>
+<area shape="rect" id="node3" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="767,74,913,101"/>
+<area shape="rect" id="node4" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="771,149,909,175"/>
+<area shape="rect" id="node5" href="$ltc__6806_8c.html#a31a0f262a3434597949aa3251b633a79" title="gets the measurement initialization status." alt="" coords="513,99,713,140"/>
+<area shape="rect" id="node6" href="$nxp__afe_8h.html#a1eac03700935cf8116e9971005f126b8" title=" " alt="" coords="256,160,459,201"/>
+<area shape="rect" id="node7" href="$nxp__mc33775a_8c.html#afe1591129140f226d47b807b34ae6494" title="gets the measurement initialization status." alt="" coords="509,164,716,205"/>
+</map>

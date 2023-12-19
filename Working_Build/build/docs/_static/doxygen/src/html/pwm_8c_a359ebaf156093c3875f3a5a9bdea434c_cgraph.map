@@ -1,0 +1,5 @@
+<map id="PWM_StopPwm" name="PWM_StopPwm">
+<area shape="rect" id="node1" title="Stop the PWM (stops all configured ePWM channels)" alt="" coords="5,31,124,57"/>
+<area shape="rect" id="node2" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="187,5,333,32"/>
+<area shape="rect" id="node3" href="$fsystem_8h.html#af23205627be1616c6b1dcdb684060322" title="Switch back to user mode." alt="" coords="172,56,348,83"/>
+</map>

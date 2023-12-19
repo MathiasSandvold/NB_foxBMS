@@ -1,0 +1,279 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sub Module workers &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Sub Module <code class="docutils literal notranslate"><span class="pre">workers</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/tools/gui/impl/workers/workers.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="sub-module-workers">
+<span id="id1"></span><h1>Sub Module <code class="docutils literal notranslate"><span class="pre">workers</span></code><a class="headerlink" href="#sub-module-workers" title="Permalink to this headline"></a></h1>
+<div class="section" id="module-fgui.workers">
+<span id="fgui-workers"></span><h2>fgui.workers<a class="headerlink" href="#module-fgui.workers" title="Permalink to this headline"></a></h2>
+</div>
+<div class="section" id="module-fgui.workers.can_node_worker">
+<span id="fgui-workers-can-node-worker"></span><h2>fgui.workers.can_node_worker<a class="headerlink" href="#module-fgui.workers.can_node_worker" title="Permalink to this headline"></a></h2>
+<p>Implements a process, that uses a CAN adapter to send and receive messages.
+Received messages are put in a queue to be consumed by e.g., a GUI. The
+messages to be send can be put into the queue by any other thread/process.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="fgui.workers.can_node_worker.CanAdapterProcess">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">fgui.workers.can_node_worker.</span></span><span class="sig-name descname"><span class="pre">CanAdapterProcess</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">adapter</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">baud_rate</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">logging_dir</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">pathlib.Path</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fgui.workers.can_node_worker.CanAdapterProcess" title="Permalink to this definition"></a></dt>
+<dd><p>Process to interact with a CAN adapter.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="fgui.workers.can_node_worker.CanAdapterProcess.g_cancel">
+<span class="sig-name descname"><span class="pre">g_cancel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#fgui.workers.can_node_worker.CanAdapterProcess.g_cancel" title="Permalink to this definition"></a></dt>
+<dd><p>Global canceling (i.e., not just ‘pausing’) the process.
+All queues are cleared.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="fgui.workers.can_node_worker.CanAdapterProcess.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#fgui.workers.can_node_worker.CanAdapterProcess.run" title="Permalink to this definition"></a></dt>
+<dd><p>Implements the functionality of the process, that is run, once the
+process has started.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="fgui.workers.can_node_worker.DummyLogger">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">fgui.workers.can_node_worker.</span></span><span class="sig-name descname"><span class="pre">DummyLogger</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fgui.workers.can_node_worker.DummyLogger" title="Permalink to this definition"></a></dt>
+<dd><p>Dummy logger class</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="fgui.workers.can_node_worker.DummyLogger.stop">
+<span class="sig-name descname"><span class="pre">stop</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#fgui.workers.can_node_worker.DummyLogger.stop" title="Permalink to this definition"></a></dt>
+<dd><p>required dummy function</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-fgui.workers.gui_sync_worker">
+<span id="fgui-workers-gui-sync-worker"></span><h2>fgui.workers.gui_sync_worker<a class="headerlink" href="#module-fgui.workers.gui_sync_worker" title="Permalink to this headline"></a></h2>
+<p>Implements the thread, that has the callback that does the GUI updates.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="fgui.workers.gui_sync_worker.SyncThread">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">fgui.workers.gui_sync_worker.</span></span><span class="sig-name descname"><span class="pre">SyncThread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">gui_callback</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">receive_queue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">multiprocessing.context.BaseContext.Queue</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fgui.workers.gui_sync_worker.SyncThread" title="Permalink to this definition"></a></dt>
+<dd><p>Implements a class, that knows about the received CAN messages.
+These messages are then feedback to a method that knows about the GUI
+and then updates the respective GUI elements with the values from the
+received CAN message.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="fgui.workers.gui_sync_worker.SyncThread.cancel">
+<span class="sig-name descname"><span class="pre">cancel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#fgui.workers.gui_sync_worker.SyncThread.cancel" title="Permalink to this definition"></a></dt>
+<dd><p>Cancel the thread</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="fgui.workers.gui_sync_worker.SyncThread.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#fgui.workers.gui_sync_worker.SyncThread.run" title="Permalink to this definition"></a></dt>
+<dd><p>Thread function to be run.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="module-fgui.workers.send_worker">
+<span id="fgui-workers-send-worker"></span><h2>fgui.workers.send_worker<a class="headerlink" href="#module-fgui.workers.send_worker" title="Permalink to this headline"></a></h2>
+<p>Holds a thread that puts GUI control input (i.e. a CAN message that must be
+sent) into the CAN thread queue.
+Sending these CAN messages (and by that emptying that queue) is then done by
+another process, that consumes the queue.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="fgui.workers.send_worker.PeriodicSendThread">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">fgui.workers.send_worker.</span></span><span class="sig-name descname"><span class="pre">PeriodicSendThread</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">get_data</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Callable</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">send_queue</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">multiprocessing.context.BaseContext.Queue</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#fgui.workers.send_worker.PeriodicSendThread" title="Permalink to this definition"></a></dt>
+<dd><p>This thread checks periodically, whether there is information to be
+put into the to-be-send-queue.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="fgui.workers.send_worker.PeriodicSendThread.cancel">
+<span class="sig-name descname"><span class="pre">cancel</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#fgui.workers.send_worker.PeriodicSendThread.cancel" title="Permalink to this definition"></a></dt>
+<dd><p>Cancel the thread</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="fgui.workers.send_worker.PeriodicSendThread.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#fgui.workers.send_worker.PeriodicSendThread.run" title="Permalink to this definition"></a></dt>
+<dd><p>Thread function to be run.</p>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

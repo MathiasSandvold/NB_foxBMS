@@ -1,0 +1,6 @@
+<map id="fake_none.h" name="fake_none.h">
+<area shape="rect" id="node1" title="Fake temperature sensor header." alt="" coords="160,5,252,32"/>
+<area shape="rect" id="node2" href="$fake__none_8c.html" title="Fake temperature sensor." alt="" coords="5,80,97,107"/>
+<area shape="rect" id="node3" href="$fake__none__lookup-table_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="121,80,291,107"/>
+<area shape="rect" id="node4" href="$fake__none__polynomial_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="315,80,476,107"/>
+</map>

@@ -1,0 +1,26 @@
+<map id="TEST_CANRX_ProcessTimeInfoMux" name="TEST_CANRX_ProcessTimeInfoMux">
+<area shape="rect" id="node1" title=" " alt="" coords="5,68,237,95"/>
+<area shape="rect" id="node2" href="$can__cbs__rx__debug_8c.html#a302be12dfe424102874d2407cfb8dab2" title="Parses CAN message to handle time information requests." alt="" coords="285,68,479,95"/>
+<area shape="rect" id="node3" href="$can__cbs__rx__debug_8c.html#a1996035dd98e17fe80db129b1db81314" title="Check if the RTC time information is requested." alt="" coords="527,24,761,51"/>
+<area shape="rect" id="node6" href="$can__cbs__rx__debug_8c.html#afc603757d28de70fd02a3e2914fbc589" title="Triggers sending of the RTC time information message." alt="" coords="538,112,750,139"/>
+<area shape="rect" id="node4" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="809,5,1076,32"/>
+<area shape="rect" id="node5" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="1980,73,2183,100"/>
+<area shape="rect" id="node7" href="$can__cbs__tx__debug-response_8c.html#a1e3f862c33124f37766fa4f3a7ba39fc" title="Handles Debug response message." alt="" coords="860,188,1025,215"/>
+<area shape="rect" id="node8" href="$can__cbs__tx__debug-response_8c.html#ad8ac885ff653df16e2b65d89f4cf0ff3" title="Transmit the embedded software version information." alt="" coords="1399,96,1609,123"/>
+<area shape="rect" id="node13" href="$can__cbs__tx__debug-response_8c.html#a8b5101ec38e9f3da6b4102f6613a50fd" title="Transmit the boot message and its magic end data." alt="" coords="1127,96,1332,123"/>
+<area shape="rect" id="node15" href="$can__cbs__tx__debug-response_8c.html#ac3016fb04621a436833e6b34d4cfa2a1" title="Transmit the boot message and its magic start data." alt="" coords="1124,147,1335,173"/>
+<area shape="rect" id="node16" href="$can__cbs__tx__debug-response_8c.html#adab46a46c59157ef5f55c9d88bc9d2fd" title="Transmit the MCU&#39;s lot number ID information." alt="" coords="1400,197,1608,224"/>
+<area shape="rect" id="node17" href="$can__cbs__tx__debug-response_8c.html#a15e003d789130c449dbdc3da62ce3915" title="Transmit the MCU&#39;s unique id." alt="" coords="1397,248,1611,275"/>
+<area shape="rect" id="node18" href="$can__cbs__tx__debug-response_8c.html#a9efa090906344a9a7f38cbf005377c92" title="Transmit the MCU&#39;s wafer information." alt="" coords="1383,299,1625,325"/>
+<area shape="rect" id="node19" href="$can__cbs__tx__debug-response_8c.html#a2b59f75c950dd5db13dfa018a4fff440" title="Transmit the RTC time message." alt="" coords="1420,349,1588,376"/>
+<area shape="rect" id="node9" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="1740,209,1853,236"/>
+<area shape="rect" id="node10" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="1673,260,1920,287"/>
+<area shape="rect" id="node11" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="1698,143,1895,185"/>
+<area shape="rect" id="node12" href="$foxmath_8c.html#a574d9c3f4c86d7d21643ffe90230404d" title="Returns the minimum of the passed uint16_t values." alt="" coords="1695,92,1898,119"/>
+<area shape="rect" id="node14" href="$can__cbs__tx__debug-response_8c.html#a6921afc41e27b2a4d530b6b38adb4441" title="Transmit a boot message." alt="" coords="1413,147,1595,173"/>
+<area shape="rect" id="node20" href="$rtc_8c.html#ae09c97b84e318d32d7c08ee56fe699b7" title="get the RTC system timer." alt="" coords="1692,349,1901,376"/>
+<area shape="rect" id="node21" href="$rtc_8c.html#ade1f047b937483cffdc3d556e3973c74" title="Get the RTC system timer value." alt="" coords="1968,324,2195,351"/>
+<area shape="rect" id="node24" href="$rtc_8c.html#a51125f9e9e11ba4d06f263043bba6988" title="Convert time from struct tm to RTC_TIME_DATA_s format." alt="" coords="1989,375,2174,401"/>
+<area shape="rect" id="node22" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="2243,299,2389,325"/>
+<area shape="rect" id="node23" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="2247,349,2385,376"/>
+</map>

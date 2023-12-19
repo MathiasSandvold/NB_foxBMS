@@ -1,0 +1,12 @@
+<map id="test_algorithm_cfg.c" name="test_algorithm_cfg.c">
+<area shape="rect" id="node1" title="Test of the algorithm config module." alt="" coords="249,5,388,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="172,155,233,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="27,80,146,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="170,80,326,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="350,80,429,107"/>
+<area shape="rect" id="node6" href="$algorithm__cfg_8h.html" title="Headers for the configuration of the algorithm module." alt="" coords="617,80,727,107"/>
+<area shape="rect" id="node9" href="$test__assert__helper_8h.html" title="Helper for unit tests." alt="" coords="453,80,593,107"/>
+<area shape="rect" id="node7" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="611,155,704,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="666,229,731,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="473,155,573,181"/>
+</map>

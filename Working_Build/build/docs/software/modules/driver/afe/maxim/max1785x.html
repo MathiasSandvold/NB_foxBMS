@@ -1,0 +1,435 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4.30.6. MAX1785x &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <link rel="next" title="4.30.7. NXP MC33775A" href="../nxp/mc33775a.html" />
+    <link rel="prev" title="4.30.5. LTC 6813-1" href="../ltc/6813-1.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../../../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../modules.html">4. Software Modules</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../application/algorithm/algorithm.html">4.1. Algorithm Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../application/bal/bal.html">4.2. Balancing Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../application/bms/bms.html">4.3. BMS Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../application/plausibility/plausibility.html">4.4. Plausibility Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../application/redundancy/redundancy.html">4.5. Redundancy Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../application/soa/soa.html">4.6. SOA Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../engine/database/database.html">4.7. Database Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../engine/diag/diag.html">4.8. Diagnosis Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../engine/hwinfo/hwinfo.html">4.9. Hardware Info Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../engine/sys/sys.html">4.10. System Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../engine/sys_mon/sys_mon.html">4.11. System Monitoring Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../task/ftask/ftask.html">4.12. FTASK Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../task/os/os.html">4.13. OS Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../adc/adc.html">4.14. ADC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../can/can.html">4.15. CAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../crc/crc.html">4.16. CRC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contactor/contactor.html">4.17. Contactor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dma/dma.html">4.18. DMA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foxmath/foxmath.html">4.19. foxmath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foxmath/utils.html">4.20. utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../fram/fram.html">4.21. FRAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../htsen/htsen.html">4.22. Humidity/Temperature Sensor Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../i2c/i2c.html">4.23. I2C Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../imd/imd.html">4.24. Insulation Measurement Device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../interlock/interlock.html">4.25. Interlock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../io/io.html">4.26. IO Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../meas/meas.html">4.27. Measurement Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mcu/mcu.html">4.28. MCU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../afe.html">4.29. Analog Front-End API</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../supported-afes.html">4.30. Supported Analog Front-Ends</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../ltc/6804-1.html">4.30.1. LTC 6804-1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ltc/6806.html">4.30.2. LTC 6806</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ltc/6811-1.html">4.30.3. LTC 6811-1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ltc/6812-1.html">4.30.4. LTC 6812-1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ltc/6813-1.html">4.30.5. LTC 6813-1</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">4.30.6. MAX1785x</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../nxp/mc33775a.html">4.30.7. NXP MC33775A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../debug/default.html">4.30.8. Debug Default</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../pex/pex.html">4.31. Port Expander Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pwm/pwm.html">4.32. PWM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../rtc/rtc.html">4.33. RTC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../sbc/sbc.html">4.34. SBC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../spi/spi.html">4.35. SPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../sps/sps.html">4.36. SPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ts/ts.html">4.37. Temperature Sensor API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ts/ts-sensors.html">4.38. Supported Temperature Sensors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../main/startup.html">4.39. Embedded Software Startup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../main/version.html">4.40. Version Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../main/fassert.html">4.41. FASSERT Module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../../modules.html"><span class="section-number">4. </span>Software Modules</a> &raquo;</li>
+          <li><a href="../supported-afes.html"><span class="section-number">4.30. </span>Supported Analog Front-Ends</a> &raquo;</li>
+      <li><span class="section-number">4.30.6. </span>MAX1785x</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../../_sources/software/modules/driver/afe/maxim/max1785x.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="max1785x">
+<span id="id1"></span><h1><span class="section-number">4.30.6. </span>MAX1785x<a class="headerlink" href="#max1785x" title="Permalink to this headline"></a></h1>
+<p>This module supports the <cite>MAX17852</cite> and <cite>MAX17853</cite> monitoring ICs by Maxim
+Integrated.
+Communication with these ICs is handled through a <cite>MAX17841B</cite> bridge IC.
+The communication between bridge IC and monitoring IC is encoded
+as Maxim Battery Management UART, which is a optimized, differential variant
+of UART with a focus on robustness.</p>
+<p>A typical setup consists of one master unit with one to two bridge ICs and
+several monitoring ICs in a daisy-chain. The current implementation of the
+driver supports communication through one bridge IC (the “uphost path”), but
+the hardware supports a redundant approach by adding read only communication on
+the “downhost path”.</p>
+<div class="section" id="driver-structure">
+<h2><span class="section-number">4.30.6.1. </span>Driver structure<a class="headerlink" href="#driver-structure" title="Permalink to this headline"></a></h2>
+<p>The driver is separated into three main modules with additional helper modules.
+The three main modules are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>MAX17841B bridge IC driver that interacts with the interface
+from <a class="reference internal" href="../../../../../hardware/interfaces/maxim-max17841b-vx.x.x/maxim-max17841b-v1.0.0.html#interface-max17841b-v1-0-0"><span class="std std-ref">Interface MAX17841B v1.0.0</span></a> in <code class="docutils literal notranslate"><span class="pre">mxm_17841b.c</span></code>,</p></li>
+<li><p>Battery Management UART protocol abstraction in
+<code class="docutils literal notranslate"><span class="pre">max_battery_management.c</span></code> and</p></li>
+<li><p>MAX1785x device driver in <code class="docutils literal notranslate"><span class="pre">mxm_1785x.c</span></code>.</p></li>
+<li><p>Implementation of the operation state machine in <code class="docutils literal notranslate"><span class="pre">mxm_17852.c</span></code>.
+This implementation is selected by the driver variant in <code class="docutils literal notranslate"><span class="pre">bms.json</span></code>.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="configuration">
+<h2><span class="section-number">4.30.6.2. </span>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline"></a></h2>
+<p>The driver for the Maxim Integrated monitoring ICs is configurable for some aspects.</p>
+<div class="section" id="adaption-to-new-hardware">
+<h3><span class="section-number">4.30.6.2.1. </span>Adaption to new hardware<a class="headerlink" href="#adaption-to-new-hardware" title="Permalink to this headline"></a></h3>
+<p>In order to adapt the driver to new interface hardware, it is necessary to
+adapt the following:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Ensure that the functions that interact with the shutdown pin of
+the MAX17841B bridge IC are correct.
+They are implemented in <code class="docutils literal notranslate"><span class="pre">mxm_cfg.c</span></code>.</p></li>
+<li><p>Check the SPI configuration of the system and that it aligns with
+the capabilities of the bridge IC.</p></li>
+<li><p>The driver is intended to be implemented as generic as possible.
+That means that the main modules should not be necessary to be changed.
+In order to implement new behavior during the measurement cycle the
+implementation of the <code class="docutils literal notranslate"><span class="pre">MXM_StateMachineOperation</span></code> has to be adapted.
+This can be achieved by implementing a new variant in parallel to the
+current <code class="docutils literal notranslate"><span class="pre">max17852</span></code> variant.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="startup-behavior">
+<span id="id2"></span><h3><span class="section-number">4.30.6.2.2. </span>Startup behavior<a class="headerlink" href="#startup-behavior" title="Permalink to this headline"></a></h3>
+<p>During enumeration of the daisy-chain, the monitoring driver can stop and hang
+if the number of found devices does not match the expected number of devices
+as reported by the system configuration.
+In order to select whether the driver should hang or continue, the constant
+<code class="docutils literal notranslate"><span class="pre">mxm_allowSkippingPostInitSelfCheck</span></code> can be set.</p>
+</div>
+</div>
+<div class="section" id="main-flow">
+<h2><span class="section-number">4.30.6.3. </span>Main flow<a class="headerlink" href="#main-flow" title="Permalink to this headline"></a></h2>
+<p>The following flow chart describes the main flow of this <code class="docutils literal notranslate"><span class="pre">AFE</span></code> driver.</p>
+<div class="mermaid">
+            stateDiagram-v2
+   uninitialized: Uninitialized
+   pre_init: Pre-Initialization Self Check
+   init: Initialization
+   post_init: Post-Initialization Self Check
+   idle: Idle
+   operation: Operation
+
+   [*] --&gt; uninitialized
+   uninitialized --&gt; pre_init: Initialization
+   pre_init --&gt; init: Success
+   init --&gt; post_init: Success
+   post_init --&gt; idle: Success
+   idle --&gt; operation: Operation Requested
+   operation --&gt; idle: Halt Requested
+   operation --&gt; uninitialized: Error
+   pre_init --&gt; uninitialized: Error
+   init --&gt; uninitialized: Error
+   post_init --&gt; uninitialized: Error
+
+   state operation {
+       op_init: Initialization of AFE
+       op_mux_control: Multiplexer control
+       op_measurement: Measurement
+       op_diagnostic: Diagnostic measures
+       op_balancing: Balancing control
+
+       [*] --&gt; op_init
+       op_init --&gt; op_mux_control
+       op_mux_control --&gt; op_measurement
+       op_measurement --&gt; op_diagnostic
+       op_diagnostic --&gt; op_balancing
+       op_balancing --&gt; op_mux_control
+   }
+        </div><ul class="simple">
+<li><p>State <cite>Unitialized</cite>: This is the default state of the driver.
+The driver transitions with the next execution into the
+<cite>Pre-Initialization Self Check</cite> state.</p></li>
+<li><p>State <cite>Pre-Initialization Self Check</cite>: In this state, the driver checks
+assumptions on its functions.
+If this step fails, the driver is not able to conclude its work.</p></li>
+<li><p>State <cite>Initialization</cite>: In this state, the daisy-chain of the driver is
+initialized and each <code class="docutils literal notranslate"><span class="pre">AFE</span></code> is assigned an address.</p></li>
+<li><p>State <cite>Post-Initialization Self Check</cite>: During this state, the number of
+found <code class="docutils literal notranslate"><span class="pre">AFE</span></code> is compared to the expected number of devices.
+If these mismatch the driver can halt in this state depending on the
+configuration described in <a class="reference internal" href="#startup-behavior"><span class="std std-ref">Startup behavior</span></a>.</p></li>
+<li><p>State <cite>Idle</cite>: The driver rests in this state as long as the system requests
+the driver to start.</p></li>
+<li><p>State <cite>Operation</cite>: This is the main state during which the <code class="docutils literal notranslate"><span class="pre">AFE</span></code> devices
+are controlled.</p>
+<ul>
+<li><p>State <cite>Initialization of AFE</cite>: In this chain of substates the <code class="docutils literal notranslate"><span class="pre">AFE</span></code> is
+initialized and programmed with the expected configuration.</p></li>
+<li><p>State <cite>Multiplexer control</cite>: In this chain of substates the temperature
+multiplexer of the foxBMS Slave Unit is controlled and switched to the next channel.</p></li>
+<li><p>State <cite>Measurement</cite>: In this chain of substates the measurement the driver
+requests a measurement and retrieves each measurement value.</p></li>
+<li><p>State <cite>Diagnostic measures</cite>: In this chain of substates diagnostic
+registers are read.
+When a power on reset condition is recognized (indicating a loss of power
+and potentially undefined state in one of the <code class="docutils literal notranslate"><span class="pre">AFE</span></code> devices), a reset of
+the driver is triggered.</p></li>
+<li><p>State <cite>Balancing control</cite>: In this chain of substates the balancing
+switches are controlled.
+The driver alternates between even and odd switches in order to not create
+a connection between adjacent switches.</p></li>
+</ul>
+</li>
+<li><p>If any state except <cite>Idle</cite> or <cite>Unitialized</cite> is stuck and does not advance to
+the next state during a predefined time frame, the driver resets itself to
+the <cite>Uninitialized</cite> state.
+Requests for operation are preserved during this reset as the system assumes
+that the driver has been already asked to start.</p></li>
+</ul>
+</div>
+<div class="section" id="diagnostic-signals-generated">
+<h2><span class="section-number">4.30.6.4. </span>Diagnostic signals generated<a class="headerlink" href="#diagnostic-signals-generated" title="Permalink to this headline"></a></h2>
+<p>This driver uses the following diagnostic messages of the <code class="docutils literal notranslate"><span class="pre">diag</span></code>-module:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">DIAG_ID_AFE_CONFIG</span></code>: This signal is issued when the self check of the
+driver that is executed before the initialization fails.
+If this happens, it is very likely due to an implementation error.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DIAG_ID_AFE_COM_INTEGRITY</span></code>: This signal is issued when the CRC of a
+received message is not correct.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">DIAG_ID_AFE_SPI</span></code>: This signal is issued when the SPI API returns an
+unsuccessful transmission.
+If this happens, it is very likely due to implementation issues with the
+<code class="docutils literal notranslate"><span class="pre">SPI</span></code> interface.
+Normally, the <code class="docutils literal notranslate"><span class="pre">SPI</span></code> transmission functions should succeed.</p></li>
+</ul>
+</div>
+<div class="section" id="trivia">
+<h2><span class="section-number">4.30.6.5. </span>Trivia<a class="headerlink" href="#trivia" title="Permalink to this headline"></a></h2>
+<p>This section gathers additional information that is worth knowing about the
+implementation.</p>
+<div class="section" id="string-mapping">
+<h3><span class="section-number">4.30.6.5.1. </span>String mapping<a class="headerlink" href="#string-mapping" title="Permalink to this headline"></a></h3>
+<p>The driver assumes, that it has to service all strings in the system and that
+all strings are connected into one daisy-chain.
+(It expects a chain of strings of modules.)</p>
+<p>If only one string is defined, the driver maps the modules onto this string as
+expected.
+If more than one string is defined, the driver maps the modules by filling the
+first string, then filling the second and so forth.
+This behavior is not configurable.</p>
+</div>
+<div class="section" id="automatic-reset">
+<h3><span class="section-number">4.30.6.5.2. </span>Automatic reset<a class="headerlink" href="#automatic-reset" title="Permalink to this headline"></a></h3>
+<p>When a communication issue occurs, the slave boards might get stuck in a state
+that is unknown to the foxBMS Master Unit.
+In order to prevent this situation, the driver has an error counter.
+This error counter is automatically reset after
+<cite>MXM_TIMEOUT_RESET_ERROR_COUNTER_ms</cite> milliseconds without any new error.
+If the error threshold of <cite>MXM_MAXIMUM_ERROR_COUNT</cite> is passed, the driver
+starts an automatic reset of the whole daisy-chain.</p>
+<p>This is achieved by pulling down the shutdown line of the bridge IC,
+effectively resetting it to default condition.
+During this shutdown, the foxBMS Slave Unit will go into deep sleep and thus loose their
+non-persistent configuration (and also disable the on-board supply).
+The driver resets itself to initial condition restores flags indicating whether
+it may start and then restart the daisy-chain.
+The user can register this by checking for the freshness of measurement values.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../../../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../ltc/6813-1.html" class="btn btn-neutral float-left" title="4.30.5. LTC 6813-1" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../nxp/mc33775a.html" class="btn btn-neutral float-right" title="4.30.7. NXP MC33775A" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

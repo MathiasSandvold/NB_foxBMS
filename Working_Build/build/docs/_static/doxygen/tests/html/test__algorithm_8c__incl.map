@@ -1,0 +1,13 @@
+<map id="test_algorithm.c" name="test_algorithm.c">
+<area shape="rect" id="node1" title="Test of the algorithm module." alt="" coords="308,5,423,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="154,169,215,196"/>
+<area shape="rect" id="node3" title=" " alt="" coords="28,87,170,114"/>
+<area shape="rect" id="node4" title=" " alt="" coords="194,87,273,114"/>
+<area shape="rect" id="node5" title=" " alt="" coords="298,80,434,121"/>
+<area shape="rect" id="node6" href="$algorithm_8h.html" title="Headers for the driver for the storage in the EEPROM memory." alt="" coords="622,87,709,114"/>
+<area shape="rect" id="node8" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="703,244,796,271"/>
+<area shape="rect" id="node10" href="$test__assert__helper_8h.html" title="Helper for unit tests." alt="" coords="458,87,598,114"/>
+<area shape="rect" id="node7" href="$algorithm__cfg_8h.html" title="Headers for the configuration of the algorithm module." alt="" coords="632,169,742,196"/>
+<area shape="rect" id="node9" title=" " alt="" coords="633,319,698,345"/>
+<area shape="rect" id="node11" title=" " alt="" coords="456,169,556,196"/>
+</map>

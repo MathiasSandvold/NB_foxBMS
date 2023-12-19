@@ -1,0 +1,5 @@
+<map id="plausibility.h" name="plausibility.h">
+<area shape="rect" id="node1" title="plausibility checks for cell voltage and cell temperatures" alt="" coords="65,5,160,32"/>
+<area shape="rect" id="node2" href="$plausibility_8c.html" title="plausibility checks for cell voltage and cell temperatures" alt="" coords="5,80,100,107"/>
+<area shape="rect" id="node3" href="$redundancy_8c.html" title="Source file for handling redundancy between redundant cell voltage and cell temperature measurements." alt="" coords="124,80,224,107"/>
+</map>

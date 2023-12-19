@@ -1,0 +1,9 @@
+<map id="can.h" name="can.h">
+<area shape="rect" id="node1" title="Header for the driver for the CAN module." alt="" coords="447,5,501,32"/>
+<area shape="rect" id="node2" href="$can_8c.html" title="Driver for the CAN module." alt="" coords="5,87,60,114"/>
+<area shape="rect" id="node3" href="$can__cbs__tx__debug-response_8c.html" title="Implementation for handling the transmit of debug response messages." alt="" coords="84,87,283,114"/>
+<area shape="rect" id="node4" href="$can__cbs__tx__unsupported-message_8c.html" title="CAN." alt="" coords="307,80,473,121"/>
+<area shape="rect" id="node5" href="$bender__iso165c_8c.html" title="Driver for the insulation monitoring." alt="" coords="497,87,621,114"/>
+<area shape="rect" id="node6" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="645,87,700,114"/>
+<area shape="rect" id="node7" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="725,87,810,114"/>
+</map>

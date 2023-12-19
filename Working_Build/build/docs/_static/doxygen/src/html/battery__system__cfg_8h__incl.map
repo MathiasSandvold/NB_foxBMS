@@ -1,0 +1,8 @@
+<map id="battery_system_cfg.h" name="battery_system_cfg.h">
+<area shape="rect" id="node1" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="20,5,167,32"/>
+<area shape="rect" id="node2" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="93,80,168,107"/>
+<area shape="rect" id="node3" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="20,155,92,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="19,229,93,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="189,229,254,256"/>
+<area shape="rect" id="node6" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="217,155,311,181"/>
+</map>

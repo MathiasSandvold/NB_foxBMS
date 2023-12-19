@@ -1,0 +1,23 @@
+<map id="test_mxm_17841b.c" name="test_mxm_17841b.c">
+<area shape="rect" id="node1" title="Test for the Maxim MAX17841B driver." alt="" coords="794,5,934,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,155,67,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="976,80,1080,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="1105,80,1223,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="1247,80,1326,107"/>
+<area shape="rect" id="node6" href="$mxm__17841b_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="710,80,821,107"/>
+<area shape="rect" id="node11" title=" " alt="" coords="245,603,320,629"/>
+<area shape="rect" id="node12" title=" " alt="" coords="677,603,742,629"/>
+<area shape="rect" id="node20" href="$mxm__bitextract_8h.html" title="Bit extraction function for MXM_17841b." alt="" coords="803,155,925,181"/>
+<area shape="rect" id="node21" href="$test__assert__helper_8h.html" title="Helper for unit tests." alt="" coords="54,80,194,107"/>
+<area shape="rect" id="node7" href="$mxm__cfg_8h.html" title="Header for the configuration for the Maxim analog front&#45;end." alt="" coords="623,155,710,181"/>
+<area shape="rect" id="node14" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="527,528,620,555"/>
+<area shape="rect" id="node8" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="227,379,373,405"/>
+<area shape="rect" id="node15" href="$spi__cfg_8h.html" title="Headers for the configuration for the SPI module." alt="" coords="536,304,611,331"/>
+<area shape="rect" id="node18" title=" " alt="" coords="600,229,699,256"/>
+<area shape="rect" id="node19" href="$spi_8h.html" title="Headers for the driver for the SPI module." alt="" coords="723,229,773,256"/>
+<area shape="rect" id="node9" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="349,453,424,480"/>
+<area shape="rect" id="node10" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="277,528,349,555"/>
+<area shape="rect" id="node13" title=" " alt="" coords="105,603,205,629"/>
+<area shape="rect" id="node16" title=" " alt="" coords="448,379,523,405"/>
+<area shape="rect" id="node17" title=" " alt="" coords="547,379,621,405"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="soe_counting_cfg.c" name="soe_counting_cfg.c">
+<area shape="rect" id="node1" title="SOE calculation configuration file." alt="" coords="404,5,539,32"/>
+<area shape="rect" id="node2" href="$soe__counting__cfg_8h.html" title="Header for SOE configuration." alt="" coords="261,80,396,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="439,379,504,405"/>
+<area shape="rect" id="node3" href="$battery__cell__cfg_8h.html" title="Configuration of the battery cell (e.g., minimum and maximum cell voltage)" alt="" coords="107,155,231,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,229,68,256"/>
+<area shape="rect" id="node6" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="255,155,402,181"/>
+<area shape="rect" id="node7" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="291,229,366,256"/>
+<area shape="rect" id="node8" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="194,304,266,331"/>
+<area shape="rect" id="node9" title=" " alt="" coords="119,379,194,405"/>
+<area shape="rect" id="node10" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="290,304,383,331"/>
+</map>

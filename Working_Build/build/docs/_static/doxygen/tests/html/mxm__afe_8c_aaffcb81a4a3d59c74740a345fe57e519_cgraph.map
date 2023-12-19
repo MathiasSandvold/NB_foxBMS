@@ -1,0 +1,8 @@
+<map id="MXM_SetStateStructDefaultValues" name="MXM_SetStateStructDefaultValues">
+<area shape="rect" id="node1" title="Initialize the state structs." alt="" coords="5,56,189,97"/>
+<area shape="rect" id="node2" href="$mxm__17841b_8c.html#aa8c348a44f50adf5f26f84b20bcbda67" title="Initializes the state struct with default values." alt="" coords="237,13,432,39"/>
+<area shape="rect" id="node4" href="$mxm__battery__management_8c.html#a051c244b0a5462914545ddecdab9a56d" title="Initializes the state struct with default values." alt="" coords="239,63,431,90"/>
+<area shape="rect" id="node5" href="$mxm__1785x_8c.html#ad1231f10015aa3b85cc57a8de972dec3" title="Initializes the state structs with default values." alt="" coords="249,114,420,141"/>
+<area shape="rect" id="node3" href="$mxm__17841b_8c.html#a578f763e28fa1230a131616778099702" title="Reset register copies to default." alt="" coords="493,5,669,47"/>
+<area shape="rect" id="node6" href="$mxm__1785x_8h.html#a6233260ebe7abdd7645e6cb9d175f6de" title="returns the model ID of the daisy chain" alt="" coords="480,114,683,141"/>
+</map>

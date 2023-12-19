@@ -1,0 +1,21 @@
+<map id="fram.h" name="fram.h">
+<area shape="rect" id="node1" title="Header for the driver for the FRAM module." alt="" coords="909,5,967,32"/>
+<area shape="rect" id="node2" href="$soc__counting_8c.html" title="SOC module responsible for calculation of SOC." alt="" coords="5,80,116,107"/>
+<area shape="rect" id="node3" href="$soe__counting_8c.html" title="SOE module responsible for calculation of SOE." alt="" coords="140,80,251,107"/>
+<area shape="rect" id="node4" href="$can__cbs__rx__debug_8c.html" title="CAN driver Rx callback implementation." alt="" coords="275,80,417,107"/>
+<area shape="rect" id="node5" href="$fram_8c.html" title="Driver for the FRAM module." alt="" coords="442,80,501,107"/>
+<area shape="rect" id="node6" href="$bender__ir155_8c.html" title="Driver for the insulation monitoring." alt="" coords="525,80,631,107"/>
+<area shape="rect" id="node7" href="$bender__ir155__helper_8c.html" title="Driver for the insulation monitoring." alt="" coords="655,80,805,107"/>
+<area shape="rect" id="node8" href="$nxpfs85xx_8c.html" title="Driver for the SBC module." alt="" coords="829,80,921,107"/>
+<area shape="rect" id="node9" href="$sys__mon__cfg_8c.html" title="configuration of the system monitoring module" alt="" coords="945,80,1056,107"/>
+<area shape="rect" id="node10" href="$diag__cbs__deep-discharge_8c.html" title="Diagnosis driver implementation." alt="" coords="1080,80,1260,107"/>
+<area shape="rect" id="node11" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="1284,80,1339,107"/>
+<area shape="rect" id="node12" href="$sys__mon_8c.html" title="system monitoring module" alt="" coords="1011,155,1097,181"/>
+<area shape="rect" id="node13" href="$sys__mon_8h.html" title="system monitoring module" alt="" coords="1415,80,1501,107"/>
+<area shape="rect" id="node16" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="1713,155,1798,181"/>
+<area shape="rect" id="node19" href="$test__fram_8c.html" title="Tests for the fram module." alt="" coords="1577,80,1664,107"/>
+<area shape="rect" id="node14" href="$can__cbs__rx__state-request_8c.html" title="CAN driver Rx callback implementation." alt="" coords="1121,155,1304,181"/>
+<area shape="rect" id="node15" href="$can__cbs__tx__state_8c.html" title="CAN driver Tx callback implementation." alt="" coords="1329,155,1465,181"/>
+<area shape="rect" id="node17" href="$ftask_8c.html" title="Implementation of OS&#45;independent task creators." alt="" coords="1489,155,1550,181"/>
+<area shape="rect" id="node18" href="$test__sys__mon_8c.html" title="Tests for the sys_mon module." alt="" coords="1574,155,1689,181"/>
+</map>

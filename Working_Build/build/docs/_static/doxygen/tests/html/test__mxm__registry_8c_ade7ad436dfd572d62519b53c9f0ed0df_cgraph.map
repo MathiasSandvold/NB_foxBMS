@@ -1,0 +1,10 @@
+<map id="testMXM_MonRegistryParseIdIntoDevicesCheckAscendingBufferId2" name="testMXM_MonRegistryParseIdIntoDevicesCheckAscendingBufferId2">
+<area shape="rect" id="node1" title=" " alt="" coords="5,57,252,98"/>
+<area shape="rect" id="node2" href="$mxm__registry_8c.html#a74e9f3adcbc1aa1001ec4e34abb7e8c0" title="Mark devices as connected in the registry and set the address." alt="" coords="300,5,524,32"/>
+<area shape="rect" id="node3" href="$mxm__registry_8c.html#a4605575afd03a08a9a5cd8ed33ae4d50" title="Parse ID (1 or 2) into the registry." alt="" coords="314,57,510,98"/>
+<area shape="rect" id="node8" href="$test__mxm__registry_8c.html#a982d2167d46837bb69cd314bf6b0ee2e" title=" " alt="" coords="340,123,484,149"/>
+<area shape="rect" id="node4" href="$foxmath_8c.html#aacaf0845143922c6a31912af37fd9741" title="Returns the minimum of the passed uint8_t values." alt="" coords="580,13,775,40"/>
+<area shape="rect" id="node5" href="$mxm__1785x__tools_8c.html#af328199dc46b6eab7f35f08f0f076145" title="Extract a value from a single register." alt="" coords="572,64,783,91"/>
+<area shape="rect" id="node7" href="$mxm__registry_8c.html#aca0807a445d30190eadbef7467b43ca8" title="Parse number of highest connected device from monitoring&#45; register." alt="" coords="579,115,775,157"/>
+<area shape="rect" id="node6" href="$mxm__1785x__tools_8c.html#a0dc736d94a1c30286d2549d3efa99e2d" title="Find Position of first set bit in bitmask." alt="" coords="831,64,951,91"/>
+</map>

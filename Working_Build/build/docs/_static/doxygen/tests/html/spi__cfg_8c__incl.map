@@ -1,0 +1,14 @@
+<map id="spi_cfg.c" name="spi_cfg.c">
+<area shape="rect" id="node1" title="Configuration for the SPI module." alt="" coords="453,5,528,32"/>
+<area shape="rect" id="node2" href="$spi__cfg_8h.html" title="Headers for the configuration for the SPI module." alt="" coords="239,80,313,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="357,379,422,405"/>
+<area shape="rect" id="node12" href="$spi__cfg-helper_8h.html" title="Headers for the configuration for the SPI module." alt="" coords="529,229,642,256"/>
+<area shape="rect" id="node3" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="203,155,349,181"/>
+<area shape="rect" id="node10" title=" " alt="" coords="5,155,80,181"/>
+<area shape="rect" id="node11" title=" " alt="" coords="105,155,178,181"/>
+<area shape="rect" id="node4" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="185,229,260,256"/>
+<area shape="rect" id="node5" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="112,304,184,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="17,379,92,405"/>
+<area shape="rect" id="node9" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="259,304,352,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="117,379,217,405"/>
+</map>

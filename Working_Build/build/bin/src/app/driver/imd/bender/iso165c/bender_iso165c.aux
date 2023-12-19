@@ -1,0 +1,389 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{A949DD55-A38A-4775-B62E-C1420417231D}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Wed Mar 22 09:38:48 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitl                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitf                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbit                                       |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormall                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormalf                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormal                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanf                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnan                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinfl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinff                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinf                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitel                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitef                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinite                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyl                                   |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyf                                   |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassify                                    |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_CheckResponse                             |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   OS_GetNumberOfStoredMessagesInQueue
+   OS_ReceiveFromQueue
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_ReadDataWord                              |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_CheckRelayState                           |
++-------------------------------------------------------------+
+Stack usage:   56 bytes
+
+Called functions:
+   I165C_ReadDataWord
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_SetDisableState                           |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_ResetCanData                              |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_WriteCmd                                  |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_WriteDataWord                             |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_RequestRelayState                         |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   I165C_ResetCanData
+   I165C_WriteCmd
+   I165C_WriteDataWord
+   CAN_DataSend
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_CheckAcknowledgeArrived                   |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   I165C_CheckResponse
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_SetRelayState                             |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   I165C_ResetCanData
+   I165C_WriteCmd
+   I165C_WriteDataWord
+   CAN_DataSend
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_SetRunningState                           |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_SetMeasurementMode                        |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   I165C_ResetCanData
+   I165C_WriteCmd
+   I165C_WriteDataWord
+   CAN_DataSend
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_Disable                                   |
++-------------------------------------------------------------+
+Stack usage:   48 bytes
+
+Called functions:
+   I165C_CheckResponse
+   I165C_CheckRelayState
+   I165C_SetDisableState
+   I165C_RequestRelayState
+   I165C_CheckAcknowledgeArrived
+   I165C_SetRelayState
+   I165C_SetRunningState
+   I165C_SetMeasurementMode
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_GetImdInfo                                |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   OS_GetNumberOfStoredMessagesInQueue
+   OS_ReceiveFromQueue
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_ReadDataWordImdInfo                       |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_ReadDataByte                              |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_Running                                   |
++-------------------------------------------------------------+
+Stack usage:   56 bytes
+
+Called functions:
+   I165C_GetImdInfo
+   I165C_ReadDataWordImdInfo
+   I165C_SetRunningState
+   I165C_CheckAcknowledgeArrived
+   I165C_ReadDataWord
+   I165C_ReadDataByte
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   I165C_ResetCanData
+   I165C_WriteCmd
+   CAN_DataSend
+
++-------------------------------------------------------------+
+|  FUNCTION:  IMD_ProcessRunningState                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   I165C_Running
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_SetInitializationState                    |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_IsSelfTestFinished                        |
++-------------------------------------------------------------+
+Stack usage:   48 bytes
+
+Called functions:
+   I165C_ReadDataWordImdInfo
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_HasSelfTestBeenExecuted                   |
++-------------------------------------------------------------+
+Stack usage:   48 bytes
+
+Called functions:
+   I165C_ReadDataWordImdInfo
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_CheckMeasurementMode                      |
++-------------------------------------------------------------+
+Stack usage:   48 bytes
+
+Called functions:
+   I165C_ReadDataWordImdInfo
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_SetAveragingFactor                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   I165C_ResetCanData
+   I165C_WriteCmd
+   I165C_WriteDataWord
+   CAN_DataSend
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_Initialize                                |
++-------------------------------------------------------------+
+Stack usage:   56 bytes
+
+Called functions:
+   I165C_CheckAcknowledgeArrived
+   I165C_SetInitializationState
+   I165C_GetImdInfo
+   I165C_IsSelfTestFinished
+   I165C_HasSelfTestBeenExecuted
+   I165C_ResetCanData
+   I165C_WriteCmd
+   I165C_WriteDataWord
+   CAN_DataSend
+   I165C_CheckResponse
+   I165C_CheckRelayState
+   I165C_RequestRelayState
+   I165C_CheckMeasurementMode
+   I165C_SetMeasurementMode
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   I165C_SetAveragingFactor
+   I165C_SetRelayState
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_SetEnableState                            |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I165C_Enable                                    |
++-------------------------------------------------------------+
+Stack usage:   48 bytes
+
+Called functions:
+   I165C_CheckAcknowledgeArrived
+   I165C_SetEnableState
+   I165C_CheckResponse
+   I165C_CheckRelayState
+   I165C_RequestRelayState
+   I165C_SetMeasurementMode
+   I165C_SetRelayState
+

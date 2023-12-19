@@ -1,0 +1,8 @@
+<map id="TEST_BMS_IsBatterySystemStateOkay" name="TEST_BMS_IsBatterySystemStateOkay">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,200,90"/>
+<area shape="rect" id="node2" href="$bms_8c.html#af45381b7833d8b54bebfa00819e46c3a" title="Checks if any error flag is set and handles delay until contactors need to be opened." alt="" coords="248,56,465,83"/>
+<area shape="rect" id="node3" href="$bms_8c.html#a42c1b8d028f52deab96d0b5c03a134bc" title="Checks all the error flags from diagnosis module with a severity of DIAG_FATAL_ERROR." alt="" coords="513,31,707,57"/>
+<area shape="rect" id="node6" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="547,81,673,108"/>
+<area shape="rect" id="node4" href="$diag_8c.html#a5e2190133d0352d1e483ee1c9829c6aa" title="Get configured delay of passed diagnosis entry." alt="" coords="797,5,912,32"/>
+<area shape="rect" id="node5" href="$diag_8c.html#a65aa765236a760639d5401524b876378" title="Checks if passed diagnosis entry has been triggered or not." alt="" coords="755,56,955,83"/>
+</map>

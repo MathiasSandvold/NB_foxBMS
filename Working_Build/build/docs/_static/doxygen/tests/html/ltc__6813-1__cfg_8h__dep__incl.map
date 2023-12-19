@@ -1,0 +1,8 @@
+<map id="ltc_6813&#45;1_cfg.h" name="ltc_6813&#45;1_cfg.h">
+<area shape="rect" id="node1" title="Header for the configuration for the LTC 6804&#45;1 6811&#45;1, 6812&#45;1, and 6813&#45;1 monitoring IC." alt="" coords="279,5,396,32"/>
+<area shape="rect" id="node2" href="$ltc__6813-1__cfg_8c.html" title="Configuration for the LTC analog front&#45;end." alt="" coords="5,87,123,114"/>
+<area shape="rect" id="node3" href="$ltc__6813-1_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="147,87,240,114"/>
+<area shape="rect" id="node4" href="$test__ltc__6813-1__cfg_8c.html" title="Tests for the CAN driver." alt="" coords="264,87,411,114"/>
+<area shape="rect" id="node5" href="$test__ltc__6813-1_8c.html" title="Test of the ltc_6813&#45;1.c module." alt="" coords="435,87,557,114"/>
+<area shape="rect" id="node6" href="$test__ltc__6813-1__pec__in__arrays_8c.html" title="Test of the predefined commands in the ltc_6813&#45;1.c module." alt="" coords="581,80,720,121"/>
+</map>

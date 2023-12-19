@@ -1,0 +1,53 @@
+<map id="test_ftask.c" name="test_ftask.c">
+<area shape="rect" id="node1" title="Test of the ftask module." alt="" coords="1997,5,2088,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,67,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="91,80,197,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="221,80,307,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="332,80,415,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="439,80,558,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="583,80,665,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="689,80,780,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="805,80,891,107"/>
+<area shape="rect" id="node10" title=" " alt="" coords="915,80,1034,107"/>
+<area shape="rect" id="node11" title=" " alt="" coords="1058,80,1177,107"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1201,80,1290,107"/>
+<area shape="rect" id="node13" title=" " alt="" coords="1314,80,1427,107"/>
+<area shape="rect" id="node14" title=" " alt="" coords="1452,80,1543,107"/>
+<area shape="rect" id="node15" title=" " alt="" coords="1567,80,1681,107"/>
+<area shape="rect" id="node16" title=" " alt="" coords="1705,80,1788,107"/>
+<area shape="rect" id="node17" title=" " alt="" coords="1813,80,1899,107"/>
+<area shape="rect" id="node18" title=" " alt="" coords="1924,80,2039,107"/>
+<area shape="rect" id="node19" title=" " alt="" coords="2063,80,2145,107"/>
+<area shape="rect" id="node20" title=" " alt="" coords="2170,80,2267,107"/>
+<area shape="rect" id="node21" title=" " alt="" coords="2291,80,2450,107"/>
+<area shape="rect" id="node22" title=" " alt="" coords="2474,80,2553,107"/>
+<area shape="rect" id="node23" title=" " alt="" coords="2577,80,2663,107"/>
+<area shape="rect" id="node24" title=" " alt="" coords="2687,80,2819,107"/>
+<area shape="rect" id="node25" title=" " alt="" coords="2844,80,2924,107"/>
+<area shape="rect" id="node26" title=" " alt="" coords="2949,80,3035,107"/>
+<area shape="rect" id="node27" title=" " alt="" coords="3059,80,3202,107"/>
+<area shape="rect" id="node28" title=" " alt="" coords="3226,80,3313,107"/>
+<area shape="rect" id="node29" title=" " alt="" coords="3337,80,3498,107"/>
+<area shape="rect" id="node30" title=" " alt="" coords="3522,80,3609,107"/>
+<area shape="rect" id="node31" title=" " alt="" coords="3633,80,3751,107"/>
+<area shape="rect" id="node32" href="$ftask__cfg_8h.html" title="Task configuration header." alt="" coords="3583,155,3668,181"/>
+<area shape="rect" id="node37" href="$sys__mon__cfg_8h.html" title="configuration of the system monitoring module" alt="" coords="4258,229,4369,256"/>
+<area shape="rect" id="node41" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="4687,603,4759,629"/>
+<area shape="rect" id="node46" href="$ftask_8h.html" title="Header of task driver implementation." alt="" coords="3827,80,3888,107"/>
+<area shape="rect" id="node33" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="3834,379,3881,405"/>
+<area shape="rect" id="node35" title=" " alt="" coords="4078,677,4143,704"/>
+<area shape="rect" id="node34" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="3929,603,4023,629"/>
+<area shape="rect" id="node36" title=" " alt="" coords="4561,677,4636,704"/>
+<area shape="rect" id="node38" href="$diag__cfg_8h.html" title="Diagnostic module configuration header." alt="" coords="4462,304,4543,331"/>
+<area shape="rect" id="node39" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="4540,453,4687,480"/>
+<area shape="rect" id="node43" href="$database__cfg_8h.html" title="Database configuration header." alt="" coords="4311,379,4422,405"/>
+<area shape="rect" id="node40" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="4537,528,4612,555"/>
+<area shape="rect" id="node42" title=" " alt="" coords="4673,677,4773,704"/>
+<area shape="rect" id="node44" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="4351,603,4409,629"/>
+<area shape="rect" id="node45" title=" " alt="" coords="4301,453,4363,480"/>
+<area shape="rect" id="node47" href="$can__cfg_8h.html" title="Headers for the configuration for the CAN module." alt="" coords="3915,155,3994,181"/>
+<area shape="rect" id="node49" href="$database_8h.html" title="Database module header." alt="" coords="4047,229,4134,256"/>
+<area shape="rect" id="node51" href="$rtc_8h.html" title="Header file of the RTC driver." alt="" coords="3735,528,3783,555"/>
+<area shape="rect" id="node48" title=" " alt="" coords="3945,229,4023,256"/>
+<area shape="rect" id="node50" href="$database__helper_8h.html" title="Database module header." alt="" coords="4097,304,4225,331"/>
+</map>

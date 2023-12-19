@@ -1,0 +1,37 @@
+<map id="N775_CaptureMeasurement" name="N775_CaptureMeasurement">
+<area shape="rect" id="node1" title="captures the measurement." alt="" coords="5,502,188,529"/>
+<area shape="rect" id="node2" href="$nxp__mc33775a-ll_8c.html#ac7c3bbdc384429e36a82340281a4eb13" title="Read a value from a specific register in a specific device." alt="" coords="270,417,449,443"/>
+<area shape="rect" id="node3" href="$nxp__mc33775a-ll_8c.html#a05b00b3020b3f7d8df2fc4e2ca529274" title="Read multiple values from specific registers in a specific device." alt="" coords="531,325,755,351"/>
+<area shape="rect" id="node15" href="$nxp__mc33775a-ll_8c.html#a9184e5d6d106688f9a701245d749987d" title="Write a value into a specific register in a specific device." alt="" coords="553,477,733,503"/>
+<area shape="rect" id="node18" href="$nxp__mc33775a__cfg_8c.html#a81540ab7ac1887ef0beb8cf366aa1f6e" title="converts a raw voltage from multiplexer to a temperature value in deci °C." alt="" coords="236,527,483,554"/>
+<area shape="rect" id="node32" href="$nxp__mc33775a_8c.html#ad6ae7586b69aefee6453bc6e53f612b5" title="handles error when doing measurements." alt="" coords="291,578,428,605"/>
+<area shape="rect" id="node33" href="$nxp__mc33775a_8c.html#afc150ee43bb68b0ee5a389d8535c734a" title="waits for a definite amount of time in ms." alt="" coords="304,1022,415,1049"/>
+<area shape="rect" id="node4" href="$nxp__mc33775a-ll_8c.html#add44c631a1af3073bdf7c3bf91ae2de6" title="Composes a message." alt="" coords="824,376,1028,417"/>
+<area shape="rect" id="node5" href="$nxp__mc33775a-ll_8c.html#a1ed98da6256705c1d38cf5529e2509bb" title="Decomposes and analysis a message." alt="" coords="817,5,1035,47"/>
+<area shape="rect" id="node6" href="$nxp__mc33775a-ll_8c.html#a8f9a40f5c6c25d931b57b51703e7e0f3" title="Copies a message to the buffer to be passed to the SPI transmit functions." alt="" coords="825,442,1027,469"/>
+<area shape="rect" id="node7" href="$nxp__mc33775a-ll_8c.html#a6cce353892b34e03c69c9ab238ad7b80" title="Wait for the SPI receive communication to complete, using notifications." alt="" coords="803,594,1049,621"/>
+<area shape="rect" id="node9" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1125,269,1272,295"/>
+<area shape="rect" id="node10" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1129,135,1268,162"/>
+<area shape="rect" id="node11" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="1138,322,1259,349"/>
+<area shape="rect" id="node12" href="$spi_8c.html#a997dce9b156595fa4486a547f7c55453" title="Transmits and receives data on SPI with DMA." alt="" coords="826,173,1026,199"/>
+<area shape="rect" id="node14" href="$spi_8c.html#a2a0f36d8cb7e54304284f758cc108c36" title="Transmits and receives data on SPI with DMA." alt="" coords="827,223,1025,250"/>
+<area shape="rect" id="node8" href="$os__freertos_8c.html#a7578e983d03af6f03fd3fe09f293cdb1" title="Wait for a notification, with index." alt="" coords="1097,645,1300,671"/>
+<area shape="rect" id="node13" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="1126,211,1271,238"/>
+<area shape="rect" id="node16" href="$nxp__mc33775a-ll_8c.html#a2e3ed760407a7d6dcb460ac68c02be41" title="Wait for the SPI transmit communication to complete, using notifications." alt="" coords="803,695,1049,722"/>
+<area shape="rect" id="node17" href="$os__freertos_8c.html#a25b7418eb914b83dd88bbc0424333139" title="Clear pending notification of a task, with index." alt="" coords="833,645,1019,671"/>
+<area shape="rect" id="node19" href="$tsi_8h.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="572,971,713,998"/>
+<area shape="rect" id="node20" href="$epcos__b57251v5103j060_8c.html#a60e7e40bc4662b44093a0a2b464bd395" title="returns temperature based on measured ADC voltage" alt="" coords="815,1278,1037,1305"/>
+<area shape="rect" id="node22" href="$epcos__b57251v5103j060_8c.html#a22b8fc0a39278f0c1a61c1cca7482b5a" title="returns temperature based on measured ADC voltage" alt="" coords="823,899,1029,940"/>
+<area shape="rect" id="node23" href="$epcos__b57861s0103f045_8c.html#a8bb26a9001e051fc2fee6ba77027b1b6" title="returns temperature based on measured ADC voltage" alt="" coords="815,1329,1037,1355"/>
+<area shape="rect" id="node24" href="$epcos__b57861s0103f045_8c.html#a3aca9a6a710bb21efc1a5d4ccf49b3e0" title="returns temperature based on measured ADC voltage" alt="" coords="823,964,1029,1005"/>
+<area shape="rect" id="node25" href="$fake__none_8c.html#a8519235f1cb368c712566dc0a6615a8a" title="returns a fake temperature" alt="" coords="815,1030,1037,1057"/>
+<area shape="rect" id="node26" href="$fake__none_8c.html#a8d502a27efdeb0f048997819e3ae4fc4" title="returns a fake temperature" alt="" coords="824,1081,1028,1123"/>
+<area shape="rect" id="node27" href="$murata__ncu15xh103f6sxx_8c.html#a0e6cfeee0f7fdf5504234ed54ddfc9b7" title="returns temperature based on measured ADC voltage." alt="" coords="815,746,1037,773"/>
+<area shape="rect" id="node28" href="$murata__ncu15xh103f6sxx_8c.html#a255c099fbd405cdc3b51c39a415c18e3" title="returns temperature based on measured ADC voltage" alt="" coords="824,1147,1028,1188"/>
+<area shape="rect" id="node29" href="$vishay__ntcalug01a103g_8c.html#a865b7c323eb0bdbd7420518e6b56cede" title="returns temperature based on measured ADC voltage." alt="" coords="817,797,1035,823"/>
+<area shape="rect" id="node30" href="$vishay__ntcalug01a103g_8c.html#a47e088f4023835e56cac22e035c66be8" title="returns temperature based on measured ADC voltage" alt="" coords="825,1212,1027,1253"/>
+<area shape="rect" id="node31" href="$vishay__ntcle317e4103sba_8c.html#ae917bb4796f0f8fa36201dbd92aae38c" title="returns temperature based on measured ADC voltage." alt="" coords="817,847,1035,874"/>
+<area shape="rect" id="node21" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="1113,847,1284,874"/>
+<area shape="rect" id="node34" href="$os__freertos_8c.html#a3ac9f783e38ae9f9c8cfe0634bb3b8fe" title="Delay a task until a specified time." alt="" coords="575,1073,710,1099"/>
+<area shape="rect" id="node35" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="579,1022,706,1049"/>
+</map>

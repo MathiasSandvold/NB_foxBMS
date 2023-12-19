@@ -1,0 +1,4 @@
+<map id="LTC_GetPortExpanderInputTi" name="LTC_GetPortExpanderInputTi">
+<area shape="rect" id="node1" title="sends data to the LTC daisy&#45;chain to control the user port expander from TI" alt="" coords="5,5,196,32"/>
+<area shape="rect" id="node2" href="$ltc__6813-1_8c.html#a8cc4616cd88973c4eff35c1a5490bee0" title="sends command and data to the LTC daisy&#45;chain." alt="" coords="244,5,375,32"/>
+</map>

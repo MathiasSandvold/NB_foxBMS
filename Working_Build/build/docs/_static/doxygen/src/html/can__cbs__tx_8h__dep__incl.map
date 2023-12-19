@@ -1,0 +1,12 @@
+<map id="can_cbs_tx.h" name="can_cbs_tx.h">
+<area shape="rect" id="node1" title="CAN callbacks header." alt="" coords="836,5,936,32"/>
+<area shape="rect" id="node2" href="$can__cbs__tx__cell-temperatures_8c.html" title="CAN driver Tx callback implementation." alt="" coords="5,87,212,114"/>
+<area shape="rect" id="node3" href="$can__cbs__tx__cell-voltages_8c.html" title="CAN driver Tx callback implementation." alt="" coords="237,87,415,114"/>
+<area shape="rect" id="node4" href="$can__cbs__tx__limit-values_8c.html" title="CAN driver Tx callback implementation." alt="" coords="439,87,610,114"/>
+<area shape="rect" id="node5" href="$can__cbs__tx__minimum-maximum-values_8c.html" title="CAN driver Tx callback implementation." alt="" coords="634,80,783,121"/>
+<area shape="rect" id="node6" href="$can__cbs__tx__pack-state-estimation_8c.html" title="CAN driver Tx callback implementation." alt="" coords="807,80,965,121"/>
+<area shape="rect" id="node7" href="$can__cbs__tx__state_8c.html" title="CAN driver Tx callback implementation." alt="" coords="989,87,1125,114"/>
+<area shape="rect" id="node8" href="$can__cbs__tx__string-state-estimation_8c.html" title="CAN driver Tx callback implementation." alt="" coords="1149,80,1311,121"/>
+<area shape="rect" id="node9" href="$can__cbs__tx__system-values_8c.html" title="CAN driver Tx callback implementation." alt="" coords="1335,87,1525,114"/>
+<area shape="rect" id="node10" href="$can__cfg__tx_8c.html" title="Configuration for the CAN module." alt="" coords="1550,87,1646,114"/>
+</map>

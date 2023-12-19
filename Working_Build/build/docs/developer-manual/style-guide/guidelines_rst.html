@@ -1,0 +1,337 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.4. reStructuredText Coding Guidelines &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2.5. Batch and Shell Coding Guidelines" href="guidelines_batch_shell.html" />
+    <link rel="prev" title="2.3. Python Coding Guidelines" href="guidelines_python.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">1. Preface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="style-guide.html">2. Style Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="guidelines_general.html">2.1. General Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_c.html">2.2. C Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_python.html">2.3. Python Coding Guidelines</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.4. reStructuredText Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_batch_shell.html">2.5. Batch and Shell Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_yaml.html">2.6. YAML Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_overview.html">2.7. Table of Rules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="style-guide.html"><span class="section-number">2. </span>Style Guide</a> &raquo;</li>
+      <li><span class="section-number">2.4. </span>reStructuredText Coding Guidelines</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/developer-manual/style-guide/guidelines_rst.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="restructuredtext-coding-guidelines">
+<span id="id1"></span><h1><span class="section-number">2.4. </span>reStructuredText Coding Guidelines<a class="headerlink" href="#restructuredtext-coding-guidelines" title="Permalink to this headline"></a></h1>
+<p>These coding guidelines <strong>MUST</strong> be applied to all <code class="docutils literal notranslate"><span class="pre">reStructuredText</span></code> source
+files.</p>
+<p>The following rules generally apply and follow the naming schema
+<code class="docutils literal notranslate"><span class="pre">RST:&lt;ongoing-number&gt;</span></code>.</p>
+<div class="section" id="filenames-rst-001">
+<span id="rule-rst-filenames"></span><h2><span class="section-number">2.4.1. </span>Filenames (<code class="docutils literal notranslate"><span class="pre">RST:001</span></code>)<a class="headerlink" href="#filenames-rst-001" title="Permalink to this headline"></a></h2>
+<p>Additional to the general file naming rules the following <strong>MUST</strong>
+be applied.</p>
+<div class="admonition-file-name-rules admonition">
+<p class="admonition-title">File name rules</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">reStructuredText</span></code> source files <strong>MUST</strong> use <code class="docutils literal notranslate"><span class="pre">.rst</span></code> as file
+extension.</p></li>
+</ul>
+</div>
+<p>For example the valid file names for a reStructuredText sources are</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">macros.txt</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">software-installation.rst</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="linelength-rst-002">
+<span id="rule-rst-linelength"></span><h2><span class="section-number">2.4.2. </span>Linelength (<code class="docutils literal notranslate"><span class="pre">RST:002</span></code>)<a class="headerlink" href="#linelength-rst-002" title="Permalink to this headline"></a></h2>
+<p>Each line of text in your code <strong>SHOULD</strong> be at most 80
+characters long.
+A line <strong>MAY</strong> exceed 80 characters if it is</p>
+<ul class="simple">
+<li><p>a comment line which is not feasible to split without harming readability,
+ease of cut and paste or auto-linking, e.g., if a line contains an example
+command or a literal URL longer than 120 characters or</p></li>
+<li><p>a raw-string literal with content that exceeds 120 characters.
+Except for test code, such literals should appear near the top of a file.</p></li>
+</ul>
+</div>
+<div class="section" id="include-rst-003">
+<span id="rule-rst-include"></span><h2><span class="section-number">2.4.3. </span>Include (<code class="docutils literal notranslate"><span class="pre">RST:003</span></code>)<a class="headerlink" href="#include-rst-003" title="Permalink to this headline"></a></h2>
+<p>Include macros to have consistent style for repetitive words.</p>
+<div class="admonition-include-rules admonition">
+<p class="admonition-title">Include rules</p>
+<ul class="simple">
+<li><p>Macros <strong>SHOULD</strong> be used where ever it is possible within the build
+toolchain.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">macros.txt</span></code> <strong>MUST</strong> be included where ever possible</p></li>
+<li><p>File local macros <strong>MAY</strong> be used. However, if a term is used in more
+than one file, the macro <strong>MUST</strong> be transferred to <code class="docutils literal notranslate"><span class="pre">macros.txt</span></code>.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="links-rst-004">
+<span id="rule-rst-links"></span><h2><span class="section-number">2.4.4. </span>Links (<code class="docutils literal notranslate"><span class="pre">RST:004</span></code>)<a class="headerlink" href="#links-rst-004" title="Permalink to this headline"></a></h2>
+<p>Links <strong>MUST</strong> be checked for availability.
+This is ensured by running sphinx in <code class="docutils literal notranslate"><span class="pre">linkcheck</span></code> mode.</p>
+<div class="admonition-links-rules admonition">
+<p class="admonition-title">Links rules</p>
+<ul class="simple">
+<li><p>All links <strong>MUST</strong> be reachable.</p></li>
+<li><p>Separated link and target definition <strong>SHOULD</strong> be used.
+If link and target definition are separated the target <strong>MUST</strong> be
+defined at the end of the file after two blank lines.</p></li>
+</ul>
+</div>
+<p>Examples:</p>
+<div class="literal-block-wrapper docutils container" id="rst-external-links">
+<div class="code-block-caption"><span class="caption-number">Listing 2.40 </span><span class="caption-text">description of external links in rst-files</span><a class="headerlink" href="#rst-external-links" title="Permalink to this code"></a></div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos">1</span> |foxbms| is developed by the <span class="s">`Battery Systems Group`_</span> at <span class="s">`Fraunhofer IISB`_</span>.
+</span><span class="linenos">2</span>
+<span class="linenos">3</span> more documentation
+<span class="linenos">4</span> even more documentation
+<span class="linenos">5</span>
+<span class="hll"><span class="linenos">6</span><span class="cp"> .. Battery Systems Group: https://www.iisb.fraunhofer.de/en/research_areas/intelligent_energy_systems/stationary_battery_systems.html</span>
+</span><span class="hll"><span class="linenos">7</span><span class="cp"> .. Fraunhofer IISB: https://www.iisb.fraunhofer.de</span>
+</span></pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="headings-rst-005">
+<span id="rule-rst-headings"></span><h2><span class="section-number">2.4.5. </span>Headings (<code class="docutils literal notranslate"><span class="pre">RST:005</span></code>)<a class="headerlink" href="#headings-rst-005" title="Permalink to this headline"></a></h2>
+<p>We follow the convention of the
+<em>Python Developer’s Guide for reStructuredText Markup</em>.
+Use the following rules to create headings:</p>
+<ul class="simple">
+<li><p># with overline, for parts</p></li>
+<li><p>* with overline, for chapters</p></li>
+<li><p>=, for sections</p></li>
+<li><p>-, for subsections</p></li>
+<li><p>^, for subsubsections</p></li>
+<li><p>“, for paragraphs</p></li>
+</ul>
+<div class="admonition-heading admonition">
+<p class="admonition-title">heading</p>
+<ul class="simple">
+<li><p>all <code class="docutils literal notranslate"><span class="pre">reStructuredText</span></code> files <strong>MUST</strong> have a heading</p></li>
+<li><p>the heading <strong>MUST</strong> be two lines after the file label</p></li>
+<li><p>the heading <strong>MUST</strong> be underlined with =</p></li>
+</ul>
+</div>
+<div class="literal-block-wrapper docutils container" id="rst-heading">
+<div class="code-block-caption"><span class="caption-number">Listing 2.41 </span><span class="caption-text">heading of guidelines_rst.rst</span><a class="headerlink" href="#rst-heading" title="Permalink to this code"></a></div>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="p"> ..</span> <span class="ow">include</span><span class="p">::</span> ./../../macros.txt
+<span class="linenos">2</span>
+<span class="hll"><span class="linenos">3</span><span class="p"> ..</span> <span class="nt">_RESTRUCTUREDTEXT_CODING_GUIDELINES:</span>
+</span><span class="linenos">4</span>
+<span class="hll"><span class="linenos">5</span> reStructuredText Coding Guidelines
+</span><span class="hll"><span class="linenos">6</span> ==================================
+</span></pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="orphan-rst-006">
+<span id="rule-rst-orphan"></span><h2><span class="section-number">2.4.6. </span>Orphan (<code class="docutils literal notranslate"><span class="pre">RST:006</span></code>)<a class="headerlink" href="#orphan-rst-006" title="Permalink to this headline"></a></h2>
+<div class="admonition-orphan admonition">
+<p class="admonition-title">orphan</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">reStructuredText</span></code> files which are not included in other <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files
+<strong>MUST</strong> start with :orphan:</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="sentence-rst-006">
+<span id="rule-rst-sentence"></span><h2><span class="section-number">2.4.7. </span>Sentence (<code class="docutils literal notranslate"><span class="pre">RST:006</span></code>)<a class="headerlink" href="#sentence-rst-006" title="Permalink to this headline"></a></h2>
+<div class="admonition-sentence admonition">
+<p class="admonition-title">Sentence</p>
+<ul class="simple">
+<li><p>Every new sentence must start on a new line.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="file-templates">
+<h2><span class="section-number">2.4.8. </span>File Templates<a class="headerlink" href="#file-templates" title="Permalink to this headline"></a></h2>
+<p>This file template below show how these rules are correctly applied.
+It <strong>SHOULD</strong> be used as basis for new files.</p>
+<ul class="simple">
+<li><p>reStructuredText file <a class="reference download internal" download="" href="../../_downloads/2722a475fb868bf8cdf4aeeca747b9c8/rst.rst"><code class="xref download docutils literal notranslate"><span class="pre">rst.rst</span></code></a></p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="guidelines_python.html" class="btn btn-neutral float-left" title="2.3. Python Coding Guidelines" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="guidelines_batch_shell.html" class="btn btn-neutral float-right" title="2.5. Batch and Shell Coding Guidelines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

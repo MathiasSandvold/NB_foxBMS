@@ -1,0 +1,7 @@
+<map id="testMXM_InitializeMonitoringPins" name="testMXM_InitializeMonitoringPins">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,219,83"/>
+<area shape="rect" id="node2" href="$mxm__cfg_8c.html#a417b5a6e2fac6c926405a19edcc4c378" title="Initialize the pins connected to the MAX17841B." alt="" coords="267,56,457,83"/>
+<area shape="rect" id="node3" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="551,5,645,32"/>
+<area shape="rect" id="node4" href="$io_8c.html#a41154d1d77ad0873d462c803ce831f68" title="Set pin to output by writing in pin direction register." alt="" coords="505,56,691,83"/>
+<area shape="rect" id="node5" href="$spi_8c.html#a38bf6ba5f5b17b01e9385983ed860f72" title="Sets the functional of a SPI pin." alt="" coords="533,107,663,133"/>
+</map>

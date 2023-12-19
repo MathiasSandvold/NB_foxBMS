@@ -1,0 +1,19 @@
+<map id="SOE_RecalibrateViaLookupTable" name="SOE_RecalibrateViaLookupTable">
+<area shape="rect" id="node1" title="initializes database and FRAM SOE values via lookup table (average, min and max)." alt="" coords="5,403,188,445"/>
+<area shape="rect" id="node2" href="$fram_8c.html#ad5c5ec1fd0a6c3667185d3b75064e359" title="Writes a variable to the FRAM." alt="" coords="250,208,374,235"/>
+<area shape="rect" id="node13" href="$soe__counting_8c.html#a7461d3a1c3bf7a1a79c841b92c21ca59" title="look&#45;up table for SOE initialization" alt="" coords="236,411,388,437"/>
+<area shape="rect" id="node15" href="$soe__counting_8c.html#a49ca0abf4d8a626c265b4e7e05e4ec28" title="sets SOE value with a parameter between 0.0 and 100.0." alt="" coords="257,469,367,496"/>
+<area shape="rect" id="node3" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="474,56,605,83"/>
+<area shape="rect" id="node4" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="492,107,587,133"/>
+<area shape="rect" id="node5" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="499,157,580,184"/>
+<area shape="rect" id="node6" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="483,208,595,235"/>
+<area shape="rect" id="node7" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="438,259,641,285"/>
+<area shape="rect" id="node8" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="479,309,600,336"/>
+<area shape="rect" id="node9" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="500,5,579,32"/>
+<area shape="rect" id="node12" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="494,360,585,387"/>
+<area shape="rect" id="node10" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="691,81,837,108"/>
+<area shape="rect" id="node11" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="695,208,833,235"/>
+<area shape="rect" id="node14" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="454,411,625,437"/>
+<area shape="rect" id="node16" href="$soe__counting_8c.html#ad6713da865936c6858b60e20afe15543" title="calculates string energy in Wh from passed SOE in percentage" alt="" coords="436,527,643,569"/>
+<area shape="rect" id="node17" href="$soe__counting_8c.html#a91d803600db5f528584b902a06996f99" title="calculates string SOE in percentage from passed string energy in Wh" alt="" coords="439,462,640,503"/>
+</map>

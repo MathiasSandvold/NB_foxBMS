@@ -1,0 +1,74 @@
+<map id="LTC_Trigger" name="LTC_Trigger">
+<area shape="rect" id="node1" title="trigger function for the LTC driver state machine." alt="" coords="5,1125,96,1152"/>
+<area shape="rect" id="node2" href="$ltc__afe__dma_8c.html#a41589e9bbef5ab1714ce39c3202c038f" title="gets the SPI transmit status." alt="" coords="171,5,334,32"/>
+<area shape="rect" id="node3" href="$ltc__afe__dma_8c.html#ae079532d397f92e5636a273f36953034" title="sets the SPI transmit status." alt="" coords="166,56,339,83"/>
+<area shape="rect" id="node4" href="$diag_8c.html#a3e60a00edfbecf928fd6db140626647a" title="DIAG_CheckEvent provides a simple interface to check an event for STD_OK." alt="" coords="450,192,579,219"/>
+<area shape="rect" id="node5" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="741,192,845,219"/>
+<area shape="rect" id="node7" href="$ltc__6813-1_8c.html#aa5c44fb985b3dd89bdf73ad534f4f1ce" title="sets the balancing according to the control values read in the database." alt="" coords="183,411,323,437"/>
+<area shape="rect" id="node9" href="$ltc__6806_8c.html#a5df2618318512a77c0fd7c0c3a3b13e6" title="checks if the data received from the daisy&#45;chain is not corrupt." alt="" coords="197,461,309,488"/>
+<area shape="rect" id="node10" href="$ltc__6806_8c.html#ad184ef8adbd5dadb067b1d96257531cc" title="re&#45;entrance check of LTC state machine trigger function" alt="" coords="174,563,331,589"/>
+<area shape="rect" id="node13" href="$ltc__6806_8c.html#ae81b8aa0def104fff84ac45b1832c209" title="condition&#45;based state transition depending on retVal" alt="" coords="149,309,356,336"/>
+<area shape="rect" id="node14" href="$ltc__6806_8c.html#a3c9b0317c936d8bc03fb8e118ac2043d" title="function for setting LTC_Trigger state transitions" alt="" coords="445,360,584,387"/>
+<area shape="rect" id="node15" href="$ltc__6813-1_8c.html#a36e5b2694d07c602032510a38c08536b" title="saves the read values of the external EEPROMs read from the LTC daisy&#45;chain." alt="" coords="159,745,347,772"/>
+<area shape="rect" id="node16" href="$ltc__6813-1_8c.html#a51dd4cd3b1cdb24e6c3818f44213574a" title="brief missing" alt="" coords="146,796,359,823"/>
+<area shape="rect" id="node17" href="$ltc__6813-1_8c.html#a786975d6eab756509f5545e1593e76d0" title="sends data to the LTC daisy&#45;chain to control the user port expander from TI" alt="" coords="157,999,348,1025"/>
+<area shape="rect" id="node19" href="$ltc__6813-1_8c.html#a1be0d2df41800d47b273b0eec00c1bf7" title="checks if the multiplexers acknowledged transmission." alt="" coords="188,1252,317,1279"/>
+<area shape="rect" id="node20" href="$ltc__6813-1_8c.html#a9c38411ae514dc72ccfc19fbfbaf4cbb" title="sends 72 clock pulses to the LTC daisy&#45;chain." alt="" coords="201,1303,304,1329"/>
+<area shape="rect" id="node21" href="$ltc__6806_8c.html#aaf84ea01e26f5cabd668be8bc46eda9a" title="initialize the daisy&#45;chain." alt="" coords="218,1353,287,1380"/>
+<area shape="rect" id="node22" href="$ltc__6806_8c.html#ad8da54dbf5d4f08339a5503091d94b7c" title="in the database, initializes the fields related to the LTC drivers." alt="" coords="175,1404,330,1431"/>
+<area shape="rect" id="node23" href="$ltc__6806_8c.html#a31a0f262a3434597949aa3251b633a79" title="gets the measurement initialization status." alt="" coords="153,614,353,655"/>
+<area shape="rect" id="node24" href="$ltc__6813-1_8c.html#a72419ebfb813340a9bf2340a04f6c647" title="saves the received values of the external port expander read from the LTC daisy&#45;chain." alt="" coords="153,1455,352,1481"/>
+<area shape="rect" id="node25" href="$ltc__6813-1_8c.html#a6b5bfdf6afe283931dbb760008bfbac9" title="saves the received values of the external port expander from TI read from the LTC daisy&#45;chain." alt="" coords="148,1505,357,1532"/>
+<area shape="rect" id="node26" href="$ltc__6806_8c.html#a2edbd2d522ed4c00589101197aaa4e70" title="send command to the LTC daisy&#45;chain and receives data from the LTC daisy&#45;chain." alt="" coords="187,1556,318,1583"/>
+<area shape="rect" id="node27" href="$ltc__6806_8c.html#ab465bc3da734177a75cf5d92218f3cd4" title="resets the error table." alt="" coords="180,1607,325,1633"/>
+<area shape="rect" id="node28" href="$ltc__6813-1_8c.html#ac215f834513e975d151fac2a8a9bbe5f" title="stores the measured GPIOs in the database." alt="" coords="152,1657,353,1684"/>
+<area shape="rect" id="node29" href="$ltc__6813-1_8c.html#a41269672bbe509e90a2199270a78ca0b" title="stores the measured balancing feedback values in the database." alt="" coords="155,1708,350,1735"/>
+<area shape="rect" id="node30" href="$ltc__6806_8c.html#a68ee3c7e86c459f01878d9766ef0c917" title="Saves the last state and the last substate." alt="" coords="181,1759,324,1785"/>
+<area shape="rect" id="node31" href="$ltc__6813-1_8c.html#aeb2cd59e60f41953a1ede6c45b86b197" title="saves the multiplexer values read from the LTC daisy&#45;chain." alt="" coords="161,1809,345,1836"/>
+<area shape="rect" id="node46" href="$ltc__6813-1_8c.html#a390d48bbc8d6bc0acb79f97c6ede3121" title="saves the GPIO voltage values read from the LTC daisy&#45;chain." alt="" coords="167,1860,338,1887"/>
+<area shape="rect" id="node47" href="$ltc__6813-1_8c.html#a973bd56bdce8eaad67718772af315a14" title="saves the voltage values read from the LTC daisy&#45;chain." alt="" coords="159,1911,346,1937"/>
+<area shape="rect" id="node48" href="$ltc__6806_8c.html#aa337a867e837d819ec51d9729b6b0fc5" title="saves the voltage values read from the LTC daisy&#45;chain." alt="" coords="161,1962,344,2003"/>
+<area shape="rect" id="node49" href="$ltc__6813-1_8c.html#a6c664def5b7059842ab106bbb743775d" title="stores the measured temperatures and the measured multiplexer feedbacks in the database." alt="" coords="173,157,332,184"/>
+<area shape="rect" id="node53" href="$ltc__6806_8c.html#aa9babbfd0bbeef2b3107e8b28fb80b99" title="stores the measured voltages in the database." alt="" coords="187,259,318,285"/>
+<area shape="rect" id="node55" href="$ltc__6813-1_8c.html#aab5393dbbf131697c9f2a99caa455bc2" title="sends data to the LTC daisy&#45;chain to read EEPROM on slaves." alt="" coords="145,847,361,873"/>
+<area shape="rect" id="node57" href="$ltc__6813-1_8c.html#a144326ee126c8959c8cfe4066532359a" title="sends data to the LTC daisy&#45;chain to write EEPROM on slaves." alt="" coords="144,1151,361,1177"/>
+<area shape="rect" id="node59" href="$ltc__6813-1_8c.html#ab6618edb82b72f99d9a6f68fc29bec40" title="sends data to the LTC daisy&#45;chain to communicate via I2C" alt="" coords="173,1049,332,1076"/>
+<area shape="rect" id="node60" href="$ltc__6806_8c.html#a428e368fcc014375016c63a714201070" title="sets the measurement initialization status." alt="" coords="147,679,358,721"/>
+<area shape="rect" id="node61" href="$ltc__6813-1_8c.html#a31ff8a37e41588d5c4da46b46b060d50" title="sends data to the LTC daisy&#45;chain to configure multiplexer channels." alt="" coords="181,1201,325,1228"/>
+<area shape="rect" id="node63" href="$ltc__6813-1_8c.html#a9b561e1638689ec912cdfa268fde1e49" title="sends data to the LTC daisy&#45;chain to control the user port expander" alt="" coords="177,1100,328,1127"/>
+<area shape="rect" id="node64" href="$ltc__6813-1_8c.html#a75d9e2c2e420fd17b5d22abab8773b8a" title="sends data to the LTC daisy&#45;chain to control the user port expander from TI" alt="" coords="147,897,359,924"/>
+<area shape="rect" id="node65" href="$ltc__6813-1_8c.html#aa9f0ab2d87d3c99ece0b4813cb043120" title="sends data to the LTC daisy&#45;chain to control the user port expander from TI" alt="" coords="153,948,353,975"/>
+<area shape="rect" id="node66" href="$ltc__6806_8c.html#a4d6cd672e9ee1b77017532fb3c1c8921" title="sets the transfer time needed to receive/send data with the LTC daisy&#45;chain." alt="" coords="176,2028,329,2055"/>
+<area shape="rect" id="node68" href="$ltc__6813-1_8c.html#a459710437b2c75f619542012990c7c07" title="tells LTC daisy&#45;chain to start measuring the voltage on GPIOS." alt="" coords="159,2079,346,2105"/>
+<area shape="rect" id="node69" href="$ltc__6806_8c.html#a2784ea1ea6b725911b4da1aa5bd7f0c0" title="tells LTC daisy&#45;chain to start measuring the voltage on GPIOS." alt="" coords="144,2129,361,2156"/>
+<area shape="rect" id="node70" href="$ltc__6806_8c.html#a0a7c52466ebf10c28061886c671582bd" title="tells the LTC daisy&#45;chain to start measuring the voltage on all cells." alt="" coords="151,2180,354,2207"/>
+<area shape="rect" id="node71" href="$ltc__6813-1_8c.html#ae64915bb7e301c45b702aebf2cfd86a5" title="saves the temperature value of the external temperature sensors read from the LTC daisy&#45;chain." alt="" coords="165,2231,340,2257"/>
+<area shape="rect" id="node72" href="$ltc__6806_8c.html#a6bc859327ed6f6ac29c02103d71f8b93" title="transfers the current state request to the state machine." alt="" coords="164,512,341,539"/>
+<area shape="rect" id="node6" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="1017,192,1139,219"/>
+<area shape="rect" id="node8" href="$ltc__6813-1_8c.html#ab951276e52308be2f92c00652713a055" title="gets the balancing orders from the database." alt="" coords="409,411,620,437"/>
+<area shape="rect" id="node11" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="441,567,588,593"/>
+<area shape="rect" id="node12" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="445,620,584,647"/>
+<area shape="rect" id="node18" href="$ltc__6813-1_8c.html#a8cc4616cd88973c4eff35c1a5490bee0" title="sends command and data to the LTC daisy&#45;chain." alt="" coords="449,1024,580,1051"/>
+<area shape="rect" id="node32" href="$ltc__6806__cfg_8h.html#ac5835e0f4df145a23f5189ee0dc7056f" title="converts a raw voltage from multiplexer to a temperature value in deci °C." alt="" coords="422,1802,607,1843"/>
+<area shape="rect" id="node33" href="$tsi_8h.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="723,1809,864,1836"/>
+<area shape="rect" id="node34" href="$epcos__b57251v5103j060_8c.html#a60e7e40bc4662b44093a0a2b464bd395" title="returns temperature based on measured ADC voltage" alt="" coords="967,1759,1189,1785"/>
+<area shape="rect" id="node36" href="$epcos__b57251v5103j060_8c.html#a22b8fc0a39278f0c1a61c1cca7482b5a" title="returns temperature based on measured ADC voltage" alt="" coords="975,1962,1181,2003"/>
+<area shape="rect" id="node37" href="$epcos__b57861s0103f045_8c.html#a8bb26a9001e051fc2fee6ba77027b1b6" title="returns temperature based on measured ADC voltage" alt="" coords="967,1809,1189,1836"/>
+<area shape="rect" id="node38" href="$epcos__b57861s0103f045_8c.html#a3aca9a6a710bb21efc1a5d4ccf49b3e0" title="returns temperature based on measured ADC voltage" alt="" coords="975,2027,1181,2069"/>
+<area shape="rect" id="node39" href="$fake__none_8c.html#a8519235f1cb368c712566dc0a6615a8a" title="returns a fake temperature" alt="" coords="967,2093,1189,2120"/>
+<area shape="rect" id="node40" href="$fake__none_8c.html#a8d502a27efdeb0f048997819e3ae4fc4" title="returns a fake temperature" alt="" coords="976,1511,1180,1553"/>
+<area shape="rect" id="node41" href="$murata__ncu15xh103f6sxx_8c.html#a0e6cfeee0f7fdf5504234ed54ddfc9b7" title="returns temperature based on measured ADC voltage." alt="" coords="967,1860,1189,1887"/>
+<area shape="rect" id="node42" href="$murata__ncu15xh103f6sxx_8c.html#a255c099fbd405cdc3b51c39a415c18e3" title="returns temperature based on measured ADC voltage" alt="" coords="976,1577,1180,1618"/>
+<area shape="rect" id="node43" href="$vishay__ntcalug01a103g_8c.html#a865b7c323eb0bdbd7420518e6b56cede" title="returns temperature based on measured ADC voltage." alt="" coords="969,1911,1187,1937"/>
+<area shape="rect" id="node44" href="$vishay__ntcalug01a103g_8c.html#a47e088f4023835e56cac22e035c66be8" title="returns temperature based on measured ADC voltage" alt="" coords="977,1642,1179,1683"/>
+<area shape="rect" id="node45" href="$vishay__ntcle317e4103sba_8c.html#ae917bb4796f0f8fa36201dbd92aae38c" title="returns temperature based on measured ADC voltage." alt="" coords="969,1708,1187,1735"/>
+<area shape="rect" id="node35" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="1237,1809,1408,1836"/>
+<area shape="rect" id="node50" href="$afe__plausibility_8c.html#a5f0f388fcad363cade4b5e340f06e211" title="Cell temperature plausibility check." alt="" coords="421,41,608,82"/>
+<area shape="rect" id="node51" href="$tsi_8h.html#a161bdb7af8c149fe72731f43f0619dd9" title="Return the maximum plausible temperature." alt="" coords="668,23,919,49"/>
+<area shape="rect" id="node52" href="$tsi_8h.html#a9bf06d1c58f3a5ee9c9c8b1d611d1323" title="Return the minimum plausible temperature." alt="" coords="670,73,917,100"/>
+<area shape="rect" id="node54" href="$afe__plausibility_8c.html#ae3a0cab9bf3aeded2ce65f1d28bdda8b" title="Cell voltage measurement range plausibility check." alt="" coords="415,243,614,285"/>
+<area shape="rect" id="node56" href="$ltc__6813-1_8c.html#aef9bb34ca8083f1afaf3077e2b38138c" title="configures the data that will be sent to the LTC daisy&#45;chain to read EEPROM on slaves." alt="" coords="411,847,618,873"/>
+<area shape="rect" id="node58" href="$ltc__6813-1_8c.html#a1df4ae95928a7f0716a8229bbafb6635" title="configures the data that will be sent to the LTC daisy&#45;chain to write EEPROM on slaves." alt="" coords="411,1151,618,1177"/>
+<area shape="rect" id="node62" href="$ltc__6813-1_8c.html#a8fb93d76d9466f8c499feae7c820bcc7" title="configures the data that will be sent to the LTC daisy&#45;chain to configure multiplexer channels." alt="" coords="429,1201,601,1228"/>
+<area shape="rect" id="node67" href="$ltc__6806_8c.html#a4fd9d165e4bc619474fe3d1653104833" title="gets the frequency of the SPI clock." alt="" coords="452,2028,577,2055"/>
+</map>

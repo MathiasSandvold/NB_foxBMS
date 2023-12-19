@@ -1,0 +1,299 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{086E6104-C143-4BAF-B112-44E626949B77}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Thu Sep  7 11:08:18 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitl                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitf                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbit                                       |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormall                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormalf                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormal                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanf                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnan                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinfl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinff                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinf                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitel                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitef                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinite                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyl                                   |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyf                                   |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassify                                    |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  I2C_ClearNotifications                          |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   OS_ClearNotificationIndexed
+
++-------------------------------------------------------------+
+|  FUNCTION:  I2C_WaitForTxCompletedNotification              |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   OS_WaitForNotificationIndexed
+
++-------------------------------------------------------------+
+|  FUNCTION:  I2C_GetWordTransmitTime                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   __aeabi_uidivmod
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I2C_WaitForRxCompletedNotification              |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   OS_WaitForNotificationIndexed
+
++-------------------------------------------------------------+
+|  FUNCTION:  I2C_WaitStop                                    |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   MCU_GetFreeRunningCount
+   MCU_IsTimeElapsed
+   i2cIsStopDetected
+
++-------------------------------------------------------------+
+|  FUNCTION:  I2C_WriteReadDma                                |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   I2C_ClearNotifications
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   OS_EnterTaskCritical
+   FSYS_RaisePrivilege
+   dmaSetChEnable
+   OS_ExitTaskCritical
+   i2cSetMode
+   i2cSetDirection
+   i2cSetSlaveAdd
+   i2cSetStart
+   I2C_WaitForTxCompletedNotification
+   I2C_GetWordTransmitTime
+   MCU_Delay_us
+   I2C_WaitForRxCompletedNotification
+   I2C_WaitStop
+   i2cSetStop
+
++-------------------------------------------------------------+
+|  FUNCTION:  I2C_WaitTransmit                                |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   MCU_GetFreeRunningCount
+   MCU_IsTimeElapsed
+
++-------------------------------------------------------------+
+|  FUNCTION:  I2C_WaitReceive                                 |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   MCU_GetFreeRunningCount
+   MCU_IsTimeElapsed
+
++-------------------------------------------------------------+
+|  FUNCTION:  I2C_WriteRead                                   |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   i2cSetMode
+   i2cSetDirection
+   i2cSetSlaveAdd
+   i2cSetStart
+   I2C_WaitTransmit
+   i2cSetStop
+   I2C_WaitReceive
+   I2C_WaitStop
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I2C_WriteDma                                    |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   I2C_ClearNotifications
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   OS_EnterTaskCritical
+   FSYS_RaisePrivilege
+   dmaSetChEnable
+   OS_ExitTaskCritical
+   i2cSetMode
+   i2cSetDirection
+   i2cSetSlaveAdd
+   i2cSetStop
+   i2cSetCount
+   i2cSetStart
+   I2C_WaitForTxCompletedNotification
+   I2C_WaitStop
+
++-------------------------------------------------------------+
+|  FUNCTION:  I2C_Write                                       |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   i2cSetMode
+   i2cSetDirection
+   i2cSetSlaveAdd
+   i2cSetStop
+   i2cSetCount
+   i2cSetStart
+   I2C_WaitTransmit
+   I2C_WaitStop
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I2C_ReadLastRxByte                              |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I2C_ReadDma                                     |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   I2C_ClearNotifications
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   OS_EnterTaskCritical
+   FSYS_RaisePrivilege
+   dmaSetChEnable
+   OS_ExitTaskCritical
+   i2cSetMode
+   i2cSetDirection
+   i2cSetSlaveAdd
+   i2cSetStart
+   I2C_WaitForRxCompletedNotification
+   I2C_WaitStop
+   i2cSetStop
+
++-------------------------------------------------------------+
+|  FUNCTION:  I2C_Read                                        |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   i2cSetMode
+   i2cSetDirection
+   i2cSetSlaveAdd
+   i2cSetStart
+   i2cSetStop
+   I2C_WaitReceive
+   I2C_WaitStop
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  I2C_Initialize                                  |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
+Called functions:
+   i2cInit
+

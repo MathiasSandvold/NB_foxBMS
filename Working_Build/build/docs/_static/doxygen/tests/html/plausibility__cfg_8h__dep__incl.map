@@ -1,0 +1,7 @@
+<map id="plausibility_cfg.h" name="plausibility_cfg.h">
+<area shape="rect" id="node1" title="plausibility checks for cell voltage and cell temperatures" alt="" coords="115,5,233,32"/>
+<area shape="rect" id="node2" href="$plausibility_8h.html" title="plausibility checks for cell voltage and cell temperatures" alt="" coords="127,80,221,107"/>
+<area shape="rect" id="node3" href="$plausibility_8c.html" title="plausibility checks for cell voltage and cell temperatures" alt="" coords="5,155,100,181"/>
+<area shape="rect" id="node4" href="$redundancy_8c.html" title="Source file for handling redundancy between redundant cell voltage and cell temperature measurements." alt="" coords="124,155,224,181"/>
+<area shape="rect" id="node5" href="$test__plausibility_8c.html" title="Tests for plausibility checks for cell voltage and cell temperatures." alt="" coords="249,155,371,181"/>
+</map>

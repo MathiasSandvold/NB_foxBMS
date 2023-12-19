@@ -1,0 +1,11 @@
+<map id="os_freertos_config&#45;validation.h" name="os_freertos_config&#45;validation.h">
+<area shape="rect" id="node1" title="Declaration of the OS wrapper interface." alt="" coords="242,5,368,47"/>
+<area shape="rect" id="node2" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="144,95,218,121"/>
+<area shape="rect" id="node3" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="21,169,93,196"/>
+<area shape="rect" id="node5" title=" " alt="" coords="246,319,311,345"/>
+<area shape="rect" id="node7" href="$ftask__cfg_8h.html" title="Task configuration header." alt="" coords="262,95,348,121"/>
+<area shape="rect" id="node9" title=" " alt="" coords="442,95,573,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="24,244,98,271"/>
+<area shape="rect" id="node6" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="122,244,216,271"/>
+<area shape="rect" id="node8" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="219,169,266,196"/>
+</map>

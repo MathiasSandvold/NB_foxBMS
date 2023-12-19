@@ -1,0 +1,1877 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.2. C Coding Guidelines &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2.3. Python Coding Guidelines" href="guidelines_python.html" />
+    <link rel="prev" title="2.1. General Rules" href="guidelines_general.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">1. Preface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="style-guide.html">2. Style Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="guidelines_general.html">2.1. General Rules</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.2. C Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_python.html">2.3. Python Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_rst.html">2.4. reStructuredText Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_batch_shell.html">2.5. Batch and Shell Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_yaml.html">2.6. YAML Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_overview.html">2.7. Table of Rules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="style-guide.html"><span class="section-number">2. </span>Style Guide</a> &raquo;</li>
+      <li><span class="section-number">2.2. </span>C Coding Guidelines</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/developer-manual/style-guide/guidelines_c.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="c-coding-guidelines">
+<span id="id1"></span><h1><span class="section-number">2.2. </span>C Coding Guidelines<a class="headerlink" href="#c-coding-guidelines" title="Permalink to this headline"></a></h1>
+<p>These coding guidelines <strong>MUST</strong> be applied to all <code class="docutils literal notranslate"><span class="pre">C</span></code> source and header
+files.</p>
+<p>The source files <strong>MUST</strong> be successfully checked by running the waf command
+<code class="docutils literal notranslate"><span class="pre">check_guidelines</span></code> before files can be merged into the master branch of the
+repository.</p>
+<p>Generally foxBMS 2 uses for the embedded code
+<a class="reference external" href="https://en.wikipedia.org/wiki/Indentation_style#Variant:_1TBS_(OTBS)">1TBS</a>.
+This is checked by <code class="docutils literal notranslate"><span class="pre">clang-format</span></code>.
+The <code class="docutils literal notranslate"><span class="pre">clang-format</span></code> configuration is found in <code class="docutils literal notranslate"><span class="pre">./.clang-format</span></code>.
+The <code class="docutils literal notranslate"><span class="pre">C</span></code> source and header files can be checked by running
+<code class="docutils literal notranslate"><span class="pre">waf</span> <span class="pre">check_guidelines</span></code>.
+Using VS Code files are automatically saved correctly (see
+<a class="reference internal" href="../../getting-started/workspace.html#creating-a-workspace"><span class="std std-ref">Creating a Workspace</span></a>) when <code class="docutils literal notranslate"><span class="pre">clang-format</span></code> is installed (see
+<a class="reference internal" href="../../getting-started/software-installation.html#software-prerequisites"><span class="std std-ref">Software Prerequisites</span></a>) using <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">S</kbd></kbd>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The style of third party sources (generated HAL sources in
+<code class="docutils literal notranslate"><span class="pre">build/bin/src/hal/**</span></code> and <code class="docutils literal notranslate"><span class="pre">src/os</span></code>) should not be changed.
+To save without reformatting use <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">K</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">Ctrl</kbd>-<kbd class="kbd docutils literal notranslate">Shift</kbd>-<kbd class="kbd docutils literal notranslate">S</kbd></kbd>.</p>
+</div>
+<p>The following list shows more detailed rules for foxBMS 2.
+Every rule has some context and/or rationale and notes that clearly state the
+rules, followed by a correct examples.
+If it supports the clarification incorrect examples may also be shown.</p>
+<p>The following rules generally apply and follow the naming pattern
+<code class="docutils literal notranslate"><span class="pre">C:&lt;ongoing-number&gt;</span></code>.</p>
+<div class="section" id="filenames-c-001">
+<span id="rule-c-filenames"></span><h2><span class="section-number">2.2.1. </span>Filenames (<code class="docutils literal notranslate"><span class="pre">C:001</span></code>)<a class="headerlink" href="#filenames-c-001" title="Permalink to this headline"></a></h2>
+<p>Additional to the general file naming rules the following <strong>MUST</strong> be applied.</p>
+<div class="admonition-file-name-rules admonition">
+<p class="admonition-title">File name rules</p>
+<ul class="simple">
+<li><p>The general file naming rules <strong>MUST</strong> be applied (see
+<a class="reference internal" href="guidelines_general.html#rule-general-filenames"><span class="std std-numref">Section 2.1.1</span></a>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">Assembler</span></code> source files <strong>MUST</strong> use <code class="docutils literal notranslate"><span class="pre">.asm</span></code> as file extension.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">C</span></code> source files <strong>MUST</strong> use <code class="docutils literal notranslate"><span class="pre">.c</span></code> as file extension.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">C</span></code> header files <strong>MUST</strong> use <code class="docutils literal notranslate"><span class="pre">.h</span></code> as file extension.</p></li>
+<li><p>Software functionalities (e.g., low level driver, algorithms, etc…)
+should be split in configuration files and the actual implementation.
+These configuration files <strong>MUST</strong> end with <code class="docutils literal notranslate"><span class="pre">_cfg.c</span></code> or <code class="docutils literal notranslate"><span class="pre">_cfg.h</span></code>
+respectively.</p></li>
+</ul>
+</div>
+<p>For example the valid file names for an implementation of <code class="docutils literal notranslate"><span class="pre">driver</span></code>, that is
+split into a driver and a configuration part, is:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">driver.c</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">driver.h</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">driver_cfg.c</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">driver_cfg.h</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="header-c-002">
+<span id="rule-c-header"></span><h2><span class="section-number">2.2.2. </span>Header (<code class="docutils literal notranslate"><span class="pre">C:002</span></code>)<a class="headerlink" href="#header-c-002" title="Permalink to this headline"></a></h2>
+<div class="admonition-c-file-header admonition">
+<p class="admonition-title">C file header</p>
+<blockquote>
+<div><p>C source and header files <strong>MUST</strong> start with the following header:</p>
+</div></blockquote>
+<div class="literal-block-wrapper docutils container" id="file-header-c-and-h">
+<div class="code-block-caption"><span class="caption-number">Listing 2.1 </span><span class="caption-text">File header for all <code class="docutils literal notranslate"><span class="pre">.c</span></code> and <code class="docutils literal notranslate"><span class="pre">.h</span></code> files.</span><a class="headerlink" href="#file-header-c-and-h" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> *</span>
+<span class="linenos"> 3</span><span class="cm"> * @copyright &amp;copy; 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V.</span>
+<span class="linenos"> 4</span><span class="cm"> * All rights reserved.</span>
+<span class="linenos"> 5</span><span class="cm"> *</span>
+<span class="linenos"> 6</span><span class="cm"> * SPDX-License-Identifier: BSD-3-Clause</span>
+<span class="linenos"> 7</span><span class="cm"> *</span>
+<span class="linenos"> 8</span><span class="cm"> * Redistribution and use in source and binary forms, with or without</span>
+<span class="linenos"> 9</span><span class="cm"> * modification, are permitted provided that the following conditions are met:</span>
+<span class="linenos">10</span><span class="cm"> *</span>
+<span class="linenos">11</span><span class="cm"> * 1. Redistributions of source code must retain the above copyright notice, this</span>
+<span class="linenos">12</span><span class="cm"> *    list of conditions and the following disclaimer.</span>
+<span class="linenos">13</span><span class="cm"> *</span>
+<span class="linenos">14</span><span class="cm"> * 2. Redistributions in binary form must reproduce the above copyright notice,</span>
+<span class="linenos">15</span><span class="cm"> *    this list of conditions and the following disclaimer in the documentation</span>
+<span class="linenos">16</span><span class="cm"> *    and/or other materials provided with the distribution.</span>
+<span class="linenos">17</span><span class="cm"> *</span>
+<span class="linenos">18</span><span class="cm"> * 3. Neither the name of the copyright holder nor the names of its</span>
+<span class="linenos">19</span><span class="cm"> *    contributors may be used to endorse or promote products derived from</span>
+<span class="linenos">20</span><span class="cm"> *    this software without specific prior written permission.</span>
+<span class="linenos">21</span><span class="cm"> *</span>
+<span class="linenos">22</span><span class="cm"> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</span>
+<span class="linenos">23</span><span class="cm"> * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span>
+<span class="linenos">24</span><span class="cm"> * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE</span>
+<span class="linenos">25</span><span class="cm"> * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE</span>
+<span class="linenos">26</span><span class="cm"> * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL</span>
+<span class="linenos">27</span><span class="cm"> * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR</span>
+<span class="linenos">28</span><span class="cm"> * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER</span>
+<span class="linenos">29</span><span class="cm"> * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,</span>
+<span class="linenos">30</span><span class="cm"> * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</span>
+<span class="linenos">31</span><span class="cm"> * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="linenos">32</span><span class="cm"> *</span>
+<span class="linenos">33</span><span class="cm"> * We kindly request you to use one or more of the following phrases to refer to</span>
+<span class="linenos">34</span><span class="cm"> * foxBMS in your hardware, software, documentation or advertising materials:</span>
+<span class="linenos">35</span><span class="cm"> *</span>
+<span class="linenos">36</span><span class="cm"> * - &amp;Prime;This product uses parts of foxBMS&amp;reg;&amp;Prime;</span>
+<span class="linenos">37</span><span class="cm"> * - &amp;Prime;This product includes parts of foxBMS&amp;reg;&amp;Prime;</span>
+<span class="linenos">38</span><span class="cm"> * - &amp;Prime;This product is derived from foxBMS&amp;reg;&amp;Prime;</span>
+<span class="linenos">39</span><span class="cm"> *</span>
+<span class="linenos">40</span><span class="cm"> */</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="linelength-c-003">
+<span id="rule-c-linelength"></span><h2><span class="section-number">2.2.3. </span>Linelength (<code class="docutils literal notranslate"><span class="pre">C:003</span></code>)<a class="headerlink" href="#linelength-c-003" title="Permalink to this headline"></a></h2>
+<div class="admonition-linelength-rules admonition">
+<p class="admonition-title">Linelength rules</p>
+<ul class="simple">
+<li><p>Each line of text in your code <strong>SHOULD</strong> be at most 120 characters
+long. A line <strong>MAY</strong> exceed 120 characters if it is</p>
+<ul>
+<li><p>a comment line which is not feasible to split without harming
+readability, ease of cut and paste or auto-linking, e.g., if a line
+contains an example command or a literal URL longer than 120 characters
+or</p></li>
+<li><p>raw-string literal with content that exceeds 120 characters.
+Except for test code, such literals should appear near the top of a
+file.</p></li>
+</ul>
+</li>
+<li><p>Each line of doxygen comment in your code <strong>SHOULD</strong> be at most 80
+characters long.
+A line <strong>MAY</strong> exceed 80 characters if it is</p>
+<ul>
+<li><p>a comment line which is not feasible to split without harming
+readability, auto-linking, e.g., a literal URL longer than 80 characters
+or</p></li>
+<li><p>a raw-string literal with content that exceeds 80 characters.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="file-level-doxygen-c-004">
+<span id="rule-c-file-level-doxygen"></span><h2><span class="section-number">2.2.4. </span>File level doxygen (<code class="docutils literal notranslate"><span class="pre">C:004</span></code>)<a class="headerlink" href="#file-level-doxygen-c-004" title="Permalink to this headline"></a></h2>
+<p><a class="reference external" href="https://www.doxygen.nl/">Doxygen</a> is used to create an API documentation.</p>
+<div class="admonition-file-level-doxygen-rule admonition">
+<p class="admonition-title">File level doxygen rule</p>
+<ul class="simple">
+<li><p>Every file <strong>MUST</strong> be documented with doxygen style comments in order to
+be properly processed by doxygen.</p></li>
+<li><p>The file level doxygen <strong>MUST</strong> come after the license header separated
+by a blank line.</p></li>
+<li><p>The following doxygen parameters <strong>MUST</strong> be included in every file:
+<code class="docutils literal notranslate"><span class="pre">&#64;file</span></code>, <code class="docutils literal notranslate"><span class="pre">&#64;author</span></code>, <code class="docutils literal notranslate"><span class="pre">&#64;date</span></code>, <code class="docutils literal notranslate"><span class="pre">&#64;updated</span></code>, <code class="docutils literal notranslate"><span class="pre">&#64;ingroup</span></code>,
+<code class="docutils literal notranslate"><span class="pre">&#64;prefix</span></code>, <code class="docutils literal notranslate"><span class="pre">&#64;brief</span></code>, <code class="docutils literal notranslate"><span class="pre">&#64;details</span></code></p></li>
+<li><p>All doxygen parameter arguments <strong>MUST</strong> be whitespace aligned.</p></li>
+<li><p>After <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span></code>, <code class="docutils literal notranslate"><span class="pre">&#64;brief</span></code> and <code class="docutils literal notranslate"><span class="pre">&#64;details</span></code> there <strong>MUST</strong> be an blank
+line.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span></code> argument <strong>MUST</strong> use between two and five
+uppercase alphanumericals starting with an uppercase character.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span></code> argument <strong>MAY</strong> use abbreviations.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span></code> and <code class="docutils literal notranslate"><span class="pre">&#64;ingroup</span></code> arguments <strong>MUST</strong> use alphanumeric
+uppercase characters including underscores.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">&#64;date</span></code> argument <strong>MUST</strong> be an ISO 8601 date followed by
+<code class="docutils literal notranslate"><span class="pre">(date</span> <span class="pre">of</span> <span class="pre">creation)</span></code>.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">&#64;updated</span></code> argument <strong>MUST</strong> be an ISO 8601 date followed by
+<code class="docutils literal notranslate"><span class="pre">(date</span> <span class="pre">of</span> <span class="pre">last</span> <span class="pre">update)</span></code>.</p></li>
+</ul>
+</div>
+<p><a class="reference internal" href="#doxygen-test-c"><span class="std std-numref">Listing 2.2</span></a> shows how this looks for a file <code class="docutils literal notranslate"><span class="pre">c-004.c</span></code>.</p>
+<div class="literal-block-wrapper docutils container" id="doxygen-test-c">
+<div class="code-block-caption"><span class="caption-number">Listing 2.2 </span><span class="caption-text">File level doxygen for c-004.c</span><a class="headerlink" href="#doxygen-test-c" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="hll"><span class="linenos"> 2</span><span class="cm"> * @file    c-004.c</span>
+</span><span class="hll"><span class="linenos"> 3</span><span class="cm"> * @author  foxBMS Team</span>
+</span><span class="hll"><span class="linenos"> 4</span><span class="cm"> * @date    2021-06-04 (date of creation)</span>
+</span><span class="hll"><span class="linenos"> 5</span><span class="cm"> * @updated 2023-02-03 (date of last update)</span>
+</span><span class="hll"><span class="linenos"> 6</span><span class="cm"> * @version v1.5.0</span>
+</span><span class="hll"><span class="linenos"> 7</span><span class="cm"> * @ingroup GUIDELINES</span>
+</span><span class="hll"><span class="linenos"> 8</span><span class="cm"> * @prefix  NONE</span>
+</span><span class="linenos"> 9</span><span class="cm"> *</span>
+<span class="hll"><span class="linenos">10</span><span class="cm"> * @brief   Example code to show the application of the C coding guidelines</span>
+</span><span class="hll"><span class="linenos">11</span><span class="cm"> * @details This code implements an example for C:004</span>
+</span><span class="linenos">12</span><span class="cm"> *</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="include-guard-c-005">
+<span id="rule-c-include-guard"></span><h2><span class="section-number">2.2.5. </span>Include guard (<code class="docutils literal notranslate"><span class="pre">C:005</span></code>)<a class="headerlink" href="#include-guard-c-005" title="Permalink to this headline"></a></h2>
+<p>An include guard is a construct used in <code class="docutils literal notranslate"><span class="pre">C</span></code> to avoid the problem
+of multiple inclusion when dealing with the include directive.</p>
+<div class="admonition-include-guard-rules admonition">
+<p class="admonition-title">Include guard rules</p>
+<ul class="simple">
+<li><p>All header files <strong>MUST</strong> implement include guards to prevent multiple
+inclusions.</p></li>
+<li><p>The include guard <strong>MUST</strong> come right after the file level doxygen
+comment.</p></li>
+<li><p>The format of the include guard <strong>MUST</strong> consist of the prefix
+<code class="docutils literal notranslate"><span class="pre">FOXBMS__</span></code>, followed by the  file name in uppercase and then followed
+by <code class="docutils literal notranslate"><span class="pre">_H_</span></code>.</p></li>
+<li><p>There <strong>MUST NOT</strong> be a blank line between <code class="docutils literal notranslate"><span class="pre">#ifndef</span></code> and <code class="docutils literal notranslate"><span class="pre">#define</span></code>.</p></li>
+<li><p>There <strong>MUST</strong> be a blank line after <code class="docutils literal notranslate"><span class="pre">#define</span></code>.</p></li>
+</ul>
+</div>
+<p><a class="reference internal" href="#include-guard-c-005-h"><span class="std std-numref">Listing 2.3</span></a> shows how this looks for a file <code class="docutils literal notranslate"><span class="pre">c-005.h</span></code>,
+where the include guard would be <code class="docutils literal notranslate"><span class="pre">FOXBMS__C_005_H_</span></code>.</p>
+<div class="literal-block-wrapper docutils container" id="include-guard-c-005-h">
+<div class="code-block-caption"><span class="caption-number">Listing 2.3 </span><span class="caption-text">Include guard for <code class="docutils literal notranslate"><span class="pre">c-005.h</span></code></span><a class="headerlink" href="#include-guard-c-005-h" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos">1</span><span class="cp">#ifndef FOXBMS__C_005_H_</span>
+</span><span class="hll"><span class="linenos">2</span><span class="cp">#define FOXBMS__C_005_H_</span>
+</span><span class="hll"><span class="linenos">3</span><span class="cp">#endif </span><span class="cm">/* FOXBMS__C_005_H_ */</span><span class="cp"></span>
+</span></pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="c-sections-c-006">
+<span id="rule-c-sections"></span><h2><span class="section-number">2.2.6. </span>C Sections (<code class="docutils literal notranslate"><span class="pre">C:006</span></code>)<a class="headerlink" href="#c-sections-c-006" title="Permalink to this headline"></a></h2>
+<div class="admonition-c-sections admonition">
+<p class="admonition-title">C sections</p>
+<p>Every .c and .h file <strong>MUST</strong> contain all specific section comments in the
+correct order.
+There are different section comments for sources and headers for source
+files (files in <code class="docutils literal notranslate"><span class="pre">src/**</span></code>) and test files (files in <code class="docutils literal notranslate"><span class="pre">tests/unit/**</span></code>).</p>
+</div>
+<p><a class="reference internal" href="#c-section-header"><span class="std std-numref">Listing 2.4</span></a> shows how this looks for a file <code class="docutils literal notranslate"><span class="pre">c-006-source.h</span></code>.</p>
+<div class="literal-block-wrapper docutils container" id="c-section-header">
+<div class="code-block-caption"><span class="caption-number">Listing 2.4 </span><span class="caption-text">section markers for <code class="docutils literal notranslate"><span class="pre">c-006-source.h</span></code></span><a class="headerlink" href="#c-section-header" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos">1</span><span class="cm">/*========== Includes =======================================================*/</span><span class="w"></span>
+</span><span class="linenos">2</span>
+<span class="hll"><span class="linenos">3</span><span class="cm">/*========== Macros and Definitions =========================================*/</span><span class="w"></span>
+</span><span class="linenos">4</span>
+<span class="hll"><span class="linenos">5</span><span class="cm">/*========== Extern Constant and Variable Declarations ======================*/</span><span class="w"></span>
+</span><span class="linenos">6</span>
+<span class="hll"><span class="linenos">7</span><span class="cm">/*========== Extern Function Prototypes =====================================*/</span><span class="w"></span>
+</span><span class="linenos">8</span>
+<span class="hll"><span class="linenos">9</span><span class="cm">/*========== Externalized Static Functions Prototypes (Unit Test) ===========*/</span><span class="w"></span>
+</span></pre></div>
+</div>
+</div>
+<p><a class="reference internal" href="#c-section-source"><span class="std std-numref">Listing 2.5</span></a> shows how this looks for a file <code class="docutils literal notranslate"><span class="pre">c-006-source.c</span></code>.</p>
+<div class="literal-block-wrapper docutils container" id="c-section-source">
+<div class="code-block-caption"><span class="caption-number">Listing 2.5 </span><span class="caption-text">section markers for <code class="docutils literal notranslate"><span class="pre">c-006-source.c</span></code></span><a class="headerlink" href="#c-section-source" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos"> 1</span><span class="cm">/*========== Static Constant and Variable Definitions =======================*/</span><span class="w"></span>
+</span><span class="linenos"> 2</span>
+<span class="hll"><span class="linenos"> 3</span><span class="cm">/*========== Extern Constant and Variable Definitions =======================*/</span><span class="w"></span>
+</span><span class="linenos"> 4</span>
+<span class="hll"><span class="linenos"> 5</span><span class="cm">/*========== Static Function Prototypes =====================================*/</span><span class="w"></span>
+</span><span class="linenos"> 6</span>
+<span class="hll"><span class="linenos"> 7</span><span class="cm">/*========== Static Function Implementations ================================*/</span><span class="w"></span>
+</span><span class="linenos"> 8</span>
+<span class="hll"><span class="linenos"> 9</span><span class="cm">/*========== Extern Function Implementations ================================*/</span><span class="w"></span>
+</span><span class="linenos">10</span>
+<span class="hll"><span class="linenos">11</span><span class="cm">/*========== Externalized Static Function Implementations (Unit Test) =======*/</span><span class="w"></span>
+</span></pre></div>
+</div>
+</div>
+<p><a class="reference internal" href="#c-section-test-header"><span class="std std-numref">Listing 2.6</span></a> shows how this looks for a file
+<code class="docutils literal notranslate"><span class="pre">./test/c-006-test.h</span></code>.</p>
+<div class="literal-block-wrapper docutils container" id="c-section-test-header">
+<div class="code-block-caption"><span class="caption-number">Listing 2.6 </span><span class="caption-text">section markers for <code class="docutils literal notranslate"><span class="pre">./test/c-006-test.h</span></code></span><a class="headerlink" href="#c-section-test-header" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos">1</span><span class="cm">/*========== Includes =======================================================*/</span><span class="w"></span>
+</span><span class="linenos">2</span>
+<span class="hll"><span class="linenos">3</span><span class="cm">/*========== Macros and Definitions =========================================*/</span><span class="w"></span>
+</span></pre></div>
+</div>
+</div>
+<p><a class="reference internal" href="#c-section-test-source"><span class="std std-numref">Listing 2.7</span></a> shows how this looks for a file
+<code class="docutils literal notranslate"><span class="pre">./test/c-006-test.c</span></code>.</p>
+<div class="literal-block-wrapper docutils container" id="c-section-test-source">
+<div class="code-block-caption"><span class="caption-number">Listing 2.7 </span><span class="caption-text">section markers for <code class="docutils literal notranslate"><span class="pre">./test/c-006-test.c</span></code></span><a class="headerlink" href="#c-section-test-source" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="hll"><span class="linenos">1</span><span class="cm">/*========== Includes =======================================================*/</span><span class="w"></span>
+</span><span class="linenos">2</span>
+<span class="hll"><span class="linenos">3</span><span class="cm">/*========== Definitions and Implementations for Unit Test ==================*/</span><span class="w"></span>
+</span><span class="linenos">4</span>
+<span class="hll"><span class="linenos">5</span><span class="cm">/*========== Setup and Teardown =============================================*/</span><span class="w"></span>
+</span><span class="linenos">6</span>
+<span class="hll"><span class="linenos">7</span><span class="cm">/*========== Test Cases =====================================================*/</span><span class="w"></span>
+</span></pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="includes-c-007">
+<span id="rule-c-includes"></span><h2><span class="section-number">2.2.7. </span>Includes (<code class="docutils literal notranslate"><span class="pre">C:007</span></code>)<a class="headerlink" href="#includes-c-007" title="Permalink to this headline"></a></h2>
+<p>Includes are used to insert the contents of a second file into the
+original file.
+There are two scenarios to be considered for file includes.
+They distinguish if the software module provides configuration files or not.</p>
+<div class="admonition-include-rules admonition">
+<p class="admonition-title">Include rules</p>
+<ul>
+<li><p>All includes <strong>MUST</strong> be listed after the <code class="docutils literal notranslate"><span class="pre">includes</span></code> marker.</p></li>
+<li><p>foxBMS 2 uses the
+<a class="reference external" href="https://include-what-you-use.org/">include-what-you-use</a> paradigm.</p></li>
+<li><p>Only required includes <strong>MUST</strong> be added.</p></li>
+<li><p>Forward declarations <strong>MUST NOT</strong> be used.
+Instead, you <strong>MUST</strong> <code class="docutils literal notranslate"><span class="pre">#include</span></code> all the headers that declare
+functions, types etc. you need.</p></li>
+<li><p>Configuration header files <strong>MUST</strong> apply the following order of
+includes:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Include <code class="docutils literal notranslate"><span class="pre">general.h</span></code>, if needed</p></li>
+<li><p>A blank line</p></li>
+<li><p>Add required includes in alphabetical order according to rule</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Other header files <strong>MUST</strong> apply the following order of includes:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Include <code class="docutils literal notranslate"><span class="pre">general.h</span></code>, if needed</p></li>
+<li><p>Include corresponding configuration header if it exists</p></li>
+<li><p>A blank line</p></li>
+<li><p>Add required includes in alphabetical order according to rule</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>Source files <strong>MUST</strong> apply the following order or includes:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p>Include corresponding header file</p></li>
+<li><p>A blank line</p></li>
+<li><p>Add required includes in alphabetical order according to rule</p></li>
+</ol>
+</div></blockquote>
+</li>
+<li><p>The rule for sorting required includes is (omit block if empty):</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">unity.h</span></code> (<strong>for unit tests only</strong>)</p></li>
+<li><p>A blank line</p></li>
+<li><p>Generated Mock-header (<strong>for unit tests only</strong>)</p></li>
+<li><p>A blank line</p></li>
+<li><p>Any <code class="docutils literal notranslate"><span class="pre">*_cfg.h</span></code> that is included</p></li>
+<li><p>A blank line</p></li>
+<li><p>HAL-headers starting with <code class="docutils literal notranslate"><span class="pre">HL_</span></code>-header files and ending with
+<code class="docutils literal notranslate"><span class="pre">ti_</span></code>-header files</p></li>
+<li><p>A blank line</p></li>
+<li><p>FreeRTOS headers starting with <code class="docutils literal notranslate"><span class="pre">FreeRTOS.h</span></code></p></li>
+<li><p>A blank line</p></li>
+<li><p>All other required headers except Mocks</p></li>
+</ol>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<p><a class="reference internal" href="#includes-c-007-abc-cfg-h"><span class="std std-numref">Listing 2.8</span></a>, <a class="reference internal" href="#includes-c-007-abc-cfg-c"><span class="std std-numref">Listing 2.9</span></a>,
+<a class="reference internal" href="#includes-c-007-abc-h"><span class="std std-numref">Listing 2.10</span></a> and <a class="reference internal" href="#includes-c-007-abc-c"><span class="std std-numref">Listing 2.11</span></a> show how
+includes <strong>MUST</strong> be added.</p>
+<div class="literal-block-wrapper docutils container" id="includes-c-007-abc-cfg-h">
+<div class="code-block-caption"><span class="caption-number">Listing 2.8 </span><span class="caption-text">Include order for <code class="docutils literal notranslate"><span class="pre">c-007_abc_cfg.h</span></code></span><a class="headerlink" href="#includes-c-007-abc-cfg-h" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;required_additional_header.h&quot;</span><span class="cp"></span>
+<span class="linenos">2</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;required_additional_header2.h&quot;</span><span class="cp"></span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="includes-c-007-abc-cfg-c">
+<div class="code-block-caption"><span class="caption-number">Listing 2.9 </span><span class="caption-text">Include order for <code class="docutils literal notranslate"><span class="pre">c-007_abc_cfg.c</span></code></span><a class="headerlink" href="#includes-c-007-abc-cfg-c" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;c-007_abc_cfg.h&quot;</span><span class="cp"></span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;some_other_required_header.h&quot;</span><span class="cp"></span>
+<span class="linenos">4</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;some_other_required_header2.h&quot;</span><span class="cp"></span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="includes-c-007-abc-h">
+<div class="code-block-caption"><span class="caption-number">Listing 2.10 </span><span class="caption-text">Include oder for <code class="docutils literal notranslate"><span class="pre">c-007_abc.h</span></code></span><a class="headerlink" href="#includes-c-007-abc-h" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;c-007_abc_cfg.h&quot;</span><span class="cp"></span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;required_different_header.h&quot;</span><span class="cp"></span>
+<span class="linenos">4</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;required_very_different_header.h&quot;</span><span class="cp"></span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="includes-c-007-abc-c">
+<div class="code-block-caption"><span class="caption-number">Listing 2.11 </span><span class="caption-text">Include order for <code class="docutils literal notranslate"><span class="pre">c-007_abc.c</span></code></span><a class="headerlink" href="#includes-c-007-abc-c" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;c-007_abc.h&quot;</span><span class="cp"></span>
+<span class="linenos">2</span>
+<span class="linenos">3</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;FreeRTOS.h&quot;</span><span class="cp"></span>
+<span class="linenos">4</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;queue.h&quot;</span><span class="cp"></span>
+<span class="linenos">5</span>
+<span class="linenos">6</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;first_used_header_1.h&quot;</span><span class="cp"></span>
+<span class="linenos">7</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;second_used_header.h&quot;</span><span class="cp"></span>
+<span class="linenos">8</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;xyz.h&quot;</span><span class="cp"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="scoping-c-008">
+<span id="rule-c-scoping"></span><h2><span class="section-number">2.2.8. </span>Scoping (<code class="docutils literal notranslate"><span class="pre">C:008</span></code>)<a class="headerlink" href="#scoping-c-008" title="Permalink to this headline"></a></h2>
+<div class="admonition-scope-rules admonition">
+<p class="admonition-title">Scope rules</p>
+<ul>
+<li><p>All functions, variables, typedefs, macros etc. <strong>MUST</strong> be declared in
+the narrowest scope possible (function, file, global).</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>If a function, macro, typedef or variable is used by multiple
+files/modules, declare it public.</p></li>
+<li><p>If a function, macro, typedef or variable is only used within a file,
+declare it static.</p></li>
+<li><p>If a variable is only used within a function, declare it inside the
+function.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<div class="literal-block-wrapper docutils container" id="narrowest-variable-scope">
+<div class="code-block-caption"><span class="caption-number">Listing 2.12 </span><span class="caption-text">Narrowest variable scope</span><a class="headerlink" href="#narrowest-variable-scope" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">static</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">abc_staticVariable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="cm">/*!&lt; File static variable that is used within multiple functions */</span><span class="w"></span>
+<span class="linenos"> 2</span>
+<span class="linenos"> 3</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">abc_globalVariable</span><span class="p">;</span><span class="w"> </span><span class="cm">/*!&lt; Important global variable that is used by multiple files/modules */</span><span class="w"></span>
+<span class="linenos"> 4</span>
+<span class="linenos"> 5</span><span class="cm">/**</span>
+<span class="linenos"> 6</span><span class="cm"> * @brief   Function to do important stuff in this file/module.</span>
+<span class="linenos"> 7</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos"> 8</span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_StaticImportantFunction</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 9</span>
+<span class="linenos">10</span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_StaticImportantFunction</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">11</span><span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">temporaryVariable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="cm">/* Temporary variable to do calculations in this function */</span><span class="w"></span>
+<span class="linenos">12</span><span class="p">}</span><span class="w"></span>
+<span class="linenos">13</span>
+<span class="linenos">14</span><span class="k">extern</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_GlobalImportantFunction</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">15</span><span class="w">    </span><span class="cm">/* some code */</span><span class="w"></span>
+<span class="linenos">16</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="function-names-c-009">
+<span id="rule-c-function-names"></span><h2><span class="section-number">2.2.9. </span>Function names (<code class="docutils literal notranslate"><span class="pre">C:009</span></code>)<a class="headerlink" href="#function-names-c-009" title="Permalink to this headline"></a></h2>
+<div class="admonition-function-naming-rules admonition">
+<p class="admonition-title">Function naming rules</p>
+<ul class="simple">
+<li><p>Function names <strong>MUST</strong> start with the uppercase module prefix followed
+by a capital letter with capital letters for each new word (Pascal Case).</p></li>
+<li><p>The only exception are the <a class="reference internal" href="../../software/unit-tests/unit-tests.html#unit-tests"><span class="std std-ref">unit-test-functions</span></a> which
+start with <code class="docutils literal notranslate"><span class="pre">test</span></code> due to ceedling requiring it.</p></li>
+<li><p>Function names <strong>SHOULD</strong> start with a verb followed by a noun
+(<em>verb-noun</em> pattern).
+After the verb-noun pattern additional words <strong>MAY</strong> follow.</p></li>
+</ul>
+</div>
+<p><a class="reference internal" href="#function-names"><span class="std std-numref">Listing 2.13</span></a>, shows correctly named functions.</p>
+<div class="literal-block-wrapper docutils container" id="function-names">
+<div class="code-block-caption"><span class="caption-number">Listing 2.13 </span><span class="caption-text">Function names using the uppercase module prefix.</span><a class="headerlink" href="#function-names" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_ImportantFunction</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">2</span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_EvenMoreImportantFunction</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">3</span>
+<span class="linenos">4</span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_ImportantFunction</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">5</span><span class="p">}</span><span class="w"></span>
+<span class="linenos">6</span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_EvenMoreImportantFunction</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">7</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="function-scopes-c-010">
+<span id="rule-c-function-scopes"></span><h2><span class="section-number">2.2.10. </span>Function scopes (<code class="docutils literal notranslate"><span class="pre">C:010</span></code>)<a class="headerlink" href="#function-scopes-c-010" title="Permalink to this headline"></a></h2>
+<div class="admonition-function-scope-rules admonition">
+<p class="admonition-title">Function scope rules</p>
+<ul class="simple">
+<li><p>Global and static functions <strong>MUST</strong> be declared respectively with the
+keywords <code class="docutils literal notranslate"><span class="pre">extern</span></code> or <code class="docutils literal notranslate"><span class="pre">static</span></code>.
+This keyword <strong>MUST</strong> be used for the function prototype declaration and
+the function definition.</p></li>
+<li><p>Global function prototypes <strong>MUST</strong> be declared in the header file.</p></li>
+<li><p>Static function prototypes <strong>MUST</strong> be declared in the source file.</p></li>
+</ul>
+</div>
+<p><a class="reference internal" href="#function-prototype-and-doxygen"><span class="std std-numref">Listing 2.14</span></a> and
+<a class="reference internal" href="#function-implementation-and-doxygen"><span class="std std-numref">Listing 2.15</span></a> show correctly declared and
+implemented functions on the header <code class="docutils literal notranslate"><span class="pre">abc.h</span></code> and respective source file
+<code class="docutils literal notranslate"><span class="pre">abc.c</span></code>.</p>
+</div>
+<div class="section" id="function-doxygen-documentation-c-011">
+<span id="rule-c-function-doxygen-documentation"></span><h2><span class="section-number">2.2.11. </span>Function doxygen documentation (<code class="docutils literal notranslate"><span class="pre">C:011</span></code>)<a class="headerlink" href="#function-doxygen-documentation-c-011" title="Permalink to this headline"></a></h2>
+<div class="admonition-function-scope-rules admonition">
+<p class="admonition-title">Function scope rules</p>
+<ul class="simple">
+<li><p>The doxygen documentation describing each function <strong>MUST</strong> be placed
+above the prototype declaration.</p></li>
+<li><p>All function prototype declarations and function implementations <strong>MUST</strong>
+be placed in the correct sections in the source/header files.</p></li>
+<li><p>The following doxygen parameters <strong>MUST</strong> be documented for every
+function: <code class="docutils literal notranslate"><span class="pre">&#64;brief</span></code> and <code class="docutils literal notranslate"><span class="pre">&#64;details</span></code>.</p></li>
+<li><p>Doxygen parameter <code class="docutils literal notranslate"><span class="pre">&#64;return</span></code> <strong>MUST</strong> be documented if the return type
+is not of type <code class="docutils literal notranslate"><span class="pre">void</span></code>.</p></li>
+<li><p>Function arguments <strong>MUST</strong> be documented using the doxygen parameter
+<code class="docutils literal notranslate"><span class="pre">&#64;param</span></code>.</p></li>
+<li><p>If a function argument is a pointer, the data flow direction (indicating
+if the pointer is used as input, output or both) <strong>MUST</strong> be indicated
+with a suffixed <code class="docutils literal notranslate"><span class="pre">[in]</span></code>, <code class="docutils literal notranslate"><span class="pre">[out]</span></code> or <code class="docutils literal notranslate"><span class="pre">[in,out]</span></code> after the <code class="docutils literal notranslate"><span class="pre">&#64;param</span></code>
+tag.</p></li>
+<li><p>This practice <strong>MUST NOT</strong> be applied to normal parameters that are
+passed by value as they are implicitly assumed to be input.</p></li>
+<li><p>All doxygen parameter arguments <strong>MUST</strong> be whitespace aligned.</p></li>
+</ul>
+</div>
+<p><a class="reference internal" href="#function-prototype-and-doxygen"><span class="std std-numref">Listing 2.14</span></a> and
+<a class="reference internal" href="#function-implementation-and-doxygen"><span class="std std-numref">Listing 2.15</span></a> show doxygen documented functions
+in a header file <code class="docutils literal notranslate"><span class="pre">c-011.h</span></code> and source file <code class="docutils literal notranslate"><span class="pre">c-011.c</span></code>.</p>
+<div class="literal-block-wrapper docutils container" id="function-prototype-and-doxygen">
+<div class="code-block-caption"><span class="caption-number">Listing 2.14 </span><span class="caption-text">Global function declaration in <code class="docutils literal notranslate"><span class="pre">c-011.h</span></code> and its doxygen comment</span><a class="headerlink" href="#function-prototype-and-doxygen" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="cm">/**</span>
+<span class="linenos">2</span><span class="cm"> * @brief   Does this and that</span>
+<span class="linenos">3</span><span class="cm"> * @details Detailed description of this function</span>
+<span class="linenos">4</span><span class="cm"> * @param[out]  pPointer    important function writes to this pointer</span>
+<span class="linenos">5</span><span class="cm"> * @param       length      length that should be written to the pointer</span>
+<span class="linenos">6</span><span class="cm"> * @return  some uint8_t which describes xyz</span>
+<span class="linenos">7</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos">8</span><span class="k">extern</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="nf">ABC_ImportantFunction</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">pPointer</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">length</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="function-implementation-and-doxygen">
+<div class="code-block-caption"><span class="caption-number">Listing 2.15 </span><span class="caption-text">Static and global functions in <code class="docutils literal notranslate"><span class="pre">c-011.c</span></code> ant their doxygen
+comments</span><a class="headerlink" href="#function-implementation-and-doxygen" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * @brief   Does something</span>
+<span class="linenos"> 3</span><span class="cm"> * @details Detailed description of this function</span>
+<span class="linenos"> 4</span><span class="cm"> * @return  some uint8_t which describes xyz</span>
+<span class="linenos"> 5</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos"> 6</span><span class="k">static</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="nf">ABC_AnotherFunction</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="k">extern</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="nf">ABC_ImportantFunction</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">pPointer</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">length</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="w">    </span><span class="cm">/* some code */</span><span class="w"></span>
+<span class="linenos">10</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">11</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="function-return-statement-c-012">
+<span id="rule-c-function-return-value"></span><h2><span class="section-number">2.2.12. </span>Function return statement (<code class="docutils literal notranslate"><span class="pre">C:012</span></code>)<a class="headerlink" href="#function-return-statement-c-012" title="Permalink to this headline"></a></h2>
+<div class="admonition-return-statement-rules admonition">
+<p class="admonition-title">Return statement rules</p>
+<p>Parentheses surrounding the return expression <strong>SHOULD NOT</strong> be used.
+Use parentheses in return expressions only in places where you would use
+them in normal assignments.</p>
+</div>
+<p><a class="reference internal" href="#return-parentheses-usage"><span class="std std-numref">Listing 2.16</span></a> shows how to correctly use parentheses and
+the return statement.</p>
+<div class="literal-block-wrapper docutils container" id="return-parentheses-usage">
+<div class="code-block-caption"><span class="caption-number">Listing 2.16 </span><span class="caption-text">Correct usage of the <code class="docutils literal notranslate"><span class="pre">return</span></code> statement.</span><a class="headerlink" href="#return-parentheses-usage" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">static</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="nf">ABC_ReturnAbc</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 2</span><span class="w">    </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="hll"><span class="linenos"> 3</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span><span class="w"> </span><span class="cm">/* No parentheses in the simple case. */</span><span class="w"></span>
+</span><span class="linenos"> 4</span><span class="p">}</span><span class="w"></span>
+<span class="linenos"> 5</span><span class="k">static</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="nf">ABC_ReturnDef</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">another_condition</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">some_long_condition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 6</span><span class="w">    </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">result</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="hll"><span class="linenos"> 7</span><span class="w">    </span><span class="cm">/* Parentheses ok to make a complex expression more readable. */</span><span class="w"></span>
+</span><span class="hll"><span class="linenos"> 8</span><span class="w">    </span><span class="cm">/* clang-format off */</span><span class="w"></span>
+</span><span class="hll"><span class="linenos"> 9</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="p">(</span><span class="n">some_long_condition</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"></span>
+</span><span class="hll"><span class="linenos">10</span><span class="w">            </span><span class="n">another_condition</span><span class="p">);</span><span class="w"></span>
+</span><span class="hll"><span class="linenos">11</span><span class="w">    </span><span class="cm">/* clang-format on */</span><span class="w"></span>
+</span><span class="linenos">12</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="function-calls-c-013">
+<span id="rule-c-function-calls"></span><h2><span class="section-number">2.2.13. </span>Function calls (<code class="docutils literal notranslate"><span class="pre">C:013</span></code>)<a class="headerlink" href="#function-calls-c-013" title="Permalink to this headline"></a></h2>
+<div class="admonition-function-call-rules admonition">
+<p class="admonition-title">Function call rules</p>
+<ul>
+<li><p>Multiple arguments <strong>SHOULD</strong> be put on a single line to reduce the
+number of lines necessary for calling a function unless there is a
+specific readability problem.
+Some style guides require formatting strictly one argument on each line
+for simplifying editing the arguments.
+However, we prioritize readability over the ease of editing arguments,
+and most readability problems are better addressed with the following
+techniques.</p></li>
+<li><p>If the arguments do not all fit on one line, they <strong>MAY</strong> be broken up
+onto multiple lines, with each subsequent line aligned with the first
+argument.</p></li>
+<li><p>Arguments <strong>MAY</strong> also be placed on subsequent lines with an eight space
+indent.</p></li>
+<li><p>If having multiple arguments in a single line decreases readability due
+to the complexity or confusing nature of the expressions that make up
+some arguments, it is <strong>RECOMMENDED</strong> to</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>create variables that capture those arguments in a descriptive name,</p></li>
+<li><p>put the confusing argument on its own line with an explanatory
+comment.</p></li>
+<li><p>If there is still a case where one argument is significantly more
+readable on its own line, then put it on its own line.
+The decision should be specific to the argument which is made more
+readable rather than a general policy.</p></li>
+<li><p>Sometimes arguments form a structure that is important for
+readability.
+In those cases, it is <strong>RECOMMENDED</strong> to format the arguments
+according to that structure</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div>
+<p>Different correct ways to call functions with multiple parameters or long
+function names are given in <a class="reference internal" href="#function-call"><span class="std std-numref">Listing 2.17</span></a>.</p>
+<div class="literal-block-wrapper docutils container" id="function-call">
+<div class="code-block-caption"><span class="caption-number">Listing 2.17 </span><span class="caption-text">Correct formatting of function calls.</span><a class="headerlink" href="#function-call" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/* clang-format off */</span><span class="w"></span>
+<span class="linenos"> 2</span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_TransformMyWidget</span><span class="p">(</span><span class="w"></span>
+<span class="hll"><span class="linenos"> 3</span><span class="w">    </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">x1</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">x2</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">x3</span><span class="p">,</span><span class="w"></span>
+</span><span class="hll"><span class="linenos"> 4</span><span class="w">    </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">y1</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">y2</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">y3</span><span class="p">,</span><span class="w"></span>
+</span><span class="hll"><span class="linenos"> 5</span><span class="w">    </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">z1</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">z2</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">z3</span><span class="p">);</span><span class="w"></span>
+</span><span class="linenos"> 6</span><span class="cm">/* clang-format on */</span><span class="w"></span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="cm">/* clang-format off */</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_TransformMyWidget</span><span class="p">(</span><span class="w"></span>
+<span class="hll"><span class="linenos">10</span><span class="w">    </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">x1</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">x2</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">x3</span><span class="p">,</span><span class="w"></span>
+</span><span class="hll"><span class="linenos">11</span><span class="w">    </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">y1</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">y2</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">y3</span><span class="p">,</span><span class="w"></span>
+</span><span class="hll"><span class="linenos">12</span><span class="w">    </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">z1</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">z2</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">z3</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+</span><span class="linenos">13</span><span class="p">}</span><span class="w"></span>
+<span class="linenos">14</span><span class="cm">/* clang-format on */</span><span class="w"></span>
+<span class="linenos">15</span>
+<span class="linenos">16</span><span class="k">static</span><span class="w"> </span><span class="kt">int16_t</span><span class="w"> </span><span class="nf">ABC_DoSomething</span><span class="p">(</span><span class="kt">int16_t</span><span class="w"> </span><span class="n">var</span><span class="p">,</span><span class="w"> </span><span class="kt">int16_t</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int16_t</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="kt">int16_t</span><span class="w"> </span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">17</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">18</span><span class="p">}</span><span class="w"></span>
+<span class="linenos">19</span>
+<span class="linenos">20</span><span class="kt">int16_t</span><span class="w"> </span><span class="nf">ABC_SomeFunction</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">z</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">21</span><span class="w">    </span><span class="cm">/* use variable to capture value, before passing to function */</span><span class="w"></span>
+<span class="linenos">22</span><span class="w">    </span><span class="kt">int16_t</span><span class="w"> </span><span class="n">myHeuristic</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">scores</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">bases</span><span class="p">[</span><span class="n">x</span><span class="p">];</span><span class="w"></span>
+<span class="linenos">23</span><span class="w">    </span><span class="kt">int16_t</span><span class="w"> </span><span class="n">result</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="n">ABC_DoSomething</span><span class="p">(</span><span class="n">myHeuristic</span><span class="p">,</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="n">y</span><span class="p">,</span><span class="w"> </span><span class="n">z</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">24</span>
+<span class="linenos">25</span><span class="w">    </span><span class="cm">/* place confusing argument on own commented line and all other parameters</span>
+<span class="linenos">26</span><span class="cm">       also on an own line */</span><span class="w"></span>
+<span class="hll"><span class="linenos">27</span><span class="w">    </span><span class="n">result</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">ABC_DoSomething</span><span class="p">(</span><span class="w"></span>
+</span><span class="hll"><span class="linenos">28</span><span class="w">        </span><span class="n">scores</span><span class="p">[</span><span class="n">x</span><span class="p">]</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">bases</span><span class="p">[</span><span class="n">x</span><span class="p">],</span><span class="w"> </span><span class="cm">/* Score heuristic. */</span><span class="w"></span>
+</span><span class="hll"><span class="linenos">29</span><span class="w">        </span><span class="n">x</span><span class="p">,</span><span class="w"></span>
+</span><span class="hll"><span class="linenos">30</span><span class="w">        </span><span class="n">y</span><span class="p">,</span><span class="w"></span>
+</span><span class="hll"><span class="linenos">31</span><span class="w">        </span><span class="n">z</span><span class="p">);</span><span class="w"></span>
+</span><span class="linenos">32</span>
+<span class="linenos">33</span><span class="w">    </span><span class="cm">/* Its a matrix, and therefore it makes sense to format the arguments as a matrix */</span><span class="w"></span>
+<span class="linenos">34</span><span class="w">    </span><span class="cm">/* clang-format off */</span><span class="w"></span>
+<span class="hll"><span class="linenos">35</span><span class="w">    </span><span class="n">ABC_TransformMyWidget</span><span class="p">(</span><span class="n">x1</span><span class="p">,</span><span class="w"> </span><span class="n">x2</span><span class="p">,</span><span class="w"> </span><span class="n">x3</span><span class="p">,</span><span class="w"></span>
+</span><span class="hll"><span class="linenos">36</span><span class="w">                          </span><span class="n">y1</span><span class="p">,</span><span class="w"> </span><span class="n">y2</span><span class="p">,</span><span class="w"> </span><span class="n">y3</span><span class="p">,</span><span class="w"></span>
+</span><span class="hll"><span class="linenos">37</span><span class="w">                          </span><span class="n">z1</span><span class="p">,</span><span class="w"> </span><span class="n">z2</span><span class="p">,</span><span class="w"> </span><span class="n">z3</span><span class="p">);</span><span class="w"></span>
+</span><span class="linenos">38</span><span class="w">    </span><span class="cm">/* clang-format on */</span><span class="w"></span>
+<span class="linenos">39</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">result</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">40</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="additional-function-rules-c-014">
+<span id="rule-c-additional-function-rules"></span><h2><span class="section-number">2.2.14. </span>Additional function rules (<code class="docutils literal notranslate"><span class="pre">C:014</span></code>)<a class="headerlink" href="#additional-function-rules-c-014" title="Permalink to this headline"></a></h2>
+<p>Most of the following rules are checked by the clang-format configuration of
+the project.
+If a rule is not checked automatically it is indicated.</p>
+<div class="admonition-additional-function-rules admonition">
+<p class="admonition-title">Additional Function rules</p>
+<ul class="simple">
+<li><p>The open parenthesis <strong>MUST</strong> be on the same line as the function name.</p></li>
+<li><p>There <strong>MUST NOT</strong> be a space between the function name and the open
+parenthesis.</p></li>
+<li><p>There <strong>MUST NOT</strong> be a space between the parentheses and the parameters.</p></li>
+<li><p>The open curly brace <strong>MUST</strong> be on the end of the last line of the
+function declaration, not the start of the next line.</p></li>
+<li><p>The close curly brace <strong>MUST</strong> be either on the last line by itself or on
+the same line as the open curly brace.</p></li>
+<li><p>There <strong>MUST</strong> be a space between the close parenthesis and the open
+curly brace.</p></li>
+<li><p>Spaces after the open or before the close parenthesis <strong>MUST NOT</strong> be
+added.</p></li>
+<li><p>All parameters <strong>SHOULD</strong> be aligned if possible.</p></li>
+<li><p>If you cannot fit the return type and the function name on a single line,
+you <strong>MUST</strong> break between them.</p></li>
+<li><p>If you break after the return type of a function declaration or
+definition, you <strong>MUST</strong> not indent.</p></li>
+<li><p>You <strong>SHOULD</strong> use describing parameter names. (Not checked by
+clang-format)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="function-parameter-checking-c-015">
+<span id="rule-c-function-parameter-checking"></span><h2><span class="section-number">2.2.15. </span>Function parameter checking (<code class="docutils literal notranslate"><span class="pre">C:015</span></code>)<a class="headerlink" href="#function-parameter-checking-c-015" title="Permalink to this headline"></a></h2>
+<div class="admonition-function-parameter-checking admonition">
+<p class="admonition-title">Function parameter checking</p>
+<ul class="simple">
+<li><p>Input values of function parameters <strong>SHOULD</strong> be checked at the
+beginning of a function if possible.</p></li>
+<li><p>Pointers passed as parameters <strong>MUST</strong> be checked against <code class="docutils literal notranslate"><span class="pre">NULL_PTR</span></code>.</p></li>
+<li><p>The check <strong>SHOULD</strong> be implemented with an assertion.</p></li>
+<li><p>If no assertion can be made for the parameter (e.g., if the parameter
+intentionally accepts all possible values), the parameter <strong>MUST</strong> be
+marked like this at the start of the function context:
+<code class="docutils literal notranslate"><span class="pre">/*</span> <span class="pre">AXIVION</span> <span class="pre">Routine</span> <span class="pre">Generic-MissingParameterAssert:</span> <span class="pre">*ENTITYNAME*:</span> <span class="pre">*RATIONALE*</span> <span class="pre">*/</span></code>.</p></li>
+</ul>
+</div>
+<p>Parameter checking is shown in <a class="reference internal" href="#function-input-check"><span class="std std-numref">Listing 2.18</span></a>.</p>
+<div class="literal-block-wrapper docutils container" id="function-input-check">
+<div class="code-block-caption"><span class="caption-number">Listing 2.18 </span><span class="caption-text">Input check of function parameters</span><a class="headerlink" href="#function-input-check" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">extern</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="nf">ABC_ArrayAverage</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="o">*</span><span class="n">pArray</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">arrayLength</span><span class="p">,</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">additionalParameter</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="hll"><span class="linenos"> 2</span><span class="w">    </span><span class="n">FAS_ASSERT</span><span class="p">(</span><span class="n">pArray</span><span class="w"> </span><span class="o">!=</span><span class="w"> </span><span class="n">NULL_PTR</span><span class="p">);</span><span class="w"></span>
+</span><span class="hll"><span class="linenos"> 3</span><span class="w">    </span><span class="n">FAS_ASSERT</span><span class="p">(</span><span class="n">arrayLength</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">0u</span><span class="p">);</span><span class="w"></span>
+</span><span class="hll"><span class="linenos"> 4</span><span class="w">    </span><span class="cm">/* AXIVION Routine Generic-MissingParameterAssert: additionalParameter: This parameter is unused in this example */</span><span class="w"></span>
+</span><span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="w">    </span><span class="cm">/* unused parameter just for the example */</span><span class="w"></span>
+<span class="linenos"> 7</span><span class="w">    </span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="n">additionalParameter</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 8</span>
+<span class="linenos"> 9</span><span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0u</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0u</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">arrayLength</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">12</span><span class="w">        </span><span class="n">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">pArray</span><span class="p">[</span><span class="n">i</span><span class="p">];</span><span class="w"></span>
+<span class="linenos">13</span><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">14</span><span class="w">    </span><span class="n">sum</span><span class="w"> </span><span class="o">/=</span><span class="w"> </span><span class="n">arrayLength</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">15</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">sum</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">16</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="variable-names-c-016">
+<span id="rule-c-variable-names"></span><h2><span class="section-number">2.2.16. </span>Variable names (<code class="docutils literal notranslate"><span class="pre">C:016</span></code>)<a class="headerlink" href="#variable-names-c-016" title="Permalink to this headline"></a></h2>
+<div class="admonition-variable-naming-rules admonition">
+<p class="admonition-title">Variable naming rules</p>
+<ul class="simple">
+<li><p>Global and static variables <strong>MUST</strong> be commented with a doxygen style
+comment.</p></li>
+<li><p>Variable names (including function parameters) <strong>MUST</strong> start with a
+lowercase letter and are written in “camel Case”.</p></li>
+<li><p>If the scope of the variable is at least file wide (more than function
+scope) or if the variable is declared static it <strong>MUST</strong> start with the
+module prefix in lowercase letters.
+A variable representing a physical unit is followed by a suffix with the
+SI-unit symbol <code class="docutils literal notranslate"><span class="pre">_&lt;unit&gt;</span></code> (e.g., <code class="docutils literal notranslate"><span class="pre">_mA</span></code> for milliampere or <code class="docutils literal notranslate"><span class="pre">K</span></code> for
+Kelvin).
+Exceptions are non-ASCII symbols as</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">_perc</span></code> for <code class="docutils literal notranslate"><span class="pre">%</span></code>,</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">_degC</span></code> for <code class="docutils literal notranslate"><span class="pre">°C</span></code> and</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">u</span></code> for <code class="docutils literal notranslate"><span class="pre">μ</span></code>.</p></li>
+</ul>
+</li>
+<li><p>A doxygen comment explaining what this variable is used for <strong>MUST</strong> be
+added to all static and global variables.</p></li>
+</ul>
+</div>
+<div class="literal-block-wrapper docutils container" id="id2">
+<div class="code-block-caption"><span class="caption-number">Listing 2.19 </span><span class="caption-text">Different examples for correctly named variables and functions.</span><a class="headerlink" href="#id2" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">static</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">abc_staticVariable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0u</span><span class="p">;</span><span class="w"> </span><span class="cm">/*!&lt; Static variable -&gt; prefix + doxygen comment */</span><span class="w"></span>
+<span class="linenos">2</span><span class="k">static</span><span class="w"> </span><span class="kt">int32_t</span><span class="w"> </span><span class="n">abc_packSoc_perc</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w">  </span><span class="cm">/*!&lt; Static variable representing physical unit -&gt; prefix + suffix + doxygen */</span><span class="w"></span>
+<span class="linenos">3</span>
+<span class="linenos">4</span><span class="k">extern</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">abc_globalVariable</span><span class="p">;</span><span class="w"> </span><span class="cm">/*!&lt; Global variable -&gt; prefix + doxygen comment */</span><span class="w"></span>
+<span class="linenos">5</span>
+<span class="linenos">6</span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_StaticImportantFunction</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">7</span>
+<span class="linenos">8</span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_StaticImportantFunction</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="constant-names-c-017">
+<span id="rule-c-constant-names"></span><h2><span class="section-number">2.2.17. </span>Constant names (<code class="docutils literal notranslate"><span class="pre">C:017</span></code>)<a class="headerlink" href="#constant-names-c-017" title="Permalink to this headline"></a></h2>
+<div class="admonition-constant-rules admonition">
+<p class="admonition-title">Constant rules</p>
+<ul class="simple">
+<li><p>Constant variables <strong>MUST</strong> be commented with a doxygen style comment.</p></li>
+<li><p>Constant variables <strong>MUST</strong> be named with a module prefix and a leading
+<code class="docutils literal notranslate"><span class="pre">k</span></code> followed by camel case.</p></li>
+<li><p>Underscores <strong>MAY</strong> be used as separators in rare cases where
+capitalization cannot be used for separation.</p></li>
+</ul>
+</div>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-number">Listing 2.20 </span><span class="caption-text">Correct examples for naming constant variables.</span><a class="headerlink" href="#id3" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">const</span><span class="w"> </span><span class="k">static</span><span class="w"> </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">abc_kDaysInAWeek</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">7</span><span class="p">;</span><span class="w"> </span><span class="cm">/*!&lt; Number of days in a week */</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="pointer-rules-c-018">
+<span id="rule-c-pointer-rules"></span><h2><span class="section-number">2.2.18. </span>Pointer rules (<code class="docutils literal notranslate"><span class="pre">C:018</span></code>)<a class="headerlink" href="#pointer-rules-c-018" title="Permalink to this headline"></a></h2>
+<div class="admonition-pointer-rules admonition">
+<p class="admonition-title">Pointer rules</p>
+<ul class="simple">
+<li><p>The general variable name rules apply (see <a class="reference internal" href="#rule-c-variable-names"><span class="std std-ref">Variable names (C:016)</span></a>).</p></li>
+<li><p>Variables used for pointers <strong>MUST</strong> be prefixed with a leading <code class="docutils literal notranslate"><span class="pre">p</span></code> in
+the case of a pointer to a variable and <code class="docutils literal notranslate"><span class="pre">fp</span></code> in the case of a function
+pointer, followed by camel Case.
+When declaring a pointer variable or argument, the asterisk <strong>MUST</strong> be
+placed adjacent to the variable name.</p></li>
+<li><p>As function-pointer syntax can get complicated and lead to errors, a
+function pointer <strong>MUST</strong> use a typedef.
+The typedef of a function has to use the suffix <code class="docutils literal notranslate"><span class="pre">_f</span></code>.</p></li>
+<li><p>Spaces around <code class="docutils literal notranslate"><span class="pre">.</span></code> or <code class="docutils literal notranslate"><span class="pre">-&gt;</span></code> <strong>MUST NOT</strong> be used when accessing
+pointers.
+The following listing contains examples of correctly-formatted pointer
+and reference expressions:</p></li>
+</ul>
+</div>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-number">Listing 2.21 </span><span class="caption-text">Correct usage of pointers.</span><a class="headerlink" href="#id4" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/*========== Macros and Definitions =========================================*/</span><span class="w"></span>
+<span class="linenos"> 2</span><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span> <span class="p">{</span><span class="w"></span>
+<span class="linenos"> 3</span><span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">value</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 4</span><span class="p">}</span><span class="w"> </span><span class="n">ABC_INIT_STRUCT_s</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 5</span>
+<span class="linenos"> 6</span><span class="k">typedef</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="nf">ABC_SOME_FUNCTION_TYPE_f</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span><span class="w"> </span><span class="cm">/* typedef of a function type */</span><span class="w"></span>
+<span class="linenos"> 7</span><span class="cm">/*========== Static Constant and Variable Definitions =======================*/</span><span class="w"></span>
+<span class="linenos"> 8</span><span class="k">static</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="o">*</span><span class="n">abc_pMyPointer</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="n">NULL_PTR</span><span class="p">;</span><span class="w"> </span><span class="cm">/* static uint32_t pointer */</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="k">static</span><span class="w"> </span><span class="n">ABC_INIT_STRUCT_s</span><span class="w"> </span><span class="n">abc_initStruct</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">};</span><span class="w">      </span><span class="cm">/* static init struct */</span><span class="w"></span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="cm">/*========== Extern Constant and Variable Definitions =======================*/</span><span class="w"></span>
+<span class="linenos">12</span><span class="n">ABC_INIT_STRUCT_s</span><span class="w"> </span><span class="o">*</span><span class="n">abc_pInitStruct</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">NULL_PTR</span><span class="p">;</span><span class="w"> </span><span class="cm">/* local pointer to some init struct */</span><span class="w"></span>
+<span class="linenos">13</span><span class="n">ABC_SOME_FUNCTION_TYPE_f</span><span class="w"> </span><span class="o">*</span><span class="n">abc_fpMyFunction</span><span class="p">;</span><span class="w">    </span><span class="cm">/* local function pointer using a typedef */</span><span class="w"></span>
+<span class="linenos">14</span><span class="cm">/*========== Static Function Implementations ================================*/</span><span class="w"></span>
+<span class="linenos">15</span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_AssignSomeValue</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">16</span><span class="w">    </span><span class="n">abc_pMyPointer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">abc_myVariable</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">17</span><span class="w">    </span><span class="n">abc_myVariable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">*</span><span class="n">abc_pMyPointer</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">18</span><span class="w">    </span><span class="n">abc_myVariable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">abc_initStruct</span><span class="p">.</span><span class="n">value</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">19</span><span class="w">    </span><span class="n">abc_myVariable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">abc_pInitStruct</span><span class="o">-&gt;</span><span class="n">value</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">20</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="variable-initialization-c-019">
+<span id="rule-c-variable-initialization"></span><h2><span class="section-number">2.2.19. </span>Variable initialization (<code class="docutils literal notranslate"><span class="pre">C:019</span></code>)<a class="headerlink" href="#variable-initialization-c-019" title="Permalink to this headline"></a></h2>
+<div class="admonition-variable-initialization-rules admonition">
+<p class="admonition-title">Variable initialization rules</p>
+<ul class="simple">
+<li><p>All variables <strong>SHOULD</strong> be initialized at the point of their definition.
+If this is not done it <strong>MUST</strong> be commented why it is not done.</p></li>
+<li><p>All variables <strong>MUST</strong> be initialized with the correct type.</p></li>
+<li><p>Only one variable <strong>MUST</strong> be initialized or declared per line.</p></li>
+<li><p>No multi-definitions <strong>MUST</strong> be used.</p></li>
+<li><p>For the initialization, the correct suffixes for unsigned, signed and
+floating-point types <strong>MUST</strong> be used.
+See <a class="reference internal" href="#table-variable-initialization"><span class="std std-numref">Table 2.11</span></a> for details.</p></li>
+<li><p>Pointers <strong>MUST</strong> be initialized with <code class="docutils literal notranslate"><span class="pre">NULL_PTR</span></code> if no other valid
+initialization is possible.</p></li>
+</ul>
+</div>
+<span id="table-init-rules"></span><table class="docutils align-default" id="table-variable-initialization">
+<caption><span class="caption-number">Table 2.11 </span><span class="caption-text">Variable initialization suffixes</span><a class="headerlink" href="#table-variable-initialization" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Suffix</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>uint8_t</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">u</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>uint16_t</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">u</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>uint32_t</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">u</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>uint64_t</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">uLL</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>int8_t</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">none</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>int16_t</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">none</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>int32_t</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">none</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>int64_t</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">LL</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-number">Listing 2.22 </span><span class="caption-text">Initialization examples for variables and complex types</span><a class="headerlink" href="#id5" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/* Initialization example for structs */</span><span class="w"></span>
+<span class="linenos"> 2</span><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span> <span class="p">{</span><span class="w"></span>
+<span class="linenos"> 3</span><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">x</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 4</span><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">y</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 5</span><span class="w">    </span><span class="kt">float</span><span class="w"> </span><span class="n">z</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 6</span><span class="p">}</span><span class="w"> </span><span class="n">ABC_POINT_s</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span> <span class="p">{</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="w">    </span><span class="n">ABC_POINT_s</span><span class="w"> </span><span class="n">point</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">10</span><span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">timestamp</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">11</span><span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">previousTimestamp</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">12</span><span class="w">    </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">name</span><span class="p">[</span><span class="mi">16</span><span class="p">];</span><span class="w"></span>
+<span class="linenos">13</span><span class="p">}</span><span class="w"> </span><span class="n">ABC_PATH_s</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">14</span>
+<span class="linenos">15</span><span class="cm">/* Initialization for variables */</span><span class="w"></span>
+<span class="linenos">16</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">abc_myVar0</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mi">10u</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">17</span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">abc_myVar1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10u</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">18</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">abc_myVar2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10u</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">19</span><span class="kt">uint64_t</span><span class="w"> </span><span class="n">abc_myVar3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10uLL</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">20</span><span class="kt">int8_t</span><span class="w"> </span><span class="n">abc_myVar4</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="mi">-10</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">21</span><span class="kt">int16_t</span><span class="w"> </span><span class="n">abc_myVar5</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mi">-10</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">22</span><span class="kt">int32_t</span><span class="w"> </span><span class="n">abc_myVar6</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mi">-10</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">23</span><span class="kt">int64_t</span><span class="w"> </span><span class="n">abc_myVar7</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mi">-10LL</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">24</span>
+<span class="linenos">25</span><span class="cm">/* Initialization example for arrays */</span><span class="w"></span>
+<span class="linenos">26</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">abc_myArrayA</span><span class="p">[]</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="mi">3</span><span class="p">};</span><span class="w"> </span><span class="cm">/* Array has type uint8_t[3] and holds 1,2,3 */</span><span class="w"></span>
+<span class="linenos">27</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">abc_myArrayC</span><span class="p">[</span><span class="mi">5</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">};</span><span class="w">       </span><span class="cm">/* Array has type uint8_t[5] and holds 0,0,0,0,0 */</span><span class="w"></span>
+<span class="linenos">28</span>
+<span class="linenos">29</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">abc_myArrayD</span><span class="p">[</span><span class="mi">4</span><span class="p">][</span><span class="mi">3</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">30</span><span class="w">    </span><span class="cm">/* array of 4 arrays of 3 uint8_t&#39;s each (4x3 matrix) */</span><span class="w"></span>
+<span class="linenos">31</span><span class="w">    </span><span class="p">{</span><span class="mi">1</span><span class="p">},</span><span class="w">       </span><span class="cm">/* row 0 initialized to {1, 0, 0} */</span><span class="w"></span>
+<span class="linenos">32</span><span class="w">    </span><span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">},</span><span class="w">    </span><span class="cm">/* row 1 initialized to {0, 1, 0} */</span><span class="w"></span>
+<span class="linenos">33</span><span class="w">    </span><span class="p">{[</span><span class="mi">2</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">},</span><span class="w"> </span><span class="cm">/* row 2 initialized to {0, 0, 1} */</span><span class="w"></span>
+<span class="linenos">34</span><span class="p">};</span><span class="w">             </span><span class="cm">/* row 3 initialized to {0, 0, 0} */</span><span class="w"></span>
+<span class="linenos">35</span>
+<span class="linenos">36</span><span class="n">ABC_POINT_s</span><span class="w"> </span><span class="n">abc_myPoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mf">1.2</span><span class="p">,</span><span class="w"> </span><span class="mf">1.3</span><span class="p">};</span><span class="w"> </span><span class="cm">/* p.x=1.2, p.y=1.3, p.z=0.0 */</span><span class="w"></span>
+<span class="linenos">37</span>
+<span class="linenos">38</span><span class="n">ABC_PATH_s</span><span class="w"> </span><span class="n">abc_myPath</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="mf">80.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">127.0f</span><span class="p">,</span><span class="w"> </span><span class="mf">-37.0f</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s">&quot;test&quot;</span><span class="p">};</span><span class="w"> </span><span class="cm">/* 80.0f initializes myPath.point.x  */</span><span class="w"></span>
+<span class="linenos">39</span><span class="w">                                                               </span><span class="cm">/* 127.0f initializes myPath.point.y */</span><span class="w"></span>
+<span class="linenos">40</span><span class="w">                                                               </span><span class="cm">/* -37.0f initializes myPath.point.z */</span><span class="w"></span>
+<span class="linenos">41</span><span class="w">                                                               </span><span class="cm">/* 0 initializes myPath.timestamp    */</span><span class="w"></span>
+<span class="linenos">42</span><span class="w">                                                               </span><span class="cm">/* 1 initializes ex.in_u.a8[3]       */</span><span class="w"></span>
+<span class="linenos">43</span><span class="w">                                                               </span><span class="cm">/* &quot;test&quot; initializes name[0-3]      */</span><span class="w"></span>
+<span class="linenos">44</span><span class="w">                                                               </span><span class="cm">/* name[4-15] are set to 0           */</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="hexadecimal-values-c-020">
+<span id="rule-c-hexadecimal"></span><h2><span class="section-number">2.2.20. </span>Hexadecimal values (<code class="docutils literal notranslate"><span class="pre">C:020</span></code>)<a class="headerlink" href="#hexadecimal-values-c-020" title="Permalink to this headline"></a></h2>
+<div class="admonition-hexadecimal-values-rules admonition">
+<p class="admonition-title">Hexadecimal values rules</p>
+<p>Hexadecimal digits <strong>MUST</strong> be written in uppercase letters.</p>
+</div>
+<div class="literal-block-wrapper docutils container" id="id6">
+<div class="code-block-caption"><span class="caption-number">Listing 2.23 </span><span class="caption-text">Correct usage of hexadecimal digits.</span><a class="headerlink" href="#id6" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">abc_myVar</span><span class="w">     </span><span class="o">=</span><span class="w"> </span><span class="mh">0xFFu</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">2</span><span class="kt">int8_t</span><span class="w"> </span><span class="n">abc_myOtherVar</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mh">0xAA</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="floating-point-values-c-021">
+<span id="rule-c-floating-point"></span><h2><span class="section-number">2.2.21. </span>Floating-point values (<code class="docutils literal notranslate"><span class="pre">C:021</span></code>)<a class="headerlink" href="#floating-point-values-c-021" title="Permalink to this headline"></a></h2>
+<div class="admonition-floating-point-values-rules admonition">
+<p class="admonition-title">Floating-point values rules</p>
+<ul class="simple">
+<li><p>Floating-point literals <strong>MUST</strong> always have a radix point, with digits
+on BOTH sides, even if they use exponential notation.
+Readability is improved if all floating-point literals take this familiar
+form, as this helps ensure that they are not mistaken for integer
+literals, and that the E/e of the exponential notation is not mistaken
+for a hexadecimal digit.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">float</span></code> types <strong>SHOULD</strong> be used wherever possible as the float
+operations are performed in hardware while double operations are not.</p></li>
+</ul>
+</div>
+<span id="table-floating-point-init-rules"></span><table class="docutils align-default" id="table-floating-point-initialization">
+<caption><span class="caption-number">Table 2.12 </span><span class="caption-text">Floating-point literal initialization suffixes</span><a class="headerlink" href="#table-floating-point-initialization" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Type</p></th>
+<th class="head"><p>Suffix</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>float_t</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">f</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>double</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">none</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="literal-block-wrapper docutils container" id="id7">
+<div class="code-block-caption"><span class="caption-number">Listing 2.24 </span><span class="caption-text">Usage of floating-point literals.</span><a class="headerlink" href="#id7" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">float</span><span class="w"> </span><span class="n">kEuler</span><span class="w">          </span><span class="o">=</span><span class="w"> </span><span class="mf">2.71828f</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">2</span><span class="k">static</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">kPi</span><span class="w">            </span><span class="o">=</span><span class="w"> </span><span class="mf">3.141592</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">3</span><span class="k">static</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">abc_number</span><span class="w">           </span><span class="o">=</span><span class="w"> </span><span class="mf">1248.0e6</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">4</span><span class="k">static</span><span class="w"> </span><span class="kt">long</span><span class="w"> </span><span class="kt">double</span><span class="w"> </span><span class="n">abc_largeNumber</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">-0.5L</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="structs-c-022">
+<span id="rule-c-structs"></span><h2><span class="section-number">2.2.22. </span>Structs (<code class="docutils literal notranslate"><span class="pre">C:022</span></code>)<a class="headerlink" href="#structs-c-022" title="Permalink to this headline"></a></h2>
+<div class="admonition-struct-rules admonition">
+<p class="admonition-title">Struct rules</p>
+<ul class="simple">
+<li><p>Structs <strong>MUST</strong> be commented with a doxygen style comment.</p></li>
+<li><p>Struct members <strong>MUST</strong> be commented with a doxygen style comment.</p></li>
+<li><p>Structs <strong>MUST</strong> be declared as typedefs.</p></li>
+<li><p>Struct names <strong>MUST</strong> be all uppercase with underscores <code class="docutils literal notranslate"><span class="pre">(_)</span></code> between
+each word starting with the module prefix and ending with the suffix
+<code class="docutils literal notranslate"><span class="pre">_s</span></code>.</p></li>
+<li><p>Struct members <strong>MUST</strong> be named as ordinary variables.</p></li>
+<li><p>Anonymous structs <strong>MUST NOT</strong> be used, instead the struct type without
+the suffix <code class="docutils literal notranslate"><span class="pre">_s</span></code> <strong>MUST</strong> be defined.</p></li>
+<li><p>A trailing comma <strong>MUST</strong> be used after the last member.</p></li>
+<li><p>A doxygen comment describing each struct <strong>MUST</strong> be added above the
+definition.</p></li>
+<li><p>A doxygen comment describing each struct member <strong>MUST</strong> be added after
+the member.</p></li>
+</ul>
+</div>
+<p>Example:</p>
+<div class="literal-block-wrapper docutils container" id="id8">
+<div class="code-block-caption"><span class="caption-number">Listing 2.25 </span><span class="caption-text">Correct struct implementation.</span><a class="headerlink" href="#id8" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="cm">/** Symbolic names for battery system state */</span><span class="w"></span>
+<span class="linenos">2</span><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span> <span class="p">{</span><span class="w"></span>
+<span class="linenos">3</span><span class="w">    </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">year</span><span class="p">;</span><span class="w"> </span><span class="cm">/*!&lt; year */</span><span class="w"></span>
+<span class="linenos">4</span><span class="w">    </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">month</span><span class="p">;</span><span class="w"> </span><span class="cm">/*!&lt; month (1: january ... 12: december) */</span><span class="w"></span>
+<span class="linenos">5</span><span class="w">    </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">day</span><span class="p">;</span><span class="w">   </span><span class="cm">/*!&lt; day of the month */</span><span class="w"></span>
+<span class="linenos">6</span><span class="p">}</span><span class="w"> </span><span class="n">ABC_DATE_s</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="enums-c-023">
+<span id="rule-c-enums"></span><h2><span class="section-number">2.2.23. </span>Enums (<code class="docutils literal notranslate"><span class="pre">C:023</span></code>)<a class="headerlink" href="#enums-c-023" title="Permalink to this headline"></a></h2>
+<div class="admonition-enum-rules admonition">
+<p class="admonition-title">Enum rules</p>
+<ul class="simple">
+<li><p>Enums <strong>MUST</strong> be commented with a doxygen style comment.</p></li>
+<li><p>Enum members <strong>MUST</strong> be commented with a doxygen style comment.</p></li>
+<li><p>Enums <strong>MUST</strong> be declared as typedefs.</p></li>
+<li><p>Enums <strong>MUST</strong> be named all uppercase with underscores <code class="docutils literal notranslate"><span class="pre">(_)</span></code> between
+each word starting with the module prefix and ending with suffix <code class="docutils literal notranslate"><span class="pre">_e</span></code>.</p></li>
+<li><p>Anonymous enums <strong>MUST NOT</strong> be used, instead the enum type without the
+suffix <code class="docutils literal notranslate"><span class="pre">_e</span></code> <strong>MUST</strong> be defined.</p></li>
+<li><p>Values <strong>MUST NOT</strong> be assigned to specific enum members.</p></li>
+<li><p>Members <strong>MUST</strong> be named all in uppercase beginning with the module
+prefix.</p></li>
+<li><p>No trailing comma <strong>MUST</strong> be used after the last entry.</p></li>
+<li><p>The last member <strong>MUST</strong> be named after the typedef struct replacing the
+<code class="docutils literal notranslate"><span class="pre">_e</span></code> with <code class="docutils literal notranslate"><span class="pre">_E</span></code> and appending the suffix <code class="docutils literal notranslate"><span class="pre">_MAX</span></code>.</p></li>
+<li><p>A doxygen comment describing each enum <strong>MUST</strong> be added above the
+definition.</p></li>
+<li><p>A doxygen comment describing each enum member <strong>MUST</strong> be added after the
+member.</p></li>
+</ul>
+</div>
+<div class="literal-block-wrapper docutils container" id="id9">
+<div class="code-block-caption"><span class="caption-number">Listing 2.26 </span><span class="caption-text">Correct enum implementation.</span><a class="headerlink" href="#id9" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="cm">/** Symbolic names for weekdays */</span><span class="w"></span>
+<span class="linenos">2</span><span class="k">typedef</span><span class="w"> </span><span class="k">enum</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">3</span><span class="w">    </span><span class="n">ABC_MONDAY</span><span class="p">,</span><span class="w">    </span><span class="cm">/**&lt; First day of the week */</span><span class="w"></span>
+<span class="linenos">4</span><span class="w">    </span><span class="n">ABC_TUESDAY</span><span class="p">,</span><span class="w">   </span><span class="cm">/**&lt; Second day of the week */</span><span class="w"></span>
+<span class="linenos">5</span><span class="w">    </span><span class="cm">/* ... */</span><span class="w">      </span><span class="cm">/* more members */</span><span class="w"></span>
+<span class="linenos">6</span><span class="w">    </span><span class="n">ABC_SUNDAY</span><span class="p">,</span><span class="w">    </span><span class="cm">/**&lt; Last day of the week */</span><span class="w"></span>
+<span class="linenos">7</span><span class="w">    </span><span class="n">ABC_DAYS_E_MAX</span><span class="w"> </span><span class="cm">/**&lt; Max marker */</span><span class="w"></span>
+<span class="linenos">8</span><span class="p">}</span><span class="w"> </span><span class="n">ABC_DAYS_e</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="typedefs-c-024">
+<span id="rule-c-typedefs"></span><h2><span class="section-number">2.2.24. </span>Typedefs (<code class="docutils literal notranslate"><span class="pre">C:024</span></code>)<a class="headerlink" href="#typedefs-c-024" title="Permalink to this headline"></a></h2>
+<div class="admonition-typedef-general-rules admonition">
+<p class="admonition-title">Typedef general rules</p>
+<ul class="simple">
+<li><p>Typedef names <strong>MUST</strong> be all uppercase with underscores <code class="docutils literal notranslate"><span class="pre">(_)</span></code> between
+each word.</p></li>
+<li><p>Other typedef names <strong>MUST</strong> end with the suffix <code class="docutils literal notranslate"><span class="pre">_t</span></code>.</p></li>
+</ul>
+</div>
+<div class="literal-block-wrapper docutils container" id="id10">
+<div class="code-block-caption"><span class="caption-number">Listing 2.27 </span><span class="caption-text">Correct example for usage of typedefs.</span><a class="headerlink" href="#id10" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">typedef</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">abc_mySpecialType</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 2</span><span class="k">typedef</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">ABC_TICK_TYPE_t</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 3</span>
+<span class="linenos"> 4</span><span class="cm">/* Using typedefs for the creation of function pointers */</span><span class="w"></span>
+<span class="linenos"> 5</span><span class="cm">/* Pointer to functions with uint32_t return datatype and two function parameters of type uint32_t */</span><span class="w"></span>
+<span class="linenos"> 6</span><span class="k">typedef</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="p">(</span><span class="o">*</span><span class="n">ABC_CALLBACK_FUNCTION_POINTER_t</span><span class="p">)(</span><span class="kt">uint32_t</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="p">);</span><span class="w"></span>
+<span class="linenos"> 7</span>
+<span class="linenos"> 8</span><span class="k">static</span><span class="w"> </span><span class="n">abc_mySpecialType</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 9</span>
+<span class="linenos">10</span><span class="k">static</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="nf">ABC_BuildSum</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">varA</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">varB</span><span class="p">);</span><span class="w"> </span><span class="cm">/* Function prototype */</span><span class="w"></span>
+<span class="linenos">11</span>
+<span class="linenos">12</span><span class="cm">/* local variable of type CALLBACK_FUNCTION_POINTER_t</span>
+<span class="linenos">13</span><span class="cm">   The variable can not be initalized in the section where all other static</span>
+<span class="linenos">14</span><span class="cm">   variables are introduced, since the function is not known at that time. */</span><span class="w"></span>
+<span class="linenos">15</span><span class="k">static</span><span class="w"> </span><span class="n">ABC_CALLBACK_FUNCTION_POINTER_t</span><span class="w"> </span><span class="n">abc_callback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">&amp;</span><span class="n">ABC_BuildSum</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="cm">/* implement the prototype so that we have valid code */</span><span class="w"></span>
+<span class="linenos">18</span><span class="k">static</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="nf">ABC_BuildSum</span><span class="p">(</span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">varA</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">varB</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">19</span><span class="w">    </span><span class="cm">/* just an example: */</span><span class="w"></span>
+<span class="linenos">20</span><span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">varA</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">varB</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">21</span><span class="p">}</span><span class="w"></span>
+<span class="linenos">22</span>
+<span class="linenos">23</span><span class="cm">/* call of function ABC_BuildSum()*/</span><span class="w"></span>
+<span class="linenos">24</span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_CallTheCallback</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">25</span><span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">temp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">abc_callback</span><span class="p">(</span><span class="mi">37u</span><span class="p">,</span><span class="w"> </span><span class="mi">42u</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">26</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="macros-c-025">
+<span id="rule-c-macros"></span><h2><span class="section-number">2.2.25. </span>Macros (<code class="docutils literal notranslate"><span class="pre">C:025</span></code>)<a class="headerlink" href="#macros-c-025" title="Permalink to this headline"></a></h2>
+<div class="admonition-macro-rules admonition">
+<p class="admonition-title">Macro rules</p>
+<ul class="simple">
+<li><p>Macro names <strong>MUST</strong> be capitalized with underscores.</p></li>
+<li><p>Macros <strong>MUST</strong> start with the module prefix.</p></li>
+<li><p>If macros define a physical value, the name <strong>MUST</strong> be suffixed with the
+SI-unit or a SI-derived unit, e.g., use <code class="docutils literal notranslate"><span class="pre">F</span></code> for a capacity instead of
+SI units  <code class="docutils literal notranslate"><span class="pre">s4_A2__m2_kg_1</span></code>.</p></li>
+<li><p>If macros are used to define a value, this value <strong>MUST</strong> be put in
+parentheses.</p></li>
+<li><p>It is <strong>NOT RECOMMENDED</strong> to use function-like macros.</p></li>
+</ul>
+</div>
+<div class="literal-block-wrapper docutils container" id="id11">
+<div class="code-block-caption"><span class="caption-number">Listing 2.28 </span><span class="caption-text">Correct naming examples of macros.</span><a class="headerlink" href="#id11" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="cp">#define ABC_PI_ROUNDED               (3.14f)</span>
+<span class="linenos">2</span><span class="cp">#define ABC_NUMBER_OF_DAYS_IN_A_WEEK (7u)</span>
+<span class="linenos">3</span><span class="cp">#define ABC_MAXIMUM_PACK_VOLTAGE_mV  (320000u)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="conditionals-c-026">
+<span id="rule-c-conditionals"></span><h2><span class="section-number">2.2.26. </span>Conditionals (<code class="docutils literal notranslate"><span class="pre">C:026</span></code>)<a class="headerlink" href="#conditionals-c-026" title="Permalink to this headline"></a></h2>
+<div class="admonition-conditionals-rules admonition">
+<p class="admonition-title">Conditionals rules</p>
+<ul class="simple">
+<li><p>No spaces <strong>MUST</strong> be used between the parentheses and the condition
+statement.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">if</span></code> and <code class="docutils literal notranslate"><span class="pre">else</span></code> keywords <strong>MUST</strong> be placed in separate lines.</p></li>
+<li><p>A space between the <code class="docutils literal notranslate"><span class="pre">if</span></code> keyword and the open parenthesis and between
+the close parenthesis and the curly bracket <strong>MUST</strong> be placed.</p></li>
+<li><p>Multiple statements in one condition <strong>MUST</strong> be placed into separate
+parentheses.
+If you have a boolean expression that is longer than the standard line
+length, the logical operator <strong>MUST</strong> be at the end of the lines.</p></li>
+</ul>
+</div>
+<div class="literal-block-wrapper docutils container" id="id12">
+<div class="code-block-caption"><span class="caption-number">Listing 2.29 </span><span class="caption-text">Correct implementation of if-else statements.</span><a class="headerlink" href="#id12" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/* some static variables that are set in some functions of this module */</span><span class="w"></span>
+<span class="linenos"> 2</span><span class="k">static</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">abc_condition</span><span class="w">        </span><span class="o">=</span><span class="w"> </span><span class="mi">0u</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 3</span><span class="k">static</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">abc_other_condition</span><span class="w">  </span><span class="o">=</span><span class="w"> </span><span class="mi">0u</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 4</span><span class="k">static</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">abc_this_one_thing</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="mi">0u</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 5</span><span class="k">static</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">abc_this_other_thing</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0u</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 6</span><span class="k">static</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">abc_a_third_thing</span><span class="w">    </span><span class="o">=</span><span class="w"> </span><span class="mi">0u</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 7</span><span class="k">static</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">abc_a_fourth_thing</span><span class="w">   </span><span class="o">=</span><span class="w"> </span><span class="mi">0u</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 8</span><span class="k">static</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">abc_yet_another</span><span class="w">      </span><span class="o">=</span><span class="w"> </span><span class="mi">0u</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="k">static</span><span class="w"> </span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">abc_last_one</span><span class="w">         </span><span class="o">=</span><span class="w"> </span><span class="mi">0u</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="k">extern</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_ConditionalFunction</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">12</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">abc_condition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w">              </span><span class="cm">/* no spaces inside parentheses */</span><span class="w"></span>
+<span class="linenos">13</span><span class="w">        </span><span class="cm">/* code */</span><span class="w">                    </span><span class="cm">/* 4 space indent. */</span><span class="w"></span>
+<span class="linenos">14</span><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">abc_other_condition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="cm">/* The else if goes on the same line as the closing brace. */</span><span class="w"></span>
+<span class="linenos">15</span><span class="w">        </span><span class="cm">/* code */</span><span class="w">                    </span><span class="cm">/* 4 space indent. */</span><span class="w"></span>
+<span class="linenos">16</span><span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span><span class="w">                          </span><span class="cm">/* The else if goes on the same line as the closing brace. */</span><span class="w"></span>
+<span class="linenos">17</span><span class="w">        </span><span class="cm">/* code */</span><span class="w">                    </span><span class="cm">/* 4 space indent. */</span><span class="w"></span>
+<span class="linenos">18</span><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">19</span><span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">((</span><span class="n">abc_this_one_thing</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">abc_this_other_thing</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="n">abc_a_third_thing</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="n">abc_a_fourth_thing</span><span class="p">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"></span>
+<span class="linenos">20</span><span class="w">        </span><span class="p">(</span><span class="n">abc_yet_another</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">abc_last_one</span><span class="p">))</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">21</span><span class="w">        </span><span class="cm">/* code */</span><span class="w"></span>
+<span class="linenos">22</span><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">23</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="switch-statements-c-027">
+<span id="rule-c-switch"></span><h2><span class="section-number">2.2.27. </span>switch Statements (<code class="docutils literal notranslate"><span class="pre">C:027</span></code>)<a class="headerlink" href="#switch-statements-c-027" title="Permalink to this headline"></a></h2>
+<div class="admonition-switch-statement-rules admonition">
+<p class="admonition-title">Switch statement rules</p>
+<ul class="simple">
+<li><p>Switch statements <strong>MUST</strong> use parentheses for blocks.</p></li>
+<li><p>Fall-throughs between cases <strong>SHOULD NOT</strong> be used but instead all cases
+are terminated with one single break-statement at the end of the case.
+The only exceptions for this rules are empty fall-throughs that <strong>MUST</strong>
+be treated within the next case.
+These deliberate fall-throughs <strong>MUST</strong> be annotated.</p></li>
+<li><p>Case blocks in switch statements <strong>MUST NOT</strong> use brackets.</p></li>
+<li><p>Furthermore, switch statements <strong>MUST</strong> have a default case.</p></li>
+<li><p>If the default case should never be executed, this <strong>MUST</strong> be treated as
+an error.</p></li>
+<li><p>There <strong>MUST</strong> be an empty line between <code class="docutils literal notranslate"><span class="pre">break</span></code> and the next <code class="docutils literal notranslate"><span class="pre">case</span></code>
+directive.</p></li>
+</ul>
+</div>
+<div class="literal-block-wrapper docutils container" id="id13">
+<div class="code-block-caption"><span class="caption-number">Listing 2.30 </span><span class="caption-text">Correct implementation of switch-case statement.</span><a class="headerlink" href="#id13" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">extern</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_SwitchFunction</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">var</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 2</span><span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">var</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 3</span><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">0</span><span class="o">:</span><span class="w">        </span><span class="cm">/* 4 space indent */</span><span class="w"></span>
+<span class="linenos"> 4</span><span class="w">            </span><span class="cm">/* code */</span><span class="w"> </span><span class="cm">/* 4 space indent */</span><span class="w"></span>
+<span class="linenos"> 5</span><span class="w">            </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">1</span><span class="o">:</span><span class="w"></span>
+<span class="linenos"> 8</span><span class="w">            </span><span class="cm">/* code */</span><span class="w"> </span><span class="cm">/* 4 space indent */</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="w">            </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">10</span>
+<span class="linenos">11</span><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">2</span><span class="o">:</span><span class="w"></span>
+<span class="linenos">12</span><span class="w">            </span><span class="cm">/* code */</span><span class="w"> </span><span class="cm">/* 4 space indent */</span><span class="w"></span>
+<span class="linenos">13</span><span class="w">            </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">14</span>
+<span class="linenos">15</span><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">3</span><span class="o">:</span><span class="w"> </span><span class="cm">/* Empty fall-through allowed as case 3 and 4 require the same treatment */</span><span class="w"></span>
+<span class="linenos">16</span><span class="w">        </span><span class="k">case</span><span class="w"> </span><span class="mi">4</span><span class="o">:</span><span class="w"></span>
+<span class="linenos">17</span><span class="w">            </span><span class="cm">/* case 3 and case 4 trigger the same response */</span><span class="w"></span>
+<span class="linenos">18</span><span class="w">            </span><span class="cm">/* code */</span><span class="w"></span>
+<span class="linenos">19</span><span class="w">            </span><span class="k">break</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">20</span>
+<span class="linenos">21</span><span class="w">        </span><span class="k">default</span><span class="o">:</span><span class="w"></span>
+<span class="linenos">22</span><span class="w">            </span><span class="n">FAS_ASSERT</span><span class="p">(</span><span class="n">FAS_TRAP</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">23</span><span class="w">            </span><span class="k">break</span><span class="p">;</span><span class="w"> </span><span class="cm">/* LCOV_EXCL_LINE */</span><span class="w"></span>
+<span class="linenos">24</span><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">25</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="loop-statements-c-028">
+<span id="rule-c-loop"></span><h2><span class="section-number">2.2.28. </span>loop Statements (<code class="docutils literal notranslate"><span class="pre">C:028</span></code>)<a class="headerlink" href="#loop-statements-c-028" title="Permalink to this headline"></a></h2>
+<div class="admonition-loop-rules admonition">
+<p class="admonition-title">loop rules</p>
+<ul class="simple">
+<li><p>Parentheses <strong>MUST</strong> be used for all loops, at all times.
+This is valid for single-statement loops.</p></li>
+<li><p>Empty loop bodies <strong>MUST</strong> use an empty pair of brackets and explain why
+they are empty.</p></li>
+</ul>
+</div>
+<div class="literal-block-wrapper docutils container" id="id14">
+<div class="code-block-caption"><span class="caption-number">Listing 2.31 </span><span class="caption-text">Correct usage of spaces and parentheses in loop statements.</span><a class="headerlink" href="#id14" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_ForLoop</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">kSomeNumber</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 2</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0u</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">kSomeNumber</span><span class="p">;</span><span class="w"> </span><span class="o">++</span><span class="n">i</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 3</span><span class="w">        </span><span class="cm">/* code */</span><span class="w"></span>
+<span class="linenos"> 4</span><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="linenos"> 5</span><span class="p">}</span><span class="w"></span>
+<span class="linenos"> 6</span>
+<span class="linenos"> 7</span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">ABC_While</span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">condition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 8</span><span class="w">    </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="n">condition</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="w">        </span><span class="cm">/* This should never happen, since ... */</span><span class="w"></span>
+<span class="linenos">10</span><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">11</span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<p>There are three defines that are typically looped over: the number of strings
+(<code class="docutils literal notranslate"><span class="pre">BS_NR_OF_STRINGS</span></code>), the number of modules (<code class="docutils literal notranslate"><span class="pre">BS_NR_OF_MODULES_PER_STRING</span></code>)
+and the number of batteries per module (<code class="docutils literal notranslate"><span class="pre">BS_NR_OF_CELL_BLOCKS_PER_MODULE</span></code>).</p>
+<p>These loops <strong>MUST</strong> follow the pattern as shown in
+<a class="reference internal" href="#special-counter-variables"><span class="std std-numref">Table 2.13</span></a> and
+<a class="reference internal" href="#special-counter-variables-example"><span class="std std-numref">Listing 2.32</span></a>.</p>
+<table class="colwidths-given docutils align-default" id="special-counter-variables">
+<caption><span class="caption-number">Table 2.13 </span><span class="caption-text">Special counter variables in for loops</span><a class="headerlink" href="#special-counter-variables" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 66%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Define</p></th>
+<th class="head"><p>Counter variable</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">BS_NR_OF_STRINGS</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">s</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">BS_NR_OF_MODULES_PER_STRING</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">m</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">BS_NR_OF_CELL_BLOCKS_PER_MODULE</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">c</span></code></p></td>
+</tr>
+</tbody>
+</table>
+<div class="literal-block-wrapper docutils container" id="special-counter-variables-example">
+<div class="code-block-caption"><span class="caption-number">Listing 2.32 </span><span class="caption-text">Looping over <code class="docutils literal notranslate"><span class="pre">BS_NR_OF_STRINGS</span></code>,
+<code class="docutils literal notranslate"><span class="pre">BS_NR_OF_MODULES_PER_STRING</span></code> and <code class="docutils literal notranslate"><span class="pre">BS_NR_OF_CELL_BLOCKS_PER_MODULE</span></code></span><a class="headerlink" href="#special-counter-variables-example" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * @file    c-028-battery-defines.c</span>
+<span class="linenos"> 3</span><span class="cm"> * @author  foxBMS Team</span>
+<span class="linenos"> 4</span><span class="cm"> * @date    2021-06-04 (date of creation)</span>
+<span class="linenos"> 5</span><span class="cm"> * @updated 2023-02-03 (date of last update)</span>
+<span class="linenos"> 6</span><span class="cm"> * @version v1.5.0</span>
+<span class="linenos"> 7</span><span class="cm"> * @ingroup GUIDELINES</span>
+<span class="linenos"> 8</span><span class="cm"> * @prefix  ABC</span>
+<span class="linenos"> 9</span><span class="cm"> *</span>
+<span class="linenos">10</span><span class="cm"> * @brief   Example code to show the application of the C coding guidelines</span>
+<span class="linenos">11</span><span class="cm"> * @details This code implements an example for C:028</span>
+<span class="linenos">12</span><span class="cm"> *</span>
+<span class="linenos">13</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos">14</span>
+<span class="linenos">15</span><span class="cm">/*========== Includes =======================================================*/</span><span class="w"></span>
+<span class="linenos">16</span>
+<span class="linenos">17</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;battery_system_cfg.h&quot;</span><span class="cp"></span>
+<span class="linenos">18</span>
+<span class="linenos">19</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&lt;stdint.h&gt;</span><span class="cp"></span>
+<span class="linenos">20</span>
+<span class="linenos">21</span><span class="cm">/*========== Macros and Definitions =========================================*/</span><span class="w"></span>
+<span class="linenos">22</span>
+<span class="linenos">23</span><span class="cm">/*========== Static Constant and Variable Definitions =======================*/</span><span class="w"></span>
+<span class="linenos">24</span>
+<span class="linenos">25</span><span class="cm">/*========== Extern Constant and Variable Definitions =======================*/</span><span class="w"></span>
+<span class="linenos">26</span>
+<span class="linenos">27</span><span class="cm">/*========== Static Function Prototypes =====================================*/</span><span class="w"></span>
+<span class="linenos">28</span>
+<span class="linenos">29</span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">C28_BatteriesLoop</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span><span class="w"></span>
+<span class="linenos">30</span>
+<span class="linenos">31</span><span class="cm">/*========== Static Function Implementations ================================*/</span><span class="w"></span>
+<span class="linenos">32</span><span class="k">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">C28_BatteriesLoop</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">33</span><span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0u</span><span class="p">;</span><span class="w"> </span><span class="n">s</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">BS_NR_OF_STRINGS</span><span class="p">;</span><span class="w"> </span><span class="n">s</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">34</span><span class="w">        </span><span class="cm">/* string related code */</span><span class="w"></span>
+<span class="linenos">35</span><span class="w">        </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0u</span><span class="p">;</span><span class="w"> </span><span class="n">m</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">BS_NR_OF_MODULES_PER_STRING</span><span class="p">;</span><span class="w"> </span><span class="n">m</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">36</span><span class="w">            </span><span class="cm">/* module related code */</span><span class="w"></span>
+<span class="linenos">37</span><span class="w">            </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">uint8_t</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0u</span><span class="p">;</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">BS_NR_OF_CELL_BLOCKS_PER_MODULE</span><span class="p">;</span><span class="w"> </span><span class="n">c</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">38</span><span class="w">                </span><span class="cm">/* cell related code */</span><span class="w"></span>
+<span class="linenos">39</span><span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">40</span><span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">41</span><span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">42</span><span class="p">}</span><span class="w"></span>
+<span class="linenos">43</span>
+<span class="linenos">44</span><span class="cm">/*========== Extern Function Implementations ================================*/</span><span class="w"></span>
+<span class="linenos">45</span>
+<span class="linenos">46</span><span class="cm">/*========== Externalized Static Function Implementations (Unit Test) =======*/</span><span class="w"></span>
+<span class="linenos">47</span><span class="cp">#ifdef UNITY_UNIT_TEST</span>
+<span class="linenos">48</span><span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="c-comment-style-c-029">
+<span id="rule-c-comment-style"></span><h2><span class="section-number">2.2.29. </span>C Comment style (<code class="docutils literal notranslate"><span class="pre">C:029</span></code>)<a class="headerlink" href="#c-comment-style-c-029" title="Permalink to this headline"></a></h2>
+<div class="admonition-comment-style admonition">
+<p class="admonition-title">Comment Style</p>
+<ul class="simple">
+<li><p>Only ANSI-C comments <strong>MUST</strong> be used (<code class="docutils literal notranslate"><span class="pre">/*</span> <span class="pre">*/</span></code>).</p></li>
+<li><p>Comments <strong>MUST NOT</strong> be nested.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="general-note-and-common-mistakes-c-030">
+<span id="rule-c-hints"></span><h2><span class="section-number">2.2.30. </span>General note and common mistakes (<code class="docutils literal notranslate"><span class="pre">C:030</span></code>)<a class="headerlink" href="#general-note-and-common-mistakes-c-030" title="Permalink to this headline"></a></h2>
+<p>For both, <em>camel Case</em> and <em>Pascal Case</em>, the general rules of the English
+language apply.
+This means that the correct version for a variable about the cell voltage is
+<code class="docutils literal notranslate"><span class="pre">abc_cellVoltage</span></code> (<strong>not</strong> <code class="docutils literal notranslate"><span class="pre">abc_cellvoltage</span></code>).</p>
+</div>
+<div class="section" id="c-formatting-c-031">
+<span id="rule-c-formatting"></span><h2><span class="section-number">2.2.31. </span>C Formatting (<code class="docutils literal notranslate"><span class="pre">C:031</span></code>)<a class="headerlink" href="#c-formatting-c-031" title="Permalink to this headline"></a></h2>
+<div class="admonition-formatting admonition">
+<p class="admonition-title">Formatting</p>
+<ul class="simple">
+<li><p>All code <strong>MUST</strong> be formatted according to the rules in this guidelines
+document.</p></li>
+<li><p>Formatting <strong>SHOULD</strong> be done automatically by a tool.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="state-machines-c-032">
+<span id="rule-c-state-machines"></span><h2><span class="section-number">2.2.32. </span>State machines (<code class="docutils literal notranslate"><span class="pre">C:032</span></code>)<a class="headerlink" href="#state-machines-c-032" title="Permalink to this headline"></a></h2>
+<p>If a driver (or similar) requires to be implemented in a state machine there
+are some hints found in <a class="reference internal" href="state-machines_how-to.html#how-to-write-state-machines"><span class="std std-ref">How to Write State Machines</span></a>.</p>
+</div>
+<div class="section" id="file-templates">
+<h2><span class="section-number">2.2.33. </span>File Templates<a class="headerlink" href="#file-templates" title="Permalink to this headline"></a></h2>
+<p>These file templates below show how these rules are correctly applied. They
+<strong>SHOULD</strong> be used as basis for new files.</p>
+<ul class="simple">
+<li><p>C header file <a class="reference download internal" download="" href="../../_downloads/9f2115f3665580a5b0f13d6d6953fdba/c.h"><code class="xref download docutils literal notranslate"><span class="pre">c.h</span></code></a></p></li>
+<li><p>C source file <a class="reference download internal" download="" href="../../_downloads/e10f8c3df03cd4b38c95c266017cecb6/c.c"><code class="xref download docutils literal notranslate"><span class="pre">c.c</span></code></a></p></li>
+<li><p>C test header file <a class="reference download internal" download="" href="../../_downloads/f28cbe136376f2d0b2d651d8834f0886/test_c.h"><code class="xref download docutils literal notranslate"><span class="pre">test_c.h</span></code></a></p></li>
+<li><p>C test source file <a class="reference download internal" download="" href="../../_downloads/317dd9fa567175fcf0f4f57026315232/test_c.c"><code class="xref download docutils literal notranslate"><span class="pre">test_c.c</span></code></a></p></li>
+</ul>
+<div class="section" id="c-header-files">
+<h3><span class="section-number">2.2.33.1. </span>C Header Files<a class="headerlink" href="#c-header-files" title="Permalink to this headline"></a></h3>
+<div class="literal-block-wrapper docutils container" id="c-h-template">
+<div class="code-block-caption"><span class="caption-number">Listing 2.33 </span><span class="caption-text">File template for C header files</span><a class="headerlink" href="#c-h-template" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> *</span>
+<span class="linenos"> 3</span><span class="cm"> * @copyright &amp;copy; 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V.</span>
+<span class="linenos"> 4</span><span class="cm"> * All rights reserved.</span>
+<span class="linenos"> 5</span><span class="cm"> *</span>
+<span class="linenos"> 6</span><span class="cm"> * SPDX-License-Identifier: BSD-3-Clause</span>
+<span class="linenos"> 7</span><span class="cm"> *</span>
+<span class="linenos"> 8</span><span class="cm"> * Redistribution and use in source and binary forms, with or without</span>
+<span class="linenos"> 9</span><span class="cm"> * modification, are permitted provided that the following conditions are met:</span>
+<span class="linenos">10</span><span class="cm"> *</span>
+<span class="linenos">11</span><span class="cm"> * 1. Redistributions of source code must retain the above copyright notice, this</span>
+<span class="linenos">12</span><span class="cm"> *    list of conditions and the following disclaimer.</span>
+<span class="linenos">13</span><span class="cm"> *</span>
+<span class="linenos">14</span><span class="cm"> * 2. Redistributions in binary form must reproduce the above copyright notice,</span>
+<span class="linenos">15</span><span class="cm"> *    this list of conditions and the following disclaimer in the documentation</span>
+<span class="linenos">16</span><span class="cm"> *    and/or other materials provided with the distribution.</span>
+<span class="linenos">17</span><span class="cm"> *</span>
+<span class="linenos">18</span><span class="cm"> * 3. Neither the name of the copyright holder nor the names of its</span>
+<span class="linenos">19</span><span class="cm"> *    contributors may be used to endorse or promote products derived from</span>
+<span class="linenos">20</span><span class="cm"> *    this software without specific prior written permission.</span>
+<span class="linenos">21</span><span class="cm"> *</span>
+<span class="linenos">22</span><span class="cm"> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</span>
+<span class="linenos">23</span><span class="cm"> * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span>
+<span class="linenos">24</span><span class="cm"> * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE</span>
+<span class="linenos">25</span><span class="cm"> * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE</span>
+<span class="linenos">26</span><span class="cm"> * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL</span>
+<span class="linenos">27</span><span class="cm"> * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR</span>
+<span class="linenos">28</span><span class="cm"> * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER</span>
+<span class="linenos">29</span><span class="cm"> * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,</span>
+<span class="linenos">30</span><span class="cm"> * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</span>
+<span class="linenos">31</span><span class="cm"> * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="linenos">32</span><span class="cm"> *</span>
+<span class="linenos">33</span><span class="cm"> * We kindly request you to use one or more of the following phrases to refer to</span>
+<span class="linenos">34</span><span class="cm"> * foxBMS in your hardware, software, documentation or advertising materials:</span>
+<span class="linenos">35</span><span class="cm"> *</span>
+<span class="linenos">36</span><span class="cm"> * - &amp;Prime;This product uses parts of foxBMS&amp;reg;&amp;Prime;</span>
+<span class="linenos">37</span><span class="cm"> * - &amp;Prime;This product includes parts of foxBMS&amp;reg;&amp;Prime;</span>
+<span class="linenos">38</span><span class="cm"> * - &amp;Prime;This product is derived from foxBMS&amp;reg;&amp;Prime;</span>
+<span class="linenos">39</span><span class="cm"> *</span>
+<span class="linenos">40</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos">41</span>
+<span class="linenos">42</span><span class="cm">/**</span>
+<span class="linenos">43</span><span class="cm"> * @file    c.h</span>
+<span class="linenos">44</span><span class="cm"> * @author  foxBMS Team</span>
+<span class="linenos">45</span><span class="cm"> * @date    2019-08-27 (date of creation)</span>
+<span class="linenos">46</span><span class="cm"> * @updated 2023-02-03 (date of last update)</span>
+<span class="linenos">47</span><span class="cm"> * @version v1.5.0</span>
+<span class="linenos">48</span><span class="cm"> * @ingroup SOME_GROUP</span>
+<span class="linenos">49</span><span class="cm"> * @prefix  ABC</span>
+<span class="linenos">50</span><span class="cm"> *</span>
+<span class="linenos">51</span><span class="cm"> * @brief   Header file of some software</span>
+<span class="linenos">52</span><span class="cm"> *</span>
+<span class="linenos">53</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos">54</span>
+<span class="linenos">55</span><span class="cp">#ifndef FOXBMS__C_H_</span>
+<span class="linenos">56</span><span class="cp">#define FOXBMS__C_H_</span>
+<span class="linenos">57</span>
+<span class="linenos">58</span><span class="cm">/*========== Includes =======================================================*/</span><span class="w"></span>
+<span class="linenos">59</span>
+<span class="linenos">60</span><span class="cm">/*========== Macros and Definitions =========================================*/</span><span class="w"></span>
+<span class="linenos">61</span>
+<span class="linenos">62</span><span class="cm">/*========== Extern Constant and Variable Declarations ======================*/</span><span class="w"></span>
+<span class="linenos">63</span>
+<span class="linenos">64</span><span class="cm">/*========== Extern Function Prototypes =====================================*/</span><span class="w"></span>
+<span class="linenos">65</span>
+<span class="linenos">66</span><span class="cm">/*========== Externalized Static Functions Prototypes (Unit Test) ===========*/</span><span class="w"></span>
+<span class="linenos">67</span><span class="cp">#ifdef UNITY_UNIT_TEST</span>
+<span class="linenos">68</span><span class="cp">#endif</span>
+<span class="linenos">69</span>
+<span class="linenos">70</span><span class="cp">#endif </span><span class="cm">/* FOXBMS__C_H_ */</span><span class="cp"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="c-source-files">
+<h3><span class="section-number">2.2.33.2. </span>C Source Files<a class="headerlink" href="#c-source-files" title="Permalink to this headline"></a></h3>
+<div class="literal-block-wrapper docutils container" id="c-c-template">
+<div class="code-block-caption"><span class="caption-number">Listing 2.34 </span><span class="caption-text">File template for C source files</span><a class="headerlink" href="#c-c-template" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> *</span>
+<span class="linenos"> 3</span><span class="cm"> * @copyright &amp;copy; 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V.</span>
+<span class="linenos"> 4</span><span class="cm"> * All rights reserved.</span>
+<span class="linenos"> 5</span><span class="cm"> *</span>
+<span class="linenos"> 6</span><span class="cm"> * SPDX-License-Identifier: BSD-3-Clause</span>
+<span class="linenos"> 7</span><span class="cm"> *</span>
+<span class="linenos"> 8</span><span class="cm"> * Redistribution and use in source and binary forms, with or without</span>
+<span class="linenos"> 9</span><span class="cm"> * modification, are permitted provided that the following conditions are met:</span>
+<span class="linenos">10</span><span class="cm"> *</span>
+<span class="linenos">11</span><span class="cm"> * 1. Redistributions of source code must retain the above copyright notice, this</span>
+<span class="linenos">12</span><span class="cm"> *    list of conditions and the following disclaimer.</span>
+<span class="linenos">13</span><span class="cm"> *</span>
+<span class="linenos">14</span><span class="cm"> * 2. Redistributions in binary form must reproduce the above copyright notice,</span>
+<span class="linenos">15</span><span class="cm"> *    this list of conditions and the following disclaimer in the documentation</span>
+<span class="linenos">16</span><span class="cm"> *    and/or other materials provided with the distribution.</span>
+<span class="linenos">17</span><span class="cm"> *</span>
+<span class="linenos">18</span><span class="cm"> * 3. Neither the name of the copyright holder nor the names of its</span>
+<span class="linenos">19</span><span class="cm"> *    contributors may be used to endorse or promote products derived from</span>
+<span class="linenos">20</span><span class="cm"> *    this software without specific prior written permission.</span>
+<span class="linenos">21</span><span class="cm"> *</span>
+<span class="linenos">22</span><span class="cm"> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</span>
+<span class="linenos">23</span><span class="cm"> * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span>
+<span class="linenos">24</span><span class="cm"> * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE</span>
+<span class="linenos">25</span><span class="cm"> * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE</span>
+<span class="linenos">26</span><span class="cm"> * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL</span>
+<span class="linenos">27</span><span class="cm"> * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR</span>
+<span class="linenos">28</span><span class="cm"> * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER</span>
+<span class="linenos">29</span><span class="cm"> * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,</span>
+<span class="linenos">30</span><span class="cm"> * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</span>
+<span class="linenos">31</span><span class="cm"> * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="linenos">32</span><span class="cm"> *</span>
+<span class="linenos">33</span><span class="cm"> * We kindly request you to use one or more of the following phrases to refer to</span>
+<span class="linenos">34</span><span class="cm"> * foxBMS in your hardware, software, documentation or advertising materials:</span>
+<span class="linenos">35</span><span class="cm"> *</span>
+<span class="linenos">36</span><span class="cm"> * - &amp;Prime;This product uses parts of foxBMS&amp;reg;&amp;Prime;</span>
+<span class="linenos">37</span><span class="cm"> * - &amp;Prime;This product includes parts of foxBMS&amp;reg;&amp;Prime;</span>
+<span class="linenos">38</span><span class="cm"> * - &amp;Prime;This product is derived from foxBMS&amp;reg;&amp;Prime;</span>
+<span class="linenos">39</span><span class="cm"> *</span>
+<span class="linenos">40</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos">41</span>
+<span class="linenos">42</span><span class="cm">/**</span>
+<span class="linenos">43</span><span class="cm"> * @file    c.c</span>
+<span class="linenos">44</span><span class="cm"> * @author  foxBMS Team</span>
+<span class="linenos">45</span><span class="cm"> * @date    2019-08-27 (date of creation)</span>
+<span class="linenos">46</span><span class="cm"> * @updated 2023-02-03 (date of last update)</span>
+<span class="linenos">47</span><span class="cm"> * @version v1.5.0</span>
+<span class="linenos">48</span><span class="cm"> * @ingroup SOME_GROUP</span>
+<span class="linenos">49</span><span class="cm"> * @prefix  ABC</span>
+<span class="linenos">50</span><span class="cm"> *</span>
+<span class="linenos">51</span><span class="cm"> * @brief   Implementation of some software</span>
+<span class="linenos">52</span><span class="cm"> *</span>
+<span class="linenos">53</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos">54</span>
+<span class="linenos">55</span><span class="cm">/*========== Includes =======================================================*/</span><span class="w"></span>
+<span class="linenos">56</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;c.h&quot;</span><span class="cp"></span>
+<span class="linenos">57</span>
+<span class="linenos">58</span><span class="cm">/*========== Macros and Definitions =========================================*/</span><span class="w"></span>
+<span class="linenos">59</span>
+<span class="linenos">60</span><span class="cm">/*========== Static Constant and Variable Definitions =======================*/</span><span class="w"></span>
+<span class="linenos">61</span>
+<span class="linenos">62</span><span class="cm">/*========== Extern Constant and Variable Definitions =======================*/</span><span class="w"></span>
+<span class="linenos">63</span>
+<span class="linenos">64</span><span class="cm">/*========== Static Function Prototypes =====================================*/</span><span class="w"></span>
+<span class="linenos">65</span>
+<span class="linenos">66</span><span class="cm">/*========== Static Function Implementations ================================*/</span><span class="w"></span>
+<span class="linenos">67</span>
+<span class="linenos">68</span><span class="cm">/*========== Extern Function Implementations ================================*/</span><span class="w"></span>
+<span class="linenos">69</span>
+<span class="linenos">70</span><span class="cm">/*========== Externalized Static Function Implementations (Unit Test) =======*/</span><span class="w"></span>
+<span class="linenos">71</span><span class="cp">#ifdef UNITY_UNIT_TEST</span>
+<span class="linenos">72</span><span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="c-test-header-files">
+<h3><span class="section-number">2.2.33.3. </span>C Test Header Files<a class="headerlink" href="#c-test-header-files" title="Permalink to this headline"></a></h3>
+<div class="literal-block-wrapper docutils container" id="test-c-h-template">
+<div class="code-block-caption"><span class="caption-number">Listing 2.35 </span><span class="caption-text">File template for C test header files</span><a class="headerlink" href="#test-c-h-template" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> *</span>
+<span class="linenos"> 3</span><span class="cm"> * @copyright &amp;copy; 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V.</span>
+<span class="linenos"> 4</span><span class="cm"> * All rights reserved.</span>
+<span class="linenos"> 5</span><span class="cm"> *</span>
+<span class="linenos"> 6</span><span class="cm"> * SPDX-License-Identifier: BSD-3-Clause</span>
+<span class="linenos"> 7</span><span class="cm"> *</span>
+<span class="linenos"> 8</span><span class="cm"> * Redistribution and use in source and binary forms, with or without</span>
+<span class="linenos"> 9</span><span class="cm"> * modification, are permitted provided that the following conditions are met:</span>
+<span class="linenos">10</span><span class="cm"> *</span>
+<span class="linenos">11</span><span class="cm"> * 1. Redistributions of source code must retain the above copyright notice, this</span>
+<span class="linenos">12</span><span class="cm"> *    list of conditions and the following disclaimer.</span>
+<span class="linenos">13</span><span class="cm"> *</span>
+<span class="linenos">14</span><span class="cm"> * 2. Redistributions in binary form must reproduce the above copyright notice,</span>
+<span class="linenos">15</span><span class="cm"> *    this list of conditions and the following disclaimer in the documentation</span>
+<span class="linenos">16</span><span class="cm"> *    and/or other materials provided with the distribution.</span>
+<span class="linenos">17</span><span class="cm"> *</span>
+<span class="linenos">18</span><span class="cm"> * 3. Neither the name of the copyright holder nor the names of its</span>
+<span class="linenos">19</span><span class="cm"> *    contributors may be used to endorse or promote products derived from</span>
+<span class="linenos">20</span><span class="cm"> *    this software without specific prior written permission.</span>
+<span class="linenos">21</span><span class="cm"> *</span>
+<span class="linenos">22</span><span class="cm"> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</span>
+<span class="linenos">23</span><span class="cm"> * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span>
+<span class="linenos">24</span><span class="cm"> * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE</span>
+<span class="linenos">25</span><span class="cm"> * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE</span>
+<span class="linenos">26</span><span class="cm"> * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL</span>
+<span class="linenos">27</span><span class="cm"> * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR</span>
+<span class="linenos">28</span><span class="cm"> * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER</span>
+<span class="linenos">29</span><span class="cm"> * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,</span>
+<span class="linenos">30</span><span class="cm"> * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</span>
+<span class="linenos">31</span><span class="cm"> * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="linenos">32</span><span class="cm"> *</span>
+<span class="linenos">33</span><span class="cm"> * We kindly request you to use one or more of the following phrases to refer to</span>
+<span class="linenos">34</span><span class="cm"> * foxBMS in your hardware, software, documentation or advertising materials:</span>
+<span class="linenos">35</span><span class="cm"> *</span>
+<span class="linenos">36</span><span class="cm"> * - &amp;Prime;This product uses parts of foxBMS&amp;reg;&amp;Prime;</span>
+<span class="linenos">37</span><span class="cm"> * - &amp;Prime;This product includes parts of foxBMS&amp;reg;&amp;Prime;</span>
+<span class="linenos">38</span><span class="cm"> * - &amp;Prime;This product is derived from foxBMS&amp;reg;&amp;Prime;</span>
+<span class="linenos">39</span><span class="cm"> *</span>
+<span class="linenos">40</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos">41</span>
+<span class="linenos">42</span><span class="cm">/**</span>
+<span class="linenos">43</span><span class="cm"> * @file    test_c.h</span>
+<span class="linenos">44</span><span class="cm"> * @author  foxBMS Team</span>
+<span class="linenos">45</span><span class="cm"> * @date    2020-08-10 (date of creation)</span>
+<span class="linenos">46</span><span class="cm"> * @updated 2023-02-03 (date of last update)</span>
+<span class="linenos">47</span><span class="cm"> * @version v1.5.0</span>
+<span class="linenos">48</span><span class="cm"> * @ingroup UNIT_TEST_IMPLEMENTATION</span>
+<span class="linenos">49</span><span class="cm"> * @prefix  TEST</span>
+<span class="linenos">50</span><span class="cm"> *</span>
+<span class="linenos">51</span><span class="cm"> * @brief   Test header of the some module</span>
+<span class="linenos">52</span><span class="cm"> *</span>
+<span class="linenos">53</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos">54</span>
+<span class="linenos">55</span><span class="cp">#ifndef FOXBMS__TEST_C_H_</span>
+<span class="linenos">56</span><span class="cp">#define FOXBMS__TEST_C_H_</span>
+<span class="linenos">57</span>
+<span class="linenos">58</span><span class="cm">/*========== Includes =======================================================*/</span><span class="w"></span>
+<span class="linenos">59</span>
+<span class="linenos">60</span><span class="cm">/*========== Macros and Definitions =========================================*/</span><span class="w"></span>
+<span class="linenos">61</span>
+<span class="linenos">62</span><span class="cp">#endif </span><span class="cm">/* FOXBMS__TEST_C_H_ */</span><span class="cp"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="c-test-source-files">
+<h3><span class="section-number">2.2.33.4. </span>C Test Source Files<a class="headerlink" href="#c-test-source-files" title="Permalink to this headline"></a></h3>
+<div class="literal-block-wrapper docutils container" id="test-c-c-template">
+<div class="code-block-caption"><span class="caption-number">Listing 2.36 </span><span class="caption-text">File template for C test source files</span><a class="headerlink" href="#test-c-c-template" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> *</span>
+<span class="linenos"> 3</span><span class="cm"> * @copyright &amp;copy; 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V.</span>
+<span class="linenos"> 4</span><span class="cm"> * All rights reserved.</span>
+<span class="linenos"> 5</span><span class="cm"> *</span>
+<span class="linenos"> 6</span><span class="cm"> * SPDX-License-Identifier: BSD-3-Clause</span>
+<span class="linenos"> 7</span><span class="cm"> *</span>
+<span class="linenos"> 8</span><span class="cm"> * Redistribution and use in source and binary forms, with or without</span>
+<span class="linenos"> 9</span><span class="cm"> * modification, are permitted provided that the following conditions are met:</span>
+<span class="linenos">10</span><span class="cm"> *</span>
+<span class="linenos">11</span><span class="cm"> * 1. Redistributions of source code must retain the above copyright notice, this</span>
+<span class="linenos">12</span><span class="cm"> *    list of conditions and the following disclaimer.</span>
+<span class="linenos">13</span><span class="cm"> *</span>
+<span class="linenos">14</span><span class="cm"> * 2. Redistributions in binary form must reproduce the above copyright notice,</span>
+<span class="linenos">15</span><span class="cm"> *    this list of conditions and the following disclaimer in the documentation</span>
+<span class="linenos">16</span><span class="cm"> *    and/or other materials provided with the distribution.</span>
+<span class="linenos">17</span><span class="cm"> *</span>
+<span class="linenos">18</span><span class="cm"> * 3. Neither the name of the copyright holder nor the names of its</span>
+<span class="linenos">19</span><span class="cm"> *    contributors may be used to endorse or promote products derived from</span>
+<span class="linenos">20</span><span class="cm"> *    this software without specific prior written permission.</span>
+<span class="linenos">21</span><span class="cm"> *</span>
+<span class="linenos">22</span><span class="cm"> * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;</span>
+<span class="linenos">23</span><span class="cm"> * AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE</span>
+<span class="linenos">24</span><span class="cm"> * IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE</span>
+<span class="linenos">25</span><span class="cm"> * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE</span>
+<span class="linenos">26</span><span class="cm"> * FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL</span>
+<span class="linenos">27</span><span class="cm"> * DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR</span>
+<span class="linenos">28</span><span class="cm"> * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER</span>
+<span class="linenos">29</span><span class="cm"> * CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,</span>
+<span class="linenos">30</span><span class="cm"> * OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE</span>
+<span class="linenos">31</span><span class="cm"> * OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</span>
+<span class="linenos">32</span><span class="cm"> *</span>
+<span class="linenos">33</span><span class="cm"> * We kindly request you to use one or more of the following phrases to refer to</span>
+<span class="linenos">34</span><span class="cm"> * foxBMS in your hardware, software, documentation or advertising materials:</span>
+<span class="linenos">35</span><span class="cm"> *</span>
+<span class="linenos">36</span><span class="cm"> * - &amp;Prime;This product uses parts of foxBMS&amp;reg;&amp;Prime;</span>
+<span class="linenos">37</span><span class="cm"> * - &amp;Prime;This product includes parts of foxBMS&amp;reg;&amp;Prime;</span>
+<span class="linenos">38</span><span class="cm"> * - &amp;Prime;This product is derived from foxBMS&amp;reg;&amp;Prime;</span>
+<span class="linenos">39</span><span class="cm"> *</span>
+<span class="linenos">40</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos">41</span>
+<span class="linenos">42</span><span class="cm">/**</span>
+<span class="linenos">43</span><span class="cm"> * @file    test_c.c</span>
+<span class="linenos">44</span><span class="cm"> * @author  foxBMS Team</span>
+<span class="linenos">45</span><span class="cm"> * @date    2020-08-10 (date of creation)</span>
+<span class="linenos">46</span><span class="cm"> * @updated 2023-02-03 (date of last update)</span>
+<span class="linenos">47</span><span class="cm"> * @version v1.5.0</span>
+<span class="linenos">48</span><span class="cm"> * @ingroup UNIT_TEST_IMPLEMENTATION</span>
+<span class="linenos">49</span><span class="cm"> * @prefix  TEST</span>
+<span class="linenos">50</span><span class="cm"> *</span>
+<span class="linenos">51</span><span class="cm"> * @brief   Test of some module</span>
+<span class="linenos">52</span><span class="cm"> *</span>
+<span class="linenos">53</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos">54</span>
+<span class="linenos">55</span><span class="cm">/*========== Includes =======================================================*/</span><span class="w"></span>
+<span class="linenos">56</span><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;unity.h&quot;</span><span class="cp"></span>
+<span class="linenos">57</span>
+<span class="linenos">58</span><span class="n">TEST_FILE</span><span class="p">(</span><span class="s">&quot;c.c&quot;</span><span class="p">)</span><span class="w"></span>
+<span class="linenos">59</span>
+<span class="linenos">60</span><span class="cm">/*========== Definitions and Implementations for Unit Test ==================*/</span><span class="w"></span>
+<span class="linenos">61</span>
+<span class="linenos">62</span><span class="cm">/*========== Setup and Teardown =============================================*/</span><span class="w"></span>
+<span class="linenos">63</span><span class="kt">void</span><span class="w"> </span><span class="n">setUp</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">64</span><span class="p">}</span><span class="w"></span>
+<span class="linenos">65</span>
+<span class="linenos">66</span><span class="kt">void</span><span class="w"> </span><span class="n">tearDown</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">67</span><span class="p">}</span><span class="w"></span>
+<span class="linenos">68</span>
+<span class="linenos">69</span><span class="cm">/*========== Test Cases =====================================================*/</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="guidelines_general.html" class="btn btn-neutral float-left" title="2.1. General Rules" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="guidelines_python.html" class="btn btn-neutral float-right" title="2.3. Python Coding Guidelines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

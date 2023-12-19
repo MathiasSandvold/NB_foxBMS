@@ -1,0 +1,7 @@
+<map id="IR155_GetMeasurementValues" name="IR155_GetMeasurementValues">
+<area shape="rect" id="node1" title="Interface function which delivers the actual signal measurement (duty cyle) and evaluation...." alt="" coords="5,81,208,108"/>
+<area shape="rect" id="node2" href="$bender__ir155__helper_8c.html#ab701b6c5240b2203342c1de5a9c6681b" title="Calculate insulation resistance from measured dutycycle." alt="" coords="270,5,451,32"/>
+<area shape="rect" id="node3" href="$bender__ir155__helper_8c.html#aed6c211947fd52248508353dbb92a6f3" title="Determines frequency&#45;dependent measurement state." alt="" coords="263,56,458,83"/>
+<area shape="rect" id="node4" href="$bender__ir155__helper_8c.html#a04b9c7e05e1414e76bf855da89113cf2" title="Check if passed duty cycle is within interval limits." alt="" coords="256,107,465,133"/>
+<area shape="rect" id="node5" href="$pwm_8c.html#aa1270c042e32f24252ff3fc65e2c41e9" title="Get dutycycle and frequency of input PWM signal." alt="" coords="291,157,430,184"/>
+</map>

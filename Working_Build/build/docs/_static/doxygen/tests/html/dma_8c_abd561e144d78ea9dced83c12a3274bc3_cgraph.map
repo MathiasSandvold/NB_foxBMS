@@ -1,0 +1,12 @@
+<map id="dmaGroupANotification" name="dmaGroupANotification">
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,160,133"/>
+<area shape="rect" id="node2" href="$afe__dma_8h.html#abab0f99ff091dd67a1034449f57e66a6" title="Function called by DMA block transfer callback." alt="" coords="221,5,353,32"/>
+<area shape="rect" id="node4" href="$i2c_8c.html#a866269a9c80eac4542abf7835e726ed4" title="Used to read last byte received per I2C." alt="" coords="214,56,361,83"/>
+<area shape="rect" id="node5" href="$i2c_8c.html#a3ff82cda8c1d4a8b2d5fa48a5fc2c4a5" title="Waits for the I2C Rx buffer to be full." alt="" coords="227,107,347,133"/>
+<area shape="rect" id="node9" href="$spi_8c.html#a6557ff41f8bae8943a3774ddbed616fe" title="Used to send last byte per SPI." alt="" coords="208,157,367,184"/>
+<area shape="rect" id="node10" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="227,208,348,235"/>
+<area shape="rect" id="node3" href="$os__freertos_8c.html#a778073d4b148378bab119eabf199a802" title="Notify a task, with index." alt="" coords="415,5,585,32"/>
+<area shape="rect" id="node6" href="$mcu_8c.html#a298a563701c7fc98c1f2750a1a2b8220" title="Get the current value of the Free Running Counter 0 (FRC0)" alt="" coords="633,81,820,108"/>
+<area shape="rect" id="node7" href="$mcu_8c.html#af5a3b75b7431935f913d80e31eb99690" title="Checks if a timeout in microseconds has elapsed." alt="" coords="429,132,571,159"/>
+<area shape="rect" id="node8" href="$mcu_8c.html#a357da0bcb906f4ad573ed0d4244dd0a2" title="Convert the counter value FRC0 to a time in microseconds." alt="" coords="638,133,815,174"/>
+</map>

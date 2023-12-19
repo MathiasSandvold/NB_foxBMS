@@ -1,0 +1,5 @@
+<map id="ltc_6813&#45;1_cfg.h" name="ltc_6813&#45;1_cfg.h">
+<area shape="rect" id="node1" title="Header for the configuration for the LTC 6804&#45;1 6811&#45;1, 6812&#45;1, and 6813&#45;1 monitoring IC." alt="" coords="69,5,187,32"/>
+<area shape="rect" id="node2" href="$ltc__6813-1__cfg_8c.html" title="Configuration for the LTC analog front&#45;end." alt="" coords="5,80,123,107"/>
+<area shape="rect" id="node3" href="$ltc__6813-1_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="147,80,240,107"/>
+</map>

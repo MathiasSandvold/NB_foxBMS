@@ -1,0 +1,256 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>8.2.10. Changing and Extending the Build Environment &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="8.2.11. How to Build A Library and Link it in a foxBMS 2 Project" href="../build-process/library-project_how-to.html" />
+    <link rel="prev" title="8.2.5. How to use unit tests" href="../unit-tests/unit-tests_how-to.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../how-to/how-to.html">8. How-to</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../modules/driver/can/can_how-to.html">8.1.1. How to Use the CAN Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/engine/diag/diag_how-to.html">8.1.2. How to Use the Diagnosis Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/engine/database/database_how-to.html">8.1.3. How to Use the Database Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/task/ftask/ftask_how-to.html">8.1.4. How to Use the FTASK Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/main/fassert_how-to.html">8.1.5. How to Use assertions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/driver/afe/adding-a-new-ic_how-to.html">8.2.1. How to Implement an Analog Front-End Driver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/driver/ts/adding-a-new-ts_how-to.html">8.2.2. How to Implement a New Temperature Sensor Driver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developer-manual/style-guide/state-machines_how-to.html">8.2.3. How to Write State Machines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration/without-halcogen_how-to.html">8.2.4. How to Use Generated Sources from HALCoGen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit-tests/unit-tests_how-to.html">8.2.5. How to use unit tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit-tests/unit-tests_how-to.html#guidelines-for-the-unit-test-skeleton">8.2.6. Guidelines for the Unit Test Skeleton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit-tests/unit-tests_how-to.html#result">8.2.7. Result</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit-tests/unit-tests_how-to.html#how-to-exclude-files-from-unit-tests">8.2.8. How to exclude files from unit tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit-tests/unit-tests_how-to.html#using-ceedling-directly">8.2.9. Using ceedling directly</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">8.2.10. Changing and Extending the Build Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build-process/library-project_how-to.html">8.2.11. How to Build A Library and Link it in a foxBMS 2 Project</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../how-to/how-to.html"><span class="section-number">8. </span>How-to</a> &raquo;</li>
+      <li><span class="section-number">8.2.10. </span>Changing and Extending the Build Environment</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/software/build-environment/build-environment_how-to.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="changing-and-extending-the-build-environment">
+<span id="id1"></span><h1><span class="section-number">8.2.10. </span>Changing and Extending the Build Environment<a class="headerlink" href="#changing-and-extending-the-build-environment" title="Permalink to this headline"></a></h1>
+<p>If packages are needed that are not included in development environment they
+can simply be added.
+This how-to explains it for Windows.
+If there is a reference to <code class="docutils literal notranslate"><span class="pre">conf\env\conda_env_win32.yaml</span></code> and you are on Linux
+replace it by <code class="docutils literal notranslate"><span class="pre">conf/env/conda_env_linux.yaml</span></code>.</p>
+<p>The basic required packages are listed in
+<code class="docutils literal notranslate"><span class="pre">conf/env/conda_env_win32-pkgs.yaml</span></code>.
+If a package should be added or removed, it needs to be done here.
+This file only defines the major Python version that should be used.</p>
+<p>The steps are basically:</p>
+<ul class="simple">
+<li><p>Add new packages and/or remove no longer needed packages and update the
+environment name, for this example <code class="docutils literal notranslate"><span class="pre">example-env</span></code>.</p></li>
+<li><p>Create a new pseudo-base environment that includes all needed Python packages
+for the project.</p></li>
+<li><p>Export the exact environment definition.</p></li>
+<li><p>Update the test suite.</p></li>
+<li><p>Commit the new environment to the repository.</p></li>
+<li><p>Add a changelog entry that tells the user to run the environment update
+script.</p></li>
+</ul>
+<p>These steps in details:</p>
+<ol class="arabic">
+<li><p>Add packages/remove packages and update environment name.</p></li>
+<li><p>Create a new pseudo-base environment and wait for the solver to succeeded.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">C:\Users\vulpes&gt;%USERPROFILE%\miniconda3\Scripts\activate base</span>
+<span class="gp gp-VirtualEnv">(base)</span> <span class="go">C:\Users\vulpes&gt;conda env create -f conf\env\conda_env_win32-pkgs.yaml</span>
+</pre></div>
+</div>
+</li>
+<li><p>Export the new development environment:</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="gp gp-VirtualEnv">(base)</span> <span class="go">C:\Users\vulpes&gt;conda env export -n example-env &gt; conf\env\conda_env_win32.yaml</span>
+</pre></div>
+</div>
+</li>
+<li><p>Remove the <code class="docutils literal notranslate"><span class="pre">Prefix</span></code> entry from <code class="docutils literal notranslate"><span class="pre">conf\env\conda_env_win32.yaml</span></code>.</p></li>
+<li><p>Adapt the test suite as needed and run it afterwards.</p></li>
+<li><p>Commit the new environment file to the repository.</p></li>
+<li><p>Add changelog entry.</p></li>
+</ol>
+<div class="section" id="further-reading">
+<h2><span class="section-number">8.2.10.1. </span>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this headline"></a></h2>
+<p>An explanation why build environments are used is found in
+<a class="reference internal" href="build-environment.html#build-environment"><span class="std std-ref">Build Environment</span></a>.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../unit-tests/unit-tests_how-to.html" class="btn btn-neutral float-left" title="8.2.5. How to use unit tests" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../build-process/library-project_how-to.html" class="btn btn-neutral float-right" title="8.2.11. How to Build A Library and Link it in a foxBMS 2 Project" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

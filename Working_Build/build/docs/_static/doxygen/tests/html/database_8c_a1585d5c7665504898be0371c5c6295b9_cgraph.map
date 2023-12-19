@@ -1,0 +1,7 @@
+<map id="DATA_Task" name="DATA_Task">
+<area shape="rect" id="node1" title="trigger of database manager" alt="" coords="5,42,96,69"/>
+<area shape="rect" id="node2" href="$database_8c.html#a2457542b9b35e65267a0aaa0a7be0c5c" title=" " alt="" coords="144,5,324,47"/>
+<area shape="rect" id="node5" href="$os__freertos_8c.html#a285b22d2ef1448cae22a8965b5fec186" title="Receive an item from a queue." alt="" coords="153,71,315,98"/>
+<area shape="rect" id="node3" href="$database_8c.html#afed1a594f60622f1e922ce814a7703e8" title=" " alt="" coords="372,13,492,39"/>
+<area shape="rect" id="node4" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="540,13,667,39"/>
+</map>

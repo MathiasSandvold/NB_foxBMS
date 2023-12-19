@@ -1,0 +1,5 @@
+<map id="testSBC_CheckRegisterValues" name="testSBC_CheckRegisterValues">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,208,32"/>
+<area shape="rect" id="node2" href="$nxpfs85xx_8c.html#a96f55288a09e38bac5f048e683f63640" title=" " alt="" coords="256,5,476,32"/>
+<area shape="rect" id="node3" href="$nxpfs85xx_8c.html#a3e7ae196313f4cede4b0420ac83d810a" title="Checks register value against expected value." alt="" coords="524,5,705,32"/>
+</map>

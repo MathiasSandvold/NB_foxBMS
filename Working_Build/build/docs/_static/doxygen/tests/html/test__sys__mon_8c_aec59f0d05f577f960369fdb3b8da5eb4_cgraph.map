@@ -1,0 +1,7 @@
+<map id="testSYSM_NotifyExitTimestampProperlySetAndDurationCalculated" name="testSYSM_NotifyExitTimestampProperlySetAndDurationCalculated">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,228,90"/>
+<area shape="rect" id="node2" href="$sys__mon_8c.html#a3f451806bc94e7340bc876ab4001596d" title="Sets needed bits to indicate that a task is running." alt="" coords="325,31,425,57"/>
+<area shape="rect" id="node5" href="$sys__mon_8c.html#a0098e4a9883da937f902f22d8c468ae8" title=" " alt="" coords="276,81,475,108"/>
+<area shape="rect" id="node3" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="523,5,669,32"/>
+<area shape="rect" id="node4" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="527,56,665,83"/>
+</map>

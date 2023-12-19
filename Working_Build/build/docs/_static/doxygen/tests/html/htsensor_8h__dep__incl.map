@@ -1,0 +1,6 @@
+<map id="htsensor.h" name="htsensor.h">
+<area shape="rect" id="node1" title="Header for the driver for the Sensirion SHT35&#45;DIS I2C humidity/temperature sensor." alt="" coords="113,5,196,32"/>
+<area shape="rect" id="node2" href="$htsensor_8c.html" title="Driver for the Sensirion SHT35&#45;DIS I2C humidity/temperature sensor." alt="" coords="5,80,88,107"/>
+<area shape="rect" id="node3" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="112,80,197,107"/>
+<area shape="rect" id="node4" href="$test__htsensor_8c.html" title="Tests for the driver for the I2C humidity/temperature sensor." alt="" coords="221,80,333,107"/>
+</map>

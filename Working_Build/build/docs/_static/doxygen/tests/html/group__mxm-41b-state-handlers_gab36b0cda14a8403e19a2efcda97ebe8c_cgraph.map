@@ -1,0 +1,25 @@
+<map id="MXM_41BStateHandlerUartTransaction" name="MXM_41BStateHandlerUartTransaction">
+<area shape="rect" id="node1" title="state handler for &quot;uart transaction&quot;" alt="" coords="5,183,252,209"/>
+<area shape="rect" id="node2" href="$mxm__17841b_8c.html#acf55cee5ae15654177643f937054c952" title="Write a buffer transaction to MAX17841B." alt="" coords="339,56,484,83"/>
+<area shape="rect" id="node15" href="$mxm__17841b_8c.html#abe201e911023d8c53709b38f447aa3ca" title="Read the value of a register function." alt="" coords="307,208,516,235"/>
+<area shape="rect" id="node18" href="$mxm__17841b_8c.html#a70233222d0d1b152129a1b518ceb8937" title="Read one or multiple registers of MAX17841B." alt="" coords="332,157,491,184"/>
+<area shape="rect" id="node21" href="$mxm__17841b_8c.html#a1e6810277173e48449155251562be540" title="Write one or multiple registers of MAX17841B." alt="" coords="331,107,491,133"/>
+<area shape="rect" id="node22" href="$mxm__17841b_8c.html#a4a89dee3ef42402bf77a05f83ab55d0f" title="Transition into idle, mark as an error occurred." alt="" coords="312,259,511,285"/>
+<area shape="rect" id="node23" href="$mxm__17841b_8c.html#aae8820bfff22c08f9ab9cfc015f1cf6c" title="Transition into idle, mark as successful." alt="" coords="300,309,523,336"/>
+<area shape="rect" id="node3" href="$mxm__cfg_8c.html#ae7cec69276fadde6665026fadc7eb390" title="Transmit data over SPI." alt="" coords="585,81,699,108"/>
+<area shape="rect" id="node4" href="$diag_8c.html#a3e60a00edfbecf928fd6db140626647a" title="DIAG_CheckEvent provides a simple interface to check an event for STD_OK." alt="" coords="783,56,912,83"/>
+<area shape="rect" id="node7" href="$spi_8c.html#abdf760fa10bbc7f0f6b93ef0ddda41de" title="Transmits data on SPI without DMA." alt="" coords="784,107,911,133"/>
+<area shape="rect" id="node5" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="990,5,1094,32"/>
+<area shape="rect" id="node6" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="1163,5,1285,32"/>
+<area shape="rect" id="node8" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="995,259,1089,285"/>
+<area shape="rect" id="node9" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="1001,56,1083,83"/>
+<area shape="rect" id="node10" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="981,107,1103,133"/>
+<area shape="rect" id="node11" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="1003,157,1081,184"/>
+<area shape="rect" id="node14" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="997,208,1087,235"/>
+<area shape="rect" id="node12" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1151,157,1297,184"/>
+<area shape="rect" id="node13" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1155,208,1293,235"/>
+<area shape="rect" id="node16" href="$mxm__bitextract_8c.html#aac9f739280cfb96575a7dc1e860dae41" title="read a value from a register supplied as variable" alt="" coords="571,208,713,235"/>
+<area shape="rect" id="node17" href="$mxm__bitextract_8c.html#a99ab333298a01410347cff8b97125e12" title="Extract a bit value function." alt="" coords="813,208,882,235"/>
+<area shape="rect" id="node19" href="$mxm__cfg_8c.html#a116a8b81cf7c1912c50c1212aa0ff9a8" title="Send and Receive data over SPI." alt="" coords="577,157,707,184"/>
+<area shape="rect" id="node20" href="$spi_8c.html#ac84bc8424de860e2cd89fea2e89dd89a" title="Transmits and receives data on SPI without DMA." alt="" coords="761,157,933,184"/>
+</map>

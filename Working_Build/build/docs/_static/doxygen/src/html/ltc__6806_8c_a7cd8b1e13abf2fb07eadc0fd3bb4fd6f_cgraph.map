@@ -1,0 +1,7 @@
+<map id="LTC_InitializeMonitoringPin" name="LTC_InitializeMonitoringPin">
+<area shape="rect" id="node1" title="Sets the transceiver pins to enable LTC6820 IC." alt="" coords="5,31,184,57"/>
+<area shape="rect" id="node2" href="$pex_8c.html#a8d40659d3d10755949d65e36f483c504" title="sets pin to high." alt="" coords="277,5,370,32"/>
+<area shape="rect" id="node5" href="$pex_8c.html#aa2309e9dbd95438d52d80cad62ce5a45" title="sets pin to input." alt="" coords="232,56,415,83"/>
+<area shape="rect" id="node3" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="463,5,609,32"/>
+<area shape="rect" id="node4" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="467,56,605,83"/>
+</map>

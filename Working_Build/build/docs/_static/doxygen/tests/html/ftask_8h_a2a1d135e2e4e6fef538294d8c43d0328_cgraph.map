@@ -1,0 +1,202 @@
+<map id="FTSK_CreateTaskCyclic10ms" name="FTSK_CreateTaskCyclic10ms">
+<area shape="rect" id="node1" title="Creation of cyclic 10 ms task." alt="" coords="5,128,201,155"/>
+<area shape="rect" id="node2" href="$ftask__cfg_8c.html#a7f3620825ec0f5072516255d6febebdb" title="Cyclic 10 ms task." alt="" coords="249,2999,460,3025"/>
+<area shape="rect" id="node6" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="1664,1887,1791,1913"/>
+<area shape="rect" id="node198" href="$os__freertos_8c.html#a3ac9f783e38ae9f9c8cfe0634bb3b8fe" title="Delay a task until a specified time." alt="" coords="287,128,422,155"/>
+<area shape="rect" id="node199" href="$os__freertos_8c.html#a4a7551f4fb9b1a8a50eab73b4b381bff" title="Marks the current task as requiring FPU context." alt="" coords="256,179,453,221"/>
+<area shape="rect" id="node200" href="$sys__mon_8c.html#a3f451806bc94e7340bc876ab4001596d" title="Sets needed bits to indicate that a task is running." alt="" coords="1677,1145,1777,1172"/>
+<area shape="rect" id="node3" href="$adc_8c.html#a63b6e21d98ea03db61750be2454706f9" title="controls ADC measurement sequence." alt="" coords="561,1041,658,1068"/>
+<area shape="rect" id="node5" href="$algorithm_8c.html#a53b5f1045b50af05fd3315d0045c206d" title="monitors the calculation duration of the different algorithms" alt="" coords="512,1556,707,1583"/>
+<area shape="rect" id="node7" href="$bms_8c.html#a954a05b20669dc00663c4f0f2a729fcd" title="trigger function for the BMS driver state machine." alt="" coords="561,2071,658,2097"/>
+<area shape="rect" id="node67" href="$can_8c.html#a18598f23edcb4ba38ed4741c0efb912f" title="Calls the functions to drive the CAN interface. Makes the CAN timing checks and sends the periodic me..." alt="" coords="817,2999,951,3025"/>
+<area shape="rect" id="node75" href="$interlock_8c.html#ab36dc56ba7d336a15ad43fb17da83e62" title="trigger function for the ILCK driver state machine." alt="" coords="1123,3220,1219,3247"/>
+<area shape="rect" id="node84" href="$redundancy_8c.html#a950ca6f8b81ff95144621a1e1531d22d" title="Function to validate the measurement between redundant measurement values for cell voltage and cell t..." alt="" coords="508,3891,711,3917"/>
+<area shape="rect" id="node100" href="$redundancy_8c.html#aa37faa7b953443cc737fb5e93bdfff90" title="Function to validate the measurements of pack values (string values, pack values)" alt="" coords="777,3476,991,3503"/>
+<area shape="rect" id="node110" href="$sbc_8c.html#a3e0fcadd5fce6da908a572116eea2b4c" title="trigger function for the SYS driver state machine." alt="" coords="562,4721,657,4748"/>
+<area shape="rect" id="node147" href="$sof__trapezoid_8c.html#a0d3de2460654bee13c74c4f0a92df751" title="triggers SOF calculation" alt="" coords="549,849,669,876"/>
+<area shape="rect" id="node153" href="$sps_8c.html#a4d6b349b73c22a06820874713c1cfa1f" title="Control function for the CONT driver state machine." alt="" coords="846,3049,922,3076"/>
+<area shape="rect" id="node165" href="$sys_8c.html#ade51c1203163eee5a4781db384725c95" title="tick function, call this to advance the state machine" alt="" coords="837,940,931,967"/>
+<area shape="rect" id="node196" href="$sys__mon_8c.html#a5cf21eb467cbbed65c86a612dc5bdcd0" title="Commits the stored changes to FRAM if necessary." alt="" coords="1088,3453,1253,3480"/>
+<area shape="rect" id="node4" href="$adc_8c.html#ae4524c8cf5e18c6ba4d97b8a4cbc1ac4" title="converts reading from ADC to a voltage in mV." alt="" coords="813,1041,955,1068"/>
+<area shape="rect" id="node8" href="$bal_8h.html#a98f48172bc8beacf09e7a4829be29fb8" title="sets the current state request of the state variable bal_state." alt="" coords="1373,1461,1527,1488"/>
+<area shape="rect" id="node12" href="$bms_8c.html#afb0cbd21738abb325b8d9a0e254e3491" title="Checks the state requests made to the BMS state machine." alt="" coords="797,1497,971,1524"/>
+<area shape="rect" id="node13" href="$bms_8c.html#aa61129e4110d3ee0e1d1227a53d37036" title="Check for any open voltage sense wire." alt="" coords="789,2847,979,2873"/>
+<area shape="rect" id="node14" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="1675,2567,1779,2593"/>
+<area shape="rect" id="node16" href="$bms_8c.html#a030960f823eace2d38ba750cbd99527b" title="Checks if the current limitations are violated." alt="" coords="807,2745,961,2772"/>
+<area shape="rect" id="node17" href="$foxmath_8c.html#a04e47df99d56d9aad4287672285f4a1c" title="Returns the absolute value of passed int32_t value." alt="" coords="1107,1928,1234,1955"/>
+<area shape="rect" id="node18" href="$bms_8c.html#ad5057f08e33ca2d5b01dba9ca55b113b" title="re&#45;entrance check of SYS state machine trigger function" alt="" coords="1646,2039,1809,2065"/>
+<area shape="rect" id="node19" href="$bms_8c.html#a83f5d09abbf04141bfabab7c5ee865de" title="Returns the average current flowing through all strings." alt="" coords="783,1599,985,1625"/>
+<area shape="rect" id="node20" href="$bms_8c.html#aff277b6ef688e140b6aded5907cdaa24" title="Returns ID of string with voltage closest to first closed string voltage." alt="" coords="805,1447,963,1473"/>
+<area shape="rect" id="node22" href="$bms_8c.html#aa8629fa034f46282328df180f5190e2e" title="Get current flow direction, current value as function parameter." alt="" coords="1071,1877,1270,1904"/>
+<area shape="rect" id="node23" href="$bms_8c.html#a79c1eacde75dcb1613bdf05408f2ebdf" title="Get first string contactor that should be opened depending on the actual current flow direction." alt="" coords="789,1701,979,1742"/>
+<area shape="rect" id="node24" href="$bms_8c.html#ac7f00f2b32e1b48effa00682864b134c" title="Returns ID of string with highest total voltage." alt="" coords="805,1767,963,1793"/>
+<area shape="rect" id="node25" href="$bms_8c.html#ab46023b9c65354e6b0bee4737d905573" title="Returns ID of string with lowest total voltage." alt="" coords="807,2223,961,2249"/>
+<area shape="rect" id="node26" href="$bms_8c.html#a6be39f54ac7bccab7754c82fe9614517" title=" " alt="" coords="785,2273,983,2300"/>
+<area shape="rect" id="node27" href="$bms_8c.html#af7274f33f364e8b90eaab4db4691756d" title="Get second string contactor that should be opened." alt="" coords="787,2325,981,2366"/>
+<area shape="rect" id="node28" href="$bms_8c.html#aae2219a96d1c1b8040f69c0c4a938ef5" title="Returns voltage difference between first closed string and string ID." alt="" coords="777,1919,991,1945"/>
+<area shape="rect" id="node29" href="$bms_8c.html#af45381b7833d8b54bebfa00819e46c3a" title="Checks if any error flag is set and handles delay until contactors need to be opened." alt="" coords="775,1345,993,1372"/>
+<area shape="rect" id="node33" href="$bms_8c.html#a4fe1f853a46d43cbeddbdbc3e1e26aec" title="Checks if the contactor feedback for a specific contactor is valid need to be opened." alt="" coords="779,2441,989,2468"/>
+<area shape="rect" id="node34" href="$bms_8c.html#adac85d9bf1b7fd02d1a0efbd2c222391" title="transfers the current state request to the state machine." alt="" coords="1636,2089,1819,2116"/>
+<area shape="rect" id="node35" href="$bms_8c.html#a76058d139f635139e58c6c6fce836c94" title="Updates battery system state variable depending on measured/recent current values." alt="" coords="799,2492,969,2519"/>
+<area shape="rect" id="node36" href="$contactor_8c.html#a2b2ba5d5312f7ea19245ce7012fa38d5" title="checks the feedback of all contactors" alt="" coords="1091,2389,1250,2416"/>
+<area shape="rect" id="node40" href="$contactor_8c.html#a359cf64388a3ce1432d648c5d2d74f96" title="Closes the contactor." alt="" coords="1094,2085,1247,2112"/>
+<area shape="rect" id="node44" href="$contactor_8c.html#aeca7c362c6d4ae2446f879badaa74830" title="Closes precharge." alt="" coords="806,2172,962,2199"/>
+<area shape="rect" id="node45" href="$contactor_8c.html#acf5d3ca6d094fc51514959855cf72959" title="Returns the current contactor state." alt="" coords="798,2543,970,2569"/>
+<area shape="rect" id="node46" href="$contactor_8c.html#aec6ecd0c4511790c826a7b8b1ad20d7b" title="Open all currently closed precharge contactors." alt="" coords="768,2391,1000,2417"/>
+<area shape="rect" id="node47" href="$contactor_8c.html#a8218cfd3f2ca325237b40624a6337f03" title="Opens the contactor." alt="" coords="1095,2029,1246,2056"/>
+<area shape="rect" id="node48" href="$contactor_8c.html#a7ad52b078cdb28d73da19979843fa3f4" title="Opens precharge." alt="" coords="807,2020,961,2047"/>
+<area shape="rect" id="node49" href="$diag_8c.html#a7320b7cba18f40437e0d23d587843f89" title="Check if any fatal error is set." alt="" coords="799,1969,969,1996"/>
+<area shape="rect" id="node50" href="$imd_8c.html#a052e0e6f3cd1501d0471060811380ee2" title="Request to activate the actual IMD measurement." alt="" coords="767,1143,1001,1169"/>
+<area shape="rect" id="node53" href="$led_8c.html#a0e678eb65ea5db2ea54a904c5698376d" title="Set debug LED with defined frequency." alt="" coords="814,1295,954,1321"/>
+<area shape="rect" id="node54" href="$meas_8c.html#a4044fa0aaa42b1a6098f304d8a43e318" title="Makes the request to the AFE state machine to perform open&#45;wire check." alt="" coords="779,1244,989,1271"/>
+<area shape="rect" id="node58" href="$soa_8c.html#aa9aaf8d9321b5c449b4f760ea9ebb6dc" title="checks the abidance by the safe operating area" alt="" coords="816,1548,952,1575"/>
+<area shape="rect" id="node64" href="$soa_8c.html#a7789111342a6f297b6bc1b88108544ed" title="FOR FUTURE COMPATIBILITY; DUMMY FUNCTION; DO NOT USE." alt="" coords="782,1396,986,1423"/>
+<area shape="rect" id="node65" href="$soa_8c.html#a0db3e3d883bf1aa26f21286f6a6bb868" title="checks the abidance by the safe operating area" alt="" coords="797,2644,971,2671"/>
+<area shape="rect" id="node66" href="$soa_8c.html#a18b76098c31f396882ddeefebfd17e2a" title="checks the abidance by the safe operating area" alt="" coords="811,2948,957,2975"/>
+<area shape="rect" id="node9" href="$bal_8c.html#ace76b9a00c0a0ec922e15d0d677b9315" title="checks the state requests that are made." alt="" coords="1642,1684,1813,1711"/>
+<area shape="rect" id="node10" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1901,2115,2047,2141"/>
+<area shape="rect" id="node11" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1905,2064,2043,2091"/>
+<area shape="rect" id="node15" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="1913,2567,2035,2593"/>
+<area shape="rect" id="node21" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="1379,1816,1521,1843"/>
+<area shape="rect" id="node30" href="$bms_8c.html#a42c1b8d028f52deab96d0b5c03a134bc" title="Checks all the error flags from diagnosis module with a severity of DIAG_FATAL_ERROR." alt="" coords="1074,1456,1267,1483"/>
+<area shape="rect" id="node31" href="$diag_8c.html#a5e2190133d0352d1e483ee1c9829c6aa" title="Get configured delay of passed diagnosis entry." alt="" coords="1393,1715,1507,1741"/>
+<area shape="rect" id="node32" href="$diag_8c.html#a65aa765236a760639d5401524b876378" title="Checks if passed diagnosis entry has been triggered or not." alt="" coords="1350,1765,1550,1792"/>
+<area shape="rect" id="node37" href="$contactor_8c.html#a6bc75e3a0508862d0624a5b9b2862221" title="Reads the feedback of all contactors." alt="" coords="1333,2171,1567,2197"/>
+<area shape="rect" id="node38" href="$sps_8c.html#a9c3bf6cc3ba07d1d11d34f03ec8c4f8e" title="Get feedback value." alt="" coords="1616,2191,1839,2217"/>
+<area shape="rect" id="node39" href="$sps_8c.html#a033367817569ec2519c57fed158ef2a3" title="Get the feedback state of a channel." alt="" coords="1625,2140,1829,2167"/>
+<area shape="rect" id="node41" href="$sps_8c.html#a9cb3cd911b7a454365ab9c3cec7319a1" title="Request state of a contactor." alt="" coords="1355,1968,1545,1995"/>
+<area shape="rect" id="node42" href="$sps_8c.html#a12055277c605a27340a3938e6f84523a" title="Returns the channel affiliation." alt="" coords="1639,1937,1815,1964"/>
+<area shape="rect" id="node43" href="$sps_8c.html#acbea831bc7b455fd71f259e3a9e4c0aa" title="Request the functional state of a channel." alt="" coords="1636,1988,1819,2015"/>
+<area shape="rect" id="node51" href="$imd_8c.html#af71dbb70f367737ded7c75030b93d2f5" title="sets the current state request of the state variable imd_state." alt="" coords="1652,1044,1803,1071"/>
+<area shape="rect" id="node52" href="$imd_8c.html#a5af47fbf7aebd66487c00967df0c9368" title="checks the state requests that are made." alt="" coords="1890,1044,2058,1071"/>
+<area shape="rect" id="node55" href="$afe_8h.html#a39dbbdfedd5cba3c54606ab2201b3575" title="Makes the request to the AFE state machine to perform open&#45;wire check." alt="" coords="1351,1512,1549,1539"/>
+<area shape="rect" id="node56" href="$ltc__6806_8c.html#a4bb4d1d651bd80b2151b62d35e3a2699" title="sets the current state request of the state variable ltc_state." alt="" coords="1652,1735,1803,1761"/>
+<area shape="rect" id="node57" href="$nxp__afe_8h.html#a0094205930d9cf9f9cad39e496586571" title=" " alt="" coords="1629,1836,1826,1863"/>
+<area shape="rect" id="node59" href="$soa__cfg_8c.html#af23336f7a72fce8c5e2a574075d78bbd" title="Checks if cell current limit is violated." alt="" coords="1067,1557,1274,1584"/>
+<area shape="rect" id="node60" href="$soa__cfg_8c.html#a1b00364be89ccc23d92926da05500192" title="Checks if string current is floating while contactors are open." alt="" coords="1075,1725,1266,1752"/>
+<area shape="rect" id="node62" href="$soa__cfg_8c.html#a768c8685aef6aedc30b0f65cafb1c049" title="Checks if pack current limit is violated." alt="" coords="1063,1608,1278,1635"/>
+<area shape="rect" id="node63" href="$soa__cfg_8c.html#aa31aff28740029f1f8f26fd474e63e6f" title="Checks if string current limit is violated." alt="" coords="1085,1659,1256,1701"/>
+<area shape="rect" id="node61" href="$bms_8c.html#a348c05608a31e56c9675cd88bdad6c79" title="Returns if string is currently precharging or not." alt="" coords="1365,2693,1535,2720"/>
+<area shape="rect" id="node68" href="$can_8c.html#a596f15e51e633d6ada25323671b9302e" title="Checks if the CAN messages come in the specified time window." alt="" coords="1093,2440,1248,2467"/>
+<area shape="rect" id="node73" href="$can_8c.html#a20938e5f84711f226ac95482c64ac286" title="Handles the processing of messages that are meant to be transmitted." alt="" coords="1094,2668,1247,2695"/>
+<area shape="rect" id="node69" href="$can_8c.html#aa64cd004ae39d3a52ee6d7a3aea5ba17" title=" " alt="" coords="1345,2222,1555,2263"/>
+<area shape="rect" id="node70" href="$can_8c.html#a1e6282a8b79dc830963b06e2901d3fc7" title="Sets flag to indicate current sensor sends C&#45;C values." alt="" coords="1617,2292,1837,2319"/>
+<area shape="rect" id="node71" href="$can_8c.html#a8aa3db1e773a2c5cd1820996ce13dfaf" title="Sets flag to indicate current sensor sends C&#45;C values." alt="" coords="1617,2343,1837,2369"/>
+<area shape="rect" id="node72" href="$can_8c.html#aca71186dd6a4df43977a146a1901bded" title="Sets flag to indicate current sensor is present." alt="" coords="1625,2241,1829,2268"/>
+<area shape="rect" id="node74" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="1393,2643,1507,2669"/>
+<area shape="rect" id="node76" href="$interlock_8c.html#a9b1f8f9f507a3e70ba723232679194fb" title="re&#45;entrance check of ILCK state machine trigger function" alt="" coords="1646,3165,1809,3192"/>
+<area shape="rect" id="node77" href="$interlock_8c.html#ac92848f5efe2f42937f0964c95c7178d" title="Reads the feedback pin of the interlock and returns its current value (ILCK_SWITCH_OFF/ILCK_SWITCH_ON..." alt="" coords="1635,3452,1819,3479"/>
+<area shape="rect" id="node79" href="$interlock_8c.html#a0bfea49408f313de16210bb41b264006" title="Initializes required pins for interlock evaluation." alt="" coords="1385,3267,1515,3293"/>
+<area shape="rect" id="node83" href="$interlock_8c.html#ac704ecc1dd0b96d61ee0e1cb2d0236b0" title="transfers the current state request to the state machine." alt="" coords="1636,3216,1819,3243"/>
+<area shape="rect" id="node78" href="$io_8c.html#ac732f8e2ec796feb6a4471b39097cfb8" title="Get pin state." alt="" coords="1933,3452,2015,3479"/>
+<area shape="rect" id="node80" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="1680,3115,1775,3141"/>
+<area shape="rect" id="node81" href="$io_8c.html#a4452aca029d9f953533657f6d3ed58c7" title="Set pin to input by writing in pin direction register." alt="" coords="1640,3317,1815,3344"/>
+<area shape="rect" id="node82" href="$io_8c.html#a41154d1d77ad0873d462c803ce831f68" title="Set pin to output by writing in pin direction register." alt="" coords="1635,3267,1820,3293"/>
+<area shape="rect" id="node85" href="$redundancy_8c.html#a62a3c848bd137e8acbcdde8bdfa35717" title="Function to validate results of cell temperature measurement." alt="" coords="785,4111,983,4153"/>
+<area shape="rect" id="node94" href="$redundancy_8c.html#aea4a1a518f430ebb0384fdf5dca1422e" title="Function to validate results of cell voltage measurement." alt="" coords="759,3891,1009,3917"/>
+<area shape="rect" id="node86" href="$database__helper_8c.html#a8d4b7dce8fee1db81cee64f679a3c2c4" title="Checks if passed database entry has been updated at least once." alt="" coords="1351,3993,1549,4034"/>
+<area shape="rect" id="node87" href="$database__helper_8c.html#aa0d2762a0ab4d210b331cd07f1fa31c4" title="Checks if passed database entry has been updated within the last time interval." alt="" coords="1061,4043,1280,4069"/>
+<area shape="rect" id="node88" href="$redundancy_8c.html#acaabebd470bf76694093cd88cd192cba" title="Function calculates minimum, maximum and average cell temperatures." alt="" coords="1067,4195,1274,4237"/>
+<area shape="rect" id="node89" href="$redundancy_8c.html#abbb4fe83a58035ba5eb7dcf287688c87" title="Function updates validated cell temperature measurement with data from a single measurement source...." alt="" coords="1074,4261,1267,4302"/>
+<area shape="rect" id="node90" href="$redundancy_8c.html#abd25be4b56eba5a2c557014b10b34c59" title="Function compares cell temperature measurements from base measurement with one redundant measurement ..." alt="" coords="1071,4144,1270,4171"/>
+<area shape="rect" id="node93" href="$plausibility_8c.html#a4163574af3fd5b53d75767de3d13dca6" title="Cell temperature spread plausibility check." alt="" coords="1073,3840,1268,3867"/>
+<area shape="rect" id="node91" href="$diag_8c.html#a3e60a00edfbecf928fd6db140626647a" title="DIAG_CheckEvent provides a simple interface to check an event for STD_OK." alt="" coords="1385,3840,1515,3867"/>
+<area shape="rect" id="node92" href="$plausibility_8c.html#a6a669169350af4e193e963ab168ec777" title="Cell temperature plausibility check between two redundant cell temperature measurement values." alt="" coords="1363,4109,1537,4136"/>
+<area shape="rect" id="node95" href="$redundancy_8c.html#ab4c25c0c91bef983f0a6c9b0c4cd8ce0" title="Function calculates minimum, maximum and average cell voltages." alt="" coords="1081,3673,1260,3714"/>
+<area shape="rect" id="node96" href="$redundancy_8c.html#a177320f6cfc28fa49c1ad8aef0ff31e5" title="Function updates validated cell voltage measurement with data from a single measurement source...." alt="" coords="1059,3739,1282,3765"/>
+<area shape="rect" id="node97" href="$redundancy_8c.html#a2035c1e8647d897e55be9cdabfdf7a20" title="Function compares cell voltage measurements from base measurement with one redundant measurement and ..." alt="" coords="1085,3891,1256,3917"/>
+<area shape="rect" id="node99" href="$plausibility_8c.html#aed3507ecef2ce91f6fc8a5b4099355e2" title="Cell voltage spread plausibility check." alt="" coords="1087,3789,1254,3816"/>
+<area shape="rect" id="node98" href="$plausibility_8c.html#accddb49ec29a1ded395eb7e171629d10" title="Cell voltage plausibility check between two redundant cell voltage measurement values." alt="" coords="1376,3891,1524,3917"/>
+<area shape="rect" id="node101" href="$redundancy_8c.html#add10fcd97256335f9e3aec0bd4e2864b" title="Function to validate HV battery voltage measurement." alt="" coords="1075,3322,1266,3363"/>
+<area shape="rect" id="node103" href="$redundancy_8c.html#a7946dcf47911e0b91deab49417c78c19" title="Function to validate results of current measurement." alt="" coords="1057,3504,1284,3531"/>
+<area shape="rect" id="node106" href="$redundancy_8c.html#a30dbb44c7c14d3312f42087b8f06e373" title="Function to validate results of high voltage measurement and calculate battery voltage and high volta..." alt="" coords="1071,3387,1270,3429"/>
+<area shape="rect" id="node107" href="$redundancy_8c.html#a1bbee4a00d81fdcd1b19505fc58b34ca" title="Function to validate results of power measurement." alt="" coords="1061,3621,1281,3648"/>
+<area shape="rect" id="node108" href="$redundancy_8c.html#a235d251855fa6be38d6873b3518f9b0e" title="Function to validate results of string voltage measurement." alt="" coords="1079,3555,1262,3597"/>
+<area shape="rect" id="node102" href="$bms_8c.html#a95febd341b208a988bb0462e81febca8" title="Returns number of connected strings." alt="" coords="1351,3419,1549,3461"/>
+<area shape="rect" id="node104" href="$redundancy_8c.html#af6276d6538754cda5478e913a7807d48" title="Check timestamp if measurement has been updated recently." alt="" coords="1332,3688,1568,3715"/>
+<area shape="rect" id="node105" href="$redundancy_8c.html#a92c673dd0bc5676f741175b6e4f14aa6" title="Check timestamp if measurement has been updated at least once." alt="" coords="1628,3681,1827,3722"/>
+<area shape="rect" id="node109" href="$plausibility_8c.html#abcb7d51be173b20da3a04f089e861b54" title="Pack voltage plausibility check between LTC and current sensor values." alt="" coords="1370,3739,1530,3765"/>
+<area shape="rect" id="node111" href="$nxpfs85xx_8c.html#afeb30dc4ad44b34d9ed3ddea5e8759d9" title="Checks if fault error counter is zero." alt="" coords="785,4721,983,4748"/>
+<area shape="rect" id="node114" href="$nxpfs85xx_8c.html#a58c801b43b87be739255fb72e8f5667f" title="Configures SBC during INIT_FS phase." alt="" coords="805,5012,963,5039"/>
+<area shape="rect" id="node128" href="$nxpfs85xx_8c.html#a0b15b275f21bab8096b85c8c33bce72e" title="Calculates the number of required watchdog refresh to reset fault error counter." alt="" coords="1063,4870,1279,4911"/>
+<area shape="rect" id="node129" href="$nxpfs85xx_8c.html#adbcda981b42a9a928aca6e027ec1dd50" title="Performs SBC safety path checks." alt="" coords="800,4616,968,4643"/>
+<area shape="rect" id="node143" href="$sbc_8c.html#a88062740b8cfab496300ef7a1cc1665d" title="Re&#45;entrance check of SBC state machine trigger function." alt="" coords="1647,4080,1808,4107"/>
+<area shape="rect" id="node144" href="$sbc_8c.html#a6dd0ad565e97764a4d0237ac803324f8" title="Saves the last state and last substate." alt="" coords="811,4772,957,4799"/>
+<area shape="rect" id="node145" href="$sbc_8c.html#aba7832fabe75c9108b1aa460ddf93905" title="Transfers the current state request to the state machine." alt="" coords="1637,4131,1818,4157"/>
+<area shape="rect" id="node146" href="$sbc_8c.html#a3b3ecf9852040dc365167e54c08de6b3" title="Triggers the watchdog if the timing requires it." alt="" coords="779,5147,989,5173"/>
+<area shape="rect" id="node112" href="$group__API.html#ga13e5ab89af0a74158bdff99b29eb76ec" title="Reads actual Fault Error Counter value." alt="" coords="1359,4870,1541,4911"/>
+<area shape="rect" id="node113" href="$group__API.html#gab8787e2ae04f3f2810ca95df41b69190" title="Performs a read from a single FS8x register." alt="" coords="1658,4877,1797,4904"/>
+<area shape="rect" id="node115" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="1671,4029,1783,4056"/>
+<area shape="rect" id="node116" href="$masterinfo_8c.html#a69cf51e5d1dbaf26b92cb9a9ac5cd870" title="Check if debug probe is connected." alt="" coords="1057,5089,1284,5130"/>
+<area shape="rect" id="node117" href="$nxpfs85xx_8c.html#a3e7ae196313f4cede4b0420ac83d810a" title="Checks register value against expected value." alt="" coords="1359,4936,1541,4963"/>
+<area shape="rect" id="node118" href="$nxpfs85xx_8c.html#ad364a0097387a012efca88e68b4d9c91" title="Clears flags in register." alt="" coords="1367,5088,1533,5115"/>
+<area shape="rect" id="node121" href="$nxpfs85xx_8c.html#ad93237c9eec457e11e5b9a52b0b36f53" title=" " alt="" coords="1077,5155,1264,5181"/>
+<area shape="rect" id="node122" href="$nxpfs85xx_8c.html#a30e39aa8de6a40e783b82b818240441d" title="Reads SBC register value." alt="" coords="1368,5037,1532,5064"/>
+<area shape="rect" id="node123" href="$nxpfs85xx_8c.html#a7ee0ac37c4ae4e6434d2bcd82d7fb61d" title="Trigger watchdog." alt="" coords="1093,5205,1248,5232"/>
+<area shape="rect" id="node125" href="$nxpfs85xx_8c.html#aef178b4825b071332b9b86aed7c6dd66" title="Write to fail&#45;safe register." alt="" coords="1351,4819,1549,4845"/>
+<area shape="rect" id="node127" href="$nxpfs85xx_8c.html#aab0c6e34435c988d599fe8c687bbb706" title="Write to fail&#45;safe register." alt="" coords="1367,4717,1533,4744"/>
+<area shape="rect" id="node119" href="$group__API.html#ga45774357f5c85905d3b03812c03a0eb4" title="Sends write command to the FS8x." alt="" coords="1905,4953,2043,4980"/>
+<area shape="rect" id="node120" href="$nxpfs85xx_8c.html#a0a1139bd6c03b0a9c2157f1257f04057" title="Updates register values." alt="" coords="1655,5037,1800,5064"/>
+<area shape="rect" id="node124" href="$group__API.html#ga1dd3f56371ebf39dcf3cfe323dfba556" title="Performs the watchdog refresh." alt="" coords="1661,5172,1794,5199"/>
+<area shape="rect" id="node126" href="$group__API.html#ga3f8c3c75fa13275a5ce5876d37d5d2a2" title="Performs a write to a single FS8x FS init register (during the INIT_FS phase only)." alt="" coords="1649,4819,1805,4845"/>
+<area shape="rect" id="node130" href="$fram_8c.html#ad5c5ec1fd0a6c3667185d3b75064e359" title="Writes a variable to the FRAM." alt="" coords="1388,4312,1512,4339"/>
+<area shape="rect" id="node137" href="$group__API.html#ga796a8b7f238630b1e0051572add102d4" title="FS0B release routine." alt="" coords="1097,4616,1244,4643"/>
+<area shape="rect" id="node138" href="$nxpfs85xx_8c.html#a795cebf916b0b542c4a5aab84085762e" title="Perform FS0B safety path check." alt="" coords="1073,4667,1268,4693"/>
+<area shape="rect" id="node139" href="$nxpfs85xx_8c.html#a5c650f4ce72acee66612acc1544722d5" title="Perform RSTB safety path check." alt="" coords="1075,4565,1267,4592"/>
+<area shape="rect" id="node131" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="1662,2963,1793,2989"/>
+<area shape="rect" id="node132" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="1687,2811,1768,2837"/>
+<area shape="rect" id="node133" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="1626,2912,1829,2939"/>
+<area shape="rect" id="node134" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="1667,3013,1788,3040"/>
+<area shape="rect" id="node135" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="1688,2861,1767,2888"/>
+<area shape="rect" id="node136" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="1682,3064,1773,3091"/>
+<area shape="rect" id="node140" href="$fram_8c.html#ac33e9fde66e31d43c22bfc9a2f8aebf7" title="Reads a variable from the FRAM." alt="" coords="1389,2896,1511,2923"/>
+<area shape="rect" id="node141" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="1377,4565,1523,4592"/>
+<area shape="rect" id="node142" href="$masterinfo_8c.html#a44f17d790f25a7839f8cf4d929057b64" title="Get reason for last reset." alt="" coords="1367,4515,1533,4541"/>
+<area shape="rect" id="node148" href="$bms_8c.html#a38f183c232165fccfd2989f208e4fd0b" title="Check if transition in to error state is active." alt="" coords="785,809,983,850"/>
+<area shape="rect" id="node149" href="$sof__trapezoid_8c.html#a09f81cc818c5389fd0244448fb90511f" title="calculates the SoF from temperature data (i.e., minimum and maximum temperature of cells)" alt="" coords="793,691,975,733"/>
+<area shape="rect" id="node151" href="$sof__trapezoid_8c.html#ace0659b0de9303cd1f927adcbe13141f" title="calculates the SoF from voltage data (i.e., minimum and maximum voltage)" alt="" coords="789,874,979,915"/>
+<area shape="rect" id="node152" href="$sof__trapezoid_8c.html#af2e4f8f15001952a5c495410b178f308" title="get the minimum current values of all variants of SoF calculation" alt="" coords="782,757,986,784"/>
+<area shape="rect" id="node150" href="$foxmath_8c.html#a2db263df23dd46c7d63c6b0f2bc0f00d" title="Returns the minimum of the passed float values." alt="" coords="1075,728,1266,755"/>
+<area shape="rect" id="node154" href="$spi__cfg_8c.html#ac05f356ab006baab3e2d492bfefdb752" title="Switch the SPS spi handle to high speed." alt="" coords="1083,3154,1258,3195"/>
+<area shape="rect" id="node155" href="$spi__cfg_8c.html#a05ff5a51b7b9b82a1835c63ea30ea7cd" title="Switch the SPS spi handle to low speed." alt="" coords="1083,3037,1258,3078"/>
+<area shape="rect" id="node156" href="$sps_8c.html#a42bcd905bbbb0fd532ae59e3fd60faff" title="Read the current measurements for a specific output for all SPS ICs of the daisy&#45;chain." alt="" coords="1088,3103,1253,3129"/>
+<area shape="rect" id="node157" href="$sps_8c.html#a6f00c269d0e20b749d8c7a9867ff4ba4" title=" " alt="" coords="1099,2935,1242,2961"/>
+<area shape="rect" id="node159" href="$sps_8c.html#ad2fe38c253e1b0b76ac5b013a6ca9529" title="Assemble a general command to the SPS ICs." alt="" coords="1079,2833,1262,2860"/>
+<area shape="rect" id="node162" href="$sps_8c.html#a961f9c1c70ea7658911b9d91c209b0a0" title="Assemble an update to the channel state of the SPS ICs." alt="" coords="1077,2985,1264,3012"/>
+<area shape="rect" id="node163" href="$sps_8c.html#a3b0b5c63417cabc94688fd3cf78cd94c" title="Transmit all assembled messages for one timeframe." alt="" coords="1117,3271,1224,3297"/>
+<area shape="rect" id="node158" href="$sps_8c.html#a5aa51bd041468fa63d6992cbcb57ad3a" title="Sets the SPI Tx buffer for a register write access for a specific single SPS ICs in the daisy&#45;chain." alt="" coords="1361,2998,1539,3039"/>
+<area shape="rect" id="node160" href="$sps_8c.html#a42c6ab326377a351def20a0d748afb4e" title="Sets the SPI Tx buffer for a register read access for all SPS ICs of the daisy&#45;chain." alt="" coords="1365,2845,1535,2872"/>
+<area shape="rect" id="node161" href="$sps_8c.html#a7cfb82ab6fb733aaa092a2731ebb62b5" title="Sets the SPI Tx buffer for a register write access for all SPS ICs of the daisy&#45;chain." alt="" coords="1364,2795,1536,2821"/>
+<area shape="rect" id="node164" href="$spi_8c.html#ac84bc8424de860e2cd89fea2e89dd89a" title="Transmits and receives data on SPI without DMA." alt="" coords="1364,3115,1536,3141"/>
+<area shape="rect" id="node166" href="$sys_8c.html#afe206da6c0b7ec02ecff5d1169bc69cf" title="check for multiple calls of state machine trigger function" alt="" coords="1644,1633,1811,1660"/>
+<area shape="rect" id="node167" href="$sys_8c.html#a90dceb9878e7eb209511a7a9c0251ec4" title="Defines the state transitions." alt="" coords="1091,828,1250,855"/>
+<area shape="rect" id="node168" href="$algorithm_8c.html#a25bb53555be2a84f5928f1581bf21d2b" title="Calling this function sets a signal that lets ALGO_Initialization() know that the initialization has ..." alt="" coords="1641,1380,1814,1407"/>
+<area shape="rect" id="node169" href="$bal_8h.html#a32d6c4872b4b5d616cac7aad172a3427" title="gets the initialization state." alt="" coords="1363,179,1537,205"/>
+<area shape="rect" id="node170" href="$bms_8c.html#af850323538c1146d9d9cfe7e3171162e" title="Gets the initialization state." alt="" coords="1361,229,1539,256"/>
+<area shape="rect" id="node171" href="$bms_8c.html#a40eb276efea852638c5ba83e53569ebc" title="sets the current state request of the state variable bms_state." alt="" coords="1649,1095,1806,1121"/>
+<area shape="rect" id="node173" href="$can_8c.html#afa63875d5e305fa3e37da47b90929f34" title="Enables periodic sending per CAN. This is used to prevent sending uninitialized data per CAN (e...." alt="" coords="1379,280,1521,307"/>
+<area shape="rect" id="node174" href="$can_8c.html#ad81d1fcadc20d4553accae9b7a7e5e3a" title="Enables the CAN transceiver.. This function sets th pins to enable the CAN transceiver...." alt="" coords="1399,1157,1501,1184"/>
+<area shape="rect" id="node178" href="$can_8c.html#a14b02e24089da99e21d567ce64b7a46c" title="get flag if CC message from current sensor is received." alt="" coords="1345,331,1555,357"/>
+<area shape="rect" id="node179" href="$can_8c.html#a66db42c4d195ed4c7d86945f2891b2b9" title="get flag if EC message from current sensor is received" alt="" coords="1345,381,1555,408"/>
+<area shape="rect" id="node180" href="$can_8c.html#a8984faf7246dd74d33d6354ec33fb5a3" title="set flag for presence of current sensor." alt="" coords="1353,432,1547,459"/>
+<area shape="rect" id="node181" href="$database_8c.html#aa9f1946e0adeb14af4e789a33aad6b53" title="Executes a built&#45;in self&#45;test for the database module." alt="" coords="1369,483,1531,509"/>
+<area shape="rect" id="node182" href="$interlock_8c.html#ab218c092199d1c3999262123352877fc" title="sets the current state request of the state variable ilck_state." alt="" coords="1649,1431,1805,1457"/>
+<area shape="rect" id="node183" href="$imd_8c.html#a2ff2e86668e101d3ca7a11e1b220ea2a" title="Gets the initialization state." alt="" coords="1364,533,1536,560"/>
+<area shape="rect" id="node184" href="$imd_8c.html#aa3954ab5d780591088638ff71a27b2d6" title="Request initialization of IMD statemachine." alt="" coords="1366,128,1534,155"/>
+<area shape="rect" id="node185" href="$meas_8c.html#ac93cd0858e4994bef52b2c702b339430" title="Checks if the first AFE measurement cycle was made." alt="" coords="1343,585,1557,626"/>
+<area shape="rect" id="node186" href="$meas_8c.html#a55247d0978a7017843bdb63b1e1c0d3d" title="Makes the initialization request to the AFE state machine." alt="" coords="1363,651,1537,677"/>
+<area shape="rect" id="node187" href="$sbc_8c.html#a2f80a77a68201a59bd102bcfcf653158" title="gets the current state of passed state variable" alt="" coords="1396,701,1504,728"/>
+<area shape="rect" id="node188" href="$sbc_8c.html#ae571dbba769c79ba656359722691ba63" title="sets the current state request of passed state variable" alt="" coords="1650,1481,1805,1508"/>
+<area shape="rect" id="node189" href="$state__estimation_8c.html#a59c32016e46a10cb749e59ac5bb9fc33" title="Wrapper for algorithm specific SOC initialization." alt="" coords="1391,752,1509,779"/>
+<area shape="rect" id="node190" href="$state__estimation_8c.html#a1d66dc54b5a98192d7a7fcbe9182492b" title="Wrapper for algorithm specific SOE initialization." alt="" coords="1391,803,1509,829"/>
+<area shape="rect" id="node191" href="$state__estimation_8c.html#ad557939b630c180f71685a81cadb86b9" title="Wrapper for algorithm specific SOH initialization." alt="" coords="1391,853,1509,880"/>
+<area shape="rect" id="node192" href="$sof__trapezoid_8c.html#afd9a15c2da7ada29701833a9cd8c2c9e" title="initializes the area for SOF (where derating starts and is fully active)." alt="" coords="1413,904,1487,931"/>
+<area shape="rect" id="node193" href="$sys_8c.html#af18545ee69e132d4dd70d3e2114e76aa" title=" " alt="" coords="1370,955,1530,981"/>
+<area shape="rect" id="node194" href="$sys__cfg_8c.html#a266c29a0f1d24d06e8172f55dbe00ebd" title="Function to send out boot message with SW version." alt="" coords="1367,1005,1533,1032"/>
+<area shape="rect" id="node195" href="$sys_8c.html#a31083c2e05ac5fe029a1a81d54b5f853" title="transfers the current state request to the state machine." alt="" coords="1637,1532,1818,1559"/>
+<area shape="rect" id="node172" href="$bms_8c.html#a619db2b25db4bb9b7f5f4564bf6291c9" title="checks the state requests that are made." alt="" coords="1887,1095,2061,1121"/>
+<area shape="rect" id="node175" href="$can_8c.html#ab1cb7378939dbd5b4f3459d400a1f83d" title="Initialize RX mailboxes for usage with extended identifiers." alt="" coords="1635,1197,1820,1238"/>
+<area shape="rect" id="node176" href="$can_8c.html#a5c1c7ee71937637e326117ba125d72f8" title=" " alt="" coords="1643,1263,1811,1289"/>
+<area shape="rect" id="node177" href="$can_8c.html#a1c82394533ff3d1897f27eb3015299a4" title=" " alt="" coords="1638,1314,1817,1355"/>
+<area shape="rect" id="node197" href="$sys__mon_8c.html#acc9a5d05dfff9a46afd4f0a665cba32c" title="Copy from the from entry to the to entry." alt="" coords="1369,3587,1531,3613"/>
+</map>

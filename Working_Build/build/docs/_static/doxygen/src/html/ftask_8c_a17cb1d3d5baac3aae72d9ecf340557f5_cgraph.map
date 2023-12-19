@@ -1,0 +1,78 @@
+<map id="FTSK_CreateTaskCyclic100ms" name="FTSK_CreateTaskCyclic100ms">
+<area shape="rect" id="node1" title="Creation of cyclic 100 ms task." alt="" coords="5,1415,208,1441"/>
+<area shape="rect" id="node2" href="$ftask__cfg_8c.html#a5d63574dd6ec0e14d26d10acf949913b" title="Cyclic 100 ms task." alt="" coords="256,1031,473,1057"/>
+<area shape="rect" id="node73" href="$os__freertos_8c.html#a3ac9f783e38ae9f9c8cfe0634bb3b8fe" title="Delay a task until a specified time." alt="" coords="297,1364,432,1391"/>
+<area shape="rect" id="node74" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="301,1415,428,1441"/>
+<area shape="rect" id="node75" href="$os__freertos_8c.html#a4a7551f4fb9b1a8a50eab73b4b381bff" title="Marks the current task as requiring FPU context." alt="" coords="266,1466,463,1507"/>
+<area shape="rect" id="node76" href="$sys__mon_8c.html#a3f451806bc94e7340bc876ab4001596d" title="Sets needed bits to indicate that a task is running." alt="" coords="2063,1299,2163,1325"/>
+<area shape="rect" id="node3" href="$bal_8h.html#ac47a87986efae1622a9faa1e1f3c5e4b" title="trigger function for the BAL driver state machine." alt="" coords="949,1536,1043,1563"/>
+<area shape="rect" id="node23" href="$imd_8c.html#a4e330aef339648367c39b94f5d2698f1" title="trigger function for the IMD driver state machine." alt="" coords="521,668,612,695"/>
+<area shape="rect" id="node54" href="$led_8c.html#adde1377ea9af24ebc95c60a0bcc59bca" title="Trigger function to periodically toggle debug LED. Frequency can be set via function LED_SetToggleTim..." alt="" coords="1795,60,1889,87"/>
+<area shape="rect" id="node56" href="$state__estimation_8c.html#afa7538094da4b3fce0b58b02b340f419" title="Main function to perform state estimations." alt="" coords="660,1031,831,1057"/>
+<area shape="rect" id="node4" href="$bal_8c.html#abcc9ebddce3db20a980a97a7ec631801" title="re&#45;entrance check of BAL state machine trigger function" alt="" coords="2033,1197,2192,1224"/>
+<area shape="rect" id="node7" href="$bal_8c.html#a4c79456adce43c8268210d78a9a635b6" title="Generic initialization function for the balancing module." alt="" coords="1239,1764,1310,1791"/>
+<area shape="rect" id="node8" href="$bal__strategy__history_8c.html#a77b842cd6a626ff4ba23feda40f2fef1" title=" " alt="" coords="1179,1713,1370,1740"/>
+<area shape="rect" id="node12" href="$bal__strategy__history_8c.html#af32dfaa4971ec041d8ceb9d9cef69970" title="State machine subfunction to check if balancing is allowed." alt="" coords="1161,1460,1388,1487"/>
+<area shape="rect" id="node18" href="$bal_8c.html#a6ece6f16bb8b0ea9b4453b05f6435515" title="State machine subfunction to initialize the balancing state machine." alt="" coords="1174,1511,1375,1537"/>
+<area shape="rect" id="node19" href="$bal_8c.html#ab3331dbd0bab398573170b9939275f6d" title="State machine subfunction to transfer from an initalized state to &quot;running&quot; states of th state machin..." alt="" coords="1181,1561,1368,1588"/>
+<area shape="rect" id="node20" href="$bal_8c.html#a867a5e13f306fbb6dcc7f3a291459af4" title="Substate handling function for BAL_Trigger()" alt="" coords="1175,1612,1375,1639"/>
+<area shape="rect" id="node21" href="$bal_8c.html#a5cc889b594af2c8ed7d359f4587f8f1a" title="Saves the last state and the last substate." alt="" coords="1202,1663,1347,1689"/>
+<area shape="rect" id="node22" href="$bal_8c.html#aa57af2b5a63cee4a0bc4b6918ce63ac8" title="transfers the current state request to the state machine." alt="" coords="2023,1248,2202,1275"/>
+<area shape="rect" id="node5" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="2264,903,2411,929"/>
+<area shape="rect" id="node6" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="2268,852,2407,879"/>
+<area shape="rect" id="node9" href="$bal__strategy__history_8c.html#a41534350feec71da2d825e837d332716" title=" " alt="" coords="1477,1713,1634,1740"/>
+<area shape="rect" id="node10" href="$bal__strategy__history_8c.html#a9f236a369bc16aa1bb4428e5ef0b0417" title=" " alt="" coords="1477,1637,1634,1664"/>
+<area shape="rect" id="node11" href="$bal__strategy__history_8c.html#ab608144bd63e5fa96224e95cec7a3fb3" title="Deactivates history based balancing." alt="" coords="1498,1536,1613,1563"/>
+<area shape="rect" id="node13" href="$bal__strategy__history_8c.html#acf508466d14bd8560c1f5b538e86fd94" title=" " alt="" coords="1469,1460,1641,1487"/>
+<area shape="rect" id="node17" href="$bms_8c.html#ab900910af6e3c584a5e3650018fe4ed7" title="Returns current battery system state (charging/discharging, resting or in relaxation phase)" alt="" coords="1457,1308,1654,1335"/>
+<area shape="rect" id="node14" href="$bal__cfg_8c.html#ae6943eea06cdd64870ce62e3ce1b60c2" title="get balancing threshold" alt="" coords="1735,1460,1949,1487"/>
+<area shape="rect" id="node15" href="$group__state-estimation-api.html#ga74af4e2bdb5a3caa9696292fb9217311" title="look&#45;up table for SOC initialization" alt="" coords="1729,1263,1955,1289"/>
+<area shape="rect" id="node16" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="2027,1147,2198,1173"/>
+<area shape="rect" id="node24" href="$imd_8c.html#a81885ee9edd86f079cbc91b3fe58d30b" title="check for multiple calls of state machine trigger function" alt="" coords="2031,852,2194,879"/>
+<area shape="rect" id="node25" href="$imd_8c.html#a87872f9a830641539529f337d7ef7977" title="Defines the state transitions." alt="" coords="668,411,823,437"/>
+<area shape="rect" id="node26" href="$imd_8c.html#a4593474491bb5692b4d9aa9ea8e71efc" title="Evaluates measurement perform by IMD driver." alt="" coords="879,139,1113,165"/>
+<area shape="rect" id="node29" href="$bender__ir155_8c.html#a6c70e060ca9e626f09d2518a1fa296c0" title="Processes the IMD enable state." alt="" coords="911,244,1081,271"/>
+<area shape="rect" id="node31" href="$bender__ir155_8c.html#a2d36547c63557e7044ef109ab775abd5" title="Processes the initialization state." alt="" coords="912,374,1080,415"/>
+<area shape="rect" id="node43" href="$bender__ir155_8c.html#af128f9aa7b3fcd2f6765ce5122bb6e27" title="Processes the running state." alt="" coords="907,440,1085,467"/>
+<area shape="rect" id="node50" href="$bender__ir155_8c.html#a5df85237bac743e7e844ca3d7fa2950f" title="Processes the shutdown state." alt="" coords="902,528,1090,555"/>
+<area shape="rect" id="node51" href="$imd_8c.html#a1522de40656435dd03bf26fa8dd4b462" title="Sets the next state, the next substate and the timer value of the state variable." alt="" coords="945,323,1047,349"/>
+<area shape="rect" id="node53" href="$imd_8c.html#aa4e6f5b5b3d8ba69dfa379ddeb0049f4" title="transfers the current state request to the state machine." alt="" coords="2024,801,2201,828"/>
+<area shape="rect" id="node27" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="2061,161,2165,188"/>
+<area shape="rect" id="node28" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="2276,161,2399,188"/>
+<area shape="rect" id="node30" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="2072,212,2153,239"/>
+<area shape="rect" id="node32" href="$bender__ir155_8c.html#a3f8e4988b7809af6fc00a09941413094" title=" " alt="" coords="1199,377,1350,404"/>
+<area shape="rect" id="node33" href="$bender__ir155__helper_8c.html#a7a058a6e4cadc732c1271c235c35894d" title="Software initialization of Timer&#45;module." alt="" coords="1501,288,1610,315"/>
+<area shape="rect" id="node34" href="$fram_8c.html#ac33e9fde66e31d43c22bfc9a2f8aebf7" title="Reads a variable from the FRAM." alt="" coords="1781,212,1903,239"/>
+<area shape="rect" id="node41" href="$pwm_8c.html#a2cdee1aefacc04ad6ed59618550226d0" title="Initializes the ETPWM and the ECAP module." alt="" coords="1787,313,1897,340"/>
+<area shape="rect" id="node42" href="$pwm_8c.html#ad7300cda0ae8f4b20961225415442c06" title="Get initialization state of ecap module." alt="" coords="1743,263,1941,289"/>
+<area shape="rect" id="node35" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="2047,649,2178,676"/>
+<area shape="rect" id="node36" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="2065,405,2160,432"/>
+<area shape="rect" id="node37" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="2011,700,2214,727"/>
+<area shape="rect" id="node38" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="2052,751,2173,777"/>
+<area shape="rect" id="node39" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="2073,903,2152,929"/>
+<area shape="rect" id="node40" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="2067,599,2158,625"/>
+<area shape="rect" id="node44" href="$bender__ir155_8c.html#a96bab0870acd1c5cb2153684bea56ca9" title=" " alt="" coords="1191,440,1358,467"/>
+<area shape="rect" id="node45" href="$bender__ir155__helper_8c.html#ad9130c93fe6b062fc5f0c37595d1f040" title="Interface function which delivers the actual signal measurement (duty cyle) and evaluation...." alt="" coords="1454,440,1657,467"/>
+<area shape="rect" id="node46" href="$bender__ir155__helper_8c.html#ab701b6c5240b2203342c1de5a9c6681b" title="Calculate insulation resistance from measured dutycycle." alt="" coords="1751,415,1933,441"/>
+<area shape="rect" id="node47" href="$bender__ir155__helper_8c.html#aed6c211947fd52248508353dbb92a6f3" title="Determines frequency&#45;dependent measurement state." alt="" coords="1745,465,1939,492"/>
+<area shape="rect" id="node48" href="$bender__ir155__helper_8c.html#a04b9c7e05e1414e76bf855da89113cf2" title="Check if passed duty cycle is within interval limits." alt="" coords="1737,516,1947,543"/>
+<area shape="rect" id="node49" href="$pwm_8c.html#aa1270c042e32f24252ff3fc65e2c41e9" title="Get dutycycle and frequency of input PWM signal." alt="" coords="1773,364,1911,391"/>
+<area shape="rect" id="node52" href="$imd_8c.html#accb102b70d5b56a759ed7f429517a67c" title="Sets the next substate and the timer value of the state variable." alt="" coords="1213,323,1337,349"/>
+<area shape="rect" id="node55" href="$io_8c.html#ac732f8e2ec796feb6a4471b39097cfb8" title="Get pin state." alt="" coords="2071,60,2154,87"/>
+<area shape="rect" id="node57" href="$group__state-estimation-api.html#ga05100e8613ecece359b67067efd8c1e6" title="periodically called algorithm to calculate state&#45;of&#45;charge (SOC)" alt="" coords="903,900,1089,927"/>
+<area shape="rect" id="node65" href="$group__state-estimation-api.html#gaf8ed0a0fff7dc920bed68494104253c3" title="periodically called algorithm to calculate state&#45;of&#45;energy (SOE)" alt="" coords="1181,1081,1368,1108"/>
+<area shape="rect" id="node72" href="$group__state-estimation-api.html#gaa5a769fda6e26f07d6b7cdac26644498" title="calculates state&#45;of&#45;health (SOH)" alt="" coords="905,1081,1087,1108"/>
+<area shape="rect" id="node58" href="$fram_8c.html#ad5c5ec1fd0a6c3667185d3b75064e359" title="Writes a variable to the FRAM." alt="" coords="1780,903,1904,929"/>
+<area shape="rect" id="node60" href="$soc__counting_8c.html#a9974946566282ad572f522b214bba23a" title="Check if all database SOC percentage values are within [0.0, 100.0] Limits SOC values to limit values..." alt="" coords="1723,719,1961,761"/>
+<area shape="rect" id="node61" href="$soc__counting_8c.html#a4b0c7f60f8cb2f10673a5b1b4e6433ea" title="initializes database and FRAM SOC values via lookup table (average, minimum and maximum)." alt="" coords="1183,922,1366,963"/>
+<area shape="rect" id="node64" href="$soc__counting_8c.html#a346855562c7897f40a8afca336ff57a4" title="Set SOC&#45;related values in non&#45;volatile memory." alt="" coords="1761,785,1923,812"/>
+<area shape="rect" id="node59" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="2057,953,2169,980"/>
+<area shape="rect" id="node62" href="$soc__counting_8c.html#a50305973c5dd0dd3ff8cd500e5bc517d" title="sets SOC value with a parameter between 0.0 and 100.0." alt="" coords="1500,820,1611,847"/>
+<area shape="rect" id="node63" href="$soc__counting_8c.html#a01db1621391900ad0b8833bf5f8173e3" title="calculates string SOC in percentage from passed string charge in As" alt="" coords="1741,837,1943,878"/>
+<area shape="rect" id="node66" href="$soe__counting_8c.html#af288d5e4ee8e1dcadbefa093f9cc407b" title="Check if all database SOE percentage values are within [0.0, 100.0] Limits SOE values to limit values..." alt="" coords="1436,1242,1675,1283"/>
+<area shape="rect" id="node67" href="$soe__counting_8c.html#ad6713da865936c6858b60e20afe15543" title="calculates string energy in Wh from passed SOE in percentage" alt="" coords="2009,1081,2216,1122"/>
+<area shape="rect" id="node68" href="$soe__counting_8c.html#a91d803600db5f528584b902a06996f99" title="calculates string SOE in percentage from passed string energy in Wh" alt="" coords="2012,1015,2213,1057"/>
+<area shape="rect" id="node69" href="$soe__counting_8c.html#a0f41f00c22be43378473c506838dc238" title="initializes database and FRAM SOE values via lookup table (average, min and max)." alt="" coords="1464,1074,1647,1115"/>
+<area shape="rect" id="node70" href="$soe__counting_8c.html#a7461d3a1c3bf7a1a79c841b92c21ca59" title="look&#45;up table for SOE initialization" alt="" coords="1766,1212,1918,1239"/>
+<area shape="rect" id="node71" href="$soe__counting_8c.html#a49ca0abf4d8a626c265b4e7e05e4ec28" title="sets SOE value with a parameter between 0.0 and 100.0." alt="" coords="1787,1081,1897,1108"/>
+</map>

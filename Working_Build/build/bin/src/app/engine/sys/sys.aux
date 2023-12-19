@@ -1,0 +1,189 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{FFC5A668-D60A-490B-9C7F-50D9760D6DFD}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Tue Oct 17 13:13:02 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitl                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitf                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbit                                       |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormall                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormalf                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormal                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanf                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnan                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinfl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinff                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinf                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitel                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitef                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinite                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyl                                   |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyf                                   |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassify                                    |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  SYS_CheckMultipleCalls                          |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SYS_TransferStateRequest                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  SYS_GeneralMacroBist                            |
++-------------------------------------------------------------+
+Stack usage:  104 bytes
+
+Called functions:
+   memcpy
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SYS_RunStateMachine                             |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   IMD_RequestInitialization
+   IMD_GetInitializationState
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   CAN_IsCurrentSensorPresent
+   CAN_IsCurrentSensorCcPresent
+   SE_InitializeSoc
+   CAN_IsCurrentSensorEcPresent
+   SE_InitializeSoe
+   SE_InitializeSoh
+   SOF_Init
+   CAN_EnablePeriodic
+   MEAS_IsFirstMeasurementCycleFinished
+   ALGO_UnlockInitialization
+   MEAS_StartMeasurement
+   BMS_GetInitializationState
+   BMS_SetStateRequest
+   BAL_SetStateRequest
+   BAL_GetInitializationState
+   SBC_GetState
+   SBC_SetStateRequest
+   FRAM_ReadData
+   DIAG_Handler
+   SYS_TransferStateRequest
+   ILCK_SetStateRequest
+   CAN_Initialize
+   SYS_SendBootMessage
+   SYS_GeneralMacroBist
+   DATA_ExecuteDataBist
+
++-------------------------------------------------------------+
+|  FUNCTION:  SYS_Trigger                                     |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   SYS_CheckMultipleCalls
+   SYS_RunStateMachine
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SYS_CheckStateRequest                           |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  SYS_SetStateRequest                             |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   SYS_CheckStateRequest
+   OS_ExitTaskCritical
+

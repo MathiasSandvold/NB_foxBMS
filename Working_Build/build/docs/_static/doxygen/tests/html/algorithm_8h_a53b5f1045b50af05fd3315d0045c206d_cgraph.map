@@ -1,0 +1,4 @@
+<map id="ALGO_MonitorExecutionTime" name="ALGO_MonitorExecutionTime">
+<area shape="rect" id="node1" title="monitors the calculation duration of the different algorithms" alt="" coords="5,5,200,32"/>
+<area shape="rect" id="node2" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="248,5,375,32"/>
+</map>

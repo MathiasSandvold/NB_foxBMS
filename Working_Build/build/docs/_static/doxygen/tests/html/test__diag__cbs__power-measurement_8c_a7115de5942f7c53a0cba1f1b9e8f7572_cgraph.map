@@ -1,0 +1,4 @@
+<map id="testDIAG_ErrorPowerMeasurementInvalidInput" name="testDIAG_ErrorPowerMeasurementInvalidInput">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,231,47"/>
+<area shape="rect" id="node2" href="$diag__cbs_8h.html#acd309debb70425e8390f814060498d16" title="diagnosis callback function for current sensor related events" alt="" coords="279,13,481,39"/>
+</map>

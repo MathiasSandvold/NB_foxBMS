@@ -1,0 +1,7 @@
+<map id="testSetAndGetBalancingThreshold" name="testSetAndGetBalancingThreshold">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,227,57"/>
+<area shape="rect" id="node2" href="$bal__cfg_8c.html#ae6943eea06cdd64870ce62e3ce1b60c2" title="get balancing threshold" alt="" coords="275,5,489,32"/>
+<area shape="rect" id="node3" href="$bal__cfg_8c.html#a111018020b4484c2ca77c68e332b6306" title="set balancing threshold" alt="" coords="289,56,475,83"/>
+<area shape="rect" id="node4" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="537,31,684,57"/>
+<area shape="rect" id="node5" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="541,81,680,108"/>
+</map>

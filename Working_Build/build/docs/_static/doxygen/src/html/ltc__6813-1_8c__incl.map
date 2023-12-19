@@ -1,0 +1,35 @@
+<map id="ltc_6813&#45;1.c" name="ltc_6813&#45;1.c">
+<area shape="rect" id="node1" title="Driver for the LTC analog front&#45;end." alt="" coords="933,5,1027,32"/>
+<area shape="rect" id="node2" href="$ltc__6813-1__cfg_8h.html" title="Header for the configuration for the LTC 6804&#45;1 6811&#45;1, 6812&#45;1, and 6813&#45;1 monitoring IC." alt="" coords="1807,80,1924,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="1157,752,1222,779"/>
+<area shape="rect" id="node10" title=" " alt="" coords="221,752,296,779"/>
+<area shape="rect" id="node15" href="$database_8h.html" title="Database module header." alt="" coords="1101,304,1187,331"/>
+<area shape="rect" id="node17" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="910,603,957,629"/>
+<area shape="rect" id="node21" title=" " alt="" coords="1559,528,1633,555"/>
+<area shape="rect" id="node26" href="$ltc_8h.html" title="Headers for the driver for the LTC analog front&#45;end." alt="" coords="259,155,306,181"/>
+<area shape="rect" id="node27" title=" " alt="" coords="1017,80,1116,107"/>
+<area shape="rect" id="node28" href="$afe__plausibility_8h.html" title="plausibility checks for cell voltage and cell temperatures" alt="" coords="1033,603,1151,629"/>
+<area shape="rect" id="node29" href="$diag_8h.html" title="Diagnosis driver header." alt="" coords="735,304,793,331"/>
+<area shape="rect" id="node30" href="$io_8h.html" title="Header for the driver for the IO module." alt="" coords="1559,603,1601,629"/>
+<area shape="rect" id="node31" title=" " alt="" coords="1708,80,1783,107"/>
+<area shape="rect" id="node32" href="$pex_8h.html" title="Header for the driver for the NXP PCA9539 port expander module." alt="" coords="1130,155,1185,181"/>
+<area shape="rect" id="node3" href="$ltc__cfg_8h.html" title="Headers for the configuration for the LTC analog front&#45;end." alt="" coords="2089,304,2159,331"/>
+<area shape="rect" id="node5" href="$ltc__defs_8h.html" title="Headers for the driver for the LTC analog front&#45;end." alt="" coords="1821,229,1899,256"/>
+<area shape="rect" id="node7" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="499,528,645,555"/>
+<area shape="rect" id="node18" href="$spi_8h.html" title="Headers for the driver for the SPI module." alt="" coords="1896,379,1947,405"/>
+<area shape="rect" id="node22" href="$ltc__afe__dma_8h.html" title="Headers for the driver for the DMA module for the LTC." alt="" coords="1725,155,1827,181"/>
+<area shape="rect" id="node6" href="$diag__cfg_8h.html" title="Diagnostic module configuration header." alt="" coords="610,379,691,405"/>
+<area shape="rect" id="node12" href="$database__cfg_8h.html" title="Database configuration header." alt="" coords="661,453,771,480"/>
+<area shape="rect" id="node8" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="608,603,683,629"/>
+<area shape="rect" id="node9" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="632,677,704,704"/>
+<area shape="rect" id="node11" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="1143,677,1236,704"/>
+<area shape="rect" id="node13" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="448,677,507,704"/>
+<area shape="rect" id="node14" title=" " alt="" coords="670,528,733,555"/>
+<area shape="rect" id="node16" href="$database__helper_8h.html" title="Database module header." alt="" coords="868,379,996,405"/>
+<area shape="rect" id="node19" href="$spi__cfg_8h.html" title="Headers for the configuration for the SPI module." alt="" coords="1708,453,1783,480"/>
+<area shape="rect" id="node20" title=" " alt="" coords="1708,528,1783,555"/>
+<area shape="rect" id="node23" href="$afe__dma_8h.html" title="Headers for the driver for the general DMA module of monitoring ICs." alt="" coords="1735,379,1817,405"/>
+<area shape="rect" id="node24" href="$dma__cfg_8h.html" title="Headers for the configuration for the DMA module." alt="" coords="1449,453,1532,480"/>
+<area shape="rect" id="node25" title=" " alt="" coords="1375,528,1484,555"/>
+<area shape="rect" id="node33" href="$pex__cfg_8h.html" title="Headers for the configuration for the NXP PCA9539 port expander module." alt="" coords="1118,229,1197,256"/>
+</map>

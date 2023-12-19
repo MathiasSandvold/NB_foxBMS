@@ -1,0 +1,13 @@
+<map id="FRAM_WriteData" name="FRAM_WriteData">
+<area shape="rect" id="node1" title="Writes a variable to the FRAM." alt="" coords="5,183,129,209"/>
+<area shape="rect" id="node2" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="213,5,344,32"/>
+<area shape="rect" id="node3" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="231,56,326,83"/>
+<area shape="rect" id="node4" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="238,107,319,133"/>
+<area shape="rect" id="node5" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="223,157,335,184"/>
+<area shape="rect" id="node6" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="177,208,380,235"/>
+<area shape="rect" id="node7" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="218,259,339,285"/>
+<area shape="rect" id="node8" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="239,309,318,336"/>
+<area shape="rect" id="node11" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="233,360,324,387"/>
+<area shape="rect" id="node9" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="428,309,575,336"/>
+<area shape="rect" id="node10" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="432,360,571,387"/>
+</map>

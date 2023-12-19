@@ -1,0 +1,11 @@
+<map id="algorithm.c" name="algorithm.c">
+<area shape="rect" id="node1" title="Main module to handle the execution of algorithms." alt="" coords="197,5,284,32"/>
+<area shape="rect" id="node2" href="$algorithm_8h.html" title="Headers for the driver for the storage in the EEPROM memory." alt="" coords="53,80,140,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="81,304,147,331"/>
+<area shape="rect" id="node6" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="369,80,441,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="278,155,353,181"/>
+<area shape="rect" id="node9" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="217,80,264,107"/>
+<area shape="rect" id="node3" href="$algorithm__cfg_8h.html" title="Headers for the configuration of the algorithm module." alt="" coords="41,155,152,181"/>
+<area shape="rect" id="node4" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="110,229,203,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="377,155,477,181"/>
+</map>

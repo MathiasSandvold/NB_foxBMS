@@ -1,0 +1,21 @@
+<map id="IMD_ProcessShutdownState" name="IMD_ProcessShutdownState">
+<area shape="rect" id="node1" title="Processes the shutdown state." alt="" coords="5,245,193,271"/>
+<area shape="rect" id="node2" href="$bender__iso165c_8c.html#a3be2224018613c4c2cba1b74f23fd25a" title=" " alt="" coords="256,194,361,221"/>
+<area shape="rect" id="node18" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="261,245,356,271"/>
+<area shape="rect" id="node19" href="$no-imd_8c.html#aab6c1e77da3c3d21295288918b2847a8" title=" " alt="" coords="241,295,376,322"/>
+<area shape="rect" id="node3" href="$bender__iso165c_8c.html#a449e2149282ccf1673de43954c046e28" title="Check if iso165c acknowledged reception of command." alt="" coords="424,67,639,94"/>
+<area shape="rect" id="node4" href="$bender__iso165c_8c.html#acbb12889a40b40d4cfd4e18423458d2e" title="Check if iso165c acknowledged reception of sent message and get corresponding data." alt="" coords="687,42,844,69"/>
+<area shape="rect" id="node7" href="$bender__iso165c_8c.html#a0870c17a4ebc5295690582f6bc8219b9" title="Check state of HV relay." alt="" coords="450,118,613,145"/>
+<area shape="rect" id="node9" href="$bender__iso165c_8c.html#aa0721b9a0e057b7515c6ce9b96bcefa1" title="Request state of HV relay." alt="" coords="444,169,619,195"/>
+<area shape="rect" id="node14" href="$bender__iso165c_8c.html#a498a3673d8b118691d4cd8a6fe98dcc0" title="Sets the next state the timer value of the disable state variable." alt="" coords="453,321,609,347"/>
+<area shape="rect" id="node15" href="$bender__iso165c_8c.html#a574e8bdb4425d5423eb54803eabe68e6" title="Set measurement mode." alt="" coords="435,219,628,246"/>
+<area shape="rect" id="node16" href="$bender__iso165c_8c.html#a8734fcc33bc3928e8afdd4d302e5c3a8" title="Set state of HV relay." alt="" coords="458,270,605,297"/>
+<area shape="rect" id="node17" href="$bender__iso165c_8c.html#a637bbbc00ed0acfa31be15810427b7d2" title="Sets the next state the timer value of the running state variable." alt="" coords="451,371,611,398"/>
+<area shape="rect" id="node5" href="$os__freertos_8c.html#a64fee282d8a9e2abab8b69bb91401421" title="Check if messages are waiting for queue." alt="" coords="892,5,1117,47"/>
+<area shape="rect" id="node6" href="$os__freertos_8c.html#a285b22d2ef1448cae22a8965b5fec186" title="Receive an item from a queue." alt="" coords="924,71,1085,98"/>
+<area shape="rect" id="node8" href="$bender__iso165c_8c.html#abb1379e83199b006d9e1a219115c1453" title="Get data in data word from CAN transmission." alt="" coords="690,118,841,145"/>
+<area shape="rect" id="node10" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="709,169,822,195"/>
+<area shape="rect" id="node11" href="$bender__iso165c_8c.html#ac239b3b41d2b237314edaf4c1a0aeb6c" title="Reset CAN data." alt="" coords="692,219,839,246"/>
+<area shape="rect" id="node12" href="$bender__iso165c_8c.html#a1f601b236eab3f110c3578c1a76f4568" title="Compose CAN message for CAN transmission." alt="" coords="705,270,825,297"/>
+<area shape="rect" id="node13" href="$bender__iso165c_8c.html#a776ba2c7bc9bcc6766231be59f494ba8" title="Write data in data word for CAN transmission." alt="" coords="690,321,841,347"/>
+</map>

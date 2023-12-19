@@ -1,0 +1,7 @@
+<map id="meas.h" name="meas.h">
+<area shape="rect" id="node1" title="Headers for the driver for the measurements needed by the BMS (e.g., I,V,T)." alt="" coords="130,5,195,32"/>
+<area shape="rect" id="node2" href="$bms_8c.html" title="bms driver implementation" alt="" coords="5,80,64,107"/>
+<area shape="rect" id="node3" href="$meas_8c.html" title="Driver for the measurements needed by the BMS (e.g., I,V,T)." alt="" coords="89,80,154,107"/>
+<area shape="rect" id="node4" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="178,80,233,107"/>
+<area shape="rect" id="node5" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="257,80,343,107"/>
+</map>

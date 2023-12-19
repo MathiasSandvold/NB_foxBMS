@@ -1,0 +1,7 @@
+<map id="sof_trapezoid.h" name="sof_trapezoid.h">
+<area shape="rect" id="node1" title="Header for SOX module, responsible for current derating calculation." alt="" coords="81,5,192,32"/>
+<area shape="rect" id="node2" href="$sof__trapezoid__cfg_8h.html" title="Header for SOF configuration." alt="" coords="69,80,204,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,229,68,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="204,229,269,256"/>
+<area shape="rect" id="node3" href="$battery__cell__cfg_8h.html" title="Configuration of the battery cell (e.g., minimum and maximum cell voltage)" alt="" coords="75,155,199,181"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="foxmath.c" name="foxmath.c">
+<area shape="rect" id="node1" title="mathlib function implementations" alt="" coords="189,5,268,32"/>
+<area shape="rect" id="node2" href="$foxmath_8h.html" title="math library for often used math functions" alt="" coords="112,80,191,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,68,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="263,155,328,181"/>
+<area shape="rect" id="node7" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="349,80,421,107"/>
+<area shape="rect" id="node9" href="$utils_8h.html" title="Utilities." alt="" coords="267,80,324,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="92,155,149,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="174,155,238,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="353,155,427,181"/>
+</map>

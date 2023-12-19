@@ -1,0 +1,6 @@
+<map id="meas.h" name="meas.h">
+<area shape="rect" id="node1" title="Headers for the driver for the measurements needed by the BMS (e.g., I,V,T)." alt="" coords="103,5,169,32"/>
+<area shape="rect" id="node2" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="5,80,99,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="61,155,126,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="173,80,248,107"/>
+</map>

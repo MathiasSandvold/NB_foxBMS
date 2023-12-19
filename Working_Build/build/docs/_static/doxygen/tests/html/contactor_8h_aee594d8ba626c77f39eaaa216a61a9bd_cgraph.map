@@ -1,0 +1,5 @@
+<map id="CONT_Initialize" name="CONT_Initialize">
+<area shape="rect" id="node1" title="initializes the contactor module" alt="" coords="5,13,116,39"/>
+<area shape="rect" id="node2" href="$contactor_8c.html#a5fdc0d94108b09a00a63d2227256ffa4" title=" " alt="" coords="164,5,333,47"/>
+<area shape="rect" id="node3" href="$sps_8c.html#a12055277c605a27340a3938e6f84523a" title="Returns the channel affiliation." alt="" coords="381,13,557,39"/>
+</map>

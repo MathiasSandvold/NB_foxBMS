@@ -1,0 +1,5 @@
+<map id="testAFE_RequestIoRead" name="testAFE_RequestIoRead">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,171,32"/>
+<area shape="rect" id="node2" href="$afe_8h.html#a1d76e06afda746339ebd731dca5b4da2" title="Makes the request to the AFE state machine to read from the IO port&#45;expander." alt="" coords="219,5,361,32"/>
+<area shape="rect" id="node3" href="$nxp__afe_8h.html#ad7f6d7e5a1b898a4f0a542b3a1cd6554" title=" " alt="" coords="409,5,552,32"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="debug_default_afe_dma.h" name="debug_default_afe_dma.h">
+<area shape="rect" id="node1" title="Header for the driver for the DMA module for the fake AFE driver." alt="" coords="92,5,261,32"/>
+<area shape="rect" id="node2" href="$debug__default__afe__dma_8c.html" title="Driver for the DMA module for the fake driver." alt="" coords="5,87,175,114"/>
+<area shape="rect" id="node3" href="$test__debug__default__afe__dma_8c.html" title="Test of the debug_default_afe_dma.c module." alt="" coords="199,80,330,121"/>
+</map>

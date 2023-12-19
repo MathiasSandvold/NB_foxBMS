@@ -1,0 +1,11 @@
+<map id="test_epcos_b57861s0103f045_polynomial.c" name="test_epcos_b57861s0103f045_polynomial.c">
+<area shape="rect" id="node1" title="Test of fake temperature sensor." alt="" coords="173,5,368,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,67,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="91,95,299,121"/>
+<area shape="rect" id="node4" href="$foxmath_8h.html" title="math library for often used math functions" alt="" coords="394,95,473,121"/>
+<area shape="rect" id="node9" href="$tsi_8h.html" title="Temperature Sensor Interface on Slave Unit driver header." alt="" coords="323,95,370,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="402,169,465,196"/>
+<area shape="rect" id="node6" title=" " alt="" coords="313,169,378,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="489,169,546,196"/>
+<area shape="rect" id="node8" title=" " alt="" coords="571,169,635,196"/>
+</map>

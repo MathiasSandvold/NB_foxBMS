@@ -1,0 +1,24 @@
+<map id="N775_TransmitI2c" name="N775_TransmitI2c">
+<area shape="rect" id="node1" title="tranmit over I2C on NXP slave." alt="" coords="5,454,132,481"/>
+<area shape="rect" id="node2" href="$nxp__mc33775a-ll_8c.html#ac7c3bbdc384429e36a82340281a4eb13" title="Read a value from a specific register in a specific device." alt="" coords="180,322,359,349"/>
+<area shape="rect" id="node3" href="$nxp__mc33775a-ll_8c.html#a05b00b3020b3f7d8df2fc4e2ca529274" title="Read multiple values from specific registers in a specific device." alt="" coords="407,321,631,348"/>
+<area shape="rect" id="node15" href="$nxp__mc33775a-ll_8c.html#a9184e5d6d106688f9a701245d749987d" title="Write a value into a specific register in a specific device." alt="" coords="429,429,609,456"/>
+<area shape="rect" id="node18" href="$nxp__mc33775a_8c.html#afc150ee43bb68b0ee5a389d8535c734a" title="waits for a definite amount of time in ms." alt="" coords="214,480,325,506"/>
+<area shape="rect" id="node21" href="$os__freertos_8c.html#a285b22d2ef1448cae22a8965b5fec186" title="Receive an item from a queue." alt="" coords="189,530,350,557"/>
+<area shape="rect" id="node22" href="$os__freertos_8c.html#abfcdf77954b6a87dca01c31efaf4d0b3" title="Post an item to the back the provided queue." alt="" coords="183,581,356,608"/>
+<area shape="rect" id="node4" href="$nxp__mc33775a-ll_8c.html#add44c631a1af3073bdf7c3bf91ae2de6" title="Composes a message." alt="" coords="700,423,904,464"/>
+<area shape="rect" id="node5" href="$nxp__mc33775a-ll_8c.html#a1ed98da6256705c1d38cf5529e2509bb" title="Decomposes and analysis a message." alt="" coords="693,52,911,94"/>
+<area shape="rect" id="node6" href="$nxp__mc33775a-ll_8c.html#a8f9a40f5c6c25d931b57b51703e7e0f3" title="Copies a message to the buffer to be passed to the SPI transmit functions." alt="" coords="701,372,903,398"/>
+<area shape="rect" id="node7" href="$nxp__mc33775a-ll_8c.html#a6cce353892b34e03c69c9ab238ad7b80" title="Wait for the SPI receive communication to complete, using notifications." alt="" coords="679,590,925,617"/>
+<area shape="rect" id="node9" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1001,265,1148,292"/>
+<area shape="rect" id="node10" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1005,318,1144,345"/>
+<area shape="rect" id="node11" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="1014,132,1135,158"/>
+<area shape="rect" id="node12" href="$spi_8c.html#a997dce9b156595fa4486a547f7c55453" title="Transmits and receives data on SPI with DMA." alt="" coords="702,169,902,196"/>
+<area shape="rect" id="node14" href="$spi_8c.html#a2a0f36d8cb7e54304284f758cc108c36" title="Transmits and receives data on SPI with DMA." alt="" coords="703,220,901,246"/>
+<area shape="rect" id="node8" href="$os__freertos_8c.html#a7578e983d03af6f03fd3fe09f293cdb1" title="Wait for a notification, with index." alt="" coords="973,641,1176,668"/>
+<area shape="rect" id="node13" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="1002,208,1147,234"/>
+<area shape="rect" id="node16" href="$nxp__mc33775a-ll_8c.html#a2e3ed760407a7d6dcb460ac68c02be41" title="Wait for the SPI transmit communication to complete, using notifications." alt="" coords="679,692,925,718"/>
+<area shape="rect" id="node17" href="$os__freertos_8c.html#a25b7418eb914b83dd88bbc0424333139" title="Clear pending notification of a task, with index." alt="" coords="709,641,895,668"/>
+<area shape="rect" id="node19" href="$os__freertos_8c.html#a3ac9f783e38ae9f9c8cfe0634bb3b8fe" title="Delay a task until a specified time." alt="" coords="451,480,586,506"/>
+<area shape="rect" id="node20" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="455,530,582,557"/>
+</map>

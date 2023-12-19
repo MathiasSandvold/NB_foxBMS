@@ -1,0 +1,12 @@
+   text	   data	    bss	    dec	    hex	filename
+   2336	      0	      0	   2336	    920	bal.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\application\libfoxbms-application.a)
+   9976	    258	      0	  10234	   27fa	bms.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\application\libfoxbms-application.a)
+     68	      4	      0	     72	     48	bal_cfg.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\application\libfoxbms-application.a)
+   3160	      4	      0	   3164	    c5c	battery_cell_cfg.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\application\libfoxbms-application.a)
+      0	      1	      0	      1	      1	battery_system_cfg.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\application\libfoxbms-application.a)
+   1800	      0	      0	   1800	    708	soa_cfg.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\application\libfoxbms-application.a)
+   2504	      0	      0	   2504	    9c8	plausibility.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\application\libfoxbms-application.a)
+   8756	    864	      0	   9620	   2594	redundancy.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\application\libfoxbms-application.a)
+   3636	      0	      0	   3636	    e34	soa.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\application\libfoxbms-application.a)
+   1580	      0	      0	   1580	    62c	bal_strategy_none.c.1.obj (ex C:\Users\Smit\Documents\foxbms-2\build\bin\src\app\application\libfoxbms-application.a)
+  33816	   1131	      0	  34947	   8883	(TOTALS)

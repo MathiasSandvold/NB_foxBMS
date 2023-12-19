@@ -1,0 +1,5 @@
+<map id="soa.h" name="soa.h">
+<area shape="rect" id="node1" title="Header for SOA module, responsible for checking battery parameters against safety limits." alt="" coords="47,5,102,32"/>
+<area shape="rect" id="node2" href="$bms_8c.html" title="bms driver implementation" alt="" coords="5,80,64,107"/>
+<area shape="rect" id="node3" href="$soa_8c.html" title="SOA module responsible for checking battery parameters against safety limits." alt="" coords="89,80,143,107"/>
+</map>

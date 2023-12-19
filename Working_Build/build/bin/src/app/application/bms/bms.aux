@@ -1,0 +1,362 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{88F647C5-8CE5-4BF2-A272-CF825C064519}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Tue Oct 17 13:13:01 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitl                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitf                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbit                                       |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormall                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormalf                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormal                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanf                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnan                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinfl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinff                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinf                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitel                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitef                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinite                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyl                                   |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyf                                   |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassify                                    |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_GetMeasurementValues                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
+Called functions:
+   DATA_Read3DataBlocks
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_UpdateBatsysState                           |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_CheckOpenSenseWire                          |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   DIAG_Handler
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_CheckReEntrance                             |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_CheckCanRequests                            |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   DATA_Read1DataBlock
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_IsAnyFatalErrorFlagSet                      |
++-------------------------------------------------------------+
+Stack usage:   24 bytes
+
+Called functions:
+   DIAG_GetDiagnosisEntryState
+   DIAG_GetDelay
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_IsBatterySystemStateOkay                    |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   OS_GetTickCount
+   BMS_IsAnyFatalErrorFlagSet
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_IsStringClosed                              |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_GetClosestString                            |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   BMS_IsStringClosed
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_GetStringVoltageDifference                  |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   MATH_AbsInt32_t
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_GetAverageStringCurrent                     |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_GetHighestString                            |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_GetLowestString                             |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_CheckPrecharge                              |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   MATH_AbsInt32_t
+   DIAG_Handler
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_IsContactorFeedbackValid                    |
++-------------------------------------------------------------+
+Stack usage:   88 bytes
+
+Called functions:
+   memcpy
+   DATA_Read1DataBlock
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_GetSecondContactorToBeOpened                |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_GetCurrentFlowDirection                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_GetFirstContactorToBeOpened                 |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_TransferStateRequest                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_Trigger                                     |
++-------------------------------------------------------------+
+Stack usage:   56 bytes
+
+Called functions:
+   OS_GetTickCount
+   BMS_GetMeasurementValues
+   BMS_UpdateBatsysState
+   SOA_CheckVoltages
+   SOA_CheckTemperatures
+   SOA_CheckCurrent
+   SOA_CheckSlaveTemperatures
+   BMS_CheckOpenSenseWire
+   CONT_CheckFeedback
+   BMS_CheckReEntrance
+   BMS_CheckCanRequests
+   BAL_SetStateRequest
+   LED_SetToggleTime
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   DIAG_IsAnyFatalErrorSet
+   DATA_Read1DataBlock
+   DATA_Write1DataBlock
+   CONT_GetContactorState
+   BMS_IsBatterySystemStateOkay
+   CONT_CloseContactor
+   BMS_GetClosestString
+   BMS_GetStringVoltageDifference
+   BMS_GetAverageStringCurrent
+   BMS_GetLowestString
+   BMS_GetHighestString
+   CONT_OpenPrecharge
+   BMS_CheckPrecharge
+   CONT_ClosePrecharge
+   BMS_IsContactorFeedbackValid
+   CONT_OpenContactor
+   BMS_GetSecondContactorToBeOpened
+   MATH_AbsInt32_t
+   BMS_GetCurrentFlowDirection
+   BMS_GetFirstContactorToBeOpened
+   DIAG_Handler
+   CONT_OpenAllPrechargeContactors
+   IMD_RequestInsulationMeasurement
+   BMS_TransferStateRequest
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_CheckStateRequest                           |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_SetStateRequest                             |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   BMS_CheckStateRequest
+   OS_ExitTaskCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_IsTransitionToErrorStateActive              |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_IsStringPrecharging                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_GetState                                    |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_GetNumberOfConnectedStrings                 |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_GetInitializationState                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  BMS_GetBatterySystemState                       |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+

@@ -1,0 +1,16 @@
+<map id="testMXM_MonGetVoltagesNullPointer" name="testMXM_MonGetVoltagesNullPointer">
+<area shape="rect" id="node1" title=" " alt="" coords="5,99,204,141"/>
+<area shape="rect" id="node2" href="$mxm__1785x_8c.html#ae17987a0e72b943e2cac791ee60841c8" title="Encapsulation for reading voltages from a register." alt="" coords="252,107,407,133"/>
+<area shape="rect" id="node3" href="$mxm__battery__management_8c.html#af80228e32eb53f659c6301f02ab34143" title="Get number of satellites." alt="" coords="467,5,673,32"/>
+<area shape="rect" id="node4" href="$mxm__battery__management_8c.html#a9d5b57e8d6ecb30ba6426272f472e630" title="Set state request for the Battery Management Statemachine." alt="" coords="485,56,655,83"/>
+<area shape="rect" id="node5" href="$mxm__1785x_8c.html#a2cfdc33409d373e8721922acc6a9a3a9" title="This error handler is used as a last resort and tries a reset of the complete driver." alt="" coords="488,107,652,133"/>
+<area shape="rect" id="node7" href="$mxm__1785x_8c.html#ab0d9976f05eb48b050415afd432f9415" title="Retrieves data from lower statemachine and writes it to the rx buffer." alt="" coords="455,157,685,184"/>
+<area shape="rect" id="node10" href="$mxm__1785x_8c.html#a38cc032b4fe5beffa9ba651b8dfd4884" title="Parse a RX buffer containing voltage values." alt="" coords="481,233,659,260"/>
+<area shape="rect" id="node6" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="771,93,898,120"/>
+<area shape="rect" id="node8" href="$mxm__battery__management_8c.html#ad89fd67b1337293d24504cdb05c19a59" title="Returns the last received DC byte." alt="" coords="753,144,916,171"/>
+<area shape="rect" id="node9" href="$mxm__battery__management_8c.html#a88722a84590c432f0bbfcdd77536c8db" title="Copy RX buffer into variable." alt="" coords="763,195,906,221"/>
+<area shape="rect" id="node11" href="$mxm__1785x_8c.html#ac8a15260cff9ed6eb1682999e13bb9d3" title="Parse voltage values from a READALL receive buffer into an array." alt="" coords="733,245,936,272"/>
+<area shape="rect" id="node12" href="$mxm__1785x__tools_8c.html#ab437f79b3d0299bb51e1a22bcfb484d2" title="Convert a measurement value to a voltage value." alt="" coords="984,245,1085,272"/>
+<area shape="rect" id="node13" href="$mxm__1785x__tools_8c.html#af328199dc46b6eab7f35f08f0f076145" title="Extract a value from a single register." alt="" coords="1133,245,1344,272"/>
+<area shape="rect" id="node14" href="$mxm__1785x__tools_8c.html#a0dc736d94a1c30286d2549d3efa99e2d" title="Find Position of first set bit in bitmask." alt="" coords="1392,245,1512,272"/>
+</map>

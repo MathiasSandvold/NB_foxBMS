@@ -1,0 +1,19 @@
+<map id="nxp_mc33775a_defs.h" name="nxp_mc33775a_defs.h">
+<area shape="rect" id="node1" title="Definitions for the driver for the MC33775A analog front&#45;end." alt="" coords="721,5,873,32"/>
+<area shape="rect" id="node2" href="$database_8h.html" title="Database module header." alt="" coords="489,80,575,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="525,528,590,555"/>
+<area shape="rect" id="node14" href="$spi_8h.html" title="Headers for the driver for the SPI module." alt="" coords="772,155,823,181"/>
+<area shape="rect" id="node3" href="$database__cfg_8h.html" title="Database configuration header." alt="" coords="263,229,374,256"/>
+<area shape="rect" id="node9" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="553,453,647,480"/>
+<area shape="rect" id="node12" href="$database__helper_8h.html" title="Database module header." alt="" coords="417,155,545,181"/>
+<area shape="rect" id="node13" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="194,379,241,405"/>
+<area shape="rect" id="node4" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="364,304,511,331"/>
+<area shape="rect" id="node7" title=" " alt="" coords="104,528,179,555"/>
+<area shape="rect" id="node10" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="20,453,79,480"/>
+<area shape="rect" id="node11" title=" " alt="" coords="218,304,281,331"/>
+<area shape="rect" id="node5" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="407,379,481,405"/>
+<area shape="rect" id="node6" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="356,453,428,480"/>
+<area shape="rect" id="node15" href="$spi__cfg_8h.html" title="Headers for the configuration for the SPI module." alt="" coords="823,229,897,256"/>
+<area shape="rect" id="node16" title=" " alt="" coords="873,304,948,331"/>
+<area shape="rect" id="node17" title=" " alt="" coords="973,304,1046,331"/>
+</map>

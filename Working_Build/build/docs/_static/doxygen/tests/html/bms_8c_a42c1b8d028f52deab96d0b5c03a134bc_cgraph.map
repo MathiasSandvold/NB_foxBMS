@@ -1,0 +1,5 @@
+<map id="BMS_IsAnyFatalErrorFlagSet" name="BMS_IsAnyFatalErrorFlagSet">
+<area shape="rect" id="node1" title="Checks all the error flags from diagnosis module with a severity of DIAG_FATAL_ERROR." alt="" coords="5,31,199,57"/>
+<area shape="rect" id="node2" href="$diag_8c.html#a5e2190133d0352d1e483ee1c9829c6aa" title="Get configured delay of passed diagnosis entry." alt="" coords="289,5,404,32"/>
+<area shape="rect" id="node3" href="$diag_8c.html#a65aa765236a760639d5401524b876378" title="Checks if passed diagnosis entry has been triggered or not." alt="" coords="247,56,447,83"/>
+</map>

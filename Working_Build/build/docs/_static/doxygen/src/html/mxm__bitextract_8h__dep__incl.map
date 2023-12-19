@@ -1,0 +1,16 @@
+<map id="mxm_bitextract.h" name="mxm_bitextract.h">
+<area shape="rect" id="node1" title="Bit extraction function for MXM_17841b." alt="" coords="417,5,540,32"/>
+<area shape="rect" id="node2" href="$mxm__17841b_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="248,155,359,181"/>
+<area shape="rect" id="node3" href="$mxm__17841b_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="423,80,534,107"/>
+<area shape="rect" id="node14" href="$mxm__bitextract_8c.html" title="Bit extraction function for mxm_17841b." alt="" coords="558,80,681,107"/>
+<area shape="rect" id="node4" href="$mxm__afe_8c.html" title="AFE driver implementation." alt="" coords="532,379,619,405"/>
+<area shape="rect" id="node5" href="$mxm__1785x_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="384,304,488,331"/>
+<area shape="rect" id="node8" href="$mxm__battery__management_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="383,155,574,181"/>
+<area shape="rect" id="node6" href="$mxm__1785x_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="358,379,462,405"/>
+<area shape="rect" id="node7" href="$mxm__17852_8c.html" title="Operation state machine implementation for the MAX17852." alt="" coords="6,379,110,405"/>
+<area shape="rect" id="node9" href="$mxm__1785x__tools_8h.html" title="This is a collection of helper functions for the MAX1785x ICs." alt="" coords="277,229,416,256"/>
+<area shape="rect" id="node13" href="$mxm__battery__management_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="62,229,252,256"/>
+<area shape="rect" id="node10" href="$mxm__1785x__tools_8c.html" title="This is a collection of helper functions for the MAX1785x ICs." alt="" coords="34,304,173,331"/>
+<area shape="rect" id="node11" href="$mxm__registry_8h.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="197,304,309,331"/>
+<area shape="rect" id="node12" href="$mxm__registry_8c.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="197,379,309,405"/>
+</map>

@@ -1,0 +1,8 @@
+<map id="CONT_OpenContactor" name="CONT_OpenContactor">
+<area shape="rect" id="node1" title="Opens the contactor." alt="" coords="5,31,156,57"/>
+<area shape="rect" id="node2" href="$sps_8c.html#a9cb3cd911b7a454365ab9c3cec7319a1" title="Request state of a contactor." alt="" coords="204,31,395,57"/>
+<area shape="rect" id="node3" href="$sps_8c.html#a12055277c605a27340a3938e6f84523a" title="Returns the channel affiliation." alt="" coords="446,5,622,32"/>
+<area shape="rect" id="node4" href="$sps_8c.html#acbea831bc7b455fd71f259e3a9e4c0aa" title="Request the functional state of a channel." alt="" coords="443,56,625,83"/>
+<area shape="rect" id="node5" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="673,31,820,57"/>
+<area shape="rect" id="node6" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="677,81,816,108"/>
+</map>

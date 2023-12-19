@@ -1,0 +1,5 @@
+<map id="MATH_StartupSelfTest" name="MATH_StartupSelfTest">
+<area shape="rect" id="node1" title=": self test for math functions that can be called at startup" alt="" coords="5,31,160,57"/>
+<area shape="rect" id="node2" href="$foxmath_8c.html#a04e47df99d56d9aad4287672285f4a1c" title="Returns the absolute value of passed int32_t value." alt="" coords="208,5,335,32"/>
+<area shape="rect" id="node3" href="$foxmath_8c.html#a4ee1d4fbccbd8d0af3cdc84052aa63cc" title="Returns the absolute value of passed int64_t value." alt="" coords="208,56,335,83"/>
+</map>

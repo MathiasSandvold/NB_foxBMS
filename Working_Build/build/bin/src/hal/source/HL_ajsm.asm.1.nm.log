@@ -1,0 +1,18 @@
+
+file            [index]  value      size  bind  type  vis   shndx  symbol name 
+
+src\hal\source\HL_ajsm.asm.1.obj|[0]     |0x00000000|0|LOCL |NONE |DFLT |UNDEF |
+src\hal\source\HL_ajsm.asm.1.obj|[11]    |0x00000000|0|LOCL |NONE |HIDN |2     |$d
+src\hal\source\HL_ajsm.asm.1.obj|[12]    |0x00000000|0|LOCL |NONE |HIDN |3     |$d
+src\hal\source\HL_ajsm.asm.1.obj|[9]     |0x00000000|0|LOCL |SECT |HIDN |2     |.ajsm
+src\hal\source\HL_ajsm.asm.1.obj|[10]    |0x00000000|0|LOCL |SECT |HIDN |3     |.ajsmecc
+src\hal\source\HL_ajsm.asm.1.obj|[8]     |0x00000000|0|LOCL |SECT |HIDN |1     |.text
+src\hal\source\HL_ajsm.asm.1.obj|[2]     |0x00000000|0|LOCL |OBJT |HIDN |2     |AJSM0
+src\hal\source\HL_ajsm.asm.1.obj|[3]     |0x00000004|0|LOCL |OBJT |HIDN |2     |AJSM1
+src\hal\source\HL_ajsm.asm.1.obj|[4]     |0x00000008|0|LOCL |OBJT |HIDN |2     |AJSM2
+src\hal\source\HL_ajsm.asm.1.obj|[5]     |0x0000000c|0|LOCL |OBJT |HIDN |2     |AJSM3
+src\hal\source\HL_ajsm.asm.1.obj|[6]     |0x00000000|0|LOCL |OBJT |HIDN |3     |AJSMECC0
+src\hal\source\HL_ajsm.asm.1.obj|[7]     |0x00000001|0|LOCL |OBJT |HIDN |3     |AJSMECC1
+src\hal\source\HL_ajsm.asm.1.obj|[1]     |0x00000000|0|LOCL |FILE |HIDN |ABS   |HL_ajsm.asm
+src\hal\source\HL_ajsm.asm.1.obj|[13]    |0x00000000|0|WEAK |FUNC |HIDN |UNDEF |Lib$$Request$$armlib
+src\hal\source\HL_ajsm.asm.1.obj|[14]    |0x00000000|0|WEAK |FUNC |HIDN |UNDEF |Lib$$Request$$cpplib

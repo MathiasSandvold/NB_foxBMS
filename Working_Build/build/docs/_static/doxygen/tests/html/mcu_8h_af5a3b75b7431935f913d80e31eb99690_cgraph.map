@@ -1,0 +1,5 @@
+<map id="MCU_IsTimeElapsed" name="MCU_IsTimeElapsed">
+<area shape="rect" id="node1" title="Checks if a timeout in microseconds has elapsed." alt="" coords="5,42,148,69"/>
+<area shape="rect" id="node2" href="$mcu_8c.html#a357da0bcb906f4ad573ed0d4244dd0a2" title="Convert the counter value FRC0 to a time in microseconds." alt="" coords="201,5,378,47"/>
+<area shape="rect" id="node3" href="$mcu_8c.html#a298a563701c7fc98c1f2750a1a2b8220" title="Get the current value of the Free Running Counter 0 (FRC0)" alt="" coords="196,71,383,98"/>
+</map>

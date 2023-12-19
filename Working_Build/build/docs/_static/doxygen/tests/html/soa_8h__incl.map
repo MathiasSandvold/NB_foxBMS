@@ -1,0 +1,23 @@
+<map id="soa.h" name="soa.h">
+<area shape="rect" id="node1" title="Header for SOA module, responsible for checking battery parameters against safety limits." alt="" coords="741,5,795,32"/>
+<area shape="rect" id="node2" href="$soa__cfg_8h.html" title="Configuration header for SOA." alt="" coords="729,80,807,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="793,677,858,704"/>
+<area shape="rect" id="node17" href="$database_8h.html" title="Database module header." alt="" coords="442,229,529,256"/>
+<area shape="rect" id="node3" href="$bms_8h.html" title="bms driver header" alt="" coords="823,155,881,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="169,677,244,704"/>
+<area shape="rect" id="node4" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="523,453,669,480"/>
+<area shape="rect" id="node10" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="779,603,872,629"/>
+<area shape="rect" id="node11" href="$bms__cfg_8h.html" title="bms driver configuration header" alt="" coords="908,379,991,405"/>
+<area shape="rect" id="node14" href="$contactor_8h.html" title="Headers for the driver for the contactors." alt="" coords="1105,304,1191,331"/>
+<area shape="rect" id="node5" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="573,528,648,555"/>
+<area shape="rect" id="node6" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="531,603,603,629"/>
+<area shape="rect" id="node9" title=" " alt="" coords="517,677,617,704"/>
+<area shape="rect" id="node12" href="$ftask__cfg_8h.html" title="Task configuration header." alt="" coords="907,453,992,480"/>
+<area shape="rect" id="node13" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="723,528,770,555"/>
+<area shape="rect" id="node15" href="$contactor__cfg_8h.html" title="Header for the configuration for the driver for the contactors." alt="" coords="1126,379,1237,405"/>
+<area shape="rect" id="node16" href="$sps__types_8h.html" title="Types for the SPS driver." alt="" coords="1149,528,1243,555"/>
+<area shape="rect" id="node18" href="$database__cfg_8h.html" title="Database configuration header." alt="" coords="194,379,305,405"/>
+<area shape="rect" id="node21" href="$database__helper_8h.html" title="Database module header." alt="" coords="287,304,415,331"/>
+<area shape="rect" id="node19" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="144,603,203,629"/>
+<area shape="rect" id="node20" title=" " alt="" coords="195,453,258,480"/>
+</map>

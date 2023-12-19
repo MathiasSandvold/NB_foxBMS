@@ -1,0 +1,8 @@
+<map id="sof_trapezoid_cfg.h" name="sof_trapezoid_cfg.h">
+<area shape="rect" id="node1" title="Header for SOF configuration." alt="" coords="173,5,308,32"/>
+<area shape="rect" id="node2" href="$sof__trapezoid_8h.html" title="Header for SOX module, responsible for current derating calculation." alt="" coords="112,80,223,107"/>
+<area shape="rect" id="node6" href="$sof__trapezoid__cfg_8c.html" title="SOF module configuration file." alt="" coords="247,80,381,107"/>
+<area shape="rect" id="node3" href="$sof__trapezoid_8c.html" title="SOX module responsible for current derating calculation." alt="" coords="5,155,116,181"/>
+<area shape="rect" id="node4" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="140,155,195,181"/>
+<area shape="rect" id="node5" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="219,155,305,181"/>
+</map>

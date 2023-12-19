@@ -1,0 +1,4 @@
+<map id="CAN_PeriodicTransmit" name="CAN_PeriodicTransmit">
+<area shape="rect" id="node1" title="Handles the processing of messages that are meant to be transmitted." alt="" coords="5,5,159,32"/>
+<area shape="rect" id="node2" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="207,5,320,32"/>
+</map>

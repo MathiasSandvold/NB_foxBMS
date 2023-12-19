@@ -1,0 +1,4 @@
+<map id="testI2c_Initialize" name="testI2c_Initialize">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,120,32"/>
+<area shape="rect" id="node2" href="$i2c_8c.html#af2e33b12dfc58fa7665ca45c72278428" title="Initialize the I2C hardware with dedicated HAL functions. Has to be called before any call to the res..." alt="" coords="168,5,263,32"/>
+</map>

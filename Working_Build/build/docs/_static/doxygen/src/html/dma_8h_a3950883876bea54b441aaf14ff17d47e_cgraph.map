@@ -1,0 +1,4 @@
+<map id="DMA_Initialize" name="DMA_Initialize">
+<area shape="rect" id="node1" title="Enables the DMA module." alt="" coords="5,5,111,32"/>
+<area shape="rect" id="node2" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="159,5,280,32"/>
+</map>

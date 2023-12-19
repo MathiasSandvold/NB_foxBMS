@@ -1,0 +1,18 @@
+<map id="IR155_InitializeModule" name="IR155_InitializeModule">
+<area shape="rect" id="node1" title=" " alt="" coords="5,233,156,260"/>
+<area shape="rect" id="node2" href="$bender__ir155__helper_8c.html#a7a058a6e4cadc732c1271c235c35894d" title="Software initialization of Timer&#45;module." alt="" coords="204,233,313,260"/>
+<area shape="rect" id="node3" href="$fram_8c.html#ac33e9fde66e31d43c22bfc9a2f8aebf7" title="Reads a variable from the FRAM." alt="" coords="399,183,522,209"/>
+<area shape="rect" id="node15" href="$pwm_8c.html#a2cdee1aefacc04ad6ed59618550226d0" title="Initializes the ETPWM and the ECAP module." alt="" coords="406,233,515,260"/>
+<area shape="rect" id="node16" href="$pwm_8c.html#ad7300cda0ae8f4b20961225415442c06" title="Get initialization state of ecap module." alt="" coords="361,284,560,311"/>
+<area shape="rect" id="node4" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="644,5,775,32"/>
+<area shape="rect" id="node5" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="657,56,761,83"/>
+<area shape="rect" id="node7" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="662,107,757,133"/>
+<area shape="rect" id="node8" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="669,157,750,184"/>
+<area shape="rect" id="node9" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="608,208,811,235"/>
+<area shape="rect" id="node10" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="649,259,770,285"/>
+<area shape="rect" id="node11" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="670,309,749,336"/>
+<area shape="rect" id="node14" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="664,360,755,387"/>
+<area shape="rect" id="node6" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="871,56,993,83"/>
+<area shape="rect" id="node12" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="859,360,1005,387"/>
+<area shape="rect" id="node13" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="863,309,1001,336"/>
+</map>

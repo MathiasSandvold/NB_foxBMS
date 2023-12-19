@@ -1,0 +1,5 @@
+<map id="soe_counting.h" name="soe_counting.h">
+<area shape="rect" id="node1" title="Header for SOE module, responsible for calculation of SOE." alt="" coords="80,5,191,32"/>
+<area shape="rect" id="node2" href="$soe__counting_8c.html" title="SOE module responsible for calculation of SOE." alt="" coords="5,80,116,107"/>
+<area shape="rect" id="node3" href="$test__soe__counting_8c.html" title="Test for the configuration for SOE." alt="" coords="141,80,279,107"/>
+</map>

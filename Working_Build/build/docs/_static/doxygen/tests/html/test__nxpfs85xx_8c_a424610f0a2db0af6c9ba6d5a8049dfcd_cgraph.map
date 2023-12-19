@@ -1,0 +1,7 @@
+<map id="testSBC_UpdateRegister" name="testSBC_UpdateRegister">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,172,57"/>
+<area shape="rect" id="node2" href="$nxpfs85xx_8c.html#a0b6daa53eb86dff06f9cf52eb00e3f0c" title=" " alt="" coords="220,31,404,57"/>
+<area shape="rect" id="node3" href="$nxpfs85xx_8c.html#a0a1139bd6c03b0a9c2157f1257f04057" title="Updates register values." alt="" coords="452,31,597,57"/>
+<area shape="rect" id="node4" href="$nxpfs85xx_8c.html#a130d5b08f7ef67c6526cbb117a31d32f" title="Updates fail safe register values." alt="" coords="645,5,837,32"/>
+<area shape="rect" id="node5" href="$nxpfs85xx_8c.html#a086a1d3eced35bc26819fb55d6f0dc2b" title="Updates main register values." alt="" coords="655,56,828,83"/>
+</map>

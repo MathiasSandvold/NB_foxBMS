@@ -1,0 +1,19 @@
+<map id="test_soe_none.c" name="test_soe_none.c">
+<area shape="rect" id="node1" title="Tests for SOE module responsible for calculation of state&#45;of&#45;energy." alt="" coords="645,5,763,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="624,80,685,107"/>
+<area shape="rect" id="node3" href="$soe__none_8h.html" title="Header for SOE module, responsible for calculation state&#45;of&#45;energy." alt="" coords="710,80,799,107"/>
+<area shape="rect" id="node4" href="$state__estimation_8h.html" title="Header for state&#45;estimation module responsible for the estimation of state&#45;of&#45;charge (SOC),..." alt="" coords="479,155,609,181"/>
+<area shape="rect" id="node11" title=" " alt="" coords="613,677,678,704"/>
+<area shape="rect" id="node5" href="$database_8h.html" title="Database module header." alt="" coords="703,229,790,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="208,677,283,704"/>
+<area shape="rect" id="node15" title=" " alt="" coords="43,453,106,480"/>
+<area shape="rect" id="node6" href="$database__cfg_8h.html" title="Database configuration header." alt="" coords="326,379,437,405"/>
+<area shape="rect" id="node13" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="784,603,877,629"/>
+<area shape="rect" id="node16" href="$database__helper_8h.html" title="Database module header." alt="" coords="632,304,760,331"/>
+<area shape="rect" id="node17" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="749,528,795,555"/>
+<area shape="rect" id="node7" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="308,453,455,480"/>
+<area shape="rect" id="node14" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="149,603,208,629"/>
+<area shape="rect" id="node8" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="381,528,456,555"/>
+<area shape="rect" id="node9" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="333,603,405,629"/>
+<area shape="rect" id="node12" title=" " alt="" coords="319,677,419,704"/>
+</map>

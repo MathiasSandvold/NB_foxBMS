@@ -1,0 +1,8 @@
+<map id="bms_cfg.h" name="bms_cfg.h">
+<area shape="rect" id="node1" title="bms driver configuration header" alt="" coords="255,5,337,32"/>
+<area shape="rect" id="node2" href="$ftask__cfg_8h.html" title="Task configuration header." alt="" coords="213,80,299,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="178,304,243,331"/>
+<area shape="rect" id="node3" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="150,155,197,181"/>
+<area shape="rect" id="node4" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="5,229,99,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="173,229,248,256"/>
+</map>

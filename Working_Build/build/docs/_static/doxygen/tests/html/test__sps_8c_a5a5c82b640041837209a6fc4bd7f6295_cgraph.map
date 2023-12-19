@@ -1,0 +1,25 @@
+<map id="testSPS_CtrlResetFromStateSPS_READ_MEASURED_CURRENT3" name="testSPS_CtrlResetFromStateSPS_READ_MEASURED_CURRENT3">
+<area shape="rect" id="node1" title=" " alt="" coords="5,325,253,366"/>
+<area shape="rect" id="node2" href="$sps_8c.html#a4d6b349b73c22a06820874713c1cfa1f" title="Control function for the CONT driver state machine." alt="" coords="349,281,425,308"/>
+<area shape="rect" id="node22" href="$sps_8c.html#ac692a3a5e2f2ed75439f0f3627b79388" title=" " alt="" coords="301,332,472,359"/>
+<area shape="rect" id="node23" href="$sps_8c.html#ad5f3ec3c4fec97aac5c0b52431413143" title=" " alt="" coords="302,383,471,409"/>
+<area shape="rect" id="node3" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="995,5,1089,32"/>
+<area shape="rect" id="node4" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="1001,208,1083,235"/>
+<area shape="rect" id="node5" href="$spi__cfg_8c.html#ac05f356ab006baab3e2d492bfefdb752" title="Switch the SPS spi handle to high speed." alt="" coords="526,209,701,250"/>
+<area shape="rect" id="node6" href="$spi__cfg_8c.html#a05ff5a51b7b9b82a1835c63ea30ea7cd" title="Switch the SPS spi handle to low speed." alt="" coords="526,274,701,315"/>
+<area shape="rect" id="node7" href="$sps_8c.html#a42bcd905bbbb0fd532ae59e3fd60faff" title="Read the current measurements for a specific output for all SPS ICs of the daisy&#45;chain." alt="" coords="531,340,696,367"/>
+<area shape="rect" id="node8" href="$sps_8c.html#a6f00c269d0e20b749d8c7a9867ff4ba4" title=" " alt="" coords="542,441,685,468"/>
+<area shape="rect" id="node10" href="$sps_8c.html#ad2fe38c253e1b0b76ac5b013a6ca9529" title="Assemble a general command to the SPS ICs." alt="" coords="522,492,705,519"/>
+<area shape="rect" id="node13" href="$sps_8c.html#a961f9c1c70ea7658911b9d91c209b0a0" title="Assemble an update to the channel state of the SPS ICs." alt="" coords="520,391,707,417"/>
+<area shape="rect" id="node14" href="$sps_8c.html#a3b0b5c63417cabc94688fd3cf78cd94c" title="Transmit all assembled messages for one timeframe." alt="" coords="560,107,667,133"/>
+<area shape="rect" id="node9" href="$sps_8c.html#a5aa51bd041468fa63d6992cbcb57ad3a" title="Sets the SPI Tx buffer for a register write access for a specific single SPS ICs in the daisy&#45;chain." alt="" coords="755,405,933,446"/>
+<area shape="rect" id="node11" href="$sps_8c.html#a42c6ab326377a351def20a0d748afb4e" title="Sets the SPI Tx buffer for a register read access for all SPS ICs of the daisy&#45;chain." alt="" coords="759,532,929,559"/>
+<area shape="rect" id="node12" href="$sps_8c.html#a7cfb82ab6fb733aaa092a2731ebb62b5" title="Sets the SPI Tx buffer for a register write access for all SPS ICs of the daisy&#45;chain." alt="" coords="758,481,930,508"/>
+<area shape="rect" id="node15" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="788,56,900,83"/>
+<area shape="rect" id="node16" href="$spi_8c.html#ac84bc8424de860e2cd89fea2e89dd89a" title="Transmits and receives data on SPI without DMA." alt="" coords="758,107,930,133"/>
+<area shape="rect" id="node17" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="981,56,1103,83"/>
+<area shape="rect" id="node18" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="1003,157,1081,184"/>
+<area shape="rect" id="node21" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="997,107,1087,133"/>
+<area shape="rect" id="node19" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1151,107,1297,133"/>
+<area shape="rect" id="node20" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1155,157,1293,184"/>
+</map>

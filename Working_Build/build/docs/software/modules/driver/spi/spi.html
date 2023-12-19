@@ -1,0 +1,459 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4.35. SPI &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="4.36. SPS" href="../sps/sps.html" />
+    <link rel="prev" title="4.34. SBC" href="../sbc/sbc.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../modules.html">4. Software Modules</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../application/algorithm/algorithm.html">4.1. Algorithm Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../application/bal/bal.html">4.2. Balancing Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../application/bms/bms.html">4.3. BMS Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../application/plausibility/plausibility.html">4.4. Plausibility Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../application/redundancy/redundancy.html">4.5. Redundancy Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../application/soa/soa.html">4.6. SOA Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engine/database/database.html">4.7. Database Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engine/diag/diag.html">4.8. Diagnosis Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engine/hwinfo/hwinfo.html">4.9. Hardware Info Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engine/sys/sys.html">4.10. System Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engine/sys_mon/sys_mon.html">4.11. System Monitoring Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../task/ftask/ftask.html">4.12. FTASK Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../task/os/os.html">4.13. OS Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../adc/adc.html">4.14. ADC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../can/can.html">4.15. CAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../crc/crc.html">4.16. CRC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contactor/contactor.html">4.17. Contactor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dma/dma.html">4.18. DMA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../foxmath/foxmath.html">4.19. foxmath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../foxmath/utils.html">4.20. utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../fram/fram.html">4.21. FRAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../htsen/htsen.html">4.22. Humidity/Temperature Sensor Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../i2c/i2c.html">4.23. I2C Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../imd/imd.html">4.24. Insulation Measurement Device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interlock/interlock.html">4.25. Interlock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../io/io.html">4.26. IO Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../meas/meas.html">4.27. Measurement Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mcu/mcu.html">4.28. MCU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../afe/afe.html">4.29. Analog Front-End API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../afe/supported-afes.html">4.30. Supported Analog Front-Ends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pex/pex.html">4.31. Port Expander Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pwm/pwm.html">4.32. PWM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rtc/rtc.html">4.33. RTC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sbc/sbc.html">4.34. SBC</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.35. SPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sps/sps.html">4.36. SPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ts/ts.html">4.37. Temperature Sensor API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ts/ts-sensors.html">4.38. Supported Temperature Sensors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../main/startup.html">4.39. Embedded Software Startup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../main/version.html">4.40. Version Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../main/fassert.html">4.41. FASSERT Module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../modules.html"><span class="section-number">4. </span>Software Modules</a> &raquo;</li>
+      <li><span class="section-number">4.35. </span>SPI</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/software/modules/driver/spi/spi.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="spi">
+<span id="id1"></span><h1><span class="section-number">4.35. </span>SPI<a class="headerlink" href="#spi" title="Permalink to this headline"></a></h1>
+<div class="section" id="module-files">
+<h2><span class="section-number">4.35.1. </span>Module Files<a class="headerlink" href="#module-files" title="Permalink to this headline"></a></h2>
+<div class="section" id="driver">
+<h3><span class="section-number">4.35.1.1. </span>Driver<a class="headerlink" href="#driver" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">src/app/driver/spi/spi.c</span></code> (<a class="reference external" href="../../../../_static/doxygen/src/html/spi_8c.html">API</a>, <a class="reference external" href="../../../../_static/doxygen/src/html/spi_8c_source.html">source</a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src/app/driver/spi/spi.h</span></code> (<a class="reference external" href="../../../../_static/doxygen/src/html/spi_8h.html">API</a>, <a class="reference external" href="../../../../_static/doxygen/src/html/spi_8h_source.html">source</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="configuration">
+<h3><span class="section-number">4.35.1.2. </span>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">src/app/driver/config/spi_cfg.c</span></code> (<a class="reference external" href="../../../../_static/doxygen/src/html/spi__cfg_8c.html">API</a>, <a class="reference external" href="../../../../_static/doxygen/src/html/spi__cfg_8c_source.html">source</a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src/app/driver/config/spi_cfg.h</span></code> (<a class="reference external" href="../../../../_static/doxygen/src/html/spi__cfg_8h.html">API</a>, <a class="reference external" href="../../../../_static/doxygen/src/html/spi__cfg_8h_source.html">source</a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src/app/driver/spi/spi_cfg-helper.h</span></code> (<a class="reference external" href="../../../../_static/doxygen/src/html/spi__cfg_helper_8h.html">API</a>, <a class="reference external" href="../../../../_static/doxygen/src/html/spi__cfg_helper_8h_source.html">source</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="unit-test">
+<h3><span class="section-number">4.35.1.3. </span>Unit Test<a class="headerlink" href="#unit-test" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">tests/unit/app/driver/spi/test_spi.c</span></code> (<a class="reference external" href="../../../../_static/doxygen/tests/html/test__spi_8c.html">API</a>, <a class="reference external" href="../../../../_static/doxygen/tests/html/test__spi_8c_source.html">source</a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tests/unit/app/driver/config/test_spi_cfg.c</span></code> (<a class="reference external" href="../../../../_static/doxygen/tests/html/test__spi__cfg_8c.html">API</a>, <a class="reference external" href="../../../../_static/doxygen/tests/html/test__spi__cfg_8c_source.html">source</a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="description">
+<h2><span class="section-number">4.35.2. </span>Description<a class="headerlink" href="#description" title="Permalink to this headline"></a></h2>
+<p>There are three main functions in the SPI API:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#spi-transmit"><span class="std std-ref">SPI function to transmit data</span></a>: used to transmit data without DMA, blocking</p></li>
+<li><p><a class="reference internal" href="#spi-transmit-receive"><span class="std std-ref">SPI function to transmit and receive data</span></a>: used to transmit and receive data without DMA,
+blocking</p></li>
+<li><p><a class="reference internal" href="#spi-transmit-receive-dma"><span class="std std-ref">SPI function to transmit and receive data with DMA</span></a>: used to transmit and receive data with DMA,
+non-blocking</p></li>
+</ul>
+<p>Three other functions are available:</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#spi-dummy"><span class="std std-ref">SPI function to receive data with DMA as a slave device</span></a>: used to send a dummy byte without DMA, blocking</p></li>
+<li><p><a class="reference internal" href="#spi-fram"><span class="std std-ref">SPI wrapper function for FRAM</span></a>: wrapper function used in the FRAM module, works without DMA, blocking</p></li>
+<li><p><a class="reference internal" href="#spi-slave-receive-dma"><span class="std std-ref">SPI function to receive data with DMA as a slave device</span></a>: used to configure an SPI interface as a slave device receiving
+data over SPI, non blocking.</p></li>
+</ul>
+<div class="literal-block-wrapper docutils container" id="spi-transmit">
+<div class="code-block-caption"><span class="caption-number">Listing 4.10 </span><span class="caption-text">SPI function to transmit data</span><a class="headerlink" href="#spi-transmit" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * @brief   Transmits data on SPI without DMA.</span>
+<span class="linenos"> 3</span><span class="cm"> * @details This function can be used to send and receive data via SPI. SPI</span>
+<span class="linenos"> 4</span><span class="cm"> *          communication is performed in blocking mode and chip select is</span>
+<span class="linenos"> 5</span><span class="cm"> *          set/reset automatically.</span>
+<span class="linenos"> 6</span><span class="cm"> * @param   pSpiInterface pointer to SPI interface configuration</span>
+<span class="linenos"> 7</span><span class="cm"> * @param   pTxBuff pointer to data that is transmitted by the SPI interface</span>
+<span class="linenos"> 8</span><span class="cm"> * @param   frameLength number of bytes to be transmitted by the SPI interface</span>
+<span class="linenos"> 9</span><span class="cm"> * @return  status of the SPI transfer</span>
+<span class="linenos">10</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos">11</span><span class="k">extern</span><span class="w"> </span><span class="n">STD_RETURN_TYPE_e</span><span class="w"> </span><span class="nf">SPI_TransmitData</span><span class="p">(</span><span class="n">SPI_INTERFACE_CONFIG_s</span><span class="w"> </span><span class="o">*</span><span class="n">pSpiInterface</span><span class="p">,</span><span class="w"> </span><span class="n">uint16</span><span class="w"> </span><span class="o">*</span><span class="n">pTxBuff</span><span class="p">,</span><span class="w"> </span><span class="n">uint32</span><span class="w"> </span><span class="n">frameLength</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="spi-transmit-receive">
+<div class="code-block-caption"><span class="caption-number">Listing 4.11 </span><span class="caption-text">SPI function to transmit and receive data</span><a class="headerlink" href="#spi-transmit-receive" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * @brief   Transmits and receives data on SPI without DMA.</span>
+<span class="linenos"> 3</span><span class="cm"> * @details This function can be used to send and receive data via SPI. SPI</span>
+<span class="linenos"> 4</span><span class="cm"> *          communication is performed in blocking mode and chip select is</span>
+<span class="linenos"> 5</span><span class="cm"> *          set/reset automatically.</span>
+<span class="linenos"> 6</span><span class="cm"> * @param   pSpiInterface pointer to SPI interface configuration</span>
+<span class="linenos"> 7</span><span class="cm"> * @param   pTxBuff pointer to data that is transmitted by the SPI interface</span>
+<span class="linenos"> 8</span><span class="cm"> * @param   pRxBuff pointer to data that is received by the SPI interface</span>
+<span class="linenos"> 9</span><span class="cm"> * @param   frameLength number of bytes to be transmitted by the SPI interface</span>
+<span class="linenos">10</span><span class="cm"> * @return  status of the SPI transfer</span>
+<span class="linenos">11</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos">12</span><span class="k">extern</span><span class="w"> </span><span class="n">STD_RETURN_TYPE_e</span><span class="w"> </span><span class="nf">SPI_TransmitReceiveData</span><span class="p">(</span><span class="w"></span>
+<span class="linenos">13</span><span class="w">    </span><span class="n">SPI_INTERFACE_CONFIG_s</span><span class="w"> </span><span class="o">*</span><span class="n">pSpiInterface</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">14</span><span class="w">    </span><span class="n">uint16</span><span class="w"> </span><span class="o">*</span><span class="n">pTxBuff</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">15</span><span class="w">    </span><span class="n">uint16</span><span class="w"> </span><span class="o">*</span><span class="n">pRxBuff</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">16</span><span class="w">    </span><span class="n">uint32</span><span class="w"> </span><span class="n">frameLength</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="spi-transmit-receive-dma">
+<div class="code-block-caption"><span class="caption-number">Listing 4.12 </span><span class="caption-text">SPI function to transmit and receive data with DMA</span><a class="headerlink" href="#spi-transmit-receive-dma" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * @brief   Transmits and receives data on SPI with DMA.</span>
+<span class="linenos"> 3</span><span class="cm"> * @details This function can be used to send and receive data via SPI. SPI</span>
+<span class="linenos"> 4</span><span class="cm"> *          communication is performed in blocking mode and chip select is</span>
+<span class="linenos"> 5</span><span class="cm"> *          set/reset automatically..</span>
+<span class="linenos"> 6</span><span class="cm"> * @param   pSpiInterface pointer to SPI interface configuration</span>
+<span class="linenos"> 7</span><span class="cm"> * @param   pTxBuff pointer to data that is transmitted by the SPI interface</span>
+<span class="linenos"> 8</span><span class="cm"> * @param   pRxBuff pointer to data that is received by the SPI interface</span>
+<span class="linenos"> 9</span><span class="cm"> * @param   frameLength number of bytes to be transmitted by the SPI interface</span>
+<span class="linenos">10</span><span class="cm"> * @return  status of the SPI transfer</span>
+<span class="linenos">11</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos">12</span><span class="k">extern</span><span class="w"> </span><span class="n">STD_RETURN_TYPE_e</span><span class="w"> </span><span class="nf">SPI_TransmitReceiveDataDma</span><span class="p">(</span><span class="w"></span>
+<span class="linenos">13</span><span class="w">    </span><span class="n">SPI_INTERFACE_CONFIG_s</span><span class="w"> </span><span class="o">*</span><span class="n">pSpiInterface</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">14</span><span class="w">    </span><span class="kt">uint16_t</span><span class="w"> </span><span class="o">*</span><span class="n">pTxBuff</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">15</span><span class="w">    </span><span class="kt">uint16_t</span><span class="w"> </span><span class="o">*</span><span class="n">pRxBuff</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">16</span><span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">frameLength</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="spi-dummy">
+<div class="code-block-caption"><span class="caption-number">Listing 4.13 </span><span class="caption-text">SPI function to receive data with DMA as a slave device</span><a class="headerlink" href="#spi-dummy" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="cm">/**</span>
+<span class="linenos">2</span><span class="cm"> * @brief   Sends a dummy byte to wake up the SPI interface.</span>
+<span class="linenos">3</span><span class="cm"> * @param   pSpiInterface pointer to SPI interface configuration</span>
+<span class="linenos">4</span><span class="cm"> * @param   delay delay to wait after dummy byte transfer</span>
+<span class="linenos">5</span><span class="cm"> * @return  status of the SPI transfer</span>
+<span class="linenos">6</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos">7</span><span class="k">extern</span><span class="w"> </span><span class="n">STD_RETURN_TYPE_e</span><span class="w"> </span><span class="nf">SPI_TransmitDummyByte</span><span class="p">(</span><span class="n">SPI_INTERFACE_CONFIG_s</span><span class="w"> </span><span class="o">*</span><span class="n">pSpiInterface</span><span class="p">,</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">delay</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="spi-fram">
+<div class="code-block-caption"><span class="caption-number">Listing 4.14 </span><span class="caption-text">SPI wrapper function for FRAM</span><a class="headerlink" href="#spi-fram" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * @brief   Transmits and receives data on SPI without DMA, wrapper for FRAM</span>
+<span class="linenos"> 3</span><span class="cm"> * @details This function can be used to send and receive data via SPI. SPI</span>
+<span class="linenos"> 4</span><span class="cm"> *          communication is performed in blocking mode and chip select is</span>
+<span class="linenos"> 5</span><span class="cm"> *          set/reset automatically.</span>
+<span class="linenos"> 6</span><span class="cm"> *          It does not drive the Chip Select (neither hardware nor software)</span>
+<span class="linenos"> 7</span><span class="cm"> *          as this is done directly in the FRAM functions.</span>
+<span class="linenos"> 8</span><span class="cm"> * @param   pSpiInterface pointer to SPI interface configuration</span>
+<span class="linenos"> 9</span><span class="cm"> * @param   pTxBuff pointer to data that is transmitted by the SPI interface</span>
+<span class="linenos">10</span><span class="cm"> * @param   pRxBuff pointer to data that is received by the SPI interface</span>
+<span class="linenos">11</span><span class="cm"> * @param   frameLength number of bytes to be transmitted by the SPI interface</span>
+<span class="linenos">12</span><span class="cm"> * @return  status of the SPI transfer</span>
+<span class="linenos">13</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos">14</span><span class="k">extern</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">SPI_FramTransmitReceiveData</span><span class="p">(</span><span class="w"></span>
+<span class="linenos">15</span><span class="w">    </span><span class="n">SPI_INTERFACE_CONFIG_s</span><span class="w"> </span><span class="o">*</span><span class="n">pSpiInterface</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">16</span><span class="w">    </span><span class="n">uint16</span><span class="w"> </span><span class="o">*</span><span class="n">pTxBuff</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">17</span><span class="w">    </span><span class="n">uint16</span><span class="w"> </span><span class="o">*</span><span class="n">pRxBuff</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">18</span><span class="w">    </span><span class="n">uint32</span><span class="w"> </span><span class="n">frameLength</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="spi-slave-receive-dma">
+<div class="code-block-caption"><span class="caption-number">Listing 4.15 </span><span class="caption-text">SPI function to receive data with DMA as a slave device</span><a class="headerlink" href="#spi-slave-receive-dma" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * @brief   Transmits and receives data on SPI with DMA.</span>
+<span class="linenos"> 3</span><span class="cm"> * @details This function can be used to send and receive data via SPI. SPI</span>
+<span class="linenos"> 4</span><span class="cm"> *          communication is performed in blocking mode and chip select is</span>
+<span class="linenos"> 5</span><span class="cm"> *          set/reset automatically..</span>
+<span class="linenos"> 6</span><span class="cm"> * @param   pSpiInterface pointer to SPI interface configuration</span>
+<span class="linenos"> 7</span><span class="cm"> * @param   pTxBuff pointer to data that is transmitted by the SPI interface</span>
+<span class="linenos"> 8</span><span class="cm"> * @param   pRxBuff pointer to data that is received by the SPI interface</span>
+<span class="linenos"> 9</span><span class="cm"> * @param   frameLength number of bytes to be transmitted by the SPI interface</span>
+<span class="linenos">10</span><span class="cm"> * @return  status of the SPI transfer</span>
+<span class="linenos">11</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos">12</span><span class="k">extern</span><span class="w"> </span><span class="n">STD_RETURN_TYPE_e</span><span class="w"> </span><span class="nf">SPI_SlaveSetReceiveDataDma</span><span class="p">(</span><span class="w"></span>
+<span class="linenos">13</span><span class="w">    </span><span class="n">SPI_INTERFACE_CONFIG_s</span><span class="w"> </span><span class="o">*</span><span class="n">pSpiInterface</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">14</span><span class="w">    </span><span class="kt">uint16_t</span><span class="w"> </span><span class="o">*</span><span class="n">pTxBuff</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">15</span><span class="w">    </span><span class="kt">uint16_t</span><span class="w"> </span><span class="o">*</span><span class="n">pRxBuff</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">16</span><span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">frameLength</span><span class="p">);</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<p>To configure an SPI interface, a structure of the type <a class="reference internal" href="#spi-configuration"><span class="std std-ref">Configuration for the SPI interface</span></a>
+must be used.
+One important parameter is the type of the Chip Select pin, to be chosen within
+the enum <a class="reference internal" href="#spi-cs-type"><span class="std std-ref">Type of Chip Select used</span></a>. Available possibilities:</p>
+<ul class="simple">
+<li><p>Hardware Chip Select</p></li>
+<li><p>Software Chip Select</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Currently the DMA functions presented above can only be used with a
+hardware Chip Select.</p>
+</div>
+<div class="literal-block-wrapper docutils container" id="spi-configuration">
+<div class="code-block-caption"><span class="caption-number">Listing 4.16 </span><span class="caption-text">Configuration for the SPI interface</span><a class="headerlink" href="#spi-configuration" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="cm">/** configuration of the SPI interface */</span><span class="w"></span>
+<span class="linenos">2</span><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span> <span class="p">{</span><span class="w"></span>
+<span class="linenos">3</span><span class="w">    </span><span class="n">spiDAT1_t</span><span class="w"> </span><span class="o">*</span><span class="n">pConfig</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">4</span><span class="w">    </span><span class="n">spiBASE_t</span><span class="w"> </span><span class="o">*</span><span class="n">pNode</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">5</span><span class="w">    </span><span class="k">volatile</span><span class="w"> </span><span class="kt">uint32_t</span><span class="w"> </span><span class="o">*</span><span class="n">pGioPort</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">6</span><span class="w">    </span><span class="kt">uint32_t</span><span class="w"> </span><span class="n">csPin</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">7</span><span class="w">    </span><span class="n">SPI_CHIP_SELECT_TYPE_e</span><span class="w"> </span><span class="n">csType</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">8</span><span class="p">}</span><span class="w"> </span><span class="n">SPI_INTERFACE_CONFIG_s</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="spi-cs-type">
+<div class="code-block-caption"><span class="caption-number">Listing 4.17 </span><span class="caption-text">Type of Chip Select used</span><a class="headerlink" href="#spi-cs-type" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="cm">/** type of chip select for spi */</span><span class="w"></span>
+<span class="linenos">2</span><span class="k">typedef</span><span class="w"> </span><span class="k">enum</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos">3</span><span class="w">    </span><span class="n">SPI_CHIP_SELECT_HARDWARE</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">4</span><span class="w">    </span><span class="n">SPI_CHIP_SELECT_SOFTWARE</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">5</span><span class="w">    </span><span class="n">SPI_CHIP_SELECT_MAX</span><span class="p">,</span><span class="w"></span>
+<span class="linenos">6</span><span class="p">}</span><span class="w"> </span><span class="n">SPI_CHIP_SELECT_TYPE_e</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The DMA transmit/receive function works only to transmit 3 words and more.
+To transmit 1 or 2 words, the function without DMA must be used.</p>
+</div>
+<p>The register <code class="docutils literal notranslate"><span class="pre">SPIDAT1</span></code> is used to transmit data. It is made out of two bit
+groups:</p>
+<ul class="simple">
+<li><p>bits 0 to 15, containing the data to send (up to 16 bits)</p></li>
+<li><p>bits 16 to 31, containing the configuration to be used for the SPI
+transmission</p></li>
+</ul>
+<p>When using DMA, only the data group is written, so the configuration is not
+taken into account.
+This is problematic, as the configuration contains among other the hardware
+Chip Select pin to use.
+Another issue is that very often SPI transmissions require the Chip Select pin
+to be held active.
+To realize this, the field <code class="docutils literal notranslate"><span class="pre">CSHOLD</span></code> in the configuration group must be written
+with 1, except for the last word sent, where it must be written with 0.
+To overcome these issues, the first word and the last word are written to the
+<code class="docutils literal notranslate"><span class="pre">SPIDAT1</span></code> register without DMA. This way the configuration group is written
+with the first word.
+When DMA writes the subsequent words, the configuration group remains
+untouched.
+When the last word is written, the <code class="docutils literal notranslate"><span class="pre">CSHOLD</span></code> bit is set to 0.
+If this was not done, the Chip Select pin would remains active after the
+transmission.
+This is the reason why DMA can only be used when transmitting 3 words or more.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../sbc/sbc.html" class="btn btn-neutral float-left" title="4.34. SBC" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../sps/sps.html" class="btn btn-neutral float-right" title="4.36. SPS" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

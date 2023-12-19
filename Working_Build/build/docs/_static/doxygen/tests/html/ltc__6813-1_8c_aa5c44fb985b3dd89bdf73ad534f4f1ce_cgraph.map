@@ -1,0 +1,4 @@
+<map id="LTC_BalanceControl" name="LTC_BalanceControl">
+<area shape="rect" id="node1" title="sets the balancing according to the control values read in the database." alt="" coords="5,5,145,32"/>
+<area shape="rect" id="node2" href="$ltc__6813-1_8c.html#ab951276e52308be2f92c00652713a055" title="gets the balancing orders from the database." alt="" coords="193,5,404,32"/>
+</map>

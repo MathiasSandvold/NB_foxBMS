@@ -1,0 +1,5 @@
+<map id="MRC_ValidateBatteryVoltageMeasurement" name="MRC_ValidateBatteryVoltageMeasurement">
+<area shape="rect" id="node1" title="Function to validate HV battery voltage measurement." alt="" coords="5,35,196,76"/>
+<area shape="rect" id="node2" href="$bms_8c.html#a95febd341b208a988bb0462e81febca8" title="Returns number of connected strings." alt="" coords="244,5,443,47"/>
+<area shape="rect" id="node3" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="272,71,415,98"/>
+</map>

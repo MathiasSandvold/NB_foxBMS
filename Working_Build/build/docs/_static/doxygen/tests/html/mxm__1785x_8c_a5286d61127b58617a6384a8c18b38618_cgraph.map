@@ -1,0 +1,9 @@
+<map id="MXM_HandleStateReadall" name="MXM_HandleStateReadall">
+<area shape="rect" id="node1" title="Handle the statemachine&#45;transactions for a READALL." alt="" coords="5,56,177,83"/>
+<area shape="rect" id="node2" href="$mxm__battery__management_8c.html#a9d5b57e8d6ecb30ba6426272f472e630" title="Set state request for the Battery Management Statemachine." alt="" coords="255,5,426,32"/>
+<area shape="rect" id="node3" href="$mxm__1785x_8c.html#a2cfdc33409d373e8721922acc6a9a3a9" title="This error handler is used as a last resort and tries a reset of the complete driver." alt="" coords="259,56,423,83"/>
+<area shape="rect" id="node5" href="$mxm__1785x_8c.html#ab0d9976f05eb48b050415afd432f9415" title="Retrieves data from lower statemachine and writes it to the rx buffer." alt="" coords="225,107,456,133"/>
+<area shape="rect" id="node4" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="522,56,649,83"/>
+<area shape="rect" id="node6" href="$mxm__battery__management_8c.html#ad89fd67b1337293d24504cdb05c19a59" title="Returns the last received DC byte." alt="" coords="504,107,667,133"/>
+<area shape="rect" id="node7" href="$mxm__battery__management_8c.html#a88722a84590c432f0bbfcdd77536c8db" title="Copy RX buffer into variable." alt="" coords="514,157,657,184"/>
+</map>

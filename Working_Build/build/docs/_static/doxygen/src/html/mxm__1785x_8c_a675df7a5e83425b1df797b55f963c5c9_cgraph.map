@@ -1,0 +1,5 @@
+<map id="MXM_ProcessOpenWire" name="MXM_ProcessOpenWire">
+<area shape="rect" id="node1" title="Processes the retrieved information on open wire." alt="" coords="5,31,169,57"/>
+<area shape="rect" id="node2" href="$mxm__battery__management_8c.html#af80228e32eb53f659c6301f02ab34143" title="Get number of satellites." alt="" coords="217,5,423,32"/>
+<area shape="rect" id="node3" href="$mxm__1785x__tools_8c.html#a2be80ff605cfe34cece5301f5a4c11a0" title="Get the string and module number from a global module number." alt="" coords="225,56,415,83"/>
+</map>

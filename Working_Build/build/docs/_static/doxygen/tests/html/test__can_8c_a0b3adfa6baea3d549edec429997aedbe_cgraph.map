@@ -1,0 +1,4 @@
+<map id="testDataSendNoMessagePending" name="testDataSendNoMessagePending">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,223,32"/>
+<area shape="rect" id="node2" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="271,5,384,32"/>
+</map>

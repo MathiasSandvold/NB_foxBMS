@@ -1,0 +1,4 @@
+<map id="htsensor.h" name="htsensor.h">
+<area shape="rect" id="node1" title="Header for the driver for the Sensirion SHT35&#45;DIS I2C humidity/temperature sensor." alt="" coords="5,5,88,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="14,80,79,107"/>
+</map>

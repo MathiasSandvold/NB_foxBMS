@@ -1,0 +1,364 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>8.2.4. How to Use Generated Sources from HALCoGen &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="8.2.5. How to use unit tests" href="../unit-tests/unit-tests_how-to.html" />
+    <link rel="prev" title="8.2.3. How to Write State Machines" href="../../developer-manual/style-guide/state-machines_how-to.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../how-to/how-to.html">8. How-to</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../modules/driver/can/can_how-to.html">8.1.1. How to Use the CAN Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/engine/diag/diag_how-to.html">8.1.2. How to Use the Diagnosis Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/engine/database/database_how-to.html">8.1.3. How to Use the Database Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/task/ftask/ftask_how-to.html">8.1.4. How to Use the FTASK Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/main/fassert_how-to.html">8.1.5. How to Use assertions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/driver/afe/adding-a-new-ic_how-to.html">8.2.1. How to Implement an Analog Front-End Driver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../modules/driver/ts/adding-a-new-ts_how-to.html">8.2.2. How to Implement a New Temperature Sensor Driver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../developer-manual/style-guide/state-machines_how-to.html">8.2.3. How to Write State Machines</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">8.2.4. How to Use Generated Sources from HALCoGen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit-tests/unit-tests_how-to.html">8.2.5. How to use unit tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit-tests/unit-tests_how-to.html#guidelines-for-the-unit-test-skeleton">8.2.6. Guidelines for the Unit Test Skeleton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit-tests/unit-tests_how-to.html#result">8.2.7. Result</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit-tests/unit-tests_how-to.html#how-to-exclude-files-from-unit-tests">8.2.8. How to exclude files from unit tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../unit-tests/unit-tests_how-to.html#using-ceedling-directly">8.2.9. Using ceedling directly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build-environment/build-environment_how-to.html">8.2.10. Changing and Extending the Build Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../build-process/library-project_how-to.html">8.2.11. How to Build A Library and Link it in a foxBMS 2 Project</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../how-to/how-to.html"><span class="section-number">8. </span>How-to</a> &raquo;</li>
+      <li><span class="section-number">8.2.4. </span>How to Use Generated Sources from HALCoGen</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/software/configuration/without-halcogen_how-to.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="how-to-use-generated-sources-from-halcogen">
+<span id="id1"></span><h1><span class="section-number">8.2.4. </span>How to Use Generated Sources from HALCoGen<a class="headerlink" href="#how-to-use-generated-sources-from-halcogen" title="Permalink to this headline"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A documentation of the tool HALCoGen can be found in
+<a class="reference internal" href="../../tools/halcogen/halcogen.html#halcogen-tool-documentation"><span class="std std-ref">HALCoGen tool documentation</span></a>, the waf-tool wrapper for this project in
+<a class="reference internal" href="../../tools/waf-tools/f_hcg.html#waf-tool-halcogen"><span class="std std-ref">HALCoGen</span></a> and information on configuring HALCoGen in the
+context of the toolchain of this project in <a class="reference internal" href="configuration.html#hal-configuration"><span class="std std-ref">HALCoGen</span></a>.</p>
+</div>
+<p>The following steps need to be applied:</p>
+<ol class="arabic">
+<li><p>Removing the HALCoGen dependency in the compiler tool:</p>
+<ul class="simple">
+<li><p>remove loading the the <code class="docutils literal notranslate"><span class="pre">f_hcg</span></code> tool in the <code class="docutils literal notranslate"><span class="pre">configure</span></code> step.</p></li>
+<li><p>in the <code class="docutils literal notranslate"><span class="pre">class</span> <span class="pre">search_swi(Task.Task)</span></code> the class attribute <code class="docutils literal notranslate"><span class="pre">after</span></code> needs
+to be modified. Remove the entry <code class="docutils literal notranslate"><span class="pre">hcg_compiler</span></code> from the list.</p></li>
+</ul>
+</li>
+<li><p>Adding the sources:</p>
+<ul>
+<li><p>The generated HAL files need to be copied into the <code class="docutils literal notranslate"><span class="pre">src/hal</span></code> directory</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">wscript</span></code> in <code class="docutils literal notranslate"><span class="pre">src/hal</span></code> needs to be modified:</p>
+<div class="literal-block-wrapper docutils container" id="building-without-halcogen">
+<div class="code-block-caption"><span class="caption-number">Listing 8.43 </span><span class="caption-text">Building the HAL library without using HALCoGen on the fly</span><a class="headerlink" href="#building-without-halcogen" title="Permalink to this code"></a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>
+<span class="linenos"> 2</span><span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="n">bld</span><span class="p">):</span>
+<span class="linenos"> 3</span>    <span class="sd">&quot;&quot;&quot;Build the HAL library&quot;&quot;&quot;</span>
+<span class="linenos"> 4</span>    <span class="n">source</span> <span class="o">=</span> <span class="p">[</span>
+<span class="linenos"> 5</span>        <span class="c1"># list sources here, most likely something like &#39;source/abc.c&#39;,</span>
+<span class="linenos"> 6</span>        <span class="c1"># &#39;source/abc.asm&#39; etc.</span>
+<span class="linenos"> 7</span>    <span class="p">]</span>
+<span class="linenos"> 8</span>    <span class="n">includes</span> <span class="o">=</span> <span class="p">[</span>
+<span class="linenos"> 9</span>        <span class="c1"># list include directories here, most likely &#39;include&#39;</span>
+<span class="linenos">10</span>    <span class="p">]</span>
+<span class="linenos">11</span>    <span class="n">target</span> <span class="o">=</span> <span class="sa">f</span><span class="s2">&quot;</span><span class="si">{</span><span class="n">bld</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">APPNAME</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span><span class="si">}</span><span class="s2">-hal&quot;</span>
+<span class="linenos">12</span>    <span class="n">cflags</span> <span class="o">=</span> <span class="n">bld</span><span class="o">.</span><span class="n">env</span><span class="o">.</span><span class="n">CFLAGS_HAL</span>
+<span class="linenos">13</span>
+<span class="linenos">14</span>    <span class="n">bld</span><span class="o">.</span><span class="n">stlib</span><span class="p">(</span>
+<span class="linenos">15</span>        <span class="n">source</span><span class="o">=</span><span class="n">source</span><span class="p">,</span>
+<span class="linenos">16</span>        <span class="n">includes</span><span class="o">=</span><span class="n">includes</span><span class="p">,</span>
+<span class="linenos">17</span>        <span class="n">cflags</span><span class="o">=</span><span class="n">cflags</span><span class="p">,</span>
+<span class="linenos">18</span>        <span class="n">target</span><span class="o">=</span><span class="n">target</span><span class="p">,</span>
+<span class="linenos">19</span>    <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</li>
+<li><p>Add the <code class="docutils literal notranslate"><span class="pre">include</span></code> directory in all <code class="docutils literal notranslate"><span class="pre">wscript</span></code>-files where needed. This
+will affect most <code class="docutils literal notranslate"><span class="pre">wscript</span></code>-files. This looks e.g., like this for a
+FreeRTOS and LTC6806 configuration:</p>
+<div class="literal-block-wrapper docutils container" id="include-diff">
+<div class="code-block-caption"><span class="caption-number">Listing 8.44 </span><span class="caption-text">The diff of includes</span><a class="headerlink" href="#include-diff" title="Permalink to this code"></a></div>
+<div class="highlight-diff notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="gh">diff --git a/src/app/application/algorithm/wscript b/src/app/application/algorithm/wscript</span>
+<span class="linenos"> 2</span><span class="gh">index c4d837c4..2d1580fa 100644</span>
+<span class="linenos"> 3</span><span class="gd">--- a/src/app/application/algorithm/wscript</span>
+<span class="linenos"> 4</span><span class="gi">+++ b/src/app/application/algorithm/wscript</span>
+<span class="linenos"> 5</span><span class="gu">@@ -77,6 +77,7 @@ def build(bld):</span>
+<span class="linenos"> 6</span>         os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;main&quot;, &quot;include&quot;),
+<span class="linenos"> 7</span>         os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;task&quot;, &quot;config&quot;),
+<span class="linenos"> 8</span>         os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;task&quot;, &quot;os&quot;),
+<span class="linenos"> 9</span><span class="gi">+        os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;hal&quot;, &quot;include&quot;),</span>
+<span class="linenos">10</span>     ]
+<span class="linenos">11</span>     includes.extend(bld.env.INCLUDES_RTOS)
+<span class="linenos">12</span>     cflags = bld.env.CFLAGS_FOXBMS
+<span class="linenos">13</span><span class="gh">diff --git a/src/app/application/wscript b/src/app/application/wscript</span>
+<span class="linenos">14</span><span class="gh">index a9462e21..1fdb5850 100644</span>
+<span class="linenos">15</span><span class="gd">--- a/src/app/application/wscript</span>
+<span class="linenos">16</span><span class="gi">+++ b/src/app/application/wscript</span>
+<span class="linenos">17</span><span class="gu">@@ -88,6 +88,7 @@ def build(bld):</span>
+<span class="linenos">18</span>         os.path.join(&quot;..&quot;, &quot;main&quot;, &quot;include&quot;),
+<span class="linenos">19</span>         os.path.join(&quot;..&quot;, &quot;task&quot;, &quot;config&quot;),
+<span class="linenos">20</span>         os.path.join(&quot;..&quot;, &quot;task&quot;, &quot;os&quot;),
+<span class="linenos">21</span><span class="gi">+        os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;hal&quot;, &quot;include&quot;),</span>
+<span class="linenos">22</span>     ]
+<span class="linenos">23</span>     includes.extend(bld.env.INCLUDES_RTOS + bld.env.INCLUDES_AFE)
+<span class="linenos">24</span>     cflags = bld.env.CFLAGS_FOXBMS
+<span class="linenos">25</span><span class="gh">diff --git a/src/app/driver/afe/ltc/6806/wscript b/src/app/driver/afe/ltc/6806/wscript</span>
+<span class="linenos">26</span><span class="gh">index d7ca3af9..0cc6c777 100644</span>
+<span class="linenos">27</span><span class="gd">--- a/src/app/driver/afe/ltc/6806/wscript</span>
+<span class="linenos">28</span><span class="gi">+++ b/src/app/driver/afe/ltc/6806/wscript</span>
+<span class="linenos">29</span><span class="gu">@@ -71,6 +71,7 @@ def build(bld):</span>
+<span class="linenos">30</span>         os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;engine&quot;, &quot;diag&quot;),
+<span class="linenos">31</span>         os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;main&quot;, &quot;include&quot;),
+<span class="linenos">32</span>         os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;task&quot;, &quot;os&quot;),
+<span class="linenos">33</span><span class="gi">+        os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;..&quot;, &quot;hal&quot;, &quot;include&quot;),</span>
+<span class="linenos">34</span>     ]
+<span class="linenos">35</span>     includes.extend(bld.env.INCLUDES_RTOS)
+<span class="linenos">36</span>     cflags = bld.env.CFLAGS_FOXBMS
+<span class="linenos">37</span><span class="gh">diff --git a/src/app/driver/wscript b/src/app/driver/wscript</span>
+<span class="linenos">38</span><span class="gh">index c6b42f89..26369502 100644</span>
+<span class="linenos">39</span><span class="gd">--- a/src/app/driver/wscript</span>
+<span class="linenos">40</span><span class="gi">+++ b/src/app/driver/wscript</span>
+<span class="linenos">41</span><span class="gu">@@ -122,6 +122,7 @@ def build(bld):</span>
+<span class="linenos">42</span>         os.path.join(&quot;..&quot;, &quot;main&quot;, &quot;include&quot;),
+<span class="linenos">43</span>         os.path.join(&quot;..&quot;, &quot;task&quot;, &quot;config&quot;),
+<span class="linenos">44</span>         os.path.join(&quot;..&quot;, &quot;task&quot;, &quot;os&quot;),
+<span class="linenos">45</span><span class="gi">+        os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;hal&quot;, &quot;include&quot;),</span>
+<span class="linenos">46</span>     ]
+<span class="linenos">47</span>     includes.extend(bld.env.INCLUDES_RTOS + bld.env.INCLUDES_AFE)
+<span class="linenos">48</span>     cflags = bld.env.CFLAGS_FOXBMS
+<span class="linenos">49</span><span class="gh">diff --git a/src/app/engine/wscript b/src/app/engine/wscript</span>
+<span class="linenos">50</span><span class="gh">index 03873567..118c66b6 100644</span>
+<span class="linenos">51</span><span class="gd">--- a/src/app/engine/wscript</span>
+<span class="linenos">52</span><span class="gi">+++ b/src/app/engine/wscript</span>
+<span class="linenos">53</span><span class="gu">@@ -83,6 +83,7 @@ def build(bld):</span>
+<span class="linenos">54</span>         os.path.join(&quot;..&quot;, &quot;main&quot;, &quot;include&quot;),
+<span class="linenos">55</span>         os.path.join(&quot;..&quot;, &quot;task&quot;, &quot;os&quot;),
+<span class="linenos">56</span>         os.path.join(&quot;..&quot;, &quot;task&quot;, &quot;config&quot;),
+<span class="linenos">57</span><span class="gi">+        os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;hal&quot;, &quot;include&quot;),</span>
+<span class="linenos">58</span>     ]
+<span class="linenos">59</span>     includes.extend(bld.env.INCLUDES_RTOS + bld.env.INCLUDES_AFE)
+<span class="linenos">60</span>     target = f&quot;{bld.env.APPNAME.lower()}-engine&quot;
+<span class="linenos">61</span><span class="gh">diff --git a/src/app/main/wscript b/src/app/main/wscript</span>
+<span class="linenos">62</span><span class="gh">index 1945b079..a47c3e20 100644</span>
+<span class="linenos">63</span><span class="gd">--- a/src/app/main/wscript</span>
+<span class="linenos">64</span><span class="gi">+++ b/src/app/main/wscript</span>
+<span class="linenos">65</span><span class="gu">@@ -69,6 +69,7 @@ def build(bld):</span>
+<span class="linenos">66</span>         os.path.join(&quot;..&quot;, &quot;engine&quot;, &quot;hwinfo&quot;),
+<span class="linenos">67</span>         os.path.join(&quot;..&quot;, &quot;task&quot;, &quot;os&quot;),
+<span class="linenos">68</span>         os.path.join(&quot;..&quot;, &quot;task&quot;, &quot;config&quot;),
+<span class="linenos">69</span><span class="gi">+        os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;hal&quot;, &quot;include&quot;),</span>
+<span class="linenos">70</span>     ]
+<span class="linenos">71</span>     includes.extend(bld.env.INCLUDES_RTOS + bld.env.INCLUDES_AFE)
+<span class="linenos">72</span>     cflags = bld.env.CFLAGS_FOXBMS
+<span class="linenos">73</span><span class="gh">diff --git a/src/app/task/wscript b/src/app/task/wscript</span>
+<span class="linenos">74</span><span class="gh">index d2479891..1b584c01 100644</span>
+<span class="linenos">75</span><span class="gd">--- a/src/app/task/wscript</span>
+<span class="linenos">76</span><span class="gi">+++ b/src/app/task/wscript</span>
+<span class="linenos">77</span><span class="gu">@@ -85,6 +85,7 @@ def build(bld):</span>
+<span class="linenos">78</span>         os.path.join(&quot;..&quot;, &quot;engine&quot;, &quot;sys_mon&quot;),
+<span class="linenos">79</span>         os.path.join(&quot;..&quot;, &quot;engine&quot;, &quot;sys&quot;),
+<span class="linenos">80</span>         os.path.join(&quot;..&quot;, &quot;main&quot;, &quot;include&quot;),
+<span class="linenos">81</span><span class="gi">+        os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;hal&quot;, &quot;include&quot;),</span>
+<span class="linenos">82</span>     ]
+<span class="linenos">83</span>     includes.extend(bld.env.INCLUDES_RTOS + bld.env.INCLUDES_AFE)
+<span class="linenos">84</span>     cflags = bld.env.CFLAGS_FOXBMS
+<span class="linenos">85</span><span class="gh">diff --git a/src/os/freertos/wscript b/src/os/freertos/wscript</span>
+<span class="linenos">86</span><span class="gh">index 2d91582e..c32227aa 100644</span>
+<span class="linenos">87</span><span class="gd">--- a/src/os/freertos/wscript</span>
+<span class="linenos">88</span><span class="gi">+++ b/src/os/freertos/wscript</span>
+<span class="linenos">89</span><span class="gu">@@ -66,6 +66,7 @@ def build(bld):</span>
+<span class="linenos">90</span>         os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;app&quot;, &quot;main&quot;, &quot;include&quot;),
+<span class="linenos">91</span>         os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;app&quot;, &quot;task&quot;),
+<span class="linenos">92</span>         os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;app&quot;, &quot;task&quot;, &quot;config&quot;),
+<span class="linenos">93</span><span class="gi">+        os.path.join(&quot;..&quot;, &quot;..&quot;, &quot;hal&quot;, &quot;include&quot;),</span>
+<span class="linenos">94</span>     ]
+<span class="linenos">95</span>     target = f&quot;{bld.env.APPNAME.lower()}-os&quot;
+<span class="linenos">96</span>     cflags = bld.env.CFLAGS_OS
+</pre></div>
+</div>
+</div>
+</li>
+</ul>
+</li>
+</ol>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../../developer-manual/style-guide/state-machines_how-to.html" class="btn btn-neutral float-left" title="8.2.3. How to Write State Machines" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../unit-tests/unit-tests_how-to.html" class="btn btn-neutral float-right" title="8.2.5. How to use unit tests" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

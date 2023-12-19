@@ -1,0 +1,6 @@
+<map id="TEST_CANRX_GetHours" name="TEST_CANRX_GetHours">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,172,32"/>
+<area shape="rect" id="node2" href="$can__cbs__rx__debug_8c.html#a7fa2aac4493d7ee0a7adaa1e27852407" title="Parses the CAN message to retrieve the hours information." alt="" coords="220,5,347,32"/>
+<area shape="rect" id="node3" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="395,5,661,32"/>
+<area shape="rect" id="node4" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="709,5,912,32"/>
+</map>

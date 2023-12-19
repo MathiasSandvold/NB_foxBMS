@@ -1,0 +1,454 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2. Repository Structure &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. Software Installation" href="software-installation.html" />
+    <link rel="prev" title="1. Getting Started with foxBMS 2" href="getting-started.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><span class="section-number">2. </span>Repository Structure</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/getting-started/repository-structure.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="repository-structure">
+<span id="id1"></span><h1><span class="section-number">2. </span>Repository Structure<a class="headerlink" href="#repository-structure" title="Permalink to this headline"></a></h1>
+<p>The foxBMS 2 repository is structured into the following parts (see
+<a class="reference internal" href="#introduction-repository-structure"><span class="std std-numref">Table 2.1</span></a>). All directory names are
+abbreviated (e.g., <code class="docutils literal notranslate"><span class="pre">conf</span></code> for <code class="docutils literal notranslate"><span class="pre">configuration</span></code>) to ensure a compact
+repository structure and avoid long command lines during build steps.</p>
+<table class="colwidths-given docutils align-default" id="introduction-repository-structure">
+<caption><span class="caption-number">Table 2.1 </span><span class="caption-text">foxBMS 2 repository structure</span><a class="headerlink" href="#introduction-repository-structure" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 35%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>directory</p></th>
+<th class="head"><p>long name</p></th>
+<th class="head"><p>content description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">.</span></code></p></td>
+<td><p>repository root</p></td>
+<td><p>the repository root contains the
+license information, a changelog
+and the main build script</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">conf</span></code></p></td>
+<td><p>Configuration</p></td>
+<td><p>contains all high level
+configurations</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">docs</span></code></p></td>
+<td><p>Documentation</p></td>
+<td><p>documentation source files</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">hardware</span></code></p></td>
+<td><p>Hardware</p></td>
+<td><p>hardware schematics and layouts</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">src</span></code></p></td>
+<td><p>Source</p></td>
+<td><p>parent directory for all source
+files for the BMS embedded software</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">tests</span></code></p></td>
+<td><p>Tests</p></td>
+<td><p>tests for embedded sources, the tool
+chain,  the conda environment and
+scripts</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">tools</span></code></p></td>
+<td><p>Tools</p></td>
+<td><p>tools needed to build foxBMS 2
+binaries and additional tools to
+work with foxBMS 2</p></td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="configuration-directory-conf">
+<h2><span class="section-number">2.1. </span>Configuration directory <code class="docutils literal notranslate"><span class="pre">conf</span></code><a class="headerlink" href="#configuration-directory-conf" title="Permalink to this headline"></a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">conf</span></code> directory is structured into the following parts (see
+<a class="reference internal" href="#introduction-repository-structure-conf-details"><span class="std std-numref">Table 2.2</span></a>).</p>
+<table class="colwidths-given docutils align-default" id="introduction-repository-structure-conf-details">
+<caption><span class="caption-number">Table 2.2 </span><span class="caption-text">Detailed description of the <code class="docutils literal notranslate"><span class="pre">conf</span></code> directory</span><a class="headerlink" href="#introduction-repository-structure-conf-details" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 35%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>directory</p></th>
+<th class="head"><p>long name</p></th>
+<th class="head"><p>content description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">conf/bms</span></code></p></td>
+<td><p>Battery Management System</p></td>
+<td><p>configuration of the BMS
+(e.g., which AFE is used)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">conf/cc</span></code></p></td>
+<td><p>C compiler</p></td>
+<td><p>compiler configuration
+(e.g., compiler flags)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">conf/env</span></code></p></td>
+<td><p>Environment</p></td>
+<td><p>environment specifications
+configuration files
+(e.g., Conda package dependencies)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">conf/fmt</span></code></p></td>
+<td><p>Formatting</p></td>
+<td><p>formatting rules for source files</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">conf/gl</span></code></p></td>
+<td><p>Guidelines</p></td>
+<td><p>Guideline check configuration</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">conf/hcg</span></code></p></td>
+<td><p>HALCoGen</p></td>
+<td><p>HALCoGen configuration files for
+the Hardware Abstraction Layer</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">conf/spa</span></code></p></td>
+<td><p>Static Program Analysis</p></td>
+<td><p>configuration and template files for
+static program analysis</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">conf/tpl</span></code></p></td>
+<td><p>Templates</p></td>
+<td><p>template files for source files</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">conf/unit</span></code></p></td>
+<td><p>Unit tests</p></td>
+<td><p>unit test configuration files</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="documentation-directory-docs">
+<h2><span class="section-number">2.2. </span>Documentation directory <code class="docutils literal notranslate"><span class="pre">docs</span></code><a class="headerlink" href="#documentation-directory-docs" title="Permalink to this headline"></a></h2>
+<p>This directory contains the general documentation and links the API
+documentation generated by Doxygen.</p>
+</div>
+<div class="section" id="hardware-directory-hardware">
+<h2><span class="section-number">2.3. </span>Hardware directory <code class="docutils literal notranslate"><span class="pre">hardware</span></code><a class="headerlink" href="#hardware-directory-hardware" title="Permalink to this headline"></a></h2>
+<p>This directory contains the hardware schematics and layouts.</p>
+</div>
+<div class="section" id="source-directory-src">
+<h2><span class="section-number">2.4. </span>Source directory <code class="docutils literal notranslate"><span class="pre">src</span></code><a class="headerlink" href="#source-directory-src" title="Permalink to this headline"></a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">src</span></code> directory is structured into the following parts (see
+<a class="reference internal" href="#introduction-repository-structure-src-details"><span class="std std-numref">Table 2.3</span></a>).</p>
+<table class="colwidths-given docutils align-default" id="introduction-repository-structure-src-details">
+<caption><span class="caption-number">Table 2.3 </span><span class="caption-text">Detailed description of the <code class="docutils literal notranslate"><span class="pre">src</span></code> directory</span><a class="headerlink" href="#introduction-repository-structure-src-details" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 35%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>directory</p></th>
+<th class="head"><p>long name</p></th>
+<th class="head"><p>content description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">src/app</span></code></p></td>
+<td><p>Application</p></td>
+<td><p>sources files for the BMS
+application</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">src/hal</span></code></p></td>
+<td><p>Hardware
+Abstraction
+Layer</p></td>
+<td><p>source files of the Hardware
+Abstraction Layer</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">src/opt</span></code></p></td>
+<td><p>Optional</p></td>
+<td><p>optional source files (e.g.,
+specific cell parameters)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">src/os</span></code></p></td>
+<td><p>Operating System</p></td>
+<td><p>source files of the real time
+operating system</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="tests-directory-tests">
+<h2><span class="section-number">2.5. </span>Tests directory <code class="docutils literal notranslate"><span class="pre">tests</span></code><a class="headerlink" href="#tests-directory-tests" title="Permalink to this headline"></a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">tests</span></code> directory is structured into the following parts (see
+<a class="reference internal" href="#introduction-repository-structure-tests-details"><span class="std std-numref">Table 2.4</span></a>).</p>
+<table class="colwidths-given docutils align-default" id="introduction-repository-structure-tests-details">
+<caption><span class="caption-number">Table 2.4 </span><span class="caption-text">Detailed description of the <code class="docutils literal notranslate"><span class="pre">tests</span></code> directory</span><a class="headerlink" href="#introduction-repository-structure-tests-details" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 31%" />
+<col style="width: 45%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>directory</p></th>
+<th class="head"><p>long name</p></th>
+<th class="head"><p>content description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">tests/axivion</span></code></p></td>
+<td><p>Axivion</p></td>
+<td><p>configuration files to describe the
+architecture of foxBMS 2. Additional
+static program analysis
+configurations are stored here
+(e.g., MISRA-C)</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">tests/scripts</span></code></p></td>
+<td><p>scripts</p></td>
+<td><p>unit test of scripts (e.g., Python,
+shell)</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">tests/unit</span></code></p></td>
+<td><p>unit tests</p></td>
+<td><p>unit tests for embedded sources</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="tools-directory-tools">
+<h2><span class="section-number">2.6. </span>Tools directory <code class="docutils literal notranslate"><span class="pre">tools</span></code><a class="headerlink" href="#tools-directory-tools" title="Permalink to this headline"></a></h2>
+<p>The <code class="docutils literal notranslate"><span class="pre">tools</span></code> directory is structured into the following parts (see
+<a class="reference internal" href="#introduction-repository-structure-tools-details"><span class="std std-numref">Table 2.5</span></a>).</p>
+<table class="colwidths-given docutils align-default" id="introduction-repository-structure-tools-details">
+<caption><span class="caption-number">Table 2.5 </span><span class="caption-text">Detailed description of the <code class="docutils literal notranslate"><span class="pre">tools</span></code> directory</span><a class="headerlink" href="#introduction-repository-structure-tools-details" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 24%" />
+<col style="width: 32%" />
+<col style="width: 44%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>directory</p></th>
+<th class="head"><p>long name</p></th>
+<th class="head"><p>content description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">tools/src</span></code></p></td>
+<td><p>Cyclic redundancy check</p></td>
+<td><p>Jupyter notebooks to help generate
+CRC-functions</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">tools/debugger</span></code></p></td>
+<td><p>Debugger</p></td>
+<td><p>Debugger setups and usage</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">tools/gui</span></code></p></td>
+<td><p>Graphical User Interface</p></td>
+<td><p>GUI to interact with foxBMS 2 and
+foxBMS 2 generated data</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">tools/ide</span></code></p></td>
+<td><p>Editor/Integrated
+Development Environment</p></td>
+<td><p>Setups for editors and IDE</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">tools/utils</span></code></p></td>
+<td><p>utils</p></td>
+<td><p>unspecific helper tools and scripts</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">tools/waf-tools</span></code></p></td>
+<td><p>waf tools</p></td>
+<td><p>waf tools that are not part of
+vendored waf</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">tools/waf</span></code></p></td>
+<td><p>waf</p></td>
+<td><p>waf binary</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="getting-started.html" class="btn btn-neutral float-left" title="1. Getting Started with foxBMS 2" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="software-installation.html" class="btn btn-neutral float-right" title="3. Software Installation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

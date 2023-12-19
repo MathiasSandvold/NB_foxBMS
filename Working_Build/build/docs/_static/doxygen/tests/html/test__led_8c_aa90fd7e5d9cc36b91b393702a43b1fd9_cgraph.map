@@ -1,0 +1,10 @@
+<map id="testLED_Trigger" name="testLED_Trigger">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,120,159"/>
+<area shape="rect" id="node2" href="$led_8c.html#adde1377ea9af24ebc95c60a0bcc59bca" title="Trigger function to periodically toggle debug LED. Frequency can be set via function LED_SetToggleTim..." alt="" coords="209,107,302,133"/>
+<area shape="rect" id="node8" href="$led_8c.html#a0eb8c6fe66d639b7a72c6ee2a4e3e39f" title=" " alt="" coords="168,157,343,184"/>
+<area shape="rect" id="node3" href="$io_8c.html#ac732f8e2ec796feb6a4471b39097cfb8" title="Get pin state." alt="" coords="423,5,505,32"/>
+<area shape="rect" id="node4" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="417,56,511,83"/>
+<area shape="rect" id="node5" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="423,107,505,133"/>
+<area shape="rect" id="node6" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="391,157,537,184"/>
+<area shape="rect" id="node7" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="395,208,533,235"/>
+</map>

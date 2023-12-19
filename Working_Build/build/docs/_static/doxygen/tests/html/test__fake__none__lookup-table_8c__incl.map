@@ -1,0 +1,7 @@
+<map id="test_fake_none_lookup&#45;table.c" name="test_fake_none_lookup&#45;table.c">
+<area shape="rect" id="node1" title="Test of fake temperature sensor." alt="" coords="60,5,215,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,67,121"/>
+<area shape="rect" id="node3" href="$fake__none_8h.html" title="Fake temperature sensor header." alt="" coords="91,95,183,121"/>
+<area shape="rect" id="node5" href="$tsi_8h.html" title="Temperature Sensor Interface on Slave Unit driver header." alt="" coords="207,95,254,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="151,169,217,196"/>
+</map>

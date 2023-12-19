@@ -1,0 +1,9 @@
+<map id="MXM_5XConstructCommandBufferWriteDevice" name="MXM_5XConstructCommandBufferWriteDevice">
+<area shape="rect" id="node1" title="clears the command buffer and writes a WRITEDEVICE message" alt="" coords="5,49,225,90"/>
+<area shape="rect" id="node2" href="$mxm__battery__management_8c.html#a50b3a6cf0784bcc3ec9ed55af937447b" title="Clear the command&#45;buffer." alt="" coords="287,5,481,32"/>
+<area shape="rect" id="node3" href="$mxm__battery__management_8c.html#adcda2712e58935f41533d2b54c90aee5" title="Check if a register address is user accessible." alt="" coords="273,56,495,83"/>
+<area shape="rect" id="node6" href="$mxm__crc8_8c.html#a9371d7335e3bcd1601e34612ea47dbf4" title="Compute CRC8 with initial value set to 0x00." alt="" coords="338,107,430,133"/>
+<area shape="rect" id="node4" href="$mxm__battery__management_8c.html#a9e3c85d541ed2c4301747d8633ba03bc" title="Check if a register address is user accessible in MAX17852." alt="" coords="543,5,764,32"/>
+<area shape="rect" id="node5" href="$mxm__battery__management_8c.html#aacd19e9ba1a28a8d4ac5fde5677c93e2" title="Check if a register address is user accessible in MAX17853." alt="" coords="543,56,764,83"/>
+<area shape="rect" id="node7" href="$mxm__crc8_8c.html#aff7b770d0d6a3773b0fe425eb9bb9d8d" title="Compute CRC8 (0xA6) with initial value." alt="" coords="569,107,738,133"/>
+</map>

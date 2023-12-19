@@ -1,0 +1,9 @@
+<map id="SOF_Calculation" name="SOF_Calculation">
+<area shape="rect" id="node1" title="triggers SOF calculation" alt="" coords="5,129,125,156"/>
+<area shape="rect" id="node2" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="204,5,347,32"/>
+<area shape="rect" id="node3" href="$bms_8c.html#a38f183c232165fccfd2989f208e4fd0b" title="Check if transition in to error state is active." alt="" coords="177,57,374,98"/>
+<area shape="rect" id="node4" href="$sof__trapezoid_8c.html#a09f81cc818c5389fd0244448fb90511f" title="calculates the SoF from temperature data (i.e., minimum and maximum temperature of cells)" alt="" coords="184,122,367,163"/>
+<area shape="rect" id="node6" href="$sof__trapezoid_8c.html#ace0659b0de9303cd1f927adcbe13141f" title="calculates the SoF from voltage data (i.e., minimum and maximum voltage)" alt="" coords="180,187,371,229"/>
+<area shape="rect" id="node7" href="$sof__trapezoid_8c.html#af2e4f8f15001952a5c495410b178f308" title="get the minimum current values of all variants of SoF calculation" alt="" coords="173,253,377,280"/>
+<area shape="rect" id="node5" href="$foxmath_8c.html#a2db263df23dd46c7d63c6b0f2bc0f00d" title="Returns the minimum of the passed float values." alt="" coords="425,192,616,219"/>
+</map>

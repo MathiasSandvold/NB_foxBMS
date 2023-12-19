@@ -1,0 +1,4 @@
+<map id="testOS_MarkTaskAsRequiringFpuContext" name="testOS_MarkTaskAsRequiringFpuContext">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,203,47"/>
+<area shape="rect" id="node2" href="$os__freertos_8c.html#a4a7551f4fb9b1a8a50eab73b4b381bff" title="Marks the current task as requiring FPU context." alt="" coords="251,5,448,47"/>
+</map>

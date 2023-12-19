@@ -1,0 +1,7 @@
+<map id="SPI_TransmitReceiveDataDma" name="SPI_TransmitReceiveDataDma">
+<area shape="rect" id="node1" title="Transmits and receives data on SPI with DMA." alt="" coords="5,81,204,108"/>
+<area shape="rect" id="node2" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="253,5,398,32"/>
+<area shape="rect" id="node3" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="252,56,399,83"/>
+<area shape="rect" id="node4" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="256,107,395,133"/>
+<area shape="rect" id="node5" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="265,157,386,184"/>
+</map>

@@ -1,0 +1,470 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4.12. FTASK Module &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="4.13. OS Module" href="../os/os.html" />
+    <link rel="prev" title="4.11. System Monitoring Module" href="../../engine/sys_mon/sys_mon.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../modules.html">4. Software Modules</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../application/algorithm/algorithm.html">4.1. Algorithm Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../application/bal/bal.html">4.2. Balancing Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../application/bms/bms.html">4.3. BMS Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../application/plausibility/plausibility.html">4.4. Plausibility Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../application/redundancy/redundancy.html">4.5. Redundancy Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../application/soa/soa.html">4.6. SOA Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engine/database/database.html">4.7. Database Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engine/diag/diag.html">4.8. Diagnosis Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engine/hwinfo/hwinfo.html">4.9. Hardware Info Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engine/sys/sys.html">4.10. System Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engine/sys_mon/sys_mon.html">4.11. System Monitoring Module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.12. FTASK Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../os/os.html">4.13. OS Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/adc/adc.html">4.14. ADC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/can/can.html">4.15. CAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/crc/crc.html">4.16. CRC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/contactor/contactor.html">4.17. Contactor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/dma/dma.html">4.18. DMA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/foxmath/foxmath.html">4.19. foxmath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/foxmath/utils.html">4.20. utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/fram/fram.html">4.21. FRAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/htsen/htsen.html">4.22. Humidity/Temperature Sensor Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/i2c/i2c.html">4.23. I2C Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/imd/imd.html">4.24. Insulation Measurement Device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/interlock/interlock.html">4.25. Interlock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/io/io.html">4.26. IO Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/meas/meas.html">4.27. Measurement Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/mcu/mcu.html">4.28. MCU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/afe/afe.html">4.29. Analog Front-End API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/afe/supported-afes.html">4.30. Supported Analog Front-Ends</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/pex/pex.html">4.31. Port Expander Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/pwm/pwm.html">4.32. PWM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/rtc/rtc.html">4.33. RTC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/sbc/sbc.html">4.34. SBC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/spi/spi.html">4.35. SPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/sps/sps.html">4.36. SPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/ts/ts.html">4.37. Temperature Sensor API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/ts/ts-sensors.html">4.38. Supported Temperature Sensors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../main/startup.html">4.39. Embedded Software Startup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../main/version.html">4.40. Version Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../main/fassert.html">4.41. FASSERT Module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../modules.html"><span class="section-number">4. </span>Software Modules</a> &raquo;</li>
+      <li><span class="section-number">4.12. </span>FTASK Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/software/modules/task/ftask/ftask.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="ftask-module">
+<span id="id1"></span><h1><span class="section-number">4.12. </span>FTASK Module<a class="headerlink" href="#ftask-module" title="Permalink to this headline"></a></h1>
+<div class="section" id="module-files">
+<h2><span class="section-number">4.12.1. </span>Module Files<a class="headerlink" href="#module-files" title="Permalink to this headline"></a></h2>
+<div class="section" id="driver">
+<h3><span class="section-number">4.12.1.1. </span>Driver<a class="headerlink" href="#driver" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">src/app/task/ftask/ftask.c</span></code> (<a class="reference external" href="../../../../_static/doxygen/src/html/ftask_8c.html">API</a>, <a class="reference external" href="../../../../_static/doxygen/src/html/ftask_8c_source.html">source</a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src/app/task/ftask/ftask.h</span></code> (<a class="reference external" href="../../../../_static/doxygen/src/html/ftask_8h.html">API</a>, <a class="reference external" href="../../../../_static/doxygen/src/html/ftask_8h_source.html">source</a>)</p></li>
+</ul>
+<div class="section" id="freertos">
+<h4><span class="section-number">4.12.1.1.1. </span>FreeRTOS<a class="headerlink" href="#freertos" title="Permalink to this headline"></a></h4>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">src/app/task/ftask/freertos/ftask_freertos.c</span></code> (<a class="reference external" href="../../../../_static/doxygen/src/html/ftask__freertos_8c.html">API</a>, <a class="reference external" href="../../../../_static/doxygen/src/html/ftask__freertos_8c_source.html">source</a>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="configuration">
+<h3><span class="section-number">4.12.1.2. </span>Configuration<a class="headerlink" href="#configuration" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">src/app/task/config/ftask_cfg.c</span></code> (<a class="reference external" href="../../../../_static/doxygen/src/html/ftask__cfg_8c.html">API</a>, <a class="reference external" href="../../../../_static/doxygen/src/html/ftask__cfg_8c_source.html">source</a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">src/app/task/config/ftask_cfg.h</span></code> (<a class="reference external" href="../../../../_static/doxygen/src/html/ftask__cfg_8h.html">API</a>, <a class="reference external" href="../../../../_static/doxygen/src/html/ftask__cfg_8h_source.html">source</a>)</p></li>
+</ul>
+</div>
+<div class="section" id="unit-test">
+<h3><span class="section-number">4.12.1.3. </span>Unit Test<a class="headerlink" href="#unit-test" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">tests/unit/app/task/config/test_ftask_cfg.c</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">tests/unit/app/task/ftask/test_ftask.c</span></code></p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="detailed-description">
+<h2><span class="section-number">4.12.2. </span>Detailed Description<a class="headerlink" href="#detailed-description" title="Permalink to this headline"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The module name, and therefore all related file names, are prefixed with an <strong>f</strong>. The rationale behind this naming
+convention is that the operating system already provides a file named <code class="docutils literal notranslate"><span class="pre">task.h</span></code> and with using the <strong>f</strong>
+prefix it is unambiguous what file is meant.</p>
+</div>
+<p>foxBMS 2 uses five tasks, which are all configured in the <code class="docutils literal notranslate"><span class="pre">ftask</span></code> module. <a class="reference internal" href="#ftask-function-overview"><span class="std std-numref">Table 4.1</span></a>) shows</p>
+<ul class="simple">
+<li><p>the name by which the task is commonly referred to,</p></li>
+<li><p>the task creator function that creates the actual task,</p></li>
+<li><p>the user code function that is called periodically and</p></li>
+<li><p>purpose of the function.</p></li>
+</ul>
+<p>The Engine task is the task with the highest priority and should not be modified
+(see <a class="reference internal" href="#ftask-special-task-engine"><span class="std std-numref">Section 4.12.2.3.2</span></a>).</p>
+<p>The Idle task is not counted as a <em>real</em> task and is only mentioned for the sake of completeness and should not be
+modified (see <a class="reference internal" href="#ftask-special-task-idle"><span class="std std-numref">Section 4.12.2.3.3</span></a>).</p>
+<table class="colwidths-auto docutils align-default" id="ftask-function-overview">
+<caption><span class="caption-number">Table 4.1 </span><span class="caption-text"><em>common</em> task names, the function that creates the task and the function that is run cyclically</span><a class="headerlink" href="#ftask-function-overview" title="Permalink to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p><em>Common</em> name</p></th>
+<th class="head"><p>Task Creator Function</p></th>
+<th class="head"><p>User Code Function</p></th>
+<th class="head"><p>Comment</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Idle task</p></td>
+<td><p>-</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeIdle</span></code></p></td>
+<td><p>This task <strong>SHOULD NOT</strong> be modified</p></td>
+</tr>
+<tr class="row-odd"><td><p>Engine task</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FTSK_CreateTaskEngine</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeEngine</span></code></p></td>
+<td><p>This task <strong>SHOULD NOT</strong> be modified</p></td>
+</tr>
+<tr class="row-even"><td><p>1ms cyclic task</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FTSK_CreateTaskCyclic1ms</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeCyclic1ms</span></code></p></td>
+<td><p>User code can be put here</p></td>
+</tr>
+<tr class="row-odd"><td><p>AFE non-cyclic task             <code class="docutils literal notranslate"><span class="pre">FTSK_CreateTaskAfe</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeAfe</span></code></p></td>
+<td><p>User code can be put here</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>10ms cyclic task</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FTSK_CreateTaskCyclic10ms</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeCyclic10ms</span></code></p></td>
+<td><p>User code can be put here</p></td>
+</tr>
+<tr class="row-odd"><td><p>I2C non-cyclic task             <code class="docutils literal notranslate"><span class="pre">FTSK_CreateTaskI2c</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeI2c</span></code></p></td>
+<td><p>User code can be put here</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>100ms cyclic</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FTSK_CreateTaskCyclic100ms</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeCyclic100ms</span></code></p></td>
+<td><p>User code can be put here</p></td>
+</tr>
+<tr class="row-odd"><td><p>100ms cyclic for algorithms</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FTSK_CreateTaskCyclicAlgorithm100ms</span></code></p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeCyclicAlgorithm100ms</span></code></p></td>
+<td><p>User code can be put here</p></td>
+</tr>
+</tbody>
+</table>
+<p>The following sections show how tasks are created, configured and how task behavior can be changed. Code sections that
+are not meant to be modified by user are indicated in the code, e.g., for the Engine task:</p>
+<div class="literal-block-wrapper docutils container" id="ftsk-user-code-engine-example">
+<div class="code-block-caption"><span class="caption-number">Listing 4.4 </span><span class="caption-text">Example of code that should not be modified by the user</span><a class="headerlink" href="#ftsk-user-code-engine-example" title="Permalink to this code"></a></div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">FTSK_RunUserCodeEngine</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="hll"><span class="linenos">2</span><span class="w">     </span><span class="cm">/* Warning: Do not change the content of this function */</span><span class="w"></span>
+</span><span class="hll"><span class="linenos">3</span><span class="w">     </span><span class="cm">/* See function definition doxygen comment for details */</span><span class="w"></span>
+</span><span class="linenos">4</span><span class="w">     </span><span class="n">DATA_Task</span><span class="p">();</span><span class="w">               </span><span class="cm">/* Call database manager */</span><span class="w"></span>
+<span class="linenos">5</span><span class="w">     </span><span class="n">SYSM_CheckNotifications</span><span class="p">();</span><span class="w"> </span><span class="cm">/* Check notifications from tasks */</span><span class="w"></span>
+<span class="hll"><span class="linenos">6</span><span class="w">     </span><span class="cm">/* Warning: Do not change the content of this function */</span><span class="w"></span>
+</span><span class="hll"><span class="linenos">7</span><span class="w">     </span><span class="cm">/* See function definition doxygen comment for details */</span><span class="w"></span>
+</span><span class="linenos">8</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="task-creation">
+<span id="ftask-task-creation"></span><h3><span class="section-number">4.12.2.1. </span>Task Creation<a class="headerlink" href="#task-creation" title="Permalink to this headline"></a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Task Creator Functions generally do not need to be modified by the user.
+User/application specific code should be implemented in the User Code Functions.</p>
+</div>
+<p><code class="docutils literal notranslate"><span class="pre">FTSK_CreateTasks</span></code> creates these 4 tasks on startup. The procedure is the same for all tasks:</p>
+<ol class="arabic simple">
+<li><p>Try to create a static task (using the Task Creator Function)</p></li>
+<li><p>Assert if this does not work.</p></li>
+</ol>
+<p>The Task Creator Functions bind User Code Functions into the tasks. This is best explained using the example of the
+Engine task:</p>
+<ul class="simple">
+<li><p>Line 3: Run an initializer function before the task starts.</p></li>
+<li><p>Line 5: Delay the phase as specified in the configuration.</p></li>
+<li><p>Line 6: The task should run forever.</p></li>
+<li><p>Line 10: Bind the User Code Function to the task.</p></li>
+</ul>
+<p>Before and after the the User Code Function is run, the <a class="reference internal" href="../../engine/sys_mon/sys_mon.html#system-monitoring-module"><span class="std std-ref">System Monitoring Module</span></a> is notified that either the
+User Code Function will be run or has run. This enables to determine if a task returns within the expected time frame.</p>
+<div class="literal-block-wrapper docutils container" id="ftsk-task-creator-function-example">
+<div class="code-block-caption"><span class="caption-number">Listing 4.5 </span><span class="caption-text">Example of Task Creator Function</span><a class="headerlink" href="#ftsk-task-creator-function-example" title="Permalink to this code"></a></div>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">FTSK_CreateTaskEngine</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 2</span><span class="w">     </span><span class="n">os_boot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OS_SCHEDULER_RUNNING</span><span class="p">;</span><span class="w"></span>
+<span class="hll"><span class="linenos"> 3</span><span class="w">     </span><span class="n">FTSK_InitializeUserCodeEngine</span><span class="p">();</span><span class="w"></span>
+</span><span class="linenos"> 4</span><span class="w">     </span><span class="n">os_boot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">OS_ENGINE_RUNNING</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 5</span>
+<span class="hll"><span class="linenos"> 6</span><span class="w">     </span><span class="n">OS_DelayTaskUntil</span><span class="p">(</span><span class="o">&amp;</span><span class="n">os_schedulerStartTime</span><span class="p">,</span><span class="w"> </span><span class="n">ftsk_taskDefinitionEngine</span><span class="p">.</span><span class="n">Phase</span><span class="p">);</span><span class="w"></span>
+</span><span class="hll"><span class="linenos"> 7</span><span class="w">     </span><span class="k">while</span><span class="w"> </span><span class="p">(</span><span class="nb">true</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+</span><span class="linenos"> 8</span><span class="w">         </span><span class="cm">/* notify system monitoring that task will be called */</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="w">         </span><span class="n">SYSM_Notify</span><span class="p">(</span><span class="n">SYSM_TASK_ID_ENGINE</span><span class="p">,</span><span class="w"> </span><span class="n">SYSM_NOTIFY_ENTER</span><span class="p">,</span><span class="w"> </span><span class="n">OS_GetTickCount</span><span class="p">());</span><span class="w"></span>
+<span class="linenos">10</span><span class="w">         </span><span class="cm">/* user code implementation */</span><span class="w"></span>
+<span class="hll"><span class="linenos">11</span><span class="w">         </span><span class="n">FTSK_RunUserCodeEngine</span><span class="p">();</span><span class="w"></span>
+</span><span class="linenos">12</span><span class="w">         </span><span class="cm">/* notify system monitoring that task has been called */</span><span class="w"></span>
+<span class="linenos">13</span><span class="w">         </span><span class="n">SYSM_Notify</span><span class="p">(</span><span class="n">SYSM_TASK_ID_ENGINE</span><span class="p">,</span><span class="w"> </span><span class="n">SYSM_NOTIFY_EXIT</span><span class="p">,</span><span class="w"> </span><span class="n">OS_GetTickCount</span><span class="p">());</span><span class="w"></span>
+<span class="linenos">14</span><span class="w">     </span><span class="p">}</span><span class="w"></span>
+<span class="linenos">15</span><span class="w"> </span><span class="p">}</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<p>The other cyclic tasks are basically generated the same way. The main difference is that there is not a separate
+initialization function but one common for all other cyclic tasks. These other cyclic tasks do not start until the Task
+Creator Function <code class="docutils literal notranslate"><span class="pre">FTSK_CreateTaskEngine</span></code> has set the boot state to <code class="docutils literal notranslate"><span class="pre">os_boot</span> <span class="pre">=</span> <span class="pre">OS_ENGINE_RUNNING</span></code> <strong>and</strong> the
+common initialization function for these tasks has finished.</p>
+</div>
+<div class="section" id="task-configuration">
+<span id="ftask-task-configuration"></span><h3><span class="section-number">4.12.2.2. </span>Task Configuration<a class="headerlink" href="#task-configuration" title="Permalink to this headline"></a></h3>
+<p>The tasks are configured in <code class="docutils literal notranslate"><span class="pre">ftask_cfg.c</span></code> regarding their startup phase, cycle time, priority and stack size.</p>
+</div>
+<div class="section" id="special-user-tasks">
+<span id="ftask-special-tasks"></span><h3><span class="section-number">4.12.2.3. </span>Special User Tasks<a class="headerlink" href="#special-user-tasks" title="Permalink to this headline"></a></h3>
+<p>There are four special user functions, three of these should not be modified by
+the user/application ( <code class="docutils literal notranslate"><span class="pre">FTSK_InitializeUserCodeEngine</span></code> and
+<code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeEngine</span></code>, <code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeIdle</span></code>) and one that is for
+user/application code (<code class="docutils literal notranslate"><span class="pre">FTSK_InitializeUserCodePreCyclicTasks</span></code>).
+All tasks share the suffix <code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCode</span></code> for a consistent implementation
+of the Task Creator Functions and are not meant to be changed.</p>
+<div class="section" id="ftsk-initializeusercodeengine">
+<h4><span class="section-number">4.12.2.3.1. </span>FTSK_InitializeUserCodeEngine<a class="headerlink" href="#ftsk-initializeusercodeengine" title="Permalink to this headline"></a></h4>
+<p>Before any tasks can start the database needs to be initialized. The database initialization is done by
+<code class="docutils literal notranslate"><span class="pre">FTSK_InitializeUserCodeEngine()</span></code>.</p>
+</div>
+<div class="section" id="ftsk-runusercodeengine">
+<span id="ftask-special-task-engine"></span><h4><span class="section-number">4.12.2.3.2. </span>FTSK_RunUserCodeEngine<a class="headerlink" href="#ftsk-runusercodeengine" title="Permalink to this headline"></a></h4>
+<p><strong>This task should not be modified.</strong></p>
+<p>This task triggers the database and the system monitoring modules. The database module copies all data from the queue
+into the database variables. The system monitoring checks that all tasks run within their specified time frames.</p>
+</div>
+<div class="section" id="ftsk-runusercodeidle">
+<span id="ftask-special-task-idle"></span><h4><span class="section-number">4.12.2.3.3. </span>FTSK_RunUserCodeIdle<a class="headerlink" href="#ftsk-runusercodeidle" title="Permalink to this headline"></a></h4>
+<p><strong>This task should not be modified.</strong></p>
+<p>This task is bound to the operating system idle hook (<code class="docutils literal notranslate"><span class="pre">vApplicationIdleHook</span></code>).</p>
+</div>
+<div class="section" id="ftsk-initializeusercodeprecyclictasks">
+<h4><span class="section-number">4.12.2.3.4. </span>FTSK_InitializeUserCodePreCyclicTasks<a class="headerlink" href="#ftsk-initializeusercodeprecyclictasks" title="Permalink to this headline"></a></h4>
+<p>Peripherals and resources that need to be usable as soon as the periodic tasks are running are initialized here.</p>
+</div>
+</div>
+<div class="section" id="user-tasks">
+<span id="ftask-user-tasks"></span><h3><span class="section-number">4.12.2.4. </span>User Tasks<a class="headerlink" href="#user-tasks" title="Permalink to this headline"></a></h3>
+<p>The functions shown in <a class="reference internal" href="#ftask-user-code-functions"><span class="std std-numref">Table 4.2</span></a> are provided by the <code class="docutils literal notranslate"><span class="pre">ftask</span></code> module to run user/application
+specific code:</p>
+<table class="colwidths-auto docutils align-default" id="ftask-user-code-functions">
+<caption><span class="caption-number">Table 4.2 </span><span class="caption-text"><code class="docutils literal notranslate"><span class="pre">ftask</span></code> User Code Functions</span><a class="headerlink" href="#ftask-user-code-functions" title="Permalink to this table"></a></caption>
+<thead>
+<tr class="row-odd"><th class="head"><p>Function</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeCyclic1ms</span></code></p></td>
+<td><p>Code that should be run every 1ms</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeAfe</span></code></p></td>
+<td><p>Code for communication with AFE, continuously running task, must be blocked long enough (i.e., during bus communication) to leave CPU time for other tasks</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeCyclic10ms</span></code></p></td>
+<td><p>Code that should be run every 10ms</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeI2c</span></code></p></td>
+<td><p>Code for communication with I2C devices, continuously running task, must be blocked long enough (i.e., during bus communication) to leave CPU time for other tasks</p></td>
+</tr>
+<tr class="row-even"><td><p><code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeCyclic100ms</span></code></p></td>
+<td><p>Code that should be run every 100ms</p></td>
+</tr>
+<tr class="row-odd"><td><p><code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeCyclicAlgorithm100ms</span></code></p></td>
+<td><p>Code that should be run every 100ms, but with a lower priority than <code class="docutils literal notranslate"><span class="pre">FTSK_RunUserCodeCyclic100ms</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="further-reading">
+<h2><span class="section-number">4.12.3. </span>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this headline"></a></h2>
+<p>A How-to is found in <a class="reference internal" href="ftask_how-to.html#how-to-use-the-ftask-module"><span class="std std-ref">How to Use the FTASK Module</span></a>.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../../engine/sys_mon/sys_mon.html" class="btn btn-neutral float-left" title="4.11. System Monitoring Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../os/os.html" class="btn btn-neutral float-right" title="4.13. OS Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

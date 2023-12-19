@@ -1,0 +1,4 @@
+<map id="testSYS_TriggerSoftwareReset" name="testSYS_TriggerSoftwareReset">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,207,32"/>
+<area shape="rect" id="node2" href="$reset_8c.html#a61214f27599c0125bcbb2ee8edf12fd1" title="Trigger a software reset of the BMS." alt="" coords="255,5,433,32"/>
+</map>

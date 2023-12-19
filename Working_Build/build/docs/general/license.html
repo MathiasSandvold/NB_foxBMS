@@ -1,0 +1,3909 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5. License &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="6. Team" href="team.html" />
+    <link rel="prev" title="4. Safety" href="safety/safety.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><span class="section-number">5. </span>License</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/general/license.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="license">
+<span id="id1"></span><h1><span class="section-number">5. </span>License<a class="headerlink" href="#license" title="Permalink to this headline"></a></h1>
+<div class="section" id="foxbms-licenses">
+<h2><span class="section-number">5.1. </span>foxBMS 2 Licenses<a class="headerlink" href="#foxbms-licenses" title="Permalink to this headline"></a></h2>
+<p>The license texts are included verbatim in this documentation.</p>
+<div class="section" id="foxbms-software-license">
+<h3><span class="section-number">5.1.1. </span>foxBMS 2 Software License<a class="headerlink" href="#foxbms-software-license" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>foxBMS 2 software is licensed under the BSD 3-Clause License.</p></li>
+<li><p>The SPDX short identifier is
+<a class="reference external" href="https://spdx.org/licenses/BSD-3-Clause.html">BSD-3-Clause</a>.</p></li>
+</ul>
+<p>The license text is included in this documentation at
+<a class="reference internal" href="#bsd-3-clause-license-bsd-3-clause-new-or-revised-license"><span class="std std-ref">BSD 3-Clause License (BSD 3-Clause “New” or “Revised” License)</span></a>.</p>
+</div>
+<div class="section" id="foxbms-hardware-and-documentation-license">
+<h3><span class="section-number">5.1.2. </span>foxBMS 2 Hardware and Documentation License<a class="headerlink" href="#foxbms-hardware-and-documentation-license" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>foxBMS 2 documentation is licensed under the
+Creative Commons Attribution 4.0 International License.
+The license can be obtained from
+<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">https://creativecommons.org/licenses/by/4.0/</a>.</p></li>
+<li><p>The SPDX short identifier is
+<a class="reference external" href="https://spdx.org/licenses/CC-BY-4.0.html">CC-BY-4.0</a>.</p></li>
+</ul>
+<p>The license text is included in this documentation at
+<a class="reference internal" href="#creative-commons-attribution-4-0-international-license"><span class="std std-ref">Creative Commons Attribution 4.0 International License</span></a>.</p>
+</div>
+<div class="section" id="open-source-hardware-certification">
+<span id="id2"></span><h3><span class="section-number">5.1.3. </span>Open Source Hardware Certification<a class="headerlink" href="#open-source-hardware-certification" title="Permalink to this headline"></a></h3>
+<p>foxBMS 2 has been certified as open source hardware by the
+Open Source Hardware Association under the OSHWA UID
+<a class="reference external" href="https://certification.oshwa.org/de000128.html">DE000128</a>.</p>
+</div>
+<div class="section" id="further-information">
+<h3><span class="section-number">5.1.4. </span>Further Information<a class="headerlink" href="#further-information" title="Permalink to this headline"></a></h3>
+<p>We kindly request you to use one or more of the following phrases to refer to
+foxBMS in your hardware, software, documentation or advertising materials:</p>
+<ul class="simple">
+<li><p>“This product uses parts of foxBMS®”</p></li>
+<li><p>“This product includes parts of foxBMS®”</p></li>
+<li><p>“This product is derived from foxBMS®”</p></li>
+</ul>
+<p>If you use foxBMS in your products, we encourage you to contact us at:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Fraunhofer IISB
+Schottkystrasse 10
+91058 Erlangen, Germany
+mailto:info@foxbms.org
+https://foxbms.org
+</pre></div>
+</div>
+</div>
+<div class="section" id="bsd-3-clause-license-bsd-3-clause-new-or-revised-license">
+<span id="id3"></span><h3><span class="section-number">5.1.5. </span>BSD 3-Clause License (BSD 3-Clause “New” or “Revised” License)<a class="headerlink" href="#bsd-3-clause-license-bsd-3-clause-new-or-revised-license" title="Permalink to this headline"></a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>BSD 3-Clause License (BSD 3-Clause &quot;New&quot; or &quot;Revised&quot; License)
+
+Copyright (c) 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V.
+All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this
+   list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice,
+   this list of conditions and the following disclaimer in the documentation
+   and/or other materials provided with the distribution.
+
+3. Neither the name of the copyright holder nor the names of its
+   contributors may be used to endorse or promote products derived from
+   this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE
+FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER
+CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY,
+OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</pre></div>
+</div>
+</div>
+<div class="section" id="creative-commons-attribution-4-0-international-license">
+<span id="id4"></span><h3><span class="section-number">5.1.6. </span>Creative Commons Attribution 4.0 International License<a class="headerlink" href="#creative-commons-attribution-4-0-international-license" title="Permalink to this headline"></a></h3>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>Creative Commons Attribution 4.0 International License
+
+=======================================================================
+
+Creative Commons Corporation (&quot;Creative Commons&quot;) is not a law firm and
+does not provide legal services or legal advice. Distribution of
+Creative Commons public licenses does not create a lawyer-client or
+other relationship. Creative Commons makes its licenses and related
+information available on an &quot;as-is&quot; basis. Creative Commons gives no
+warranties regarding its licenses, any material licensed under their
+terms and conditions, or any related information. Creative Commons
+disclaims all liability for damages resulting from their use to the
+fullest extent possible.
+
+Using Creative Commons Public Licenses
+
+Creative Commons public licenses provide a standard set of terms and
+conditions that creators and other rights holders may use to share
+original works of authorship and other material subject to copyright
+and certain other rights specified in the public license below. The
+following considerations are for informational purposes only, are not
+exhaustive, and do not form part of our licenses.
+
+     Considerations for licensors: Our public licenses are
+     intended for use by those authorized to give the public
+     permission to use material in ways otherwise restricted by
+     copyright and certain other rights. Our licenses are
+     irrevocable. Licensors should read and understand the terms
+     and conditions of the license they choose before applying it.
+     Licensors should also secure all rights necessary before
+     applying our licenses so that the public can reuse the
+     material as expected. Licensors should clearly mark any
+     material not subject to the license. This includes other CC-
+     licensed material, or material used under an exception or
+     limitation to copyright. More considerations for licensors:
+    wiki.creativecommons.org/Considerations_for_licensors
+
+     Considerations for the public: By using one of our public
+     licenses, a licensor grants the public permission to use the
+     licensed material under specified terms and conditions. If
+     the licensor&#39;s permission is not necessary for any reason--for
+     example, because of any applicable exception or limitation to
+     copyright--then that use is not regulated by the license. Our
+     licenses grant only permissions under copyright and certain
+     other rights that a licensor has authority to grant. Use of
+     the licensed material may still be restricted for other
+     reasons, including because others have copyright or other
+     rights in the material. A licensor may make special requests,
+     such as asking that all changes be marked or described.
+     Although not required by our licenses, you are encouraged to
+     respect those requests where reasonable. More considerations
+     for the public:
+    wiki.creativecommons.org/Considerations_for_licensees
+
+=======================================================================
+
+Creative Commons Attribution 4.0 International Public License
+
+By exercising the Licensed Rights (defined below), You accept and agree
+to be bound by the terms and conditions of this Creative Commons
+Attribution 4.0 International Public License (&quot;Public License&quot;). To the
+extent this Public License may be interpreted as a contract, You are
+granted the Licensed Rights in consideration of Your acceptance of
+these terms and conditions, and the Licensor grants You such rights in
+consideration of benefits the Licensor receives from making the
+Licensed Material available under these terms and conditions.
+
+
+Section 1 -- Definitions.
+
+  a. Adapted Material means material subject to Copyright and Similar
+     Rights that is derived from or based upon the Licensed Material
+     and in which the Licensed Material is translated, altered,
+     arranged, transformed, or otherwise modified in a manner requiring
+     permission under the Copyright and Similar Rights held by the
+     Licensor. For purposes of this Public License, where the Licensed
+     Material is a musical work, performance, or sound recording,
+     Adapted Material is always produced where the Licensed Material is
+     synched in timed relation with a moving image.
+
+  b. Adapter&#39;s License means the license You apply to Your Copyright
+     and Similar Rights in Your contributions to Adapted Material in
+     accordance with the terms and conditions of this Public License.
+
+  c. Copyright and Similar Rights means copyright and/or similar rights
+     closely related to copyright including, without limitation,
+     performance, broadcast, sound recording, and Sui Generis Database
+     Rights, without regard to how the rights are labeled or
+     categorized. For purposes of this Public License, the rights
+     specified in Section 2(b)(1)-(2) are not Copyright and Similar
+     Rights.
+
+  d. Effective Technological Measures means those measures that, in the
+     absence of proper authority, may not be circumvented under laws
+     fulfilling obligations under Article 11 of the WIPO Copyright
+     Treaty adopted on December 20, 1996, and/or similar international
+     agreements.
+
+  e. Exceptions and Limitations means fair use, fair dealing, and/or
+     any other exception or limitation to Copyright and Similar Rights
+     that applies to Your use of the Licensed Material.
+
+  f. Licensed Material means the artistic or literary work, database,
+     or other material to which the Licensor applied this Public
+     License.
+
+  g. Licensed Rights means the rights granted to You subject to the
+     terms and conditions of this Public License, which are limited to
+     all Copyright and Similar Rights that apply to Your use of the
+     Licensed Material and that the Licensor has authority to license.
+
+  h. Licensor means the individual(s) or entity(ies) granting rights
+     under this Public License.
+
+  i. Share means to provide material to the public by any means or
+     process that requires permission under the Licensed Rights, such
+     as reproduction, public display, public performance, distribution,
+     dissemination, communication, or importation, and to make material
+     available to the public including in ways that members of the
+     public may access the material from a place and at a time
+     individually chosen by them.
+
+  j. Sui Generis Database Rights means rights other than copyright
+     resulting from Directive 96/9/EC of the European Parliament and of
+     the Council of 11 March 1996 on the legal protection of databases,
+     as amended and/or succeeded, as well as other essentially
+     equivalent rights anywhere in the world.
+
+  k. You means the individual or entity exercising the Licensed Rights
+     under this Public License. Your has a corresponding meaning.
+
+
+Section 2 -- Scope.
+
+  a. License grant.
+
+       1. Subject to the terms and conditions of this Public License,
+          the Licensor hereby grants You a worldwide, royalty-free,
+          non-sublicensable, non-exclusive, irrevocable license to
+          exercise the Licensed Rights in the Licensed Material to:
+
+            a. reproduce and Share the Licensed Material, in whole or
+               in part; and
+
+            b. produce, reproduce, and Share Adapted Material.
+
+       2. Exceptions and Limitations. For the avoidance of doubt, where
+          Exceptions and Limitations apply to Your use, this Public
+          License does not apply, and You do not need to comply with
+          its terms and conditions.
+
+       3. Term. The term of this Public License is specified in Section
+          6(a).
+
+       4. Media and formats; technical modifications allowed. The
+          Licensor authorizes You to exercise the Licensed Rights in
+          all media and formats whether now known or hereafter created,
+          and to make technical modifications necessary to do so. The
+          Licensor waives and/or agrees not to assert any right or
+          authority to forbid You from making technical modifications
+          necessary to exercise the Licensed Rights, including
+          technical modifications necessary to circumvent Effective
+          Technological Measures. For purposes of this Public License,
+          simply making modifications authorized by this Section 2(a)
+          (4) never produces Adapted Material.
+
+       5. Downstream recipients.
+
+            a. Offer from the Licensor -- Licensed Material. Every
+               recipient of the Licensed Material automatically
+               receives an offer from the Licensor to exercise the
+               Licensed Rights under the terms and conditions of this
+               Public License.
+
+            b. No downstream restrictions. You may not offer or impose
+               any additional or different terms or conditions on, or
+               apply any Effective Technological Measures to, the
+               Licensed Material if doing so restricts exercise of the
+               Licensed Rights by any recipient of the Licensed
+               Material.
+
+       6. No endorsement. Nothing in this Public License constitutes or
+          may be construed as permission to assert or imply that You
+          are, or that Your use of the Licensed Material is, connected
+          with, or sponsored, endorsed, or granted official status by,
+          the Licensor or others designated to receive attribution as
+          provided in Section 3(a)(1)(A)(i).
+
+  b. Other rights.
+
+       1. Moral rights, such as the right of integrity, are not
+          licensed under this Public License, nor are publicity,
+          privacy, and/or other similar personality rights; however, to
+          the extent possible, the Licensor waives and/or agrees not to
+          assert any such rights held by the Licensor to the limited
+          extent necessary to allow You to exercise the Licensed
+          Rights, but not otherwise.
+
+       2. Patent and trademark rights are not licensed under this
+          Public License.
+
+       3. To the extent possible, the Licensor waives any right to
+          collect royalties from You for the exercise of the Licensed
+          Rights, whether directly or through a collecting society
+          under any voluntary or waivable statutory or compulsory
+          licensing scheme. In all other cases the Licensor expressly
+          reserves any right to collect such royalties.
+
+
+Section 3 -- License Conditions.
+
+Your exercise of the Licensed Rights is expressly made subject to the
+following conditions.
+
+  a. Attribution.
+
+       1. If You Share the Licensed Material (including in modified
+          form), You must:
+
+            a. retain the following if it is supplied by the Licensor
+               with the Licensed Material:
+
+                 i. identification of the creator(s) of the Licensed
+                    Material and any others designated to receive
+                    attribution, in any reasonable manner requested by
+                    the Licensor (including by pseudonym if
+                    designated);
+
+                ii. a copyright notice;
+
+               iii. a notice that refers to this Public License;
+
+                iv. a notice that refers to the disclaimer of
+                    warranties;
+
+                 v. a URI or hyperlink to the Licensed Material to the
+                    extent reasonably practicable;
+
+            b. indicate if You modified the Licensed Material and
+               retain an indication of any previous modifications; and
+
+            c. indicate the Licensed Material is licensed under this
+               Public License, and include the text of, or the URI or
+               hyperlink to, this Public License.
+
+       2. You may satisfy the conditions in Section 3(a)(1) in any
+          reasonable manner based on the medium, means, and context in
+          which You Share the Licensed Material. For example, it may be
+          reasonable to satisfy the conditions by providing a URI or
+          hyperlink to a resource that includes the required
+          information.
+
+       3. If requested by the Licensor, You must remove any of the
+          information required by Section 3(a)(1)(A) to the extent
+          reasonably practicable.
+
+       4. If You Share Adapted Material You produce, the Adapter&#39;s
+          License You apply must not prevent recipients of the Adapted
+          Material from complying with this Public License.
+
+
+Section 4 -- Sui Generis Database Rights.
+
+Where the Licensed Rights include Sui Generis Database Rights that
+apply to Your use of the Licensed Material:
+
+  a. for the avoidance of doubt, Section 2(a)(1) grants You the right
+     to extract, reuse, reproduce, and Share all or a substantial
+     portion of the contents of the database;
+
+  b. if You include all or a substantial portion of the database
+     contents in a database in which You have Sui Generis Database
+     Rights, then the database in which You have Sui Generis Database
+     Rights (but not its individual contents) is Adapted Material; and
+
+  c. You must comply with the conditions in Section 3(a) if You Share
+     all or a substantial portion of the contents of the database.
+
+For the avoidance of doubt, this Section 4 supplements and does not
+replace Your obligations under this Public License where the Licensed
+Rights include other Copyright and Similar Rights.
+
+
+Section 5 -- Disclaimer of Warranties and Limitation of Liability.
+
+  a. UNLESS OTHERWISE SEPARATELY UNDERTAKEN BY THE LICENSOR, TO THE
+     EXTENT POSSIBLE, THE LICENSOR OFFERS THE LICENSED MATERIAL AS-IS
+     AND AS-AVAILABLE, AND MAKES NO REPRESENTATIONS OR WARRANTIES OF
+     ANY KIND CONCERNING THE LICENSED MATERIAL, WHETHER EXPRESS,
+     IMPLIED, STATUTORY, OR OTHER. THIS INCLUDES, WITHOUT LIMITATION,
+     WARRANTIES OF TITLE, MERCHANTABILITY, FITNESS FOR A PARTICULAR
+     PURPOSE, NON-INFRINGEMENT, ABSENCE OF LATENT OR OTHER DEFECTS,
+     ACCURACY, OR THE PRESENCE OR ABSENCE OF ERRORS, WHETHER OR NOT
+     KNOWN OR DISCOVERABLE. WHERE DISCLAIMERS OF WARRANTIES ARE NOT
+     ALLOWED IN FULL OR IN PART, THIS DISCLAIMER MAY NOT APPLY TO YOU.
+
+  b. TO THE EXTENT POSSIBLE, IN NO EVENT WILL THE LICENSOR BE LIABLE
+     TO YOU ON ANY LEGAL THEORY (INCLUDING, WITHOUT LIMITATION,
+     NEGLIGENCE) OR OTHERWISE FOR ANY DIRECT, SPECIAL, INDIRECT,
+     INCIDENTAL, CONSEQUENTIAL, PUNITIVE, EXEMPLARY, OR OTHER LOSSES,
+     COSTS, EXPENSES, OR DAMAGES ARISING OUT OF THIS PUBLIC LICENSE OR
+     USE OF THE LICENSED MATERIAL, EVEN IF THE LICENSOR HAS BEEN
+     ADVISED OF THE POSSIBILITY OF SUCH LOSSES, COSTS, EXPENSES, OR
+     DAMAGES. WHERE A LIMITATION OF LIABILITY IS NOT ALLOWED IN FULL OR
+     IN PART, THIS LIMITATION MAY NOT APPLY TO YOU.
+
+  c. The disclaimer of warranties and limitation of liability provided
+     above shall be interpreted in a manner that, to the extent
+     possible, most closely approximates an absolute disclaimer and
+     waiver of all liability.
+
+
+Section 6 -- Term and Termination.
+
+  a. This Public License applies for the term of the Copyright and
+     Similar Rights licensed here. However, if You fail to comply with
+     this Public License, then Your rights under this Public License
+     terminate automatically.
+
+  b. Where Your right to use the Licensed Material has terminated under
+     Section 6(a), it reinstates:
+
+       1. automatically as of the date the violation is cured, provided
+          it is cured within 30 days of Your discovery of the
+          violation; or
+
+       2. upon express reinstatement by the Licensor.
+
+     For the avoidance of doubt, this Section 6(b) does not affect any
+     right the Licensor may have to seek remedies for Your violations
+     of this Public License.
+
+  c. For the avoidance of doubt, the Licensor may also offer the
+     Licensed Material under separate terms or conditions or stop
+     distributing the Licensed Material at any time; however, doing so
+     will not terminate this Public License.
+
+  d. Sections 1, 5, 6, 7, and 8 survive termination of this Public
+     License.
+
+
+Section 7 -- Other Terms and Conditions.
+
+  a. The Licensor shall not be bound by any additional or different
+     terms or conditions communicated by You unless expressly agreed.
+
+  b. Any arrangements, understandings, or agreements regarding the
+     Licensed Material not stated herein are separate from and
+     independent of the terms and conditions of this Public License.
+
+
+Section 8 -- Interpretation.
+
+  a. For the avoidance of doubt, this Public License does not, and
+     shall not be interpreted to, reduce, limit, restrict, or impose
+     conditions on any use of the Licensed Material that could lawfully
+     be made without permission under this Public License.
+
+  b. To the extent possible, if any provision of this Public License is
+     deemed unenforceable, it shall be automatically reformed to the
+     minimum extent necessary to make it enforceable. If the provision
+     cannot be reformed, it shall be severed from this Public License
+     without affecting the enforceability of the remaining terms and
+     conditions.
+
+  c. No term or condition of this Public License will be waived and no
+     failure to comply consented to unless expressly agreed to by the
+     Licensor.
+
+  d. Nothing in this Public License constitutes or may be interpreted
+     as a limitation upon, or waiver of, any privileges and immunities
+     that apply to the Licensor or You, including from the legal
+     processes of any jurisdiction or authority.
+
+
+=======================================================================
+
+Creative Commons is not a party to its public
+licenses. Notwithstanding, Creative Commons may elect to apply one of
+its public licenses to material it publishes and in those instances
+will be considered the “Licensor.” The text of the Creative Commons
+public licenses is dedicated to the public domain under the CC0 Public
+Domain Dedication. Except for the limited purpose of indicating that
+material is shared under a Creative Commons public license or as
+otherwise permitted by the Creative Commons policies published at
+creativecommons.org/policies, Creative Commons does not authorize the
+use of the trademark &quot;Creative Commons&quot; or any other trademark or logo
+of Creative Commons without its prior written consent including,
+without limitation, in connection with any unauthorized modifications
+to any of its public licenses or any other arrangements,
+understandings, or agreements concerning use of licensed material. For
+the avoidance of doubt, this paragraph does not form part of the
+public licenses.
+
+Creative Commons may be contacted at creativecommons.org.
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="third-party-licenses">
+<h2><span class="section-number">5.2. </span>Third Party Licenses<a class="headerlink" href="#third-party-licenses" title="Permalink to this headline"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This is not legal advice.
+The license list hereafter shows the licenses used in foxBMS 2 to our best
+knowledge.</p>
+</div>
+<p>This is a list of third party licenses used by foxBMS 2.
+This is split into licenses for third party sources and software that are
+included within the repository and software that must be installed in order to
+develop BMS applications within or with foxBMS 2.</p>
+<p>Software listed under <a class="reference internal" href="#third-party-software">Third Party Software</a> are typically only used for
+foxBMS 2 development and do not need to be altered.</p>
+<div class="section" id="third-party-sources-and-software">
+<h3><span class="section-number">5.2.1. </span>Third Party Sources and Software<a class="headerlink" href="#third-party-sources-and-software" title="Permalink to this headline"></a></h3>
+<div class="section" id="id5">
+<h4><span class="section-number">5.2.1.1. </span>Ceedling<a class="headerlink" href="#id5" title="Permalink to this headline"></a></h4>
+<table class="colwidths-given docutils align-default" id="license-info-ceedling">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Location in repository</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">./tools/vendor/ceedling</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>License</p></td>
+<td><p>MIT-like License</p></td>
+</tr>
+<tr class="row-odd"><td><p>License URL</p></td>
+<td><p><a class="reference external" href="https://github.com/ThrowTheSwitch/Ceedling/blob/v0.31.1/license.txt">https://github.com/ThrowTheSwitch/Ceedling/blob/v0.31.1/license.txt</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Latest license check</p></td>
+<td><p>2021-07-21</p></td>
+</tr>
+<tr class="row-odd"><td><p>Website</p></td>
+<td><p><a class="reference external" href="https://github.com/ThrowTheSwitch/Ceedling">https://github.com/ThrowTheSwitch/Ceedling</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Gem</p></td>
+<td><p><a class="reference external" href="https://rubygems.org/gems/ceedling">https://rubygems.org/gems/ceedling</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="freertos">
+<h4><span class="section-number">5.2.1.2. </span>FreeRTOS<a class="headerlink" href="#freertos" title="Permalink to this headline"></a></h4>
+<table class="colwidths-given docutils align-default" id="license-info-freertos">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Location in repository</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">./src/os/freertos</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>License</p></td>
+<td><p>MIT License</p></td>
+</tr>
+<tr class="row-odd"><td><p>SPDX short identifier</p></td>
+<td><p>MIT</p></td>
+</tr>
+<tr class="row-even"><td><p>License URL</p></td>
+<td><p><a class="reference external" href="https://www.freertos.org/a00114.html">https://www.freertos.org/a00114.html</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Latest license check</p></td>
+<td><p>2022-01-17</p></td>
+</tr>
+<tr class="row-even"><td><p>Website</p></td>
+<td><p><a class="reference external" href="https://www.freertos.org/">https://www.freertos.org/</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="waf">
+<h4><span class="section-number">5.2.1.3. </span>WAF<a class="headerlink" href="#waf" title="Permalink to this headline"></a></h4>
+<div class="section" id="binary">
+<h5><span class="section-number">5.2.1.3.1. </span>Binary<a class="headerlink" href="#binary" title="Permalink to this headline"></a></h5>
+<table class="colwidths-given docutils align-default" id="license-info-waf-binary">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Location in repository</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">./tools/waf</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>License</p></td>
+<td><p>BSD</p></td>
+</tr>
+<tr class="row-odd"><td><p>License URL</p></td>
+<td><p><a class="reference external" href="https://waf.io/book/#_license_and_redistribution">https://waf.io/book/#_license_and_redistribution</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Latest license check</p></td>
+<td><p>2020-06-23</p></td>
+</tr>
+<tr class="row-odd"><td><p>Website</p></td>
+<td><p><a class="reference external" href="https://waf.io/">https://waf.io/</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="unit-tests">
+<h5><span class="section-number">5.2.1.3.2. </span>Unit Tests<a class="headerlink" href="#unit-tests" title="Permalink to this headline"></a></h5>
+<table class="colwidths-given docutils align-default" id="license-info-waf-unit-tests">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Location in repository</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">./tests/scripts/waf-core</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>License</p></td>
+<td><p>BSD</p></td>
+</tr>
+<tr class="row-odd"><td><p>License URL</p></td>
+<td><p><a class="reference external" href="https://gitlab.com/ita1024/waf/-/blob/3f8bb163290eb8fbfc3b26d61dd04aa5a6a29d4a/waf-light#L6-30">https://gitlab.com/ita1024/waf/-/blob/3f8bb163290eb8fbfc3b26d61dd04aa5a6a29d4a/waf-light#L6-30</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Latest license check</p></td>
+<td><p>2021-03-11</p></td>
+</tr>
+<tr class="row-odd"><td><p>Website</p></td>
+<td><p><a class="reference external" href="https://waf.io/">https://waf.io/</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="third-party-software">
+<h3><span class="section-number">5.2.2. </span>Third Party Software<a class="headerlink" href="#third-party-software" title="Permalink to this headline"></a></h3>
+<div class="section" id="ti-code-composer-studio">
+<h4><span class="section-number">5.2.2.1. </span>Texas Instruments Code Composer Studio<a class="headerlink" href="#ti-code-composer-studio" title="Permalink to this headline"></a></h4>
+<table class="colwidths-given docutils align-default" id="license-info-ti-ccs">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>License</p></td>
+<td><p>Modified TSPA</p></td>
+</tr>
+<tr class="row-even"><td><p>License File</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&lt;ccs-install-dir&gt;/ccs/doc/TSPA_Modified.pdf</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Latest license check</p></td>
+<td><p>2020-06-23</p></td>
+</tr>
+<tr class="row-even"><td><p>Website</p></td>
+<td><p><a class="reference external" href="https://www.ti.com/tool/CCSTUDIO">https://www.ti.com/tool/CCSTUDIO</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ti-halcogen">
+<h4><span class="section-number">5.2.2.2. </span>Texas Instruments HALCoGen<a class="headerlink" href="#ti-halcogen" title="Permalink to this headline"></a></h4>
+<table class="colwidths-given docutils align-default" id="license-info-ti-hcg">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>License File</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">&lt;halcogen-install-dir&gt;/Production_License_Agreement_062612.pdf</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Latest license check</p></td>
+<td><p>2020-06-23</p></td>
+</tr>
+<tr class="row-odd"><td><p>Website</p></td>
+<td><p><a class="reference external" href="https://www.ti.com/tool/HALCOGEN">https://www.ti.com/tool/HALCOGEN</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id6">
+<h4><span class="section-number">5.2.2.3. </span>Miniconda<a class="headerlink" href="#id6" title="Permalink to this headline"></a></h4>
+<table class="colwidths-given docutils align-default" id="license-info-miniconda">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>License</p></td>
+<td><p>3-clause BSD</p></td>
+</tr>
+<tr class="row-even"><td><p>SPDX short identifier</p></td>
+<td><p>BSD-3-Clause</p></td>
+</tr>
+<tr class="row-odd"><td><p>License URL</p></td>
+<td><p><a class="reference external" href="https://docs.conda.io/en/latest/license.html">https://docs.conda.io/en/latest/license.html</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Latest license check</p></td>
+<td><p>2020-06-23</p></td>
+</tr>
+<tr class="row-odd"><td><p>Website</p></td>
+<td><p><a class="reference external" href="https://docs.conda.io/en/latest/miniconda.html">https://docs.conda.io/en/latest/miniconda.html</a></p></td>
+</tr>
+</tbody>
+</table>
+<p>Miniconda ships a <a class="reference external" href="https://www.python.org">Python</a> interpreter.
+The Python interpreter license is found in
+<code class="docutils literal notranslate"><span class="pre">&lt;miniconda-install-dir&gt;/LICENSE_PYTHON.txt</span></code>.</p>
+<p>The conda environments shipped within the foxBMS 2 repository
+(<code class="docutils literal notranslate"><span class="pre">conf/enc/conda_env_win32.yaml</span></code>) specifies a couple of conda and pip
+packages.
+These packages and their licenses are listed in
+<a class="reference internal" href="#license-info-packages-conda-env-win32"><span class="std std-numref">Table 5.1</span></a> and
+<a class="reference internal" href="#license-info-packages-conda-env-linux"><span class="std std-numref">Table 5.2</span></a>.
+This list is generated based on <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">list</span> <span class="pre">--show-channel-urls</span></code>.</p>
+<ul class="simple">
+<li><p>For <code class="docutils literal notranslate"><span class="pre">pypi</span></code> packages the license information is taken from
+<a class="reference external" href="https://pypi.org/">https://pypi.org/</a>.</p></li>
+<li><p>For conda packages the  license information is obtained by running
+<code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">info</span> <span class="pre">package_name</span> <span class="pre">--info</span></code> or directly looked up in the conda build
+recipe.</p></li>
+<li><p>As a help for updating the list you can call
+<code class="docutils literal notranslate"><span class="pre">./tools/utils/bash/run-python-script.sh</span> <span class="pre">./tools/utils/generate_license_list.py</span> <span class="pre">-f</span> <span class="pre">./docs/general/license-tables/license-info_packages-conda-env-win32.csv</span> <span class="pre">&gt;</span> <span class="pre">./docs/general/license-tables/license-info_packages-conda-env-new.csv</span></code>.</p></li>
+</ul>
+<table class="docutils align-default" id="license-info-packages-conda-env-win32">
+<caption><span class="caption-number">Table 5.1 </span><span class="caption-text">Conda and pip packages and licenses in the Windows environment</span><a class="headerlink" href="#license-info-packages-conda-env-win32" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Version</p></th>
+<th class="head"><p>Build</p></th>
+<th class="head"><p>Channel</p></th>
+<th class="head"><p>License</p></th>
+<th class="head"><p>Latest license check</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>alabaster</p></td>
+<td><p>0.7.12</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>appdirs</p></td>
+<td><p>1.4.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>argon2-cffi</p></td>
+<td><p>21.1.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>argparse-addons</p></td>
+<td><p>0.7.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>arpeggio</p></td>
+<td><p>1.10.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>astroid</p></td>
+<td><p>2.8.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>GNU Lesser General Public License v2 (LGPLv2)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>attrs</p></td>
+<td><p>21.2.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>babel</p></td>
+<td><p>2.9.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>backcall</p></td>
+<td><p>0.2.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>beautifulsoup4</p></td>
+<td><p>4.10.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>bitstruct</p></td>
+<td><p>8.11.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>black</p></td>
+<td><p>21.10b0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>bleach</p></td>
+<td><p>4.1.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>bokeh</p></td>
+<td><p>2.4.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>bottle</p></td>
+<td><p>0.12.19</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>ca-certificates</p></td>
+<td><p>2021.10.26</p></td>
+<td><p>haa95532_2</p></td>
+<td><p>defaults</p></td>
+<td><p>MPL 2.0</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>cantools</p></td>
+<td><p>36.5.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>certifi</p></td>
+<td><p>2021.10.8</p></td>
+<td><p>py39haa95532_0</p></td>
+<td><p>defaults</p></td>
+<td><p>Mozilla Public License 2.0 (MPL 2.0)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>cffconvert</p></td>
+<td><p>2.0.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>cffi</p></td>
+<td><p>1.15.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>charset-normalizer</p></td>
+<td><p>2.0.7</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>click</p></td>
+<td><p>8.0.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>cloudpickle</p></td>
+<td><p>2.0.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>colorama</p></td>
+<td><p>0.4.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>console_shortcut</p></td>
+<td><p>0.1.1</p></td>
+<td><p>4</p></td>
+<td><p>defaults</p></td>
+<td><p>BSD</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-odd"><td><p>coverage</p></td>
+<td><p>6.1.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>crcmod</p></td>
+<td><p>1.7</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>cycler</p></td>
+<td><p>0.11.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>dask</p></td>
+<td><p>2021.11.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>debugpy</p></td>
+<td><p>1.5.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Eclipse Public License 2.0 (EPL-2.0), MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>decorator</p></td>
+<td><p>5.1.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>defusedxml</p></td>
+<td><p>0.7.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Python Software Foundation License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>diskcache</p></td>
+<td><p>5.2.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>docopt</p></td>
+<td><p>0.6.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>docutils</p></td>
+<td><p>0.16</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License, GNU General Public License (GPL), Public Domain, Python Software Foundation License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>doorstop</p></td>
+<td><p>2.2b5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>GNU Lesser General Public License v3 (LGPLv3), Other/Proprietary License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>doxygen</p></td>
+<td><p>1.9.1</p></td>
+<td><p>1</p></td>
+<td><p>foxbms</p></td>
+<td><p>GPLv2</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-odd"><td><p>entrypoints</p></td>
+<td><p>0.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>et-xmlfile</p></td>
+<td><p>1.1.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>filterpy</p></td>
+<td><p>1.4.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>fsspec</p></td>
+<td><p>2021.11.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>gcovr</p></td>
+<td><p>5.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>gitdb</p></td>
+<td><p>4.0.9</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>gitpython</p></td>
+<td><p>3.1.24</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>gprof2dot</p></td>
+<td><p>2021.2.21</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>GNU Lesser General Public License v3 or later (LGPLv3+)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>graphviz</p></td>
+<td><p>2.38</p></td>
+<td><p>hfd603c8_2</p></td>
+<td><p>defaults</p></td>
+<td><p>EPL v1.0</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>httplib2</p></td>
+<td><p>0.20.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>idna</p></td>
+<td><p>3.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>imagesize</p></td>
+<td><p>1.3.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>ipykernel</p></td>
+<td><p>6.5.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>ipython</p></td>
+<td><p>7.29.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>ipython-genutils</p></td>
+<td><p>0.2.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>ipywidgets</p></td>
+<td><p>7.6.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>isort</p></td>
+<td><p>5.10.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>jdcal</p></td>
+<td><p>1.4.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>jedi</p></td>
+<td><p>0.18.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>jinja2</p></td>
+<td><p>2.11.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>joblib</p></td>
+<td><p>1.1.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>jsonschema</p></td>
+<td><p>3.2.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>jupyter</p></td>
+<td><p>1.0.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>jupyter-client</p></td>
+<td><p>7.0.6</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>jupyter-console</p></td>
+<td><p>6.4.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>jupyter-core</p></td>
+<td><p>4.9.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>jupyterlab-pygments</p></td>
+<td><p>0.1.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>jupyterlab-widgets</p></td>
+<td><p>1.0.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>kiwisolver</p></td>
+<td><p>1.3.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>latexcodec</p></td>
+<td><p>2.0.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>lazy-object-proxy</p></td>
+<td><p>1.6.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>locket</p></td>
+<td><p>0.2.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>lxml</p></td>
+<td><p>4.6.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>markdown</p></td>
+<td><p>3.3.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>markupsafe</p></td>
+<td><p>2.0.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>matplotlib</p></td>
+<td><p>3.4.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Python Software Foundation License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>matplotlib-inline</p></td>
+<td><p>0.1.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD 3-Clause</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>mccabe</p></td>
+<td><p>0.6.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>mistune</p></td>
+<td><p>0.8.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>mypy</p></td>
+<td><p>0.910</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>mypy-extensions</p></td>
+<td><p>0.4.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>nbclient</p></td>
+<td><p>0.5.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>nbconvert</p></td>
+<td><p>6.2.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>nbformat</p></td>
+<td><p>5.1.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>nest-asyncio</p></td>
+<td><p>1.5.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>notebook</p></td>
+<td><p>6.4.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>numpy</p></td>
+<td><p>1.21.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>openpyxl</p></td>
+<td><p>2.6.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>openssl</p></td>
+<td><p>1.1.1l</p></td>
+<td><p>h2bbff1b_0</p></td>
+<td><p>defaults</p></td>
+<td><p>OpenSSL</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>packaging</p></td>
+<td><p>21.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License, BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pandas</p></td>
+<td><p>1.3.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pandas-stubs</p></td>
+<td><p>1.2.0.37</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pandoc</p></td>
+<td><p>2.12</p></td>
+<td><p>haa95532_0</p></td>
+<td><p>defaults</p></td>
+<td><p>GPL-2.0</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>pandocfilters</p></td>
+<td><p>1.5.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>parso</p></td>
+<td><p>0.8.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>partd</p></td>
+<td><p>1.2.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pathspec</p></td>
+<td><p>0.9.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Mozilla Public License 2.0 (MPL 2.0)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>patsy</p></td>
+<td><p>0.5.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pickleshare</p></td>
+<td><p>0.7.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pillow</p></td>
+<td><p>8.4.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Historical Permission Notice and Disclaimer (HPND)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pip</p></td>
+<td><p>21.2.4</p></td>
+<td><p>py39haa95532_0</p></td>
+<td><p>defaults</p></td>
+<td><p>MIT</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>pip-licenses</p></td>
+<td><p>3.5.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License (MIT License)</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-odd"><td><p>plantuml</p></td>
+<td><p>0.3.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>plantuml-markdown</p></td>
+<td><p>3.4.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>platformdirs</p></td>
+<td><p>2.4.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>plotly</p></td>
+<td><p>5.3.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>powershell_shortcut</p></td>
+<td><p>0.0.1</p></td>
+<td><p>3</p></td>
+<td><p>defaults</p></td>
+<td><p>BSD</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>prometheus-client</p></td>
+<td><p>0.12.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>prompt-toolkit</p></td>
+<td><p>3.0.22</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>psutil</p></td>
+<td><p>5.8.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>ptable</p></td>
+<td><p>0.9.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License (BSD (3 clause))</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>pybtex</p></td>
+<td><p>0.24.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pybtex-docutils</p></td>
+<td><p>1.0.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pycparser</p></td>
+<td><p>2.21</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pyenchant</p></td>
+<td><p>3.2.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>GNU Library or Lesser General Public License (LGPL)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pygments</p></td>
+<td><p>2.10.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pykwalify</p></td>
+<td><p>1.8.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pylint</p></td>
+<td><p>2.11.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>GNU General Public License v2 (GPLv2)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pyparsing</p></td>
+<td><p>2.4.7</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pyrsistent</p></td>
+<td><p>0.18.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pyserial</p></td>
+<td><p>3.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pysimplegui</p></td>
+<td><p>4.55.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>GNU Lesser General Public License v3 or later (LGPLv3+)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>python</p></td>
+<td><p>3.9.7</p></td>
+<td><p>h6244533_1</p></td>
+<td><p>defaults</p></td>
+<td><p>PSF</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>python-can</p></td>
+<td><p>4.0.0.dev2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>GNU Lesser General Public License v3 (LGPLv3)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>python-datauri</p></td>
+<td><p>0.2.9</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>python-dateutil</p></td>
+<td><p>2.8.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License, BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>python-lin</p></td>
+<td><p>0.1.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>python-markdown-math</p></td>
+<td><p>0.6</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>python-uds</p></td>
+<td><p>1.0.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pytz</p></td>
+<td><p>2021.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pyvisa</p></td>
+<td><p>1.11.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pywin32</p></td>
+<td><p>228</p></td>
+<td><p>py39hbaba5e8_1</p></td>
+<td><p>defaults</p></td>
+<td><p>Python Software Foundation License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pywinpty</p></td>
+<td><p>1.1.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pyyaml</p></td>
+<td><p>5.4.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pyzmq</p></td>
+<td><p>22.3.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License, GNU Library or Lesser General Public License (LGPL)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>qtconsole</p></td>
+<td><p>5.2.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>qtpy</p></td>
+<td><p>1.11.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>regex</p></td>
+<td><p>2021.11.10</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>requests</p></td>
+<td><p>2.26.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>requests-file</p></td>
+<td><p>1.5.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>rope</p></td>
+<td><p>0.21.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>GNU Lesser General Public License v3 or later (LGPLv3+)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>rsinstrument</p></td>
+<td><p>1.19.0.75</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>ruamel-yaml</p></td>
+<td><p>0.17.17</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>ruamel-yaml-clib</p></td>
+<td><p>0.2.6</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>scikit-learn</p></td>
+<td><p>1.0.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>new BSD</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>scipy</p></td>
+<td><p>1.7.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>seaborn</p></td>
+<td><p>0.11.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>send2trash</p></td>
+<td><p>1.8.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>setuptools</p></td>
+<td><p>58.0.4</p></td>
+<td><p>py39haa95532_0</p></td>
+<td><p>defaults</p></td>
+<td><p>MIT</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>six</p></td>
+<td><p>1.16.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>smmap</p></td>
+<td><p>5.0.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>snowballstemmer</p></td>
+<td><p>2.1.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>soupsieve</p></td>
+<td><p>2.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinx</p></td>
+<td><p>4.3.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sphinx-copybutton</p></td>
+<td><p>0.3.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinx-panels</p></td>
+<td><p>0.6.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sphinx-plotly-directive</p></td>
+<td><p>0.1.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinx-rtd-theme</p></td>
+<td><p>1.0.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sphinxcontrib-applehelp</p></td>
+<td><p>1.0.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinxcontrib-bibtex</p></td>
+<td><p>2.4.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sphinxcontrib-devhelp</p></td>
+<td><p>1.0.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinxcontrib-htmlhelp</p></td>
+<td><p>2.0.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sphinxcontrib-jsmath</p></td>
+<td><p>1.0.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinxcontrib-mermaid</p></td>
+<td><p>0.7.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sphinxcontrib-needs</p></td>
+<td><p>0.7.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinxcontrib-plantuml</p></td>
+<td><p>0.21</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sphinxcontrib-programoutput</p></td>
+<td><p>0.17</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinxcontrib-qthelp</p></td>
+<td><p>1.0.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sphinxcontrib-serializinghtml</p></td>
+<td><p>1.1.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinxcontrib-spelling</p></td>
+<td><p>7.2.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sqlite</p></td>
+<td><p>3.36.0</p></td>
+<td><p>h2bbff1b_0</p></td>
+<td><p>defaults</p></td>
+<td><p>Public-Domain (<a class="reference external" href="http://www.sqlite.org/copyright.html">http://www.sqlite.org/copyright.html</a>)</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>statsmodels</p></td>
+<td><p>0.13.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>strictdoc</p></td>
+<td><p>0.0.17</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Other/Proprietary License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>tabulate</p></td>
+<td><p>0.8.9</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>tenacity</p></td>
+<td><p>8.0.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>terminado</p></td>
+<td><p>0.12.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>testpath</p></td>
+<td><p>0.5.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>textparser</p></td>
+<td><p>0.23.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>textx</p></td>
+<td><p>2.3.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>threadpoolctl</p></td>
+<td><p>3.0.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>toml</p></td>
+<td><p>0.10.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>tomli</p></td>
+<td><p>1.2.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>toolz</p></td>
+<td><p>0.11.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>tornado</p></td>
+<td><p>6.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>traitlets</p></td>
+<td><p>5.1.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>typing-extensions</p></td>
+<td><p>3.10.0.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Python Software Foundation License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>tzdata</p></td>
+<td><p>2021e</p></td>
+<td><p>hda174b7_0</p></td>
+<td><p>defaults</p></td>
+<td><p>Apache-2.0</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>uptime</p></td>
+<td><p>3.0.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>urllib3</p></td>
+<td><p>1.26.7</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>vc</p></td>
+<td><p>14.2</p></td>
+<td><p>h21ff451_1</p></td>
+<td><p>defaults</p></td>
+<td><p>Modified BSD License (3-clause)</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-odd"><td><p>vs2015_runtime</p></td>
+<td><p>14.27.29016</p></td>
+<td><p>h5e58377_2</p></td>
+<td><p>defaults</p></td>
+<td><p>-</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>wcwidth</p></td>
+<td><p>0.2.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>webencodings</p></td>
+<td><p>0.5.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>wheel</p></td>
+<td><p>0.37.0</p></td>
+<td><p>pyhd3eb1b0_1</p></td>
+<td><p>defaults</p></td>
+<td><p>MIT</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-odd"><td><p>widgetsnbextension</p></td>
+<td><p>3.5.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>wincertstore</p></td>
+<td><p>0.2</p></td>
+<td><p>py39haa95532_2</p></td>
+<td><p>defaults</p></td>
+<td><p>Python Software Foundation License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>windows-curses</p></td>
+<td><p>2.2.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Python Software Foundation License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>winpty</p></td>
+<td><p>0.4.3</p></td>
+<td><p>4</p></td>
+<td><p>defaults</p></td>
+<td><p>MIT</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-odd"><td><p>wrapt</p></td>
+<td><p>1.13.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>wxpython</p></td>
+<td><p>4.1.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>wxWindows Library License (<a class="reference external" href="https://opensource.org/licenses/wxwindows.php">https://opensource.org/licenses/wxwindows.php</a>)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>xlsxwriter</p></td>
+<td><p>1.4.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>zlib</p></td>
+<td><p>1.2.11</p></td>
+<td><p>h62dcd97_4</p></td>
+<td><p>defaults</p></td>
+<td><p>zlib</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="license-info-packages-conda-env-linux">
+<caption><span class="caption-number">Table 5.2 </span><span class="caption-text">Conda and pip packages and licenses in the Linux environment</span><a class="headerlink" href="#license-info-packages-conda-env-linux" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Version</p></th>
+<th class="head"><p>Build</p></th>
+<th class="head"><p>Channel</p></th>
+<th class="head"><p>License</p></th>
+<th class="head"><p>Latest license check</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>_libgcc_mutex</p></td>
+<td><p>0.1</p></td>
+<td><p>main</p></td>
+<td><p>defaults</p></td>
+<td><p>-</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-odd"><td><p>_openmp_mutex</p></td>
+<td><p>4.5</p></td>
+<td><p>1_gnu</p></td>
+<td><p>defaults</p></td>
+<td><p>BSD-3-Clause</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>alabaster</p></td>
+<td><p>0.7.12</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>appdirs</p></td>
+<td><p>1.4.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>argon2-cffi</p></td>
+<td><p>21.1.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>argparse-addons</p></td>
+<td><p>0.7.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>arpeggio</p></td>
+<td><p>1.10.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>astroid</p></td>
+<td><p>2.8.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>GNU Lesser General Public License v2 (LGPLv2)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>attrs</p></td>
+<td><p>21.2.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>babel</p></td>
+<td><p>2.9.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>backcall</p></td>
+<td><p>0.2.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>beautifulsoup4</p></td>
+<td><p>4.10.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>bitstruct</p></td>
+<td><p>8.11.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>black</p></td>
+<td><p>21.10b0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>bleach</p></td>
+<td><p>4.1.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>bokeh</p></td>
+<td><p>2.4.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>bottle</p></td>
+<td><p>0.12.19</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>ca-certificates</p></td>
+<td><p>2021.10.26</p></td>
+<td><p>h06a4308_2</p></td>
+<td><p>defaults</p></td>
+<td><p>MPL 2.0</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>cantools</p></td>
+<td><p>36.5.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>certifi</p></td>
+<td><p>2021.10.8</p></td>
+<td><p>py39h06a4308_0</p></td>
+<td><p>defaults</p></td>
+<td><p>Mozilla Public License 2.0 (MPL 2.0)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>cffconvert</p></td>
+<td><p>2.0.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>cffi</p></td>
+<td><p>1.15.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>charset-normalizer</p></td>
+<td><p>2.0.7</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>click</p></td>
+<td><p>8.0.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>cloudpickle</p></td>
+<td><p>2.0.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>colorama</p></td>
+<td><p>0.4.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>coverage</p></td>
+<td><p>6.1.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>crcmod</p></td>
+<td><p>1.7</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>cycler</p></td>
+<td><p>0.11.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>dask</p></td>
+<td><p>2021.11.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>debugpy</p></td>
+<td><p>1.5.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Eclipse Public License 2.0 (EPL-2.0), MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>decorator</p></td>
+<td><p>5.1.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>defusedxml</p></td>
+<td><p>0.7.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Python Software Foundation License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>diskcache</p></td>
+<td><p>5.2.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>docopt</p></td>
+<td><p>0.6.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>docutils</p></td>
+<td><p>0.16</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License, GNU General Public License (GPL), Public Domain, Python Software Foundation License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>doorstop</p></td>
+<td><p>2.2b5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>GNU Lesser General Public License v3 (LGPLv3), Other/Proprietary License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>entrypoints</p></td>
+<td><p>0.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>et-xmlfile</p></td>
+<td><p>1.1.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>filterpy</p></td>
+<td><p>1.4.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>fsspec</p></td>
+<td><p>2021.11.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>gcovr</p></td>
+<td><p>5.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>gitdb</p></td>
+<td><p>4.0.9</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>gitpython</p></td>
+<td><p>3.1.24</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>gprof2dot</p></td>
+<td><p>2021.2.21</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>GNU Lesser General Public License v3 or later (LGPLv3+)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>httplib2</p></td>
+<td><p>0.20.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>idna</p></td>
+<td><p>3.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>imagesize</p></td>
+<td><p>1.3.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>ipykernel</p></td>
+<td><p>6.5.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>ipython</p></td>
+<td><p>7.29.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>ipython-genutils</p></td>
+<td><p>0.2.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>ipywidgets</p></td>
+<td><p>7.6.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>isort</p></td>
+<td><p>5.10.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>jdcal</p></td>
+<td><p>1.4.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>jedi</p></td>
+<td><p>0.18.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>jinja2</p></td>
+<td><p>2.11.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>joblib</p></td>
+<td><p>1.1.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>jsonschema</p></td>
+<td><p>3.2.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>jupyter</p></td>
+<td><p>1.0.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>jupyter-client</p></td>
+<td><p>7.0.6</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>jupyter-console</p></td>
+<td><p>6.4.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>jupyter-core</p></td>
+<td><p>4.9.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>jupyterlab-pygments</p></td>
+<td><p>0.1.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>jupyterlab-widgets</p></td>
+<td><p>1.0.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>kiwisolver</p></td>
+<td><p>1.3.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>latexcodec</p></td>
+<td><p>2.0.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>lazy-object-proxy</p></td>
+<td><p>1.6.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>ld_impl_linux-64</p></td>
+<td><p>2.35.1</p></td>
+<td><p>h7274673_9</p></td>
+<td><p>defaults</p></td>
+<td><p>GPL-3.0-only</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>libffi</p></td>
+<td><p>3.3</p></td>
+<td><p>he6710b0_2</p></td>
+<td><p>defaults</p></td>
+<td><p><a class="reference external" href="https://github.com/libffi/libffi/blob/07f826fdd4d8a23a190f107f7ec6ad830a4864a0/LICENSE">https://github.com/libffi/libffi/blob/07f826fdd4d8a23a190f107f7ec6ad830a4864a0/LICENSE</a></p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-odd"><td><p>libgcc-ng</p></td>
+<td><p>9.3.0</p></td>
+<td><p>h5101ec6_17</p></td>
+<td><p>defaults</p></td>
+<td><p>GPL-3.0-only WITH GCC-exception-3.1</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>libgomp</p></td>
+<td><p>9.3.0</p></td>
+<td><p>h5101ec6_17</p></td>
+<td><p>defaults</p></td>
+<td><p>GPL-3.0-only WITH GCC-exception-3.1</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-odd"><td><p>libstdcxx-ng</p></td>
+<td><p>9.3.0</p></td>
+<td><p>hd4cf53a_17</p></td>
+<td><p>defaults</p></td>
+<td><p>GPL-3.0-only WITH GCC-exception-3.1</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>locket</p></td>
+<td><p>0.2.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>lxml</p></td>
+<td><p>4.6.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>markdown</p></td>
+<td><p>3.3.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>markupsafe</p></td>
+<td><p>2.0.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>matplotlib</p></td>
+<td><p>3.4.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Python Software Foundation License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>matplotlib-inline</p></td>
+<td><p>0.1.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD 3-Clause</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>mccabe</p></td>
+<td><p>0.6.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>mistune</p></td>
+<td><p>0.8.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>msgpack</p></td>
+<td><p>1.0.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>mypy</p></td>
+<td><p>0.910</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>mypy-extensions</p></td>
+<td><p>0.4.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>nbclient</p></td>
+<td><p>0.5.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>nbconvert</p></td>
+<td><p>6.2.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>nbformat</p></td>
+<td><p>5.1.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>ncurses</p></td>
+<td><p>6.3</p></td>
+<td><p>heee7806_1</p></td>
+<td><p>defaults</p></td>
+<td><p>Free software (MIT-like)</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-odd"><td><p>nest-asyncio</p></td>
+<td><p>1.5.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>notebook</p></td>
+<td><p>6.4.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>numpy</p></td>
+<td><p>1.21.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>openpyxl</p></td>
+<td><p>2.6.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>openssl</p></td>
+<td><p>1.1.1l</p></td>
+<td><p>h7f8727e_0</p></td>
+<td><p>defaults</p></td>
+<td><p>OpenSSL</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>packaging</p></td>
+<td><p>21.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License, BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pandas</p></td>
+<td><p>1.3.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pandas-stubs</p></td>
+<td><p>1.2.0.37</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pandoc</p></td>
+<td><p>2.12</p></td>
+<td><p>h06a4308_0</p></td>
+<td><p>defaults</p></td>
+<td><p>GPL-2.0</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>pandocfilters</p></td>
+<td><p>1.5.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>parso</p></td>
+<td><p>0.8.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>partd</p></td>
+<td><p>1.2.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pathspec</p></td>
+<td><p>0.9.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Mozilla Public License 2.0 (MPL 2.0)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>patsy</p></td>
+<td><p>0.5.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pexpect</p></td>
+<td><p>4.8.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>ISC License (ISCL)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pickleshare</p></td>
+<td><p>0.7.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pillow</p></td>
+<td><p>8.4.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Historical Permission Notice and Disclaimer (HPND)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pip</p></td>
+<td><p>21.2.4</p></td>
+<td><p>py39h06a4308_0</p></td>
+<td><p>defaults</p></td>
+<td><p>MIT</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-odd"><td><p>pip-licenses</p></td>
+<td><p>3.5.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License (MIT License)</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>plantuml</p></td>
+<td><p>0.3.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>plantuml-markdown</p></td>
+<td><p>3.4.4</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>platformdirs</p></td>
+<td><p>2.4.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>plotly</p></td>
+<td><p>5.3.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>prometheus-client</p></td>
+<td><p>0.12.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>prompt-toolkit</p></td>
+<td><p>3.0.22</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>psutil</p></td>
+<td><p>5.8.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>ptable</p></td>
+<td><p>0.9.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License (BSD (3 clause))</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>ptyprocess</p></td>
+<td><p>0.7.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>ISC License (ISCL)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pybtex</p></td>
+<td><p>0.24.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pybtex-docutils</p></td>
+<td><p>1.0.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pycparser</p></td>
+<td><p>2.21</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pyenchant</p></td>
+<td><p>3.2.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>GNU Library or Lesser General Public License (LGPL)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pygments</p></td>
+<td><p>2.10.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pykwalify</p></td>
+<td><p>1.8.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pylint</p></td>
+<td><p>2.11.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>GNU General Public License v2 (GPLv2)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pyparsing</p></td>
+<td><p>2.4.7</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pyrsistent</p></td>
+<td><p>0.18.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pyserial</p></td>
+<td><p>3.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pysimplegui</p></td>
+<td><p>4.55.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>GNU Lesser General Public License v3 or later (LGPLv3+)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>python</p></td>
+<td><p>3.9.7</p></td>
+<td><p>h12debd9_1</p></td>
+<td><p>defaults</p></td>
+<td><p>PSF</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-odd"><td><p>python-can</p></td>
+<td><p>4.0.0.dev2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>GNU Lesser General Public License v3 (LGPLv3)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>python-datauri</p></td>
+<td><p>0.2.9</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>python-dateutil</p></td>
+<td><p>2.8.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License, BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>python-lin</p></td>
+<td><p>0.1.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>python-markdown-math</p></td>
+<td><p>0.6</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>python-uds</p></td>
+<td><p>1.0.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pytz</p></td>
+<td><p>2021.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pyvisa</p></td>
+<td><p>1.11.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>pyyaml</p></td>
+<td><p>5.4.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>pyzmq</p></td>
+<td><p>22.3.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License, GNU Library or Lesser General Public License (LGPL)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>qtconsole</p></td>
+<td><p>5.2.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>qtpy</p></td>
+<td><p>1.11.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>readline</p></td>
+<td><p>8.1</p></td>
+<td><p>h27cfd23_0</p></td>
+<td><p>defaults</p></td>
+<td><p>GPL-3.0</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>regex</p></td>
+<td><p>2021.11.10</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>requests</p></td>
+<td><p>2.26.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>requests-file</p></td>
+<td><p>1.5.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>rope</p></td>
+<td><p>0.21.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>GNU Lesser General Public License v3 or later (LGPLv3+)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>rsinstrument</p></td>
+<td><p>1.19.0.75</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>ruamel-yaml</p></td>
+<td><p>0.17.17</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>ruamel-yaml-clib</p></td>
+<td><p>0.2.6</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>scikit-learn</p></td>
+<td><p>1.0.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>new BSD</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>scipy</p></td>
+<td><p>1.7.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>seaborn</p></td>
+<td><p>0.11.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>send2trash</p></td>
+<td><p>1.8.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>setuptools</p></td>
+<td><p>58.0.4</p></td>
+<td><p>py39h06a4308_0</p></td>
+<td><p>defaults</p></td>
+<td><p>MIT</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>six</p></td>
+<td><p>1.16.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>smmap</p></td>
+<td><p>5.0.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>snowballstemmer</p></td>
+<td><p>2.1.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>soupsieve</p></td>
+<td><p>2.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinx</p></td>
+<td><p>4.3.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sphinx-copybutton</p></td>
+<td><p>0.3.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinx-panels</p></td>
+<td><p>0.6.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sphinx-plotly-directive</p></td>
+<td><p>0.1.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinx-rtd-theme</p></td>
+<td><p>1.0.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sphinxcontrib-applehelp</p></td>
+<td><p>1.0.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinxcontrib-bibtex</p></td>
+<td><p>2.4.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sphinxcontrib-devhelp</p></td>
+<td><p>1.0.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinxcontrib-htmlhelp</p></td>
+<td><p>2.0.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sphinxcontrib-jsmath</p></td>
+<td><p>1.0.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinxcontrib-mermaid</p></td>
+<td><p>0.7.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sphinxcontrib-needs</p></td>
+<td><p>0.7.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinxcontrib-plantuml</p></td>
+<td><p>0.21</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sphinxcontrib-programoutput</p></td>
+<td><p>0.17</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinxcontrib-qthelp</p></td>
+<td><p>1.0.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sphinxcontrib-serializinghtml</p></td>
+<td><p>1.1.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>sphinxcontrib-spelling</p></td>
+<td><p>7.2.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>sqlite</p></td>
+<td><p>3.36.0</p></td>
+<td><p>hc218d9a_0</p></td>
+<td><p>defaults</p></td>
+<td><p>Public-Domain (<a class="reference external" href="http://www.sqlite.org/copyright.html">http://www.sqlite.org/copyright.html</a>)</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>statsmodels</p></td>
+<td><p>0.13.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>strictdoc</p></td>
+<td><p>0.0.17</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Other/Proprietary License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>tabulate</p></td>
+<td><p>0.8.9</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>tenacity</p></td>
+<td><p>8.0.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>terminado</p></td>
+<td><p>0.12.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>testpath</p></td>
+<td><p>0.5.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>textparser</p></td>
+<td><p>0.23.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>textx</p></td>
+<td><p>2.3.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>threadpoolctl</p></td>
+<td><p>3.0.0</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>tk</p></td>
+<td><p>8.6.11</p></td>
+<td><p>h1ccaba5_0</p></td>
+<td><p>defaults</p></td>
+<td><p>Tcl/Tk</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>toml</p></td>
+<td><p>0.10.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>tomli</p></td>
+<td><p>1.2.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>toolz</p></td>
+<td><p>0.11.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>tornado</p></td>
+<td><p>6.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Apache Software License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>traitlets</p></td>
+<td><p>5.1.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>typing-extensions</p></td>
+<td><p>3.10.0.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>Python Software Foundation License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>tzdata</p></td>
+<td><p>2021e</p></td>
+<td><p>hda174b7_0</p></td>
+<td><p>defaults</p></td>
+<td><p>Apache-2.0</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-odd"><td><p>uptime</p></td>
+<td><p>3.0.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>urllib3</p></td>
+<td><p>1.26.7</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>wcwidth</p></td>
+<td><p>0.2.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>MIT License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>webencodings</p></td>
+<td><p>0.5.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>wheel</p></td>
+<td><p>0.37.0</p></td>
+<td><p>pyhd3eb1b0_1</p></td>
+<td><p>defaults</p></td>
+<td><p>MIT</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-even"><td><p>widgetsnbextension</p></td>
+<td><p>3.5.2</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>wrapt</p></td>
+<td><p>1.13.3</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>wxpython</p></td>
+<td><p>4.1.1</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>wxWindows Library License (<a class="reference external" href="https://opensource.org/licenses/wxwindows.php">https://opensource.org/licenses/wxwindows.php</a>)</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-odd"><td><p>xlsxwriter</p></td>
+<td><p>1.4.5</p></td>
+<td><p>pypi_0</p></td>
+<td><p>pypi</p></td>
+<td><p>BSD License</p></td>
+<td><p>2021-11-15</p></td>
+</tr>
+<tr class="row-even"><td><p>xz</p></td>
+<td><p>5.2.5</p></td>
+<td><p>h7b6447c_0</p></td>
+<td><p>defaults</p></td>
+<td><p>LGPL-2.1 and GPL-2.0</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+<tr class="row-odd"><td><p>zlib</p></td>
+<td><p>1.2.11</p></td>
+<td><p>h7b6447c_3</p></td>
+<td><p>defaults</p></td>
+<td><p>zlib</p></td>
+<td><p>2021-07-26</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id7">
+<h4><span class="section-number">5.2.2.4. </span>LLVM<a class="headerlink" href="#id7" title="Permalink to this headline"></a></h4>
+<table class="colwidths-given docutils align-default" id="license-info-llvm">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>License</p></td>
+<td><p>LLVM Exceptions to the Apache 2.0 License</p></td>
+</tr>
+<tr class="row-even"><td><p>SPDX short identifier</p></td>
+<td><p>LLVM-exception</p></td>
+</tr>
+<tr class="row-odd"><td><p>License URL</p></td>
+<td><p><a class="reference external" href="https://releases.llvm.org/13.0.0/LICENSE.TXT">https://releases.llvm.org/13.0.0/LICENSE.TXT</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Latest license check</p></td>
+<td><p>2022-11-11</p></td>
+</tr>
+<tr class="row-odd"><td><p>Website</p></td>
+<td><p><a class="reference external" href="https://llvm.org/">https://llvm.org/</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="rubyinstaller">
+<h4><span class="section-number">5.2.2.5. </span>RubyInstaller<a class="headerlink" href="#rubyinstaller" title="Permalink to this headline"></a></h4>
+<table class="colwidths-given docutils align-default" id="license-info-ruby-installer">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>License</p></td>
+<td><p>3-clause BSD</p></td>
+</tr>
+<tr class="row-even"><td><p>SPDX short identifier</p></td>
+<td><p>BSD-3-Clause</p></td>
+</tr>
+<tr class="row-odd"><td><p>Latest license check</p></td>
+<td><p>2020-06-23</p></td>
+</tr>
+<tr class="row-even"><td><p>Website</p></td>
+<td><p><a class="reference external" href="https://rubyinstaller.org/">https://rubyinstaller.org/</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id8">
+<h4><span class="section-number">5.2.2.6. </span>Visual Studio Code<a class="headerlink" href="#id8" title="Permalink to this headline"></a></h4>
+<table class="colwidths-given docutils align-default" id="license-info-vs-code">
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 83%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>License URL</p></td>
+<td><p><a class="reference external" href="https://code.visualstudio.com/License">https://code.visualstudio.com/License</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Latest license check</p></td>
+<td><p>2020-06-23</p></td>
+</tr>
+<tr class="row-odd"><td><p>Website</p></td>
+<td><p><a class="reference external" href="https://code.visualstudio.com">https://code.visualstudio.com</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Development</p></td>
+<td><p><a class="reference external" href="https://github.com/microsoft/vscode">https://github.com/microsoft/vscode</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="visual-studio-code-extensions">
+<h4><span class="section-number">5.2.2.7. </span>Visual Studio Code Extensions<a class="headerlink" href="#visual-studio-code-extensions" title="Permalink to this headline"></a></h4>
+<table class="docutils align-default" id="license-info-vs-code-extensions">
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>License</p></th>
+<th class="head"><p>License URL</p></th>
+<th class="head"><p>Latest license check</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>C/C++</p></td>
+<td><p>-</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items/ms-vscode.cpptools/license">https://marketplace.visualstudio.com/items/ms-vscode.cpptools/license</a></p></td>
+<td><p>2020-06-23</p></td>
+</tr>
+<tr class="row-odd"><td><p>Python</p></td>
+<td><p>MIT</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items/ms-python.python/license">https://marketplace.visualstudio.com/items/ms-python.python/license</a></p></td>
+<td><p>2020-06-23</p></td>
+</tr>
+<tr class="row-even"><td><p>ASM Code Lens</p></td>
+<td><p>MIT</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items/maziac.asm-code-lens/license">https://marketplace.visualstudio.com/items/maziac.asm-code-lens/license</a></p></td>
+<td><p>2020-06-23</p></td>
+</tr>
+<tr class="row-odd"><td><p>LinkerScript</p></td>
+<td><p>MIT</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items/ZixuanWang.linkerscript/license">https://marketplace.visualstudio.com/items/ZixuanWang.linkerscript/license</a></p></td>
+<td><p>2020-06-23</p></td>
+</tr>
+<tr class="row-even"><td><p>Code Spell Checker</p></td>
+<td><p>MIT</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items/streetsidesoftware.code-spell-checker/license">https://marketplace.visualstudio.com/items/streetsidesoftware.code-spell-checker/license</a></p></td>
+<td><p>2020-06-23</p></td>
+</tr>
+<tr class="row-odd"><td><p>YAML</p></td>
+<td><p>MIT</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items/redhat.vscode-yaml/license">https://marketplace.visualstudio.com/items/redhat.vscode-yaml/license</a></p></td>
+<td><p>2020-06-23</p></td>
+</tr>
+<tr class="row-even"><td><p>Better TOML</p></td>
+<td><p>MIT</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items/bungcip.better-toml/license">https://marketplace.visualstudio.com/items/bungcip.better-toml/license</a></p></td>
+<td><p>2020-06-23</p></td>
+</tr>
+<tr class="row-odd"><td><p>Test Explorer UI</p></td>
+<td><p>MIT</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items/hbenl.vscode-test-explorer/license">https://marketplace.visualstudio.com/items/hbenl.vscode-test-explorer/license</a></p></td>
+<td><p>2020-06-23</p></td>
+</tr>
+<tr class="row-even"><td><p>Ceedling Test Explorer</p></td>
+<td><p>MIT</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items/numaru.vscode-ceedling-test-adapter/license">https://marketplace.visualstudio.com/items/numaru.vscode-ceedling-test-adapter/license</a></p></td>
+<td><p>2020-06-23</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="mingw-w64-for-32-and-64-bit-windows">
+<h4><span class="section-number">5.2.2.8. </span>MinGW-w64 - for 32 and 64 bit Windows<a class="headerlink" href="#mingw-w64-for-32-and-64-bit-windows" title="Permalink to this headline"></a></h4>
+<table class="docutils align-default" id="license-info-mingw64">
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>License Files</p></th>
+<th class="head"><p>&lt;gcc-install-dir&gt;/licenses/*</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Latest license check</p></td>
+<td><p>2020-06-23</p></td>
+</tr>
+<tr class="row-odd"><td><p>Website</p></td>
+<td><p><a class="reference external" href="https://sourceforge.net/projects/mingw-w64">https://sourceforge.net/projects/mingw-w64</a></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="safety/safety.html" class="btn btn-neutral float-left" title="4. Safety" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="team.html" class="btn btn-neutral float-right" title="6. Team" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

@@ -1,0 +1,413 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>8.1.3. How to Use the Database Module &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="8.1.4. How to Use the FTASK Module" href="../../task/ftask/ftask_how-to.html" />
+    <link rel="prev" title="8.1.2. How to Use the Diagnosis Module" href="../diag/diag_how-to.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../how-to/how-to.html">8. How-to</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../driver/can/can_how-to.html">8.1.1. How to Use the CAN Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../diag/diag_how-to.html">8.1.2. How to Use the Diagnosis Module</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">8.1.3. How to Use the Database Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../task/ftask/ftask_how-to.html">8.1.4. How to Use the FTASK Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../main/fassert_how-to.html">8.1.5. How to Use assertions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/afe/adding-a-new-ic_how-to.html">8.2.1. How to Implement an Analog Front-End Driver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../driver/ts/adding-a-new-ts_how-to.html">8.2.2. How to Implement a New Temperature Sensor Driver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../../developer-manual/style-guide/state-machines_how-to.html">8.2.3. How to Write State Machines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../configuration/without-halcogen_how-to.html">8.2.4. How to Use Generated Sources from HALCoGen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../unit-tests/unit-tests_how-to.html">8.2.5. How to use unit tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../unit-tests/unit-tests_how-to.html#guidelines-for-the-unit-test-skeleton">8.2.6. Guidelines for the Unit Test Skeleton</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../unit-tests/unit-tests_how-to.html#result">8.2.7. Result</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../unit-tests/unit-tests_how-to.html#how-to-exclude-files-from-unit-tests">8.2.8. How to exclude files from unit tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../unit-tests/unit-tests_how-to.html#using-ceedling-directly">8.2.9. Using ceedling directly</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../build-environment/build-environment_how-to.html">8.2.10. Changing and Extending the Build Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../build-process/library-project_how-to.html">8.2.11. How to Build A Library and Link it in a foxBMS 2 Project</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../../how-to/how-to.html"><span class="section-number">8. </span>How-to</a> &raquo;</li>
+      <li><span class="section-number">8.1.3. </span>How to Use the Database Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/software/modules/engine/database/database_how-to.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="how-to-use-the-database-module">
+<span id="id1"></span><h1><span class="section-number">8.1.3. </span>How to Use the Database Module<a class="headerlink" href="#how-to-use-the-database-module" title="Permalink to this headline"></a></h1>
+<p>This How-to shows how to add new entries to the database, and how to read and write database entries.</p>
+<div class="section" id="how-to-add-a-database-entry">
+<h2><span class="section-number">8.1.3.1. </span>How to Add a Database Entry?<a class="headerlink" href="#how-to-add-a-database-entry" title="Permalink to this headline"></a></h2>
+<p>Four steps need to be undertaken to add an entry to the database.</p>
+<p>First, an identification number (ID) for this database entry must be added to enum
+<code class="docutils literal notranslate"><span class="pre">DATA_BLOCK_ID_e</span></code> in file <code class="docutils literal notranslate"><span class="pre">src/app/engine/config/database_cfg.h</span></code>. This enumeration
+value respectively the identification number functions as <code class="docutils literal notranslate"><span class="pre">uniqueId</span></code> for each
+database entry to synchronize database entries with local copies during read
+and write access to the database.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The new ID must start with <code class="docutils literal notranslate"><span class="pre">DATA_BLOCK_ID_</span></code>. Before any source is
+compiled the build process checks that a database variable is
+initialized with the matching ID from <code class="docutils literal notranslate"><span class="pre">DATA_BLOCK_ID_e</span></code>. For the details
+of the checker implementation see <a class="reference internal" href="../../../build-process/build-process.html#database-variable-checking"><span class="std std-ref">Checking Database Entries</span></a>.</p>
+</div>
+<p>In this example the name of the new database entry is <strong>example</strong>, therefore the
+corresponding ID must be the prefix and the name in uppercase, which
+gives <code class="docutils literal notranslate"><span class="pre">DATA_BLOCK_ID_EXAMPLE</span></code>.</p>
+<div class="literal-block-wrapper docutils container" id="adding-a-new-element-to-the-data-block-id-e-enum">
+<div class="code-block-caption"><span class="caption-number">Listing 8.8 </span><span class="caption-text">Adding a new element <strong>example</strong> to the <code class="docutils literal notranslate"><span class="pre">DATA_BLOCK_ID_e</span></code> enum</span><a class="headerlink" href="#adding-a-new-element-to-the-data-block-id-e-enum" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/** data block identification numbers */</span><span class="w"></span>
+<span class="linenos"> 2</span><span class="k">typedef</span><span class="w"> </span><span class="k">enum</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 3</span><span class="w">    </span><span class="n">DATA_BLOCK_ID_EXAMPLE</span><span class="p">,</span><span class="w"> </span><span class="cm">/**&lt; some example database entry */</span><span class="w"></span>
+<span class="linenos"> 4</span><span class="w">    </span><span class="cm">/* ...</span>
+<span class="linenos"> 5</span><span class="cm">     * ...</span>
+<span class="linenos"> 6</span><span class="cm">     * ...</span>
+<span class="linenos"> 7</span><span class="cm">     */</span><span class="w"></span>
+<span class="linenos"> 8</span><span class="w">    </span><span class="n">DATA_BLOCK_ID_EXAMPLE_0</span><span class="p">,</span><span class="w"> </span><span class="cm">/**&lt; some more examples */</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="w">    </span><span class="n">DATA_BLOCK_ID_EXAMPLE_1</span><span class="p">,</span><span class="w"> </span><span class="cm">/**&lt; some more examples */</span><span class="w"></span>
+<span class="linenos">10</span><span class="w">    </span><span class="n">DATA_BLOCK_ID_EXAMPLE_2</span><span class="p">,</span><span class="w"> </span><span class="cm">/**&lt; some more examples */</span><span class="w"></span>
+<span class="linenos">11</span><span class="w">    </span><span class="n">DATA_BLOCK_ID_EXAMPLE_3</span><span class="p">,</span><span class="w"> </span><span class="cm">/**&lt; some more examples */</span><span class="w"></span>
+<span class="linenos">12</span><span class="w">    </span><span class="n">DATA_BLOCK_ID_MAX</span><span class="p">,</span><span class="w">       </span><span class="cm">/**&lt; DO NOT CHANGE, MUST BE THE LAST ENTRY */</span><span class="w"></span>
+<span class="linenos">13</span><span class="p">}</span><span class="w"> </span><span class="n">DATA_BLOCK_ID_e</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<p>Second, a struct definition of the database entry has to be added in file
+<code class="docutils literal notranslate"><span class="pre">src/app/engine/config/database_cfg.h</span></code>. This structure needs to contain a variable
+<code class="docutils literal notranslate"><span class="pre">header</span></code> of type <code class="docutils literal notranslate"><span class="pre">DATA_BLOCK_HEADER_s</span></code> at the beginning of the struct. This
+header contains a <code class="docutils literal notranslate"><span class="pre">uniqueID</span></code> for this database entry as well as timestamps. These
+timestamps (<code class="docutils literal notranslate"><span class="pre">timestamp</span></code> and <code class="docutils literal notranslate"><span class="pre">previousTimestamp</span></code>) are automatically updated each
+time new data is stored in this database entry. The remaining struct consists
+of all the data needed for the entry.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The new database entry must start with <code class="docutils literal notranslate"><span class="pre">DATA_BLOCK_</span></code>. Before any source is
+compiled the build process checks that a database variable is
+initialized with the matching ID from <code class="docutils literal notranslate"><span class="pre">DATA_BLOCK_ID_e</span></code>. For the details
+of the checker implementation see <a class="reference internal" href="../../../build-process/build-process.html#database-variable-checking"><span class="std std-ref">Checking Database Entries</span></a>.</p>
+</div>
+<p>Again, the name of the new database entry is <strong>example</strong>, therefore the
+corresponding data block must be the prefix followed by the name in uppercase and
+the <code class="docutils literal notranslate"><span class="pre">_s</span></code> suffix as the typedef is a struct, which gives <code class="docutils literal notranslate"><span class="pre">DATA_BLOCK_EXAMPLE_s</span></code>.</p>
+<div class="literal-block-wrapper docutils container" id="creating-a-new-database-struct">
+<div class="code-block-caption"><span class="caption-number">Listing 8.9 </span><span class="caption-text">Creating a new database struct</span><a class="headerlink" href="#creating-a-new-database-struct" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * data block struct of example</span>
+<span class="linenos"> 3</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos"> 4</span><span class="k">typedef</span><span class="w"> </span><span class="k">struct</span> <span class="p">{</span><span class="w"></span>
+<span class="linenos"> 5</span><span class="w">    </span><span class="cm">/* This struct needs to be at the beginning of every database entry. During</span>
+<span class="linenos"> 6</span><span class="cm">    * the initialization of a database struct, uniqueId must be set to the</span>
+<span class="linenos"> 7</span><span class="cm">    * respective database entry representation in enum DATA_BLOCK_ID_e. */</span><span class="w"></span>
+<span class="linenos"> 8</span><span class="w">    </span><span class="n">DATA_BLOCK_HEADER_s</span><span class="w"> </span><span class="n">header</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="w">    </span><span class="kt">uint16_t</span><span class="w"> </span><span class="n">dummyValue</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">10</span><span class="p">}</span><span class="w"> </span><span class="n">DATA_BLOCK_EXAMPLE_s</span><span class="p">;</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<p>The database checker basically checks that if a database struct is found (something matching
+<code class="docutils literal notranslate"><span class="pre">DATA_BLOCK_(A_Z_0-9)_s</span></code>) that it is initialized with a corresponding ID name.</p>
+<p>Examples:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 53%" />
+<col style="width: 47%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Struct</p></td>
+<td><p>Id</p></td>
+</tr>
+<tr class="row-even"><td><p>DATA_BLOCK_<strong>EXAMPLE</strong>_s</p></td>
+<td><p>DATA_BLOCK_ID_<strong>EXAMPLE</strong></p></td>
+</tr>
+<tr class="row-odd"><td><p>DATA_BLOCK_<strong>CELL_VOLTAGE</strong>_s</p></td>
+<td><p>DATA_BLOCK_ID_<strong>CELL_VOLTAGE</strong></p></td>
+</tr>
+</tbody>
+</table>
+<p>Third, in <code class="docutils literal notranslate"><span class="pre">src/app/engine/config/database_cfg.c</span></code>, a static variable with
+the structure type must be declared. In this declaration the <code class="docutils literal notranslate"><span class="pre">uniqueId</span></code> of the
+database header must be initialized with the identification number added in the
+first step. This structure <code class="docutils literal notranslate"><span class="pre">data_blockExample</span></code> contains the actual values of
+this database entry during once the BMS is running.</p>
+<div class="literal-block-wrapper docutils container" id="initialization-of-the-static-variable-inside-the-database-module">
+<div class="code-block-caption"><span class="caption-number">Listing 8.10 </span><span class="caption-text">Initialization of the static variable inside the database module</span><a class="headerlink" href="#initialization-of-the-static-variable-inside-the-database-module" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">static</span><span class="w"> </span><span class="n">DATA_BLOCK_EXAMPLE_s</span><span class="w"> </span><span class="n">data_blockExample</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{.</span><span class="n">header</span><span class="p">.</span><span class="n">uniqueId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DATA_BLOCK_ID_EXAMPLE</span><span class="p">};</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+<p>Last, this declared struct must be linked to the actual database implementation
+by adding an additional entry to the structure <code class="docutils literal notranslate"><span class="pre">DATA_BASE_s</span> <span class="pre">data_database[]</span></code>
+in file <code class="docutils literal notranslate"><span class="pre">src/app/engine/config/database_cfg.c</span></code></p>
+<div class="literal-block-wrapper docutils container" id="adding-the-struct-to-the-database">
+<div class="code-block-caption"><span class="caption-number">Listing 8.11 </span><span class="caption-text">Adding the struct to the database</span><a class="headerlink" href="#adding-the-struct-to-the-database" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="cm">/**</span>
+<span class="linenos"> 2</span><span class="cm"> * @brief   channel configuration of database (data blocks)</span>
+<span class="linenos"> 3</span><span class="cm"> * @details all data block managed by database are listed here (address, size,</span>
+<span class="linenos"> 4</span><span class="cm"> *          consistency type)</span>
+<span class="linenos"> 5</span><span class="cm"> */</span><span class="w"></span>
+<span class="linenos"> 6</span><span class="n">DATA_BASE_s</span><span class="w"> </span><span class="n">data_database</span><span class="p">[]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="linenos"> 7</span><span class="w">    </span><span class="p">{(</span><span class="kt">void</span><span class="w"> </span><span class="o">*</span><span class="p">)(</span><span class="o">&amp;</span><span class="n">data_blockExample</span><span class="p">),</span><span class="w"> </span><span class="k">sizeof</span><span class="p">(</span><span class="n">DATA_BLOCK_EXAMPLE_s</span><span class="p">)},</span><span class="w"></span>
+<span class="linenos"> 8</span><span class="w">    </span><span class="cm">/* ...</span>
+<span class="linenos"> 9</span><span class="cm">     * ...</span>
+<span class="linenos">10</span><span class="cm">     * ...</span>
+<span class="linenos">11</span><span class="cm">     */</span><span class="w"></span>
+<span class="linenos">12</span><span class="p">};</span><span class="w"></span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="how-to-read-a-database-entry">
+<h2><span class="section-number">8.1.3.2. </span>How to Read a Database Entry?<a class="headerlink" href="#how-to-read-a-database-entry" title="Permalink to this headline"></a></h2>
+<p>Data inside the database can not be accessed directly. The data from a database
+entry has to be copied inside a local representation of the requested entry.
+For the local structure of the database entry, the <code class="docutils literal notranslate"><span class="pre">uniqueId</span></code> of the database
+entry header has to be initialized with the identification number of the
+requested database entry. Once this is done, a database entry can simply be
+accessed by calling function <code class="docutils literal notranslate"><span class="pre">DATA_READ_DATA()</span></code> and passing the pointer to
+the local database entry structure.</p>
+<div class="literal-block-wrapper docutils container" id="reading-a-database-entry">
+<div class="code-block-caption"><span class="caption-number">Listing 8.12 </span><span class="caption-text">Reading a database entry</span><a class="headerlink" href="#reading-a-database-entry" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="w">    </span><span class="cm">/* Create local structure of database entry */</span><span class="w"></span>
+<span class="linenos">2</span><span class="w">    </span><span class="n">DATA_BLOCK_EXAMPLE_s</span><span class="w"> </span><span class="n">tableLocalExampleEntry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{.</span><span class="n">header</span><span class="p">.</span><span class="n">uniqueId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DATA_BLOCK_ID_EXAMPLE</span><span class="p">};</span><span class="w"></span>
+<span class="linenos">3</span><span class="w">    </span><span class="cm">/* Read data from database entry and update local variable */</span><span class="w"></span>
+<span class="hll"><span class="linenos">4</span><span class="w">    </span><span class="n">DATA_READ_DATA</span><span class="p">(</span><span class="o">&amp;</span><span class="n">tableLocalExampleEntry</span><span class="p">);</span><span class="w"></span>
+</span></pre></div>
+</div>
+</div>
+<p>Up to four database entries can be accessed on the same time with one call of
+<code class="docutils literal notranslate"><span class="pre">DATA_READ_DATA()</span></code>.</p>
+<div class="literal-block-wrapper docutils container" id="reading-multiple-database-entries">
+<div class="code-block-caption"><span class="caption-number">Listing 8.13 </span><span class="caption-text">Reading multiple database entries</span><a class="headerlink" href="#reading-multiple-database-entries" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="w">    </span><span class="n">DATA_BLOCK_EXAMPLE_0_s</span><span class="w"> </span><span class="n">tableLocalExampleEntry0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{.</span><span class="n">header</span><span class="p">.</span><span class="n">uniqueId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DATA_BLOCK_ID_EXAMPLE_0</span><span class="p">};</span><span class="w"></span>
+<span class="linenos">2</span><span class="w">    </span><span class="n">DATA_BLOCK_EXAMPLE_1_s</span><span class="w"> </span><span class="n">tableLocalExampleEntry1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{.</span><span class="n">header</span><span class="p">.</span><span class="n">uniqueId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DATA_BLOCK_ID_EXAMPLE_1</span><span class="p">};</span><span class="w"></span>
+<span class="linenos">3</span><span class="w">    </span><span class="n">DATA_BLOCK_EXAMPLE_2_s</span><span class="w"> </span><span class="n">tableLocalExampleEntry2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{.</span><span class="n">header</span><span class="p">.</span><span class="n">uniqueId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DATA_BLOCK_ID_EXAMPLE_2</span><span class="p">};</span><span class="w"></span>
+<span class="linenos">4</span><span class="w">    </span><span class="n">DATA_BLOCK_EXAMPLE_3_s</span><span class="w"> </span><span class="n">tableLocalExampleEntry3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{.</span><span class="n">header</span><span class="p">.</span><span class="n">uniqueId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DATA_BLOCK_ID_EXAMPLE_3</span><span class="p">};</span><span class="w"></span>
+<span class="linenos">5</span><span class="w">    </span><span class="cm">/* Read data from 4 database entries and update local variables */</span><span class="w"></span>
+<span class="hll"><span class="linenos">6</span><span class="w">    </span><span class="n">DATA_READ_DATA</span><span class="p">(</span><span class="w"></span>
+</span><span class="hll"><span class="linenos">7</span><span class="w">        </span><span class="o">&amp;</span><span class="n">tableLocalExampleEntry0</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tableLocalExampleEntry1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tableLocalExampleEntry2</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tableLocalExampleEntry3</span><span class="p">);</span><span class="w"></span>
+</span></pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="how-to-write-a-database-entry">
+<h2><span class="section-number">8.1.3.3. </span>How to Write a Database Entry?<a class="headerlink" href="#how-to-write-a-database-entry" title="Permalink to this headline"></a></h2>
+<p>It is not possible to directly write data into a database entry. Only the
+content of a local representation of the requested database entry can be copied
+into the database. The <code class="docutils literal notranslate"><span class="pre">uniqueId</span></code> of the database entry header has to be
+initialized with the identification number of the requested database entry for
+the local structure of the database entry. Once this is done, a database entry
+can be written by calling function <code class="docutils literal notranslate"><span class="pre">DATA_WRITE_DATA()</span></code> and passing the
+pointer to the local database entry structure. Up to four database entries can
+be written with one call of <code class="docutils literal notranslate"><span class="pre">DATA_WRITE_DATA()</span></code>.</p>
+<div class="literal-block-wrapper docutils container" id="writing-a-database-entry">
+<div class="code-block-caption"><span class="caption-number">Listing 8.14 </span><span class="caption-text">Writing a database entry</span><a class="headerlink" href="#writing-a-database-entry" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="w">    </span><span class="cm">/* Create local structure of database entry */</span><span class="w"></span>
+<span class="linenos">2</span><span class="w">    </span><span class="n">DATA_BLOCK_EXAMPLE_s</span><span class="w"> </span><span class="n">tableLocalExampleEntry</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{.</span><span class="n">header</span><span class="p">.</span><span class="n">uniqueId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DATA_BLOCK_ID_EXAMPLE</span><span class="p">};</span><span class="w"></span>
+<span class="linenos">3</span><span class="w">    </span><span class="cm">/* Set dummy value to 100 */</span><span class="w"></span>
+<span class="linenos">4</span><span class="w">    </span><span class="n">tableLocalExampleEntry</span><span class="p">.</span><span class="n">dummyValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">5</span><span class="w">    </span><span class="cm">/* Update database entry with changed dummy value */</span><span class="w"></span>
+<span class="hll"><span class="linenos">6</span><span class="w">    </span><span class="n">DATA_WRITE_DATA</span><span class="p">(</span><span class="o">&amp;</span><span class="n">tableLocalExampleEntry</span><span class="p">);</span><span class="w"></span>
+</span></pre></div>
+</div>
+</div>
+<p>After a call of <code class="docutils literal notranslate"><span class="pre">DATA_WRITE_DATA</span></code> the timestamp variables in the database
+entry header are automatically updated database entry <strong>AND</strong> the local
+database entry structure.</p>
+<p>Up to four database entries can be written on the same time with one call of
+<code class="docutils literal notranslate"><span class="pre">DATA_WRITE_DATA()</span></code>.</p>
+<div class="literal-block-wrapper docutils container" id="writing-multiple-database-entries">
+<div class="code-block-caption"><span class="caption-number">Listing 8.15 </span><span class="caption-text">Writing multiple database entries</span><a class="headerlink" href="#writing-multiple-database-entries" title="Permalink to this code"></a></div>
+<div class="highlight-C notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span><span class="w">    </span><span class="n">DATA_BLOCK_EXAMPLE_0_s</span><span class="w"> </span><span class="n">tableLocalExampleEntry0</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{.</span><span class="n">header</span><span class="p">.</span><span class="n">uniqueId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DATA_BLOCK_ID_EXAMPLE_0</span><span class="p">};</span><span class="w"></span>
+<span class="linenos"> 2</span><span class="w">    </span><span class="n">DATA_BLOCK_EXAMPLE_1_s</span><span class="w"> </span><span class="n">tableLocalExampleEntry1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{.</span><span class="n">header</span><span class="p">.</span><span class="n">uniqueId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DATA_BLOCK_ID_EXAMPLE_1</span><span class="p">};</span><span class="w"></span>
+<span class="linenos"> 3</span><span class="w">    </span><span class="n">DATA_BLOCK_EXAMPLE_2_s</span><span class="w"> </span><span class="n">tableLocalExampleEntry2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{.</span><span class="n">header</span><span class="p">.</span><span class="n">uniqueId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DATA_BLOCK_ID_EXAMPLE_2</span><span class="p">};</span><span class="w"></span>
+<span class="linenos"> 4</span><span class="w">    </span><span class="n">DATA_BLOCK_EXAMPLE_3_s</span><span class="w"> </span><span class="n">tableLocalExampleEntry3</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{.</span><span class="n">header</span><span class="p">.</span><span class="n">uniqueId</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">DATA_BLOCK_ID_EXAMPLE_3</span><span class="p">};</span><span class="w"></span>
+<span class="linenos"> 5</span><span class="w">    </span><span class="cm">/* Set dummy values to 100 */</span><span class="w"></span>
+<span class="linenos"> 6</span><span class="w">    </span><span class="n">tableLocalExampleEntry0</span><span class="p">.</span><span class="n">dummyValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 7</span><span class="w">    </span><span class="n">tableLocalExampleEntry1</span><span class="p">.</span><span class="n">dummyValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 8</span><span class="w">    </span><span class="n">tableLocalExampleEntry2</span><span class="p">.</span><span class="n">dummyValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"></span>
+<span class="linenos"> 9</span><span class="w">    </span><span class="n">tableLocalExampleEntry3</span><span class="p">.</span><span class="n">dummyValue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="p">;</span><span class="w"></span>
+<span class="linenos">10</span><span class="w">    </span><span class="cm">/* Update database entries with changed dummy values */</span><span class="w"></span>
+<span class="hll"><span class="linenos">11</span><span class="w">    </span><span class="n">DATA_WRITE_DATA</span><span class="p">(</span><span class="w"></span>
+</span><span class="hll"><span class="linenos">12</span><span class="w">        </span><span class="o">&amp;</span><span class="n">tableLocalExampleEntry0</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tableLocalExampleEntry1</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tableLocalExampleEntry2</span><span class="p">,</span><span class="w"> </span><span class="o">&amp;</span><span class="n">tableLocalExampleEntry3</span><span class="p">);</span><span class="w"></span>
+</span></pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="further-reading">
+<h2><span class="section-number">8.1.3.4. </span>Further Reading<a class="headerlink" href="#further-reading" title="Permalink to this headline"></a></h2>
+<p>Implementation details of the database module are found in <a class="reference internal" href="database.html#database-module"><span class="std std-ref">Database Module</span></a>.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../diag/diag_how-to.html" class="btn btn-neutral float-left" title="8.1.2. How to Use the Diagnosis Module" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../task/ftask/ftask_how-to.html" class="btn btn-neutral float-right" title="8.1.4. How to Use the FTASK Module" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

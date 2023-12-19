@@ -1,0 +1,9 @@
+<map id="MEAS_RequestTemperatureRead" name="MEAS_RequestTemperatureRead">
+<area shape="rect" id="node1" title="Makes the request to the AFE state machine to read from the external temperature sensor on slaves." alt="" coords="5,81,223,108"/>
+<area shape="rect" id="node2" href="$afe_8h.html#a6156d307209cbe933ff3ba53446e829c" title="Makes the request to the AFE state machine to read from the external temperature sensor on slaves." alt="" coords="271,81,476,108"/>
+<area shape="rect" id="node3" href="$ltc__6806_8c.html#a4bb4d1d651bd80b2151b62d35e3a2699" title="sets the current state request of the state variable ltc_state." alt="" coords="551,56,701,83"/>
+<area shape="rect" id="node7" href="$nxp__afe_8h.html#aa93f5a7f951053dbeeef54b3c55cfc2c" title=" " alt="" coords="524,107,728,133"/>
+<area shape="rect" id="node4" href="$ltc__6806_8c.html#a42d4f8653843aeee6f118782dfff2c20" title="checks the state requests that are made." alt="" coords="776,5,944,32"/>
+<area shape="rect" id="node5" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="787,56,933,83"/>
+<area shape="rect" id="node6" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="791,107,929,133"/>
+</map>

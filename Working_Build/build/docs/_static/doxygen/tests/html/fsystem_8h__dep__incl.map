@@ -1,0 +1,7 @@
+<map id="fsystem.h" name="fsystem.h">
+<area shape="rect" id="node1" title="Function to switch between user mode and privilege mode." alt="" coords="121,5,199,32"/>
+<area shape="rect" id="node2" href="$i2c_8c.html" title="Driver for the I2C module." alt="" coords="5,80,56,107"/>
+<area shape="rect" id="node3" href="$pwm_8c.html" title="Implementation of the PWM module." alt="" coords="81,80,141,107"/>
+<area shape="rect" id="node4" href="$nxpfs85xx_8c.html" title="Driver for the SBC module." alt="" coords="165,80,257,107"/>
+<area shape="rect" id="node5" href="$spi_8c.html" title="Driver for the SPI module." alt="" coords="281,80,332,107"/>
+</map>

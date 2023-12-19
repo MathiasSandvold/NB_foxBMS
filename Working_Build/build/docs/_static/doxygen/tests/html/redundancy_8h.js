@@ -1,0 +1,26 @@
+var redundancy_8h =
+[
+    [ "MRC_STATE_s", "structMRC__STATE__s.html", "structMRC__STATE__s" ],
+    [ "MRC_AFE_MEASUREMENT_PERIOD_TIMEOUT_ms", "redundancy_8h.html#acd7803af4146a866f0f82ceb8dd17df2", null ],
+    [ "MRC_ALLOWED_NUMBER_OF_INVALID_CELL_VOLTAGES", "redundancy_8h.html#a4d15a55c799b2e17b57c37de5c6e3e25", null ],
+    [ "MRC_CURRENT_MEASUREMENT_PERIOD_TIMEOUT_ms", "redundancy_8h.html#a6ee518093d68e0907ebd0baf5b1f461b", null ],
+    [ "MRC_CURRENT_SENSOR_MEASUREMENT_TIMEOUT_ms", "redundancy_8h.html#ac5b9a9479c9780c82b84a644a063f15b", null ],
+    [ "MRC_Initialize", "redundancy_8h.html#a2f0023061019b6865b00a9c3e0d61076", null ],
+    [ "MRC_ValidateAfeMeasurement", "redundancy_8h.html#a950ca6f8b81ff95144621a1e1531d22d", null ],
+    [ "MRC_ValidatePackMeasurement", "redundancy_8h.html#aa37faa7b953443cc737fb5e93bdfff90", null ],
+    [ "TEST_MRC_CalculateCellTemperatureMinMaxAverage", "redundancy_8h.html#a2ce26eb4667d4ff14f719b95bd38f6da", null ],
+    [ "TEST_MRC_CalculateCellVoltageMinMaxAverage", "redundancy_8h.html#a3cedec9bb1043286a3d31c7c4eddb079", null ],
+    [ "TEST_MRC_MeasurementUpdatedAtLeastOnce", "redundancy_8h.html#a6630f20df5611050ec0fc6af6731267a", null ],
+    [ "TEST_MRC_MeasurementUpdatedRecently", "redundancy_8h.html#aaae171b1325a2c458713d6355b6033cc", null ],
+    [ "TEST_MRC_UpdateCellTemperatureValidation", "redundancy_8h.html#a4f02bc74400c72adaf650e188bf5a793", null ],
+    [ "TEST_MRC_UpdateCellVoltageValidation", "redundancy_8h.html#aa410e15c96643125a222d3179cfed29d", null ],
+    [ "TEST_MRC_ValidateBatteryVoltageMeasurement", "redundancy_8h.html#a3dbf900acdc01743fa7381bec1e5ddc1", null ],
+    [ "TEST_MRC_ValidateCellTemperature", "redundancy_8h.html#a97f9379a14cc441868324033e3c00d6c", null ],
+    [ "TEST_MRC_ValidateCellTemperatureMeasurement", "redundancy_8h.html#a30073bd9203ee6244c2d27ed1e8217f8", null ],
+    [ "TEST_MRC_ValidateCellVoltage", "redundancy_8h.html#aca18bb06e8464b0d4c71bbe877bde5f5", null ],
+    [ "TEST_MRC_ValidateCellVoltageMeasurement", "redundancy_8h.html#a0a9aa5256c67355c79e076aaafc82fcc", null ],
+    [ "TEST_MRC_ValidateCurrentMeasurement", "redundancy_8h.html#a9ff486fa3484dcc360caa1ae0906fa38", null ],
+    [ "TEST_MRC_ValidateHighVoltageMeasurement", "redundancy_8h.html#afa1779d9fe631be74f0ae2c2194d68a9", null ],
+    [ "TEST_MRC_ValidatePowerMeasurement", "redundancy_8h.html#a48d2d799507e87bb03adc73332ee6d61", null ],
+    [ "TEST_MRC_ValidateStringVoltageMeasurement", "redundancy_8h.html#a891de091bdb9fdc680f6f05e81491b8c", null ]
+];

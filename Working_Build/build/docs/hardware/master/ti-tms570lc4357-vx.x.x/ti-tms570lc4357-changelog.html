@@ -1,0 +1,299 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4.1.1. Changelog for Master TMS570 &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="4.1.2. Master TMS570 v1.1.1" href="ti-tms570lc4357-v1.1.1.html" />
+    <link rel="prev" title="4. Master Overview" href="../../master.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../connectors.html">3. Connectors</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../master.html">4. Master Overview</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.1.1. Changelog for Master TMS570</a></li>
+<li class="toctree-l2"><a class="reference internal" href="ti-tms570lc4357-v1.1.1.html">4.1.2. Master TMS570 <code class="docutils literal notranslate"><span class="pre">v1.1.1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ti-tms570lc4357-v1.1.3.html">4.1.3. Master TMS570 <code class="docutils literal notranslate"><span class="pre">v1.1.3</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="ti-tms570lc4357-v1.1.5.html">4.1.4. Master TMS570 <code class="docutils literal notranslate"><span class="pre">v1.1.5</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../master.html"><span class="section-number">4. </span>Master Overview</a> &raquo;</li>
+      <li><span class="section-number">4.1.1. </span>Changelog for Master TMS570</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/hardware/master/ti-tms570lc4357-vx.x.x/ti-tms570lc4357-changelog.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="changelog-for-master-tms570">
+<span id="id1"></span><h1><span class="section-number">4.1.1. </span>Changelog for Master TMS570<a class="headerlink" href="#changelog-for-master-tms570" title="Permalink to this headline"></a></h1>
+<div class="section" id="v1-1-5">
+<span id="changelog-for-master-tms570-v1-1-5"></span><h2><span class="section-number">4.1.1.1. </span>v1.1.5<a class="headerlink" href="#v1-1-5" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Fixed Farnell order code for 100nF/50V/0402</p></li>
+<li><p>Updated project BOM</p></li>
+</ul>
+</div>
+<div class="section" id="v1-1-4">
+<span id="changelog-for-master-tms570-v1-1-4"></span><h2><span class="section-number">4.1.1.2. </span>v1.1.4<a class="headerlink" href="#v1-1-4" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Improved SBC wake-up pulse generation circuit by changing value of R7233 to 470kOhm</p></li>
+</ul>
+</div>
+<div class="section" id="v1-1-3">
+<span id="changelog-for-master-tms570-v1-1-3"></span><h2><span class="section-number">4.1.1.3. </span>v1.1.3<a class="headerlink" href="#v1-1-3" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>fixed swapped INTA/INTB pinout of U6400 (PCF2131TF)</p></li>
+<li><p>added OSHWA logo on PCB</p></li>
+<li><p>modified power MOSFET and according control circuitry (Q4400-Q4402) for
+switching external insulation monitor (current rating of previous design was
+too weak)</p></li>
+</ul>
+</div>
+<div class="section" id="v1-1-2">
+<span id="changelog-for-master-tms570-v1-1-2"></span><h2><span class="section-number">4.1.1.4. </span>v1.1.2<a class="headerlink" href="#v1-1-2" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>fixed assignment of memory devices (MRAM, FRAM, FLASH) to SPI3 chip select
+pins (net labels were swapped)</p></li>
+<li><p>split oscillator (Y6100) into two different part numbers and BOM items (one
+part for 20 MHz and 25 MHz)</p></li>
+<li><p>added voltage limiting Zener diodes to gates of Q6401 and Q6404</p></li>
+<li><p>added 100 nF capacitor to “ON” pin of U7300 in order to improve transient
+immunity</p></li>
+<li><p>fixed faulty solder paste layer on component U7100</p></li>
+<li><p>replaced Ethernet socket J2001 due to availability issues (old part number:
+Wuerth 615008185121, new part number: Wuerth 615008137421)</p></li>
+</ul>
+</div>
+<div class="section" id="v1-1-1">
+<span id="changelog-for-master-tms570-v1-1-1"></span><h2><span class="section-number">4.1.1.5. </span>v1.1.1<a class="headerlink" href="#v1-1-1" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>added clamping diodes for contactor feedback resistor dividers in order to
+protect inputs of port expander</p></li>
+<li><p>added clamping diodes to insulation monitor PWM and OK inputs</p></li>
+<li><p>adjusted contactor connectors pinout to match foxBMS 1 Master pinout</p></li>
+<li><p>replaced R8014 and R8017 10k resistors with 10R resistors due to amplifier
+gain error</p></li>
+<li><p>added placement option to use ADUM6401 as a digital isolator for the CAN2
+interface</p></li>
+<li><p>fixed a typo in EMIF connector silk screen</p></li>
+<li><p>improved free space around debug connector (debug connector was moved towards
+upper edge of board)</p></li>
+<li><p>changed global polygon connect style to relief connect in order to improve
+solderabilty of through-hole connectors</p></li>
+<li><p>fixed solder paste areas for Mictor debug connector</p></li>
+<li><p>modified all mounting holes to fit Wuerth SMT spacers (outer diameter = 6mm)</p></li>
+<li><p>removed interlock high-side switch from default component variant due to
+availability issues</p></li>
+<li><p>added HW board version coding using IO1_0 to IO1_7 of port-expander1</p></li>
+</ul>
+</div>
+<div class="section" id="v1-1-0">
+<span id="changelog-for-master-tms570-v1-1-0"></span><h2><span class="section-number">4.1.1.6. </span>v1.1.0<a class="headerlink" href="#v1-1-0" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>replaced CAN transceiver with TCAN1043HDQ1 (SOIC-14 package) due to
+availability issues</p></li>
+<li><p>added battery holder for CR1225 RTC battery (BR2470 battery is now optional)</p></li>
+<li><p>changed value of all I2C pull-up resistors from 5.1 <span class="math notranslate nohighlight">\({k\Omega}\)</span> to 2.49 <span class="math notranslate nohighlight">\({k\Omega}\)</span></p></li>
+<li><p>removed buck-boost converter IC from “default” component variant due to
+availability issues</p></li>
+<li><p>removed Ethernet phy IC from “default” component variant due to availability
+issues</p></li>
+<li><p>finalized PCB layout</p></li>
+<li><p>added mechanical dimensions to draftman document</p></li>
+</ul>
+</div>
+<div class="section" id="v1-0-2">
+<span id="changelog-for-master-tms570-v1-0-2"></span><h2><span class="section-number">4.1.1.7. </span>v1.0.2<a class="headerlink" href="#v1-0-2" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>added digital isolator with integrated power for CAN2 interface</p></li>
+<li><p>added connectors for interface and extension boards</p></li>
+<li><p>added bypass for buck-boost converter</p></li>
+<li><p>split board supply into clamp 30 and clamp 30C</p></li>
+<li><p>added additional protection circuit for clamp 30C supply input</p></li>
+<li><p>removed isolated USB interface</p></li>
+<li><p>added test points for interlock circuit</p></li>
+</ul>
+</div>
+<div class="section" id="v1-0-1">
+<span id="changelog-for-master-tms570-v1-0-1"></span><h2><span class="section-number">4.1.1.8. </span>v1.0.1<a class="headerlink" href="#v1-0-1" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>corrected the supply of Vdd of the smart power switch (from 12V to 5V)</p></li>
+</ul>
+</div>
+<div class="section" id="v1-0-0">
+<span id="changelog-for-master-tms570-v1-0-0"></span><h2><span class="section-number">4.1.1.9. </span>v1.0.0<a class="headerlink" href="#v1-0-0" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>initial version</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../../master.html" class="btn btn-neutral float-left" title="4. Master Overview" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ti-tms570lc4357-v1.1.1.html" class="btn btn-neutral float-right" title="4.1.2. Master TMS570 v1.1.1" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

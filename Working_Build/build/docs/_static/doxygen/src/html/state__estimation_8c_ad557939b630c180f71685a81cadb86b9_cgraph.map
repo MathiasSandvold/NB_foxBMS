@@ -1,0 +1,4 @@
+<map id="SE_InitializeSoh" name="SE_InitializeSoh">
+<area shape="rect" id="node1" title="Wrapper for algorithm specific SOH initialization." alt="" coords="5,5,123,32"/>
+<area shape="rect" id="node2" href="$group__state-estimation-api.html#gad1ebe10d58b9cd321fb63b196471a1d8" title="initializes startup state&#45;of&#45;health related values" alt="" coords="171,5,345,32"/>
+</map>

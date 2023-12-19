@@ -1,0 +1,28 @@
+var searchData=
+[
+  ['valid_5fgpiopecs_6670',['valid_GPIOPECs',['../structLTC__DATAPTR__s.html#af72fea474914b1cd9e6b7a62aa15d35f',1,'LTC_DATAPTR_s']]],
+  ['validmeasuredcelltemperatures_6671',['validMeasuredCellTemperatures',['../structDATA__BLOCK__MIN__MAX__s.html#a9def938a86cb035ed515e09c9f7bed61',1,'DATA_BLOCK_MIN_MAX_s']]],
+  ['validmeasuredcellvoltages_6672',['validMeasuredCellVoltages',['../structDATA__BLOCK__MIN__MAX__s.html#a87ba867006346243a0dec07bc60e48bf',1,'DATA_BLOCK_MIN_MAX_s']]],
+  ['validmodulevoltage_6673',['validModuleVoltage',['../structDATA__BLOCK__CELL__VOLTAGE__s.html#a60e0d2aa77e9378fd0c45bab77046872',1,'DATA_BLOCK_CELL_VOLTAGE_s']]],
+  ['value_6674',['value',['../structBC__LUT__s.html#abecb3886d8becb00ad20d8957fa04c55',1,'BC_LUT_s::value()'],['../structDATA__BLOCK__BALANCING__FEEDBACK__s.html#a7bab485d73cc7a32e8100891274640a3',1,'DATA_BLOCK_BALANCING_FEEDBACK_s::value()'],['../structDATA__BLOCK__USER__MUX__s.html#ae443c2cc4aaecc65fd44a7d3487432c5',1,'DATA_BLOCK_USER_MUX_s::value()']]],
+  ['vapplicationgetidletaskmemory_6675',['vApplicationGetIdleTaskMemory',['../os__freertos_8c.html#a1988aa923b19fa6f31c93afa7773f793',1,'os_freertos.c']]],
+  ['vapplicationidlehook_6676',['vApplicationIdleHook',['../os__freertos_8c.html#a97fd430f36f8b065226e2bff9bad1de5',1,'vApplicationIdleHook(void):&#160;os_freertos.c'],['../os_8h.html#a97fd430f36f8b065226e2bff9bad1de5',1,'vApplicationIdleHook(void):&#160;os_freertos.c']]],
+  ['ver_5ffoxbmsversioninformation_6677',['ver_foxbmsVersionInformation',['../version__cfg_8h.html#a501b8e5d06ec531b4b6b166091533c74',1,'version_cfg.h']]],
+  ['ver_5fversion_5finformation_6678',['VER_VERSION_INFORMATION',['../version__cfg_8h.html#af0fcc304082214d1a7f99c8ac4319948',1,'version_cfg.h']]],
+  ['ver_5fversion_5fs_6679',['VER_VERSION_s',['../structVER__VERSION__s.html',1,'']]],
+  ['ver_5fversion_5fstruct_5fmaximum_5fcommit_5fhash_5flength_6680',['VER_VERSION_STRUCT_MAXIMUM_COMMIT_HASH_LENGTH',['../version__cfg_8h.html#a9b90558d4850a60fc82df0a03bfd2db6',1,'version_cfg.h']]],
+  ['ver_5fversion_5fstruct_5fmaximum_5fremote_5fstring_5flength_6681',['VER_VERSION_STRUCT_MAXIMUM_REMOTE_STRING_LENGTH',['../version__cfg_8h.html#a6a9cdf26bbb1220fbf14a4ab0a1a5b88',1,'version_cfg.h']]],
+  ['version_5fcfg_2eh_6682',['version_cfg.h',['../version__cfg_8h.html',1,'']]],
+  ['vishay_5fntcalug01a103g_2ec_6683',['vishay_ntcalug01a103g.c',['../vishay__ntcalug01a103g_8c.html',1,'']]],
+  ['vishay_5fntcalug01a103g_2eh_6684',['vishay_ntcalug01a103g.h',['../vishay__ntcalug01a103g_8h.html',1,'']]],
+  ['vishay_5fntcalug01a103g_5flookup_2dtable_2ec_6685',['vishay_ntcalug01a103g_lookup-table.c',['../vishay__ntcalug01a103g__lookup-table_8c.html',1,'']]],
+  ['vishay_5fntcalug01a103g_5fpolynomial_2ec_6686',['vishay_ntcalug01a103g_polynomial.c',['../vishay__ntcalug01a103g__polynomial_8c.html',1,'']]],
+  ['vishay_5fntcle317e4103sba_2ec_6687',['vishay_ntcle317e4103sba.c',['../vishay__ntcle317e4103sba_8c.html',1,'']]],
+  ['vishay_5fntcle317e4103sba_2eh_6688',['vishay_ntcle317e4103sba.h',['../vishay__ntcle317e4103sba_8h.html',1,'']]],
+  ['vishay_5fntcle317e4103sba_5flookup_2dtable_2ec_6689',['vishay_ntcle317e4103sba_lookup-table.c',['../vishay__ntcle317e4103sba__lookup-table_8c.html',1,'']]],
+  ['vmon_5fregx_6690',['vmon_regx',['../structFS85__MAIN__REGISTERS__s.html#a20c0b759a53a7217c6d39d23482af251',1,'FS85_MAIN_REGISTERS_s']]],
+  ['voltage_5fmv_6691',['voltage_mV',['../structBC__LUT__s.html#a81761a139d6601f7b6186e34533e8720',1,'BC_LUT_s']]],
+  ['voltagesampletime_6692',['VoltageSampleTime',['../structLTC__STATE__s.html#afcbc781008cd1ef5083d58f60dc3852e',1,'LTC_STATE_s']]],
+  ['voltmeasdiagerrorentry_6693',['voltMeasDiagErrorEntry',['../structLTC__STATE__s.html#a140c5a1d3681287111c59b3c64740eae',1,'LTC_STATE_s']]],
+  ['voltmeasmode_6694',['voltMeasMode',['../structLTC__STATE__s.html#a6729ae22052f39bd6929c8820c633291',1,'LTC_STATE_s']]]
+];

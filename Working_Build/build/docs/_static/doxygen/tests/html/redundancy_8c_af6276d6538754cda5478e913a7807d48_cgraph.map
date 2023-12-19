@@ -1,0 +1,5 @@
+<map id="MRC_MeasurementUpdatedRecently" name="MRC_MeasurementUpdatedRecently">
+<area shape="rect" id="node1" title="Check timestamp if measurement has been updated recently." alt="" coords="5,42,241,69"/>
+<area shape="rect" id="node2" href="$redundancy_8c.html#a92c673dd0bc5676f741175b6e4f14aa6" title="Check timestamp if measurement has been updated at least once." alt="" coords="289,5,488,47"/>
+<area shape="rect" id="node3" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="325,71,452,98"/>
+</map>

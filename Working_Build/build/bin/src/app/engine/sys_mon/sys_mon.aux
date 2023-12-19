@@ -1,0 +1,186 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{7B2DCEE5-6398-4479-8135-F48FD57EC2A9}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Thu Sep  7 11:08:22 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitl                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitf                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbit                                       |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormall                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormalf                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormal                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanf                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnan                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinfl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinff                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinf                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitel                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitef                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinite                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyl                                   |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyf                                   |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassify                                    |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  SYSM_CopyFramStruct                             |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SYSM_UpdateFramData                             |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+   SYSM_CopyFramStruct
+   FRAM_WriteData
+
++-------------------------------------------------------------+
+|  FUNCTION:  SYSM_Notify                                     |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   OS_ExitTaskCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  SYSM_Init                                       |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FRAM_ReadData
+   SYSM_CopyFramStruct
+
++-------------------------------------------------------------+
+|  FUNCTION:  SYSM_ConvertRecordedTimingsToViolation          |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  SYSM_GetRecordedTimingViolations                |
++-------------------------------------------------------------+
+Stack usage:   56 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   SYSM_CopyFramStruct
+   OS_ExitTaskCritical
+   SYSM_ConvertRecordedTimingsToViolation
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SYSM_ClearAllTimingViolations                   |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   DIAG_Handler
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+   SYSM_UpdateFramData
+
++-------------------------------------------------------------+
+|  FUNCTION:  SYSM_RecordTimingViolation                      |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  SYSM_CheckNotifications                         |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Function contains indirect calls.
+Called functions:
+   OS_GetTickCount
+   DIAG_Handler
+   SYSM_RecordTimingViolation
+

@@ -1,0 +1,8 @@
+<map id="testConversionExtractAndInsertRoundTripNull" name="testConversionExtractAndInsertRoundTripNull">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,177,90"/>
+<area shape="rect" id="node2" href="$mxm__1785x__tools_8c.html#ab437f79b3d0299bb51e1a22bcfb484d2" title="Convert a measurement value to a voltage value." alt="" coords="275,5,376,32"/>
+<area shape="rect" id="node5" href="$mxm__1785x__tools_8c.html#a2b0a88c10d76ee1f9842969d35c0e676" title="convert a unipolar 14bit&#45;value and shifts it into the 16bit&#45;format" alt="" coords="232,56,419,83"/>
+<area shape="rect" id="node6" href="$mxm__1785x__tools_8c.html#a9b326fed943ba841b17fb6272d79945b" title="convert a voltage value into a unipolar 14bit value" alt="" coords="225,107,425,133"/>
+<area shape="rect" id="node3" href="$mxm__1785x__tools_8c.html#af328199dc46b6eab7f35f08f0f076145" title="Extract a value from a single register." alt="" coords="473,5,684,32"/>
+<area shape="rect" id="node4" href="$mxm__1785x__tools_8c.html#a0dc736d94a1c30286d2549d3efa99e2d" title="Find Position of first set bit in bitmask." alt="" coords="732,5,852,32"/>
+</map>

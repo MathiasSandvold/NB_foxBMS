@@ -1,0 +1,9 @@
+<map id="NXP_Initialize" name="NXP_Initialize">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,107,108"/>
+<area shape="rect" id="node2" href="$os__freertos_8c.html#a3ac9f783e38ae9f9c8cfe0634bb3b8fe" title="Delay a task until a specified time." alt="" coords="179,5,313,32"/>
+<area shape="rect" id="node3" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="183,56,309,83"/>
+<area shape="rect" id="node4" href="$pex_8c.html#a8d40659d3d10755949d65e36f483c504" title="sets pin to high." alt="" coords="199,107,293,133"/>
+<area shape="rect" id="node7" href="$pex_8c.html#aa2309e9dbd95438d52d80cad62ce5a45" title="sets pin to input." alt="" coords="155,157,337,184"/>
+<area shape="rect" id="node5" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="385,107,532,133"/>
+<area shape="rect" id="node6" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="389,157,528,184"/>
+</map>

@@ -1,0 +1,12 @@
+<map id="can_cbs_rx.h" name="can_cbs_rx.h">
+<area shape="rect" id="node1" title="CAN callbacks header." alt="" coords="691,5,791,32"/>
+<area shape="rect" id="node2" href="$can__cbs__rx__current-sensor_8c.html" title="CAN driver Rx callback implementation." alt="" coords="5,80,141,121"/>
+<area shape="rect" id="node3" href="$can__cbs__rx__debug_8c.html" title="CAN driver Rx callback implementation." alt="" coords="166,87,309,114"/>
+<area shape="rect" id="node4" href="$can__cbs__rx__imd_8c.html" title="CAN driver Rx callback implementation." alt="" coords="333,87,461,114"/>
+<area shape="rect" id="node5" href="$can__cbs__rx__state-request_8c.html" title="CAN driver Rx callback implementation." alt="" coords="486,87,669,114"/>
+<area shape="rect" id="node6" href="$can__cfg__rx_8c.html" title="Configuration for the CAN module." alt="" coords="693,87,789,114"/>
+<area shape="rect" id="node7" href="$test__can__cbs__rx__current-sensor_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="813,80,979,121"/>
+<area shape="rect" id="node8" href="$test__can__cbs__rx__debug_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="1003,87,1173,114"/>
+<area shape="rect" id="node9" href="$test__can__cbs__rx__imd_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="1197,87,1355,114"/>
+<area shape="rect" id="node10" href="$test__can__cbs__rx__state-request_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="1379,80,1533,121"/>
+</map>

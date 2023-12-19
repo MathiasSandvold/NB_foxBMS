@@ -1,0 +1,4 @@
+<map id="TEST_BMS_UpdateBatsysState" name="TEST_BMS_UpdateBatsysState">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,216,32"/>
+<area shape="rect" id="node2" href="$bms_8c.html#a76058d139f635139e58c6c6fce836c94" title="Updates battery system state variable depending on measured/recent current values." alt="" coords="264,5,435,32"/>
+</map>

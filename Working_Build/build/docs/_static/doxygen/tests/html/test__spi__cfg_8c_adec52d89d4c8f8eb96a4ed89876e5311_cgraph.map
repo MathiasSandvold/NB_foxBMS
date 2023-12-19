@@ -1,0 +1,5 @@
+<map id="testSPI_SpsInterfaceSwitchToHighSpeedIsNotLowSpeed" name="testSPI_SpsInterfaceSwitchToHighSpeedIsNotLowSpeed">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,195,80"/>
+<area shape="rect" id="node2" href="$spi__cfg_8c.html#ac05f356ab006baab3e2d492bfefdb752" title="Switch the SPS spi handle to high speed." alt="" coords="243,5,417,47"/>
+<area shape="rect" id="node3" href="$spi__cfg_8c.html#a05ff5a51b7b9b82a1835c63ea30ea7cd" title="Switch the SPS spi handle to low speed." alt="" coords="243,71,417,112"/>
+</map>

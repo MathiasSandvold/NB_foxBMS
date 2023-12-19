@@ -1,0 +1,15 @@
+<map id="TSI_GetTemperature" name="TSI_GetTemperature">
+<area shape="rect" id="node1" title="translate a voltage to a temperature" alt="" coords="5,299,147,325"/>
+<area shape="rect" id="node2" href="$epcos__b57251v5103j060_8c.html#a60e7e40bc4662b44093a0a2b464bd395" title="returns temperature based on measured ADC voltage" alt="" coords="195,5,417,32"/>
+<area shape="rect" id="node4" href="$epcos__b57251v5103j060_8c.html#a22b8fc0a39278f0c1a61c1cca7482b5a" title="returns temperature based on measured ADC voltage" alt="" coords="203,57,409,98"/>
+<area shape="rect" id="node5" href="$epcos__b57861s0103f045_8c.html#a8bb26a9001e051fc2fee6ba77027b1b6" title="returns temperature based on measured ADC voltage" alt="" coords="195,123,417,149"/>
+<area shape="rect" id="node6" href="$epcos__b57861s0103f045_8c.html#a3aca9a6a710bb21efc1a5d4ccf49b3e0" title="returns temperature based on measured ADC voltage" alt="" coords="203,174,409,215"/>
+<area shape="rect" id="node7" href="$fake__none_8c.html#a8519235f1cb368c712566dc0a6615a8a" title="returns a fake temperature" alt="" coords="195,240,417,267"/>
+<area shape="rect" id="node8" href="$fake__none_8c.html#a8d502a27efdeb0f048997819e3ae4fc4" title="returns a fake temperature" alt="" coords="204,291,408,333"/>
+<area shape="rect" id="node9" href="$murata__ncu15xh103f6sxx_8c.html#a0e6cfeee0f7fdf5504234ed54ddfc9b7" title="returns temperature based on measured ADC voltage." alt="" coords="195,357,417,384"/>
+<area shape="rect" id="node10" href="$murata__ncu15xh103f6sxx_8c.html#a255c099fbd405cdc3b51c39a415c18e3" title="returns temperature based on measured ADC voltage" alt="" coords="204,409,408,450"/>
+<area shape="rect" id="node11" href="$vishay__ntcalug01a103g_8c.html#a865b7c323eb0bdbd7420518e6b56cede" title="returns temperature based on measured ADC voltage." alt="" coords="197,475,415,501"/>
+<area shape="rect" id="node12" href="$vishay__ntcalug01a103g_8c.html#a47e088f4023835e56cac22e035c66be8" title="returns temperature based on measured ADC voltage" alt="" coords="205,526,407,567"/>
+<area shape="rect" id="node13" href="$vishay__ntcle317e4103sba_8c.html#ae917bb4796f0f8fa36201dbd92aae38c" title="returns temperature based on measured ADC voltage." alt="" coords="197,592,415,619"/>
+<area shape="rect" id="node3" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="465,357,636,384"/>
+</map>

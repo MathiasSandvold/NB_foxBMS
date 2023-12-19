@@ -1,0 +1,6 @@
+<map id="BAL_SetStateRequest" name="BAL_SetStateRequest">
+<area shape="rect" id="node1" title="sets the current state request of the state variable bal_state." alt="" coords="5,56,159,83"/>
+<area shape="rect" id="node2" href="$bal_8c.html#ace76b9a00c0a0ec922e15d0d677b9315" title="checks the state requests that are made." alt="" coords="207,5,377,32"/>
+<area shape="rect" id="node3" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="219,56,365,83"/>
+<area shape="rect" id="node4" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="223,107,361,133"/>
+</map>

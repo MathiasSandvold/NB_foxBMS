@@ -1,0 +1,5 @@
+<map id="bal_strategy_history.h" name="bal_strategy_history.h">
+<area shape="rect" id="node1" title="Header for the history&#45;based balancing strategy module." alt="" coords="100,5,251,32"/>
+<area shape="rect" id="node2" href="$bal__strategy__history_8c.html" title="Driver for the Balancing module." alt="" coords="5,80,156,107"/>
+<area shape="rect" id="node3" href="$test__bal__strategy__history_8c.html" title="Test of the history based balancing module." alt="" coords="181,80,359,107"/>
+</map>

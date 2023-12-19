@@ -1,0 +1,4 @@
+<map id="TEST_I165C_ReadDataWordImdInfo" name="TEST_I165C_ReadDataWordImdInfo">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,236,32"/>
+<area shape="rect" id="node2" href="$bender__iso165c_8c.html#a2c51a4bf327fdb02b6bf19b47c2aed19" title="Get data in data word from CAN transmission, for the specific IMD_Info message." alt="" coords="284,5,475,32"/>
+</map>

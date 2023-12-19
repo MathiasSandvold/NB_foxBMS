@@ -1,0 +1,5 @@
+<map id="PWM_SetDutyCycle" name="PWM_SetDutyCycle">
+<area shape="rect" id="node1" title="Set the duty cycle of the PWM (currently only channel 1A)" alt="" coords="5,13,148,39"/>
+<area shape="rect" id="node2" href="$pwm_8c.html#a7466e9612ab6f3f9d232e7e55ec2b8cb" title=" " alt="" coords="196,5,419,47"/>
+<area shape="rect" id="node3" href="$pwm_8c.html#a54c4c1131b0e3081708384dd544db3ec" title=" " alt="" coords="467,13,655,39"/>
+</map>

@@ -1,0 +1,9 @@
+<map id="testCheckPrechargeIterateStub" name="testCheckPrechargeIterateStub">
+<area shape="rect" id="node1" title="Iterate over a callback that supplies various scenarios and check if they work as expected." alt="" coords="5,42,208,69"/>
+<area shape="rect" id="node2" href="$test__bms_8c.html#aafdd4347567c0ab63cd84a56cf03fbf1" title=" " alt="" coords="273,5,432,47"/>
+<area shape="rect" id="node3" href="$bms_8c.html#a5e00736318e8b2a617957ad4f5649d3b" title=" " alt="" coords="256,71,449,98"/>
+<area shape="rect" id="node4" href="$bms_8c.html#a030960f823eace2d38ba750cbd99527b" title="Checks if the current limitations are violated." alt="" coords="497,71,652,98"/>
+<area shape="rect" id="node5" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="711,46,815,73"/>
+<area shape="rect" id="node7" href="$foxmath_8c.html#a04e47df99d56d9aad4287672285f4a1c" title="Returns the absolute value of passed int32_t value." alt="" coords="700,97,827,123"/>
+<area shape="rect" id="node6" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="875,46,997,73"/>
+</map>

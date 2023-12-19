@@ -1,0 +1,63 @@
+<map id="testCANRX_DebugVersionInformationMultiplexerValue" name="testCANRX_DebugVersionInformationMultiplexerValue">
+<area shape="rect" id="node1" title=" " alt="" coords="5,575,244,616"/>
+<area shape="rect" id="node2" href="$can__cbs__rx_8h.html#a84497271094adbc56d3660ee37d154a8" title="can rx callback function for debug messages" alt="" coords="292,582,401,609"/>
+<area shape="rect" id="node3" href="$can__helper_8c.html#a844d064ef821d64e6ae5cd80e597d452" title="Copy CAN data from 8 bytes to a 64&#45;bit variable." alt="" coords="474,5,677,47"/>
+<area shape="rect" id="node4" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="1035,594,1301,621"/>
+<area shape="rect" id="node6" href="$can__cbs__rx__debug_8c.html#a6a53561b1ce0fe23c5e9de1b171d143b" title="Parses CAN message related to FRAM initialization." alt="" coords="454,181,697,207"/>
+<area shape="rect" id="node20" href="$can__cbs__rx__debug_8c.html#ab61b61ff3f51b4ad209a607b2c843c8f" title="Parses CAN message to set the RTC clock." alt="" coords="493,467,658,494"/>
+<area shape="rect" id="node30" href="$can__cbs__rx__debug_8c.html#a6c0b9af75dfffd85fc3f97e1f90893ba" title="Parses CAN message to handle software related requests, e.g., a software reset of the BMS." alt="" coords="461,695,690,722"/>
+<area shape="rect" id="node33" href="$can__cbs__rx__debug_8c.html#a302be12dfe424102874d2407cfb8dab2" title="Parses CAN message to handle time information requests." alt="" coords="479,813,672,839"/>
+<area shape="rect" id="node52" href="$can__cbs__rx__debug_8c.html#a717a6bb12396c023260e8016558c0571" title="Parses CAN message to handle version related messages." alt="" coords="449,1118,701,1145"/>
+<area shape="rect" id="node61" href="$can__cbs__tx__unsupported-message_8c.html#a87fe65c4469d0a9f3ecb620135f05f89" title="Function to generically handle multiplexer values that are not supported in a message." alt="" coords="1626,1369,1833,1411"/>
+<area shape="rect" id="node5" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="2205,1145,2408,1171"/>
+<area shape="rect" id="node7" href="$can__cbs__rx__debug_8c.html#a339d6504c498c23c72f4298c212cfdcf" title="Check if a FRAM initialization is requested." alt="" coords="761,173,975,215"/>
+<area shape="rect" id="node8" href="$fram_8c.html#a6d7c5fe74d5d10147e4fd38864a474c8" title="Reinitialize all entries in the FRAM." alt="" coords="1075,333,1261,359"/>
+<area shape="rect" id="node9" href="$fram_8c.html#ad5c5ec1fd0a6c3667185d3b75064e359" title="Writes a variable to the FRAM." alt="" coords="1960,497,2084,523"/>
+<area shape="rect" id="node10" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="2241,598,2372,625"/>
+<area shape="rect" id="node11" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="2259,649,2354,675"/>
+<area shape="rect" id="node12" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="2266,699,2347,726"/>
+<area shape="rect" id="node13" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="2251,345,2363,371"/>
+<area shape="rect" id="node14" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="2205,395,2408,422"/>
+<area shape="rect" id="node15" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="2246,446,2367,473"/>
+<area shape="rect" id="node16" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="2267,497,2346,523"/>
+<area shape="rect" id="node19" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="2261,547,2352,574"/>
+<area shape="rect" id="node17" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="2468,522,2615,549"/>
+<area shape="rect" id="node18" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="2472,573,2611,599"/>
+<area shape="rect" id="node21" href="$can__cbs__rx__debug_8c.html#a90490c8666530b58096c9b04c406c199" title="Parses the CAN message to retrieve the day information." alt="" coords="810,543,926,570"/>
+<area shape="rect" id="node22" href="$can__cbs__rx__debug_8c.html#a7fa2aac4493d7ee0a7adaa1e27852407" title="Parses the CAN message to retrieve the hours information." alt="" coords="805,594,931,621"/>
+<area shape="rect" id="node23" href="$can__cbs__rx__debug_8c.html#a6ae59fc9db1752750eedf1f3fa29c6fa" title="Parses the CAN message to retrieve the hundredth of seconds information." alt="" coords="760,645,976,671"/>
+<area shape="rect" id="node24" href="$can__cbs__rx__debug_8c.html#a68acab748012df0730f8a3c2f4194af2" title="Parses the CAN message to retrieve the minutes information." alt="" coords="799,239,937,266"/>
+<area shape="rect" id="node25" href="$can__cbs__rx__debug_8c.html#a73aff1157ebd5f26522f14ccb1a77d8a" title="Parses the CAN message to retrieve the month information." alt="" coords="803,290,933,317"/>
+<area shape="rect" id="node26" href="$can__cbs__rx__debug_8c.html#a7c16547e0ee6624daf74f7ceca17b66f" title="Parses the CAN message to retrieve the seconds information." alt="" coords="796,341,940,367"/>
+<area shape="rect" id="node27" href="$can__cbs__rx__debug_8c.html#af62f6b9c51db3ba124481f55c33ffa57" title="Parses the CAN message to retrieve the weekday information." alt="" coords="794,391,942,418"/>
+<area shape="rect" id="node28" href="$can__cbs__rx__debug_8c.html#ac6b52010516e375c897480c68967e2a1" title="Parses the CAN message to retrieve the year information." alt="" coords="808,442,928,469"/>
+<area shape="rect" id="node29" href="$os__freertos_8c.html#abfcdf77954b6a87dca01c31efaf4d0b3" title="Post an item to the back the provided queue." alt="" coords="781,493,955,519"/>
+<area shape="rect" id="node31" href="$can__cbs__rx__debug_8c.html#a5535e0f454e41e00aaf92e77b563f558" title="Check if a software reset is requested." alt="" coords="769,747,967,788"/>
+<area shape="rect" id="node32" href="$reset_8c.html#a61214f27599c0125bcbb2ee8edf12fd1" title="Trigger a software reset of the BMS." alt="" coords="779,695,957,722"/>
+<area shape="rect" id="node34" href="$can__cbs__rx__debug_8c.html#a1996035dd98e17fe80db129b1db81314" title="Check if the RTC time information is requested." alt="" coords="751,813,985,839"/>
+<area shape="rect" id="node35" href="$can__cbs__rx__debug_8c.html#afc603757d28de70fd02a3e2914fbc589" title="Triggers sending of the RTC time information message." alt="" coords="762,863,974,890"/>
+<area shape="rect" id="node36" href="$can__cbs__tx__debug-response_8c.html#a1e3f862c33124f37766fa4f3a7ba39fc" title="Handles Debug response message." alt="" coords="1085,1233,1251,1259"/>
+<area shape="rect" id="node37" href="$can__cbs__tx__debug-response_8c.html#ad8ac885ff653df16e2b65d89f4cf0ff3" title="Transmit the embedded software version information." alt="" coords="1624,1115,1835,1142"/>
+<area shape="rect" id="node42" href="$can__cbs__tx__debug-response_8c.html#a8b5101ec38e9f3da6b4102f6613a50fd" title="Transmit the boot message and its magic end data." alt="" coords="1352,1217,1557,1243"/>
+<area shape="rect" id="node44" href="$can__cbs__tx__debug-response_8c.html#ac3016fb04621a436833e6b34d4cfa2a1" title="Transmit the boot message and its magic start data." alt="" coords="1349,1267,1560,1294"/>
+<area shape="rect" id="node45" href="$can__cbs__tx__debug-response_8c.html#adab46a46c59157ef5f55c9d88bc9d2fd" title="Transmit the MCU&#39;s lot number ID information." alt="" coords="1625,1267,1833,1294"/>
+<area shape="rect" id="node46" href="$can__cbs__tx__debug-response_8c.html#a15e003d789130c449dbdc3da62ce3915" title="Transmit the MCU&#39;s unique id." alt="" coords="1622,1318,1837,1345"/>
+<area shape="rect" id="node47" href="$can__cbs__tx__debug-response_8c.html#a9efa090906344a9a7f38cbf005377c92" title="Transmit the MCU&#39;s wafer information." alt="" coords="1608,1166,1851,1193"/>
+<area shape="rect" id="node48" href="$can__cbs__tx__debug-response_8c.html#a2b59f75c950dd5db13dfa018a4fff440" title="Transmit the RTC time message." alt="" coords="1645,1065,1813,1091"/>
+<area shape="rect" id="node38" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="1965,1166,2079,1193"/>
+<area shape="rect" id="node39" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="1899,1217,2145,1243"/>
+<area shape="rect" id="node40" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="1923,1268,2121,1309"/>
+<area shape="rect" id="node41" href="$foxmath_8c.html#a574d9c3f4c86d7d21643ffe90230404d" title="Returns the minimum of the passed uint16_t values." alt="" coords="1921,1115,2123,1142"/>
+<area shape="rect" id="node43" href="$can__cbs__tx__debug-response_8c.html#a6921afc41e27b2a4d530b6b38adb4441" title="Transmit a boot message." alt="" coords="1638,1217,1821,1243"/>
+<area shape="rect" id="node49" href="$rtc_8c.html#ae09c97b84e318d32d7c08ee56fe699b7" title="get the RTC system timer." alt="" coords="1917,801,2127,827"/>
+<area shape="rect" id="node50" href="$rtc_8c.html#ade1f047b937483cffdc3d556e3973c74" title="Get the RTC system timer value." alt="" coords="2193,801,2420,827"/>
+<area shape="rect" id="node51" href="$rtc_8c.html#a51125f9e9e11ba4d06f263043bba6988" title="Convert time from struct tm to RTC_TIME_DATA_s format." alt="" coords="2214,750,2399,777"/>
+<area shape="rect" id="node53" href="$can__cbs__rx__debug_8c.html#ac71627bc7e8847a64ab504cc601edcd1" title="Check if the BMS software version information is requested." alt="" coords="772,980,964,1021"/>
+<area shape="rect" id="node54" href="$can__cbs__rx__debug_8c.html#a09fa424f8354901012526b0ad522084a" title="Check if the MCU lot number information is requested." alt="" coords="767,1045,969,1087"/>
+<area shape="rect" id="node55" href="$can__cbs__rx__debug_8c.html#ac79b3c069f611a665b7e304fa8e0bd21" title="Check if the MCU die ID information is requested." alt="" coords="769,1111,967,1152"/>
+<area shape="rect" id="node56" href="$can__cbs__rx__debug_8c.html#a1d9a8d0082dcb06f7873c17316f51d31" title="Check if the MCU wafer information is requested." alt="" coords="749,915,987,956"/>
+<area shape="rect" id="node57" href="$can__cbs__rx__debug_8c.html#a2f111be88fb6569a5d20303438b6c0da" title="Triggers sending of the BMS software version information message." alt="" coords="774,1241,962,1283"/>
+<area shape="rect" id="node58" href="$can__cbs__rx__debug_8c.html#ac97a9bb0fe7f8f16efcf64e169786dad" title="Triggers sending of the MCU lot number information message." alt="" coords="769,1307,967,1348"/>
+<area shape="rect" id="node59" href="$can__cbs__rx__debug_8c.html#a57eeb7bb4ed2f62c84249f28f8949253" title="Triggers sending of the MCU die ID information message." alt="" coords="771,1372,965,1413"/>
+<area shape="rect" id="node60" href="$can__cbs__rx__debug_8c.html#ad8d18cbde998665f155a888392e03643" title="Triggers sending of the MCU wafer information message." alt="" coords="751,1176,985,1217"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="DIAG_ErrorSystemMonitoring" name="DIAG_ErrorSystemMonitoring">
+<area shape="rect" id="node1" title="Callback function for system monitoring related diagnosis events." alt="" coords="5,5,199,32"/>
+<area shape="rect" id="node2" href="$diag__cbs__sys-mon_8c.html#a117acc2c84348c163fd56b76de239cd7" title="convert a DIAG_EVENT_e to a boolean for the violation flags in the database" alt="" coords="247,5,379,32"/>
+</map>

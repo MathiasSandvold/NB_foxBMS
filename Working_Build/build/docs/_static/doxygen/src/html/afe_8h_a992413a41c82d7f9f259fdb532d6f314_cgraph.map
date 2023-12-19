@@ -1,0 +1,4 @@
+<map id="AFE_RequestIoWrite" name="AFE_RequestIoWrite">
+<area shape="rect" id="node1" title="Makes the request to the AFE state machine to write to the IO port&#45;expander." alt="" coords="5,5,149,32"/>
+<area shape="rect" id="node2" href="$nxp__afe_8h.html#a40eabcff67dcaffdecb7d2fe08d261b5" title=" " alt="" coords="197,5,340,32"/>
+</map>

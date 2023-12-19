@@ -1,0 +1,12 @@
+<map id="nxp_afe_dma.h" name="nxp_afe_dma.h">
+<area shape="rect" id="node1" title="Headers for the driver for the DMA module." alt="" coords="480,5,591,32"/>
+<area shape="rect" id="node2" href="$nxp__mc33775a__cfg_8h.html" title="Header for the configuration for the MC33775A analog front&#45;end." alt="" coords="232,80,377,107"/>
+<area shape="rect" id="node10" href="$nxp__afe__dma_8c.html" title="Driver for the DMA module for the N775." alt="" coords="649,229,760,256"/>
+<area shape="rect" id="node3" href="$nxp__mc33775a__cfg_8c.html" title="Configuration for the MC33775A analog front&#45;end." alt="" coords="5,155,151,181"/>
+<area shape="rect" id="node4" href="$nxp__mc33775a-ll_8h.html" title=" " alt="" coords="175,155,306,181"/>
+<area shape="rect" id="node7" href="$nxp__mc33775a_8h.html" title="Headers for the driver for the MC33775A analog front&#45;end." alt="" coords="333,155,455,181"/>
+<area shape="rect" id="node5" href="$nxp__mc33775a-ll_8c.html" title=" " alt="" coords="21,229,151,256"/>
+<area shape="rect" id="node6" href="$nxp__mc33775a_8c.html" title="Driver for the MC33775A analog front&#45;end." alt="" coords="176,229,297,256"/>
+<area shape="rect" id="node8" href="$nxp__mc33775a__afe_8c.html" title="Configuration for the MC33775A analog front&#45;end." alt="" coords="321,229,467,256"/>
+<area shape="rect" id="node9" href="$nxp__afe__dma__cfg_8c.html" title="Configuration for the DMA module." alt="" coords="491,229,625,256"/>
+</map>

@@ -1,0 +1,10 @@
+<map id="i2c.h" name="i2c.h">
+<area shape="rect" id="node1" title="Header for the driver for the I2C module." alt="" coords="272,5,323,32"/>
+<area shape="rect" id="node2" href="$dma_8c.html" title="Driver for the DMA module." alt="" coords="5,80,64,107"/>
+<area shape="rect" id="node3" href="$htsensor_8c.html" title="Driver for the Sensirion SHT35&#45;DIS I2C humidity/temperature sensor." alt="" coords="88,80,171,107"/>
+<area shape="rect" id="node4" href="$i2c_8c.html" title="Driver for the I2C module." alt="" coords="195,80,245,107"/>
+<area shape="rect" id="node5" href="$pex_8c.html" title="Driver for the NXP PCA9539 port expander module." alt="" coords="270,80,325,107"/>
+<area shape="rect" id="node6" href="$rtc_8c.html" title="Implementation of the RTC driver." alt="" coords="349,80,397,107"/>
+<area shape="rect" id="node7" href="$main_8c.html" title="Main function." alt="" coords="421,80,483,107"/>
+<area shape="rect" id="node8" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="507,80,592,107"/>
+</map>

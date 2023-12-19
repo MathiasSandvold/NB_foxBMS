@@ -1,0 +1,8 @@
+<map id="CONT_GetFeedbackOfAllContactors" name="CONT_GetFeedbackOfAllContactors">
+<area shape="rect" id="node1" title="Reads the feedback of all contactors." alt="" coords="5,31,239,57"/>
+<area shape="rect" id="node2" href="$sps_8c.html#a9c3bf6cc3ba07d1d11d34f03ec8c4f8e" title="Get feedback value." alt="" coords="539,5,761,32"/>
+<area shape="rect" id="node5" href="$sps_8c.html#a033367817569ec2519c57fed158ef2a3" title="Get the feedback state of a channel." alt="" coords="287,56,491,83"/>
+<area shape="rect" id="node3" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="809,5,956,32"/>
+<area shape="rect" id="node4" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="813,56,952,83"/>
+<area shape="rect" id="node6" href="$pex_8c.html#a6a7f4e6a2f532e9093c7be8498032590" title="get pin state of port expander pins." alt="" coords="603,56,697,83"/>
+</map>

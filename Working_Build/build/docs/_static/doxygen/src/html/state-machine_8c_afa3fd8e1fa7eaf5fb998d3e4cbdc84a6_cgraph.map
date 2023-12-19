@@ -1,0 +1,4 @@
+<map id="EG_SetState" name="EG_SetState">
+<area shape="rect" id="node1" title="Sets the next state, the next substate and the timer value of the state variable." alt="" coords="5,5,104,32"/>
+<area shape="rect" id="node2" href="$state-machine_8c.html#a27e6bf1e63e5507058042fc4e00e6d09" title="Sets the next substate and the timer value of the state variable." alt="" coords="152,5,272,32"/>
+</map>

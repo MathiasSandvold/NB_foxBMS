@@ -1,0 +1,18 @@
+<map id="bal.h" name="bal.h">
+<area shape="rect" id="node1" title="Header for the driver for balancing." alt="" coords="739,5,790,32"/>
+<area shape="rect" id="node2" href="$bal_8c.html" title="Driver for the Balancing module." alt="" coords="6,80,57,107"/>
+<area shape="rect" id="node3" href="$bal__strategy__history_8h.html" title="Header for the history&#45;based balancing strategy module." alt="" coords="81,80,232,107"/>
+<area shape="rect" id="node5" href="$test__bal__strategy__history_8c.html" title="Test of the history based balancing module." alt="" coords="181,155,359,181"/>
+<area shape="rect" id="node6" href="$bal__strategy__none_8c.html" title="WEAK Driver for the Balancing module for ICs that to not support balancing." alt="" coords="307,80,446,107"/>
+<area shape="rect" id="node7" href="$bal__strategy__none_8h.html" title="Header for the voltage&#45;based balancing strategy module." alt="" coords="470,80,609,107"/>
+<area shape="rect" id="node9" href="$bal__strategy__voltage_8h.html" title="Header for the voltage&#45;based balancing strategy module." alt="" coords="633,80,784,107"/>
+<area shape="rect" id="node11" href="$test__bal__strategy__voltage_8c.html" title="Test of the voltage based balancing module." alt="" coords="780,155,960,181"/>
+<area shape="rect" id="node12" href="$bms_8c.html" title="bms driver implementation" alt="" coords="859,80,918,107"/>
+<area shape="rect" id="node13" href="$can__cbs__rx__state-request_8c.html" title="CAN driver Rx callback implementation." alt="" coords="943,80,1125,107"/>
+<area shape="rect" id="node14" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="1149,80,1204,107"/>
+<area shape="rect" id="node15" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="1229,80,1314,107"/>
+<area shape="rect" id="node16" href="$test__bal_8c.html" title="Test of the API of the balancing module." alt="" coords="1339,80,1417,107"/>
+<area shape="rect" id="node4" href="$bal__strategy__history_8c.html" title="Driver for the Balancing module." alt="" coords="5,155,156,181"/>
+<area shape="rect" id="node8" href="$test__bal__strategy__none_8c.html" title="Test of the history based balancing module." alt="" coords="413,155,581,181"/>
+<area shape="rect" id="node10" href="$bal__strategy__voltage_8c.html" title="Driver for the Balancing module." alt="" coords="605,155,756,181"/>
+</map>

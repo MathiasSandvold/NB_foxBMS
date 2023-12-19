@@ -1,0 +1,18 @@
+<map id="CAN_SHIM_s" name="CAN_SHIM_s">
+<area shape="rect" id="node1" title=" " alt="" coords="729,367,832,393"/>
+<area shape="rect" id="node2" href="$structDATA__BLOCK__CURRENT__SENSOR__s.html" title=" " alt="" coords="325,9,499,50"/>
+<area shape="rect" id="node3" href="$structDATA__BLOCK__HEADER__s.html" title=" " alt="" coords="5,367,188,393"/>
+<area shape="rect" id="node4" href="$structDATA__BLOCK__ERROR__STATE__s.html" title=" " alt="" coords="301,75,523,101"/>
+<area shape="rect" id="node5" href="$structDATA__BLOCK__SOX__s.html" title=" " alt="" coords="335,125,489,152"/>
+<area shape="rect" id="node6" href="$structDATA__BLOCK__MIN__MAX__s.html" title=" " alt="" coords="319,176,505,203"/>
+<area shape="rect" id="node7" href="$structDATA__BLOCK__PACK__VALUES__s.html" title=" " alt="" coords="301,227,523,253"/>
+<area shape="rect" id="node8" href="$structDATA__BLOCK__CELL__TEMPERATURE__s.html" title=" " alt="" coords="280,277,544,304"/>
+<area shape="rect" id="node9" href="$structDATA__BLOCK__INSULATION__MONITORING__s.html" title=" " alt="" coords="317,329,507,370"/>
+<area shape="rect" id="node10" href="$structDATA__BLOCK__MSL__FLAG__s.html" title=" " alt="" coords="314,395,510,421"/>
+<area shape="rect" id="node11" href="$structDATA__BLOCK__SOF__s.html" title=" " alt="" coords="335,445,489,472"/>
+<area shape="rect" id="node12" href="$structDATA__BLOCK__MOL__FLAG__s.html" title=" " alt="" coords="313,496,511,523"/>
+<area shape="rect" id="node13" href="$structDATA__BLOCK__CELL__VOLTAGE__s.html" title=" " alt="" coords="298,547,526,573"/>
+<area shape="rect" id="node14" href="$structDATA__BLOCK__STATE__REQUEST__s.html" title=" " alt="" coords="293,597,531,624"/>
+<area shape="rect" id="node15" href="$structDATA__BLOCK__OPEN__WIRE__s.html" title=" " alt="" coords="309,648,515,675"/>
+<area shape="rect" id="node16" href="$structDATA__BLOCK__RSL__FLAG__s.html" title=" " alt="" coords="315,699,509,725"/>
+</map>

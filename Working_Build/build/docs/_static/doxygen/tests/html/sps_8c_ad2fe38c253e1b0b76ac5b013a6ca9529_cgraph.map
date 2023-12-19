@@ -1,0 +1,5 @@
+<map id="SPS_SetCommandTxBuffer" name="SPS_SetCommandTxBuffer">
+<area shape="rect" id="node1" title="Assemble a general command to the SPS ICs." alt="" coords="5,31,188,57"/>
+<area shape="rect" id="node2" href="$sps_8c.html#a42c6ab326377a351def20a0d748afb4e" title="Sets the SPI Tx buffer for a register read access for all SPS ICs of the daisy&#45;chain." alt="" coords="237,5,407,32"/>
+<area shape="rect" id="node3" href="$sps_8c.html#a7cfb82ab6fb733aaa092a2731ebb62b5" title="Sets the SPI Tx buffer for a register write access for all SPS ICs of the daisy&#45;chain." alt="" coords="236,56,408,83"/>
+</map>

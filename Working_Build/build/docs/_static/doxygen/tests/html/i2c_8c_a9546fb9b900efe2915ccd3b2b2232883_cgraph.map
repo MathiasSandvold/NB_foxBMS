@@ -1,0 +1,8 @@
+<map id="I2C_Read" name="I2C_Read">
+<area shape="rect" id="node1" title="reads from an I2C slave, no register address written first, blocking." alt="" coords="5,46,84,73"/>
+<area shape="rect" id="node2" href="$i2c_8c.html#a3ff82cda8c1d4a8b2d5fa48a5fc2c4a5" title="Waits for the I2C Rx buffer to be full." alt="" coords="132,21,252,47"/>
+<area shape="rect" id="node6" href="$i2c_8c.html#a79b77f8447ee8b71cd04895699df54bb" title="Waits for a stop condition to be detected." alt="" coords="141,71,243,98"/>
+<area shape="rect" id="node3" href="$mcu_8c.html#a298a563701c7fc98c1f2750a1a2b8220" title="Get the current value of the Free Running Counter 0 (FRC0)" alt="" coords="491,71,677,98"/>
+<area shape="rect" id="node4" href="$mcu_8c.html#af5a3b75b7431935f913d80e31eb99690" title="Checks if a timeout in microseconds has elapsed." alt="" coords="300,46,443,73"/>
+<area shape="rect" id="node5" href="$mcu_8c.html#a357da0bcb906f4ad573ed0d4244dd0a2" title="Convert the counter value FRC0 to a time in microseconds." alt="" coords="495,5,673,47"/>
+</map>

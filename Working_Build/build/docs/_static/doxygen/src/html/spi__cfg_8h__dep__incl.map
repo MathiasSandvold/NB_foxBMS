@@ -1,0 +1,57 @@
+<map id="spi_cfg.h" name="spi_cfg.h">
+<area shape="rect" id="node1" title="Headers for the configuration for the SPI module." alt="" coords="1109,5,1184,32"/>
+<area shape="rect" id="node2" href="$mxm__cfg_8h.html" title="Header for the configuration for the Maxim analog front&#45;end." alt="" coords="1982,155,2069,181"/>
+<area shape="rect" id="node16" href="$nxp__mc33775a-ll_8c.html" title=" " alt="" coords="5,379,136,405"/>
+<area shape="rect" id="node17" href="$spi__cfg_8c.html" title="Configuration for the SPI module." alt="" coords="1216,80,1291,107"/>
+<area shape="rect" id="node18" href="$spi_8h.html" title="Headers for the driver for the SPI module." alt="" coords="1091,80,1141,107"/>
+<area shape="rect" id="node3" href="$mxm__cfg_8c.html" title="Configuration for the MAX analog front&#45;end." alt="" coords="1813,229,1899,256"/>
+<area shape="rect" id="node4" href="$mxm__17841b_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="1923,229,2034,256"/>
+<area shape="rect" id="node7" href="$mxm__1785x_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="2063,453,2167,480"/>
+<area shape="rect" id="node10" href="$mxm__battery__management_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="2110,304,2301,331"/>
+<area shape="rect" id="node11" href="$mxm__1785x__tools_8h.html" title="This is a collection of helper functions for the MAX1785x ICs." alt="" coords="2451,379,2589,405"/>
+<area shape="rect" id="node13" href="$mxm__registry_8h.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="2603,453,2715,480"/>
+<area shape="rect" id="node5" href="$mxm__afe_8c.html" title="AFE driver implementation." alt="" coords="1982,528,2069,555"/>
+<area shape="rect" id="node6" href="$mxm__17841b_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="1923,304,2034,331"/>
+<area shape="rect" id="node8" href="$mxm__1785x_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="2205,528,2309,555"/>
+<area shape="rect" id="node9" href="$mxm__17852_8c.html" title="Operation state machine implementation for the MAX17852." alt="" coords="2440,528,2544,555"/>
+<area shape="rect" id="node15" href="$mxm__battery__management_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="2185,379,2375,405"/>
+<area shape="rect" id="node12" href="$mxm__1785x__tools_8c.html" title="This is a collection of helper functions for the MAX1785x ICs." alt="" coords="2389,453,2528,480"/>
+<area shape="rect" id="node14" href="$mxm__registry_8c.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="2603,528,2715,555"/>
+<area shape="rect" id="node19" href="$ltc__6806__cfg_8h.html" title="Header for the configuration for the LTC 6806 monitoring IC." alt="" coords="727,304,833,331"/>
+<area shape="rect" id="node22" href="$ltc__6813-1__cfg_8h.html" title="Header for the configuration for the LTC 6804&#45;1 6811&#45;1, 6812&#45;1, and 6813&#45;1 monitoring IC." alt="" coords="1183,304,1300,331"/>
+<area shape="rect" id="node25" href="$ltc__afe__dma_8c.html" title="Driver for the DMA module for the LTC." alt="" coords="1055,304,1158,331"/>
+<area shape="rect" id="node26" href="$ltc__defs_8h.html" title="Headers for the driver for the LTC analog front&#45;end." alt="" coords="826,155,905,181"/>
+<area shape="rect" id="node30" href="$nxp__mc33775a__cfg_8h.html" title="Header for the configuration for the MC33775A analog front&#45;end." alt="" coords="309,229,454,256"/>
+<area shape="rect" id="node32" href="$nxp__mc33775a-ll_8h.html" title=" " alt="" coords="153,304,284,331"/>
+<area shape="rect" id="node33" href="$nxp__mc33775a_8c.html" title="Driver for the MC33775A analog front&#45;end." alt="" coords="161,379,282,405"/>
+<area shape="rect" id="node37" href="$nxp__afe__dma_8c.html" title="Driver for the DMA module for the N775." alt="" coords="634,379,745,405"/>
+<area shape="rect" id="node38" href="$nxp__mc33775a__defs_8h.html" title="Definitions for the driver for the MC33775A analog front&#45;end." alt="" coords="307,155,459,181"/>
+<area shape="rect" id="node39" href="$dma__cfg_8c.html" title="Configuration for the DMA module." alt="" coords="980,155,1063,181"/>
+<area shape="rect" id="node40" href="$dma_8c.html" title="Driver for the DMA module." alt="" coords="1087,155,1145,181"/>
+<area shape="rect" id="node41" href="$fram_8c.html" title="Driver for the FRAM module." alt="" coords="1169,155,1228,181"/>
+<area shape="rect" id="node42" href="$sbc__fs8x__common_8h.html" title="Driver common structures, enums, macros and configuration values." alt="" coords="1303,155,1446,181"/>
+<area shape="rect" id="node45" href="$nxpfs85xx_8h.html" title="Header for the driver for the FRAM module." alt="" coords="1639,304,1731,331"/>
+<area shape="rect" id="node50" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="1712,453,1797,480"/>
+<area shape="rect" id="node53" href="$spi_8c.html" title="Driver for the SPI module." alt="" coords="1521,155,1572,181"/>
+<area shape="rect" id="node54" href="$sps_8c.html" title="Driver for the smart power switches." alt="" coords="1597,155,1651,181"/>
+<area shape="rect" id="node55" href="$main_8c.html" title="Main function." alt="" coords="1676,155,1737,181"/>
+<area shape="rect" id="node20" href="$ltc__6806__cfg_8c.html" title="Configuration for the LTC analog front&#45;end." alt="" coords="769,379,876,405"/>
+<area shape="rect" id="node21" href="$ltc__6806_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="900,379,983,405"/>
+<area shape="rect" id="node23" href="$ltc__6813-1__cfg_8c.html" title="Configuration for the LTC analog front&#45;end." alt="" coords="1183,379,1300,405"/>
+<area shape="rect" id="node24" href="$ltc__6813-1_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="1036,379,1129,405"/>
+<area shape="rect" id="node27" href="$ltc_8h.html" title="Headers for the driver for the LTC analog front&#45;end." alt="" coords="846,229,893,256"/>
+<area shape="rect" id="node29" href="$ltc__afe__dma_8h.html" title="Headers for the driver for the DMA module for the LTC." alt="" coords="917,229,1019,256"/>
+<area shape="rect" id="node28" href="$ltc__afe_8c.html" title="AFE driver implementation for LTC ICs." alt="" coords="909,304,979,331"/>
+<area shape="rect" id="node31" href="$nxp__mc33775a__cfg_8c.html" title="Configuration for the MC33775A analog front&#45;end." alt="" coords="309,304,454,331"/>
+<area shape="rect" id="node34" href="$nxp__mc33775a_8h.html" title="Headers for the driver for the MC33775A analog front&#45;end." alt="" coords="530,304,651,331"/>
+<area shape="rect" id="node35" href="$nxp__mc33775a__afe_8c.html" title="Configuration for the MC33775A analog front&#45;end." alt="" coords="306,379,451,405"/>
+<area shape="rect" id="node36" href="$nxp__afe__dma__cfg_8c.html" title="Configuration for the DMA module." alt="" coords="475,379,610,405"/>
+<area shape="rect" id="node43" href="$sbc__fs8x_8c.html" title="Driver functions for the FS8x SBC." alt="" coords="1529,304,1615,331"/>
+<area shape="rect" id="node44" href="$sbc__fs8x_8h.html" title="FS8x driver interface." alt="" coords="1601,229,1687,256"/>
+<area shape="rect" id="node51" href="$sbc__fs8x__communication_8c.html" title="Implementation of communication logic for NXP SBC FS8x." alt="" coords="1325,304,1505,331"/>
+<area shape="rect" id="node52" href="$sbc__fs8x__communication_8h.html" title="This file contains functions for SPI/I2C communication." alt="" coords="1397,229,1577,256"/>
+<area shape="rect" id="node46" href="$nxpfs85xx_8c.html" title="Driver for the SBC module." alt="" coords="1542,379,1634,405"/>
+<area shape="rect" id="node47" href="$sbc_8h.html" title="Header for the driver for the SBC module." alt="" coords="1658,379,1713,405"/>
+<area shape="rect" id="node48" href="$sbc_8c.html" title="Driver for the SBC module." alt="" coords="1554,453,1609,480"/>
+<area shape="rect" id="node49" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="1633,453,1687,480"/>
+</map>

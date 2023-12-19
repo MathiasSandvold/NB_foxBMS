@@ -1,0 +1,4 @@
+<map id="SOF_Init" name="SOF_Init">
+<area shape="rect" id="node1" title="initializes the area for SOF (where derating starts and is fully active)." alt="" coords="5,5,79,32"/>
+<area shape="rect" id="node2" href="$sof__trapezoid_8c.html#ae000c408bc9885d5978ebbe22f2b84d7" title="calculate SOF curve depending on configured configuration values" alt="" coords="127,5,276,32"/>
+</map>

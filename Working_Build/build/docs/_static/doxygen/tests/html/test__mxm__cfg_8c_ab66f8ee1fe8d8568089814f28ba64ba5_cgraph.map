@@ -1,0 +1,5 @@
+<map id="testMXM_ShutDownBridgeIc" name="testMXM_ShutDownBridgeIc">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,192,32"/>
+<area shape="rect" id="node2" href="$mxm__cfg_8c.html#aca1a692c6b1650c116b1580f5edcfd0d" title="Pulls the shutdown of the bridge IC low." alt="" coords="240,5,404,32"/>
+<area shape="rect" id="node3" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="452,5,547,32"/>
+</map>

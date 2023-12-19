@@ -1,0 +1,14 @@
+<map id="mxm_1785x_tools.h" name="mxm_1785x_tools.h">
+<area shape="rect" id="node1" title="This is a collection of helper functions for the MAX1785x ICs." alt="" coords="427,5,565,32"/>
+<area shape="rect" id="node2" href="$mxm__1785x_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="432,155,536,181"/>
+<area shape="rect" id="node3" href="$mxm__1785x_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="304,80,408,107"/>
+<area shape="rect" id="node5" href="$mxm__17852_8c.html" title="Operation state machine implementation for the MAX17852." alt="" coords="560,155,664,181"/>
+<area shape="rect" id="node6" href="$test__mxm__1785x_8c.html" title="Test for the Maxim 1785x driver." alt="" coords="5,155,139,181"/>
+<area shape="rect" id="node7" href="$test__mxm__17852_8c.html" title="Test for the Maxim 17852 driver." alt="" coords="163,155,296,181"/>
+<area shape="rect" id="node8" href="$mxm__1785x__tools_8c.html" title="This is a collection of helper functions for the MAX1785x ICs." alt="" coords="533,80,672,107"/>
+<area shape="rect" id="node9" href="$mxm__registry_8h.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="696,80,808,107"/>
+<area shape="rect" id="node11" href="$test__mxm__registry_8c.html" title="Test for the Maxim registry tool." alt="" coords="824,155,965,181"/>
+<area shape="rect" id="node12" href="$test__mxm__1785x__tools_8c.html" title="Test for the Maxim 1785x driver tools." alt="" coords="883,80,1051,107"/>
+<area shape="rect" id="node4" href="$mxm__afe_8c.html" title="AFE driver implementation." alt="" coords="321,155,407,181"/>
+<area shape="rect" id="node10" href="$mxm__registry_8c.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="688,155,800,181"/>
+</map>

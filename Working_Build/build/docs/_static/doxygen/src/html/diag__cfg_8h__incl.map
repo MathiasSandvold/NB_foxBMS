@@ -1,0 +1,12 @@
+<map id="diag_cfg.h" name="diag_cfg.h">
+<area shape="rect" id="node1" title="Diagnostic module configuration header." alt="" coords="349,5,430,32"/>
+<area shape="rect" id="node2" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="237,155,384,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="484,379,559,405"/>
+<area shape="rect" id="node6" title=" " alt="" coords="191,379,257,405"/>
+<area shape="rect" id="node8" href="$database__cfg_8h.html" title="Database configuration header." alt="" coords="391,80,502,107"/>
+<area shape="rect" id="node3" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="199,229,273,256"/>
+<area shape="rect" id="node4" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="261,304,333,331"/>
+<area shape="rect" id="node7" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="93,304,187,331"/>
+<area shape="rect" id="node9" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="459,304,517,331"/>
+<area shape="rect" id="node10" title=" " alt="" coords="510,155,573,181"/>
+</map>

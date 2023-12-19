@@ -1,0 +1,11 @@
+<map id="test_vishay_ntcalug01a103g_polynomial.c" name="test_vishay_ntcalug01a103g_polynomial.c">
+<area shape="rect" id="node1" title="Test of fake temperature sensor." alt="" coords="171,5,357,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,67,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="91,95,290,121"/>
+<area shape="rect" id="node4" href="$foxmath_8h.html" title="math library for often used math functions" alt="" coords="385,95,463,121"/>
+<area shape="rect" id="node9" href="$tsi_8h.html" title="Temperature Sensor Interface on Slave Unit driver header." alt="" coords="314,95,361,121"/>
+<area shape="rect" id="node5" title=" " alt="" coords="393,169,455,196"/>
+<area shape="rect" id="node6" title=" " alt="" coords="303,169,369,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="479,169,537,196"/>
+<area shape="rect" id="node8" title=" " alt="" coords="561,169,625,196"/>
+</map>

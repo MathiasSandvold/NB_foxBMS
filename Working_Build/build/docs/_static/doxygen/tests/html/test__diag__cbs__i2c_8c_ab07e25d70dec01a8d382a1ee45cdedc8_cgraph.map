@@ -1,0 +1,4 @@
+<map id="testDiagI2cRtc" name="testDiagI2cRtc">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node2" href="$diag__cbs_8h.html#a96b79e566992935bfeb32ce995b695ab" title="diagnosis callback function for I2C port expander related events" alt="" coords="160,5,237,32"/>
+</map>

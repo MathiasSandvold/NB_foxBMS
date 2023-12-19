@@ -1,0 +1,4 @@
+<map id="soe_none.h" name="soe_none.h">
+<area shape="rect" id="node1" title="Header for SOE module, responsible for calculation state&#45;of&#45;energy." alt="" coords="5,5,95,32"/>
+<area shape="rect" id="node2" href="$soe__none_8c.html" title="SOE module responsible for calculation of state&#45;of&#45;energy (SOE)" alt="" coords="5,80,95,107"/>
+</map>

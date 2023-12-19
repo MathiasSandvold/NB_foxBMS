@@ -1,0 +1,15 @@
+<map id="test_debug_default_afe.c" name="test_debug_default_afe.c">
+<area shape="rect" id="node1" title="Test of the debug_default_afe.c module." alt="" coords="241,5,372,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,67,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="91,95,210,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="234,95,379,121"/>
+<area shape="rect" id="node5" href="$debug__default__cfg_8h.html" title="Header for the configuration for the fake AFE." alt="" coords="455,95,593,121"/>
+<area shape="rect" id="node13" href="$afe_8h.html" title="AFE driver header." alt="" coords="392,244,443,271"/>
+<area shape="rect" id="node6" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="473,169,620,196"/>
+<area shape="rect" id="node10" title=" " alt="" coords="342,393,407,420"/>
+<area shape="rect" id="node7" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="509,244,584,271"/>
+<area shape="rect" id="node8" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="640,319,712,345"/>
+<area shape="rect" id="node9" title=" " alt="" coords="565,393,640,420"/>
+<area shape="rect" id="node12" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="371,319,464,345"/>
+<area shape="rect" id="node11" title=" " alt="" coords="665,393,765,420"/>
+</map>

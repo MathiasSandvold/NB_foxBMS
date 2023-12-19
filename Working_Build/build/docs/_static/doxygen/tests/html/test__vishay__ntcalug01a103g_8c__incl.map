@@ -1,0 +1,12 @@
+<map id="test_vishay_ntcalug01a103g.c" name="test_vishay_ntcalug01a103g.c">
+<area shape="rect" id="node1" title="Tests for the vishay_ntcalug01a103g module." alt="" coords="257,5,453,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="387,155,449,181"/>
+<area shape="rect" id="node3" href="$foxmath_8h.html" title="math library for often used math functions" alt="" coords="109,80,188,107"/>
+<area shape="rect" id="node8" href="$test__assert__helper_8h.html" title="Helper for unit tests." alt="" coords="455,80,595,107"/>
+<area shape="rect" id="node10" href="$vishay__ntcalug01a103g_8h.html" title="Resistive divider used for measuring temperature." alt="" coords="212,80,379,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="176,155,239,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="263,155,328,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,155,63,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="87,155,151,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="475,155,575,181"/>
+</map>

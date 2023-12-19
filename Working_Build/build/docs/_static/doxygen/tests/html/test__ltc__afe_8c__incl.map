@@ -1,0 +1,11 @@
+<map id="test_ltc_afe.c" name="test_ltc_afe.c">
+<area shape="rect" id="node1" title="Test of the afe.c module." alt="" coords="246,5,346,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,67,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="91,80,232,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="257,80,335,107"/>
+<area shape="rect" id="node5" href="$ltc__cfg_8h.html" title="Headers for the configuration for the LTC analog front&#45;end." alt="" coords="314,155,385,181"/>
+<area shape="rect" id="node7" href="$afe_8h.html" title="AFE driver header." alt="" coords="457,80,508,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="390,229,455,256"/>
+<area shape="rect" id="node8" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="460,155,553,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="577,155,652,181"/>
+</map>

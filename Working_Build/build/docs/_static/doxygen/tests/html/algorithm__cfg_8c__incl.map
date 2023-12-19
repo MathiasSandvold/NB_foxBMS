@@ -1,0 +1,11 @@
+<map id="algorithm_cfg.c" name="algorithm_cfg.c">
+<area shape="rect" id="node1" title="Configuration for the algorithm module." alt="" coords="130,5,240,32"/>
+<area shape="rect" id="node2" href="$algorithm__cfg_8h.html" title="Headers for the configuration of the algorithm module." alt="" coords="27,80,138,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="100,229,166,256"/>
+<area shape="rect" id="node5" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="265,80,337,107"/>
+<area shape="rect" id="node8" href="$moving__average_8h.html" title="moving average algorithm" alt="" coords="487,155,611,181"/>
+<area shape="rect" id="node9" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="162,80,208,107"/>
+<area shape="rect" id="node3" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="45,155,138,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="213,155,288,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="363,155,463,181"/>
+</map>

@@ -1,0 +1,15 @@
+<map id="LTC_DATAPTR_s" name="LTC_DATAPTR_s">
+<area shape="rect" id="node1" title=" " alt="" coords="709,290,835,317"/>
+<area shape="rect" id="node2" href="$structDATA__BLOCK__ALL__GPIO__VOLTAGES__s.html" title=" " alt="" coords="324,5,500,47"/>
+<area shape="rect" id="node3" href="$structDATA__BLOCK__HEADER__s.html" title=" " alt="" coords="5,211,188,238"/>
+<area shape="rect" id="node5" href="$structDATA__BLOCK__CELL__TEMPERATURE__s.html" title=" " alt="" coords="280,71,544,98"/>
+<area shape="rect" id="node6" href="$structDATA__BLOCK__SLAVE__CONTROL__s.html" title=" " alt="" coords="293,122,531,149"/>
+<area shape="rect" id="node7" href="$structDATA__BLOCK__BALANCING__CONTROL__s.html" title=" " alt="" coords="318,173,506,215"/>
+<area shape="rect" id="node8" href="$structDATA__BLOCK__CELL__VOLTAGE__s.html" title=" " alt="" coords="298,239,526,266"/>
+<area shape="rect" id="node9" href="$structDATA__BLOCK__USER__MUX__s.html" title=" " alt="" coords="313,290,511,317"/>
+<area shape="rect" id="node12" href="$structDATA__BLOCK__OPEN__WIRE__s.html" title=" " alt="" coords="309,341,515,367"/>
+<area shape="rect" id="node13" href="$structDATA__BLOCK__BALANCING__FEEDBACK__s.html" title=" " alt="" coords="318,392,506,433"/>
+<area shape="rect" id="node4" href="$structSPI__INTERFACE__CONFIG__s.html" title=" " alt="" coords="316,458,508,485"/>
+<area shape="rect" id="node10" href="$structLTC__ERRORTABLE__s.html" title=" " alt="" coords="335,509,489,535"/>
+<area shape="rect" id="node11" href="$structLTC__OPENWIRE__DETECTION__s.html" title=" " alt="" coords="304,559,520,586"/>
+</map>

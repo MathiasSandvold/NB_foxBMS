@@ -1,0 +1,4 @@
+<map id="MXM_5XSignalSuccess" name="MXM_5XSignalSuccess">
+<area shape="rect" id="node1" title="Signal that a chain of substates has been successfully handled." alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node2" href="$mxm__battery__management_8c.html#a08d5ab7b4b3254f41e6661ee677f854e" title="sets all internal state variables so that upon next execution the next substate is entered" alt="" coords="212,5,407,32"/>
+</map>

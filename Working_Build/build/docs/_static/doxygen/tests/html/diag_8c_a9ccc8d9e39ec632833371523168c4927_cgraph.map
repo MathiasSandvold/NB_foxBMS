@@ -1,0 +1,4 @@
+<map id="DIAG_Handler" name="DIAG_Handler">
+<area shape="rect" id="node1" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="5,5,109,32"/>
+<area shape="rect" id="node2" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="157,5,280,32"/>
+</map>

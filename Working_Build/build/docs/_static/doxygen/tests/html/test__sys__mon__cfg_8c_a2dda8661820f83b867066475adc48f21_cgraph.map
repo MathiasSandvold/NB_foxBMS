@@ -1,0 +1,5 @@
+<map id="testSYSMDummyCallbackExists" name="testSYSMDummyCallbackExists">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,220,32"/>
+<area shape="rect" id="node2" href="$sys__mon__cfg_8c.html#a680c7c4edafb87bcb388cc5befa43d89" title=" " alt="" coords="268,5,469,32"/>
+<area shape="rect" id="node3" href="$sys__mon__cfg_8c.html#ad7f407e834312d86842704da9c38a17c" title="dummy callback function of system monitoring error events" alt="" coords="517,5,680,32"/>
+</map>

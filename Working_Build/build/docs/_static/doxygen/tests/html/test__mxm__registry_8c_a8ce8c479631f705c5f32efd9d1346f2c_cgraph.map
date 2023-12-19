@@ -1,0 +1,9 @@
+<map id="testMXM_CheckIfADeviceHasBeenReset" name="testMXM_CheckIfADeviceHasBeenReset">
+<area shape="rect" id="node1" title=" " alt="" coords="5,78,199,119"/>
+<area shape="rect" id="node2" href="$mxm__registry_8c.html#af2ecdd14cd0568f246b14aa8cdf2c6d7" title="check if one of the devices in the registry has the ALRTRST bit set" alt="" coords="258,49,459,90"/>
+<area shape="rect" id="node7" href="$mxm__registry_8c.html#a74e9f3adcbc1aa1001ec4e34abb7e8c0" title="Mark devices as connected in the registry and set the address." alt="" coords="247,115,471,141"/>
+<area shape="rect" id="node3" href="$foxmath_8c.html#aacaf0845143922c6a31912af37fd9741" title="Returns the minimum of the passed uint8_t values." alt="" coords="527,5,721,32"/>
+<area shape="rect" id="node4" href="$mxm__1785x__tools_8c.html#af328199dc46b6eab7f35f08f0f076145" title="Extract a value from a single register." alt="" coords="519,56,729,83"/>
+<area shape="rect" id="node6" href="$mxm__registry_8c.html#aca0807a445d30190eadbef7467b43ca8" title="Parse number of highest connected device from monitoring&#45; register." alt="" coords="526,107,722,149"/>
+<area shape="rect" id="node5" href="$mxm__1785x__tools_8c.html#a0dc736d94a1c30286d2549d3efa99e2d" title="Find Position of first set bit in bitmask." alt="" coords="777,56,897,83"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="ltc.h" name="ltc.h">
+<area shape="rect" id="node1" title="Headers for the driver for the LTC analog front&#45;end." alt="" coords="189,5,235,32"/>
+<area shape="rect" id="node2" href="$ltc__6806_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="5,80,88,107"/>
+<area shape="rect" id="node3" href="$ltc__6813-1_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="112,80,205,107"/>
+<area shape="rect" id="node4" href="$ltc__afe_8c.html" title="AFE driver implementation for LTC ICs." alt="" coords="230,80,301,107"/>
+<area shape="rect" id="node5" href="$ltc__afe__dma_8c.html" title="Driver for the DMA module for the LTC." alt="" coords="325,80,427,107"/>
+</map>

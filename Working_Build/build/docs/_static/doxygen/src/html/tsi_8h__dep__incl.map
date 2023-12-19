@@ -1,0 +1,19 @@
+<map id="tsi.h" name="tsi.h">
+<area shape="rect" id="node1" title="Temperature Sensor Interface on Slave Unit driver header." alt="" coords="1225,5,1272,32"/>
+<area shape="rect" id="node2" href="$afe__plausibility_8c.html" title="AFE plausibility checks for cell voltage and cell temperatures." alt="" coords="5,87,124,114"/>
+<area shape="rect" id="node3" href="$ltc__6813-1__cfg_8c.html" title="Configuration for the LTC analog front&#45;end." alt="" coords="149,87,266,114"/>
+<area shape="rect" id="node4" href="$mxm__1785x_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="290,87,394,114"/>
+<area shape="rect" id="node5" href="$nxp__mc33775a__cfg_8c.html" title="Configuration for the MC33775A analog front&#45;end." alt="" coords="419,87,564,114"/>
+<area shape="rect" id="node6" href="$tsi__limits_8c.html" title="Implementation of the temperature limits of the TSI for plausibility&#45;checks. This implementation is a..." alt="" coords="589,87,674,114"/>
+<area shape="rect" id="node7" href="$epcos__b57251v5103j060__lookup-table_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="698,80,861,121"/>
+<area shape="rect" id="node8" href="$epcos__b57251v5103j060__polynomial_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="885,80,1047,121"/>
+<area shape="rect" id="node9" href="$epcos__b57861s0103f045__lookup-table_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="1071,80,1237,121"/>
+<area shape="rect" id="node10" href="$epcos__b57861s0103f045__polynomial_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="1261,80,1426,121"/>
+<area shape="rect" id="node11" href="$fake__none__lookup-table_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="1451,87,1620,114"/>
+<area shape="rect" id="node12" href="$fake__none__polynomial_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="1644,87,1805,114"/>
+<area shape="rect" id="node13" href="$murata__ncu15xh103f6sxx__lookup-table_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="1830,80,2001,121"/>
+<area shape="rect" id="node14" href="$murata__ncu15xh103f6sxx__polynomial_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="2025,80,2195,121"/>
+<area shape="rect" id="node15" href="$vishay__ntcalug01a103g__lookup-table_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="2220,80,2376,121"/>
+<area shape="rect" id="node16" href="$vishay__ntcalug01a103g__polynomial_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="2400,80,2556,121"/>
+<area shape="rect" id="node17" href="$vishay__ntcle317e4103sba__lookup-table_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="2581,80,2751,121"/>
+</map>

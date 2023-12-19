@@ -1,0 +1,6 @@
+<map id="soc_counting_cfg.h" name="soc_counting_cfg.h">
+<area shape="rect" id="node1" title="Header for SOC configuration." alt="" coords="67,5,201,32"/>
+<area shape="rect" id="node2" href="$soc__counting_8h.html" title="Header for SOC module, responsible for calculation of SOC." alt="" coords="5,80,116,107"/>
+<area shape="rect" id="node4" href="$soc__counting__cfg_8c.html" title="SOC calculation configuration file." alt="" coords="140,80,275,107"/>
+<area shape="rect" id="node3" href="$soc__counting_8c.html" title="SOC module responsible for calculation of SOC." alt="" coords="5,155,116,181"/>
+</map>

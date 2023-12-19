@@ -1,0 +1,18 @@
+<map id="CANRX_ProcessFramInitializationMux" name="CANRX_ProcessFramInitializationMux">
+<area shape="rect" id="node1" title="Parses CAN message related to FRAM initialization." alt="" coords="5,135,248,161"/>
+<area shape="rect" id="node2" href="$can__cbs__rx__debug_8c.html#a339d6504c498c23c72f4298c212cfdcf" title="Check if a FRAM initialization is requested." alt="" coords="296,89,509,130"/>
+<area shape="rect" id="node5" href="$fram_8c.html#a6d7c5fe74d5d10147e4fd38864a474c8" title="Reinitialize all entries in the FRAM." alt="" coords="310,172,495,199"/>
+<area shape="rect" id="node3" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="557,24,824,51"/>
+<area shape="rect" id="node4" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="872,5,1075,32"/>
+<area shape="rect" id="node6" href="$fram_8c.html#ad5c5ec1fd0a6c3667185d3b75064e359" title="Writes a variable to the FRAM." alt="" coords="629,208,753,235"/>
+<area shape="rect" id="node7" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="908,208,1039,235"/>
+<area shape="rect" id="node8" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="926,259,1021,285"/>
+<area shape="rect" id="node9" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="933,309,1014,336"/>
+<area shape="rect" id="node10" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="917,360,1029,387"/>
+<area shape="rect" id="node11" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="872,411,1075,437"/>
+<area shape="rect" id="node12" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="913,56,1034,83"/>
+<area shape="rect" id="node13" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="934,157,1013,184"/>
+<area shape="rect" id="node16" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="928,107,1019,133"/>
+<area shape="rect" id="node14" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1123,107,1269,133"/>
+<area shape="rect" id="node15" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1127,157,1265,184"/>
+</map>

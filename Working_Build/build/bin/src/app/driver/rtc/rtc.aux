@@ -1,0 +1,244 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{07FBC890-6E96-48D5-92A3-0AC1FC9657BD}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Thu Sep  7 11:08:19 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitl                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbitf                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __signbit                                       |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormall                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormalf                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnormal                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnanf                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isnan                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinfl                                        |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinff                                        |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isinf                                         |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitel                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinitef                                     |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __isfinite                                      |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyl                                   |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassifyf                                   |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  __fpclassify                                    |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  RTC_ReadTime                                    |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   I2C_Write
+   I2C_ReadDma
+   DIAG_Handler
+   memcpy
+
++-------------------------------------------------------------+
+|  FUNCTION:  RTC_rtcFormatToTmFormat                         |
++-------------------------------------------------------------+
+Stack usage:   56 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  RTC_SetSystemTimeEpochFormat                    |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  RTC_SetSystemTimeRtcFormat                      |
++-------------------------------------------------------------+
+Stack usage:   64 bytes
+
+Called functions:
+   memcpy
+   RTC_rtcFormatToTmFormat
+   mktime
+   RTC_SetSystemTimeEpochFormat
+
++-------------------------------------------------------------+
+|  FUNCTION:  RTC_InitializeSystemTimeWithRtc                 |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   RTC_ReadTime
+   RTC_SetSystemTimeRtcFormat
+
++-------------------------------------------------------------+
+|  FUNCTION:  RTC_Initialize                                  |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   OS_GetTickCount
+   I2C_Write
+   I2C_Read
+   OS_DelayTaskUntil
+   I2C_WriteDma
+   RTC_InitializeSystemTimeWithRtc
+   DIAG_Handler
+
++-------------------------------------------------------------+
+|  FUNCTION:  RTC_WriteTime                                   |
++-------------------------------------------------------------+
+Stack usage:   40 bytes
+
+Called functions:
+   I2C_WriteDma
+   __aeabi_uidivmod
+   DIAG_Handler
+
++-------------------------------------------------------------+
+|  FUNCTION:  RTC_SetOverCanMessage                           |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   OS_ReceiveFromQueue
+   RTC_WriteTime
+   RTC_SetSystemTimeRtcFormat
+
++-------------------------------------------------------------+
+|  FUNCTION:  RTC_CheckBatteryLowVoltageAlert                 |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   I2C_Write
+   I2C_Read
+   DIAG_Handler
+
++-------------------------------------------------------------+
+|  FUNCTION:  RTC_GetSystemTimeEpochFormat                    |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+
++-------------------------------------------------------------+
+|  FUNCTION:  RTC_tmFormatToRtcFormat                         |
++-------------------------------------------------------------+
+Stack usage:   32 bytes
+
+Called functions:
+   memcpy
+
++-------------------------------------------------------------+
+|  FUNCTION:  RTC_GetSystemTimeRtcFormat                      |
++-------------------------------------------------------------+
+Stack usage:   88 bytes
+
+Called functions:
+   RTC_GetSystemTimeEpochFormat
+   localtime
+   RTC_tmFormatToRtcFormat
+   __aeabi_uidivmod
+   memcpy
+
++-------------------------------------------------------------+
+|  FUNCTION:  RTC_AdjustTime                                  |
++-------------------------------------------------------------+
+Stack usage:   96 bytes
+
+Called functions:
+   RTC_ReadTime
+   RTC_rtcFormatToTmFormat
+   mktime
+   RTC_GetSystemTimeRtcFormat
+   RTC_InitializeSystemTimeWithRtc
+
++-------------------------------------------------------------+
+|  FUNCTION:  RTC_Trigger                                     |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   OS_GetTickCount
+   RTC_Initialize
+   RTC_SetOverCanMessage
+   RTC_CheckBatteryLowVoltageAlert
+   RTC_AdjustTime
+
++-------------------------------------------------------------+
+|  FUNCTION:  RTC_IncrementSystemTime                         |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+

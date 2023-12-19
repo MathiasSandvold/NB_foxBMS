@@ -1,0 +1,16 @@
+<map id="mxm_17841b.h" name="mxm_17841b.h">
+<area shape="rect" id="node1" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="559,5,670,32"/>
+<area shape="rect" id="node2" href="$mxm__cfg_8h.html" title="Header for the configuration for the Maxim analog front&#45;end." alt="" coords="357,80,443,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="371,528,437,555"/>
+<area shape="rect" id="node8" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="357,453,451,480"/>
+<area shape="rect" id="node14" href="$mxm__bitextract_8h.html" title="Bit extraction function for MXM_17841b." alt="" coords="677,229,800,256"/>
+<area shape="rect" id="node3" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="5,304,152,331"/>
+<area shape="rect" id="node9" href="$spi__cfg_8h.html" title="Headers for the configuration for the SPI module." alt="" coords="227,229,301,256"/>
+<area shape="rect" id="node12" title=" " alt="" coords="301,155,400,181"/>
+<area shape="rect" id="node13" href="$spi_8h.html" title="Headers for the driver for the SPI module." alt="" coords="424,155,475,181"/>
+<area shape="rect" id="node4" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="116,379,191,405"/>
+<area shape="rect" id="node5" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="44,453,116,480"/>
+<area shape="rect" id="node6" title=" " alt="" coords="43,528,117,555"/>
+<area shape="rect" id="node10" title=" " alt="" coords="227,304,301,331"/>
+<area shape="rect" id="node11" title=" " alt="" coords="326,304,399,331"/>
+</map>

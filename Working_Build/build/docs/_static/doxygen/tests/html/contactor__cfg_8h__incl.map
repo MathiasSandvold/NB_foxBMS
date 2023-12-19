@@ -1,0 +1,11 @@
+<map id="contactor_cfg.h" name="contactor_cfg.h">
+<area shape="rect" id="node1" title="Header for the configuration for the driver for the contactors." alt="" coords="16,5,127,32"/>
+<area shape="rect" id="node2" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="239,80,386,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="155,304,220,331"/>
+<area shape="rect" id="node9" href="$sps__types_8h.html" title="Types for the SPS driver." alt="" coords="25,155,118,181"/>
+<area shape="rect" id="node3" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="275,155,350,181"/>
+<area shape="rect" id="node4" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="351,229,423,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="442,304,517,331"/>
+<area shape="rect" id="node8" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="183,229,277,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="317,304,417,331"/>
+</map>

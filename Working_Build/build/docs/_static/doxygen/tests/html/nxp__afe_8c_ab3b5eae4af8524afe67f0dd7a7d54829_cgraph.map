@@ -1,0 +1,4 @@
+<map id="AFE_StartMeasurement" name="AFE_StartMeasurement">
+<area shape="rect" id="node1" title="Makes the initialization request to the AFE state machine." alt="" coords="5,5,168,32"/>
+<area shape="rect" id="node2" href="$nxp__afe_8h.html#a334a022b9c2cf4f708686b2271e6d6c8" title=" " alt="" coords="216,5,377,32"/>
+</map>

@@ -1,0 +1,20 @@
+<map id="testCANRX_ProcessRtcMux" name="testCANRX_ProcessRtcMux">
+<area shape="rect" id="node1" title=" " alt="" coords="5,339,192,365"/>
+<area shape="rect" id="node2" href="$can__cbs__rx_8h.html#a9e9e9267c5d5fff28efb32aab123aa38" title=" " alt="" coords="243,271,447,297"/>
+<area shape="rect" id="node15" href="$can__cbs__rx_8h.html#a1e36a0e2d36e280881107f4c69b7802e" title=" " alt="" coords="240,398,449,439"/>
+<area shape="rect" id="node3" href="$can__cbs__rx__debug_8c.html#ab61b61ff3f51b4ad209a607b2c843c8f" title="Parses CAN message to set the RTC clock." alt="" coords="529,233,695,260"/>
+<area shape="rect" id="node4" href="$can__cbs__rx__debug_8c.html#a90490c8666530b58096c9b04c406c199" title="Parses the CAN message to retrieve the day information." alt="" coords="825,5,941,32"/>
+<area shape="rect" id="node7" href="$can__cbs__rx__debug_8c.html#a7fa2aac4493d7ee0a7adaa1e27852407" title="Parses the CAN message to retrieve the hours information." alt="" coords="819,56,946,83"/>
+<area shape="rect" id="node8" href="$can__cbs__rx__debug_8c.html#a6ae59fc9db1752750eedf1f3fa29c6fa" title="Parses the CAN message to retrieve the hundredth of seconds information." alt="" coords="775,107,991,133"/>
+<area shape="rect" id="node9" href="$can__cbs__rx__debug_8c.html#a68acab748012df0730f8a3c2f4194af2" title="Parses the CAN message to retrieve the minutes information." alt="" coords="813,157,952,184"/>
+<area shape="rect" id="node10" href="$can__cbs__rx__debug_8c.html#a73aff1157ebd5f26522f14ccb1a77d8a" title="Parses the CAN message to retrieve the month information." alt="" coords="818,208,947,235"/>
+<area shape="rect" id="node11" href="$can__cbs__rx__debug_8c.html#a7c16547e0ee6624daf74f7ceca17b66f" title="Parses the CAN message to retrieve the seconds information." alt="" coords="811,259,955,285"/>
+<area shape="rect" id="node12" href="$can__cbs__rx__debug_8c.html#af62f6b9c51db3ba124481f55c33ffa57" title="Parses the CAN message to retrieve the weekday information." alt="" coords="809,309,957,336"/>
+<area shape="rect" id="node13" href="$can__cbs__rx__debug_8c.html#ac6b52010516e375c897480c68967e2a1" title="Parses the CAN message to retrieve the year information." alt="" coords="823,360,943,387"/>
+<area shape="rect" id="node14" href="$os__freertos_8c.html#abfcdf77954b6a87dca01c31efaf4d0b3" title="Post an item to the back the provided queue." alt="" coords="796,411,969,437"/>
+<area shape="rect" id="node5" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="1039,208,1305,235"/>
+<area shape="rect" id="node6" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="1353,208,1556,235"/>
+<area shape="rect" id="node16" href="$can__cbs__rx__debug_8c.html#a6c0b9af75dfffd85fc3f97e1f90893ba" title="Parses CAN message to handle software related requests, e.g., a software reset of the BMS." alt="" coords="497,469,727,496"/>
+<area shape="rect" id="node17" href="$can__cbs__rx__debug_8c.html#a5535e0f454e41e00aaf92e77b563f558" title="Check if a software reset is requested." alt="" coords="783,462,982,503"/>
+<area shape="rect" id="node18" href="$reset_8c.html#a61214f27599c0125bcbb2ee8edf12fd1" title="Trigger a software reset of the BMS." alt="" coords="793,528,972,555"/>
+</map>

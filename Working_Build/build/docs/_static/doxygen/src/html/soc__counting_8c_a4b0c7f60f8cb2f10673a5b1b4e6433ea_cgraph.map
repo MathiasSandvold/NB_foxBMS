@@ -1,0 +1,20 @@
+<map id="SOC_RecalibrateViaLookupTable" name="SOC_RecalibrateViaLookupTable">
+<area shape="rect" id="node1" title="initializes database and FRAM SOC values via lookup table (average, minimum and maximum)." alt="" coords="5,281,188,322"/>
+<area shape="rect" id="node2" href="$fram_8c.html#ad5c5ec1fd0a6c3667185d3b75064e359" title="Writes a variable to the FRAM." alt="" coords="568,183,692,209"/>
+<area shape="rect" id="node13" href="$group__state-estimation-api.html#ga74af4e2bdb5a3caa9696292fb9217311" title="look&#45;up table for SOC initialization" alt="" coords="236,368,463,395"/>
+<area shape="rect" id="node15" href="$soc__counting_8c.html#a50305973c5dd0dd3ff8cd500e5bc517d" title="sets SOC value with a parameter between 0.0 and 100.0." alt="" coords="294,288,405,315"/>
+<area shape="rect" id="node3" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="833,5,964,32"/>
+<area shape="rect" id="node4" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="851,56,946,83"/>
+<area shape="rect" id="node5" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="858,107,939,133"/>
+<area shape="rect" id="node6" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="843,157,955,184"/>
+<area shape="rect" id="node7" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="797,208,1000,235"/>
+<area shape="rect" id="node8" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="838,259,959,285"/>
+<area shape="rect" id="node9" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="859,309,938,336"/>
+<area shape="rect" id="node12" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="853,360,944,387"/>
+<area shape="rect" id="node10" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1048,309,1195,336"/>
+<area shape="rect" id="node11" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1052,360,1191,387"/>
+<area shape="rect" id="node14" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="545,416,715,443"/>
+<area shape="rect" id="node16" href="$soc__counting_8c.html#a9974946566282ad572f522b214bba23a" title="Check if all database SOC percentage values are within [0.0, 100.0] Limits SOC values to limit values..." alt="" coords="511,234,749,275"/>
+<area shape="rect" id="node17" href="$soc__counting_8c.html#a01db1621391900ad0b8833bf5f8173e3" title="calculates string SOC in percentage from passed string charge in As" alt="" coords="529,299,731,341"/>
+<area shape="rect" id="node18" href="$soc__counting_8c.html#a346855562c7897f40a8afca336ff57a4" title="Set SOC&#45;related values in non&#45;volatile memory." alt="" coords="549,365,711,392"/>
+</map>

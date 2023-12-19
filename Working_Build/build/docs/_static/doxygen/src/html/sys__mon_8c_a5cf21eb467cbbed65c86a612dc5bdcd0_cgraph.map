@@ -1,0 +1,15 @@
+<map id="SYSM_UpdateFramData" name="SYSM_UpdateFramData">
+<area shape="rect" id="node1" title="Commits the stored changes to FRAM if necessary." alt="" coords="5,350,171,377"/>
+<area shape="rect" id="node2" href="$fram_8c.html#ad5c5ec1fd0a6c3667185d3b75064e359" title="Writes a variable to the FRAM." alt="" coords="238,249,362,276"/>
+<area shape="rect" id="node10" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="680,198,827,225"/>
+<area shape="rect" id="node11" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="684,249,823,276"/>
+<area shape="rect" id="node13" href="$sys__mon_8c.html#acc9a5d05dfff9a46afd4f0a665cba32c" title="Copy from the from entry to the to entry." alt="" coords="219,502,381,529"/>
+<area shape="rect" id="node3" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="465,300,596,326"/>
+<area shape="rect" id="node4" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="483,350,578,377"/>
+<area shape="rect" id="node5" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="490,401,571,428"/>
+<area shape="rect" id="node6" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="475,46,587,73"/>
+<area shape="rect" id="node7" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="429,97,632,124"/>
+<area shape="rect" id="node8" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="470,148,591,174"/>
+<area shape="rect" id="node9" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="491,198,570,225"/>
+<area shape="rect" id="node12" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="485,249,576,276"/>
+</map>

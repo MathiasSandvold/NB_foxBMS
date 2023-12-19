@@ -1,0 +1,9 @@
+<map id="LTC_SaveTemperatures" name="LTC_SaveTemperatures">
+<area shape="rect" id="node1" title="stores the measured temperatures and the measured multiplexer feedbacks in the database." alt="" coords="5,81,164,108"/>
+<area shape="rect" id="node2" href="$afe__plausibility_8c.html#a5f0f388fcad363cade4b5e340f06e211" title="Cell temperature plausibility check." alt="" coords="212,45,399,86"/>
+<area shape="rect" id="node5" href="$diag_8c.html#a3e60a00edfbecf928fd6db140626647a" title="DIAG_CheckEvent provides a simple interface to check an event for STD_OK." alt="" coords="241,111,370,137"/>
+<area shape="rect" id="node3" href="$tsi_8h.html#a161bdb7af8c149fe72731f43f0619dd9" title="Return the maximum plausible temperature." alt="" coords="447,5,697,32"/>
+<area shape="rect" id="node4" href="$tsi_8h.html#a9bf06d1c58f3a5ee9c9c8b1d611d1323" title="Return the minimum plausible temperature." alt="" coords="449,56,695,83"/>
+<area shape="rect" id="node6" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="520,111,624,137"/>
+<area shape="rect" id="node7" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="745,111,868,137"/>
+</map>

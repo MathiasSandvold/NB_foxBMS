@@ -1,0 +1,5 @@
+<map id="testSE_GetStateOfChargeFromVoltage" name="testSE_GetStateOfChargeFromVoltage">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,211,47"/>
+<area shape="rect" id="node2" href="$group__state-estimation-api.html#ga74af4e2bdb5a3caa9696292fb9217311" title="look&#45;up table for SOC initialization" alt="" coords="259,13,485,39"/>
+<area shape="rect" id="node3" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="533,13,704,39"/>
+</map>

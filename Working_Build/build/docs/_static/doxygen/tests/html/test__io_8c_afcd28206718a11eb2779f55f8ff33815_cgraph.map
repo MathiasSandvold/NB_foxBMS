@@ -1,0 +1,4 @@
+<map id="testIO_SetPinDirectionToOutput" name="testIO_SetPinDirectionToOutput">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,173,47"/>
+<area shape="rect" id="node2" href="$io_8c.html#a41154d1d77ad0873d462c803ce831f68" title="Set pin to output by writing in pin direction register." alt="" coords="221,13,407,39"/>
+</map>

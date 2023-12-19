@@ -1,0 +1,10 @@
+<map id="pwm.h" name="pwm.h">
+<area shape="rect" id="node1" title="PWM driver for the TMS570LC43xx." alt="" coords="353,5,413,32"/>
+<area shape="rect" id="node2" href="$bender__ir155__helper_8h.html" title="Headers for the configuration for the insulation monitoring." alt="" coords="136,80,285,107"/>
+<area shape="rect" id="node6" href="$pwm_8c.html" title="Implementation of the PWM module." alt="" coords="310,80,370,107"/>
+<area shape="rect" id="node7" href="$main_8c.html" title="Main function." alt="" coords="395,80,456,107"/>
+<area shape="rect" id="node8" href="$test__pwm_8c.html" title="Tests for the PWM driver." alt="" coords="481,80,570,107"/>
+<area shape="rect" id="node3" href="$bender__ir155_8c.html" title="Driver for the insulation monitoring." alt="" coords="5,155,112,181"/>
+<area shape="rect" id="node4" href="$bender__ir155__helper_8c.html" title="Driver for the insulation monitoring." alt="" coords="136,155,285,181"/>
+<area shape="rect" id="node5" href="$test__bender__ir155__helper_8c.html" title="Tests for the Bender IR155 driver." alt="" coords="309,155,488,181"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="BMS_GetClosestString" name="BMS_GetClosestString">
+<area shape="rect" id="node1" title="Returns ID of string with voltage closest to first closed string voltage." alt="" coords="5,5,163,32"/>
+<area shape="rect" id="node2" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="211,5,353,32"/>
+</map>

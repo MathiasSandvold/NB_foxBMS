@@ -1,0 +1,4 @@
+<map id="tsi_plausibility_cfg.h" name="tsi_plausibility_cfg.h">
+<area shape="rect" id="node1" title="plausibility limits for cell temperatures" alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node2" href="$tsi__limits_8c.html" title="Implementation of the temperature limits of the TSI for plausibility&#45;checks. This implementation is a..." alt="" coords="32,80,117,107"/>
+</map>

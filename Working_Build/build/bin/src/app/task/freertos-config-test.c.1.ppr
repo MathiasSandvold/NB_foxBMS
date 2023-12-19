@@ -1,0 +1,726 @@
+# pragma diag_push
+# pragma CHECK_MISRA("-19.7")
+# pragma CHECK_MISRA("-19.4")
+# pragma CHECK_MISRA("-19.1")
+# pragma CHECK_MISRA("-19.15")
+# pragma diag_pop
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("CHECK_MISRA(\"-19.1\")")
+_Pragma("CHECK_MISRA(\"-19.6\")")
+#pragma diag_push
+#pragma CHECK_MISRA("-19.4")
+#pragma diag_pop
+_Pragma("diag_pop")
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.1\")")
+_Pragma("CHECK_MISRA(\"-19.7\")")
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.7\")")
+_Pragma("diag_pop")
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"none\")")
+_Pragma("diag_pop")
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-6.3\")")
+typedef	signed char		__int8_t;
+typedef	unsigned char		__uint8_t;
+typedef	short			__int16_t;
+typedef	unsigned short		__uint16_t;
+typedef	int			__int32_t;
+typedef	unsigned int		__uint32_t;
+typedef	long long		__int64_t;
+typedef	unsigned long long	__uint64_t;
+typedef	__uint32_t	__clock_t;
+typedef	__int32_t	__critical_t;
+typedef	double		__double_t;
+typedef	float		__float_t;
+typedef	__int32_t	__intfptr_t;
+typedef	__int64_t	__intmax_t;
+typedef	__int32_t	__intptr_t;
+typedef	__int32_t	__int_fast8_t;
+typedef	__int32_t	__int_fast16_t;
+typedef	__int32_t	__int_fast32_t;
+typedef	__int64_t	__int_fast64_t;
+typedef	__int8_t	__int_least8_t;
+typedef	__int16_t	__int_least16_t;
+typedef	__int32_t	__int_least32_t;
+typedef	__int64_t	__int_least64_t;
+typedef	__int32_t	__ptrdiff_t;
+typedef	__int32_t	__register_t;
+typedef	__int32_t	__segsz_t;
+typedef	__uint32_t	__size_t;
+typedef	__int32_t	__ssize_t;
+typedef __uint32_t      __time_t;
+typedef	__uint32_t	__uintfptr_t;
+typedef	__uint64_t	__uintmax_t;
+typedef	__uint32_t	__uintptr_t;
+typedef	__uint32_t	__uint_fast8_t;
+typedef	__uint32_t	__uint_fast16_t;
+typedef	__uint32_t	__uint_fast32_t;
+typedef	__uint64_t	__uint_fast64_t;
+typedef	__uint8_t	__uint_least8_t;
+typedef	__uint16_t	__uint_least16_t;
+typedef	__uint32_t	__uint_least32_t;
+typedef	__uint64_t	__uint_least64_t;
+typedef	__uint32_t	__u_register_t;
+typedef	__uint32_t	__vm_offset_t;
+typedef	__uint32_t	__vm_paddr_t;
+typedef	__uint32_t	__vm_size_t;
+typedef	unsigned short ___wchar_t;
+typedef long _off_t;
+typedef struct __va_list_t {
+    void * __ap;
+} __va_list;
+_Pragma("diag_pop")
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-6.3\")")
+typedef	__int32_t	__blksize_t;
+typedef	__int64_t	__blkcnt_t;
+typedef	__int32_t	__clockid_t;
+typedef	__uint32_t	__fflags_t;
+typedef	__uint64_t	__fsblkcnt_t;
+typedef	__uint64_t	__fsfilcnt_t;
+typedef	__uint32_t	__gid_t;
+typedef	__int64_t	__id_t;
+typedef	__uint64_t	__ino_t;
+typedef	long		__key_t;
+typedef	__int32_t	__lwpid_t;
+typedef	__uint16_t	__mode_t;
+typedef	int		__accmode_t;
+typedef	int		__nl_item;
+typedef	__uint64_t	__nlink_t;
+typedef	_off_t	        __off_t;
+typedef	__int64_t	__off64_t;
+typedef	__int32_t	__pid_t;
+typedef	__int64_t	__rlim_t;
+typedef	__uint8_t	__sa_family_t;
+typedef	__uint32_t	__socklen_t;
+typedef	long		__suseconds_t;
+typedef	struct __timer	*__timer_t;
+typedef	struct __mq	*__mqd_t;
+typedef	__uint32_t	__uid_t;
+typedef	unsigned int	__useconds_t;
+typedef	int		__cpuwhich_t;
+typedef	int		__cpulevel_t;
+typedef int		__cpusetid_t;
+typedef	int		__ct_rune_t;
+typedef	__ct_rune_t	__rune_t;
+typedef	__ct_rune_t	__wint_t;
+typedef	__uint_least16_t __char16_t;
+typedef	__uint_least32_t __char32_t;
+typedef struct {
+	long long __max_align1 __attribute__((aligned(_Alignof(long long))));
+	long double __max_align2 __attribute__((aligned(_Alignof(long double))));
+} __max_align_t;
+typedef	__uint64_t	__dev_t;
+typedef	__uint32_t	__fixpt_t;
+typedef int _Mbstatet;
+typedef _Mbstatet __mbstate_t;
+typedef __uintmax_t     __rman_res_t;
+_Pragma("diag_pop")
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("CHECK_MISRA(\"-19.7\")")
+_Pragma("CHECK_MISRA(\"-19.13\")")
+_Pragma("diag_pop")
+typedef	__int8_t		int8_t;
+typedef	__int16_t		int16_t;
+typedef	__int32_t		int32_t;
+typedef	__int64_t		int64_t;
+typedef	__uint8_t		uint8_t;
+typedef	__uint16_t		uint16_t;
+typedef	__uint32_t		uint32_t;
+typedef	__uint64_t		uint64_t;
+typedef	__intptr_t		intptr_t;
+typedef	__uintptr_t		uintptr_t;
+typedef	__intmax_t		intmax_t;
+typedef	__uintmax_t		uintmax_t;
+typedef	__int_least8_t		int_least8_t;
+typedef	__int_least16_t		int_least16_t;
+typedef	__int_least32_t		int_least32_t;
+typedef	__int_least64_t		int_least64_t;
+typedef	__uint_least8_t		uint_least8_t;
+typedef	__uint_least16_t	uint_least16_t;
+typedef	__uint_least32_t	uint_least32_t;
+typedef	__uint_least64_t	uint_least64_t;
+typedef	__int_fast8_t		int_fast8_t;
+typedef	__int_fast16_t		int_fast16_t;
+typedef	__int_fast32_t		int_fast32_t;
+typedef	__int_fast64_t		int_fast64_t;
+typedef	__uint_fast8_t		uint_fast8_t;
+typedef	__uint_fast16_t		uint_fast16_t;
+typedef	__uint_fast32_t		uint_fast32_t;
+typedef	__uint_fast64_t		uint_fast64_t;
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-10.1\")")
+_Pragma("diag_pop")
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("diag_pop")
+_Pragma("diag_pop")
+typedef enum {
+    STD_OK,
+    STD_NOT_OK,
+} STD_RETURN_TYPE_e;
+typedef enum {
+    STD_PIN_LOW,
+    STD_PIN_HIGH,
+    STD_PIN_UNDEFINED,
+} STD_PIN_STATE_e;
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.7\")")
+_Pragma("CHECK_MISRA(\"-20.1\")")
+_Pragma("CHECK_MISRA(\"-20.2\")")
+typedef int ptrdiff_t;
+typedef unsigned size_t;
+typedef unsigned short wchar_t;
+typedef long double max_align_t;
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.10\")")
+_Pragma("diag_pop")
+_Pragma("diag_pop")
+typedef void (* TaskFunction_t)( void * );
+typedef uint32_t   StackType_t;
+typedef long             BaseType_t;
+typedef unsigned long    UBaseType_t;
+    typedef uint32_t     TickType_t;
+#pragma SWI_ALIAS(vPortEnterCritical, 2)
+extern void vPortEnterCritical( void );
+#pragma SWI_ALIAS(vPortExitCritical, 3)
+extern void vPortExitCritical( void );
+#pragma SWI_ALIAS(vPortDisableInterrupts, 5)
+extern void vPortDisableInterrupts( void );
+#pragma SWI_ALIAS(vPortEnableInterrupts, 6)
+extern void vPortEnableInterrupts( void );
+#pragma SWI_ALIAS( vPortYield, 0 )
+extern void vPortYield( void );
+#pragma SWI_ALIAS(vPortTaskUsesFPU, 4)
+extern void vPortTaskUsesFPU( void );
+    unsigned long ulPortCountLeadingZeros( unsigned long ulBitmap );
+typedef struct MPU_REGION_REGISTERS
+{
+    unsigned ulRegionBaseAddress;
+    unsigned ulRegionSize;
+    unsigned ulRegionAttribute;
+} xMPU_REGION_REGISTERS;
+typedef struct MPU_SETTINGS
+{
+    xMPU_REGION_REGISTERS xRegion[ ( ( ( ( ( 16UL ) - 2 ) - ( 13UL - 1UL ) ) + 1 ) + 1 ) ];
+} xMPU_SETTINGS;
+        StackType_t * pxPortInitialiseStack( StackType_t * pxTopOfStack,
+                                             TaskFunction_t pxCode,
+                                             void * pvParameters,
+                                             BaseType_t xRunPrivileged ) ;
+typedef struct HeapRegion
+{
+    uint8_t * pucStartAddress;
+    size_t xSizeInBytes;
+} HeapRegion_t;
+typedef struct xHeapStats
+{
+    size_t xAvailableHeapSpaceInBytes;
+    size_t xSizeOfLargestFreeBlockInBytes;
+    size_t xSizeOfSmallestFreeBlockInBytes;
+    size_t xNumberOfFreeBlocks;
+    size_t xMinimumEverFreeBytesRemaining;
+    size_t xNumberOfSuccessfulAllocations;
+    size_t xNumberOfSuccessfulFrees;
+} HeapStats_t;
+void vPortDefineHeapRegions( const HeapRegion_t * const pxHeapRegions ) ;
+void vPortGetHeapStats( HeapStats_t * pxHeapStats );
+void * pvPortMalloc( size_t xSize ) ;
+void vPortFree( void * pv ) ;
+void vPortInitialiseBlocks( void ) ;
+size_t xPortGetFreeHeapSize( void ) ;
+size_t xPortGetMinimumEverFreeHeapSize( void ) ;
+BaseType_t xPortStartScheduler( void ) ;
+void vPortEndScheduler( void ) ;
+    struct xMEMORY_REGION;
+    void vPortStoreTaskMPUSettings( xMPU_SETTINGS * xMPUSettings,
+                                    const struct xMEMORY_REGION * const xRegions,
+                                    StackType_t * pxBottomOfStack,
+                                    uint32_t ulStackDepth ) ;
+struct xSTATIC_LIST_ITEM
+{
+    TickType_t xDummy2;
+    void * pvDummy3[ 4 ];
+};
+typedef struct xSTATIC_LIST_ITEM StaticListItem_t;
+struct xSTATIC_MINI_LIST_ITEM
+{
+    TickType_t xDummy2;
+    void * pvDummy3[ 2 ];
+};
+typedef struct xSTATIC_MINI_LIST_ITEM StaticMiniListItem_t;
+typedef struct xSTATIC_LIST
+{
+    UBaseType_t uxDummy2;
+    void * pvDummy3;
+    StaticMiniListItem_t xDummy4;
+} StaticList_t;
+typedef struct xSTATIC_TCB
+{
+    void * pxDummy1;
+        xMPU_SETTINGS xDummy2;
+    StaticListItem_t xDummy3[ 2 ];
+    UBaseType_t uxDummy5;
+    void * pxDummy6;
+    uint8_t ucDummy7[ ( 40 ) ];
+        void * pxDummy8;
+        void * pvDummy15[ ( 1 ) ];
+        uint32_t ulDummy18[ ( 3 ) ];
+        uint8_t ucDummy19[ ( 3 ) ];
+        uint8_t ucDummy21;
+} StaticTask_t;
+typedef struct xSTATIC_QUEUE
+{
+    void * pvDummy1[ 3 ];
+    union
+    {
+        void * pvDummy2;
+        UBaseType_t uxDummy2;
+    } u;
+    StaticList_t xDummy3[ 2 ];
+    UBaseType_t uxDummy4[ 3 ];
+    uint8_t ucDummy5[ 2 ];
+} StaticQueue_t;
+typedef StaticQueue_t StaticSemaphore_t;
+typedef struct xSTATIC_EVENT_GROUP
+{
+    TickType_t xDummy1;
+    StaticList_t xDummy2;
+} StaticEventGroup_t;
+typedef struct xSTATIC_TIMER
+{
+    void * pvDummy1;
+    StaticListItem_t xDummy2;
+    TickType_t xDummy3;
+    void * pvDummy5;
+    TaskFunction_t pvDummy6;
+    uint8_t ucDummy8;
+} StaticTimer_t;
+typedef struct xSTATIC_STREAM_BUFFER
+{
+    size_t uxDummy1[ 4 ];
+    void * pvDummy2[ 3 ];
+    uint8_t ucDummy3;
+} StaticStreamBuffer_t;
+typedef StaticStreamBuffer_t StaticMessageBuffer_t;
+struct xLIST;
+struct xLIST_ITEM
+{
+     TickType_t xItemValue;
+    struct xLIST_ITEM *  pxNext;
+    struct xLIST_ITEM *  pxPrevious;
+    void * pvOwner;
+    struct xLIST *  pvContainer;
+};
+typedef struct xLIST_ITEM ListItem_t;
+struct xMINI_LIST_ITEM
+{
+     TickType_t xItemValue;
+    struct xLIST_ITEM *  pxNext;
+    struct xLIST_ITEM *  pxPrevious;
+};
+typedef struct xMINI_LIST_ITEM MiniListItem_t;
+typedef struct xLIST
+{
+    volatile UBaseType_t uxNumberOfItems;
+    ListItem_t *  pxIndex;
+    MiniListItem_t xListEnd;
+} List_t;
+void vListInitialise( List_t * const pxList ) ;
+void vListInitialiseItem( ListItem_t * const pxItem ) ;
+void vListInsert( List_t * const pxList,
+                  ListItem_t * const pxNewListItem ) ;
+void vListInsertEnd( List_t * const pxList,
+                     ListItem_t * const pxNewListItem ) ;
+UBaseType_t uxListRemove( ListItem_t * const pxItemToRemove ) ;
+struct tskTaskControlBlock;
+typedef struct tskTaskControlBlock * TaskHandle_t;
+typedef BaseType_t (* TaskHookFunction_t)( void * );
+typedef enum
+{
+    eRunning = 0,
+    eReady,
+    eBlocked,
+    eSuspended,
+    eDeleted,
+    eInvalid
+} eTaskState;
+typedef enum
+{
+    eNoAction = 0,
+    eSetBits,
+    eIncrement,
+    eSetValueWithOverwrite,
+    eSetValueWithoutOverwrite
+} eNotifyAction;
+typedef struct xTIME_OUT
+{
+    BaseType_t xOverflowCount;
+    TickType_t xTimeOnEntering;
+} TimeOut_t;
+typedef struct xMEMORY_REGION
+{
+    void * pvBaseAddress;
+    uint32_t ulLengthInBytes;
+    uint32_t ulParameters;
+} MemoryRegion_t;
+typedef struct xTASK_PARAMETERS
+{
+    TaskFunction_t pvTaskCode;
+    const char * pcName;
+    uint16_t usStackDepth;
+    void * pvParameters;
+    UBaseType_t uxPriority;
+    StackType_t * puxStackBuffer;
+    MemoryRegion_t xRegions[ ( ( ( ( 16UL ) - 2 ) - ( 13UL - 1UL ) ) + 1 ) ];
+        StaticTask_t * const pxTaskBuffer;
+} TaskParameters_t;
+typedef struct xTASK_STATUS
+{
+    TaskHandle_t xHandle;
+    const char * pcTaskName;
+    UBaseType_t xTaskNumber;
+    eTaskState eCurrentState;
+    UBaseType_t uxCurrentPriority;
+    UBaseType_t uxBasePriority;
+    uint32_t ulRunTimeCounter;
+    StackType_t * pxStackBase;
+    uint16_t usStackHighWaterMark;
+} TaskStatus_t;
+typedef enum
+{
+    eAbortSleep = 0,
+    eStandardSleep,
+    eNoTasksWaitingTimeout
+} eSleepModeStatus;
+    TaskHandle_t MPU_xTaskCreateStatic( TaskFunction_t pxTaskCode,
+                                    const char * const pcName,
+                                    const uint32_t ulStackDepth,
+                                    void * const pvParameters,
+                                    UBaseType_t uxPriority,
+                                    StackType_t * const puxStackBuffer,
+                                    StaticTask_t * const pxTaskBuffer ) ;
+    BaseType_t MPU_xTaskCreateRestricted( const TaskParameters_t * const pxTaskDefinition,
+                                      TaskHandle_t * pxCreatedTask ) ;
+    BaseType_t xTaskCreateRestrictedStatic( const TaskParameters_t * const pxTaskDefinition,
+                                            TaskHandle_t * pxCreatedTask ) ;
+void MPU_vTaskAllocateMPURegions( TaskHandle_t xTask,
+                              const MemoryRegion_t * const pxRegions ) ;
+void MPU_vTaskDelete( TaskHandle_t xTaskToDelete ) ;
+void MPU_vTaskDelay( const TickType_t xTicksToDelay ) ;
+BaseType_t MPU_xTaskDelayUntil( TickType_t * const pxPreviousWakeTime,
+                            const TickType_t xTimeIncrement ) ;
+BaseType_t MPU_xTaskAbortDelay( TaskHandle_t xTask ) ;
+UBaseType_t MPU_uxTaskPriorityGet( const TaskHandle_t xTask ) ;
+UBaseType_t uxTaskPriorityGetFromISR( const TaskHandle_t xTask ) ;
+eTaskState MPU_eTaskGetState( TaskHandle_t xTask ) ;
+void MPU_vTaskGetInfo( TaskHandle_t xTask,
+                   TaskStatus_t * pxTaskStatus,
+                   BaseType_t xGetFreeStackSpace,
+                   eTaskState eState ) ;
+void MPU_vTaskPrioritySet( TaskHandle_t xTask,
+                       UBaseType_t uxNewPriority ) ;
+void MPU_vTaskSuspend( TaskHandle_t xTaskToSuspend ) ;
+void MPU_vTaskResume( TaskHandle_t xTaskToResume ) ;
+BaseType_t xTaskResumeFromISR( TaskHandle_t xTaskToResume ) ;
+void vTaskStartScheduler( void ) ;
+void vTaskEndScheduler( void ) ;
+void MPU_vTaskSuspendAll( void ) ;
+BaseType_t MPU_xTaskResumeAll( void ) ;
+TickType_t MPU_xTaskGetTickCount( void ) ;
+TickType_t xTaskGetTickCountFromISR( void ) ;
+UBaseType_t MPU_uxTaskGetNumberOfTasks( void ) ;
+char * MPU_pcTaskGetName( TaskHandle_t xTaskToQuery ) ;
+TaskHandle_t MPU_xTaskGetHandle( const char * pcNameToQuery ) ;
+UBaseType_t MPU_uxTaskGetStackHighWaterMark( TaskHandle_t xTask ) ;
+uint16_t MPU_uxTaskGetStackHighWaterMark2( TaskHandle_t xTask ) ;
+    void MPU_vTaskSetThreadLocalStoragePointer( TaskHandle_t xTaskToSet,
+                                            BaseType_t xIndex,
+                                            void * pvValue ) ;
+    void * MPU_pvTaskGetThreadLocalStoragePointer( TaskHandle_t xTaskToQuery,
+                                               BaseType_t xIndex ) ;
+    void vApplicationGetIdleTaskMemory( StaticTask_t ** ppxIdleTaskTCBBuffer,
+                                        StackType_t ** ppxIdleTaskStackBuffer,
+                                        uint32_t * pulIdleTaskStackSize );
+BaseType_t MPU_xTaskCallApplicationTaskHook( TaskHandle_t xTask,
+                                         void * pvParameter ) ;
+TaskHandle_t MPU_xTaskGetIdleTaskHandle( void ) ;
+UBaseType_t MPU_uxTaskGetSystemState( TaskStatus_t * const pxTaskStatusArray,
+                                  const UBaseType_t uxArraySize,
+                                  uint32_t * const pulTotalRunTime ) ;
+void MPU_vTaskList( char * pcWriteBuffer ) ;
+void MPU_vTaskGetRunTimeStats( char * pcWriteBuffer ) ;
+uint32_t MPU_ulTaskGetIdleRunTimeCounter( void ) ;
+uint32_t MPU_ulTaskGetIdleRunTimePercent( void ) ;
+BaseType_t MPU_xTaskGenericNotify( TaskHandle_t xTaskToNotify,
+                               UBaseType_t uxIndexToNotify,
+                               uint32_t ulValue,
+                               eNotifyAction eAction,
+                               uint32_t * pulPreviousNotificationValue ) ;
+BaseType_t xTaskGenericNotifyFromISR( TaskHandle_t xTaskToNotify,
+                                      UBaseType_t uxIndexToNotify,
+                                      uint32_t ulValue,
+                                      eNotifyAction eAction,
+                                      uint32_t * pulPreviousNotificationValue,
+                                      BaseType_t * pxHigherPriorityTaskWoken ) ;
+BaseType_t MPU_xTaskGenericNotifyWait( UBaseType_t uxIndexToWaitOn,
+                                   uint32_t ulBitsToClearOnEntry,
+                                   uint32_t ulBitsToClearOnExit,
+                                   uint32_t * pulNotificationValue,
+                                   TickType_t xTicksToWait ) ;
+void vTaskGenericNotifyGiveFromISR( TaskHandle_t xTaskToNotify,
+                                    UBaseType_t uxIndexToNotify,
+                                    BaseType_t * pxHigherPriorityTaskWoken ) ;
+uint32_t MPU_ulTaskGenericNotifyTake( UBaseType_t uxIndexToWaitOn,
+                                  BaseType_t xClearCountOnExit,
+                                  TickType_t xTicksToWait ) ;
+BaseType_t MPU_xTaskGenericNotifyStateClear( TaskHandle_t xTask,
+                                         UBaseType_t uxIndexToClear ) ;
+uint32_t MPU_ulTaskGenericNotifyValueClear( TaskHandle_t xTask,
+                                        UBaseType_t uxIndexToClear,
+                                        uint32_t ulBitsToClear ) ;
+void MPU_vTaskSetTimeOutState( TimeOut_t * const pxTimeOut ) ;
+BaseType_t MPU_xTaskCheckForTimeOut( TimeOut_t * const pxTimeOut,
+                                 TickType_t * const pxTicksToWait ) ;
+BaseType_t MPU_xTaskCatchUpTicks( TickType_t xTicksToCatchUp ) ;
+BaseType_t xTaskIncrementTick( void ) ;
+void vTaskPlaceOnEventList( List_t * const pxEventList,
+                            const TickType_t xTicksToWait ) ;
+void vTaskPlaceOnUnorderedEventList( List_t * pxEventList,
+                                     const TickType_t xItemValue,
+                                     const TickType_t xTicksToWait ) ;
+void vTaskPlaceOnEventListRestricted( List_t * const pxEventList,
+                                      TickType_t xTicksToWait,
+                                      const BaseType_t xWaitIndefinitely ) ;
+BaseType_t xTaskRemoveFromEventList( const List_t * const pxEventList ) ;
+void vTaskRemoveFromUnorderedEventList( ListItem_t * pxEventListItem,
+                                        const TickType_t xItemValue ) ;
+ void vTaskSwitchContext( void ) ;
+TickType_t uxTaskResetEventItemValue( void ) ;
+TaskHandle_t MPU_xTaskGetCurrentTaskHandle( void ) ;
+void vTaskMissedYield( void ) ;
+BaseType_t MPU_xTaskGetSchedulerState( void ) ;
+BaseType_t xTaskPriorityInherit( TaskHandle_t const pxMutexHolder ) ;
+BaseType_t xTaskPriorityDisinherit( TaskHandle_t const pxMutexHolder ) ;
+void vTaskPriorityDisinheritAfterTimeout( TaskHandle_t const pxMutexHolder,
+                                          UBaseType_t uxHighestPriorityWaitingTask ) ;
+UBaseType_t uxTaskGetTaskNumber( TaskHandle_t xTask ) ;
+void vTaskSetTaskNumber( TaskHandle_t xTask,
+                         const UBaseType_t uxHandle ) ;
+void vTaskStepTick( const TickType_t xTicksToJump ) ;
+eSleepModeStatus eTaskConfirmSleepModeStatus( void ) ;
+TaskHandle_t pvTaskIncrementMutexHeldCount( void ) ;
+void vTaskInternalSetTimeOutState( TimeOut_t * const pxTimeOut ) ;
+struct QueueDefinition;
+typedef struct QueueDefinition   * QueueHandle_t;
+typedef struct QueueDefinition   * QueueSetHandle_t;
+typedef struct QueueDefinition   * QueueSetMemberHandle_t;
+BaseType_t MPU_xQueueGenericSend( QueueHandle_t xQueue,
+                              const void * const pvItemToQueue,
+                              TickType_t xTicksToWait,
+                              const BaseType_t xCopyPosition ) ;
+BaseType_t MPU_xQueuePeek( QueueHandle_t xQueue,
+                       void * const pvBuffer,
+                       TickType_t xTicksToWait ) ;
+BaseType_t xQueuePeekFromISR( QueueHandle_t xQueue,
+                              void * const pvBuffer ) ;
+BaseType_t MPU_xQueueReceive( QueueHandle_t xQueue,
+                          void * const pvBuffer,
+                          TickType_t xTicksToWait ) ;
+UBaseType_t MPU_uxQueueMessagesWaiting( const QueueHandle_t xQueue ) ;
+UBaseType_t MPU_uxQueueSpacesAvailable( const QueueHandle_t xQueue ) ;
+void MPU_vQueueDelete( QueueHandle_t xQueue ) ;
+BaseType_t xQueueGenericSendFromISR( QueueHandle_t xQueue,
+                                     const void * const pvItemToQueue,
+                                     BaseType_t * const pxHigherPriorityTaskWoken,
+                                     const BaseType_t xCopyPosition ) ;
+BaseType_t xQueueGiveFromISR( QueueHandle_t xQueue,
+                              BaseType_t * const pxHigherPriorityTaskWoken ) ;
+BaseType_t xQueueReceiveFromISR( QueueHandle_t xQueue,
+                                 void * const pvBuffer,
+                                 BaseType_t * const pxHigherPriorityTaskWoken ) ;
+BaseType_t xQueueIsQueueEmptyFromISR( const QueueHandle_t xQueue ) ;
+BaseType_t xQueueIsQueueFullFromISR( const QueueHandle_t xQueue ) ;
+UBaseType_t uxQueueMessagesWaitingFromISR( const QueueHandle_t xQueue ) ;
+BaseType_t xQueueCRSendFromISR( QueueHandle_t xQueue,
+                                const void * pvItemToQueue,
+                                BaseType_t xCoRoutinePreviouslyWoken );
+BaseType_t xQueueCRReceiveFromISR( QueueHandle_t xQueue,
+                                   void * pvBuffer,
+                                   BaseType_t * pxTaskWoken );
+BaseType_t xQueueCRSend( QueueHandle_t xQueue,
+                         const void * pvItemToQueue,
+                         TickType_t xTicksToWait );
+BaseType_t xQueueCRReceive( QueueHandle_t xQueue,
+                            void * pvBuffer,
+                            TickType_t xTicksToWait );
+QueueHandle_t MPU_xQueueCreateMutex( const uint8_t ucQueueType ) ;
+QueueHandle_t MPU_xQueueCreateMutexStatic( const uint8_t ucQueueType,
+                                       StaticQueue_t * pxStaticQueue ) ;
+QueueHandle_t MPU_xQueueCreateCountingSemaphore( const UBaseType_t uxMaxCount,
+                                             const UBaseType_t uxInitialCount ) ;
+QueueHandle_t MPU_xQueueCreateCountingSemaphoreStatic( const UBaseType_t uxMaxCount,
+                                                   const UBaseType_t uxInitialCount,
+                                                   StaticQueue_t * pxStaticQueue ) ;
+BaseType_t MPU_xQueueSemaphoreTake( QueueHandle_t xQueue,
+                                TickType_t xTicksToWait ) ;
+TaskHandle_t MPU_xQueueGetMutexHolder( QueueHandle_t xSemaphore ) ;
+TaskHandle_t xQueueGetMutexHolderFromISR( QueueHandle_t xSemaphore ) ;
+BaseType_t MPU_xQueueTakeMutexRecursive( QueueHandle_t xMutex,
+                                     TickType_t xTicksToWait ) ;
+BaseType_t MPU_xQueueGiveMutexRecursive( QueueHandle_t xMutex ) ;
+    QueueHandle_t MPU_xQueueGenericCreateStatic( const UBaseType_t uxQueueLength,
+                                             const UBaseType_t uxItemSize,
+                                             uint8_t * pucQueueStorage,
+                                             StaticQueue_t * pxStaticQueue,
+                                             const uint8_t ucQueueType ) ;
+QueueSetHandle_t MPU_xQueueCreateSet( const UBaseType_t uxEventQueueLength ) ;
+BaseType_t MPU_xQueueAddToSet( QueueSetMemberHandle_t xQueueOrSemaphore,
+                           QueueSetHandle_t xQueueSet ) ;
+BaseType_t MPU_xQueueRemoveFromSet( QueueSetMemberHandle_t xQueueOrSemaphore,
+                                QueueSetHandle_t xQueueSet ) ;
+QueueSetMemberHandle_t MPU_xQueueSelectFromSet( QueueSetHandle_t xQueueSet,
+                                            const TickType_t xTicksToWait ) ;
+QueueSetMemberHandle_t xQueueSelectFromSetFromISR( QueueSetHandle_t xQueueSet ) ;
+void vQueueWaitForMessageRestricted( QueueHandle_t xQueue,
+                                     TickType_t xTicksToWait,
+                                     const BaseType_t xWaitIndefinitely ) ;
+BaseType_t MPU_xQueueGenericReset( QueueHandle_t xQueue,
+                               BaseType_t xNewQueue ) ;
+void vQueueSetQueueNumber( QueueHandle_t xQueue,
+                           UBaseType_t uxQueueNumber ) ;
+UBaseType_t uxQueueGetQueueNumber( QueueHandle_t xQueue ) ;
+uint8_t ucQueueGetQueueType( QueueHandle_t xQueue ) ;
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("CHECK_MISRA(\"-19.11\")")
+_Pragma("diag_pop")
+typedef enum {
+    OS_SUCCESS,
+    OS_FAIL,
+} OS_STD_RETURN_e;
+typedef enum {
+    OS_PRIORITY_IDLE,
+    OS_PRIORITY_LOW,
+    OS_PRIORITY_BELOW_NORMAL,
+    OS_PRIORITY_NORMAL,
+    OS_PRIORITY_ABOVE_NORMAL,
+    OS_PRIORITY_HIGH,
+    OS_PRIORITY_ABOVE_HIGH,
+    OS_PRIORITY_VERY_HIGH,
+    OS_PRIORITY_BELOW_REALTIME,
+    OS_PRIORITY_REAL_TIME,
+} OS_PRIORITY_e;
+typedef enum {
+    OS_OFF,
+    OS_INITIALIZE_SCHEDULER,
+    OS_CREATE_QUEUES,
+    OS_CREATE_TASKS,
+    OS_INIT_PRE_OS,
+    OS_SCHEDULER_RUNNING,
+    OS_ENGINE_RUNNING,
+    OS_PRE_CYCLIC_INITIALIZATION_HAS_FINISHED,
+    OS_SYSTEM_RUNNING,
+    OS_INIT_OS_FATALERROR_SCHEDULER,
+    OS_INIT_OS_FATALERROR,
+    OS_BOOT_STATE_MAX,
+} OS_BOOT_STATE_e;
+typedef struct {
+    uint8_t timer_1ms;
+    uint8_t timer_10ms;
+    uint8_t timer_100ms;
+    uint8_t timer_sec;
+    uint8_t timer_min;
+    uint8_t timer_h;
+    uint16_t timer_d;
+} OS_TIMER_s;
+typedef struct {
+    OS_PRIORITY_e priority;
+    uint32_t phase;
+    uint32_t cycleTime;
+    uint32_t stackSize_B;
+    void *pvParameters;
+} OS_TASK_DEFINITION_s;
+extern volatile OS_BOOT_STATE_e os_boot;
+extern uint32_t os_schedulerStartTime;
+extern void OS_InitializeScheduler(void);
+extern void OS_StartScheduler(void);
+extern void OS_InitializeOperatingSystem(void);
+extern void vApplicationIdleHook(void);
+extern void OS_EnterTaskCritical(void);
+extern void OS_ExitTaskCritical(void);
+extern void OS_IncrementTimer(void);
+extern uint32_t OS_GetTickCount(void);
+extern void OS_DelayTaskUntil(uint32_t *pPreviousWakeTime, uint32_t milliseconds);
+extern void OS_MarkTaskAsRequiringFpuContext(void);
+extern OS_STD_RETURN_e OS_WaitForNotification(uint32_t *pNotifiedValue, uint32_t timeout);
+extern OS_STD_RETURN_e OS_NotifyFromIsr(TaskHandle_t taskToNotify, uint32_t notifiedValue);
+extern OS_STD_RETURN_e OS_WaitForNotificationIndexed(
+    uint32_t indexToWaitOn,
+    uint32_t *pNotifiedValue,
+    uint32_t timeout);
+extern OS_STD_RETURN_e OS_NotifyIndexedFromIsr(
+    TaskHandle_t taskToNotify,
+    uint32_t indexToNotify,
+    uint32_t notifiedValue);
+extern OS_STD_RETURN_e OS_ClearNotificationIndexed(uint32_t indexToClear);
+extern OS_STD_RETURN_e OS_ReceiveFromQueue(QueueHandle_t xQueue, void *const pvBuffer, uint32_t ticksToWait);
+extern OS_STD_RETURN_e OS_SendToBackOfQueue(QueueHandle_t xQueue, const void *const pvItemToQueue, uint32_t ticksToWait);
+extern OS_STD_RETURN_e OS_SendToBackOfQueueFromIsr(
+    QueueHandle_t xQueue,
+    const void *const pvItemToQueue,
+    long *const pxHigherPriorityTaskWoken);
+extern uint32_t OS_GetNumberOfStoredMessagesInQueue(QueueHandle_t xQueue);
+extern _Bool OS_CheckTimeHasPassed(uint32_t oldTimeStamp_ms, uint32_t timeToPass_ms);
+extern _Bool OS_CheckTimeHasPassedWithTimestamp(
+    uint32_t oldTimeStamp_ms,
+    uint32_t currentTimeStamp_ms,
+    uint32_t timeToPass_ms);
+extern STD_RETURN_TYPE_e OS_CheckTimeHasPassedSelfTest(void);
+#pragma SWI_ALIAS(FAS_DisableInterrupts, 5)
+extern void FAS_DisableInterrupts(void);
+typedef struct {
+    uint32_t *pc;
+    uint32_t line;
+} FAS_ASSERT_LOCATION_s;
+extern void FAS_StoreAssertLocation(uint32_t *pc, uint32_t line);
+static inline void FAS_InfiniteLoop(void) {
+    FAS_DisableInterrupts();
+    while (1) {
+    }
+}
+_Static_assert(0 == 0, "false seems to have been modified.");
+_Static_assert(1 != 0, "true seems to have been modified.");
+_Static_assert(1 == 1, "true seems to have been modified.");
+_Static_assert(STD_OK == 0, "STD_OK seems to have been modified.");
+_Static_assert(STD_OK != STD_NOT_OK, "STD_OK or STD_NOT_OK seem to have been modified.");
+_Static_assert(STD_NOT_OK == 1, "STD_NOT_OK seems to have been modified.");
+extern OS_TASK_DEFINITION_s ftsk_taskDefinitionEngine;
+extern OS_TASK_DEFINITION_s ftsk_taskDefinitionCyclic1ms;
+extern OS_TASK_DEFINITION_s ftsk_taskDefinitionCyclic10ms;
+extern OS_TASK_DEFINITION_s ftsk_taskDefinitionCyclic100ms;
+extern OS_TASK_DEFINITION_s ftsk_taskDefinitionCyclicAlgorithm100ms;
+extern OS_TASK_DEFINITION_s ftsk_taskDefinitionI2c;
+extern OS_TASK_DEFINITION_s ftsk_taskDefinitionAfe;
+extern TaskHandle_t ftsk_taskHandleI2c;
+extern TaskHandle_t ftsk_taskHandleAfe;
+extern void FTSK_InitializeUserCodeEngine(void);
+extern void FTSK_RunUserCodeEngine(void);
+extern void FTSK_InitializeUserCodePreCyclicTasks(void);
+extern void FTSK_RunUserCodeCyclic1ms(void);
+extern void FTSK_RunUserCodeCyclic10ms(void);
+extern void FTSK_RunUserCodeCyclic100ms(void);
+extern void FTSK_RunUserCodeCyclicAlgorithm100ms(void);
+extern void FTSK_RunUserCodeI2c(void);
+extern void FTSK_RunUserCodeAfe(void);
+extern void FTSK_RunUserCodeIdle(void);
+_Static_assert((( ( unsigned short ) 128 ) * (4u)) < (StackType_t)(1024u), "Size of the 'Engine' task is too small.");
+_Static_assert((( ( unsigned short ) 128 ) * (4u)) < (StackType_t)(1024u), "Size of the '1ms cyclic' task is too small.");
+_Static_assert((( ( unsigned short ) 128 ) * (4u)) < (StackType_t)(5120u), "Size of the '10ms cyclic' task is too small.");
+_Static_assert((( ( unsigned short ) 128 ) * (4u)) < (StackType_t)(1024u), "Size of the '100ms cyclic' task is too small.");
+_Static_assert((( ( unsigned short ) 128 ) * (4u)) < (StackType_t)(1024u), "Size of the '100ms cyclic algorithm' task is too small.");
+_Static_assert((sizeof(StackType_t) == sizeof(uint32_t)), "Assumptions on the size of StackType_t have been broken.");

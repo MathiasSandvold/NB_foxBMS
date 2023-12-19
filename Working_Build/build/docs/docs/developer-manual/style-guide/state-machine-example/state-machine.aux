@@ -1,0 +1,116 @@
+***************************************************************
+* Auxiliary User Information for C:\\Users\\Smit\\AppData\\Local\\Temp\\{A0E37F7F-F958-4298-9D1A-DCD32BBC6E54}*
+*                                                             *
+* TI ARM G3 C/C++ Codegen  PC v20.2.4.LTS                     *
+* Date/Time created: Mon Mar  6 12:52:54 2023                 *
+***************************************************************
+
++-------------------------------------------------------------+
+|  FUNCTION:  EG_CheckMultipleCalls                           |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   OS_EnterTaskCritical
+   OS_ExitTaskCritical
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  EG_SomeRunningFunction2                         |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  EG_SetSubstate                                  |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  EG_SomeRunningFunction1                         |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  EG_SomeRunningFunction0                         |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  EG_ProcessRunningState                          |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   EG_SomeRunningFunction2
+   EG_SetSubstate
+   EG_SomeRunningFunction1
+   EG_SomeRunningFunction0
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  EG_SetState                                     |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   EG_SetSubstate
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  EG_SomeInitializationFunctionExit               |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  EG_SomeInitializationFunction1                  |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  EG_SomeInitializationFunction0                  |
++-------------------------------------------------------------+
+Stack usage:    0 bytes
+
++-------------------------------------------------------------+
+|  FUNCTION:  EG_ProcessInitializationState                   |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   EG_SomeInitializationFunctionExit
+   EG_SomeInitializationFunction1
+   EG_SetSubstate
+   EG_SomeInitializationFunction0
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+
++-------------------------------------------------------------+
+|  FUNCTION:  EG_RunStateMachine                              |
++-------------------------------------------------------------+
+Stack usage:    8 bytes
+
+Called functions:
+   EG_ProcessRunningState
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+   EG_SetState
+   EG_ProcessInitializationState
+
++-------------------------------------------------------------+
+|  FUNCTION:  EG_Trigger                                      |
++-------------------------------------------------------------+
+Stack usage:   16 bytes
+
+Called functions:
+   EG_CheckMultipleCalls
+   EG_RunStateMachine
+   FAS_StoreAssertLocation
+   FAS_DisableInterrupts
+

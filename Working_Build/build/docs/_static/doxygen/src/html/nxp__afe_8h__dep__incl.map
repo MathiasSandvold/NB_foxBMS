@@ -1,0 +1,5 @@
+<map id="nxp_afe.h" name="nxp_afe.h">
+<area shape="rect" id="node1" title="AFE driver wrapper layer for NXP ICs." alt="" coords="73,5,152,32"/>
+<area shape="rect" id="node2" href="$nxp__afe_8c.html" title="AFE driver wrapper layer for NXP ICs." alt="" coords="5,80,84,107"/>
+<area shape="rect" id="node3" href="$nxp__mc33775a__afe_8c.html" title="Configuration for the MC33775A analog front&#45;end." alt="" coords="108,80,253,107"/>
+</map>

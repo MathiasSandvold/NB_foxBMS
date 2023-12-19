@@ -1,0 +1,7 @@
+<map id="I165C_SetRelayState" name="I165C_SetRelayState">
+<area shape="rect" id="node1" title="Set state of HV relay." alt="" coords="5,81,152,108"/>
+<area shape="rect" id="node2" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="219,5,332,32"/>
+<area shape="rect" id="node3" href="$bender__iso165c_8c.html#ac239b3b41d2b237314edaf4c1a0aeb6c" title="Reset CAN data." alt="" coords="202,56,349,83"/>
+<area shape="rect" id="node4" href="$bender__iso165c_8c.html#a1f601b236eab3f110c3578c1a76f4568" title="Compose CAN message for CAN transmission." alt="" coords="215,107,335,133"/>
+<area shape="rect" id="node5" href="$bender__iso165c_8c.html#a776ba2c7bc9bcc6766231be59f494ba8" title="Write data in data word for CAN transmission." alt="" coords="200,157,351,184"/>
+</map>

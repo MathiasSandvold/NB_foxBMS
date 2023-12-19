@@ -1,0 +1,49 @@
+<map id="MXM_StateMachineOperation" name="MXM_StateMachineOperation">
+<area shape="rect" id="node1" title="State&#45;Machine implementation for operation state." alt="" coords="5,453,200,480"/>
+<area shape="rect" id="node2" href="$mxm__battery__management_8c.html#af80228e32eb53f659c6301f02ab34143" title="Get number of satellites." alt="" coords="518,320,723,346"/>
+<area shape="rect" id="node3" href="$mxm__battery__management_8c.html#a9d5b57e8d6ecb30ba6426272f472e630" title="Set state request for the Battery Management Statemachine." alt="" coords="535,117,706,144"/>
+<area shape="rect" id="node4" href="$mxm__registry_8c.html#af2ecdd14cd0568f246b14aa8cdf2c6d7" title="check if one of the devices in the registry has the ALRTRST bit set" alt="" coords="252,511,453,552"/>
+<area shape="rect" id="node9" href="$mxm__1785x_8c.html#ab5680ee1fe73029d746878aff22bcab5" title="Fill the balancing datastructure." alt="" coords="251,694,455,721"/>
+<area shape="rect" id="node11" href="$mxm__1785x_8c.html#a2cfdc33409d373e8721922acc6a9a3a9" title="This error handler is used as a last resort and tries a reset of the complete driver." alt="" coords="539,168,703,194"/>
+<area shape="rect" id="node12" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="846,73,973,100"/>
+<area shape="rect" id="node13" href="$mxm__1785x_8c.html#a5286d61127b58617a6384a8c18b38618" title="Handle the statemachine&#45;transactions for a READALL." alt="" coords="267,177,439,204"/>
+<area shape="rect" id="node17" href="$mxm__1785x_8c.html#ae651c3ef761d1b34dab49d85336ea046" title="Handle the statemachine&#45;transactions for a WRITEALL." alt="" coords="266,126,439,153"/>
+<area shape="rect" id="node18" href="$mxm__1785x_8c.html#ae17987a0e72b943e2cac791ee60841c8" title="Encapsulation for reading voltages from a register." alt="" coords="275,278,430,305"/>
+<area shape="rect" id="node22" href="$mxm__registry_8c.html#a4605575afd03a08a9a5cd8ed33ae4d50" title="Parse ID (1 or 2) into the registry." alt="" coords="255,628,451,670"/>
+<area shape="rect" id="node23" href="$mxm__registry_8c.html#ad95cf43f88a2b7ccd12c48dcd58cf1f3" title="Parse STATUS or FMEA into the registry." alt="" coords="251,380,454,422"/>
+<area shape="rect" id="node24" href="$mxm__registry_8c.html#adcccca2175923f6875c9064d435ba049" title="Parse Version into the registry." alt="" coords="248,446,457,487"/>
+<area shape="rect" id="node25" href="$mxm__1785x_8c.html#a920e0ec9a500bdd62f13a6c2f57a9163" title="Copies measured voltage data into the database." alt="" coords="261,745,444,772"/>
+<area shape="rect" id="node44" href="$mxm__1785x_8c.html#a675df7a5e83425b1df797b55f963c5c9" title="Processes the retrieved information on open wire." alt="" coords="271,577,435,604"/>
+<area shape="rect" id="node45" href="$mxm__1785x__tools_8c.html#a2b0a88c10d76ee1f9842969d35c0e676" title="convert a unipolar 14bit&#45;value and shifts it into the 16bit&#45;format" alt="" coords="259,796,446,822"/>
+<area shape="rect" id="node46" href="$mxm__1785x__tools_8c.html#a9b326fed943ba841b17fb6272d79945b" title="convert a voltage value into a unipolar 14bit value" alt="" coords="253,846,453,873"/>
+<area shape="rect" id="node47" href="$os_8c.html#a834064ee9e9a90768918c776f5cb1bb7" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="249,898,456,939"/>
+<area shape="rect" id="node5" href="$foxmath_8c.html#aacaf0845143922c6a31912af37fd9741" title="Returns the minimum of the passed uint8_t values." alt="" coords="523,472,718,498"/>
+<area shape="rect" id="node6" href="$mxm__1785x__tools_8c.html#af328199dc46b6eab7f35f08f0f076145" title="Extract a value from a single register." alt="" coords="1301,421,1512,448"/>
+<area shape="rect" id="node8" href="$mxm__registry_8c.html#aca0807a445d30190eadbef7467b43ca8" title="Parse number of highest connected device from monitoring&#45; register." alt="" coords="523,523,719,564"/>
+<area shape="rect" id="node7" href="$mxm__1785x__tools_8c.html#a0dc736d94a1c30286d2549d3efa99e2d" title="Find Position of first set bit in bitmask." alt="" coords="1560,421,1680,448"/>
+<area shape="rect" id="node10" href="$mxm__1785x__tools_8c.html#a2be80ff605cfe34cece5301f5a4c11a0" title="Get the string and module number from a global module number." alt="" coords="525,690,716,717"/>
+<area shape="rect" id="node14" href="$mxm__1785x_8c.html#ab0d9976f05eb48b050415afd432f9415" title="Retrieves data from lower statemachine and writes it to the rx buffer." alt="" coords="505,218,736,245"/>
+<area shape="rect" id="node15" href="$mxm__battery__management_8c.html#ad89fd67b1337293d24504cdb05c19a59" title="Returns the last received DC byte." alt="" coords="828,218,991,245"/>
+<area shape="rect" id="node16" href="$mxm__battery__management_8c.html#a88722a84590c432f0bbfcdd77536c8db" title="Copy RX buffer into variable." alt="" coords="838,168,981,194"/>
+<area shape="rect" id="node19" href="$mxm__1785x_8c.html#a38cc032b4fe5beffa9ba651b8dfd4884" title="Parse a RX buffer containing voltage values." alt="" coords="531,269,710,296"/>
+<area shape="rect" id="node20" href="$mxm__1785x_8c.html#ac8a15260cff9ed6eb1682999e13bb9d3" title="Parse voltage values from a READALL receive buffer into an array." alt="" coords="808,281,1011,308"/>
+<area shape="rect" id="node21" href="$mxm__1785x__tools_8c.html#ab437f79b3d0299bb51e1a22bcfb484d2" title="Convert a measurement value to a voltage value." alt="" coords="1117,294,1219,321"/>
+<area shape="rect" id="node26" href="$afe__plausibility_8c.html#a5f0f388fcad363cade4b5e340f06e211" title="Cell temperature plausibility check." alt="" coords="527,1316,714,1358"/>
+<area shape="rect" id="node29" href="$afe__plausibility_8c.html#ae3a0cab9bf3aeded2ce65f1d28bdda8b" title="Cell voltage measurement range plausibility check." alt="" coords="521,742,720,783"/>
+<area shape="rect" id="node30" href="$mxm__registry_8c.html#a15356e31103a0135dcadefd3a7a44096" title="check if a device is connected" alt="" coords="511,808,731,834"/>
+<area shape="rect" id="node31" href="$tsi_8h.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="550,953,691,980"/>
+<area shape="rect" id="node27" href="$tsi_8h.html#a161bdb7af8c149fe72731f43f0619dd9" title="Return the maximum plausible temperature." alt="" coords="784,1324,1035,1350"/>
+<area shape="rect" id="node28" href="$tsi_8h.html#a9bf06d1c58f3a5ee9c9c8b1d611d1323" title="Return the minimum plausible temperature." alt="" coords="786,1374,1033,1401"/>
+<area shape="rect" id="node32" href="$epcos__b57251v5103j060_8c.html#a60e7e40bc4662b44093a0a2b464bd395" title="returns temperature based on measured ADC voltage" alt="" coords="798,1273,1021,1300"/>
+<area shape="rect" id="node34" href="$epcos__b57251v5103j060_8c.html#a22b8fc0a39278f0c1a61c1cca7482b5a" title="returns temperature based on measured ADC voltage" alt="" coords="807,792,1012,834"/>
+<area shape="rect" id="node35" href="$epcos__b57861s0103f045_8c.html#a8bb26a9001e051fc2fee6ba77027b1b6" title="returns temperature based on measured ADC voltage" alt="" coords="798,690,1021,717"/>
+<area shape="rect" id="node36" href="$epcos__b57861s0103f045_8c.html#a3aca9a6a710bb21efc1a5d4ccf49b3e0" title="returns temperature based on measured ADC voltage" alt="" coords="807,858,1012,899"/>
+<area shape="rect" id="node37" href="$fake__none_8c.html#a8519235f1cb368c712566dc0a6615a8a" title="returns a fake temperature" alt="" coords="798,924,1021,950"/>
+<area shape="rect" id="node38" href="$fake__none_8c.html#a8d502a27efdeb0f048997819e3ae4fc4" title="returns a fake temperature" alt="" coords="807,975,1011,1016"/>
+<area shape="rect" id="node39" href="$murata__ncu15xh103f6sxx_8c.html#a0e6cfeee0f7fdf5504234ed54ddfc9b7" title="returns temperature based on measured ADC voltage." alt="" coords="798,741,1021,768"/>
+<area shape="rect" id="node40" href="$murata__ncu15xh103f6sxx_8c.html#a255c099fbd405cdc3b51c39a415c18e3" title="returns temperature based on measured ADC voltage" alt="" coords="807,1040,1011,1082"/>
+<area shape="rect" id="node41" href="$vishay__ntcalug01a103g_8c.html#a865b7c323eb0bdbd7420518e6b56cede" title="returns temperature based on measured ADC voltage." alt="" coords="800,1172,1019,1198"/>
+<area shape="rect" id="node42" href="$vishay__ntcalug01a103g_8c.html#a47e088f4023835e56cac22e035c66be8" title="returns temperature based on measured ADC voltage" alt="" coords="809,1106,1010,1147"/>
+<area shape="rect" id="node43" href="$vishay__ntcle317e4103sba_8c.html#ae917bb4796f0f8fa36201dbd92aae38c" title="returns temperature based on measured ADC voltage." alt="" coords="800,1222,1019,1249"/>
+<area shape="rect" id="node33" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="1083,1172,1253,1198"/>
+</map>

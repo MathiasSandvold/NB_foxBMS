@@ -1,0 +1,6 @@
+<map id="TEST_CANRX_CheckIfMcuLotNumberIsRequested" name="TEST_CANRX_CheckIfMcuLotNumberIsRequested">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,203,47"/>
+<area shape="rect" id="node2" href="$can__cbs__rx__debug_8c.html#a09fa424f8354901012526b0ad522084a" title="Check if the MCU lot number information is requested." alt="" coords="251,5,453,47"/>
+<area shape="rect" id="node3" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="501,13,768,39"/>
+<area shape="rect" id="node4" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="816,13,1019,39"/>
+</map>

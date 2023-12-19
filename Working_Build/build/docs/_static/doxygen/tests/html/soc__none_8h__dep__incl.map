@@ -1,0 +1,6 @@
+<map id="soc_none.h" name="soc_none.h">
+<area shape="rect" id="node1" title="Header for SOC module, responsible for calculation state&#45;of&#45;charge." alt="" coords="133,5,223,32"/>
+<area shape="rect" id="node2" href="$soc__none_8c.html" title="SOC module responsible for calculation of state&#45;of&#45;charge (SOC)" alt="" coords="5,80,95,107"/>
+<area shape="rect" id="node3" href="$test__soc__none_8c.html" title="Tests for SOC module responsible for calculation of state&#45;of&#45;charge." alt="" coords="119,80,237,107"/>
+<area shape="rect" id="node4" href="$test__state__estimation_8c.html" title="Tests for SOH module responsible for calculation of state&#45;of&#45;health." alt="" coords="261,80,420,107"/>
+</map>

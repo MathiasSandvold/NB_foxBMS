@@ -1,0 +1,7 @@
+<map id="mxm_registry.h" name="mxm_registry.h">
+<area shape="rect" id="node1" title="Functions in order to have a registry of monitoring ICs." alt="" coords="199,5,311,32"/>
+<area shape="rect" id="node2" href="$mxm__1785x_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="5,80,109,107"/>
+<area shape="rect" id="node3" href="$mxm__registry_8c.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="133,80,245,107"/>
+<area shape="rect" id="node4" href="$mxm__17852_8c.html" title="Operation state machine implementation for the MAX17852." alt="" coords="269,80,373,107"/>
+<area shape="rect" id="node5" href="$test__mxm__registry_8c.html" title="Test for the Maxim registry tool." alt="" coords="397,80,539,107"/>
+</map>

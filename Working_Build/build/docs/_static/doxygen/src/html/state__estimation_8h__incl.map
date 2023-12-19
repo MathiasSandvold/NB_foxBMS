@@ -1,0 +1,15 @@
+<map id="state_estimation.h" name="state_estimation.h">
+<area shape="rect" id="node1" title="Header for state&#45;estimation module responsible for the estimation of state&#45;of&#45;charge (SOC),..." alt="" coords="257,5,386,32"/>
+<area shape="rect" id="node2" href="$database_8h.html" title="Database module header." alt="" coords="602,80,689,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="208,528,283,555"/>
+<area shape="rect" id="node8" title=" " alt="" coords="537,528,602,555"/>
+<area shape="rect" id="node11" title=" " alt="" coords="43,304,106,331"/>
+<area shape="rect" id="node3" href="$database__cfg_8h.html" title="Database configuration header." alt="" coords="326,229,437,256"/>
+<area shape="rect" id="node9" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="733,453,827,480"/>
+<area shape="rect" id="node12" href="$database__helper_8h.html" title="Database module header." alt="" coords="531,155,659,181"/>
+<area shape="rect" id="node13" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="821,379,867,405"/>
+<area shape="rect" id="node4" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="308,304,455,331"/>
+<area shape="rect" id="node10" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="149,453,208,480"/>
+<area shape="rect" id="node5" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="381,379,456,405"/>
+<area shape="rect" id="node6" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="333,453,405,480"/>
+</map>

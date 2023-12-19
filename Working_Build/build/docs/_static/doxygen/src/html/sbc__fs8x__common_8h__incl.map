@@ -1,0 +1,13 @@
+<map id="sbc_fs8x_common.h" name="sbc_fs8x_common.h">
+<area shape="rect" id="node1" title="Driver common structures, enums, macros and configuration values." alt="" coords="35,5,178,32"/>
+<area shape="rect" id="node2" href="$spi_8h.html" title="Headers for the driver for the SPI module." alt="" coords="81,80,132,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="463,453,537,480"/>
+<area shape="rect" id="node8" title=" " alt="" coords="127,453,193,480"/>
+<area shape="rect" id="node3" href="$spi__cfg_8h.html" title="Headers for the configuration for the SPI module." alt="" coords="243,155,317,181"/>
+<area shape="rect" id="node9" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="197,379,291,405"/>
+<area shape="rect" id="node4" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="392,229,539,256"/>
+<area shape="rect" id="node10" title=" " alt="" coords="144,229,219,256"/>
+<area shape="rect" id="node11" title=" " alt="" coords="243,229,317,256"/>
+<area shape="rect" id="node5" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="353,304,428,331"/>
+<area shape="rect" id="node6" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="365,379,437,405"/>
+</map>

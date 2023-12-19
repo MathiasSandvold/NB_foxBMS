@@ -1,0 +1,7 @@
+<map id="epcos_b57251v5103j060.h" name="epcos_b57251v5103j060.h">
+<area shape="rect" id="node1" title="Resistive divider used for measuring temperature." alt="" coords="292,5,467,32"/>
+<area shape="rect" id="node2" href="$epcos__b57251v5103j060_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="5,87,180,114"/>
+<area shape="rect" id="node3" href="$epcos__b57251v5103j060__lookup-table_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="205,80,367,121"/>
+<area shape="rect" id="node4" href="$epcos__b57251v5103j060__polynomial_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="391,80,554,121"/>
+<area shape="rect" id="node5" href="$test__epcos__b57251v5103j060_8c.html" title="Tests for the epcos_b57251v5103j060 module." alt="" coords="578,87,781,114"/>
+</map>

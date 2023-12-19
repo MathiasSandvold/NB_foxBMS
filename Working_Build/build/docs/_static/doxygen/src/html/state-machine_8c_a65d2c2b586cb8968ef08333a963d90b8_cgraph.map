@@ -1,0 +1,7 @@
+<map id="EG_ProcessRunningState" name="EG_ProcessRunningState">
+<area shape="rect" id="node1" title="Processes the running state." alt="" coords="5,81,180,108"/>
+<area shape="rect" id="node2" href="$state-machine_8c.html#a27e6bf1e63e5507058042fc4e00e6d09" title="Sets the next substate and the timer value of the state variable." alt="" coords="261,5,381,32"/>
+<area shape="rect" id="node3" href="$state-machine_8c.html#a5b18110f9557d9ce53f25cfb945f64f9" title="dummy function making a test to determine the outcome of substate EG_FSM_SUBSTATE_RUNNING_0" alt="" coords="228,56,415,83"/>
+<area shape="rect" id="node4" href="$state-machine_8c.html#ad311c5570a313742fa9b70d385fd94d9" title="dummy function making a test to determine the outcome of substate EG_FSM_SUBSTATE_RUNNING_1" alt="" coords="228,107,415,133"/>
+<area shape="rect" id="node5" href="$state-machine_8c.html#a53dd436c1fa002c363967f4f3f7995a5" title="dummy function making a test to determine the outcome of substate EG_FSM_SUBSTATE_RUNNING_2" alt="" coords="228,157,415,184"/>
+</map>

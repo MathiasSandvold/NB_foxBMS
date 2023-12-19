@@ -1,0 +1,6 @@
+<map id="testSPI_GetChipSelectPin" name="testSPI_GetChipSelectPin">
+<area shape="rect" id="node1" title="Testing static function SPI_GetChipSelectPin." alt="" coords="5,5,180,32"/>
+<area shape="rect" id="node2" href="$spi_8c.html#adf8247aa64b690ae3f44de872bc6b980" title=" " alt="" coords="228,5,420,32"/>
+<area shape="rect" id="node3" href="$spi_8c.html#a2b0cbe930797b45f2b6e6d2defc09b10" title=" " alt="" coords="468,5,621,32"/>
+<area shape="rect" id="node4" href="$spi_8c.html#ac0ea5cdabc29425ca4b346ff204460ef" title=" " alt="" coords="669,5,876,32"/>
+</map>

@@ -1,0 +1,876 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4.30.7. NXP MC33775A &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+        <script src="../../../../../_static/jquery.js"></script>
+        <script src="../../../../../_static/underscore.js"></script>
+        <script src="../../../../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../../search.html" />
+    <link rel="next" title="4.30.8. Debug Default" href="../debug/default.html" />
+    <link rel="prev" title="4.30.6. MAX1785x" href="../maxim/max1785x.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../../../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../../modules.html">4. Software Modules</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../../application/algorithm/algorithm.html">4.1. Algorithm Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../application/bal/bal.html">4.2. Balancing Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../application/bms/bms.html">4.3. BMS Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../application/plausibility/plausibility.html">4.4. Plausibility Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../application/redundancy/redundancy.html">4.5. Redundancy Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../application/soa/soa.html">4.6. SOA Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../engine/database/database.html">4.7. Database Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../engine/diag/diag.html">4.8. Diagnosis Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../engine/hwinfo/hwinfo.html">4.9. Hardware Info Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../engine/sys/sys.html">4.10. System Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../engine/sys_mon/sys_mon.html">4.11. System Monitoring Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../task/ftask/ftask.html">4.12. FTASK Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../task/os/os.html">4.13. OS Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../adc/adc.html">4.14. ADC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../can/can.html">4.15. CAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../crc/crc.html">4.16. CRC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../contactor/contactor.html">4.17. Contactor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../dma/dma.html">4.18. DMA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foxmath/foxmath.html">4.19. foxmath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../foxmath/utils.html">4.20. utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../fram/fram.html">4.21. FRAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../htsen/htsen.html">4.22. Humidity/Temperature Sensor Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../i2c/i2c.html">4.23. I2C Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../imd/imd.html">4.24. Insulation Measurement Device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../interlock/interlock.html">4.25. Interlock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../io/io.html">4.26. IO Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../meas/meas.html">4.27. Measurement Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../mcu/mcu.html">4.28. MCU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../afe.html">4.29. Analog Front-End API</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../supported-afes.html">4.30. Supported Analog Front-Ends</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="../ltc/6804-1.html">4.30.1. LTC 6804-1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ltc/6806.html">4.30.2. LTC 6806</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ltc/6811-1.html">4.30.3. LTC 6811-1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ltc/6812-1.html">4.30.4. LTC 6812-1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../ltc/6813-1.html">4.30.5. LTC 6813-1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../maxim/max1785x.html">4.30.6. MAX1785x</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">4.30.7. NXP MC33775A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../debug/default.html">4.30.8. Debug Default</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../../pex/pex.html">4.31. Port Expander Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../pwm/pwm.html">4.32. PWM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../rtc/rtc.html">4.33. RTC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../sbc/sbc.html">4.34. SBC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../spi/spi.html">4.35. SPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../sps/sps.html">4.36. SPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ts/ts.html">4.37. Temperature Sensor API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../ts/ts-sensors.html">4.38. Supported Temperature Sensors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../main/startup.html">4.39. Embedded Software Startup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../main/version.html">4.40. Version Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../../main/fassert.html">4.41. FASSERT Module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../../modules.html"><span class="section-number">4. </span>Software Modules</a> &raquo;</li>
+          <li><a href="../supported-afes.html"><span class="section-number">4.30. </span>Supported Analog Front-Ends</a> &raquo;</li>
+      <li><span class="section-number">4.30.7. </span>NXP MC33775A</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../../_sources/software/modules/driver/afe/nxp/mc33775a.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="nxp-mc33775a">
+<span id="id1"></span><h1><span class="section-number">4.30.7. </span>NXP MC33775A<a class="headerlink" href="#nxp-mc33775a" title="Permalink to this headline"></a></h1>
+<div class="section" id="description">
+<h2><span class="section-number">4.30.7.1. </span>Description<a class="headerlink" href="#description" title="Permalink to this headline"></a></h2>
+<p>The MC33775A monitoring IC can monitor 4 to 14 cells, with +/- 5V voltage. It has 8 GPIOs.
+GPIO 4 and 5 can be used for I2C communication. GPIO 1 can be used as alarm line.</p>
+<p>The communication with the MC33775A can be made directly via SPI or through a differential line.
+This type of communication is called TPL. To translate SPI communication to TPL
+communication, a bridge IC is used, called MC33664.</p>
+<p>In SPI mode, only 1 MC33775A can communicate with the MCU. In TPL mode, the MCU can communicate with
+up to 62 MC33775A in daisy-chain.</p>
+</div>
+<div class="section" id="daisy-chain">
+<h2><span class="section-number">4.30.7.2. </span>Daisy-chain<a class="headerlink" href="#daisy-chain" title="Permalink to this headline"></a></h2>
+<div class="section" id="wake-up">
+<h3><span class="section-number">4.30.7.2.1. </span>Wake-up<a class="headerlink" href="#wake-up" title="Permalink to this headline"></a></h3>
+<p>A device wakes up when there is any communication on the TPL bus. In addition, there is a WAKE-UP
+command that can be sent. When an enumerated device receives a WAKE-UP command, it automatically
+transmits an additional WAKE-UP message to the next device. When an unenumerated device receives
+a WAKE-UP command, it automatically sends two additional WAKE-UP messages to the next devices.</p>
+<p>As a consequence, sending two WAKE-UP commands (separated by the wake-up delay) allows waking up
+the entire daisy-chain. In the case of enumerated devices, it works as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The MCU sends the first WAKE-UP command (WU0)</p></li>
+<li><p>IC0 is woken up by WU0</p></li>
+<li><p>The MCU sends a second WAKE-UP command WU1</p></li>
+<li><p>IC0 gets WU1 and forwards it to IC1, as IC0 is enumerated</p></li>
+<li><p>IC1 is woken up by WU1</p></li>
+<li><p>IC0 automatically transmits a second WAKE-UP command (WU2)</p></li>
+<li><p>IC1 gets WU2 and forwards it to IC2, as IC1 is enumerated</p></li>
+<li><p>IC2 is woken up by WU2</p></li>
+<li><p>IC2 automatically transmits a third WAKE-UP command (WU3)</p></li>
+<li><p>The process goes on until the whole daisy-chain is woken-up</p></li>
+</ul>
+</div></blockquote>
+<p>For an unenumerated daisy-chain, it works as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The MCU sends the first WAKE-UP command (WU0)</p></li>
+<li><p>IC0 is woken up by WU0</p></li>
+<li><p>The MCU sends a second WAKE-UP command WU1</p></li>
+<li><p>IC0 gets WU1 checks it</p></li>
+<li><p>IC0 sends WU1_1 to IC1</p></li>
+<li><p>IC1 wakes up</p></li>
+<li><p>IC0 sends WU1_2 to IC1</p></li>
+<li><p>IC1 checks WU1_2</p></li>
+<li><p>IC1 sends WU2_1 to IC2</p></li>
+<li><p>IC2 wakes up</p></li>
+<li><p>IC1 sends WU2_2 to IC2</p></li>
+<li><p>IC2 checks WU2_2</p></li>
+<li><p>IC2 sends WU3_1 to IC3</p></li>
+<li><p>IC3 wakes up</p></li>
+<li><p>IC1 sends WU3_2 to IC3</p></li>
+<li><p>IC3 checks WU3_2</p></li>
+<li><p>The process goes on until the whole daisy-chain is woken-up</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="addressing-of-slaves">
+<h3><span class="section-number">4.30.7.2.2. </span>Addressing of slaves<a class="headerlink" href="#addressing-of-slaves" title="Permalink to this headline"></a></h3>
+<p>In daisy-chain mode, every MC33775A has its own address. The MC33775A starts unenumerated, which
+means its address is 0 and it does not forward messages.</p>
+<p>To enumerate an MC33775A, a write command must be sent to the daisy-chain, to
+write the address of the device in the <code class="docutils literal notranslate"><span class="pre">SYS_COM_CFG</span></code> register. For the first MC33775A,
+1 must be written in the address field: due to the use of 0 to
+represent an unenumerated device, the addresses start at 1. The bus forwarding must be enabled, too,
+by writing 1 to bit 9. After this procedure, the first MC33775A is then enumerated.</p>
+<p>Once a MC33775A is enumerated, it forwards all messages in both directions. For the second MC33775A,
+the configuration message with 2 in the address field must be sent to the daisy-chain.
+As this address in the configuration message does not match the address of the first
+MC33775A, it is ignored and simply forwarded. The second MC33775A then receives the configuration
+message and becomes enumerated.
+The MCU must then repeat the enumeration procedure for each unenumerated MC33775A in the daisy-chain,
+by sending the configuration message for address setup and forward enabling.</p>
+<p>When all the ICs in the daisy-chain are enumerated and forwarding is enabled, the communication between
+the MCU and the daisy-chain works as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>when the MCU sends a message to the daisy-chain, it is received by IC(0). IC(0) forwards it to IC(1).
+IC(1) forwards it to IC(2) and soon until the last IC in the daisy-chain receives the message. As each
+message contains the address of the IC that is addressed by the MCU, this addressed IC knows it has
+to interpret the message and not only forward it.</p></li>
+<li><p>When IC(n) sends a message to the MCU (e.g., response to a voltage measurement request), it sends it to
+IC(n-1). IC(n-1) forwards it to IC(n-2) and so on until IC(0) forwards it to the MCU</p></li>
+</ul>
+</div></blockquote>
+<p>This means that when communicating with the daisy-chain, the MCU does not see a shift register. It sees
+single devices to which it sends messages and which answer.</p>
+</div>
+<div class="section" id="tpl">
+<h3><span class="section-number">4.30.7.2.3. </span>TPL<a class="headerlink" href="#tpl" title="Permalink to this headline"></a></h3>
+<p>TPL is the name of the differential communication protocol used by the MC33775A ICs to communicate in
+daisy-chain. A bridge IC called MC33664 is used to make the translation between SPI and TPL, so that the
+MCU only sees SPI communications. The MC33664 has one important specificity: it uses two SPI interfaces
+to communicate with the MCU, one Tx SPI and one Rx SPI. The SPI interfaces are configured as follows:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>The Tx SPI is used by the MCU as a master to send messages to the daisy-chain</p></li>
+<li><p>The Rx SPI is used by the MCU as a slave to receive answers from the daisy-chain</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="message-format">
+<h2><span class="section-number">4.30.7.3. </span>Message format<a class="headerlink" href="#message-format" title="Permalink to this headline"></a></h2>
+<p>There are 4 types of message:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>WAKE-UP/NOP</p></li>
+<li><p>READ register from MC33775A</p></li>
+<li><p>WRITE register to MC33775A</p></li>
+<li><p>RESPONSE of MC33775A to READ message</p></li>
+</ul>
+</div></blockquote>
+<p>A RESPONSE message is received after a READ command was issued. In TPL mode, there is no response to
+WRITE message.</p>
+<p>The following fields compose messages and are common to all types of messages:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>CMD: command type, chooses one of the four command types described above.</p></li>
+<li><p>MADD: indicates upstream of downstream direction of message. Must be set to 0 by the MCU when sending messages
+to the daisy-chain.</p></li>
+<li><p>CADD: daisy-chain address. Cannot be 0.</p></li>
+<li><p>DEVADD: device address. 0 is for enumerated devices. For enumerated devices, the MCU sets this value to
+the address of the device it wants to communicate with and in RESPONSE messages, contains the address of the
+device that responded.</p></li>
+<li><p>MSGCNT: message counter, is incremented for each response message sent by a MC33775A IC. Is ignored in other
+messages. The counter is reset when the device goes to sleep.</p></li>
+<li><p>DATLEN: number of register addressed, can be 1 to 4. With one message, up to 4 consecutive register can be
+read from or written to. If DATLEN is higher then the length of the provided data, the communication is
+discarded.</p></li>
+<li><p>REGADD: address of the first addressed register.</p></li>
+</ul>
+</div></blockquote>
+<p>The next fields are related to data and depend on the type of messages. For WRITE and RESPONSE messages, DATA
+contains the data to write for WRITE or the data sent by the device for RESPONSE.</p>
+<p>For READ messages:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>PAD: padding. If set to 1, the response message always correspond to a RESPLEN of 4. If RESPLEN &lt; 4 was used,
+the remaining values are padded with zeros.</p></li>
+<li><p>RESPLEN: number of messages to be transferred in one RESPONSE frame, can be 1 to 4. RESPLEN greater than
+number of registers to transfer?</p></li>
+<li><p>NUMREG: total number of register requested. If NUMREG is not a multiple of RESPLEN, the device sends in the
+last message only the remaining registers. If PAD is set to 0, the length of the last message is adapted. If
+PAD is set to 1, the remaining values are padded with zeros.</p></li>
+</ul>
+</div></blockquote>
+<p>The last field is the CRC value.</p>
+</div>
+<div class="section" id="writing-values-to-registers">
+<h2><span class="section-number">4.30.7.4. </span>Writing values to registers<a class="headerlink" href="#writing-values-to-registers" title="Permalink to this headline"></a></h2>
+<p>The WRITE message must be used. In the message, the address of the device, the address of the register and the data
+to write must simply be supplied.</p>
+<p>The following data must be written.</p>
+<p>First the message head:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>0x10 in CMD</p></li>
+<li><p>0 in MADD</p></li>
+<li><p>CADD value</p></li>
+<li><p>device address in DEVADD. Care must be taken, the first device in the daisy-chain has the address 1.</p></li>
+<li><p>As MSGCNT is not used, it can be set to 0.</p></li>
+</ul>
+</div></blockquote>
+<p>Then the data segment starts, first with the data head:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Message length in DATLEN. A length of 1 corresponds to 0 for DATLEN.</p></li>
+<li><p>Address of first consecutive register in REGADD.</p></li>
+</ul>
+</div></blockquote>
+<p>Then the data of the data segment:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Data to write.</p></li>
+</ul>
+</div></blockquote>
+<p>Finally the CRC:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>CRC value computed over the whole message.</p></li>
+</ul>
+</div></blockquote>
+<p>In TPL mode, the daisy-chain does not respond to WRITE commands.</p>
+</div>
+<div class="section" id="reading-values-from-registers">
+<h2><span class="section-number">4.30.7.5. </span>Reading values from registers<a class="headerlink" href="#reading-values-from-registers" title="Permalink to this headline"></a></h2>
+<div class="section" id="issuing-a-read-command">
+<h3><span class="section-number">4.30.7.5.1. </span>Issuing a read command<a class="headerlink" href="#issuing-a-read-command" title="Permalink to this headline"></a></h3>
+<p>First, a READ command must be used. In the message, the address of the device and the address of the first
+consecutive register to read must e supplied.</p>
+<p>The following data must be written.</p>
+<p>First the message head:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>0x01 in CMD</p></li>
+<li><p>0 in MADD</p></li>
+<li><p>CADD value</p></li>
+<li><p>device address in DEVADD. Care must be taken, the first device in the daisy-chain has the address 1.</p></li>
+<li><p>As MSGCNT is not used, it can be set to 0.</p></li>
+</ul>
+</div></blockquote>
+<p>Then the data segment starts, first with the data head:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Message length in DATLEN. A length of 1 corresponds to 0 for DATLEN.</p></li>
+<li><p>Address of first consecutive register in REGADD.</p></li>
+</ul>
+</div></blockquote>
+<p>Then the data read configuration part of the data segment:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Five bits must be written with 0.</p></li>
+<li><p>PAD must be set to 0 or 1.</p></li>
+<li><p>Response length in RESPLEN. A length of 1 corresponds to 0 in RESPLEN.</p></li>
+<li><p>Number of registers to read in NUMREG.</p></li>
+</ul>
+</div></blockquote>
+<p>Finally the CRC:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>CRC value computed over the whole message.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="response-from-the-daisy-chain">
+<h3><span class="section-number">4.30.7.5.2. </span>Response from the daisy-chain<a class="headerlink" href="#response-from-the-daisy-chain" title="Permalink to this headline"></a></h3>
+<p>After a READ message was sent to a device in the daisy-chain, via the Tx SPI, the device answers
+via the Rx SPI.</p>
+<p>Different checks in a RESPONSE frame can be made to determine if the READ command was performed
+successfully:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>the length of the received message must be greater than zero.</p></li>
+<li><p>the device address in RESPONSE messages must match the device address used in the WRITE message.</p></li>
+<li><p>the register address in each received RESPONSE message must correspond to the register address
+written in the WRITE command. Care must be taken that one WRITE message can lead to several
+RESPONSE messages, so the value of the first register written in the WRITE COMMAND has to be
+incremented for each RESPONSE message received.</p></li>
+<li><p>the message counter MSGCNT can be checked, it is incremented at each response message.
+It is reset when the device goes to sleep.</p></li>
+<li><p>If the register address of a RESPONSE frame contains 0x3FFF, this means there was an access error.</p></li>
+<li><p>The CMD field in a respond message must be set to 0x11.</p></li>
+</ul>
+</div></blockquote>
+<p>In addition, the <code class="docutils literal notranslate"><span class="pre">FEH_COM_FLT_STAT</span></code> register (Communication fault status register, address 0x423)
+can be read. It signals communication errors that happened and contains a communication error counter.</p>
+</div>
+</div>
+<div class="section" id="voltage-measurement">
+<h2><span class="section-number">4.30.7.6. </span>Voltage measurement<a class="headerlink" href="#voltage-measurement" title="Permalink to this headline"></a></h2>
+<p>The MC33775A can measure the following values:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>14 cell voltages</p></li>
+<li><p>4 + 4 voltages on analog inputs that can also be used as GPIOs</p></li>
+<li><p>voltage of the battery module</p></li>
+<li><p>diagnostic measurements like voltage references and internal IC temperature</p></li>
+</ul>
+</div></blockquote>
+<p>The analog inputs can be used to measure temperature by using NTCs in a voltage dividers, supplied
+by the output VAUX.</p>
+<p>The MC33775A has two independent measurements chains, primary and secondary.</p>
+<p>Primary can measure:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>the 14 cell voltages</p></li>
+<li><p>the 4 first analog inputs (AIN0 to AIN3)</p></li>
+<li><p>internal primary IC temperature</p></li>
+<li><p>various voltage references, not the same as secondary</p></li>
+</ul>
+</div></blockquote>
+<p>Secondary can measure:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>the 14 cell voltages</p></li>
+<li><p>the 4 last analog inputs (AIN4 to AIN7)</p></li>
+<li><p>internal secondary IC temperature</p></li>
+<li><p>various voltage references, not the same as primary</p></li>
+</ul>
+</div></blockquote>
+<p>The first step is to activate measurements. The IC then continuously measures. When one of the 4 modes
+described above is started, the measurements are captured. At least 16 measurements are necessary
+for the IC to give valid values.</p>
+<div class="section" id="measurement-types">
+<h3><span class="section-number">4.30.7.6.1. </span>Measurement types<a class="headerlink" href="#measurement-types" title="Permalink to this headline"></a></h3>
+<p>4 different types of measurement are available:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>synchronous</p></li>
+<li><p>application-driven</p></li>
+<li><p>periodic</p></li>
+<li><p>fast VB</p></li>
+</ul>
+</div></blockquote>
+<div class="section" id="synchronous">
+<h4><span class="section-number">4.30.7.6.1.1. </span>Synchronous<a class="headerlink" href="#synchronous" title="Permalink to this headline"></a></h4>
+<p>In this mode, the cell voltages are measured synchronously between primary and secondary.
+Only the inputs common to primary and secondary (cell voltages) are taken into account, the other inputs
+(analog inputs, module voltage, internal temperature, voltage references) not.</p>
+</div>
+<div class="section" id="application-driven">
+<h4><span class="section-number">4.30.7.6.1.2. </span>Application-driven<a class="headerlink" href="#application-driven" title="Permalink to this headline"></a></h4>
+<p>In this mode, the application decides when the capture starts.
+The measurements are taken into account after the IC receives a capture command via setting bits in the
+appropriate register. All sources can be measured. Results are available as soon as at least 16 measurements
+have been taken into account. This is signaled by a bit in the appropriate register.</p>
+<p>A new capture can be initiated when at least 16 values have been taken into account. If more than 65535
+or less than 16 measurements have been captured, the results are set to invalid.</p>
+</div>
+<div class="section" id="periodic">
+<h4><span class="section-number">4.30.7.6.1.3. </span>Periodic<a class="headerlink" href="#periodic" title="Permalink to this headline"></a></h4>
+<p>The number of measurements to use is defined in the appropriate register. Once this mode is started, the results
+are available every time the number of measurements captured corresponding to the configured period has been
+made. The availability of the results of a period are signaled by a bit in the appropriate register.</p>
+</div>
+<div class="section" id="fast-vb">
+<h4><span class="section-number">4.30.7.6.1.4. </span>Fast VB<a class="headerlink" href="#fast-vb" title="Permalink to this headline"></a></h4>
+<p>Measurements are made on the secondary line. The results are available after 24 measurements have been captured.</p>
+</div>
+<div class="section" id="measurement-possibilities-for-primary-and-secondary">
+<h4><span class="section-number">4.30.7.6.1.5. </span>Measurement possibilities for primary and secondary<a class="headerlink" href="#measurement-possibilities-for-primary-and-secondary" title="Permalink to this headline"></a></h4>
+<p>The following table sums up which inputs can be measured by primary and
+secondary and with which method.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 31%" />
+<col style="width: 16%" />
+<col style="width: 16%" />
+<col style="width: 13%" />
+<col style="width: 11%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head" colspan="6"><p>Measurement sources and measurement types</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td colspan="2"></td>
+<td><p>Synchronous</p></td>
+<td><p>Application</p></td>
+<td><p>Periodic</p></td>
+<td><p>Fast VB</p></td>
+</tr>
+<tr class="row-odd"><td rowspan="4"><p>Primary</p></td>
+<td><p>VC0 to VC13</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>AIN0 to AIN3</p></td>
+<td></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Module voltage</p></td>
+<td></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td></td>
+</tr>
+<tr class="row-even"><td><p>Primary refs</p></td>
+<td></td>
+<td></td>
+<td><p>X</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td rowspan="3"><p>Secondary</p></td>
+<td><p>VB0 to VB13</p></td>
+<td><p>X</p></td>
+<td></td>
+<td></td>
+<td><p>X</p></td>
+</tr>
+<tr class="row-even"><td><p>AIN4 to AIN7</p></td>
+<td></td>
+<td><p>X</p></td>
+<td><p>X</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>Secondary refs, Current</p></td>
+<td></td>
+<td></td>
+<td><p>X</p></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+<div class="section" id="procedure-to-perform-voltage-measurements">
+<h2><span class="section-number">4.30.7.7. </span>Procedure to perform voltage measurements<a class="headerlink" href="#procedure-to-perform-voltage-measurements" title="Permalink to this headline"></a></h2>
+<dl class="simple">
+<dt>Writing to the <code class="docutils literal notranslate"><span class="pre">ALLM</span></code> register is equivalent to writing simultaneously to the corresponding</dt><dd><p><code class="docutils literal notranslate"><span class="pre">PRMM</span></code> (primary) and <code class="docutils literal notranslate"><span class="pre">SECM</span></code> (secondary register).</p>
+</dd>
+</dl>
+<div class="section" id="measurement-unit-activation">
+<h3><span class="section-number">4.30.7.7.1. </span>Measurement unit activation<a class="headerlink" href="#measurement-unit-activation" title="Permalink to this headline"></a></h3>
+<p>First, the measurement units must be activated:</p>
+<blockquote>
+<div><ul>
+<li><p>Enable cell measurement channels by writing ones to the VCBCxEN fields in the <code class="docutils literal notranslate"><span class="pre">ALLM_VCVB_CFG</span></code> register
+(address 0x1408).</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ALLM_VCVB_CFG</span></code> ← <code class="docutils literal notranslate"><span class="pre">0x3FFF</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Enable AIN0 to AIN 3 and module voltage channels by writing ones to the AINx fields in the <code class="docutils literal notranslate"><span class="pre">PRMM_AIN_CFG</span></code>
+register (address 0x1809).</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">PRMM_AIN_CFG</span></code> ← <code class="docutils literal notranslate"><span class="pre">0x1F</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Enable AIN4 to AIN 7 channels by writing ones to the AINx fields in the <code class="docutils literal notranslate"><span class="pre">SECM_AIN_CFG</span></code> register (address 0x1C09).</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">PRMM_AIN_CFG</span></code> ← <code class="docutils literal notranslate"><span class="pre">0x0F</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Enable the measurements units simultaneously by setting bit 0 to 1 in the <code class="docutils literal notranslate"><span class="pre">ALLM_CFG</span></code> register (address 0x1400).</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ALLM_CFG</span></code> register ← <code class="docutils literal notranslate"><span class="pre">0x01</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p>Once the measurement units have been activated, measurement captures can be started.</p>
+</div>
+<div class="section" id="application-driven-measurements">
+<h3><span class="section-number">4.30.7.7.2. </span>Application-driven measurements<a class="headerlink" href="#application-driven-measurements" title="Permalink to this headline"></a></h3>
+<blockquote>
+<div><ul>
+<li><p>Enable capture by setting the bits 0 to 9 corresponding the the different channels (cell inputs, analog inputs,
+module voltage) to 1 (corresponding to a value of 0x1FF) in the <code class="docutils literal notranslate"><span class="pre">ALLM_APP_CTRL</span></code> register (address 0x1401).
+Also write 0x1F to bits 14:10 to disable open load detection for secondary. Writing a number between 0 to 13
+would activate open load detection for the corresponding cell measurement input.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ALLM_APP_CTRL</span></code> ← (<code class="docutils literal notranslate"><span class="pre">0x1F</span></code> &lt;&lt; <code class="docutils literal notranslate"><span class="pre">10</span></code>) | <code class="docutils literal notranslate"><span class="pre">0x3FF</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">PRMM_MEAS_STAT</span></code> register (address 0x183E), the status of the primary measurements can be checked.
+If at least 16 measurements have been captured, the corresponding bit for each of the 6 measurement possibilities
+is set to 1:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>cell inputs VC0 to VC13 - bit 0</p></li>
+<li><p>analog inputs AIN0 to AIN3 - bit 1 to bit 4</p></li>
+<li><p>module voltage - bit 5</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">PRMM_APP_VC_CNT</span> <span class="pre">register</span></code> (address 0x183F), the number of captured values for the cell input measurements
+can be read. Starting from address 0x1840, the results of the measurements can be read, with one value per register,
+in the following order:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>cell inputs VC0 to VC13</p></li>
+<li><p>module voltage.</p></li>
+<li><p>analog inputs AIN0 to AIN3</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Starting from address 0x1C4F, the results of the secondary measurements can be read, with one value per register,
+in the order analog inputs AIN4 to AIN7.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="periodic-measurements">
+<h3><span class="section-number">4.30.7.7.3. </span>Periodic measurements<a class="headerlink" href="#periodic-measurements" title="Permalink to this headline"></a></h3>
+<blockquote>
+<div><ul>
+<li><p>Set the number of measurements used for each period by writing the corresponding value to the <code class="docutils literal notranslate"><span class="pre">ALLM_PER_CTRL</span></code>
+register (address 0x1402) at bits 0 to 8 (PERLEN). The number must lie between 16 and 511.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ALLM_PER_CTRL</span></code> ← <code class="docutils literal notranslate"><span class="pre">0x10</span></code> for 16 measurements</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">PRMM_MEAS_STAT</span></code> register (address 0x183E), the status of the periodic measurements can be checked.
+If new periodic data is ready for readout, bit 8 (PERRDY) is set to 1.</p></li>
+<li><p>The number of the cycle in which the results have been created can be read in the <code class="docutils literal notranslate"><span class="pre">PRMM_PER_NUM</span></code> register
+(address 0x185F). Starting from address 0x1860, the results of the measurements can be read, with one value
+per register, in the following order:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>cell inputs VC0 to VC13</p></li>
+<li><p>module voltage.</p></li>
+<li><p>analog inputs AIN0 to AIN3</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Starting from address 0x1C6E, the results of the secondary measurements can be read, with one value per register,
+in the order analog inputs AIN4 to AIN7.</p></li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="synchronous-measurements">
+<h3><span class="section-number">4.30.7.7.4. </span>Synchronous measurements<a class="headerlink" href="#synchronous-measurements" title="Permalink to this headline"></a></h3>
+<blockquote>
+<div><ul>
+<li><p>Enable capture by setting the bit 0 (SYNCCYC) to 1 in the ALLM_SYNC_CTRL register (address 0x1403).
+Also write 0x1F to bits 14:10 to disable open load detection for secondary. Writing a number between 0 to 13
+would activate open load detection for the corresponding cell measurement input.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ALLM_SYNC_CTRL</span></code> ← (<code class="docutils literal notranslate"><span class="pre">0x1F</span></code> &lt;&lt; <code class="docutils literal notranslate"><span class="pre">10</span></code>) | <code class="docutils literal notranslate"><span class="pre">0x01</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">PRMM_MEAS_STAT</span></code> register (address 0x183E), the status of the synchronous measurements can be checked.
+If synchronous data is ready for readout, bit 9 (SYNCRDY) is set to 1.</p></li>
+<li><p>The number of the cycle in which the results have been created can be read in the <code class="docutils literal notranslate"><span class="pre">PRMM_SYNC_NUM</span></code> register
+(address 0x187F). Starting from address 0x1880, the results of the measurements can be read, with one value
+per register, in the order cell inputs VC0 to VC13</p></li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="balancing">
+<h2><span class="section-number">4.30.7.8. </span>Balancing<a class="headerlink" href="#balancing" title="Permalink to this headline"></a></h2>
+<p>The following figure sums up the different switches for balancing.</p>
+<blockquote>
+<div><div class="figure align-center" id="id2">
+<img alt="Balancing switches" src="../../../../../_images/775a_balancing.png" />
+<p class="caption"><span class="caption-number">Fig. 4.11 </span><span class="caption-text">Balancing switches</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</div>
+</div></blockquote>
+<p>Balancing can be controlled by different means:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Global timer: all balancing stops when it reaches 0</p></li>
+<li><p>Channel timer: the corresponding channel stops balancing when the timer reaches 0</p></li>
+<li><p>Global undervoltage: all balancing stops when one cell reaches this value</p></li>
+<li><p>Channel undervoltage: the corresponding channel stops balancing when its voltage reaches the limit</p></li>
+<li><p>Pre-balancing timer: if set to no zero, balancing only starts when it has reached zero</p></li>
+<li><p>PWM: modulates balancing for each channels</p></li>
+<li><p>Temperature-controlled balancing: two temperature limits are defined, measured with analog inputs. When the high
+limit is reached, all balancing stops. It starts again when the low limit is reached.</p></li>
+</ul>
+</div></blockquote>
+<p>There are three prerequisites for balancing to start:</p>
+<blockquote>
+<div><ul>
+<li><p>In the BAL_GLOB_TO_TMR register (address 0x1001), the global timer TOTIME must be set to a non-zero value.</p></li>
+<li><p>In the BAL_PRE_TMR register (address 0x1003), the pre-balancing timer must be set to 0 to balance immediately</p></li>
+<li><p>In the BAL_GLOB_CFG register (address 0x1000), the global balancing enable flag BALEN must be set to 1.</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">BAL_GLOB_TO_TMR</span></code> ← <code class="docutils literal notranslate"><span class="pre">0xYYYY</span></code> with YYYY&gt;0 and high enough</p></li>
+<li><p>Set all individual channels to values high enough</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">BAL_PRE_TMR</span></code> ← <code class="docutils literal notranslate"><span class="pre">0x00</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">BAL_GLOB</span></code> ← <code class="docutils literal notranslate"><span class="pre">0x01</span></code></p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+</div></blockquote>
+<p>Once this is done, setting bits CHEN0-CHEN13 to 1 in the BAL_CH_CFG register (address 0x1002) activates the corresponding
+balancing channel.</p>
+</div>
+<div class="section" id="i2c">
+<h2><span class="section-number">4.30.7.9. </span>I2C<a class="headerlink" href="#i2c" title="Permalink to this headline"></a></h2>
+<p>The MC33775A can act as a I2C master, by using GPIO4 and GPIO5 as SCL and SDA.
+The I2C configuration is made in the I2C_CFG register (address 0xC00). Bit 0 enables the I2C interface.
+Bit 1 select the clock rate (100 or 400 kHz)</p>
+<p>Register I2C_DATA0 (address 0xC04) to I2C_DATA6 (address 0xC0A) contains the data transmitted or received, depending
+on the form of the transmission.</p>
+<p>The transmission is started by writing to the I2C_CTRL register (address 0xC01):</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>bits 3:0 (START) control how many bytes are transmitted after the START condition, including device address</p></li>
+<li><p>bit 4 (STOP) determines if a stop condition is sent after the last transmitted bytes</p></li>
+<li><p>bits 11:8 (RDAFTER) determines after how many bytes the master switches to read</p></li>
+</ul>
+</div></blockquote>
+<p>Data to be sent must be written in the registers I2C_DATA0 to I2C_DATA6 before the transmission starts.
+Data received must be read in the registers I2C_DATA0 to I2C_DATA6 after the transmission.</p>
+<p>In the I2C_STAT register (address 0xC02), the status of the transmission can be polled.
+Bit 1 (ACTIVE) states that a transmission is ongoing. TO check is the ongoing transmission is finished, the register
+must be polled until the value 0 is read for the ACTIVE bit.</p>
+<p>Three wrapper functions have been added:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">N775_I2cRead()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">N775_I2cWrite()</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">N775_I2cWriteRead()</span></code></p></li>
+</ul>
+</div></blockquote>
+<p>They are similar to the functions used by the MCU, except that the communication takes place over
+the I<sup>2</sup>C bus of the MC33775A. They take care of writing to and reading from the registers
+described above.</p>
+<p>When they are called, they write in the queue <code class="docutils literal notranslate"><span class="pre">ftsk_afeToI2cQueue</span></code> that an I<sup>2</sup>C transaction
+must take place and the calling task is blocked. It waits for the queue <code class="docutils literal notranslate"><span class="pre">ftsk_afeFromI2cQueue</span></code>
+to be filled with one element.
+For a write operation, the data to write on the bus is written to the queue <code class="docutils literal notranslate"><span class="pre">ftsk_afeToI2cQueue</span></code>, too.
+Elements of the type <code class="docutils literal notranslate"><span class="pre">AFE_I2C_QUEUE_s</span></code> are used for the communication with the queue.</p>
+<p>In each measurement cycle of the MC33775A, the function <code class="docutils literal notranslate"><span class="pre">N775_TransmitI2c()</span></code> is called once and reads
+the queue <code class="docutils literal notranslate"><span class="pre">ftsk_afeToI2cQueue</span></code>. If a transaction must take place, it is executed.
+The outcome of the transaction (success or fail) is written  to the queue <code class="docutils literal notranslate"><span class="pre">ftsk_afeFromI2cQueue</span></code>.
+If data was read, the read data is written to the queue <code class="docutils literal notranslate"><span class="pre">ftsk_afeFromI2cQueue</span></code>, too.
+The calling function is then unblocked. If it does not get feedback in the queue within
+<code class="docutils literal notranslate"><span class="pre">N775_I2C_FINISHED_TIMEOUT_ms</span></code>, the transaction is considered to have failed.</p>
+</div>
+<div class="section" id="gpios">
+<h2><span class="section-number">4.30.7.10. </span>GPIOs<a class="headerlink" href="#gpios" title="Permalink to this headline"></a></h2>
+<p>The GPIOs are driven by two configuration registers and two control registers.</p>
+<p>The GPIO_CFG0 register (address 0x800) is the first control register. Bits 7:0 (INPEN0 to INPEN7) enable the
+inputs for the pins. Bits 15:8 (OUTEN0 to OUTEN7) enable the outputs for the pins.</p>
+<p>The GPIO_CFG1 register (address 0x801) is the second control register. Bits 7:0 (ODEN0 to ODEN7) allows enabling the
+open-drain for each pin.</p>
+<p>The GPIO_OUT register (address 0x802) is the first control register. Bits 7:0 (OUT0 to OUT7) set the output levels of
+the pins.</p>
+<p>The GPIO_IN register (address 0x803) is the second control register. Reading bits 7:0 (IN0 to IN7) gives the level
+of the GPIO pins. Reading bits 15:8 (HIGHDET0 to HIGHDET7) indicate if a high level was present on the pin since the
+last READ command.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../../../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../maxim/max1785x.html" class="btn btn-neutral float-left" title="4.30.6. MAX1785x" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../debug/default.html" class="btn btn-neutral float-right" title="4.30.8. Debug Default" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

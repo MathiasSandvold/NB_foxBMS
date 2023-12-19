@@ -1,0 +1,9 @@
+<map id="testCANRX_CheckIfFramInitializationIsRequested" name="testCANRX_CheckIfFramInitializationIsRequested">
+<area shape="rect" id="node1" title=" " alt="" coords="5,39,240,80"/>
+<area shape="rect" id="node2" href="$can__cbs__rx_8h.html#a6b36f8dd2438f126bdc2fbba24db32f5" title=" " alt="" coords="288,5,540,47"/>
+<area shape="rect" id="node6" href="$can__cbs__rx_8h.html#aa2b75dcd7bb2ed2d98f1452e1ad15c37" title=" " alt="" coords="312,71,516,112"/>
+<area shape="rect" id="node3" href="$can__cbs__rx__debug_8c.html#a339d6504c498c23c72f4298c212cfdcf" title="Check if a FRAM initialization is requested." alt="" coords="588,5,801,47"/>
+<area shape="rect" id="node4" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="849,46,1116,73"/>
+<area shape="rect" id="node5" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="1164,46,1367,73"/>
+<area shape="rect" id="node7" href="$can__cbs__rx__debug_8c.html#a5535e0f454e41e00aaf92e77b563f558" title="Check if a software reset is requested." alt="" coords="595,71,794,112"/>
+</map>

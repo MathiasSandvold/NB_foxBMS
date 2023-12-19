@@ -1,0 +1,33 @@
+<map id="state_estimation.h" name="state_estimation.h">
+<area shape="rect" id="node1" title="Header for state&#45;estimation module responsible for the estimation of state&#45;of&#45;charge (SOC),..." alt="" coords="1558,5,1687,32"/>
+<area shape="rect" id="node2" href="$soc__counting_8h.html" title="Header for SOC module, responsible for calculation of SOC." alt="" coords="169,80,279,107"/>
+<area shape="rect" id="node5" href="$soc__debug_8h.html" title="Header for SOC module, responsible for calculation state&#45;of&#45;charge." alt="" coords="453,80,549,107"/>
+<area shape="rect" id="node8" href="$soc__none_8h.html" title="Header for SOC module, responsible for calculation state&#45;of&#45;charge." alt="" coords="749,80,838,107"/>
+<area shape="rect" id="node11" href="$test__state__estimation_8c.html" title="Tests for SOH module responsible for calculation of state&#45;of&#45;health." alt="" coords="830,155,989,181"/>
+<area shape="rect" id="node12" href="$soe__counting_8h.html" title="Header for SOE module, responsible for calculation of SOE." alt="" coords="1503,80,1614,107"/>
+<area shape="rect" id="node15" href="$soe__debug_8h.html" title="Header for SOE module, responsible for calculation state&#45;of&#45;energy." alt="" coords="1639,80,1735,107"/>
+<area shape="rect" id="node18" href="$soe__none_8h.html" title="Header for SOE module, responsible for calculation state&#45;of&#45;energy." alt="" coords="1091,80,1181,107"/>
+<area shape="rect" id="node21" href="$sof__trapezoid_8c.html" title="SOX module responsible for current derating calculation." alt="" coords="1759,80,1870,107"/>
+<area shape="rect" id="node22" href="$soh__debug_8h.html" title="Header for SOH module, responsible for calculation state&#45;of&#45;health." alt="" coords="1895,80,1991,107"/>
+<area shape="rect" id="node25" href="$soh__none_8h.html" title="Header for SOH module, responsible for calculation state&#45;of&#45;health." alt="" coords="1319,80,1409,107"/>
+<area shape="rect" id="node28" href="$state__estimation_8c.html" title="State&#45;estimation module responsible for the estimation of state&#45;of&#45; charge (SOC), state&#45;of&#45;energy (SO..." alt="" coords="2015,80,2145,107"/>
+<area shape="rect" id="node29" href="$bal__strategy__history_8c.html" title="Driver for the Balancing module." alt="" coords="2169,80,2319,107"/>
+<area shape="rect" id="node30" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="2343,80,2398,107"/>
+<area shape="rect" id="node31" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="2423,80,2508,107"/>
+<area shape="rect" id="node3" href="$soc__counting_8c.html" title="SOC module responsible for calculation of SOC." alt="" coords="169,155,279,181"/>
+<area shape="rect" id="node4" href="$test__soc__counting_8c.html" title="Tests for SOC module responsible for calculation of SOC." alt="" coords="5,155,144,181"/>
+<area shape="rect" id="node6" href="$soc__debug_8c.html" title="SOC module responsible for calculation of state&#45;of&#45;charge (SOC)" alt="" coords="453,155,549,181"/>
+<area shape="rect" id="node7" href="$test__soc__debug_8c.html" title="Tests for SOC module responsible for calculation of state&#45;of&#45;charge." alt="" coords="304,155,429,181"/>
+<area shape="rect" id="node9" href="$soc__none_8c.html" title="SOC module responsible for calculation of state&#45;of&#45;charge (SOC)" alt="" coords="717,155,806,181"/>
+<area shape="rect" id="node10" href="$test__soc__none_8c.html" title="Tests for SOC module responsible for calculation of state&#45;of&#45;charge." alt="" coords="574,155,693,181"/>
+<area shape="rect" id="node13" href="$soe__counting_8c.html" title="SOE module responsible for calculation of SOE." alt="" coords="1689,155,1799,181"/>
+<area shape="rect" id="node14" href="$test__soe__counting_8c.html" title="Test for the configuration for SOE." alt="" coords="1525,155,1664,181"/>
+<area shape="rect" id="node16" href="$soe__debug_8c.html" title="SOE module responsible for calculation of state&#45;of&#45;energy (SOE)" alt="" coords="1973,155,2069,181"/>
+<area shape="rect" id="node17" href="$test__soe__debug_8c.html" title="Tests for SOE module responsible for calculation of state&#45;of&#45;energy." alt="" coords="1824,155,1949,181"/>
+<area shape="rect" id="node19" href="$soe__none_8c.html" title="SOE module responsible for calculation of state&#45;of&#45;energy (SOE)" alt="" coords="1155,155,1245,181"/>
+<area shape="rect" id="node20" href="$test__soe__none_8c.html" title="Tests for SOE module responsible for calculation of state&#45;of&#45;energy." alt="" coords="1013,155,1131,181"/>
+<area shape="rect" id="node23" href="$soh__debug_8c.html" title="SOH module responsible for calculation of state&#45;of&#45;health (SOH)" alt="" coords="2243,155,2339,181"/>
+<area shape="rect" id="node24" href="$test__soh__debug_8c.html" title="Tests for SOH module responsible for calculation of state&#45;of&#45;health." alt="" coords="2093,155,2219,181"/>
+<area shape="rect" id="node26" href="$soh__none_8c.html" title="SOH module responsible for calculation of state&#45;of&#45;health (SOH)" alt="" coords="1411,155,1501,181"/>
+<area shape="rect" id="node27" href="$test__soh__none_8c.html" title="Tests for SOH module responsible for calculation of state&#45;of&#45;health." alt="" coords="1269,155,1387,181"/>
+</map>

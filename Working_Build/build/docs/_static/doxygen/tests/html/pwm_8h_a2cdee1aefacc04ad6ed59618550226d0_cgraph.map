@@ -1,0 +1,4 @@
+<map id="PWM_Initialize" name="PWM_Initialize">
+<area shape="rect" id="node1" title="Initializes the ETPWM and the ECAP module." alt="" coords="5,5,115,32"/>
+<area shape="rect" id="node2" href="$test__pwm_8c.html#a516005c5605f393277666c3b9ba0c166" title=" " alt="" coords="163,5,229,32"/>
+</map>

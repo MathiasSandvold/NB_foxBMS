@@ -1,0 +1,97 @@
+<map id="diag_cfg.h" name="diag_cfg.h">
+<area shape="rect" id="node1" title="Diagnostic module configuration header." alt="" coords="8654,5,8735,32"/>
+<area shape="rect" id="node2" href="$ltc__defs_8h.html" title="Headers for the driver for the LTC analog front&#45;end." alt="" coords="829,80,907,107"/>
+<area shape="rect" id="node20" href="$diag__cfg_8c.html" title="Diagnostic module configuration." alt="" coords="8654,162,8735,189"/>
+<area shape="rect" id="node21" href="$sys__mon__cfg_8h.html" title="configuration of the system monitoring module" alt="" coords="9091,80,9202,107"/>
+<area shape="rect" id="node34" href="$diag__cbs_8h.html" title="Diagnosis driver header." alt="" coords="5760,80,5845,107"/>
+<area shape="rect" id="node72" href="$diag_8h.html" title="Diagnosis driver header." alt="" coords="2197,162,2254,189"/>
+<area shape="rect" id="node94" href="$test__diag_8c.html" title="Tests for the diag module." alt="" coords="9357,244,9443,271"/>
+<area shape="rect" id="node95" href="$test__diag__cfg_8c.html" title="Tests for the diag_cfg driver." alt="" coords="9641,80,9751,107"/>
+<area shape="rect" id="node3" href="$ltc__6806__cfg_8h.html" title="Header for the configuration for the LTC 6806 monitoring IC." alt="" coords="344,244,451,271"/>
+<area shape="rect" id="node8" href="$ltc__6813-1__cfg_8h.html" title="Header for the configuration for the LTC 6804&#45;1 6811&#45;1, 6812&#45;1, and 6813&#45;1 monitoring IC." alt="" coords="924,244,1041,271"/>
+<area shape="rect" id="node14" href="$ltc_8h.html" title="Headers for the driver for the LTC analog front&#45;end." alt="" coords="845,244,891,271"/>
+<area shape="rect" id="node18" href="$ltc__afe__dma_8h.html" title="Headers for the driver for the DMA module for the LTC." alt="" coords="647,162,750,189"/>
+<area shape="rect" id="node4" href="$ltc__6806__cfg_8c.html" title="Configuration for the LTC analog front&#45;end." alt="" coords="5,326,112,353"/>
+<area shape="rect" id="node5" href="$ltc__6806_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="296,326,379,353"/>
+<area shape="rect" id="node6" href="$test__ltc__6806__cfg_8c.html" title="Tests for the CAN driver." alt="" coords="137,326,271,353"/>
+<area shape="rect" id="node7" href="$test__ltc__6806_8c.html" title="Test of the ltc.c module." alt="" coords="403,326,514,353"/>
+<area shape="rect" id="node9" href="$ltc__6813-1__cfg_8c.html" title="Configuration for the LTC analog front&#45;end." alt="" coords="1356,326,1473,353"/>
+<area shape="rect" id="node10" href="$ltc__6813-1_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="1239,326,1332,353"/>
+<area shape="rect" id="node11" href="$test__ltc__6813-1__cfg_8c.html" title="Tests for the CAN driver." alt="" coords="1497,326,1644,353"/>
+<area shape="rect" id="node12" href="$test__ltc__6813-1_8c.html" title="Test of the ltc_6813&#45;1.c module." alt="" coords="929,326,1052,353"/>
+<area shape="rect" id="node13" href="$test__ltc__6813-1__pec__in__arrays_8c.html" title="Test of the predefined commands in the ltc_6813&#45;1.c module." alt="" coords="1076,319,1215,360"/>
+<area shape="rect" id="node15" href="$ltc__afe_8c.html" title="AFE driver implementation for LTC ICs." alt="" coords="834,326,905,353"/>
+<area shape="rect" id="node16" href="$ltc__afe__dma_8c.html" title="Driver for the DMA module for the LTC." alt="" coords="538,326,641,353"/>
+<area shape="rect" id="node17" href="$test__ltc__6806__pec__in__arrays_8c.html" title="Test of the PEC values in the arrays in ltc6806.c module." alt="" coords="665,319,810,360"/>
+<area shape="rect" id="node19" href="$test__ltc__afe__dma_8c.html" title="Test of the ltc_afe_dma.c module in ltc." alt="" coords="633,244,765,271"/>
+<area shape="rect" id="node22" href="$sys__mon__cfg_8c.html" title="configuration of the system monitoring module" alt="" coords="9454,162,9565,189"/>
+<area shape="rect" id="node23" href="$diag__cbs__sys-mon_8c.html" title="Diagnosis driver implementation." alt="" coords="8759,162,8902,189"/>
+<area shape="rect" id="node24" href="$sys__mon_8h.html" title="system monitoring module" alt="" coords="9343,162,9430,189"/>
+<area shape="rect" id="node31" href="$test__sys__mon__cfg_8c.html" title="Tests for the sys_mon_cfg." alt="" coords="8927,162,9065,189"/>
+<area shape="rect" id="node32" href="$test__ftask__cfg_8c.html" title="Tests for the ftask_cfg driver." alt="" coords="9089,162,9204,189"/>
+<area shape="rect" id="node33" href="$test__ftask_8c.html" title="Test of the ftask module." alt="" coords="9228,162,9319,189"/>
+<area shape="rect" id="node25" href="$can__cbs__rx__state-request_8c.html" title="CAN driver Rx callback implementation." alt="" coords="8685,244,8867,271"/>
+<area shape="rect" id="node26" href="$can__cbs__tx__state_8c.html" title="CAN driver Tx callback implementation." alt="" coords="3747,244,3883,271"/>
+<area shape="rect" id="node27" href="$sys__mon_8c.html" title="system monitoring module" alt="" coords="6511,244,6598,271"/>
+<area shape="rect" id="node28" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="7924,244,8009,271"/>
+<area shape="rect" id="node29" href="$ftask_8c.html" title="Implementation of OS&#45;independent task creators." alt="" coords="9468,244,9529,271"/>
+<area shape="rect" id="node30" href="$test__sys__mon_8c.html" title="Tests for the sys_mon module." alt="" coords="9217,244,9332,271"/>
+<area shape="rect" id="node35" href="$diag__cbs__afe_8c.html" title="Diagnosis driver implementation." alt="" coords="6740,162,6849,189"/>
+<area shape="rect" id="node36" href="$diag__cbs__bms_8c.html" title="Diagnosis driver implementation." alt="" coords="6873,162,6991,189"/>
+<area shape="rect" id="node37" href="$diag__cbs__can_8c.html" title="Diagnosis driver implementation." alt="" coords="7015,162,7129,189"/>
+<area shape="rect" id="node38" href="$diag__cbs__contactor_8c.html" title="Diagnosis driver implementation." alt="" coords="7153,162,7300,189"/>
+<area shape="rect" id="node39" href="$diag__cbs__current-sensor_8c.html" title="Diagnosis driver implementation." alt="" coords="7325,162,7499,189"/>
+<area shape="rect" id="node40" href="$diag__cbs__current_8c.html" title="Diagnosis driver implementation." alt="" coords="7523,162,7655,189"/>
+<area shape="rect" id="node41" href="$diag__cbs__deep-discharge_8c.html" title="Diagnosis driver implementation." alt="" coords="7679,162,7859,189"/>
+<area shape="rect" id="node42" href="$diag__cbs__dummy_8c.html" title="Diagnosis driver implementation." alt="" coords="7883,162,8018,189"/>
+<area shape="rect" id="node43" href="$diag__cbs__fram_8c.html" title="Diagnosis callbacks for FRAM errors." alt="" coords="8043,162,8160,189"/>
+<area shape="rect" id="node44" href="$diag__cbs__i2c_8c.html" title="Diagnosis callbacks for I2C errors." alt="" coords="8184,162,8293,189"/>
+<area shape="rect" id="node45" href="$diag__cbs__insulation_8c.html" title="Diagnosis driver implementation." alt="" coords="8317,162,8464,189"/>
+<area shape="rect" id="node46" href="$diag__cbs__interlock_8c.html" title="Diagnosis driver implementation." alt="" coords="8488,162,8629,189"/>
+<area shape="rect" id="node47" href="$diag__cbs__plausibility_8c.html" title="Diagnosis driver implementation." alt="" coords="2278,162,2431,189"/>
+<area shape="rect" id="node48" href="$diag__cbs__power-measurement_8c.html" title="Diagnosis driver implementation." alt="" coords="2455,162,2665,189"/>
+<area shape="rect" id="node49" href="$diag__cbs__rtc_8c.html" title="Diagnosis callbacks for RTC errors." alt="" coords="2689,162,2796,189"/>
+<area shape="rect" id="node50" href="$diag__cbs__sbc_8c.html" title="Diagnosis driver implementation." alt="" coords="2821,162,2934,189"/>
+<area shape="rect" id="node51" href="$diag__cbs__temperature_8c.html" title="Diagnosis driver implementation." alt="" coords="2958,162,3119,189"/>
+<area shape="rect" id="node52" href="$diag__cbs__voltage_8c.html" title="Diagnosis driver implementation." alt="" coords="3143,162,3275,189"/>
+<area shape="rect" id="node53" href="$test__diag__cbs__afe_8c.html" title="Test of the AFE diag handler implementation." alt="" coords="3300,162,3439,189"/>
+<area shape="rect" id="node54" href="$test__diag__cbs__bms_8c.html" title="Test of the BMS diag handler implementation." alt="" coords="3463,162,3609,189"/>
+<area shape="rect" id="node55" href="$test__diag__cbs__can_8c.html" title="Test of the CAN diag handler implementation." alt="" coords="3634,162,3777,189"/>
+<area shape="rect" id="node56" href="$test__diag__cbs__contactor_8c.html" title="Test of the contactor diag handler implementation." alt="" coords="3801,162,3975,189"/>
+<area shape="rect" id="node57" href="$test__diag__cbs__current-sensor_8c.html" title="Test of the current sensor diag handler implementation." alt="" coords="3999,155,4150,196"/>
+<area shape="rect" id="node58" href="$test__diag__cbs__current_8c.html" title="Test of the current diag handler implementation." alt="" coords="4174,162,4335,189"/>
+<area shape="rect" id="node59" href="$test__diag__cbs__deep-discharge_8c.html" title="Test of the deep discharge handler implementation." alt="" coords="4360,155,4499,196"/>
+<area shape="rect" id="node60" href="$test__diag__cbs__dummy_8c.html" title="Test of the dummy diag handler implementation." alt="" coords="4523,162,4687,189"/>
+<area shape="rect" id="node61" href="$test__diag__cbs__fram_8c.html" title="Test of the FRAM diag handler implementation." alt="" coords="4712,162,4859,189"/>
+<area shape="rect" id="node62" href="$test__diag__cbs__i2c_8c.html" title="Test of the I2C diag handler implementation." alt="" coords="4883,162,5021,189"/>
+<area shape="rect" id="node63" href="$test__diag__cbs__insulation_8c.html" title="Test of the Insulation diagnosis handler implementation." alt="" coords="5045,162,5221,189"/>
+<area shape="rect" id="node64" href="$test__diag__cbs__interlock_8c.html" title="Test of the Interlock diag handler implementation." alt="" coords="5245,162,5416,189"/>
+<area shape="rect" id="node65" href="$test__diag__cbs__plausibility_8c.html" title="Test of the plausibility diag handler implementation." alt="" coords="5441,162,5623,189"/>
+<area shape="rect" id="node66" href="$test__diag__cbs__power-measurement_8c.html" title="Test of the power measurement diag handler implementation." alt="" coords="5648,155,5792,196"/>
+<area shape="rect" id="node67" href="$test__diag__cbs__rtc_8c.html" title="Test of the RTC diag handler implementation." alt="" coords="5816,162,5952,189"/>
+<area shape="rect" id="node68" href="$test__diag__cbs__sbc_8c.html" title="Test of the SBC diag handler implementation." alt="" coords="5977,162,6119,189"/>
+<area shape="rect" id="node69" href="$test__diag__cbs__sys-mon_8c.html" title="Test of the system monitoring diag handler implementation." alt="" coords="6144,162,6315,189"/>
+<area shape="rect" id="node70" href="$test__diag__cbs__temperature_8c.html" title="Test of the temperature measurement diag handler implementation." alt="" coords="6339,162,6530,189"/>
+<area shape="rect" id="node71" href="$test__diag__cbs__voltage_8c.html" title="Test of the voltage measurement diag handler implementation." alt="" coords="6554,162,6715,189"/>
+<area shape="rect" id="node73" href="$bms_8c.html" title="bms driver implementation" alt="" coords="2903,244,2961,271"/>
+<area shape="rect" id="node74" href="$plausibility_8c.html" title="plausibility checks for cell voltage and cell temperatures" alt="" coords="2986,244,3081,271"/>
+<area shape="rect" id="node75" href="$redundancy_8c.html" title="Source file for handling redundancy between redundant cell voltage and cell temperature measurements." alt="" coords="3105,244,3205,271"/>
+<area shape="rect" id="node76" href="$soa_8c.html" title="SOA module responsible for checking battery parameters against safety limits." alt="" coords="3229,244,3283,271"/>
+<area shape="rect" id="node77" href="$debug__default_8c.html" title="Driver implementation for the fake AFE." alt="" coords="1066,244,1179,271"/>
+<area shape="rect" id="node78" href="$mxm__cfg_8c.html" title="Configuration for the MAX analog front&#45;end." alt="" coords="1203,244,1290,271"/>
+<area shape="rect" id="node79" href="$mxm__1785x_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="1315,244,1419,271"/>
+<area shape="rect" id="node80" href="$mxm__battery__management_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="1443,244,1634,271"/>
+<area shape="rect" id="node81" href="$nxp__mc33775a_8c.html" title="Driver for the MC33775A analog front&#45;end." alt="" coords="1658,244,1779,271"/>
+<area shape="rect" id="node82" href="$can_8c.html" title="Driver for the CAN module." alt="" coords="1803,244,1858,271"/>
+<area shape="rect" id="node83" href="$contactor_8c.html" title="Driver for the contactors." alt="" coords="1882,244,1969,271"/>
+<area shape="rect" id="node84" href="$fram_8c.html" title="Driver for the FRAM module." alt="" coords="1993,244,2052,271"/>
+<area shape="rect" id="node85" href="$i2c_8c.html" title="Driver for the I2C module." alt="" coords="2076,244,2127,271"/>
+<area shape="rect" id="node86" href="$imd_8c.html" title="Main driver state machine for insulation monitoring driver." alt="" coords="2151,244,2206,271"/>
+<area shape="rect" id="node87" href="$interlock_8c.html" title="Driver for the interlock." alt="" coords="2231,244,2313,271"/>
+<area shape="rect" id="node88" href="$pex_8c.html" title="Driver for the NXP PCA9539 port expander module." alt="" coords="2338,244,2393,271"/>
+<area shape="rect" id="node89" href="$rtc_8c.html" title="Implementation of the RTC driver." alt="" coords="2417,244,2465,271"/>
+<area shape="rect" id="node90" href="$nxpfs85xx_8c.html" title="Driver for the SBC module." alt="" coords="2490,244,2582,271"/>
+<area shape="rect" id="node91" href="$diag_8c.html" title="Diagnosis driver implementation." alt="" coords="2606,244,2663,271"/>
+<area shape="rect" id="node92" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="2687,244,2742,271"/>
+<area shape="rect" id="node93" href="$main_8c.html" title="Main function." alt="" coords="2767,244,2828,271"/>
+</map>

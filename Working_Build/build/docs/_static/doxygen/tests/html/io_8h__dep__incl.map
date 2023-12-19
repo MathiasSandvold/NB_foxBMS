@@ -1,0 +1,22 @@
+<map id="io.h" name="io.h">
+<area shape="rect" id="node1" title="Header for the driver for the IO module." alt="" coords="979,5,1021,32"/>
+<area shape="rect" id="node2" href="$ltc__6806_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="5,80,88,107"/>
+<area shape="rect" id="node3" href="$ltc__6813-1_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="112,80,205,107"/>
+<area shape="rect" id="node4" href="$ltc__afe__dma_8c.html" title="Driver for the DMA module for the LTC." alt="" coords="230,80,333,107"/>
+<area shape="rect" id="node5" href="$mxm__cfg_8c.html" title="Configuration for the MAX analog front&#45;end." alt="" coords="357,80,443,107"/>
+<area shape="rect" id="node6" href="$nxp__afe__dma_8c.html" title="Driver for the DMA module for the N775." alt="" coords="467,80,578,107"/>
+<area shape="rect" id="node7" href="$nxp__mc33775a-ll_8c.html" title=" " alt="" coords="603,80,733,107"/>
+<area shape="rect" id="node8" href="$nxp__mc33775a_8c.html" title="Driver for the MC33775A analog front&#45;end." alt="" coords="758,80,879,107"/>
+<area shape="rect" id="node9" href="$fram_8c.html" title="Driver for the FRAM module." alt="" coords="904,80,963,107"/>
+<area shape="rect" id="node10" href="$bender__ir155_8c.html" title="Driver for the insulation monitoring." alt="" coords="927,155,1033,181"/>
+<area shape="rect" id="node11" href="$bender__ir155__helper_8h.html" title="Headers for the configuration for the insulation monitoring." alt="" coords="1037,80,1187,107"/>
+<area shape="rect" id="node14" href="$interlock_8c.html" title="Driver for the interlock." alt="" coords="1211,80,1293,107"/>
+<area shape="rect" id="node15" href="$io_8c.html" title="Driver for the IO module." alt="" coords="1317,80,1360,107"/>
+<area shape="rect" id="node16" href="$led_8c.html" title="Implementation of the debug LED driver." alt="" coords="1384,80,1435,107"/>
+<area shape="rect" id="node17" href="$nxpfs85xx_8c.html" title="Driver for the SBC module." alt="" coords="1459,80,1551,107"/>
+<area shape="rect" id="node18" href="$spi_8c.html" title="Driver for the SPI module." alt="" coords="1576,80,1627,107"/>
+<area shape="rect" id="node19" href="$sps_8c.html" title="Driver for the smart power switches." alt="" coords="1651,80,1706,107"/>
+<area shape="rect" id="node20" href="$test__io_8c.html" title="Tests for the io module." alt="" coords="1731,80,1803,107"/>
+<area shape="rect" id="node12" href="$bender__ir155__helper_8c.html" title="Driver for the insulation monitoring." alt="" coords="1057,155,1207,181"/>
+<area shape="rect" id="node13" href="$test__bender__ir155__helper_8c.html" title="Tests for the Bender IR155 driver." alt="" coords="1231,155,1409,181"/>
+</map>

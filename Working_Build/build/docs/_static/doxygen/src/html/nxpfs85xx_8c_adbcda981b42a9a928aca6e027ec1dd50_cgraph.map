@@ -1,0 +1,40 @@
+<map id="FS85_SafetyPathChecks" name="FS85_SafetyPathChecks">
+<area shape="rect" id="node1" title="Performs SBC safety path checks." alt="" coords="5,477,173,503"/>
+<area shape="rect" id="node2" href="$fram_8c.html#ad5c5ec1fd0a6c3667185d3b75064e359" title="Writes a variable to the FRAM." alt="" coords="1628,654,1752,681"/>
+<area shape="rect" id="node13" href="$group__API.html#ga796a8b7f238630b1e0051572add102d4" title="FS0B release routine." alt="" coords="245,67,392,94"/>
+<area shape="rect" id="node23" href="$nxpfs85xx_8c.html#a795cebf916b0b542c4a5aab84085762e" title="Perform FS0B safety path check." alt="" coords="221,502,416,529"/>
+<area shape="rect" id="node24" href="$nxpfs85xx_8c.html#a5c650f4ce72acee66612acc1544722d5" title="Perform RSTB safety path check." alt="" coords="223,451,415,478"/>
+<area shape="rect" id="node3" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="1860,755,1991,782"/>
+<area shape="rect" id="node4" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="1878,502,1973,529"/>
+<area shape="rect" id="node5" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="1885,806,1966,833"/>
+<area shape="rect" id="node6" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="1869,451,1981,478"/>
+<area shape="rect" id="node7" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="1824,705,2027,731"/>
+<area shape="rect" id="node8" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="1865,654,1986,681"/>
+<area shape="rect" id="node9" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="1886,553,1965,579"/>
+<area shape="rect" id="node12" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="1880,603,1971,630"/>
+<area shape="rect" id="node10" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="2075,603,2221,630"/>
+<area shape="rect" id="node11" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="2079,553,2217,579"/>
+<area shape="rect" id="node14" href="$group__API.html#ga13e5ab89af0a74158bdff99b29eb76ec" title="Reads actual Fault Error Counter value." alt="" coords="471,31,654,72"/>
+<area shape="rect" id="node15" href="$group__API.html#gab8787e2ae04f3f2810ca95df41b69190" title="Performs a read from a single FS8x register." alt="" coords="718,122,857,149"/>
+<area shape="rect" id="node22" href="$group__API.html#ga45774357f5c85905d3b03812c03a0eb4" title="Sends write command to the FS8x." alt="" coords="940,135,1079,162"/>
+<area shape="rect" id="node16" href="$sbc__fs8x__communication_8c.html#adab1bd280fc620a6cd8c881dbc3773ff" title="Performs SPI transfer of the txData. Received frame is saved into rxData structure." alt="" coords="1153,186,1315,213"/>
+<area shape="rect" id="node17" href="$sbc__fs8x__communication_8c.html#a80544b95c576332d48a6f882957018d8" title="Performs CRC check of the data array." alt="" coords="1397,161,1521,187"/>
+<area shape="rect" id="node19" href="$sbc__fs8x__communication_8c.html#ae5b596457c82d4c45e811ad4c404b312" title="Creates a raw frame for SPI transfer." alt="" coords="1363,211,1556,238"/>
+<area shape="rect" id="node20" href="$group__Extern.html#ga1b7c11ee24b9fe8c8e104ae40a350e26" title="This function transfers single frame through blocking SPI communication in both directions...." alt="" coords="1380,603,1539,630"/>
+<area shape="rect" id="node18" href="$sbc__fs8x__communication_8c.html#a87db6e52e5d345e7ae7be0606196c27d" title="This function calculates CRC value of passed data array. Takes bytes in inverted order due to frame f..." alt="" coords="1633,186,1747,213"/>
+<area shape="rect" id="node21" href="$spi_8c.html#ac84bc8424de860e2cd89fea2e89dd89a" title="Transmits and receives data on SPI without DMA." alt="" coords="1604,603,1776,630"/>
+<area shape="rect" id="node25" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="1873,857,1977,883"/>
+<area shape="rect" id="node27" href="$fram_8c.html#ac33e9fde66e31d43c22bfc9a2f8aebf7" title="Reads a variable from the FRAM." alt="" coords="1629,705,1751,731"/>
+<area shape="rect" id="node28" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="490,249,635,275"/>
+<area shape="rect" id="node29" href="$fsystem_8h.html#af23205627be1616c6b1dcdb684060322" title="Switch back to user mode." alt="" coords="475,299,651,326"/>
+<area shape="rect" id="node30" href="$masterinfo_8c.html#a44f17d790f25a7839f8cf4d929057b64" title="Get reason for last reset." alt="" coords="479,401,646,427"/>
+<area shape="rect" id="node31" href="$nxpfs85xx_8c.html#a3e7ae196313f4cede4b0420ac83d810a" title="Checks register value against expected value." alt="" coords="472,451,653,478"/>
+<area shape="rect" id="node32" href="$nxpfs85xx_8c.html#a30e39aa8de6a40e783b82b818240441d" title="Reads SBC register value." alt="" coords="481,350,645,377"/>
+<area shape="rect" id="node36" href="$nxpfs85xx_8c.html#aef178b4825b071332b9b86aed7c6dd66" title="Write to fail&#45;safe register." alt="" coords="464,147,661,174"/>
+<area shape="rect" id="node38" href="$nxpfs85xx_8c.html#aab0c6e34435c988d599fe8c687bbb706" title="Write to fail&#45;safe register." alt="" coords="479,198,646,225"/>
+<area shape="rect" id="node26" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="2087,857,2209,883"/>
+<area shape="rect" id="node33" href="$nxpfs85xx_8c.html#a0a1139bd6c03b0a9c2157f1257f04057" title="Updates register values." alt="" coords="715,287,860,314"/>
+<area shape="rect" id="node34" href="$nxpfs85xx_8c.html#a130d5b08f7ef67c6526cbb117a31d32f" title="Updates fail safe register values." alt="" coords="913,262,1105,289"/>
+<area shape="rect" id="node35" href="$nxpfs85xx_8c.html#a086a1d3eced35bc26819fb55d6f0dc2b" title="Updates main register values." alt="" coords="923,313,1096,339"/>
+<area shape="rect" id="node37" href="$group__API.html#ga3f8c3c75fa13275a5ce5876d37d5d2a2" title="Performs a write to a single FS8x FS init register (during the INIT_FS phase only)." alt="" coords="709,173,865,199"/>
+</map>

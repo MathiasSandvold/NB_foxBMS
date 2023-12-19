@@ -1,0 +1,4 @@
+<map id="I2C_ClearNotifications" name="I2C_ClearNotifications">
+<area shape="rect" id="node1" title="Clear pending notifications." alt="" coords="5,5,155,32"/>
+<area shape="rect" id="node2" href="$os__freertos_8c.html#a25b7418eb914b83dd88bbc0424333139" title="Clear pending notification of a task, with index." alt="" coords="203,5,389,32"/>
+</map>

@@ -1,0 +1,70 @@
+<map id="AFE_TriggerIc" name="AFE_TriggerIc">
+<area shape="rect" id="node1" title=" " alt="" coords="5,336,109,363"/>
+<area shape="rect" id="node2" href="$debug__default_8c.html#a3ff9b601ec0d377a3a78d8ce735c7971" title="Trigger function for the driver, called to advance the state machine." alt="" coords="734,115,857,141"/>
+<area shape="rect" id="node15" href="$nxp__afe_8h.html#ae6df9bbde43f01a4a74a0e34d48cd844" title=" " alt="" coords="157,607,261,633"/>
+<area shape="rect" id="node3" href="$debug__default_8c.html#a17637e356b7871fff832fcf62a41862b" title="check for multiple calls of state machine trigger function" alt="" coords="1571,5,1745,32"/>
+<area shape="rect" id="node6" href="$debug__default_8c.html#aeb6e23ce50d19e616aab642a7bee7bd7" title="Defines the state transitions." alt="" coords="975,115,1141,141"/>
+<area shape="rect" id="node4" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1869,415,2016,441"/>
+<area shape="rect" id="node5" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1873,480,2012,507"/>
+<area shape="rect" id="node7" href="$debug__default_8c.html#a10a87d31f072da72d5f1d47a8baa4413" title="Processes the initialization state." alt="" coords="1262,166,1442,207"/>
+<area shape="rect" id="node13" href="$debug__default_8c.html#a57644736c49d43c02a23f57a5813d6ec" title="Processes the running state." alt="" coords="1257,115,1447,141"/>
+<area shape="rect" id="node14" href="$debug__default_8c.html#a9a894ac1dfc077dd766fa461b593f395" title="Sets the next state, the next substate and the timer value of the state variable." alt="" coords="1295,60,1409,87"/>
+<area shape="rect" id="node8" href="$debug__default_8c.html#aab8534c5be8d61cb3f1f9f335d15e652" title="return whether the first measurement cycle is finished" alt="" coords="1552,225,1764,266"/>
+<area shape="rect" id="node9" href="$debug__default_8c.html#a16164818c401d35ed3e28bfa13b282db" title="Write temperature measurement data." alt="" coords="1561,107,1755,149"/>
+<area shape="rect" id="node10" href="$debug__default_8c.html#a136ef9e582647d6e404737c350daec02" title="Write voltage measurement data." alt="" coords="1523,173,1793,200"/>
+<area shape="rect" id="node11" href="$debug__default_8c.html#a1a89964c5c8faba29fe50b76e53271f1" title="Sets the indicator that one full measurement cycles was successful." alt="" coords="1563,342,1753,383"/>
+<area shape="rect" id="node12" href="$debug__default_8c.html#aed7fa787a0f37e83b1664a3f2f3030bc" title="Sets the next substate and the timer value of the state variable." alt="" coords="1590,56,1726,83"/>
+<area shape="rect" id="node16" href="$nxp__mc33775a_8c.html#a3070b8e13795304fe674477f6df441c6" title="trigger function for the N775 driver state machine." alt="" coords="309,741,400,768"/>
+<area shape="rect" id="node17" href="$nxp__mc33775a_8c.html#aa81fd560e8265b72b955ebb46f182737" title="manages balancing." alt="" coords="479,665,625,692"/>
+<area shape="rect" id="node29" href="$nxp__mc33775a_8c.html#afc1dcfe689c94c9ee6111fa16616d14e" title="captures the measurement." alt="" coords="704,969,887,996"/>
+<area shape="rect" id="node53" href="$nxp__mc33775a_8c.html#a82372002e47ee422bd199755efa681cb" title="updates index in mux sequence." alt="" coords="466,767,638,793"/>
+<area shape="rect" id="node54" href="$nxp__mc33775a_8c.html#ae64a47f72602e769feb46164566036d9" title="updates index in string sequence." alt="" coords="448,817,656,844"/>
+<area shape="rect" id="node55" href="$nxp__mc33775a_8c.html#a15f3fac0a564b09f9ecaae192c76a5ee" title="initializes the N775 driver." alt="" coords="514,615,590,641"/>
+<area shape="rect" id="node61" href="$nxp__mc33775a_8c.html#ad03d73a396ac386aaa8844520ce040c9" title="in the database, initializes the fields related to the N775 driver." alt="" coords="471,919,633,945"/>
+<area shape="rect" id="node62" href="$nxp__mc33775a_8c.html#afe1591129140f226d47b807b34ae6494" title="gets the measurement initialization status." alt="" coords="1555,473,1761,514"/>
+<area shape="rect" id="node63" href="$nxp__mc33775a_8c.html#ae1bf7c68687ab59af539be98536dcc9b" title="reset index in string sequence." alt="" coords="459,1020,645,1047"/>
+<area shape="rect" id="node64" href="$nxp__mc33775a_8c.html#a5602db5a94720a823c9164d0034be703" title="sets the measurement initialization status." alt="" coords="1566,407,1750,449"/>
+<area shape="rect" id="node65" href="$nxp__mc33775a_8c.html#a4a176399622dc88cd2ad6616ae82858a" title="sets mux channel." alt="" coords="720,817,871,844"/>
+<area shape="rect" id="node66" href="$nxp__mc33775a_8c.html#a8aa7f6c3b5555207650d0d3cb0e705fb" title="tranmit over I2C on NXP slave." alt="" coords="732,868,859,895"/>
+<area shape="rect" id="node18" href="$nxp__mc33775a_8c.html#a8571aaaf79c88879eed3c17d362a1df7" title="setups balancing." alt="" coords="725,665,865,692"/>
+<area shape="rect" id="node19" href="$nxp__mc33775a-ll_8c.html#a9184e5d6d106688f9a701245d749987d" title="Write a value into a specific register in a specific device." alt="" coords="968,665,1148,692"/>
+<area shape="rect" id="node20" href="$nxp__mc33775a-ll_8c.html#add44c631a1af3073bdf7c3bf91ae2de6" title="Composes a message." alt="" coords="1556,691,1760,733"/>
+<area shape="rect" id="node21" href="$nxp__mc33775a-ll_8c.html#a8f9a40f5c6c25d931b57b51703e7e0f3" title="Copies a message to the buffer to be passed to the SPI transmit functions." alt="" coords="1557,640,1759,667"/>
+<area shape="rect" id="node22" href="$nxp__mc33775a-ll_8c.html#a2e3ed760407a7d6dcb460ac68c02be41" title="Wait for the SPI transmit communication to complete, using notifications." alt="" coords="1229,589,1475,616"/>
+<area shape="rect" id="node24" href="$os__freertos_8c.html#a25b7418eb914b83dd88bbc0424333139" title="Clear pending notification of a task, with index." alt="" coords="1259,792,1445,819"/>
+<area shape="rect" id="node25" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="1882,999,2003,1025"/>
+<area shape="rect" id="node26" href="$spi_8c.html#a2a0f36d8cb7e54304284f758cc108c36" title="Transmits and receives data on SPI with DMA." alt="" coords="1559,859,1757,885"/>
+<area shape="rect" id="node23" href="$os__freertos_8c.html#a7578e983d03af6f03fd3fe09f293cdb1" title="Wait for a notification, with index." alt="" coords="1841,700,2044,727"/>
+<area shape="rect" id="node27" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="1870,872,2015,899"/>
+<area shape="rect" id="node28" href="$fsystem_8h.html#af23205627be1616c6b1dcdb684060322" title="Switch back to user mode." alt="" coords="1855,948,2031,975"/>
+<area shape="rect" id="node30" href="$nxp__mc33775a-ll_8c.html#ac7c3bbdc384429e36a82340281a4eb13" title="Read a value from a specific register in a specific device." alt="" coords="969,868,1147,895"/>
+<area shape="rect" id="node31" href="$nxp__mc33775a-ll_8c.html#a05b00b3020b3f7d8df2fc4e2ca529274" title="Read multiple values from specific registers in a specific device." alt="" coords="1240,995,1464,1021"/>
+<area shape="rect" id="node35" href="$nxp__mc33775a__cfg_8c.html#a81540ab7ac1887ef0beb8cf366aa1f6e" title="converts a raw voltage from multiplexer to a temperature value in deci °C." alt="" coords="935,1121,1181,1148"/>
+<area shape="rect" id="node49" href="$nxp__mc33775a_8c.html#ad6ae7586b69aefee6453bc6e53f612b5" title="handles error when doing measurements." alt="" coords="989,1172,1127,1199"/>
+<area shape="rect" id="node50" href="$nxp__mc33775a_8c.html#afc150ee43bb68b0ee5a389d8535c734a" title="waits for a definite amount of time in ms." alt="" coords="1003,767,1113,793"/>
+<area shape="rect" id="node32" href="$nxp__mc33775a-ll_8c.html#a1ed98da6256705c1d38cf5529e2509bb" title="Decomposes and analysis a message." alt="" coords="1549,1113,1767,1154"/>
+<area shape="rect" id="node33" href="$nxp__mc33775a-ll_8c.html#a6cce353892b34e03c69c9ab238ad7b80" title="Wait for the SPI receive communication to complete, using notifications." alt="" coords="1535,909,1781,936"/>
+<area shape="rect" id="node34" href="$spi_8c.html#a997dce9b156595fa4486a547f7c55453" title="Transmits and receives data on SPI with DMA." alt="" coords="1558,960,1758,987"/>
+<area shape="rect" id="node36" href="$tsi_8h.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="1281,1463,1423,1489"/>
+<area shape="rect" id="node37" href="$epcos__b57251v5103j060_8c.html#a60e7e40bc4662b44093a0a2b464bd395" title="returns temperature based on measured ADC voltage" alt="" coords="1547,1660,1769,1687"/>
+<area shape="rect" id="node39" href="$epcos__b57251v5103j060_8c.html#a22b8fc0a39278f0c1a61c1cca7482b5a" title="returns temperature based on measured ADC voltage" alt="" coords="1555,1243,1761,1285"/>
+<area shape="rect" id="node40" href="$epcos__b57861s0103f045_8c.html#a8bb26a9001e051fc2fee6ba77027b1b6" title="returns temperature based on measured ADC voltage" alt="" coords="1547,1711,1769,1737"/>
+<area shape="rect" id="node41" href="$epcos__b57861s0103f045_8c.html#a3aca9a6a710bb21efc1a5d4ccf49b3e0" title="returns temperature based on measured ADC voltage" alt="" coords="1555,1309,1761,1350"/>
+<area shape="rect" id="node42" href="$fake__none_8c.html#a8519235f1cb368c712566dc0a6615a8a" title="returns a fake temperature" alt="" coords="1547,1375,1769,1401"/>
+<area shape="rect" id="node43" href="$fake__none_8c.html#a8d502a27efdeb0f048997819e3ae4fc4" title="returns a fake temperature" alt="" coords="1556,1426,1760,1467"/>
+<area shape="rect" id="node44" href="$murata__ncu15xh103f6sxx_8c.html#a0e6cfeee0f7fdf5504234ed54ddfc9b7" title="returns temperature based on measured ADC voltage." alt="" coords="1547,1492,1769,1519"/>
+<area shape="rect" id="node45" href="$murata__ncu15xh103f6sxx_8c.html#a255c099fbd405cdc3b51c39a415c18e3" title="returns temperature based on measured ADC voltage" alt="" coords="1556,1543,1760,1585"/>
+<area shape="rect" id="node46" href="$vishay__ntcalug01a103g_8c.html#a865b7c323eb0bdbd7420518e6b56cede" title="returns temperature based on measured ADC voltage." alt="" coords="1549,1761,1767,1788"/>
+<area shape="rect" id="node47" href="$vishay__ntcalug01a103g_8c.html#a47e088f4023835e56cac22e035c66be8" title="returns temperature based on measured ADC voltage" alt="" coords="1557,1178,1759,1219"/>
+<area shape="rect" id="node48" href="$vishay__ntcle317e4103sba_8c.html#ae917bb4796f0f8fa36201dbd92aae38c" title="returns temperature based on measured ADC voltage." alt="" coords="1549,1609,1767,1636"/>
+<area shape="rect" id="node38" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="1857,1660,2028,1687"/>
+<area shape="rect" id="node51" href="$os__freertos_8c.html#a3ac9f783e38ae9f9c8cfe0634bb3b8fe" title="Delay a task until a specified time." alt="" coords="1285,893,1419,920"/>
+<area shape="rect" id="node52" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="1289,944,1415,971"/>
+<area shape="rect" id="node56" href="$nxp__mc33775a_8c.html#a002c81d4708c5bcabc3d945a6b7c3eb8" title="enumerates the N775 slaves." alt="" coords="734,767,857,793"/>
+<area shape="rect" id="node58" href="$nxp__mc33775a_8c.html#a2cf5af89e683813c9bb763915fb578af" title="init I2C for the N775 slaves." alt="" coords="749,615,842,641"/>
+<area shape="rect" id="node59" href="$nxp__mc33775a_8c.html#a98343dc944bc706be1b9d0d6f7b12964" title="resets index in mux sequence." alt="" coords="721,564,870,591"/>
+<area shape="rect" id="node60" href="$nxp__mc33775a_8c.html#a4e2865fd124f42c05bb3772e76c2f9da" title="starts the measurement." alt="" coords="712,513,879,540"/>
+<area shape="rect" id="node57" href="$nxp__mc33775a-ll_8c.html#a851d36b2dc4875a2eb4132705d0d67a0" title="Reset the message counter for one or all devices." alt="" coords="963,716,1153,743"/>
+<area shape="rect" id="node67" href="$os__freertos_8c.html#a285b22d2ef1448cae22a8965b5fec186" title="Receive an item from a queue." alt="" coords="977,919,1139,945"/>
+<area shape="rect" id="node68" href="$os__freertos_8c.html#abfcdf77954b6a87dca01c31efaf4d0b3" title="Post an item to the back the provided queue." alt="" coords="971,969,1145,996"/>
+</map>

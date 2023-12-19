@@ -1,0 +1,9 @@
+<map id="testCANTX_MinimumMaximumValuesAllStringsClosed" name="testCANTX_MinimumMaximumValuesAllStringsClosed">
+<area shape="rect" id="node1" title=" " alt="" coords="5,89,208,131"/>
+<area shape="rect" id="node2" href="$can__cbs__tx_8h.html#ac79013902cf06555450f75d6fadc6a95" title="can tx callback function for min/max values" alt="" coords="256,97,476,123"/>
+<area shape="rect" id="node3" href="$bms_8c.html#a95febd341b208a988bb0462e81febca8" title="Returns number of connected strings." alt="" coords="548,5,747,47"/>
+<area shape="rect" id="node4" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="576,71,719,98"/>
+<area shape="rect" id="node5" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="524,122,771,149"/>
+<area shape="rect" id="node6" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="549,173,746,215"/>
+<area shape="rect" id="node7" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="819,181,1021,207"/>
+</map>

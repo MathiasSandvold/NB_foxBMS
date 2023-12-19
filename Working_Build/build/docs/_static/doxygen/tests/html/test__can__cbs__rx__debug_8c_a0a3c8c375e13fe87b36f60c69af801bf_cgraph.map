@@ -1,0 +1,7 @@
+<map id="testCANRX_CheckIfSoftwareResetIsRequested" name="testCANRX_CheckIfSoftwareResetIsRequested">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,192,47"/>
+<area shape="rect" id="node2" href="$can__cbs__rx_8h.html#aa2b75dcd7bb2ed2d98f1452e1ad15c37" title=" " alt="" coords="240,5,444,47"/>
+<area shape="rect" id="node3" href="$can__cbs__rx__debug_8c.html#a5535e0f454e41e00aaf92e77b563f558" title="Check if a software reset is requested." alt="" coords="492,5,691,47"/>
+<area shape="rect" id="node4" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="739,13,1005,39"/>
+<area shape="rect" id="node5" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="1053,13,1256,39"/>
+</map>

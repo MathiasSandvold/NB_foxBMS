@@ -1,0 +1,4 @@
+<map id="SPS_InitializeBuffers" name="SPS_InitializeBuffers">
+<area shape="rect" id="node1" title=" " alt="" coords="5,13,148,39"/>
+<area shape="rect" id="node2" href="$sps_8c.html#a5aa51bd041468fa63d6992cbcb57ad3a" title="Sets the SPI Tx buffer for a register write access for a specific single SPS ICs in the daisy&#45;chain." alt="" coords="196,5,375,47"/>
+</map>

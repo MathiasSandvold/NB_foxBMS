@@ -1,0 +1,11 @@
+<map id="dma_cfg.h" name="dma_cfg.h">
+<area shape="rect" id="node1" title="Headers for the configuration for the DMA module." alt="" coords="396,5,478,32"/>
+<area shape="rect" id="node2" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="96,80,242,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="232,304,298,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="438,80,511,107"/>
+<area shape="rect" id="node9" title=" " alt="" coords="536,80,645,107"/>
+<area shape="rect" id="node3" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="132,155,206,181"/>
+<area shape="rect" id="node4" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="21,229,93,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="20,304,94,331"/>
+<area shape="rect" id="node7" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="218,229,312,256"/>
+</map>

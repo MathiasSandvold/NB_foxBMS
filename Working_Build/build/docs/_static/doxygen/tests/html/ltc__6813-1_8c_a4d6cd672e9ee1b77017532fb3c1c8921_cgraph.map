@@ -1,0 +1,4 @@
+<map id="LTC_SetTransferTimes" name="LTC_SetTransferTimes">
+<area shape="rect" id="node1" title="sets the transfer time needed to receive/send data with the LTC daisy&#45;chain." alt="" coords="5,5,159,32"/>
+<area shape="rect" id="node2" href="$ltc__6813-1_8c.html#a4fd9d165e4bc619474fe3d1653104833" title="gets the frequency of the SPI clock." alt="" coords="207,5,332,32"/>
+</map>

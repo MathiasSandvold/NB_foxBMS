@@ -1,0 +1,26 @@
+<map id="contactor.h" name="contactor.h">
+<area shape="rect" id="node1" title="Headers for the driver for the contactors." alt="" coords="1927,5,2014,32"/>
+<area shape="rect" id="node2" href="$bms_8h.html" title="bms driver header" alt="" coords="1113,80,1172,107"/>
+<area shape="rect" id="node20" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="1892,162,1947,189"/>
+<area shape="rect" id="node21" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="1972,162,2057,189"/>
+<area shape="rect" id="node23" href="$contactor_8c.html" title="Driver for the contactors." alt="" coords="2008,80,2095,107"/>
+<area shape="rect" id="node24" href="$test__contactor_8c.html" title="Test of the contactor.c module." alt="" coords="2119,80,2235,107"/>
+<area shape="rect" id="node3" href="$soc__counting_8c.html" title="SOC module responsible for calculation of SOC." alt="" coords="1087,162,1198,189"/>
+<area shape="rect" id="node4" href="$soe__counting_8c.html" title="SOE module responsible for calculation of SOE." alt="" coords="1222,162,1332,189"/>
+<area shape="rect" id="node5" href="$sof__trapezoid_8c.html" title="SOX module responsible for current derating calculation." alt="" coords="1356,162,1467,189"/>
+<area shape="rect" id="node6" href="$bal__strategy__history_8c.html" title="Driver for the Balancing module." alt="" coords="1491,162,1642,189"/>
+<area shape="rect" id="node7" href="$bal__strategy__voltage_8c.html" title="Driver for the Balancing module." alt="" coords="1666,162,1816,189"/>
+<area shape="rect" id="node8" href="$bms_8c.html" title="bms driver implementation" alt="" coords="1093,319,1152,345"/>
+<area shape="rect" id="node9" href="$soa__cfg_8h.html" title="Configuration header for SOA." alt="" coords="48,162,127,189"/>
+<area shape="rect" id="node12" href="$soa_8c.html" title="SOA module responsible for checking battery parameters against safety limits." alt="" coords="72,319,127,345"/>
+<area shape="rect" id="node15" href="$redundancy_8c.html" title="Source file for handling redundancy between redundant cell voltage and cell temperature measurements." alt="" coords="151,162,251,189"/>
+<area shape="rect" id="node16" href="$can__cbs__tx__minimum-maximum-values_8c.html" title="CAN driver Tx callback implementation." alt="" coords="276,155,425,196"/>
+<area shape="rect" id="node17" href="$can__cbs__tx__pack-state-estimation_8c.html" title="CAN driver Tx callback implementation." alt="" coords="449,155,606,196"/>
+<area shape="rect" id="node18" href="$can__cbs__tx__state_8c.html" title="CAN driver Tx callback implementation." alt="" coords="630,162,766,189"/>
+<area shape="rect" id="node19" href="$can__cbs__tx__string-state-estimation_8c.html" title="CAN driver Tx callback implementation." alt="" coords="791,155,952,196"/>
+<area shape="rect" id="node22" href="$test__bms_8c.html" title="Tests for the bms driver implementation." alt="" coords="976,162,1063,189"/>
+<area shape="rect" id="node10" href="$soa__cfg_8c.html" title="Configuration for safe&#45;operating area check." alt="" coords="166,244,244,271"/>
+<area shape="rect" id="node11" href="$soa_8h.html" title="Header for SOA module, responsible for checking battery parameters against safety limits." alt="" coords="268,244,323,271"/>
+<area shape="rect" id="node14" href="$test__soa__cfg_8c.html" title="Test for the configuration for SOX." alt="" coords="34,244,141,271"/>
+<area shape="rect" id="node13" href="$test__soa_8c.html" title="Tests for SOX module responsible for calculation of current derating and of SOC." alt="" coords="254,319,337,345"/>
+</map>

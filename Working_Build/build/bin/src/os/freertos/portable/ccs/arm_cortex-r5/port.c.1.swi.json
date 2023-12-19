@@ -1,0 +1,4 @@
+{
+    "file:": "src\\os\\freertos\\portable\\ccs\\arm_cortex-r5\\port.c",
+    "functions": []
+}

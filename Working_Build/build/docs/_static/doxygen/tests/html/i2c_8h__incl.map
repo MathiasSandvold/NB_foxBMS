@@ -1,0 +1,6 @@
+<map id="i2c.h" name="i2c.h">
+<area shape="rect" id="node1" title="Header for the driver for the I2C module." alt="" coords="125,5,175,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,79,107"/>
+<area shape="rect" id="node3" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="103,80,197,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="159,155,224,181"/>
+</map>

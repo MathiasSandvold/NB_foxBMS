@@ -1,0 +1,4 @@
+<map id="ADC_Control" name="ADC_Control">
+<area shape="rect" id="node1" title="controls ADC measurement sequence." alt="" coords="5,5,103,32"/>
+<area shape="rect" id="node2" href="$adc_8c.html#ae4524c8cf5e18c6ba4d97b8a4cbc1ac4" title="converts reading from ADC to a voltage in mV." alt="" coords="151,5,293,32"/>
+</map>

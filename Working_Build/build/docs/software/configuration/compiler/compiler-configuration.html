@@ -1,0 +1,355 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Compiler Configuration &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>Compiler Configuration</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/software/configuration/compiler/compiler-configuration.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="compiler-configuration">
+<span id="id1"></span><h1>Compiler Configuration<a class="headerlink" href="#compiler-configuration" title="Permalink to this headline"></a></h1>
+<p>The following subsections describe the projects compiler options that
+are available in <code class="docutils literal notranslate"><span class="pre">conf/cc/cc-options.yaml</span></code>.</p>
+<div class="section" id="include-paths">
+<h2><code class="docutils literal notranslate"><span class="pre">INCLUDE_PATHS</span></code><a class="headerlink" href="#include-paths" title="Permalink to this headline"></a></h2>
+<p>Additional <code class="docutils literal notranslate"><span class="pre">INCLUDE_PATHS</span></code> that are not standard compiler includes.
+Standard compiler includes are derived in the configure step of the compiler.</p>
+</div>
+<div class="section" id="library-paths">
+<h2><code class="docutils literal notranslate"><span class="pre">LIBRARY_PATHS</span></code><a class="headerlink" href="#library-paths" title="Permalink to this headline"></a></h2>
+<p>Additional <code class="docutils literal notranslate"><span class="pre">LIBRARY_PATHS</span></code> that are not standard compiler library search
+paths. Standard compiler library search paths are derived in the configure
+step of the compiler.</p>
+</div>
+<div class="section" id="libraries">
+<h2><code class="docutils literal notranslate"><span class="pre">LIBRARIES</span></code><a class="headerlink" href="#libraries" title="Permalink to this headline"></a></h2>
+<p>Libraries that are used when linking.</p>
+</div>
+<div class="section" id="cflags">
+<span id="configuration-cflags"></span><h2><code class="docutils literal notranslate"><span class="pre">CFLAGS</span></code><a class="headerlink" href="#cflags" title="Permalink to this headline"></a></h2>
+<p><code class="docutils literal notranslate"><span class="pre">CFLAGS</span></code> are configured differently or the BMS application, the Operating
+System and the Hardware Abstraction Layer.</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">common</span></code>: options are applied to all sources (BMS, OS, HAL).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">common_compile_only</span></code>: options are applied to all sources (BMS, OS, HAL),
+but only for the compile step, not for the preprocessor build steps.
+The build tool automatically adds that the options
+<code class="docutils literal notranslate"><span class="pre">--gen_cross_reference_listing</span></code>,  <code class="docutils literal notranslate"><span class="pre">--gen_func_info_listing</span></code>,
+<code class="docutils literal notranslate"><span class="pre">--gen_preprocessor_listing</span></code>. These options control the generation of
+the <code class="docutils literal notranslate"><span class="pre">*.aux</span></code>, <code class="docutils literal notranslate"><span class="pre">*.crl</span></code> and <code class="docutils literal notranslate"><span class="pre">*.rl</span></code> files.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">foxbms</span></code>: <code class="docutils literal notranslate"><span class="pre">CFLAGS</span></code> that should only be applied to the BMS application
+sources (<code class="docutils literal notranslate"><span class="pre">src/app/*</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hal</span></code>: <code class="docutils literal notranslate"><span class="pre">CFLAGS</span></code> that should only be applied to the generated hardware
+abstraction layer sources (<code class="docutils literal notranslate"><span class="pre">src/hal/*</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">operating_system</span></code>: <code class="docutils literal notranslate"><span class="pre">CFLAGS</span></code> that should only be applied to the
+operating system sources (<code class="docutils literal notranslate"><span class="pre">src/os/*</span></code>).</p></li>
+</ul>
+</div>
+<div class="section" id="linkflags">
+<h2><code class="docutils literal notranslate"><span class="pre">LINKFLAGS</span></code><a class="headerlink" href="#linkflags" title="Permalink to this headline"></a></h2>
+<p>Flags that are passed to the compiler when linking (Note: The compiler is
+used as linker when run with the argument
+<code class="docutils literal notranslate"><span class="pre">--run_linker</span></code>). Flags here do typically not needed to be changed except
+for <code class="docutils literal notranslate"><span class="pre">--heap_size=0x800</span></code>,
+<code class="docutils literal notranslate"><span class="pre">--stack_size=0x800</span></code> or the optimization flag <code class="docutils literal notranslate"><span class="pre">-oN</span></code> where <code class="docutils literal notranslate"><span class="pre">N</span></code> is the
+level of optimization.</p>
+</div>
+<div class="section" id="hexgenflags">
+<h2><code class="docutils literal notranslate"><span class="pre">HEXGENFLAGS</span></code><a class="headerlink" href="#hexgenflags" title="Permalink to this headline"></a></h2>
+<p>Flags passed to hex file generation tool <code class="docutils literal notranslate"><span class="pre">armhex</span></code> (Note: hex files are only
+generated when passing a node by keyword <code class="docutils literal notranslate"><span class="pre">linker_script_hex</span></code> in
+<code class="docutils literal notranslate"><span class="pre">bld.tiprogram(...,</span> <span class="pre">linker_script_hex=some_node,</span> <span class="pre">...)</span></code>).</p>
+</div>
+<div class="section" id="nmflags">
+<h2><code class="docutils literal notranslate"><span class="pre">NMFLAGS</span></code><a class="headerlink" href="#nmflags" title="Permalink to this headline"></a></h2>
+<p>Flags passed to the <code class="docutils literal notranslate"><span class="pre">armnm</span></code> tool.
+The <code class="docutils literal notranslate"><span class="pre">armnm</span></code> tool lists the symbols contained in an object files.
+Flags here do typically not needed to be changed.</p>
+</div>
+<div class="section" id="remarks">
+<h2>Remarks<a class="headerlink" href="#remarks" title="Permalink to this headline"></a></h2>
+<p>Compiler remarks help to find potential problems at an early stage of
+development.
+The file <code class="docutils literal notranslate"><span class="pre">conf/cc/remarks.txt</span></code> allows to list remarks and how they should be
+handled.
+Global remarks are set in <code class="docutils literal notranslate"><span class="pre">conf/cc/remarks.txt</span></code>.
+Remarks are re-loaded before compiling.
+Remarks can be added to a single build step as shown in
+<a class="reference internal" href="#cmd-file-for-single-build-step"><span class="std std-ref">Adding command-file that includes remarks to a single build step</span></a></p>
+<div class="literal-block-wrapper docutils container" id="cmd-file-for-single-build-step">
+<div class="code-block-caption"><span class="caption-text">Adding command-file that includes remarks to a single build step</span><a class="headerlink" href="#cmd-file-for-single-build-step" title="Permalink to this code"></a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="n">bld</span><span class="p">):</span>
+<span class="linenos">2</span>    <span class="n">bld</span><span class="o">.</span><span class="n">stlib</span><span class="p">(</span>
+<span class="linenos">3</span>        <span class="n">source</span><span class="o">=</span><span class="n">source</span><span class="p">,</span>
+<span class="linenos">4</span>        <span class="n">includes</span><span class="o">=</span><span class="n">includes</span><span class="p">,</span>
+<span class="linenos">5</span>        <span class="n">cflags</span><span class="o">=</span><span class="n">cflags</span><span class="p">,</span>
+<span class="linenos">6</span>        <span class="n">target</span><span class="o">=</span><span class="n">target</span><span class="p">,</span>
+<span class="linenos">7</span>        <span class="n">cmd_files</span><span class="o">=</span>
+<span class="linenos">8</span>        <span class="p">[</span><span class="n">bld</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">find_node</span><span class="p">(</span><span class="s2">&quot;path/to/some/remark/file.txt&quot;</span><span class="p">)</span><span class="o">.</span><span class="n">abspath</span><span class="p">()],</span>
+<span class="linenos">9</span>    <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If remarks should be disabled, the option <code class="docutils literal notranslate"><span class="pre">--issue_remarks</span></code> needs to be
+removed in <code class="docutils literal notranslate"><span class="pre">conf/cc/cc-options.yaml</span></code>.
+Furthermore all command files that specify remarks need to be checked and
+all diagnosis related commands need to be removed or the severity level
+needs to be set to <code class="docutils literal notranslate"><span class="pre">--diag_remark=...</span></code> to avoid compile errors.</p>
+<p>The default remark settings are relatively strict to avoid common mistakes.
+<strong>Changing them is generally not recommended</strong>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is possible to add all kinds of compiler flags in command files, this is
+not only related to remarks.</p>
+</div>
+</div>
+<div class="section" id="linker-output-processing">
+<h2>Linker Output Processing<a class="headerlink" href="#linker-output-processing" title="Permalink to this headline"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Linker output validation only works if <code class="docutils literal notranslate"><span class="pre">--scan_libraries</span></code> is specified.</p>
+</div>
+<p>The linker output is processed in order to validate that the correct symbols
+are linked into the binary.</p>
+<p>If a symbol is defined in multiple places the linker decided which symbol to
+use.
+This is described in <em>TI ARM assembly tools manual</em> in section
+<em>Exhaustively Read and Search Libraries</em>.</p>
+<p>Consider the following linker output in <a class="reference internal" href="#output-of-linking"><span class="std std-ref">Linker output</span></a>.</p>
+<div class="literal-block-wrapper docutils container" id="output-of-linking">
+<div class="code-block-caption"><span class="caption-text">Linker output</span><a class="headerlink" href="#output-of-linking" title="Permalink to this code"></a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="go">   Linking build\bin\src\app\main\foxbms.elf</span>
+<span class="linenos">2</span><span class="go">   remark #10252-D: Symbol &quot;_c_int00&quot; (pulled from &quot;src\app\main\fstartup.c.1.obj&quot;) defined in 3 places:</span>
+<span class="linenos">3</span><span class="go">      src\app\main\fstartup.c.1.obj</span>
+<span class="linenos">4</span><span class="go">      src\hal\libfoxbms-hal.a&lt;HL_sys_startup.c.1.obj&gt;</span>
+<span class="linenos">5</span><span class="go">      C:\ti\ccs1030\ccs\tools\compiler\ti-cgt-arm_20.2.0.LTS\lib\rtsv7R4_A_be_v3D16_eabi.lib&lt;boot_non_cortex_m.asm.obj&gt;</span>
+</pre></div>
+</div>
+</div>
+<p>If the symbol <code class="docutils literal notranslate"><span class="pre">_c_int00</span></code> should be pulled from
+<code class="docutils literal notranslate"><span class="pre">src/app/main/fstartup.c.1.obj</span></code>, the linking step should be treated as
+successful.
+If the symbol is pulled from somewhere else an error must be
+generated.
+To tell this to the linker output parser a <code class="docutils literal notranslate"><span class="pre">json</span></code> file that indicates which
+symbol should be pulled from where needs to be defined (see
+<a class="reference internal" href="#pulls-config-file"><span class="std std-ref">Linker pulls file linker_pulls.json</span></a>).
+In this file use Unix-separator and specify the linked source as seen from the
+build directory.</p>
+<div class="literal-block-wrapper docutils container" id="pulls-config-file">
+<div class="code-block-caption"><span class="caption-text">Linker pulls file <code class="docutils literal notranslate"><span class="pre">linker_pulls.json</span></code></span><a class="headerlink" href="#pulls-config-file" title="Permalink to this code"></a></div>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="linenos">1</span><span class="p">{</span>
+<span class="linenos">2</span>    <span class="nt">&quot;_c_int00&quot;</span><span class="p">:</span> <span class="s2">&quot;src/app/main/fstartup.c.1.obj&quot;</span>
+<span class="linenos">3</span><span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<p>This file needs to be specified when a program is built (see
+<a class="reference internal" href="#linker-pulls-build-example"><span class="std std-ref">Checking the linker output to use the correct symbols</span></a>).
+If the symbol <code class="docutils literal notranslate"><span class="pre">_c_int00</span></code> would not be pulled from
+<code class="docutils literal notranslate"><span class="pre">src/app/main/fstartup.c.1.obj</span></code> an error would be generated.</p>
+<div class="literal-block-wrapper docutils container" id="linker-pulls-build-example">
+<div class="code-block-caption"><span class="caption-text">Checking the linker output to use the correct symbols</span><a class="headerlink" href="#linker-pulls-build-example" title="Permalink to this code"></a></div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="linenos"> 1</span>
+<span class="linenos"> 2</span><span class="k">def</span> <span class="nf">build</span><span class="p">(</span><span class="n">bld</span><span class="p">):</span>
+<span class="linenos"> 3</span>    <span class="sd">&quot;&quot;&quot;Build the binary&quot;&quot;&quot;</span>
+<span class="linenos"> 4</span>    <span class="n">source</span> <span class="o">=</span> <span class="p">[</span>
+<span class="linenos"> 5</span>        <span class="c1"># list sources here</span>
+<span class="linenos"> 6</span>    <span class="p">]</span>
+<span class="linenos"> 7</span>    <span class="n">includes</span> <span class="o">=</span> <span class="p">[</span>
+<span class="linenos"> 8</span>        <span class="c1"># list include directories here</span>
+<span class="linenos"> 9</span>    <span class="p">]</span>
+<span class="linenos">10</span>    <span class="n">linker_script</span> <span class="o">=</span> <span class="n">bld</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">find_node</span><span class="p">(</span><span class="s2">&quot;linker_script.cmd&quot;</span><span class="p">)</span>
+<span class="linenos">11</span>    <span class="n">linker_pulls</span> <span class="o">=</span> <span class="n">bld</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">find_node</span><span class="p">(</span><span class="s2">&quot;linker_pulls.json&quot;</span><span class="p">)</span>
+<span class="linenos">12</span>    <span class="n">bld</span><span class="o">.</span><span class="n">tiprogram</span><span class="p">(</span>
+<span class="linenos">13</span>        <span class="n">source</span><span class="o">=</span><span class="n">source</span><span class="p">,</span>
+<span class="hll"><span class="linenos">14</span>        <span class="n">linker_script</span><span class="o">=</span><span class="n">linker_script</span><span class="p">,</span>
+</span><span class="linenos">15</span>        <span class="n">linker_pulls</span><span class="o">=</span><span class="n">linker_pulls</span><span class="p">,</span>
+<span class="linenos">16</span>        <span class="n">includes</span><span class="o">=</span><span class="n">includes</span><span class="p">,</span>
+<span class="linenos">17</span>        <span class="n">target</span><span class="o">=</span><span class="s2">&quot;my-app&quot;</span><span class="p">,</span>
+<span class="linenos">18</span>    <span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<p>For implementation details see <a class="reference internal" href="../../../tools/waf-tools/compiler-tool/f_ti_arm_cgt.html#f_ti_arm_cgt.cprogram.parse_output" title="f_ti_arm_cgt.cprogram.parse_output"><code class="xref py py-meth docutils literal notranslate"><span class="pre">f_ti_arm_cgt.cprogram.parse_output()</span></code></a>.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

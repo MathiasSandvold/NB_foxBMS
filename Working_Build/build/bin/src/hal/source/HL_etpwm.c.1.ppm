@@ -1,0 +1,1623 @@
+#define __unsigned_chars__ 1	/* Predefined */
+#define __PRAGMA_REDEFINE_EXTNAME 1	/* Predefined */
+#define __DATE__ "Mar  6 2023"	/* Predefined */
+#define __TIME__ "12:52:48"	/* Predefined */
+#define __STDC__ 1	/* Predefined */
+#define __STDC_VERSION__ 201112L	/* Predefined */
+#define __STDC_UTF_16__ 1	/* Predefined */
+#define __STDC_UTF_32__ 1	/* Predefined */
+#define __STDC_HOSTED__ 1	/* Predefined */
+#define __TI_C99_COMPLEX_ENABLED__ 1	/* Predefined */
+#define __STDC_NO_THREADS__ 1	/* Predefined */
+#define __edg_front_end__ 1	/* Predefined */
+#define __EDG_VERSION__ 413	/* Predefined */
+#define __EDG_SIZE_TYPE__ unsigned int	/* Predefined */
+#define __EDG_PTRDIFF_TYPE__ int	/* Predefined */
+#define __VERSION__ "EDG gcc 4.8 mode"	/* Predefined */
+#define __CHAR16_TYPE__ unsigned short	/* Predefined */
+#define __CHAR32_TYPE__ unsigned int	/* Predefined */
+#define __TI_COMPILER_VERSION__ 20002004	/* Predefined */
+#define __COMPILER_VERSION__ 20002004	/* Predefined */
+#define __TI_COMPILER_VERSION_QUAL_ID__ 20344	/* Predefined */
+#define __TI_COMPILER_VERSION_QUAL__ QUAL_LETTER	/* Predefined */
+#define __TMS470__ 1	/* Predefined */
+#define __TI_ARM__ 1	/* Predefined */
+#define __ARM_BIG_ENDIAN 1	/* Predefined */
+#define __32bis__ 1	/* Predefined */
+#define __eabi__ 1	/* Predefined */
+#define __TI_EABI_SUPPORT__ 1	/* Predefined */
+#define __TI_VFPV3D16_SUPPORT__ 1	/* Predefined */
+#define __ARM_FP 12	/* Predefined */
+#define __TI_VFP_SUPPORT__ 1	/* Predefined */
+#define __ARM_FP16_ARGS 1	/* Predefined */
+#define __ARM_FP16_FORMAT_IEEE 1	/* Predefined */
+#define __ARM_PCS_VFP 1	/* Predefined */
+#define __TI_TMS470_V7__ 1	/* Predefined */
+#define __TI_ARM_V7__ 1	/* Predefined */
+#define __ARM_32BIT_STATE 1	/* Predefined */
+#define __ARM_ARCH 7	/* Predefined */
+#define __ARM_ARCH_ISA_THUMB 2	/* Predefined */
+#define __ARM_FEATURE_CLZ 1	/* Predefined */
+#define __ARM_FEATURE_SAT 1	/* Predefined */
+#define __ARM_FEATURE_UNALIGNED 1	/* Predefined */
+#define __ARM_FEATURE_LDREX 15	/* Predefined */
+#define __TI_TMS470_V7R4__ 1	/* Predefined */
+#define __TI_ARM_V7R4__ 1	/* Predefined */
+#define __TI_TMS470_V7R5__ 1	/* Predefined */
+#define __TI_ARM_V7R5__ 1	/* Predefined */
+#define __ARM_ARCH_PROFILE 82	/* Predefined */
+#define __ARM_ACLE 200	/* Predefined */
+#define __ARM_PCS 1	/* Predefined */
+#define __ARM_ARCH_ISA_ARM 1	/* Predefined */
+#define __ARM_FEATURE_DSP 1	/* Predefined */
+#define __ARM_FEATURE_SIMD32 1	/* Predefined */
+#define __SIZE_T_TYPE__ unsigned	/* Predefined */
+#define __PTRDIFF_T_TYPE__ int	/* Predefined */
+#define __ARM_SIZEOF_MINIMAL_ENUM 1	/* Predefined */
+#define __WCHAR_T_TYPE__ unsigned short	/* Predefined */
+#define __ARM_SIZEOF_WCHAR_T 2	/* Predefined */
+#define __TI_EABI__ 1	/* Predefined */
+#define __ELF__ 1	/* Predefined */
+#define __big_endian__ 1	/* Predefined */
+#define __BIG_ENDIAN__ 1	/* Predefined */
+#define __TI_STRICT_ANSI_MODE__ 0	/* Predefined */
+#define __TI_WCHAR_T_BITS__ 16	/* Predefined */
+#define __TI_GNU_ATTRIBUTE_SUPPORT__ 1	/* Predefined */
+#define __TI_STRICT_FP_MODE__ 1	/* Predefined */
+#define __CHAR_BIT__ 8	/* Predefined */
+#define __SCHAR_MAX__ 127	/* Predefined */
+#define __SHRT_MAX__ 32767	/* Predefined */
+#define __INT_MAX__ 2147483647	/* Predefined */
+#define __LONG_MAX__ 2147483647	/* Predefined */
+#define __LONG_LONG_MAX__ 9223372036854775807	/* Predefined */
+#define __SIZEOF_INT__ 4	/* Predefined */
+#define __SIZEOF_SHORT__ 2	/* Predefined */
+#define __SIZEOF_LONG__ 4	/* Predefined */
+#define __SIZEOF_LONG_LONG__ 8	/* Predefined */
+#define __SIZEOF_WCHAR_T__ 2	/* Predefined */
+#define __SIZEOF_FLOAT__ 4	/* Predefined */
+#define __SIZEOF_DOUBLE__ 8	/* Predefined */
+#define __SIZEOF_LONG_DOUBLE__ 8	/* Predefined */
+#define __SIZEOF_SIZE_T__ 4	/* Predefined */
+#define __SIZEOF_WINT_T__ 2	/* Predefined */
+#define __SIZEOF_PTRDIFF_T__ 4	/* Predefined */
+#define _OPTIMIZE_FOR_SPACE 1
+#define FOXBMS_AFE_DRIVER_TYPE_FSM 1
+#define FOXBMS_AFE_DRIVER_TYPE_NO_FSM 0
+#define FOXBMS_USES_FREERTOS 1
+#define _INLINE 1
+#define __ETPWM_H__ 	/* src\hal\include\HL_etpwm.h */
+#define __REG_ETPWM_H__ 	/* src\hal\include\HL_reg_etpwm.h */
+#define __SYS_COMMON_H__ 	/* src\hal\include\HL_sys_common.h */
+#define __HAL_STDTYPES_H__ 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _STDINT_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdint.h */
+#define __TI_CONFIG_H 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_PROPRIETARY_PRAGMA(arg) _Pragma(arg)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define __TI_PROPRIETARY_STRICT_ANSI_MACRO __TI_STRICT_ANSI_MODE__	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define __TI_PROPRIETARY_STRICT_FP_MACRO __TI_STRICT_FP_MODE__	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define __TI_PROPRIETARY_UNSIGNED_CHARS__ __unsigned_chars__	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_NORETURN _Noreturn	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_NOEXCEPT 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_C99LIB 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_C11LIB 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_NOEXCEPT_CPP14 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _LINKAGE 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _CODE_ACCESS 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _DATA_ACCESS 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _DATA_ACCESS_NEAR 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _IDECL static __inline	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _IDEFN static __inline	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define __STDINT40_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_stdint40.h */
+#define _SYS_STDINT_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define _SYS_CDEFS_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __BEGIN_DECLS 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __END_DECLS 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GNUCLIKE___TYPEOF 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GNUCLIKE___OFFSETOF 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GNUCLIKE___SECTION 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS_INLINE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS___INLINE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS___INLINE__ 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS___FUNC__ 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS_WARNING 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS_VARADIC_XXX 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS_DYNAMIC_ARRAY_INIT 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GNUC_PREREQ__(ma,mi) 0	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __P(protos) protos	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CONCAT1(x,y) x ## y	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CONCAT(x,y) __CONCAT1(x,y)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __STRING(x) #x	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __XSTRING(x) __STRING(x)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __const const	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __signed signed	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __volatile volatile	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __weak_symbol __attribute__((__weak__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __dead2 __attribute__((__noreturn__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __pure2 __attribute__((__const__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __unused __attribute__((__unused__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __used __attribute__((__used__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __packed __attribute__((__packed__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __aligned(x) __attribute__((__aligned__(x)))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __section(x) __attribute__((__section__(x)))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __alloc_size(x) __attribute__((__alloc_size__(x)))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __alloc_align(x) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __alignof(x) __alignof__(x)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __generic(expr,t,yes,no) _Generic(expr, t: yes, default: no)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __min_size(x) (x)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __malloc_like 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __pure 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __always_inline __attribute__((__always_inline__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __noinline __attribute__ ((__noinline__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __fastcall 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __result_use_check 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __returns_twice 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __unreachable() ((void)0)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __LONG_LONG_SUPPORTED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __predict_true(exp) (exp)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __predict_false(exp) (exp)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __null_sentinel 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __exported 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __hidden 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __offsetof(type,field) ((__size_t)(__uintptr_t)((const volatile void *)&((type *)0)->field))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __rangeof(type,start,end) (__offsetof(type, end) - __offsetof(type, start))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __containerof(x,s,m) __DEQUALIFY(s *, (const volatile char *)(x) - __offsetof(s, m))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __printflike(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __scanflike(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __format_arg(fmtarg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __strfmonlike(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __strftimelike(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __printf0like(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GLOBL1(sym) __asm__(".globl " #sym)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GLOBL(sym) __GLOBL1(sym)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __IDSTRING(name,string) static const char name[] __unused = string	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __extension__ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __FBSDID(s) __IDSTRING(__CONCAT(__rcsid_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __RCSID(s) __IDSTRING(__CONCAT(__rcsid_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __RCSID_SOURCE(s) __IDSTRING(__CONCAT(__rcsid_source_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __SCCSID(s) __IDSTRING(__CONCAT(__sccsid_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __COPYRIGHT(s) __IDSTRING(__CONCAT(__copyright_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __DECONST(type,var) ((type)(__uintptr_t)(const void *)(var))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __DEVOLATILE(type,var) ((type)(__uintptr_t)(volatile void *)(var))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __DEQUALIFY(type,var) ((type)(__uintptr_t)(const volatile void *)(var))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __POSIX_VISIBLE 200809	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __XSI_VISIBLE 700	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __BSD_VISIBLE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __ISO_C_VISIBLE 2011	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __EXT1_VISIBLE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define _Nonnull 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define _Nullable 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define _Null_unspecified 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __NULLABILITY_PRAGMA_PUSH 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __NULLABILITY_PRAGMA_POP 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __arg_type_tag(arg_kind,arg_idx,type_tag_idx) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __datatype_type_tag(kind,type) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __lock_annotate(x) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __lockable __lock_annotate(lockable)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __locks_exclusive(__VA_ARGS__...) __lock_annotate(exclusive_lock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __locks_shared(__VA_ARGS__...) __lock_annotate(shared_lock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __trylocks_exclusive(__VA_ARGS__...) __lock_annotate(exclusive_trylock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __trylocks_shared(__VA_ARGS__...) __lock_annotate(shared_trylock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __unlocks(__VA_ARGS__...) __lock_annotate(unlock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __asserts_exclusive(__VA_ARGS__...) __lock_annotate(assert_exclusive_lock(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __asserts_shared(__VA_ARGS__...) __lock_annotate(assert_shared_lock(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __requires_exclusive(__VA_ARGS__...) __lock_annotate(exclusive_locks_required(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __requires_shared(__VA_ARGS__...) __lock_annotate(shared_locks_required(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __requires_unlocked(__VA_ARGS__...) __lock_annotate(locks_excluded(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __no_lock_analysis __lock_annotate(no_thread_safety_analysis)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __guarded_by(x) __lock_annotate(guarded_by(x))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __pt_guarded_by(x) __lock_annotate(pt_guarded_by(x))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define _SYS__TYPES_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_types.h */
+#define _MACHINE__TYPES_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_types.h */
+#define __WCHAR_MIN 0	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_types.h */
+#define __WCHAR_MAX 0xffffu	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_types.h */
+#define __INO64 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_types.h */
+#define _MACHINE__STDINT_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT8_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT16_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT32_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT64_C(c) (c ## LL)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT8_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT16_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT32_C(c) (c ## U)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT64_C(c) (c ## ULL)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTMAX_C(c) INT64_C(c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINTMAX_C(c) UINT64_C(c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT8_MIN (-0x7f-1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT16_MIN (-0x7fff-1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT32_MIN (-0x7fffffff-1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT64_MIN (-0x7fffffffffffffffLL-1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT8_MAX 0x7f	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT16_MAX 0x7fff	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT32_MAX 0x7fffffff	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT64_MAX 0x7fffffffffffffffLL	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT8_MAX 0xff	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT16_MAX 0xffff	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT32_MAX 0xffffffffU	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT64_MAX 0xffffffffffffffffULL	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST8_MIN INT8_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST16_MIN INT16_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST32_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST64_MIN INT64_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST8_MAX INT8_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST16_MAX INT16_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST32_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST64_MAX INT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_LEAST8_MAX UINT8_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_LEAST16_MAX UINT16_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_LEAST32_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_LEAST64_MAX UINT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST8_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST16_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST32_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST64_MIN INT64_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST8_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST16_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST32_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST64_MAX INT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_FAST8_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_FAST16_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_FAST32_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_FAST64_MAX UINT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTPTR_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTPTR_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINTPTR_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTMAX_MIN INT64_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTMAX_MAX INT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINTMAX_MAX UINT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define PTRDIFF_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define PTRDIFF_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define SIG_ATOMIC_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define SIG_ATOMIC_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define SIZE_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define WINT_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define WINT_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define _SYS__STDINT_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INT8_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INT16_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INT32_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INT64_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINT8_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINT16_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINT32_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINT64_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INTPTR_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINTPTR_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INTMAX_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINTMAX_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define __WORDSIZE 32	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define WCHAR_MIN __WCHAR_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define WCHAR_MAX __WCHAR_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define RSIZE_MAX (SIZE_MAX >> 1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define __bool_true_false_are_defined 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdbool.h */
+#define false 0	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdbool.h */
+#define true 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdbool.h */
+#define bool _Bool	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdbool.h */
+#define _UINT64_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _UINT32_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _UINT16_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _UINT8_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _BOOLEAN_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _SINT64_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _SINT32_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _SINT16_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _SINT8_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _FLOAT32_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _FLOAT64_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define STATUSTYPEDEFINED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define E_OK 0x00U	/* src\hal\include\HL_hal_stdtypes.h */
+#define E_NOT_OK 0x01U	/* src\hal\include\HL_hal_stdtypes.h */
+#define STD_ON 0x01U	/* src\hal\include\HL_hal_stdtypes.h */
+#define STD_OFF 0x00U	/* src\hal\include\HL_hal_stdtypes.h */
+#define NULL ((void *) 0U)	/* src\hal\include\HL_hal_stdtypes.h */
+#define TRUE true	/* src\hal\include\HL_hal_stdtypes.h */
+#define FALSE false	/* src\hal\include\HL_hal_stdtypes.h */
+#define NULL_PTR ((void *)0x0U)	/* src\hal\include\HL_hal_stdtypes.h */
+#define _TBOOLEAN_DECLARED 	/* src\hal\include\HL_sys_common.h */
+#define __little_endian__ 0	/* src\hal\include\HL_sys_common.h */
+#define __LITTLE_ENDIAN__ 0	/* src\hal\include\HL_sys_common.h */
+#define ASSERT(expr) 	/* src\hal\include\HL_sys_common.h */
+#define etpwmREG1 ((etpwmBASE_t *)0xFCF78C00U)	/* src\hal\include\HL_reg_etpwm.h */
+#define etpwmREG2 ((etpwmBASE_t *)0xFCF78D00U)	/* src\hal\include\HL_reg_etpwm.h */
+#define etpwmREG3 ((etpwmBASE_t *)0xFCF78E00U)	/* src\hal\include\HL_reg_etpwm.h */
+#define etpwmREG4 ((etpwmBASE_t *)0xFCF78F00U)	/* src\hal\include\HL_reg_etpwm.h */
+#define etpwmREG5 ((etpwmBASE_t *)0xFCF79000U)	/* src\hal\include\HL_reg_etpwm.h */
+#define etpwmREG6 ((etpwmBASE_t *)0xFCF79100U)	/* src\hal\include\HL_reg_etpwm.h */
+#define etpwmREG7 ((etpwmBASE_t *)0xFCF79200U)	/* src\hal\include\HL_reg_etpwm.h */
+#define COUNT_UP (1U << 13U)	/* src\hal\include\HL_etpwm.h */
+#define COUNT_DOWN 0U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_TBCTL_CONFIGVALUE ((uint16)((uint16)0U << 7U) | (uint16)((uint16)0U << 10U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_TBPHS_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_TBPRD_CONFIGVALUE 4999U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_CMPCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_CMPA_CONFIGVALUE 2500U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_CMPB_CONFIGVALUE 2500U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_AQCTLA_CONFIGVALUE ((uint16)((uint16)ActionQual_Set << 0U) | (uint16)((uint16)ActionQual_Clear << 4U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_AQCTLB_CONFIGVALUE ((uint16)((uint16)ActionQual_Set << 0U) | (uint16)((uint16)ActionQual_Clear << 8U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_DBCTL_CONFIGVALUE ((uint16)((uint16)0U << 5U) | (uint16)((uint16)0u << 4U) | (uint16)((uint16)0U << 3U) | (uint16)((uint16)0U << 2U) | (uint16)((uint16)0U << 1U) | (uint16)((uint16)0U << 0U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_DBRED_CONFIGVALUE 0U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_DBFED_CONFIGVALUE 0U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_TZSEL_CONFIGVALUE (0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U)	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_TZDCSEL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_TZCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_TZEINT_CONFIGVALUE (0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U| 0x0000U)	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_ETSEL_CONFIGVALUE ((((uint16)NO_EVENT == 0U)? 0x0000U : 0x0008U) | (uint16)NO_EVENT | (uint16)0x0000U | (uint16)0x0000U | (uint16)((uint16)DCAEVT1 << 8U) | (uint16)((uint16)DCBEVT1 << 12U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_ETPS_CONFIGVALUE (1U | (uint16)((uint16)1U << 8U) | (uint16)((uint16)1U << 12U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_PCCTL_CONFIGVALUE ((uint16)((uint16)0U << 0U) | (uint16)((uint16)0U << 1U) | (uint16)((uint16)3U << 8U) | (uint16)((uint16)0U << 5U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_DCTRIPSEL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_DCACTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_DCBCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_DCFCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_DCCAPCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_DCFWINDOW_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM1_DCFWINDOWCNT_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_TBCTL_CONFIGVALUE ((uint16)((uint16)0U << 7U) | (uint16)((uint16)0U << 10U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_TBPHS_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_TBPRD_CONFIGVALUE 1000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_CMPCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_CMPA_CONFIGVALUE 50U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_CMPB_CONFIGVALUE 50U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_AQCTLA_CONFIGVALUE ((uint16)((uint16)ActionQual_Set << 0U) | (uint16)((uint16)ActionQual_Clear << 4U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_AQCTLB_CONFIGVALUE ((uint16)((uint16)ActionQual_Set << 0U) | (uint16)((uint16)ActionQual_Clear << 8U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_DBCTL_CONFIGVALUE ((uint16)((uint16)0U << 5U) | (uint16)((uint16)0u << 4U) | (uint16)((uint16)0U << 3U) | (uint16)((uint16)0U << 2U) | (uint16)((uint16)0U << 1U) | (uint16)((uint16)0U << 0U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_DBRED_CONFIGVALUE 1U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_DBFED_CONFIGVALUE 1U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_TZSEL_CONFIGVALUE (0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U)	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_TZDCSEL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_TZCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_TZEINT_CONFIGVALUE (0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U| 0x0000U)	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_ETSEL_CONFIGVALUE ((((uint16)NO_EVENT == 0U)? 0x0000U : 0x0008U) | (uint16)NO_EVENT | (uint16)0x0000U | (uint16)0x0000U | (uint16)((uint16)DCAEVT1 << 8U) | (uint16)((uint16)DCBEVT1 << 12U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_ETPS_CONFIGVALUE (1U | (uint16)((uint16)1U << 8U) | (uint16)((uint16)1U << 12U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_PCCTL_CONFIGVALUE ((uint16)((uint16)0U << 0U) | (uint16)((uint16)1U << 1U) | (uint16)((uint16)3U << 8U) | (uint16)((uint16)0U << 5U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_DCTRIPSEL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_DCACTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_DCBCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_DCFCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_DCCAPCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_DCFWINDOW_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM2_DCFWINDOWCNT_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_TBCTL_CONFIGVALUE ((uint16)((uint16)0U << 7U) | (uint16)((uint16)0U << 10U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_TBPHS_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_TBPRD_CONFIGVALUE 1000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_CMPCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_CMPA_CONFIGVALUE 50U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_CMPB_CONFIGVALUE 50U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_AQCTLA_CONFIGVALUE ((uint16)((uint16)ActionQual_Set << 0U) | (uint16)((uint16)ActionQual_Clear << 4U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_AQCTLB_CONFIGVALUE ((uint16)((uint16)ActionQual_Set << 0U) | (uint16)((uint16)ActionQual_Clear << 8U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_DBCTL_CONFIGVALUE ((uint16)((uint16)0U << 5U) | (uint16)((uint16)0u << 4U) | (uint16)((uint16)0U << 3U) | (uint16)((uint16)0U << 2U) | (uint16)((uint16)0U << 1U) | (uint16)((uint16)0U << 0U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_DBRED_CONFIGVALUE 1U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_DBFED_CONFIGVALUE 1U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_TZSEL_CONFIGVALUE (0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U)	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_TZDCSEL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_TZCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_TZEINT_CONFIGVALUE (0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U| 0x0000U)	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_ETSEL_CONFIGVALUE ((((uint16)NO_EVENT == 0U)? 0x0000U : 0x0008U) | (uint16)NO_EVENT | (uint16)0x0000U | (uint16)0x0000U | (uint16)((uint16)DCAEVT1 << 8U) | (uint16)((uint16)DCBEVT1 << 12U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_ETPS_CONFIGVALUE (1U | (uint16)((uint16)1U << 8U) | (uint16)((uint16)1U << 12U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_PCCTL_CONFIGVALUE ((uint16)((uint16)0U << 0U) | (uint16)((uint16)1U << 1U) | (uint16)((uint16)3U << 8U) | (uint16)((uint16)0U << 5U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_DCTRIPSEL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_DCACTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_DCBCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_DCFCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_DCCAPCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_DCFWINDOW_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM3_DCFWINDOWCNT_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_TBCTL_CONFIGVALUE ((uint16)((uint16)0U << 7U) | (uint16)((uint16)0U << 10U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_TBPHS_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_TBPRD_CONFIGVALUE 1000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_CMPCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_CMPA_CONFIGVALUE 50U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_CMPB_CONFIGVALUE 50U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_AQCTLA_CONFIGVALUE ((uint16)((uint16)ActionQual_Set << 0U) | (uint16)((uint16)ActionQual_Clear << 4U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_AQCTLB_CONFIGVALUE ((uint16)((uint16)ActionQual_Set << 0U) | (uint16)((uint16)ActionQual_Clear << 8U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_DBCTL_CONFIGVALUE ((uint16)((uint16)0U << 5U) | (uint16)((uint16)0u << 4U) | (uint16)((uint16)0U << 3U) | (uint16)((uint16)0U << 2U) | (uint16)((uint16)0U << 1U) | (uint16)((uint16)0U << 0U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_DBRED_CONFIGVALUE 1U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_DBFED_CONFIGVALUE 1U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_TZSEL_CONFIGVALUE (0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U)	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_TZDCSEL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_TZCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_TZEINT_CONFIGVALUE (0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U| 0x0000U)	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_ETSEL_CONFIGVALUE ((((uint16)NO_EVENT == 0U)? 0x0000U : 0x0008U) | (uint16)NO_EVENT | (uint16)0x0000U | (uint16)0x0000U | (uint16)((uint16)DCAEVT1 << 8U) | (uint16)((uint16)DCBEVT1 << 12U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_ETPS_CONFIGVALUE (1U | (uint16)((uint16)1U << 8U) | (uint16)((uint16)1U << 12U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_PCCTL_CONFIGVALUE ((uint16)((uint16)0U << 0U) | (uint16)((uint16)1U << 1U) | (uint16)((uint16)3U << 8U) | (uint16)((uint16)0U << 5U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_DCTRIPSEL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_DCACTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_DCBCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_DCFCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_DCCAPCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_DCFWINDOW_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM4_DCFWINDOWCNT_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_TBCTL_CONFIGVALUE ((uint16)((uint16)0U << 7U) | (uint16)((uint16)0U << 10U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_TBPHS_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_TBPRD_CONFIGVALUE 1000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_CMPCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_CMPA_CONFIGVALUE 50U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_CMPB_CONFIGVALUE 50U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_AQCTLA_CONFIGVALUE ((uint16)((uint16)ActionQual_Set << 0U) | (uint16)((uint16)ActionQual_Clear << 4U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_AQCTLB_CONFIGVALUE ((uint16)((uint16)ActionQual_Set << 0U) | (uint16)((uint16)ActionQual_Clear << 8U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_DBCTL_CONFIGVALUE ((uint16)((uint16)0U << 5U) | (uint16)((uint16)0u << 4U) | (uint16)((uint16)0U << 3U) | (uint16)((uint16)0U << 2U) | (uint16)((uint16)0U << 1U) | (uint16)((uint16)0U << 0U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_DBRED_CONFIGVALUE 1U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_DBFED_CONFIGVALUE 1U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_TZSEL_CONFIGVALUE (0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U)	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_TZDCSEL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_TZCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_TZEINT_CONFIGVALUE (0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U| 0x0000U)	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_ETSEL_CONFIGVALUE ((((uint16)NO_EVENT == 0U)? 0x0000U : 0x0008U) | (uint16)NO_EVENT | (uint16)0x0000U | (uint16)0x0000U | (uint16)((uint16)DCAEVT1 << 8U) | (uint16)((uint16)DCBEVT1 << 12U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_ETPS_CONFIGVALUE (1U | (uint16)((uint16)1U << 8U) | (uint16)((uint16)1U << 12U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_PCCTL_CONFIGVALUE ((uint16)((uint16)0U << 0U) | (uint16)((uint16)1U << 1U) | (uint16)((uint16)3U << 8U) | (uint16)((uint16)0U << 5U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_DCTRIPSEL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_DCACTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_DCBCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_DCFCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_DCCAPCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_DCFWINDOW_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM5_DCFWINDOWCNT_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_TBCTL_CONFIGVALUE ((uint16)((uint16)0U << 7U) | (uint16)((uint16)0U << 10U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_TBPHS_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_TBPRD_CONFIGVALUE 1000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_CMPCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_CMPA_CONFIGVALUE 50U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_CMPB_CONFIGVALUE 50U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_AQCTLA_CONFIGVALUE ((uint16)((uint16)ActionQual_Set << 0U) | (uint16)((uint16)ActionQual_Clear << 4U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_AQCTLB_CONFIGVALUE ((uint16)((uint16)ActionQual_Set << 0U) | (uint16)((uint16)ActionQual_Clear << 8U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_DBCTL_CONFIGVALUE ((uint16)((uint16)0U << 5U) | (uint16)((uint16)0u << 4U) | (uint16)((uint16)0U << 3U) | (uint16)((uint16)0U << 2U) | (uint16)((uint16)0U << 1U) | (uint16)((uint16)0U << 0U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_DBRED_CONFIGVALUE 1U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_DBFED_CONFIGVALUE 1U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_TZSEL_CONFIGVALUE (0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U)	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_TZDCSEL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_TZCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_TZEINT_CONFIGVALUE (0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U| 0x0000U)	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_ETSEL_CONFIGVALUE ((((uint16)NO_EVENT == 0U)? 0x0000U : 0x0008U) | (uint16)NO_EVENT | (uint16)0x0000U | (uint16)0x0000U | (uint16)((uint16)DCAEVT1 << 8U) | (uint16)((uint16)DCBEVT1 << 12U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_ETPS_CONFIGVALUE (1U | (uint16)((uint16)1U << 8U) | (uint16)((uint16)1U << 12U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_PCCTL_CONFIGVALUE ((uint16)((uint16)0U << 0U) | (uint16)((uint16)1U << 1U) | (uint16)((uint16)3U << 8U) | (uint16)((uint16)0U << 5U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_DCTRIPSEL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_DCACTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_DCBCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_DCFCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_DCCAPCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_DCFWINDOW_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM6_DCFWINDOWCNT_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_TBCTL_CONFIGVALUE ((uint16)((uint16)0U << 7U) | (uint16)((uint16)0U << 10U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_TBPHS_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_TBPRD_CONFIGVALUE 1000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_CMPCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_CMPA_CONFIGVALUE 50U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_CMPB_CONFIGVALUE 50U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_AQCTLA_CONFIGVALUE ((uint16)((uint16)ActionQual_Set << 0U) | (uint16)((uint16)ActionQual_Clear << 4U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_AQCTLB_CONFIGVALUE ((uint16)((uint16)ActionQual_Set << 0U) | (uint16)((uint16)ActionQual_Clear << 8U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_DBCTL_CONFIGVALUE ((uint16)((uint16)0U << 5U) | (uint16)((uint16)0u << 4U) | (uint16)((uint16)0U << 3U) | (uint16)((uint16)0U << 2U) | (uint16)((uint16)0U << 1U) | (uint16)((uint16)0U << 0U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_DBRED_CONFIGVALUE 1U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_DBFED_CONFIGVALUE 1U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_TZSEL_CONFIGVALUE (0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U)	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_TZDCSEL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_TZCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_TZEINT_CONFIGVALUE (0x0000U | 0x0000U | 0x0000U | 0x0000U | 0x0000U| 0x0000U)	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_ETSEL_CONFIGVALUE ((((uint16)NO_EVENT == 0U)? 0x0000U : 0x0008U) | (uint16)NO_EVENT | (uint16)0x0000U | (uint16)0x0000U | (uint16)((uint16)DCAEVT1 << 8U) | (uint16)((uint16)DCBEVT1 << 12U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_ETPS_CONFIGVALUE (1U | (uint16)((uint16)1U << 8U) | (uint16)((uint16)1U << 12U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_PCCTL_CONFIGVALUE ((uint16)((uint16)0U << 0U) | (uint16)((uint16)1U << 1U) | (uint16)((uint16)3U << 8U) | (uint16)((uint16)0U << 5U))	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_DCTRIPSEL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_DCACTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_DCBCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_DCFCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_DCCAPCTL_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_DCFWINDOW_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define ETPWM7_DCFWINDOWCNT_CONFIGVALUE 0x00000000U	/* src\hal\include\HL_etpwm.h */
+#define __PINMUX_H__ 	/* src\hal\include\HL_pinmux.h */
+#define __REG_PINMUX_H__ 	/* src\hal\include\HL_reg_pinmux.h */
+#define pinMuxReg ((pinMuxBASE_t *) 0xFFFF1C00U)	/* src\hal\include\HL_reg_pinmux.h */
+#define PINMUX_BALL_N19_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D4_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D5_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C4_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C5_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C6_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C7_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C8_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C9_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C10_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C11_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C12_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C13_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D14_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C14_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D15_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C15_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C16_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C17_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D16_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K3_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R4_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N17_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_L17_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K17_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M17_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R3_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P3_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D17_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E9_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E8_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E7_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E6_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E13_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E12_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E11_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E10_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K15_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_L15_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M15_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N15_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E5_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F5_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G5_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K5_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_L5_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M5_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N5_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P5_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R5_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R6_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R7_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R8_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R9_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R10_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R11_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B15_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B8_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B16_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B9_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C1_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E1_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B5_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H3_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M1_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F2_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W10_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J2_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F1_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R2_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F3_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G3_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J3_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G19_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V9_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V10_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V5_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B2_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C3_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W9_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W8_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V8_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H19_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E19_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B6_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W6_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T12_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H18_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J19_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E16_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H17_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G17_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J18_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E17_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H16_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G16_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K18_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V2_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W5_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_U1_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B12_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V6_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W3_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T1_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E18_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V7_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D19_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E3_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B4_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N2_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N1_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_A4_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_A13_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J1_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B13_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P2_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H4_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B3_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J4_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P1_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_A14_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K19_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B11_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D8_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D7_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D3_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D2_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D1_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P4_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T5_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T4_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_U7_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E2_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N3_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GATE_EMIF_CLK_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EMIF_OUTPUT_ENABLE_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA_DISABLE_HET1_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB_DISABLE_HET2_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ALT_ADC_TRIGGER_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETHERNET_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM1_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM2_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM3_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM4_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM5_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM6_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM7_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_TIME_BASE_SYNC_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_TBCLK_SYNC_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TZ1_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TZ2_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TZ3_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EPWM1SYNCI_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC1A_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC2A_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC3A_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC4A_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC5A_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC6A_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC7A_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP1A_FILTER_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP1B_FILTER_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP1I_FILTER_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP1S_FILTER_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP2A_FILTER_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP2B_FILTER_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP2I_FILTER_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP2S_FILTER_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP1_FILTER_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP2_FILTER_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP3_FILTER_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP4_FILTER_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP5_FILTER_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP6_FILTER_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA0_DMA_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA1_DMA_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA2_DMA_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA3_DMA_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA4_DMA_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA5_DMA_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA6_DMA_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA7_DMA_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB0_DMA_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB1_DMA_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB2_DMA_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB3_DMA_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB4_DMA_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB5_DMA_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB6_DMA_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB7_DMA_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TEMP1_ENABLE_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TEMP2_ENABLE_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TEMP3_ENABLE_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N19_MASK (~(uint32)((uint32)uint32)((uint32)0xFFU << PINMUX_BALL_N19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D4_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_D4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D5_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_D5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C4_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_C4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C5_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_C5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C6_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_C6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C7_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_C7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C8_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_C8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C9_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_C9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C10_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_C10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C11_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_C11_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C12_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_C12_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C13_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_C13_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D14_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_D14_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C14_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_C14_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D15_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_D15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C15_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_C15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C16_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_C16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C17_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_C17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D16_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_D16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K3_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_K3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R4_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_R4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N17_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_N17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_L17_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_L17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K17_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_K17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M17_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_M17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R3_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_R3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P3_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_P3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D17_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_D17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E9_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_E9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E8_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_E8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E7_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_E7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E6_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_E6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E13_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_E13_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E12_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_E12_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E11_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_E11_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E10_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_E10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K15_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_K15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_L15_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_L15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M15_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_M15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N15_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_N15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E5_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_E5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F5_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_F5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G5_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_G5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K5_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_K5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_L5_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_L5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M5_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_M5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N5_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_N5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P5_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_P5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R5_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_R5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R6_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_R6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R7_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_R7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R8_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_R8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R9_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_R9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R10_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_R10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R11_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_R11_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B15_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_B15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B8_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_B8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B16_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_B16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B9_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_B9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C1_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_C1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E1_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_E1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B5_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_B5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H3_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_H3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M1_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_M1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F2_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_F2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W10_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_W10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J2_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_J2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F1_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_F1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R2_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_R2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F3_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_F3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G3_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_G3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J3_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_J3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G19_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_G19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V9_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_V9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V10_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_V10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V5_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_V5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B2_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_B2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C3_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_C3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W9_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_W9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W8_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_W8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V8_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_V8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H19_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_H19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E19_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_E19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B6_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_B6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W6_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_W6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T12_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_T12_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H18_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_H18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J19_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_J19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E16_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_E16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H17_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_H17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G17_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_G17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J18_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_J18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E17_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_E17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H16_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_H16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G16_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_G16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K18_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_K18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V2_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_V2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W5_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_W5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_U1_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_U1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B12_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_B12_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V6_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_V6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W3_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_W3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T1_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_T1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E18_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_E18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V7_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_V7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D19_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_D19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E3_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_E3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B4_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_B4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N2_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_N2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N1_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_N1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_A4_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_A4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_A13_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_A13_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J1_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_J1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B13_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_B13_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P2_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_P2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H4_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_H4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B3_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_B3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J4_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_J4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P1_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_P1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_A14_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_A14_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K19_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_K19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B11_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_B11_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D8_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_D8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D7_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_D7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D3_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_D3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D2_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_D2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D1_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_D1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P4_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_P4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T5_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_T5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T4_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_T4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_U7_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_U7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E2_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_E2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N3_MASK (~(uint32)((uint32)0xFFU << PINMUX_BALL_N3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GATE_EMIF_CLK_MASK (~(uint32)((uint32)0xFFU << PINMUX_GATE_EMIF_CLK_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EMIF_OUTPUT_ENABLE_MASK (~(uint32)((uint32)0xFFU << PINMUX_EMIF_OUTPUT_ENABLE_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA_DISABLE_HET1_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOA_DISABLE_HET1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB_DISABLE_HET2_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOB_DISABLE_HET2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ALT_ADC_TRIGGER_MASK (~(uint32)((uint32)0xFFU << PINMUX_ALT_ADC_TRIGGER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETHERNET_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETHERNET_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM1_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETPWM1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM2_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETPWM2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM3_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETPWM3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM4_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETPWM4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM5_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETPWM5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM6_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETPWM6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM7_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETPWM7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_TIME_BASE_SYNC_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETPWM_TIME_BASE_SYNC_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_TBCLK_SYNC_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETPWM_TBCLK_SYNC_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TZ1_MASK (~(uint32)((uint32)0xFFU << PINMUX_TZ1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TZ2_MASK (~(uint32)((uint32)0xFFU << PINMUX_TZ2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TZ3_MASK (~(uint32)((uint32)0xFFU << PINMUX_TZ3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EPWM1SYNCI_MASK (~(uint32)((uint32)0xFFU << PINMUX_EPWM1SYNCI_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC1A_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETPWM_SOC1A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC2A_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETPWM_SOC2A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC3A_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETPWM_SOC3A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC4A_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETPWM_SOC4A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC5A_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETPWM_SOC5A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC6A_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETPWM_SOC6A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC7A_MASK (~(uint32)((uint32)0xFFU << PINMUX_ETPWM_SOC7A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP1A_FILTER_MASK (~(uint32)((uint32)0xFFU << PINMUX_EQEP1A_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP1B_FILTER_MASK (~(uint32)((uint32)0xFFU << PINMUX_EQEP1B_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP1I_FILTER_MASK (~(uint32)((uint32)0xFFU << PINMUX_EQEP1I_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP1S_FILTER_MASK (~(uint32)((uint32)0xFFU << PINMUX_EQEP1S_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP2A_FILTER_MASK (~(uint32)((uint32)0xFFU << PINMUX_EQEP2A_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP2B_FILTER_MASK (~(uint32)((uint32)0xFFU << PINMUX_EQEP2B_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP2I_FILTER_MASK (~(uint32)((uint32)0xFFU << PINMUX_EQEP2I_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP2S_FILTER_MASK (~(uint32)((uint32)0xFFU << PINMUX_EQEP2S_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP1_FILTER_MASK (~(uint32)((uint32)0xFFU << PINMUX_ECAP1_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP2_FILTER_MASK (~(uint32)((uint32)0xFFU << PINMUX_ECAP2_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP3_FILTER_MASK (~(uint32)((uint32)0xFFU << PINMUX_ECAP3_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP4_FILTER_MASK (~(uint32)((uint32)0xFFU << PINMUX_ECAP4_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP5_FILTER_MASK (~(uint32)((uint32)0xFFU << PINMUX_ECAP5_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP6_FILTER_MASK (~(uint32)((uint32)0xFFU << PINMUX_ECAP6_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA0_DMA_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOA0_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA1_DMA_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOA1_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA2_DMA_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOA2_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA3_DMA_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOA3_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA4_DMA_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOA4_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA5_DMA_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOA5_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA6_DMA_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOA6_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA7_DMA_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOA7_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB0_DMA_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOB0_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB1_DMA_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOB1_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB2_DMA_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOB2_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB3_DMA_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOB3_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB4_DMA_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOB4_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB5_DMA_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOB5_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB6_DMA_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOB6_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB7_DMA_MASK (~(uint32)((uint32)0xFFU << PINMUX_GIOB7_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TEMP1_ENABLE_MASK (~(uint32)((uint32)0xFFU << PINMUX_TEMP1_ENABLE_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TEMP2_ENABLE_MASK (~(uint32)((uint32)0xFFU << PINMUX_TEMP2_ENABLE_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TEMP3_ENABLE_MASK (~(uint32)((uint32)0xFFU << PINMUX_TEMP3_ENABLE_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N19_AD1EVT ((uint32)((uint32)0x1U << PINMUX_BALL_N19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N19_MII_RX_ER ((uint32)((uint32)0x4U << PINMUX_BALL_N19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N19_RMII_RX_ER ((uint32)((uint32)0x8U << PINMUX_BALL_N19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N19_nTZ1_1 ((uint32)((uint32)0x20U << PINMUX_BALL_N19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D4_EMIF_ADDR_00 ((uint32)((uint32)0x1U << PINMUX_BALL_D4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D4_N2HET2_01 ((uint32)((uint32)0x4U << PINMUX_BALL_D4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D5_EMIF_ADDR_01 ((uint32)((uint32)0x1U << PINMUX_BALL_D5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D5_N2HET2_03 ((uint32)((uint32)0x4U << PINMUX_BALL_D5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C4_EMIF_ADDR_06 ((uint32)((uint32)0x1U << PINMUX_BALL_C4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C4_RTP_DATA_13 ((uint32)((uint32)0x2U << PINMUX_BALL_C4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C4_N2HET2_11 ((uint32)((uint32)0x4U << PINMUX_BALL_C4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C5_EMIF_ADDR_07 ((uint32)((uint32)0x1U << PINMUX_BALL_C5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C5_RTP_DATA_12 ((uint32)((uint32)0x2U << PINMUX_BALL_C5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C5_N2HET2_13 ((uint32)((uint32)0x4U << PINMUX_BALL_C5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C6_EMIF_ADDR_08 ((uint32)((uint32)0x1U << PINMUX_BALL_C6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C6_RTP_DATA_11 ((uint32)((uint32)0x2U << PINMUX_BALL_C6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C6_N2HET2_15 ((uint32)((uint32)0x4U << PINMUX_BALL_C6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C7_EMIF_ADDR_09 ((uint32)((uint32)0x1U << PINMUX_BALL_C7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C7_RTP_DATA_10 ((uint32)((uint32)0x2U << PINMUX_BALL_C7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C8_EMIF_ADDR_10 ((uint32)((uint32)0x1U << PINMUX_BALL_C8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C8_RTP_DATA_09 ((uint32)((uint32)0x2U << PINMUX_BALL_C8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C9_EMIF_ADDR_11 ((uint32)((uint32)0x1U << PINMUX_BALL_C9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C9_RTP_DATA_08 ((uint32)((uint32)0x2U << PINMUX_BALL_C9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C10_EMIF_ADDR_12 ((uint32)((uint32)0x1U << PINMUX_BALL_C10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C10_RTP_DATA_06 ((uint32)((uint32)0x2U << PINMUX_BALL_C10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C11_EMIF_ADDR_13 ((uint32)((uint32)0x1U << PINMUX_BALL_C11_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C11_RTP_DATA_05 ((uint32)((uint32)0x2U << PINMUX_BALL_C11_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C12_EMIF_ADDR_14 ((uint32)((uint32)0x1U << PINMUX_BALL_C12_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C12_RTP_DATA_04 ((uint32)((uint32)0x2U << PINMUX_BALL_C12_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C13_EMIF_ADDR_15 ((uint32)((uint32)0x1U << PINMUX_BALL_C13_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C13_RTP_DATA_03 ((uint32)((uint32)0x2U << PINMUX_BALL_C13_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D14_EMIF_ADDR_16 ((uint32)((uint32)0x1U << PINMUX_BALL_D14_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D14_RTP_DATA_02 ((uint32)((uint32)0x2U << PINMUX_BALL_D14_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C14_EMIF_ADDR_17 ((uint32)((uint32)0x1U << PINMUX_BALL_C14_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C14_RTP_DATA_01 ((uint32)((uint32)0x2U << PINMUX_BALL_C14_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D15_EMIF_ADDR_18 ((uint32)((uint32)0x1U << PINMUX_BALL_D15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D15_RTP_DATA_00 ((uint32)((uint32)0x2U << PINMUX_BALL_D15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C15_EMIF_ADDR_19 ((uint32)((uint32)0x1U << PINMUX_BALL_C15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C15_RTP_nENA ((uint32)((uint32)0x2U << PINMUX_BALL_C15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C16_EMIF_ADDR_20 ((uint32)((uint32)0x1U << PINMUX_BALL_C16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C16_RTP_nSYNC ((uint32)((uint32)0x2U << PINMUX_BALL_C16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C17_EMIF_ADDR_21 ((uint32)((uint32)0x1U << PINMUX_BALL_C17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C17_RTP_CLK ((uint32)((uint32)0x2U << PINMUX_BALL_C17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D16_EMIF_BA_1 ((uint32)((uint32)0x1U << PINMUX_BALL_D16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D16_8_25 ((uint32)((uint32)0x2U << PINMUX_BALL_D16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D16_N2HET2_05 ((uint32)((uint32)0x4U << PINMUX_BALL_D16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K3_RESERVED ((uint32)((uint32)0x1U << PINMUX_BALL_K3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K3_EMIF_CLK ((uint32)((uint32)0x2U << PINMUX_BALL_K3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K3_ECLK2 ((uint32)((uint32)0x4U << PINMUX_BALL_K3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R4_EMIF_nCAS ((uint32)((uint32)0x1U << PINMUX_BALL_R4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R4_GIOB_3 ((uint32)((uint32)0x4U << PINMUX_BALL_R4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N17_EMIF_nCS_0 ((uint32)((uint32)0x1U << PINMUX_BALL_N17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N17_RTP_DATA_15 ((uint32)((uint32)0x2U << PINMUX_BALL_N17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N17_N2HET2_07 ((uint32)((uint32)0x4U << PINMUX_BALL_N17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_L17_EMIF_nCS_2 ((uint32)((uint32)0x1U << PINMUX_BALL_L17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_L17_GIOB_4 ((uint32)((uint32)0x4U << PINMUX_BALL_L17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K17_EMIF_nCS_3 ((uint32)((uint32)0x1U << PINMUX_BALL_K17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K17_RTP_DATA_14 ((uint32)((uint32)0x2U << PINMUX_BALL_K17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K17_N2HET2_09 ((uint32)((uint32)0x4U << PINMUX_BALL_K17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M17_EMIF_nCS_4 ((uint32)((uint32)0x1U << PINMUX_BALL_M17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M17_RTP_DATA_07 ((uint32)((uint32)0x2U << PINMUX_BALL_M17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M17_GIOB_5 ((uint32)((uint32)0x4U << PINMUX_BALL_M17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R3_EMIF_nRAS ((uint32)((uint32)0x1U << PINMUX_BALL_R3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R3_GIOB_6 ((uint32)((uint32)0x4U << PINMUX_BALL_R3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P3_EMIF_nWAIT ((uint32)((uint32)0x1U << PINMUX_BALL_P3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P3_GIOB_7 ((uint32)((uint32)0x4U << PINMUX_BALL_P3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D17_EMIF_nWE ((uint32)((uint32)0x1U << PINMUX_BALL_D17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D17_EMIF_RNW ((uint32)((uint32)0x2U << PINMUX_BALL_D17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E9_ETMDATA_08 ((uint32)((uint32)0x1U << PINMUX_BALL_E9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E9_EMIF_ADDR_05 ((uint32)((uint32)0x2U << PINMUX_BALL_E9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E8_ETMDATA_09 ((uint32)((uint32)0x1U << PINMUX_BALL_E8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E8_EMIF_ADDR_04 ((uint32)((uint32)0x2U << PINMUX_BALL_E8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E7_ETMDATA_10 ((uint32)((uint32)0x1U << PINMUX_BALL_E7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E7_EMIF_ADDR_03 ((uint32)((uint32)0x2U << PINMUX_BALL_E7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E6_ETMDATA_11 ((uint32)((uint32)0x1U << PINMUX_BALL_E6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E6_EMIF_ADDR_02 ((uint32)((uint32)0x2U << PINMUX_BALL_E6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E13_ETMDATA_12 ((uint32)((uint32)0x1U << PINMUX_BALL_E13_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E13_EMIF_BA_0 ((uint32)((uint32)0x2U << PINMUX_BALL_E13_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E12_ETMDATA_13 ((uint32)((uint32)0x1U << PINMUX_BALL_E12_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E12_EMIF_nOE ((uint32)((uint32)0x2U << PINMUX_BALL_E12_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E11_ETMDATA_14 ((uint32)((uint32)0x1U << PINMUX_BALL_E11_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E11_EMIF_nDQM_1 ((uint32)((uint32)0x2U << PINMUX_BALL_E11_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E10_ETMDATA_15 ((uint32)((uint32)0x1U << PINMUX_BALL_E10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E10_EMIF_nDQM_0 ((uint32)((uint32)0x2U << PINMUX_BALL_E10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K15_ETMDATA_16 ((uint32)((uint32)0x1U << PINMUX_BALL_K15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K15_EMIF_DATA_00 ((uint32)((uint32)0x2U << PINMUX_BALL_K15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_L15_ETMDATA_17 ((uint32)((uint32)0x1U << PINMUX_BALL_L15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_L15_EMIF_DATA_01 ((uint32)((uint32)0x2U << PINMUX_BALL_L15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M15_ETMDATA_18 ((uint32)((uint32)0x1U << PINMUX_BALL_M15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M15_EMIF_DATA_02 ((uint32)((uint32)0x2U << PINMUX_BALL_M15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N15_ETMDATA_19 ((uint32)((uint32)0x1U << PINMUX_BALL_N15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N15_EMIF_DATA_03 ((uint32)((uint32)0x2U << PINMUX_BALL_N15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E5_ETMDATA_20 ((uint32)((uint32)0x1U << PINMUX_BALL_E5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E5_EMIF_DATA_04 ((uint32)((uint32)0x2U << PINMUX_BALL_E5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F5_ETMDATA_21 ((uint32)((uint32)0x1U << PINMUX_BALL_F5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F5_EMIF_DATA_05 ((uint32)((uint32)0x2U << PINMUX_BALL_F5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G5_ETMDATA_22 ((uint32)((uint32)0x1U << PINMUX_BALL_G5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G5_EMIF_DATA_06 ((uint32)((uint32)0x2U << PINMUX_BALL_G5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K5_ETMDATA_23 ((uint32)((uint32)0x1U << PINMUX_BALL_K5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K5_EMIF_DATA_07 ((uint32)((uint32)0x2U << PINMUX_BALL_K5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_L5_ETMDATA_24 ((uint32)((uint32)0x1U << PINMUX_BALL_L5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_L5_EMIF_DATA_08 ((uint32)((uint32)0x2U << PINMUX_BALL_L5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_L5_N2HET2_24 ((uint32)((uint32)0x4U << PINMUX_BALL_L5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_L5_MIBSPI5NCS_4 ((uint32)((uint32)0x8U << PINMUX_BALL_L5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M5_ETMDATA_25 ((uint32)((uint32)0x1U << PINMUX_BALL_M5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M5_EMIF_DATA_09 ((uint32)((uint32)0x2U << PINMUX_BALL_M5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M5_N2HET2_25 ((uint32)((uint32)0x4U << PINMUX_BALL_M5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M5_MIBSPI5NCS_5 ((uint32)((uint32)0x8U << PINMUX_BALL_M5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N5_ETMDATA_26 ((uint32)((uint32)0x1U << PINMUX_BALL_N5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N5_EMIF_DATA_10 ((uint32)((uint32)0x2U << PINMUX_BALL_N5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N5_N2HET2_26 ((uint32)((uint32)0x4U << PINMUX_BALL_N5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P5_ETMDATA_27 ((uint32)((uint32)0x1U << PINMUX_BALL_P5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P5_EMIF_DATA_11 ((uint32)((uint32)0x2U << PINMUX_BALL_P5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P5_N2HET2_27 ((uint32)((uint32)0x4U << PINMUX_BALL_P5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R5_ETMDATA_28 ((uint32)((uint32)0x1U << PINMUX_BALL_R5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R5_EMIF_DATA_12 ((uint32)((uint32)0x2U << PINMUX_BALL_R5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R5_N2HET2_28 ((uint32)((uint32)0x4U << PINMUX_BALL_R5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R5_GIOA_0 ((uint32)((uint32)0x8U << PINMUX_BALL_R5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R6_ETMDATA_29 ((uint32)((uint32)0x1U << PINMUX_BALL_R6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R6_EMIF_DATA_13 ((uint32)((uint32)0x2U << PINMUX_BALL_R6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R6_N2HET2_29 ((uint32)((uint32)0x4U << PINMUX_BALL_R6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R6_GIOA_1 ((uint32)((uint32)0x8U << PINMUX_BALL_R6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R7_ETMDATA_30 ((uint32)((uint32)0x1U << PINMUX_BALL_R7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R7_EMIF_DATA_14 ((uint32)((uint32)0x2U << PINMUX_BALL_R7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R7_N2HET2_30 ((uint32)((uint32)0x4U << PINMUX_BALL_R7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R7_GIOA_3 ((uint32)((uint32)0x8U << PINMUX_BALL_R7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R8_ETMDATA_31 ((uint32)((uint32)0x1U << PINMUX_BALL_R8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R8_EMIF_DATA_15 ((uint32)((uint32)0x2U << PINMUX_BALL_R8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R8_N2HET2_31 ((uint32)((uint32)0x4U << PINMUX_BALL_R8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R8_GIOA_4 ((uint32)((uint32)0x8U << PINMUX_BALL_R8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R9_ETMTRACECLKIN ((uint32)((uint32)0x1U << PINMUX_BALL_R9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R9_EXTCLKIN2 ((uint32)((uint32)0x2U << PINMUX_BALL_R9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R9_GIOA_5 ((uint32)((uint32)0x8U << PINMUX_BALL_R9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R10_ETMTRACECLKOUT ((uint32)((uint32)0x1U << PINMUX_BALL_R10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R10_GIOA_6 ((uint32)((uint32)0x8U << PINMUX_BALL_R10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R11_ETMTRACECTL ((uint32)((uint32)0x1U << PINMUX_BALL_R11_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R11_GIOA_7 ((uint32)((uint32)0x8U << PINMUX_BALL_R11_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B15_FRAYTX1 ((uint32)((uint32)0x1U << PINMUX_BALL_B15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B15_GIOA_2 ((uint32)((uint32)0x8U << PINMUX_BALL_B15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B8_FRAYTX2 ((uint32)((uint32)0x1U << PINMUX_BALL_B8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B8_GIOB_0 ((uint32)((uint32)0x8U << PINMUX_BALL_B8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B16_FRAYTXEN1 ((uint32)((uint32)0x1U << PINMUX_BALL_B16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B16_GIOB_1 ((uint32)((uint32)0x8U << PINMUX_BALL_B16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B9_FRAYTXEN2 ((uint32)((uint32)0x1U << PINMUX_BALL_B9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B9_GIOB_2 ((uint32)((uint32)0x8U << PINMUX_BALL_B9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C1_GIOA_2 ((uint32)((uint32)0x1U << PINMUX_BALL_C1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C1_N2HET2_00 ((uint32)((uint32)0x4U << PINMUX_BALL_C1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C1_eQEP2I ((uint32)((uint32)0x20U << PINMUX_BALL_C1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E1_GIOA_3 ((uint32)((uint32)0x1U << PINMUX_BALL_E1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E1_N2HET2_02 ((uint32)((uint32)0x4U << PINMUX_BALL_E1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B5_GIOA_5 ((uint32)((uint32)0x1U << PINMUX_BALL_B5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B5_EXTCLKIN ((uint32)((uint32)0x8U << PINMUX_BALL_B5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B5_eTPWM1A ((uint32)((uint32)0x20U << PINMUX_BALL_B5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H3_GIOA_6 ((uint32)((uint32)0x1U << PINMUX_BALL_H3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H3_N2HET2_04 ((uint32)((uint32)0x4U << PINMUX_BALL_H3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H3_eTPWM1B ((uint32)((uint32)0x20U << PINMUX_BALL_H3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M1_GIOA_7 ((uint32)((uint32)0x1U << PINMUX_BALL_M1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M1_N2HET2_06 ((uint32)((uint32)0x4U << PINMUX_BALL_M1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_M1_eTPWM2A ((uint32)((uint32)0x20U << PINMUX_BALL_M1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F2_GIOB_2 ((uint32)((uint32)0x1U << PINMUX_BALL_F2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F2_DCAN4TX ((uint32)((uint32)0x8U << PINMUX_BALL_F2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W10_GIOB_3 ((uint32)((uint32)0x1U << PINMUX_BALL_W10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W10_DCAN4RX ((uint32)((uint32)0x8U << PINMUX_BALL_W10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J2_GIOB_6 ((uint32)((uint32)0x1U << PINMUX_BALL_J2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J2_nERROR1 ((uint32)((uint32)0x2U << PINMUX_BALL_J2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F1_GIOB_7 ((uint32)((uint32)0x1U << PINMUX_BALL_F1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F1_nERROR2 ((uint32)((uint32)0x2U << PINMUX_BALL_F1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F1_nTZ1_2 ((uint32)((uint32)0x20U << PINMUX_BALL_F1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R2_MIBSPI1NCS_0 ((uint32)((uint32)0x1U << PINMUX_BALL_R2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R2_MIBSPI1SOMI_1 ((uint32)((uint32)0x2U << PINMUX_BALL_R2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R2_MII_TXD_2 ((uint32)((uint32)0x4U << PINMUX_BALL_R2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_R2_ECAP6 ((uint32)((uint32)0x20U << PINMUX_BALL_R2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F3_MIBSPI1NCS_1 ((uint32)((uint32)0x1U << PINMUX_BALL_F3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F3_MII_COL ((uint32)((uint32)0x4U << PINMUX_BALL_F3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F3_N2HET1_17 ((uint32)((uint32)0x8U << PINMUX_BALL_F3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_F3_eQEP1S ((uint32)((uint32)0x20U << PINMUX_BALL_F3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G3_MIBSPI1NCS_2 ((uint32)((uint32)0x1U << PINMUX_BALL_G3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G3_MDIO ((uint32)((uint32)0x4U << PINMUX_BALL_G3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G3_N2HET1_19 ((uint32)((uint32)0x8U << PINMUX_BALL_G3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J3_MIBSPI1NCS_3 ((uint32)((uint32)0x1U << PINMUX_BALL_J3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J3_N2HET1_21 ((uint32)((uint32)0x8U << PINMUX_BALL_J3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J3_nTZ1_3 ((uint32)((uint32)0x20U << PINMUX_BALL_J3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G19_MIBSPI1NENA ((uint32)((uint32)0x1U << PINMUX_BALL_G19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G19_MII_RXD_2 ((uint32)((uint32)0x4U << PINMUX_BALL_G19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G19_N2HET1_23 ((uint32)((uint32)0x8U << PINMUX_BALL_G19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G19_ECAP4 ((uint32)((uint32)0x20U << PINMUX_BALL_G19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V9_MIBSPI3CLK ((uint32)((uint32)0x1U << PINMUX_BALL_V9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V9_EXT_SEL_01 ((uint32)((uint32)0x2U << PINMUX_BALL_V9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V9_eQEP1A ((uint32)((uint32)0x20U << PINMUX_BALL_V9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V10_MIBSPI3NCS_0 ((uint32)((uint32)0x1U << PINMUX_BALL_V10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V10_AD2EVT ((uint32)((uint32)0x2U << PINMUX_BALL_V10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V10_eQEP1I ((uint32)((uint32)0x20U << PINMUX_BALL_V10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V5_MIBSPI3NCS_1 ((uint32)((uint32)0x1U << PINMUX_BALL_V5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V5_MDCLK ((uint32)((uint32)0x4U << PINMUX_BALL_V5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V5_N2HET1_25 ((uint32)((uint32)0x8U << PINMUX_BALL_V5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B2_MIBSPI3NCS_2 ((uint32)((uint32)0x1U << PINMUX_BALL_B2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B2_I2C1_SDA ((uint32)((uint32)0x2U << PINMUX_BALL_B2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B2_N2HET1_27 ((uint32)((uint32)0x8U << PINMUX_BALL_B2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B2_nTZ1_2 ((uint32)((uint32)0x20U << PINMUX_BALL_B2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C3_MIBSPI3NCS_3 ((uint32)((uint32)0x1U << PINMUX_BALL_C3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C3_I2C1_SCL ((uint32)((uint32)0x2U << PINMUX_BALL_C3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C3_N2HET1_29 ((uint32)((uint32)0x8U << PINMUX_BALL_C3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_C3_nTZ1_1 ((uint32)((uint32)0x20U << PINMUX_BALL_C3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W9_MIBSPI3NENA ((uint32)((uint32)0x1U << PINMUX_BALL_W9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W9_MIBSPI3NCS_5 ((uint32)((uint32)0x2U << PINMUX_BALL_W9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W9_N2HET1_31 ((uint32)((uint32)0x8U << PINMUX_BALL_W9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W9_eQEP1B ((uint32)((uint32)0x20U << PINMUX_BALL_W9_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W8_MIBSPI3SIMO ((uint32)((uint32)0x1U << PINMUX_BALL_W8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W8_EXT_SEL_00 ((uint32)((uint32)0x2U << PINMUX_BALL_W8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W8_ECAP3 ((uint32)((uint32)0x20U << PINMUX_BALL_W8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V8_MIBSPI3SOMI ((uint32)((uint32)0x1U << PINMUX_BALL_V8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V8_EXT_ENA ((uint32)((uint32)0x2U << PINMUX_BALL_V8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V8_ECAP2 ((uint32)((uint32)0x20U << PINMUX_BALL_V8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H19_MIBSPI5CLK ((uint32)((uint32)0x1U << PINMUX_BALL_H19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H19_DMM_DATA_04 ((uint32)((uint32)0x2U << PINMUX_BALL_H19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H19_MII_TXEN ((uint32)((uint32)0x4U << PINMUX_BALL_H19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H19_RMII_TXEN ((uint32)((uint32)0x8U << PINMUX_BALL_H19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E19_MIBSPI5NCS_0 ((uint32)((uint32)0x1U << PINMUX_BALL_E19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E19_DMM_DATA_05 ((uint32)((uint32)0x2U << PINMUX_BALL_E19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E19_eTPWM4A ((uint32)((uint32)0x20U << PINMUX_BALL_E19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B6_MIBSPI5NCS_1 ((uint32)((uint32)0x1U << PINMUX_BALL_B6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B6_DMM_DATA_06 ((uint32)((uint32)0x2U << PINMUX_BALL_B6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W6_MIBSPI5NCS_2 ((uint32)((uint32)0x1U << PINMUX_BALL_W6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W6_DMM_DATA_02 ((uint32)((uint32)0x2U << PINMUX_BALL_W6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T12_MIBSPI5NCS_3 ((uint32)((uint32)0x1U << PINMUX_BALL_T12_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T12_DMM_DATA_03 ((uint32)((uint32)0x2U << PINMUX_BALL_T12_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H18_MIBSPI5NENA ((uint32)((uint32)0x1U << PINMUX_BALL_H18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H18_DMM_DATA_07 ((uint32)((uint32)0x2U << PINMUX_BALL_H18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H18_MII_RXD_3 ((uint32)((uint32)0x4U << PINMUX_BALL_H18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H18_ECAP5 ((uint32)((uint32)0x20U << PINMUX_BALL_H18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J19_MIBSPI5SIMO_0 ((uint32)((uint32)0x1U << PINMUX_BALL_J19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J19_DMM_DATA_08 ((uint32)((uint32)0x2U << PINMUX_BALL_J19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J19_MII_TXD_1 ((uint32)((uint32)0x4U << PINMUX_BALL_J19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J19_RMII_TXD_1 ((uint32)((uint32)0x8U << PINMUX_BALL_J19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E16_MIBSPI5SIMO_1 ((uint32)((uint32)0x1U << PINMUX_BALL_E16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E16_DMM_DATA_09 ((uint32)((uint32)0x2U << PINMUX_BALL_E16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E16_EXT_SEL_00 ((uint32)((uint32)0x10U << PINMUX_BALL_E16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H17_MIBSPI5SIMO_2 ((uint32)((uint32)0x1U << PINMUX_BALL_H17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H17_DMM_DATA_10 ((uint32)((uint32)0x2U << PINMUX_BALL_H17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H17_EXT_SEL_01 ((uint32)((uint32)0x10U << PINMUX_BALL_H17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G17_MIBSPI5SIMO_3 ((uint32)((uint32)0x1U << PINMUX_BALL_G17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G17_DMM_DATA_11 ((uint32)((uint32)0x2U << PINMUX_BALL_G17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G17_I2C2_SDA ((uint32)((uint32)0x4U << PINMUX_BALL_G17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G17_EXT_SEL_02 ((uint32)((uint32)0x10U << PINMUX_BALL_G17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J18_MIBSPI5SOMI_0 ((uint32)((uint32)0x1U << PINMUX_BALL_J18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J18_DMM_DATA_12 ((uint32)((uint32)0x2U << PINMUX_BALL_J18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J18_MII_TXD_0 ((uint32)((uint32)0x4U << PINMUX_BALL_J18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J18_RMII_TXD_0 ((uint32)((uint32)0x8U << PINMUX_BALL_J18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E17_MIBSPI5SOMI_1 ((uint32)((uint32)0x1U << PINMUX_BALL_E17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E17_DMM_DATA_13 ((uint32)((uint32)0x2U << PINMUX_BALL_E17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E17_EXT_SEL_03 ((uint32)((uint32)0x10U << PINMUX_BALL_E17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H16_MIBSPI5SOMI_2 ((uint32)((uint32)0x1U << PINMUX_BALL_H16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H16_DMM_DATA_14 ((uint32)((uint32)0x2U << PINMUX_BALL_H16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H16_EXT_SEL_04 ((uint32)((uint32)0x10U << PINMUX_BALL_H16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G16_MIBSPI5SOMI_3 ((uint32)((uint32)0x1U << PINMUX_BALL_G16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G16_DMM_DATA_15 ((uint32)((uint32)0x2U << PINMUX_BALL_G16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G16_I2C2_SCL ((uint32)((uint32)0x4U << PINMUX_BALL_G16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_G16_EXT_ENA ((uint32)((uint32)0x10U << PINMUX_BALL_G16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K18_N2HET1_00 ((uint32)((uint32)0x1U << PINMUX_BALL_K18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K18_MIBSPI4CLK ((uint32)((uint32)0x2U << PINMUX_BALL_K18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K18_eTPWM2B ((uint32)((uint32)0x20U << PINMUX_BALL_K18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V2_N2HET1_01 ((uint32)((uint32)0x1U << PINMUX_BALL_V2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V2_MIBSPI4NENA ((uint32)((uint32)0x2U << PINMUX_BALL_V2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V2_N2HET2_08 ((uint32)((uint32)0x8U << PINMUX_BALL_V2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V2_eQEP2A ((uint32)((uint32)0x20U << PINMUX_BALL_V2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W5_N2HET1_02 ((uint32)((uint32)0x1U << PINMUX_BALL_W5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W5_MIBSPI4SIMO ((uint32)((uint32)0x2U << PINMUX_BALL_W5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W5_eTPWM3A ((uint32)((uint32)0x20U << PINMUX_BALL_W5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_U1_N2HET1_03 ((uint32)((uint32)0x1U << PINMUX_BALL_U1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_U1_MIBSPI4NCS_0 ((uint32)((uint32)0x2U << PINMUX_BALL_U1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_U1_N2HET2_10 ((uint32)((uint32)0x8U << PINMUX_BALL_U1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_U1_eQEP2B ((uint32)((uint32)0x20U << PINMUX_BALL_U1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B12_N2HET1_04 ((uint32)((uint32)0x1U << PINMUX_BALL_B12_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B12_MIBSPI4NCS_1 ((uint32)((uint32)0x2U << PINMUX_BALL_B12_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B12_eTPWM4B ((uint32)((uint32)0x20U << PINMUX_BALL_B12_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V6_N2HET1_05 ((uint32)((uint32)0x1U << PINMUX_BALL_V6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V6_MIBSPI4SOMI ((uint32)((uint32)0x2U << PINMUX_BALL_V6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V6_N2HET2_12 ((uint32)((uint32)0x8U << PINMUX_BALL_V6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V6_eTPWM3B ((uint32)((uint32)0x20U << PINMUX_BALL_V6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W3_N2HET1_06 ((uint32)((uint32)0x1U << PINMUX_BALL_W3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W3_SCI3RX ((uint32)((uint32)0x2U << PINMUX_BALL_W3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_W3_eTPWM5A ((uint32)((uint32)0x20U << PINMUX_BALL_W3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T1_N2HET1_07 ((uint32)((uint32)0x1U << PINMUX_BALL_T1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T1_MIBSPI4NCS_2 ((uint32)((uint32)0x2U << PINMUX_BALL_T1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T1_N2HET2_14 ((uint32)((uint32)0x8U << PINMUX_BALL_T1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T1_eTPWM7B ((uint32)((uint32)0x20U << PINMUX_BALL_T1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E18_N2HET1_08 ((uint32)((uint32)0x1U << PINMUX_BALL_E18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E18_MIBSPI1SIMO_1 ((uint32)((uint32)0x2U << PINMUX_BALL_E18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E18_MII_TXD_3 ((uint32)((uint32)0x4U << PINMUX_BALL_E18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V7_N2HET1_09 ((uint32)((uint32)0x1U << PINMUX_BALL_V7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V7_MIBSPI4NCS_3 ((uint32)((uint32)0x2U << PINMUX_BALL_V7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V7_N2HET2_16 ((uint32)((uint32)0x8U << PINMUX_BALL_V7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_V7_eTPWM7A ((uint32)((uint32)0x20U << PINMUX_BALL_V7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D19_N2HET1_10 ((uint32)((uint32)0x1U << PINMUX_BALL_D19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D19_MIBSPI4NCS_4 ((uint32)((uint32)0x2U << PINMUX_BALL_D19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D19_MII_TX_CLK ((uint32)((uint32)0x4U << PINMUX_BALL_D19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D19_MII_TX_AVCLK4 ((uint32)((uint32)0x8U << PINMUX_BALL_D19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D19_nTZ1_3 ((uint32)((uint32)0x20U << PINMUX_BALL_D19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E3_N2HET1_11 ((uint32)((uint32)0x1U << PINMUX_BALL_E3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E3_MIBSPI3NCS_4 ((uint32)((uint32)0x2U << PINMUX_BALL_E3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E3_N2HET2_18 ((uint32)((uint32)0x8U << PINMUX_BALL_E3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E3_ETPWM1SYNCO ((uint32)((uint32)0x20U << PINMUX_BALL_E3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B4_N2HET1_12 ((uint32)((uint32)0x1U << PINMUX_BALL_B4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B4_MIBSPI4NCS_5 ((uint32)((uint32)0x2U << PINMUX_BALL_B4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B4_MII_CRS ((uint32)((uint32)0x4U << PINMUX_BALL_B4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B4_RMII_CRS_DV ((uint32)((uint32)0x8U << PINMUX_BALL_B4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N2_N2HET1_13 ((uint32)((uint32)0x1U << PINMUX_BALL_N2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N2_SCI3TX ((uint32)((uint32)0x2U << PINMUX_BALL_N2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N2_N2HET2_20 ((uint32)((uint32)0x8U << PINMUX_BALL_N2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N2_eTPWM5B ((uint32)((uint32)0x20U << PINMUX_BALL_N2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N1_N2HET1_15 ((uint32)((uint32)0x1U << PINMUX_BALL_N1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N1_MIBSPI1NCS_4 ((uint32)((uint32)0x2U << PINMUX_BALL_N1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N1_N2HET2_22 ((uint32)((uint32)0x8U << PINMUX_BALL_N1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N1_ECAP1 ((uint32)((uint32)0x20U << PINMUX_BALL_N1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_A4_N2HET1_16 ((uint32)((uint32)0x1U << PINMUX_BALL_A4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_A4_ETPWM1SYNCI ((uint32)((uint32)0x8U << PINMUX_BALL_A4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_A4_ETPWM1SYNCO ((uint32)((uint32)0x20U << PINMUX_BALL_A4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_A13_N2HET1_17 ((uint32)((uint32)0x1U << PINMUX_BALL_A13_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_A13_EMIF_nOE ((uint32)((uint32)0x2U << PINMUX_BALL_A13_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_A13_SCI4RX ((uint32)((uint32)0x4U << PINMUX_BALL_A13_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J1_N2HET1_18 ((uint32)((uint32)0x1U << PINMUX_BALL_J1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J1_EMIF_RNW ((uint32)((uint32)0x2U << PINMUX_BALL_J1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J1_eTPWM6A ((uint32)((uint32)0x20U << PINMUX_BALL_J1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B13_N2HET1_19 ((uint32)((uint32)0x1U << PINMUX_BALL_B13_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B13_EMIF_nDQM_0 ((uint32)((uint32)0x2U << PINMUX_BALL_B13_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B13_SCI4TX ((uint32)((uint32)0x4U << PINMUX_BALL_B13_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P2_N2HET1_20 ((uint32)((uint32)0x1U << PINMUX_BALL_P2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P2_EMIF_nDQM_1 ((uint32)((uint32)0x2U << PINMUX_BALL_P2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P2_eTPWM6B ((uint32)((uint32)0x20U << PINMUX_BALL_P2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H4_N2HET1_21 ((uint32)((uint32)0x1U << PINMUX_BALL_H4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_H4_EMIF_nDQM_2 ((uint32)((uint32)0x2U << PINMUX_BALL_H4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B3_N2HET1_22 ((uint32)((uint32)0x1U << PINMUX_BALL_B3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B3_EMIF_nDQM_3 ((uint32)((uint32)0x2U << PINMUX_BALL_B3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J4_N2HET1_23 ((uint32)((uint32)0x1U << PINMUX_BALL_J4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_J4_EMIF_BA_0 ((uint32)((uint32)0x2U << PINMUX_BALL_J4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P1_N2HET1_24 ((uint32)((uint32)0x1U << PINMUX_BALL_P1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P1_MIBSPI1NCS_5 ((uint32)((uint32)0x2U << PINMUX_BALL_P1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P1_MII_RXD_0 ((uint32)((uint32)0x4U << PINMUX_BALL_P1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P1_RMII_RXD_0 ((uint32)((uint32)0x8U << PINMUX_BALL_P1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_A14_N2HET1_26 ((uint32)((uint32)0x1U << PINMUX_BALL_A14_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_A14_MII_RXD_1 ((uint32)((uint32)0x4U << PINMUX_BALL_A14_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_A14_RMII_RXD_1 ((uint32)((uint32)0x8U << PINMUX_BALL_A14_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K19_N2HET1_28 ((uint32)((uint32)0x1U << PINMUX_BALL_K19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K19_MII_RXCLK ((uint32)((uint32)0x4U << PINMUX_BALL_K19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K19_RMII_REFCLK ((uint32)((uint32)0x8U << PINMUX_BALL_K19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_K19_MII_RX_AVCLK4 ((uint32)((uint32)0x10U << PINMUX_BALL_K19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B11_N2HET1_30 ((uint32)((uint32)0x1U << PINMUX_BALL_B11_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B11_MII_RX_DV ((uint32)((uint32)0x4U << PINMUX_BALL_B11_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_B11_eQEP2S ((uint32)((uint32)0x20U << PINMUX_BALL_B11_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D8_N2HET2_01 ((uint32)((uint32)0x1U << PINMUX_BALL_D8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D8_N2HET1_NDIS ((uint32)((uint32)0x2U << PINMUX_BALL_D8_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D7_N2HET2_02 ((uint32)((uint32)0x1U << PINMUX_BALL_D7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D7_N2HET2_NDIS ((uint32)((uint32)0x2U << PINMUX_BALL_D7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D3_N2HET2_12 ((uint32)((uint32)0x1U << PINMUX_BALL_D3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D3_MIBSPI2NENA ((uint32)((uint32)0x10U << PINMUX_BALL_D3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D3_MIBSPI2NCS_1 ((uint32)((uint32)0x20U << PINMUX_BALL_D3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D2_N2HET2_13 ((uint32)((uint32)0x1U << PINMUX_BALL_D2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D2_MIBSPI2SOMI ((uint32)((uint32)0x10U << PINMUX_BALL_D2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D1_N2HET2_14 ((uint32)((uint32)0x1U << PINMUX_BALL_D1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_D1_MIBSPI2SIMO ((uint32)((uint32)0x10U << PINMUX_BALL_D1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P4_N2HET2_19 ((uint32)((uint32)0x1U << PINMUX_BALL_P4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_P4_LIN2RX ((uint32)((uint32)0x2U << PINMUX_BALL_P4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T5_N2HET2_20 ((uint32)((uint32)0x1U << PINMUX_BALL_T5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T5_LIN2TX ((uint32)((uint32)0x2U << PINMUX_BALL_T5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T4_MII_RXCLK ((uint32)((uint32)0x1U << PINMUX_BALL_T4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_T4_MII_RX_AVCLK4 ((uint32)((uint32)0x10U << PINMUX_BALL_T4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_U7_MII_TX_CLK ((uint32)((uint32)0x1U << PINMUX_BALL_U7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_U7_MII_TX_AVCLK4 ((uint32)((uint32)0x10U << PINMUX_BALL_U7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E2_N2HET2_03 ((uint32)((uint32)0x1U << PINMUX_BALL_E2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_E2_MIBSPI2CLK ((uint32)((uint32)0x10U << PINMUX_BALL_E2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N3_N2HET2_07 ((uint32)((uint32)0x1U << PINMUX_BALL_N3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_BALL_N3_MIBSPI2NCS_0 ((uint32)((uint32)0x10U << PINMUX_BALL_N3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GATE_EMIF_CLK_ON ((uint32)((uint32)0x2U << PINMUX_GATE_EMIF_CLK_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EMIF_OUTPUT_ENABLE_ON ((uint32)((uint32)0x2U << PINMUX_EMIF_OUTPUT_ENABLE_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA_DISABLE_HET1_ON ((uint32)((uint32)0x2U << PINMUX_GIOA_DISABLE_HET1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB_DISABLE_HET2_ON ((uint32)((uint32)0x2U << PINMUX_GIOB_DISABLE_HET2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GATE_EMIF_CLK_OFF ((uint32)((uint32)0x1U << PINMUX_GATE_EMIF_CLK_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EMIF_OUTPUT_ENABLE_OFF ((uint32)((uint32)0x1U << PINMUX_EMIF_OUTPUT_ENABLE_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA_DISABLE_HET1_OFF ((uint32)((uint32)0x1U << PINMUX_GIOA_DISABLE_HET1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB_DISABLE_HET2_OFF ((uint32)((uint32)0x1U << PINMUX_GIOB_DISABLE_HET2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ALT_ADC_TRIGGER_1 ((uint32)((uint32)0x1U << PINMUX_ALT_ADC_TRIGGER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ALT_ADC_TRIGGER_2 ((uint32)((uint32)0x2U << PINMUX_ALT_ADC_TRIGGER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETHERNET_MII ((uint32)((uint32)0x0U << PINMUX_ETHERNET_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETHERNET_RMII ((uint32)((uint32)0x1U << PINMUX_ETHERNET_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM1_EQEPERR12 ((uint32)((uint32)0x1U << PINMUX_ETPWM1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM1_EQEPERR1 ((uint32)((uint32)0x2U << PINMUX_ETPWM1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM1_EQEPERR2 ((uint32)((uint32)0x4U << PINMUX_ETPWM1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM2_EQEPERR12 ((uint32)((uint32)0x1U << PINMUX_ETPWM2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM2_EQEPERR1 ((uint32)((uint32)0x2U << PINMUX_ETPWM2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM2_EQEPERR2 ((uint32)((uint32)0x4U << PINMUX_ETPWM2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM3_EQEPERR12 ((uint32)((uint32)0x1U << PINMUX_ETPWM3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM3_EQEPERR1 ((uint32)((uint32)0x2U << PINMUX_ETPWM3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM3_EQEPERR2 ((uint32)((uint32)0x4U << PINMUX_ETPWM3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM4_EQEPERR12 ((uint32)((uint32)0x1U << PINMUX_ETPWM4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM4_EQEPERR1 ((uint32)((uint32)0x2U << PINMUX_ETPWM4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM4_EQEPERR2 ((uint32)((uint32)0x4U << PINMUX_ETPWM4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM5_EQEPERR12 ((uint32)((uint32)0x1U << PINMUX_ETPWM5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM5_EQEPERR1 ((uint32)((uint32)0x2U << PINMUX_ETPWM5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM5_EQEPERR2 ((uint32)((uint32)0x4U << PINMUX_ETPWM5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM6_EQEPERR12 ((uint32)((uint32)0x1U << PINMUX_ETPWM6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM6_EQEPERR1 ((uint32)((uint32)0x2U << PINMUX_ETPWM6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM6_EQEPERR2 ((uint32)((uint32)0x4U << PINMUX_ETPWM6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM7_EQEPERR12 ((uint32)((uint32)0x1U << PINMUX_ETPWM7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM7_EQEPERR1 ((uint32)((uint32)0x2U << PINMUX_ETPWM7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM7_EQEPERR2 ((uint32)((uint32)0x4U << PINMUX_ETPWM7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_TIME_BASE_SYNC_ON ((uint32)((uint32)0x2U << PINMUX_ETPWM_TIME_BASE_SYNC_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_TBCLK_SYNC_ON ((uint32)((uint32)0x2U << PINMUX_ETPWM_TBCLK_SYNC_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_TIME_BASE_SYNC_OFF ((uint32)((uint32)0x1U << PINMUX_ETPWM_TIME_BASE_SYNC_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_TBCLK_SYNC_OFF ((uint32)((uint32)0x0U << PINMUX_ETPWM_TBCLK_SYNC_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TZ1_ASYNC ((uint32)((uint32)0x1U << PINMUX_TZ1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TZ1_SYNC ((uint32)((uint32)0x2U << PINMUX_TZ1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TZ1_FILTERED ((uint32)((uint32)0x4U << PINMUX_TZ1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TZ2_ASYNC ((uint32)((uint32)0x1U << PINMUX_TZ2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TZ2_SYNC ((uint32)((uint32)0x2U << PINMUX_TZ2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TZ2_FILTERED ((uint32)((uint32)0x4U << PINMUX_TZ2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TZ3_ASYNC ((uint32)((uint32)0x1U << PINMUX_TZ3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TZ3_SYNC ((uint32)((uint32)0x2U << PINMUX_TZ3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TZ3_FILTERED ((uint32)((uint32)0x4U << PINMUX_TZ3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EPWM1SYNCI_ASYNC ((uint32)((uint32)0x1U << PINMUX_EPWM1SYNCI_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EPWM1SYNCI_SYNC ((uint32)((uint32)0x2U << PINMUX_EPWM1SYNCI_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EPWM1SYNCI_FILTERED ((uint32)((uint32)0x4U << PINMUX_EPWM1SYNCI_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC1A_ON ((uint32)((uint32)0x1U << PINMUX_ETPWM_SOC1A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC1A_OFF ((uint32)((uint32)0x0U << PINMUX_ETPWM_SOC1A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC2A_ON ((uint32)((uint32)0x1U << PINMUX_ETPWM_SOC2A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC2A_OFF ((uint32)((uint32)0x0U << PINMUX_ETPWM_SOC2A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC3A_ON ((uint32)((uint32)0x1U << PINMUX_ETPWM_SOC3A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC3A_OFF ((uint32)((uint32)0x0U << PINMUX_ETPWM_SOC3A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC4A_ON ((uint32)((uint32)0x1U << PINMUX_ETPWM_SOC4A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC4A_OFF ((uint32)((uint32)0x0U << PINMUX_ETPWM_SOC4A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC5A_ON ((uint32)((uint32)0x1U << PINMUX_ETPWM_SOC5A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC5A_OFF ((uint32)((uint32)0x0U << PINMUX_ETPWM_SOC5A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC6A_ON ((uint32)((uint32)0x1U << PINMUX_ETPWM_SOC6A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC6A_OFF ((uint32)((uint32)0x0U << PINMUX_ETPWM_SOC6A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC7A_ON ((uint32)((uint32)0x1U << PINMUX_ETPWM_SOC7A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ETPWM_SOC7A_OFF ((uint32)((uint32)0x0U << PINMUX_ETPWM_SOC7A_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP1A_FILTER_ON ((uint32)((uint32)0x2U << PINMUX_EQEP1A_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP1A_FILTER_OFF ((uint32)((uint32)0x0U << PINMUX_EQEP1A_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP1B_FILTER_ON ((uint32)((uint32)0x2U << PINMUX_EQEP1B_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP1B_FILTER_OFF ((uint32)((uint32)0x0U << PINMUX_EQEP1B_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP1I_FILTER_ON ((uint32)((uint32)0x2U << PINMUX_EQEP1I_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP1I_FILTER_OFF ((uint32)((uint32)0x0U << PINMUX_EQEP1I_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP1S_FILTER_ON ((uint32)((uint32)0x2U << PINMUX_EQEP1S_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP1S_FILTER_OFF ((uint32)((uint32)0x0U << PINMUX_EQEP1S_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP2A_FILTER_ON ((uint32)((uint32)0x2U << PINMUX_EQEP2A_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP2A_FILTER_OFF ((uint32)((uint32)0x0U << PINMUX_EQEP2A_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP2B_FILTER_ON ((uint32)((uint32)0x2U << PINMUX_EQEP2B_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP2B_FILTER_OFF ((uint32)((uint32)0x0U << PINMUX_EQEP2B_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP2I_FILTER_ON ((uint32)((uint32)0x2U << PINMUX_EQEP2I_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP2I_FILTER_OFF ((uint32)((uint32)0x0U << PINMUX_EQEP2I_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP2S_FILTER_ON ((uint32)((uint32)0x2U << PINMUX_EQEP2S_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_EQEP2S_FILTER_OFF ((uint32)((uint32)0x0U << PINMUX_EQEP2S_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP1_FILTER_ON ((uint32)((uint32)0x2U << PINMUX_ECAP1_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP1_FILTER_OFF ((uint32)((uint32)0x0U << PINMUX_ECAP1_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP2_FILTER_ON ((uint32)((uint32)0x2U << PINMUX_ECAP2_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP2_FILTER_OFF ((uint32)((uint32)0x0U << PINMUX_ECAP2_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP3_FILTER_ON ((uint32)((uint32)0x2U << PINMUX_ECAP3_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP3_FILTER_OFF ((uint32)((uint32)0x0U << PINMUX_ECAP3_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP4_FILTER_ON ((uint32)((uint32)0x2U << PINMUX_ECAP4_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP4_FILTER_OFF ((uint32)((uint32)0x0U << PINMUX_ECAP4_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP5_FILTER_ON ((uint32)((uint32)0x2U << PINMUX_ECAP5_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP5_FILTER_OFF ((uint32)((uint32)0x0U << PINMUX_ECAP5_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP6_FILTER_ON ((uint32)((uint32)0x2U << PINMUX_ECAP6_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_ECAP6_FILTER_OFF ((uint32)((uint32)0x0U << PINMUX_ECAP6_FILTER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA0_DMA_ON ((uint32)((uint32)0x0U << PINMUX_GIOA0_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA0_DMA_OFF ((uint32)((uint32)0x1U << PINMUX_GIOA0_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA1_DMA_ON ((uint32)((uint32)0x0U << PINMUX_GIOA1_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA1_DMA_OFF ((uint32)((uint32)0x1U << PINMUX_GIOA1_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA2_DMA_ON ((uint32)((uint32)0x0U << PINMUX_GIOA2_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA2_DMA_OFF ((uint32)((uint32)0x1U << PINMUX_GIOA2_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA3_DMA_ON ((uint32)((uint32)0x0U << PINMUX_GIOA3_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA3_DMA_OFF ((uint32)((uint32)0x1U << PINMUX_GIOA3_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA4_DMA_ON ((uint32)((uint32)0x0U << PINMUX_GIOA4_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA4_DMA_OFF ((uint32)((uint32)0x1U << PINMUX_GIOA4_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA5_DMA_ON ((uint32)((uint32)0x0U << PINMUX_GIOA5_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA5_DMA_OFF ((uint32)((uint32)0x1U << PINMUX_GIOA5_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA6_DMA_ON ((uint32)((uint32)0x0U << PINMUX_GIOA6_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA6_DMA_OFF ((uint32)((uint32)0x1U << PINMUX_GIOA6_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA7_DMA_ON ((uint32)((uint32)0x0U << PINMUX_GIOA7_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOA7_DMA_OFF ((uint32)((uint32)0x1U << PINMUX_GIOA7_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB0_DMA_ON ((uint32)((uint32)0x0U << PINMUX_GIOB0_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB0_DMA_OFF ((uint32)((uint32)0x1U << PINMUX_GIOB0_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB1_DMA_ON ((uint32)((uint32)0x0U << PINMUX_GIOB1_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB1_DMA_OFF ((uint32)((uint32)0x1U << PINMUX_GIOB1_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB2_DMA_ON ((uint32)((uint32)0x0U << PINMUX_GIOB2_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB2_DMA_OFF ((uint32)((uint32)0x1U << PINMUX_GIOB2_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB3_DMA_ON ((uint32)((uint32)0x0U << PINMUX_GIOB3_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB3_DMA_OFF ((uint32)((uint32)0x1U << PINMUX_GIOB3_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB4_DMA_ON ((uint32)((uint32)0x0U << PINMUX_GIOB4_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB4_DMA_OFF ((uint32)((uint32)0x1U << PINMUX_GIOB4_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB5_DMA_ON ((uint32)((uint32)0x0U << PINMUX_GIOB5_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB5_DMA_OFF ((uint32)((uint32)0x1U << PINMUX_GIOB5_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB6_DMA_ON ((uint32)((uint32)0x0U << PINMUX_GIOB6_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB6_DMA_OFF ((uint32)((uint32)0x1U << PINMUX_GIOB6_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB7_DMA_ON ((uint32)((uint32)0x0U << PINMUX_GIOB7_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_GIOB7_DMA_OFF ((uint32)((uint32)0x1U << PINMUX_GIOB7_DMA_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TEMP1_ENABLE_ON ((uint32)((uint32)0x2U << PINMUX_TEMP1_ENABLE_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TEMP1_ENABLE_OFF ((uint32)((uint32)0x1U << PINMUX_TEMP1_ENABLE_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TEMP2_ENABLE_ON ((uint32)((uint32)0x2U << PINMUX_TEMP2_ENABLE_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TEMP2_ENABLE_OFF ((uint32)((uint32)0x1U << PINMUX_TEMP2_ENABLE_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TEMP3_ENABLE_ON ((uint32)((uint32)0x2U << PINMUX_TEMP3_ENABLE_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define PINMUX_TEMP3_ENABLE_OFF ((uint32)((uint32)0x1U << PINMUX_TEMP3_ENABLE_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_AD2EVT_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_0_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_1_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_2_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_3_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_4_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_5_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_6_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_7_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_0_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_1_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_2_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_3_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_4_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_5_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_6_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_7_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MDIO_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MIBSPI1NCS_4_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MIBSPI1NCS_5_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_COL_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_CRS_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RX_DV_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RX_ER_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RXCLK_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RXD_0_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RXD_1_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RXD_2_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RXD_3_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_TX_CLK_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_17_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_19_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_21_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_23_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_25_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_27_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_29_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_31_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_00_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_01_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_02_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_03_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_04_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_05_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_06_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_07_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_08_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_09_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_10_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_11_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_12_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_13_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_14_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_15_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_16_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_18_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_20_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_22_SHIFT 24U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_nTZ1_1_SHIFT 0U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_nTZ1_2_SHIFT 8U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_nTZ1_3_SHIFT 16U	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_AD2EVT_T10 ((uint32)((uint32)0x1U << SIGNAL_AD2EVT_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_AD2EVT_V10 ((uint32)((uint32)0x2U << SIGNAL_AD2EVT_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_0_A5 ((uint32)((uint32)0x1U << SIGNAL_GIOA_0_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_0_R5 ((uint32)((uint32)0x2U << SIGNAL_GIOA_0_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_1_C2 ((uint32)((uint32)0x1U << SIGNAL_GIOA_1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_1_R6 ((uint32)((uint32)0x2U << SIGNAL_GIOA_1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_2_C1 ((uint32)((uint32)0x1U << SIGNAL_GIOA_2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_2_B15 ((uint32)((uint32)0x2U << SIGNAL_GIOA_2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_3_E1 ((uint32)((uint32)0x1U << SIGNAL_GIOA_3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_3_R7 ((uint32)((uint32)0x2U << SIGNAL_GIOA_3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_4_A6 ((uint32)((uint32)0x1U << SIGNAL_GIOA_4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_4_R8 ((uint32)((uint32)0x2U << SIGNAL_GIOA_4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_5_B5 ((uint32)((uint32)0x1U << SIGNAL_GIOA_5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_5_R9 ((uint32)((uint32)0x2U << SIGNAL_GIOA_5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_6_H3 ((uint32)((uint32)0x1U << SIGNAL_GIOA_6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_6_R10 ((uint32)((uint32)0x2U << SIGNAL_GIOA_6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_7_M1 ((uint32)((uint32)0x1U << SIGNAL_GIOA_7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOA_7_R11 ((uint32)((uint32)0x2U << SIGNAL_GIOA_7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_0_M2 ((uint32)((uint32)0x1U << SIGNAL_GIOB_0_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_0_B8 ((uint32)((uint32)0x2U << SIGNAL_GIOB_0_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_1_K2 ((uint32)((uint32)0x1U << SIGNAL_GIOB_1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_1_B16 ((uint32)((uint32)0x2U << SIGNAL_GIOB_1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_2_F2 ((uint32)((uint32)0x1U << SIGNAL_GIOB_2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_2_B9 ((uint32)((uint32)0x2U << SIGNAL_GIOB_2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_3_W10 ((uint32)((uint32)0x1U << SIGNAL_GIOB_3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_3_R4 ((uint32)((uint32)0x2U << SIGNAL_GIOB_3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_4_G1 ((uint32)((uint32)0x1U << SIGNAL_GIOB_4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_4_L17 ((uint32)((uint32)0x2U << SIGNAL_GIOB_4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_5_G2 ((uint32)((uint32)0x1U << SIGNAL_GIOB_5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_5_M17 ((uint32)((uint32)0x2U << SIGNAL_GIOB_5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_6_J2 ((uint32)((uint32)0x1U << SIGNAL_GIOB_6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_6_R3 ((uint32)((uint32)0x2U << SIGNAL_GIOB_6_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_7_F1 ((uint32)((uint32)0x1U << SIGNAL_GIOB_7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_GIOB_7_P3 ((uint32)((uint32)0x2U << SIGNAL_GIOB_7_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MDIO_F4 ((uint32)((uint32)0x1U << SIGNAL_MDIO_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MDIO_G3 ((uint32)((uint32)0x2U << SIGNAL_MDIO_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MIBSPI1NCS_4_U10 ((uint32)((uint32)0x1U << SIGNAL_MIBSPI1NCS_4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MIBSPI1NCS_4_N1 ((uint32)((uint32)0x2U << SIGNAL_MIBSPI1NCS_4_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MIBSPI1NCS_5_U9 ((uint32)((uint32)0x1U << SIGNAL_MIBSPI1NCS_5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MIBSPI1NCS_5_P1 ((uint32)((uint32)0x2U << SIGNAL_MIBSPI1NCS_5_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_COL_W4 ((uint32)((uint32)0x1U << SIGNAL_MII_COL_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_COL_F3 ((uint32)((uint32)0x2U << SIGNAL_MII_COL_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_CRS_V4 ((uint32)((uint32)0x1U << SIGNAL_MII_CRS_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_CRS_B4 ((uint32)((uint32)0x2U << SIGNAL_MII_CRS_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RX_DV_U6 ((uint32)((uint32)0x1U << SIGNAL_MII_RX_DV_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RX_DV_B11 ((uint32)((uint32)0x2U << SIGNAL_MII_RX_DV_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RX_ER_U5 ((uint32)((uint32)0x1U << SIGNAL_MII_RX_ER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RX_ER_N19 ((uint32)((uint32)0x2U << SIGNAL_MII_RX_ER_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RXCLK_T4 ((uint32)((uint32)0x1U << SIGNAL_MII_RXCLK_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RXCLK_K19 ((uint32)((uint32)0x2U << SIGNAL_MII_RXCLK_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RXD_0_U4 ((uint32)((uint32)0x1U << SIGNAL_MII_RXD_0_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RXD_0_P1 ((uint32)((uint32)0x2U << SIGNAL_MII_RXD_0_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RXD_1_T3 ((uint32)((uint32)0x1U << SIGNAL_MII_RXD_1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RXD_1_A14 ((uint32)((uint32)0x2U << SIGNAL_MII_RXD_1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RXD_2_U3 ((uint32)((uint32)0x1U << SIGNAL_MII_RXD_2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RXD_2_G19 ((uint32)((uint32)0x2U << SIGNAL_MII_RXD_2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RXD_3_V3 ((uint32)((uint32)0x1U << SIGNAL_MII_RXD_3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_RXD_3_H18 ((uint32)((uint32)0x2U << SIGNAL_MII_RXD_3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_TX_CLK_U7 ((uint32)((uint32)0x1U << SIGNAL_MII_TX_CLK_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_MII_TX_CLK_D19 ((uint32)((uint32)0x2U << SIGNAL_MII_TX_CLK_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_17_A13 ((uint32)((uint32)0x1U << SIGNAL_N2HET1_17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_17_F3 ((uint32)((uint32)0x2U << SIGNAL_N2HET1_17_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_19_B13 ((uint32)((uint32)0x1U << SIGNAL_N2HET1_19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_19_G3 ((uint32)((uint32)0x2U << SIGNAL_N2HET1_19_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_21_H4 ((uint32)((uint32)0x1U << SIGNAL_N2HET1_21_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_21_J3 ((uint32)((uint32)0x2U << SIGNAL_N2HET1_21_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_23_J4 ((uint32)((uint32)0x1U << SIGNAL_N2HET1_23_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_23_G19 ((uint32)((uint32)0x2U << SIGNAL_N2HET1_23_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_25_M3 ((uint32)((uint32)0x1U << SIGNAL_N2HET1_25_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_25_V5 ((uint32)((uint32)0x2U << SIGNAL_N2HET1_25_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_27_A9 ((uint32)((uint32)0x1U << SIGNAL_N2HET1_27_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_27_B2 ((uint32)((uint32)0x2U << SIGNAL_N2HET1_27_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_29_A3 ((uint32)((uint32)0x1U << SIGNAL_N2HET1_29_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_29_C3 ((uint32)((uint32)0x2U << SIGNAL_N2HET1_29_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_31_J17 ((uint32)((uint32)0x1U << SIGNAL_N2HET1_31_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET1_31_W9 ((uint32)((uint32)0x2U << SIGNAL_N2HET1_31_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_00_D6 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_00_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_00_C1 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_00_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_01_D8 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_01_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_01_D4 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_01_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_02_D7 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_02_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_02_E1 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_02_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_03_E2 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_03_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_03_D5 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_03_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_04_D13 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_04_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_04_H3 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_04_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_05_D12 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_05_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_05_D16 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_05_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_06_D11 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_06_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_06_M1 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_06_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_07_N3 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_07_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_07_N17 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_07_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_08_K16 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_08_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_08_V2 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_08_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_09_L16 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_09_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_09_K17 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_09_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_10_M16 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_10_U1 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_10_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_11_N16 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_11_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_11_C4 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_11_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_12_D3 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_12_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_12_V6 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_12_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_13_D2 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_13_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_13_C5 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_13_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_14_D1 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_14_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_14_T1 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_14_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_15_K4 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_15_C6 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_15_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_16_L4 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_16_V7 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_16_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_18_N4 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_18_E3 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_18_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_20_T5 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_20_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_20_N2 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_20_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_22_T7 ((uint32)((uint32)0x1U << SIGNAL_N2HET2_22_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_N2HET2_22_N1 ((uint32)((uint32)0x2U << SIGNAL_N2HET2_22_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_nTZ1_1_N19 ((uint32)((uint32)0x1U << SIGNAL_nTZ1_1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_nTZ1_1_C3 ((uint32)((uint32)0x2U << SIGNAL_nTZ1_1_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_nTZ1_2_F1 ((uint32)((uint32)0x1U << SIGNAL_nTZ1_2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_nTZ1_2_B2 ((uint32)((uint32)0x2U << SIGNAL_nTZ1_2_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_nTZ1_3_J3 ((uint32)((uint32)0x1U << SIGNAL_nTZ1_3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define SIGNAL_nTZ1_3_D19 ((uint32)((uint32)0x2U << SIGNAL_nTZ1_3_SHIFT))	/* src\hal\include\HL_pinmux.h */
+#define __SYS_VIM_H__ 	/* src\hal\include\HL_sys_vim.h */
+#define __REG_VIM_H__ 	/* src\hal\include\HL_reg_vim.h */
+#define vimREG ((vimBASE_t *)0xFFFFFD00U)	/* src\hal\include\HL_reg_vim.h */
+#define VIM_CHANNELS 128U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_ECCSTAT (*(volatile uint32 *)0xFFFFFDECU)	/* src\hal\include\HL_sys_vim.h */
+#define VIM_ECCCTL (*(volatile uint32 *)0xFFFFFDF0U)	/* src\hal\include\HL_sys_vim.h */
+#define VIM_UERRADDR (*(volatile uint32 *)0xFFFFFDF4U)	/* src\hal\include\HL_sys_vim.h */
+#define VIM_FBVECADDR (*(volatile uint32 *)0xFFFFFDF8U)	/* src\hal\include\HL_sys_vim.h */
+#define VIM_SBERRADDR (*(volatile uint32 *)0xFFFFFDFCU)	/* src\hal\include\HL_sys_vim.h */
+#define VIMRAMECCLOC (*(volatile uint32 *)0xFFF82400U)	/* src\hal\include\HL_sys_vim.h */
+#define VIMRAMLOC (*(volatile uint32 *)0xFFF82000U)	/* src\hal\include\HL_sys_vim.h */
+#define VIM_FIRQPR0_CONFIGVALUE ((uint32)((uint32)SYS_FIQ << 0U) |(uint32)((uint32)SYS_FIQ << 1U) |(uint32)((uint32)SYS_IRQ << 2U) |(uint32)((uint32)SYS_IRQ << 3U) |(uint32)((uint32)SYS_IRQ << 4U) |(uint32)((uint32)SYS_IRQ << 5U) |(uint32)((uint32)SYS_IRQ << 6U) |(uint32)((uint32)SYS_IRQ << 7U) |(uint32)((uint32)SYS_IRQ << 8U) |(uint32)((uint32)SYS_IRQ << 9U) |(uint32)((uint32)SYS_IRQ << 10U) |(uint32)((uint32)SYS_IRQ << 11U) |(uint32)((uint32)SYS_IRQ << 12U) |(uint32)((uint32)SYS_IRQ << 13U) |(uint32)((uint32)SYS_IRQ << 14U) |(uint32)((uint32)SYS_IRQ << 15U) |(uint32)((uint32)SYS_IRQ << 16U) |(uint32)((uint32)SYS_IRQ << 17U) |(uint32)((uint32)SYS_IRQ << 18U) |(uint32)((uint32)SYS_IRQ << 19U) |(uint32)((uint32)SYS_IRQ << 20U) |(uint32)((uint32)SYS_IRQ << 21U) |(uint32)((uint32)SYS_IRQ << 22U) |(uint32)((uint32)SYS_IRQ << 23U) |(uint32)((uint32)SYS_IRQ << 24U) |(uint32)((uint32)SYS_IRQ << 25U) |(uint32)((uint32)SYS_IRQ << 26U) |(uint32)((uint32)SYS_IRQ << 27U) |(uint32)((uint32)SYS_IRQ << 28U) |(uint32)((uint32)SYS_IRQ << 29U) |(uint32)((uint32)SYS_IRQ << 30U) |(uint32)((uint32)SYS_IRQ << 31U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_FIRQPR1_CONFIGVALUE ((uint32)((uint32)SYS_IRQ << 0U) |(uint32)((uint32)SYS_IRQ << 1U) |(uint32)((uint32)SYS_IRQ << 2U) |(uint32)((uint32)SYS_IRQ << 3U) |(uint32)((uint32)SYS_IRQ << 4U) |(uint32)((uint32)SYS_IRQ << 5U) |(uint32)((uint32)SYS_IRQ << 6U) |(uint32)((uint32)SYS_IRQ << 7U) |(uint32)((uint32)SYS_IRQ << 8U) |(uint32)((uint32)SYS_IRQ << 9U) |(uint32)((uint32)SYS_IRQ << 10U) |(uint32)((uint32)SYS_IRQ << 11U) |(uint32)((uint32)SYS_IRQ << 12U) |(uint32)((uint32)SYS_IRQ << 13U) |(uint32)((uint32)SYS_IRQ << 14U) |(uint32)((uint32)SYS_IRQ << 15U) |(uint32)((uint32)SYS_IRQ << 16U) |(uint32)((uint32)SYS_IRQ << 17U) |(uint32)((uint32)SYS_IRQ << 18U) |(uint32)((uint32)SYS_IRQ << 19U) |(uint32)((uint32)SYS_IRQ << 20U) |(uint32)((uint32)SYS_IRQ << 21U) |(uint32)((uint32)SYS_IRQ << 22U) |(uint32)((uint32)SYS_IRQ << 23U) |(uint32)((uint32)SYS_IRQ << 24U) |(uint32)((uint32)SYS_IRQ << 25U) |(uint32)((uint32)SYS_IRQ << 26U) |(uint32)((uint32)SYS_IRQ << 27U) |(uint32)((uint32)SYS_IRQ << 28U) |(uint32)((uint32)SYS_IRQ << 29U) |(uint32)((uint32)SYS_IRQ << 30U) |(uint32)((uint32)SYS_IRQ << 31U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_FIRQPR2_CONFIGVALUE ((uint32)((uint32)SYS_IRQ << 0U) |(uint32)((uint32)SYS_IRQ << 1U) |(uint32)((uint32)SYS_IRQ << 2U) |(uint32)((uint32)SYS_IRQ << 3U) |(uint32)((uint32)SYS_IRQ << 4U) |(uint32)((uint32)SYS_IRQ << 5U) |(uint32)((uint32)SYS_IRQ << 6U) |(uint32)((uint32)SYS_IRQ << 7U) |(uint32)((uint32)SYS_IRQ << 8U) |(uint32)((uint32)SYS_IRQ << 9U) |(uint32)((uint32)SYS_IRQ << 10U) |(uint32)((uint32)SYS_IRQ << 11U) |(uint32)((uint32)SYS_IRQ << 12U) |(uint32)((uint32)SYS_IRQ << 13U) |(uint32)((uint32)SYS_IRQ << 14U) |(uint32)((uint32)SYS_IRQ << 15U) |(uint32)((uint32)SYS_IRQ << 16U) |(uint32)((uint32)SYS_IRQ << 17U) |(uint32)((uint32)SYS_IRQ << 18U) |(uint32)((uint32)SYS_IRQ << 19U) |(uint32)((uint32)SYS_IRQ << 20U) |(uint32)((uint32)SYS_IRQ << 21U) |(uint32)((uint32)SYS_IRQ << 22U) |(uint32)((uint32)SYS_IRQ << 23U) |(uint32)((uint32)SYS_IRQ << 24U) |(uint32)((uint32)SYS_IRQ << 25U) |(uint32)((uint32)SYS_IRQ << 26U) |(uint32)((uint32)SYS_IRQ << 27U) |(uint32)((uint32)SYS_IRQ << 28U) |(uint32)((uint32)SYS_IRQ << 29U) |(uint32)((uint32)SYS_IRQ << 30U) |(uint32)((uint32)SYS_IRQ << 31U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_FIRQPR3_CONFIGVALUE ((uint32)((uint32)SYS_IRQ << 0U) |(uint32)((uint32)SYS_IRQ << 1U) |(uint32)((uint32)SYS_IRQ << 2U) |(uint32)((uint32)SYS_IRQ << 3U) |(uint32)((uint32)SYS_IRQ << 4U) |(uint32)((uint32)SYS_IRQ << 5U) |(uint32)((uint32)SYS_IRQ << 6U) |(uint32)((uint32)SYS_IRQ << 7U) |(uint32)((uint32)SYS_IRQ << 8U) |(uint32)((uint32)SYS_IRQ << 9U) |(uint32)((uint32)SYS_IRQ << 10U) |(uint32)((uint32)SYS_IRQ << 11U) |(uint32)((uint32)SYS_IRQ << 12U) |(uint32)((uint32)SYS_IRQ << 13U) |(uint32)((uint32)SYS_IRQ << 14U) |(uint32)((uint32)SYS_IRQ << 15U) |(uint32)((uint32)SYS_IRQ << 16U) |(uint32)((uint32)SYS_IRQ << 17U) |(uint32)((uint32)SYS_IRQ << 18U) |(uint32)((uint32)SYS_IRQ << 19U) |(uint32)((uint32)SYS_IRQ << 20U) |(uint32)((uint32)SYS_IRQ << 21U) |(uint32)((uint32)SYS_IRQ << 22U) |(uint32)((uint32)SYS_IRQ << 23U) |(uint32)((uint32)SYS_IRQ << 24U) |(uint32)((uint32)SYS_IRQ << 25U) |(uint32)((uint32)SYS_IRQ << 26U) |(uint32)((uint32)SYS_IRQ << 27U) |(uint32)((uint32)SYS_IRQ << 28U) |(uint32)((uint32)SYS_IRQ << 29U) |(uint32)((uint32)SYS_IRQ << 30U) |(uint32)((uint32)SYS_IRQ << 31U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_REQMASKSET0_CONFIGVALUE ((uint32)((uint32)1U << 0U) |(uint32)((uint32)1U << 1U) |(uint32)((uint32)1U << 2U) |(uint32)((uint32)0U << 3U) |(uint32)((uint32)0U << 4U) |(uint32)((uint32)0U << 5U) |(uint32)((uint32)0U << 6U) |(uint32)((uint32)0U << 7U) |(uint32)((uint32)0U << 8U) |(uint32)((uint32)0U << 9U) |(uint32)((uint32)0U << 10U) |(uint32)((uint32)0U << 11U) |(uint32)((uint32)0U << 12U) |(uint32)((uint32)0U << 13U) |(uint32)((uint32)0U << 14U) |(uint32)((uint32)0U << 15U) |(uint32)((uint32)1U << 16U) |(uint32)((uint32)0U << 17U) |(uint32)((uint32)0U << 18U) |(uint32)((uint32)0U << 19U) |(uint32)((uint32)0U << 20U) |(uint32)((uint32)1U << 21U) |(uint32)((uint32)0U << 22U) |(uint32)((uint32)0U << 23U) |(uint32)((uint32)0U << 24U) |(uint32)((uint32)0U << 25U) |(uint32)((uint32)0U << 26U) |(uint32)((uint32)0U << 27U) |(uint32)((uint32)0U << 28U) |(uint32)((uint32)1U << 29U) |(uint32)((uint32)0U << 30U) |(uint32)((uint32)0U << 31U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_REQMASKSET1_CONFIGVALUE ((uint32)((uint32)0U << 0U) |(uint32)((uint32)0U << 1U) |(uint32)((uint32)1U << 2U) |(uint32)((uint32)1U << 3U) |(uint32)((uint32)0U << 4U) |(uint32)((uint32)0U << 5U) |(uint32)((uint32)0U << 6U) |(uint32)((uint32)0U << 7U) |(uint32)((uint32)1U << 8U) |(uint32)((uint32)0U << 9U) |(uint32)((uint32)1U << 10U) |(uint32)((uint32)0U << 11U) |(uint32)((uint32)1U << 12U) |(uint32)((uint32)0U << 13U) |(uint32)((uint32)1U << 14U) |(uint32)((uint32)0U << 15U) |(uint32)((uint32)0U << 16U) |(uint32)((uint32)0U << 17U) |(uint32)((uint32)0U << 18U) |(uint32)((uint32)0U << 19U) |(uint32)((uint32)0U << 20U) |(uint32)((uint32)0U << 21U) |(uint32)((uint32)0U << 22U) |(uint32)((uint32)0U << 23U) |(uint32)((uint32)0U << 24U) |(uint32)((uint32)0U << 25U) |(uint32)((uint32)0U << 26U) |(uint32)((uint32)0U << 27U) |(uint32)((uint32)0U << 28U) |(uint32)((uint32)0U << 29U) |(uint32)((uint32)0U << 30U) |(uint32)((uint32)0U << 31U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_REQMASKSET2_CONFIGVALUE ((uint32)((uint32)0U << 0U) |(uint32)((uint32)0U << 1U) |(uint32)((uint32)1U << 2U) |(uint32)((uint32)0U << 3U) |(uint32)((uint32)0U << 4U) |(uint32)((uint32)0U << 5U) |(uint32)((uint32)0U << 6U) |(uint32)((uint32)0U << 7U) |(uint32)((uint32)0U << 8U) |(uint32)((uint32)0U << 9U) |(uint32)((uint32)0U << 10U) |(uint32)((uint32)0U << 11U) |(uint32)((uint32)0U << 12U) |(uint32)((uint32)0U << 13U) |(uint32)((uint32)0U << 14U) |(uint32)((uint32)0U << 15U) |(uint32)((uint32)0U << 16U) |(uint32)((uint32)0U << 17U) |(uint32)((uint32)0U << 18U) |(uint32)((uint32)0U << 19U) |(uint32)((uint32)0U << 20U) |(uint32)((uint32)0U << 21U) |(uint32)((uint32)0U << 22U) |(uint32)((uint32)0U << 23U) |(uint32)((uint32)0U << 24U) |(uint32)((uint32)0U << 25U) |(uint32)((uint32)0U << 26U) |(uint32)((uint32)0U << 27U) |(uint32)((uint32)0U << 28U) |(uint32)((uint32)0U << 29U) |(uint32)((uint32)0U << 30U) |(uint32)((uint32)0U << 31U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_REQMASKSET3_CONFIGVALUE ((uint32)((uint32)0U << 0U) |(uint32)((uint32)0U << 1U) |(uint32)((uint32)0U << 2U) |(uint32)((uint32)0U << 3U) |(uint32)((uint32)0U << 4U) |(uint32)((uint32)0U << 5U) |(uint32)((uint32)0U << 6U) |(uint32)((uint32)0U << 7U) |(uint32)((uint32)1U << 8U) |(uint32)((uint32)0U << 9U) |(uint32)((uint32)0U << 10U) |(uint32)((uint32)0U << 11U) |(uint32)((uint32)0U << 12U) |(uint32)((uint32)0U << 13U) |(uint32)((uint32)0U << 14U) |(uint32)((uint32)0U << 15U) |(uint32)((uint32)0U << 16U) |(uint32)((uint32)0U << 17U) |(uint32)((uint32)0U << 18U) |(uint32)((uint32)0U << 19U) |(uint32)((uint32)0U << 20U) |(uint32)((uint32)0U << 21U) |(uint32)((uint32)0U << 22U) |(uint32)((uint32)0U << 23U) |(uint32)((uint32)0U << 24U) |(uint32)((uint32)0U << 25U) |(uint32)((uint32)0U << 26U) |(uint32)((uint32)0U << 27U) |(uint32)((uint32)0U << 28U) |(uint32)((uint32)0U << 29U) |(uint32)((uint32)0U << 30U) |(uint32)((uint32)0U << 31U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_WAKEMASKSET0_CONFIGVALUE 0xFFFFFFFFU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_WAKEMASKSET1_CONFIGVALUE 0xFFFFFFFFU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_WAKEMASKSET2_CONFIGVALUE 0xFFFFFFFFU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_WAKEMASKSET3_CONFIGVALUE 0xFFFFFFFFU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CAPEVT_CONFIGVALUE ((uint32)((uint32)0U << 0U) | (uint32)((uint32)0U << 16U))	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL0_CONFIGVALUE 0x00010203U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL1_CONFIGVALUE 0x04050607U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL2_CONFIGVALUE 0x08090A0BU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL3_CONFIGVALUE 0x0C0D0E0FU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL4_CONFIGVALUE 0x10111213U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL5_CONFIGVALUE 0x14151617U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL6_CONFIGVALUE 0x18191A1BU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL7_CONFIGVALUE 0x1C1D1E1FU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL8_CONFIGVALUE 0x20212223U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL9_CONFIGVALUE 0x24252627U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL10_CONFIGVALUE 0x28292A2BU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL11_CONFIGVALUE 0x2C2D2E2FU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL12_CONFIGVALUE 0x30313233U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL13_CONFIGVALUE 0x34353637U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL14_CONFIGVALUE 0x38393A3BU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL15_CONFIGVALUE 0x3C3D3E3FU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL16_CONFIGVALUE 0x40414243U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL17_CONFIGVALUE 0x44454647U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL18_CONFIGVALUE 0x48494A4BU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL19_CONFIGVALUE 0x4C4D4E4FU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL20_CONFIGVALUE 0x50515253U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL21_CONFIGVALUE 0x54555657U	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL22_CONFIGVALUE 0x58595A5BU	/* src\hal\include\HL_sys_vim.h */
+#define VIM_CHANCTRL23_CONFIGVALUE 0x5C5D5E5FU	/* src\hal\include\HL_sys_vim.h */

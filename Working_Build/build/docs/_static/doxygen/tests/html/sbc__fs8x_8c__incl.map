@@ -1,0 +1,20 @@
+<map id="sbc_fs8x.c" name="sbc_fs8x.c">
+<area shape="rect" id="node1" title="Driver functions for the FS8x SBC." alt="" coords="189,5,274,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,73,107"/>
+<area shape="rect" id="node3" href="$sbc__fs8x_8h.html" title="FS8x driver interface." alt="" coords="149,80,234,107"/>
+<area shape="rect" id="node5" href="$sbc__fs8x__map_8h.html" title="FS8x register map." alt="" coords="15,155,133,181"/>
+<area shape="rect" id="node6" href="$sbc__fs8x__common_8h.html" title="Driver common structures, enums, macros and configuration values." alt="" coords="411,155,553,181"/>
+<area shape="rect" id="node17" href="$sbc__fs8x__assert_8h.html" title="Assertion macro definition, for debugging purposes." alt="" coords="207,229,335,256"/>
+<area shape="rect" id="node18" href="$sbc__fs8x__communication_8h.html" title="This file contains functions for SPI/I2C communication." alt="" coords="384,80,564,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="386,603,461,629"/>
+<area shape="rect" id="node7" href="$spi_8h.html" title="Headers for the driver for the SPI module." alt="" coords="762,229,813,256"/>
+<area shape="rect" id="node12" title=" " alt="" coords="817,603,883,629"/>
+<area shape="rect" id="node8" href="$spi__cfg_8h.html" title="Headers for the configuration for the SPI module." alt="" coords="694,304,769,331"/>
+<area shape="rect" id="node14" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="762,528,855,555"/>
+<area shape="rect" id="node9" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="658,379,805,405"/>
+<area shape="rect" id="node15" title=" " alt="" coords="559,379,634,405"/>
+<area shape="rect" id="node16" title=" " alt="" coords="461,379,535,405"/>
+<area shape="rect" id="node10" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="615,453,690,480"/>
+<area shape="rect" id="node11" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="563,528,635,555"/>
+<area shape="rect" id="node13" title=" " alt="" coords="549,603,649,629"/>
+</map>

@@ -1,0 +1,6 @@
+static void ABC_ImportantFunction(void);
+static void ABC_EvenMoreImportantFunction(void);
+static void ABC_ImportantFunction(void) {
+}
+static void ABC_EvenMoreImportantFunction(void) {
+}

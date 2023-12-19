@@ -1,0 +1,12 @@
+<map id="SOA_CheckCurrent" name="SOA_CheckCurrent">
+<area shape="rect" id="node1" title="checks the abidance by the safe operating area" alt="" coords="5,132,141,159"/>
+<area shape="rect" id="node2" href="$bms_8c.html#aa8629fa034f46282328df180f5190e2e" title="Get current flow direction, current value as function parameter." alt="" coords="197,5,396,32"/>
+<area shape="rect" id="node3" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="245,56,349,83"/>
+<area shape="rect" id="node5" href="$soa__cfg_8c.html#af23336f7a72fce8c5e2a574075d78bbd" title="Checks if cell current limit is violated." alt="" coords="193,107,400,133"/>
+<area shape="rect" id="node6" href="$soa__cfg_8c.html#a1b00364be89ccc23d92926da05500192" title="Checks if string current is floating while contactors are open." alt="" coords="201,157,392,184"/>
+<area shape="rect" id="node9" href="$soa__cfg_8c.html#a768c8685aef6aedc30b0f65cafb1c049" title="Checks if pack current limit is violated." alt="" coords="189,208,404,235"/>
+<area shape="rect" id="node10" href="$soa__cfg_8c.html#aa31aff28740029f1f8f26fd474e63e6f" title="Checks if string current limit is violated." alt="" coords="211,259,382,301"/>
+<area shape="rect" id="node4" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="476,56,599,83"/>
+<area shape="rect" id="node7" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="466,132,609,159"/>
+<area shape="rect" id="node8" href="$bms_8c.html#a348c05608a31e56c9675cd88bdad6c79" title="Returns if string is currently precharging or not." alt="" coords="452,183,623,209"/>
+</map>

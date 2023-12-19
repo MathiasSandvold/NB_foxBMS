@@ -1,0 +1,7 @@
+<map id="MXM_MonRegistryParseStatusFmeaIntoDevices" name="MXM_MonRegistryParseStatusFmeaIntoDevices">
+<area shape="rect" id="node1" title="Parse STATUS or FMEA into the registry." alt="" coords="5,49,208,90"/>
+<area shape="rect" id="node2" href="$foxmath_8c.html#aacaf0845143922c6a31912af37fd9741" title="Returns the minimum of the passed uint8_t values." alt="" coords="264,5,459,32"/>
+<area shape="rect" id="node3" href="$mxm__1785x__tools_8c.html#af328199dc46b6eab7f35f08f0f076145" title="Extract a value from a single register." alt="" coords="256,56,467,83"/>
+<area shape="rect" id="node5" href="$mxm__registry_8c.html#aca0807a445d30190eadbef7467b43ca8" title="Parse number of highest connected device from monitoring&#45; register." alt="" coords="263,107,459,149"/>
+<area shape="rect" id="node4" href="$mxm__1785x__tools_8c.html#a0dc736d94a1c30286d2549d3efa99e2d" title="Find Position of first set bit in bitmask." alt="" coords="515,56,635,83"/>
+</map>

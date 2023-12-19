@@ -1,0 +1,11 @@
+<map id="algorithm_cfg.h" name="algorithm_cfg.h">
+<area shape="rect" id="node1" title="Headers for the configuration of the algorithm module." alt="" coords="328,5,439,32"/>
+<area shape="rect" id="node2" href="$algorithm_8h.html" title="Headers for the driver for the storage in the EEPROM memory." alt="" coords="147,80,233,107"/>
+<area shape="rect" id="node7" href="$algorithm__cfg_8c.html" title="Configuration for the algorithm module." alt="" coords="257,80,368,107"/>
+<area shape="rect" id="node8" href="$moving__average_8c.html" title="moving average algorithm" alt="" coords="392,80,516,107"/>
+<area shape="rect" id="node9" href="$test__algorithm__cfg_8c.html" title="Test of the algorithm config module." alt="" coords="541,80,679,107"/>
+<area shape="rect" id="node3" href="$algorithm_8c.html" title="Main module to handle the execution of algorithms." alt="" coords="5,155,92,181"/>
+<area shape="rect" id="node4" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="116,155,171,181"/>
+<area shape="rect" id="node5" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="195,155,281,181"/>
+<area shape="rect" id="node6" href="$test__algorithm_8c.html" title="Test of the algorithm module." alt="" coords="305,155,419,181"/>
+</map>

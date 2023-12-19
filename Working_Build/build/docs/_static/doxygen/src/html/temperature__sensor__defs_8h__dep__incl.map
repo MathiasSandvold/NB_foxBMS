@@ -1,0 +1,8 @@
+<map id="temperature_sensor_defs.h" name="temperature_sensor_defs.h">
+<area shape="rect" id="node1" title="TODO." alt="" coords="427,5,564,47"/>
+<area shape="rect" id="node2" href="$epcos__b57251v5103j060_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="5,95,180,121"/>
+<area shape="rect" id="node3" href="$epcos__b57861s0103f045_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="205,95,381,121"/>
+<area shape="rect" id="node4" href="$murata__ncu15xh103f6sxx_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="405,95,586,121"/>
+<area shape="rect" id="node5" href="$vishay__ntcalug01a103g_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="611,95,777,121"/>
+<area shape="rect" id="node6" href="$vishay__ntcle317e4103sba_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="802,95,983,121"/>
+</map>

@@ -1,0 +1,5 @@
+<map id="testOS_CheckTimeHasPassedSelfTestSuccessful" name="testOS_CheckTimeHasPassedSelfTestSuccessful">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,208,47"/>
+<area shape="rect" id="node2" href="$os_8c.html#a5fae9e0d0e3f7cfb0aaf4b9a301eae3d" title="Does a self check if the OS_CheckTimeHasPassedWithTimestamp works as expected." alt="" coords="256,13,483,39"/>
+<area shape="rect" id="node3" href="$os_8c.html#a834064ee9e9a90768918c776f5cb1bb7" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="531,5,737,47"/>
+</map>

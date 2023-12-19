@@ -1,0 +1,4 @@
+<map id="testDIAG_ErrorUndertemperatureDischargeInvalidInput" name="testDIAG_ErrorUndertemperatureDischargeInvalidInput">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,219,47"/>
+<area shape="rect" id="node2" href="$diag__cbs_8h.html#aca827c1456c0bea3077ac90e39c933f4" title="diagnosis callback function for undertemperature discharge events" alt="" coords="267,5,457,47"/>
+</map>

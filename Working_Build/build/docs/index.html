@@ -1,0 +1,353 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The foxBMS 2 Documentation &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="1. Releases" href="general/releases.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="#" class="icon icon-home"> foxBMS 2
+            <img src="_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="#" class="icon icon-home"></a> &raquo;</li>
+      <li>The foxBMS 2 Documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="the-foxbms-2-documentation">
+<span id="id1"></span><h1>The foxBMS 2 Documentation<a class="headerlink" href="#the-foxbms-2-documentation" title="Permalink to this headline"></a></h1>
+<p>Welcome to the foxBMS 2 documentation. foxBMS 2 is the modular and open source
+Battery Management System (BMS) development platform from <a class="reference external" href="https://www.iisb.fraunhofer.de">Fraunhofer IISB</a>.
+This is the second generation of foxBMS. Its is a free, open and flexible
+development environment to design beyond state-of-the-art complex battery
+management systems.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The present version of the foxBMS 2 documentation is <code class="docutils literal notranslate"><span class="pre">1.5.0</span></code>. It is
+available in HTML. More detailed information on the version history can be
+found in the <a class="reference internal" href="general/releases.html#releases"><span class="std std-ref">Releases</span></a> section. This documentation was generated on
+2023-03-06 13:00:22.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The foxBMS 2 hardware and software is under permanent development. The free
+and open research and development platform foxBMS 2 as presented in the
+documentation hereafter is not provided to be used without any adaptions
+(e.g., to fulfill mandatory regulations) in consumer products, electric
+vehicles, production environments or any similar usages: it is only
+intended to be used by skilled professionals trained in designing battery
+system prototypes.</p>
+</div>
+<p>The documentation is divided in the following parts:</p>
+<ol class="arabic simple">
+<li><p><a class="reference internal" href="#general-information-overview"><span class="std std-ref">General Information</span></a></p></li>
+<li><p><a class="reference internal" href="#design-considerations"><span class="std std-ref">Introduction</span></a></p></li>
+<li><p><a class="reference internal" href="#getting-started-overview"><span class="std std-ref">Getting Started</span></a></p></li>
+<li><p><a class="reference internal" href="#software-documentation-overview"><span class="std std-ref">Software Documentation</span></a></p></li>
+<li><p><a class="reference internal" href="#hardware-documentation-overview"><span class="std std-ref">Hardware Documentation</span></a></p></li>
+<li><p><a class="reference internal" href="#system-documentation-overview"><span class="std std-ref">System Documentation</span></a></p></li>
+<li><p><a class="reference internal" href="#tools-documentation-overview"><span class="std std-ref">Tools Documentation</span></a></p></li>
+<li><p><a class="reference internal" href="#developer-manual"><span class="std std-ref">Developer Manual</span></a></p></li>
+</ol>
+<p>In the first part of the documentation, general information about foxBMS 2
+can be found (<a class="reference internal" href="#general-information-overview"><span class="std std-ref">General Information</span></a>):</p>
+<ul class="simple">
+<li><p>Information about the versions and the related release notes of foxBMS 2</p></li>
+<li><p>Licenses of the hardware, software and documentation of foxBMS 2</p></li>
+<li><p>Motivation behind the foxBMS 2 initiative</p></li>
+<li><p>Technology roadmap of the upcoming hardware and software components</p></li>
+<li><p>Team involved in the development of foxBMS 2</p></li>
+</ul>
+<p>The second parts gives an overview about battery systems and their design in
+general (<a class="reference internal" href="#design-considerations"><span class="std std-ref">Introduction</span></a>):</p>
+<ul class="simple">
+<li><p>Abbreviations and naming conventions used in the documentation</p></li>
+<li><p>Overview of the platform</p></li>
+<li><p>Use case on which the documentation is based</p></li>
+</ul>
+<p>The third part of the documentation (<a class="reference internal" href="#getting-started-overview"><span class="std std-ref">Getting Started</span></a>) acts as a
+guide through the setup of the foxBMS 2 development environment:</p>
+<ul class="simple">
+<li><p>How to install the required software</p></li>
+<li><p>How to set a workspace to use the sources</p></li>
+</ul>
+<p>To work on the software, the <a class="reference internal" href="#software-documentation-overview"><span class="std std-ref">Software Documentation</span></a> presents
+the structure of the software, how the basic tasks are running and how to call
+user-defined functions. Further, a how-to is provided in order to answer the
+most common questions. A detailed description of the embedded software is found
+in the Doxygen documentation.</p>
+<p>Next, the <a class="reference internal" href="#hardware-documentation-overview"><span class="std std-ref">Hardware Documentation</span></a> gives the details needed to
+understand the hardware platform developed for foxBMS 2.</p>
+<p>The <a class="reference internal" href="#system-documentation-overview"><span class="std std-ref">System Documentation</span></a> provides information on the
+integration of foxBMS 2 in an application.</p>
+<p>Numerous tools have been developed or adapted to support developing with the
+foxBMS 2 platform. These tools and their usage are described in
+<a class="reference internal" href="#tools-documentation-overview"><span class="std std-ref">Tools Documentation</span></a>.</p>
+<p>Finally, the <a class="reference internal" href="#developer-manual"><span class="std std-ref">Developer Manual</span></a> explains which rules need to be applied
+when developing for the foxBMS 2 platform.</p>
+<p>All sections are listed here:</p>
+<div class="toctree-wrapper compound" id="general-information-overview">
+<p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="general/team.html">6. Team</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="design-considerations">
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="introduction/use-case.html">4. Use Case</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="getting-started-overview">
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="software-documentation-overview">
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software/api/overview.html">11. API</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="hardware-documentation-overview">
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="system-documentation-overview">
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="tools-documentation-overview">
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="developer-manual">
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+</div>
+<div class="toctree-wrapper compound" id="miscellaneous-information">
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="general/releases.html" class="btn btn-neutral float-right" title="1. Releases" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

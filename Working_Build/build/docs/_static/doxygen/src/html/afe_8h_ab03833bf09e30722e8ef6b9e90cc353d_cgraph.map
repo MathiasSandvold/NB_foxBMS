@@ -1,0 +1,42 @@
+<map id="AFE_Initialize" name="AFE_Initialize">
+<area shape="rect" id="node1" title=" " alt="" coords="5,171,108,197"/>
+<area shape="rect" id="node2" href="$debug__default_8c.html#a3acd2d613a6305ac925c77c92cf49ee3" title="initialize driver" alt="" coords="196,5,307,32"/>
+<area shape="rect" id="node3" href="$ltc__6806_8c.html#a7cd8b1e13abf2fb07eadc0fd3bb4fd6f" title="Sets the transceiver pins to enable LTC6820 IC." alt="" coords="162,56,341,83"/>
+<area shape="rect" id="node8" href="$mxm__cfg_8c.html#a417b5a6e2fac6c926405a19edcc4c378" title="Initialize the pins connected to the MAX17841B." alt="" coords="156,233,347,260"/>
+<area shape="rect" id="node12" href="$mxm__1785x_8c.html#a22499bf1d575d8d09dc565b966339349" title="Execute all preinit selfchecks." alt="" coords="174,491,329,517"/>
+<area shape="rect" id="node32" href="$mxm__afe_8c.html#aaffcb81a4a3d59c74740a345fe57e519" title="Initialize the state structs." alt="" coords="159,787,343,829"/>
+<area shape="rect" id="node38" href="$nxp__afe_8h.html#a7bd1bfeeaf45758a46b525e5ca37112c" title=" " alt="" coords="201,107,302,133"/>
+<area shape="rect" id="node4" href="$pex_8c.html#a8d40659d3d10755949d65e36f483c504" title="sets pin to high." alt="" coords="453,5,547,32"/>
+<area shape="rect" id="node7" href="$pex_8c.html#aa2309e9dbd95438d52d80cad62ce5a45" title="sets pin to input." alt="" coords="409,56,591,83"/>
+<area shape="rect" id="node5" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="691,56,837,83"/>
+<area shape="rect" id="node6" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="695,5,833,32"/>
+<area shape="rect" id="node9" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="453,208,547,235"/>
+<area shape="rect" id="node10" href="$io_8c.html#a41154d1d77ad0873d462c803ce831f68" title="Set pin to output by writing in pin direction register." alt="" coords="407,259,593,285"/>
+<area shape="rect" id="node11" href="$spi_8c.html#a38bf6ba5f5b17b01e9385983ed860f72" title="Sets the functional of a SPI pin." alt="" coords="435,309,565,336"/>
+<area shape="rect" id="node13" href="$diag_8c.html#a3e60a00edfbecf928fd6db140626647a" title="DIAG_CheckEvent provides a simple interface to check an event for STD_OK." alt="" coords="435,461,565,488"/>
+<area shape="rect" id="node16" href="$mxm__battery__management_8c.html#a871192ccec4147196c1ad237e68c1b40" title="runs a selfcheck for the address space check" alt="" coords="395,513,605,554"/>
+<area shape="rect" id="node20" href="$mxm__1785x__tools_8c.html#a302164db64e1cd2f77a03bfc022d0509" title="Test the MXM_Convert()&#45;function." alt="" coords="970,715,1097,741"/>
+<area shape="rect" id="node24" href="$mxm__crc8_8c.html#ae29207d9e421c9526a6e4f120c39cf44" title="Test the CRC8&#45;algorithm with a known pattern." alt="" coords="431,411,569,437"/>
+<area shape="rect" id="node27" href="$mxm__1785x__tools_8c.html#a60fd59e838633019c105f1fe926a453e" title="Test MXM_ExtractValueFromRegister()." alt="" coords="1192,613,1428,640"/>
+<area shape="rect" id="node28" href="$mxm__1785x__tools_8c.html#aeb55532830ad78b72ee074bfebde6df3" title="Test MXM_FirstSetBit()." alt="" coords="1237,411,1383,437"/>
+<area shape="rect" id="node29" href="$mxm__1785x_8c.html#acd2d5bdda78cd47e0ec8a3dda3eb5385" title="Test the MXM_ParseVoltageReadall()&#45;function." alt="" coords="398,664,602,691"/>
+<area shape="rect" id="node14" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="712,461,816,488"/>
+<area shape="rect" id="node15" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="972,461,1095,488"/>
+<area shape="rect" id="node17" href="$mxm__battery__management_8c.html#adcda2712e58935f41533d2b54c90aee5" title="Check if a register address is user accessible." alt="" coords="653,520,875,547"/>
+<area shape="rect" id="node18" href="$mxm__battery__management_8c.html#a9e3c85d541ed2c4301747d8633ba03bc" title="Check if a register address is user accessible in MAX17852." alt="" coords="923,512,1144,539"/>
+<area shape="rect" id="node19" href="$mxm__battery__management_8c.html#aacd19e9ba1a28a8d4ac5fde5677c93e2" title="Check if a register address is user accessible in MAX17853." alt="" coords="923,563,1144,589"/>
+<area shape="rect" id="node21" href="$mxm__1785x__tools_8c.html#ab437f79b3d0299bb51e1a22bcfb484d2" title="Convert a measurement value to a voltage value." alt="" coords="1259,664,1361,691"/>
+<area shape="rect" id="node22" href="$mxm__1785x__tools_8c.html#af328199dc46b6eab7f35f08f0f076145" title="Extract a value from a single register." alt="" coords="1476,613,1687,640"/>
+<area shape="rect" id="node23" href="$mxm__1785x__tools_8c.html#a0dc736d94a1c30286d2549d3efa99e2d" title="Find Position of first set bit in bitmask." alt="" coords="1735,563,1855,589"/>
+<area shape="rect" id="node25" href="$mxm__crc8_8c.html#a9371d7335e3bcd1601e34612ea47dbf4" title="Compute CRC8 with initial value set to 0x00." alt="" coords="718,411,810,437"/>
+<area shape="rect" id="node26" href="$mxm__crc8_8c.html#aff7b770d0d6a3773b0fe425eb9bb9d8d" title="Compute CRC8 (0xA6) with initial value." alt="" coords="949,411,1118,437"/>
+<area shape="rect" id="node30" href="$mxm__1785x_8c.html#a38cc032b4fe5beffa9ba651b8dfd4884" title="Parse a RX buffer containing voltage values." alt="" coords="675,664,853,691"/>
+<area shape="rect" id="node31" href="$mxm__1785x_8c.html#ac8a15260cff9ed6eb1682999e13bb9d3" title="Parse voltage values from a READALL receive buffer into an array." alt="" coords="932,664,1135,691"/>
+<area shape="rect" id="node33" href="$mxm__17841b_8c.html#aa8c348a44f50adf5f26f84b20bcbda67" title="Initializes the state struct with default values." alt="" coords="403,769,597,796"/>
+<area shape="rect" id="node35" href="$mxm__battery__management_8c.html#a051c244b0a5462914545ddecdab9a56d" title="Initializes the state struct with default values." alt="" coords="404,820,596,847"/>
+<area shape="rect" id="node36" href="$mxm__1785x_8c.html#ad1231f10015aa3b85cc57a8de972dec3" title="Initializes the state structs with default values." alt="" coords="415,871,585,897"/>
+<area shape="rect" id="node34" href="$mxm__17841b_8c.html#a578f763e28fa1230a131616778099702" title="Reset register copies to default." alt="" coords="676,766,852,807"/>
+<area shape="rect" id="node37" href="$mxm__1785x_8h.html#a6233260ebe7abdd7645e6cb9d175f6de" title="returns the model ID of the daisy chain" alt="" coords="663,871,865,897"/>
+<area shape="rect" id="node39" href="$os__freertos_8c.html#a3ac9f783e38ae9f9c8cfe0634bb3b8fe" title="Delay a task until a specified time." alt="" coords="433,157,567,184"/>
+<area shape="rect" id="node40" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="437,107,563,133"/>
+</map>

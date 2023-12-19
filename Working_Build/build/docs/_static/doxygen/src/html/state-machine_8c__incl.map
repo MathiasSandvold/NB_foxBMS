@@ -1,0 +1,9 @@
+<map id="state&#45;machine.c" name="state&#45;machine.c">
+<area shape="rect" id="node1" title="Implementation of some driver that needs a state machine." alt="" coords="104,5,219,32"/>
+<area shape="rect" id="node2" href="$state-machine_8h.html" title="Header file of some software." alt="" coords="291,80,405,107"/>
+<area shape="rect" id="node3" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="225,155,319,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="155,229,221,256"/>
+<area shape="rect" id="node5" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="21,80,93,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="76,155,151,181"/>
+<area shape="rect" id="node7" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="169,80,215,107"/>
+</map>

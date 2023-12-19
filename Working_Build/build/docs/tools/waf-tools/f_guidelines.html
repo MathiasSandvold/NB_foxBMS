@@ -1,0 +1,1271 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3.1.8. Guidelines &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="3.1.9. HALCoGen" href="f_hcg.html" />
+    <link rel="prev" title="3.1.7. Git Hooks" href="f_git_hooks.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="waf-tools.html">3. Waf Tools</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="ti-arm-compiler-tools.html">3.1.1. TI ARM CGT Tool</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_axivion.html">3.1.2. Axivion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_black.html">3.1.3. Black</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_bootstrap_library_project.html">3.1.4. Bootstrap Library Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_check_db_vars.html">3.1.5. Check DB Vars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_clang_format.html">3.1.6. Clang Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_git_hooks.html">3.1.7. Git Hooks</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">3.1.8. Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_hcg.html">3.1.9. HALCoGen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_miniconda_env.html">3.1.10. Miniconda Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_ozone.html">3.1.11. Ozone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_lauterbach.html">3.1.12. Lauterbach</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_j_flash.html">3.1.13. J-Flash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_pylint.html">3.1.14. Pylint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_sphinx_build.html">3.1.15. Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_unit_test.html">3.1.16. Unit Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_vscode.html">3.1.17. VS Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="f_node_helper.html">3.1.18. Node Helper</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="waf-tools.html"><span class="section-number">3. </span>Waf Tools</a> &raquo;</li>
+      <li><span class="section-number">3.1.8. </span>Guidelines</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/tools/waf-tools/f_guidelines.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="guidelines">
+<span id="waf-tool-guidelines"></span><h1><span class="section-number">3.1.8. </span>Guidelines<a class="headerlink" href="#guidelines" title="Permalink to this headline"></a></h1>
+<p>The tool is located in <code class="docutils literal notranslate"><span class="pre">tools/waf-tools</span></code>.</p>
+<div class="section" id="module-f_guidelines">
+<span id="tool-documentation"></span><h2><span class="section-number">3.1.8.1. </span>Tool Documentation<a class="headerlink" href="#module-f_guidelines" title="Permalink to this headline"></a></h2>
+<p>Implements a waf tool to check for foxBMS project guidelines</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.AutoNumberGuidelineErrors">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">AutoNumberGuidelineErrors</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.AutoNumberGuidelineErrors" title="Permalink to this definition"></a></dt>
+<dd><p>Auto numbering Enum</p>
+<p>Inherits from enum and provides an automatic numeration for all its
+members</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.GuidelineViolations">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">GuidelineViolations</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.GuidelineViolations" title="Permalink to this definition"></a></dt>
+<dd><p>Assign numbers to our error codes</p>
+<p>GuidelineViolations inherits from AutoNumberGuidelineErrors and numbers
+are automatically set for each error code. The counting starts with 0 for
+NO_VIOLATION.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.c_check_comment_style">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">c_check_comment_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.c_check_comment_style" title="Permalink to this definition"></a></dt>
+<dd><p>Class to implement c comment style check</p>
+<p>A task is only executed if a file is changed.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.c_check_comment_style.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.c_check_comment_style.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>Displayed keyword for check</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.c_check_comment_style.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.c_check_comment_style.run" title="Permalink to this definition"></a></dt>
+<dd><p>calls test function and prints the error message</p>
+<p>A list (in self.input) containing the path of the to be
+checked file is passed as first argument in the task generation. The
+second argument self.rule_name contains the name of the style guide rule.
+run calls the test function and passes the text of the to be checked
+file with regular expression for the comment style. Depending on
+the return value of the test function an error message with the
+filename and the line number is printed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>If no violation is found the value of
+GuidelineViolations.NO_VIOLATION is returned. If the file contains
+the forbidden comment style the value of
+GuidelineViolations.C_COMMENT_STYLE is returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.c_check_comment_style.test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">txt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.c_check_comment_style.test" title="Permalink to this definition"></a></dt>
+<dd><p>Implements check which searches for forbidden comment style</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>txt</strong> (<em>string</em>) – text of the to be checked file</p></li>
+<li><p><strong>regex</strong> (<em>compiled pattern</em>) – </p></li>
+<li><p><strong>style</strong> (<em>contains regular expression for the forbidden comment</em>) – </p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list with line numbers in which the forbidden comment style was
+found.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.c_check_define_guard">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">c_check_define_guard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.c_check_define_guard" title="Permalink to this definition"></a></dt>
+<dd><p>Class to implement define guard check</p>
+<p>A task is only executed if a file or the regular expression
+C_005_REGEX is changed.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.c_check_define_guard.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.c_check_define_guard.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>Displayed keyword for check</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.c_check_define_guard.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.c_check_define_guard.run" title="Permalink to this definition"></a></dt>
+<dd><p>calls test function to search after the include guard</p>
+<p>A list (in self.input) containing the path and the name of the to be
+checked file is passed as first argument in the task generation. The
+second argument self.rule_name contains the name of the style guide rule.
+run calls the test function and passes the filename, the text of the
+to be checked file and regular expression from rules.json. Depending
+on the return value of the test function, an error message is printed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>If no violation is found the value of
+GuidelineViolations.NO_VIOLATION is returned. If a line in the
+file contains tabs GuidelineViolations.GUARD is returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.c_check_define_guard.test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">txt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">config</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.c_check_define_guard.test" title="Permalink to this definition"></a></dt>
+<dd><p>Implements checks that the include guard exists</p>
+<p>First it is searched after #ifndef, #define and #endif. Afterwards it
+is checked with the line number whether everything is at the correct
+position.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>string</em>) – name of the actual file</p></li>
+<li><p><strong>txt</strong> (<em>string</em>) – text of the to be checked file</p></li>
+<li><p><strong>config</strong> (<em>dict</em>) – dictionary containing regular expressions</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of tuple with GuidelineViolations member and the error
+message</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.c_check_doxygen">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">c_check_doxygen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.c_check_doxygen" title="Permalink to this definition"></a></dt>
+<dd><p>Class to implement the doxygen comment check</p>
+<p>A task is only executed if a file or the regular expression C_004_REGEX
+is changed.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.c_check_doxygen.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.c_check_doxygen.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>Displayed keyword for check</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.c_check_doxygen.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.c_check_doxygen.run" title="Permalink to this definition"></a></dt>
+<dd><p>calls test function and prints out the line with a wrong file level
+doxygen comment</p>
+<p>A list (in self.input) containing the path of the to be checked file
+is passed as first argument in the task generation. The second argument
+self.rule_name contains the name of the style guide rule. run calls the
+test function and passes the filename, the text of the to be checked
+file and regular expression from rules.json. Depending on the return
+value of the test function, an error message is printed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>If no violation is found the value of
+GuidelineViolations.NO_VIOLATION is returned. If a line is not
+conform with the FILE LEVEL Doxygen rule the
+GuidelineViolations.C_DOXYGEN value is returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.c_check_doxygen.test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">txt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regex</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">version</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.c_check_doxygen.test" title="Permalink to this definition"></a></dt>
+<dd><p>Implements check that the file level doxygen comments are correct</p>
+<p>This function checks whether the FILE LEVEL Doxygen comment
+format is existent and in the correct order in the file. The first for
+loop compiles the needed regular expressions for the FILE LEVEL Doxygen
+comment style and the second loop goes line by line over the whole file.
+doxygen_regex_number is the current searched regular expression and
+doxygen_regex_found_line is the line of the match of the last searched
+regular expression. In the second loop the beginning of the C
+comment is searched first. A second occurrence of the C comment start sets
+doxygen_regex_found_line to the actual line, because not all C comments
+are FILE LEVEL Doxygen comments. The next if clause looks for the end
+of the Doxygen comment. At last it is checked whether all necessary
+comments exists in the right order.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>string</em>) – name of the actual file</p></li>
+<li><p><strong>txt</strong> (<em>string</em>) – text of the to be checked file</p></li>
+<li><p><strong>config</strong> (<em>dict</em>) – dictionary containing regular expressions</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of tuple with GuidelineViolations member and the error
+message</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.c_check_sections">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">c_check_sections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.c_check_sections" title="Permalink to this definition"></a></dt>
+<dd><p>Class to check existence of section comments</p>
+<p>A task is only executed if a file or the regular expression
+C_006_SECTION_STRING is changed.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.c_check_sections.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.c_check_sections.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>Displayed keyword for check</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.c_check_sections.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.c_check_sections.run" title="Permalink to this definition"></a></dt>
+<dd><p>calls test function to search section comments</p>
+<p>A list (in self.input) containing the path of the to be checked file
+is passed as first argument in the task generation. The second argument
+self.rule_name contains the name of the style guide rule. run calls the
+test function and passes the text of the to be checked
+file and regular expression from rules.json. Depending on the return
+value of the test function, an error message is printed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>If no violation is found the value of
+GuidelineViolations.NO_VIOLATION is returned. If the sections are
+not correct the value of GuidelineViolations.C_SECTION is returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.c_check_sections.test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">txt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">section_strings</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.c_check_sections.test" title="Permalink to this definition"></a></dt>
+<dd><p>Implements check that all section comments exists in the right order</p>
+<p>This function checks whether the section comments are existent in the
+file. Furthermore it is checked whether the section comments are in the
+correct order which is checked by a current_section_searched.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>txt</strong> (<em>string</em>) – text of the to be checked file</p></li>
+<li><p><strong>section_strings</strong> (<em>list</em>) – list containing regular expressions for the
+section comments</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list with tuple out of a GuidelineViolations member and the error
+messages</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_guidelines.check_guidelines">
+<span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">check_guidelines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ctx</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.check_guidelines" title="Permalink to this definition"></a></dt>
+<dd><p>Calls the guidelines check</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.check_header">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">check_header</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.check_header" title="Permalink to this definition"></a></dt>
+<dd><p>Class to implement running the checks for headers in files</p>
+<p>A task is only executed if a file or the regular expression HEADER_REGEX is changed.
+This task is executed for C, Python, Shell, Batch and YAML files.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.check_header.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.check_header.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>Displayed keyword for check depending on the file type</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.check_header.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.check_header.run" title="Permalink to this definition"></a></dt>
+<dd><p>calls test function and errors in the headers of the files</p>
+<p>A list (in self.input) containing the path of the to be
+checked file is passed as first argument in the task generation. The
+second argument self.rule_name contains the name of the style guide rule.
+run calls the test function and passes the text of the to be checked
+file with the specific header of a file type. Depending on the return
+value of the test function an error message with the filename and line
+is printed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>If no violation is found the value of
+GuidelineViolations.NO_VIOLATION is returned. If a line in the
+file contains whitespace at the end
+GuidelineViolations.HEADER is returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.check_header.test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">txt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">header</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.check_header.test" title="Permalink to this definition"></a></dt>
+<dd><p>Implements check that header is contained in text</p>
+<p>For each file type it is defined a specific header which
+has to be contained in the file. test function checks each line for
+this header.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>txt</strong> (<em>string</em>) – text of the to be checked file</p></li>
+<li><p><strong>header</strong> (<em>list</em>) – contains all lines of the header</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of tuples with GuidelineViolations members and the line
+number containing differences in the headers.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_guidelines.configure">
+<span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.configure" title="Permalink to this definition"></a></dt>
+<dd><p>Configures all sub-tools the guidelines tool needs</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.encoding">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">encoding</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.encoding" title="Permalink to this definition"></a></dt>
+<dd><p>Class to implement the utf-8 coding check</p>
+<p>A task is only executed if a file is changed.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.encoding.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.encoding.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>Displayed keyword for check</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.encoding.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.encoding.run" title="Permalink to this definition"></a></dt>
+<dd><p>Implements check that a file can be opened in utf-8 mode and has
+no BOM markers</p>
+<p>A list (in self.input) containing the path of the to be checked file
+is passed as first argument in the task generation. The second argument
+self.rule_name contains the name of the style guide rule. run calls the
+test function and passes file path, rule name and the encoding style (utf-8).
+Depending on the return value of the test function, an error message is
+printed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns 0 for no encoding violation otherwise the value
+of GuidelineViolations.GENERAL_ENCODING</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.encoding.test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rulename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">encoding_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'utf-8'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.encoding.test" title="Permalink to this definition"></a></dt>
+<dd><p>checks whether a file is correct encoded</p>
+<p>file in file_path is first opened and read with utf-8 encoding and
+afterwards checked for not allowed BOM</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file_path</strong> (<em>string</em>) – path to file</p></li>
+<li><p><strong>encoding_type</strong> (<em>string</em>) – expected file encoding (default: “utf8”)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><p><strong>UnicodeDecodeError</strong> – DecodeError is thrown if the file can not be read
+    with the specified encoding</p>
+</dd>
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>If the file can be opened with the specified encoding and contains
+no BOM, GuidelineViolations.NO_VIOLATION is returned.
+Otherwise GuidelineViolations.GENERAL_ENCODING is returned along with
+a more detailed error message</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p><a class="reference internal" href="#f_guidelines.GuidelineViolations" title="f_guidelines.GuidelineViolations">GuidelineViolations</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.filenames">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">filenames</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.filenames" title="Permalink to this definition"></a></dt>
+<dd><p>Class to implement the filenames check</p>
+<p>A task is only executed if the filename of a file or the regular expression for
+correct filenames is changed.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.filenames.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.filenames.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>Displayed keyword for check</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.filenames.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.filenames.run" title="Permalink to this definition"></a></dt>
+<dd><p>calls test function and prints the error message</p>
+<p>A list (in self.input) containing the name of the to be checked file
+is passed as first argument in the task generation. The second argument
+self.rule_name contains the name of the style guide rule. Depending on
+the return value of the test function, an error message
+with incorrect filename is printed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns 0 for no filename rule violation otherwise the value
+of GuidelineViolations.GENERAL_FORBIDDEN_FILENAME</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.filenames.test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">reg</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.filenames.test" title="Permalink to this definition"></a></dt>
+<dd><p>Implements check that filename does not include forbidden
+characters</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>filename</strong> (<em>string</em>) – the name of the to be checked file</p></li>
+<li><p><strong>reg</strong> (<em>regex</em>) – a compiled regular expression for a correct filename</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>GENERAL_FORBIDDEN_FILENAME or NO_VIOLATION depending on the test result</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#f_guidelines.GuidelineViolations" title="f_guidelines.GuidelineViolations">GuidelineViolations</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.guidelines_context">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">guidelines_context</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.guidelines_context" title="Permalink to this definition"></a></dt>
+<dd><p>Helper class to bind the guidelines check to an waf argument</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_guidelines.options">
+<span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">options</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">opt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.options" title="Permalink to this definition"></a></dt>
+<dd><p>Defines options that can be passed to waf</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.posix_3_206">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">posix_3_206</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.posix_3_206" title="Permalink to this definition"></a></dt>
+<dd><p>Class to implement the POSIX 3.206 check</p>
+<p>A task is only executed if a file or the check itself is changed.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.posix_3_206.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.posix_3_206.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>Displayed keyword for check</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.posix_3_206.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.posix_3_206.run" title="Permalink to this definition"></a></dt>
+<dd><p>Implements check that the file contains one empty line at the end</p>
+<p>A list (in self.input) containing the text of the to be checked file
+is passed as first argument in the task generation. The second argument
+self.rule_name contains the name of the style guide rule. run calls the
+test function and passes the text of the to be checked file. Depending on
+the return value of the test function, an error message is printed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>If no violation is found the value of
+GuidelineViolations.NO_VIOLATION is returned. If a file contains
+no empty line or too many empty lines an error message the is
+printed and the value of
+GuidelineViolations.GENERAL_EOF_NO_EMPTY_NEWLINE or
+GuidelineViolations.GENERAL_EOF_TOO_MANY_EMPTY_NEWLINES is returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.posix_3_206.test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">txt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.posix_3_206.test" title="Permalink to this definition"></a></dt>
+<dd><p>Implements check that text ends with a single empty line</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>txt</strong> (<em>string</em>) – contains text that should have only one single
+empty line at the end</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>GuidelineViolations.NO_VIOLATION if the text ends with an
+empty line, GuidelineViolations.GENERAL_EOF_NO_EMPTY_NEWLINE if a
+newline is missing at the end of the text or
+GuidelineViolations.GENERAL_EOF_TOO_MANY_EMPTY_NEWLINES if there is
+more than one empty line at the end of the text.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#f_guidelines.GuidelineViolations" title="f_guidelines.GuidelineViolations">GuidelineViolations</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.rst_check_heading">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">rst_check_heading</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.rst_check_heading" title="Permalink to this definition"></a></dt>
+<dd><p>Class to implement the rst heading check</p>
+<p>A task is only executed if a file is changed.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.rst_check_heading.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.rst_check_heading.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>Displayed keyword for check</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.rst_check_heading.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.rst_check_heading.run" title="Permalink to this definition"></a></dt>
+<dd><p>calls test function and prints the error message</p>
+<p>A list (in self.input) containing the path of the to be
+checked file is passed as first argument in the task generation. The
+second argument self.rule_name contains the name of the style guide rule.
+run calls the test function and passes the text of the to be checked
+file. Depending on the return value of the test function an error
+message with the filename is printed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>If no violation is found the value of
+GuidelineViolations.NO_VIOLATION is returned. If the file does not
+have a heading the value of GuidelineViolations.RST_HEADING is returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.rst_check_heading.test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">txt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.rst_check_heading.test" title="Permalink to this definition"></a></dt>
+<dd><p>Implements the check that rst files have a heading</p>
+<p>First it is iterated over the whole file to search for the file label,
+overline, file caption and underline. Afterwards there are returned
+error messages depending on the case.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>txt</strong> (<em>string</em>) – text of the to be checked file</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>if a file has a heading two lines after the file label
+GuidelineViolations.NO_VIOLATION is returned,
+otherwise GuidelineViolations.RST_HEADING</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#f_guidelines.GuidelineViolations" title="f_guidelines.GuidelineViolations">GuidelineViolations</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.rst_check_include">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">rst_check_include</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.rst_check_include" title="Permalink to this definition"></a></dt>
+<dd><p>Class to implement the macro include check</p>
+<p>A task is only executed if a file or the INCLUDE_REGEX is changed.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.rst_check_include.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.rst_check_include.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>Displayed keyword for check</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.rst_check_include.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.rst_check_include.run" title="Permalink to this definition"></a></dt>
+<dd><p>calls test function and prints the error message</p>
+<p>A list (in self.input) containing the path of the to be
+checked file is passed as first argument in the task generation. The
+second argument self.rule_name contains the name of the style guide rule.
+run iterates over all specific excludes of the included files.
+Afterwards run calls the test function and passes the text of the to
+be checked file with regular expression for to be included file. Depending on
+the return value of the test function an error message with the
+filename is printed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>If no violation is found the value of
+GuidelineViolations.NO_VIOLATION is returned. If the file does not
+include the necessary file the value of
+GuidelineViolations.RST_MISSING_INCLUDE is returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.rst_check_include.test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">txt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">regex</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.rst_check_include.test" title="Permalink to this definition"></a></dt>
+<dd><p>Implements check that all necessary files are included</p>
+<p>Each .rst file has to include specific files</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>txt</strong> (<em>string</em>) – text of the to be checked file</p></li>
+<li><p><strong>regex</strong> (<em>compiled pattern</em>) – contains regular expression for the include</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>if a file includes necessary file, GuidelineViolations.NO_VIOLATION is
+returned otherwise GuidelineViolations.RST_MISSING_INCLUDE</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#f_guidelines.GuidelineViolations" title="f_guidelines.GuidelineViolations">GuidelineViolations</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.rst_check_orphan">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">rst_check_orphan</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.rst_check_orphan" title="Permalink to this definition"></a></dt>
+<dd><p>Class to implement declaration of rst file orphans</p>
+<p>A task is only executed if a file is changed</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.rst_check_orphan.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.rst_check_orphan.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>Displayed keyword for check</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.rst_check_orphan.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.rst_check_orphan.run" title="Permalink to this definition"></a></dt>
+<dd><p>calls test function and prints the error message</p>
+<p>A list (in self.input) containing the path of the to be
+checked file is passed as first argument in the task generation. The
+second argument self.rule_name contains the name of the style guide rule.
+run calls the test function and passes the first line of the to be checked
+file. Depending on the return value of the test function an error
+message with the filename is printed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>If no violation is found the value of
+GuidelineViolations.NO_VIOLATION is returned. If the file does not
+have orphan in the first line the value of
+GuidelineViolations.RST_ORPHAN is returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.rst_check_orphan.test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">txt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.rst_check_orphan.test" title="Permalink to this definition"></a></dt>
+<dd><p>Implements check that the file is declared as orphan</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>txt</strong> (<em>string</em>) – first line of the to be checked file</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>if a file includes orphan in the first line,
+GuidelineViolations.NO_VIOLATION is returned,
+otherwise GuidelineViolations.ORPHAN</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#f_guidelines.GuidelineViolations" title="f_guidelines.GuidelineViolations">GuidelineViolations</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.tabs">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">tabs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.tabs" title="Permalink to this definition"></a></dt>
+<dd><p>Class to implement running the trailing whitespace check</p>
+<p>A task is only executed if a file is changed.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.tabs.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.tabs.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>Displayed keyword for check</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.tabs.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.tabs.run" title="Permalink to this definition"></a></dt>
+<dd><p>calls test function and prints out the line with tabs in it</p>
+<p>A list (in self.input) containing the path of the to be checked file
+is passed as first argument in the task generation. The second argument
+self.rule_name contains the name of the style guide rule. run calls the
+test function and passes the text of the to be checked file. Depending
+on the return value of the test function, an error message is printed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>If no violation is found the value of
+GuidelineViolations.NO_VIOLATION is returned. If a line in the
+file contains tabs the value of GuidelineViolations.GENERAL_TABS is returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.tabs.test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">txt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.tabs.test" title="Permalink to this definition"></a></dt>
+<dd><p>Implements check that lines in text do not have tabs</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>txt</strong> (<em>string</em>) – text of the to be checked file</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of tuples with GuidelineViolations members and the line
+number containing tabs.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.trailing_whitespace">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">trailing_whitespace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.trailing_whitespace" title="Permalink to this definition"></a></dt>
+<dd><p>Class to implement the trailing whitespace check</p>
+<p>A task is only executed if a file is changed.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.trailing_whitespace.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.trailing_whitespace.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>Displayed keyword for check</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.trailing_whitespace.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.trailing_whitespace.run" title="Permalink to this definition"></a></dt>
+<dd><p>calls test function and prints the line number with trailing whitespace</p>
+<p>A list (in self.input) containing the path of the to be checked file
+is passed as first argument in the task generation. The second argument
+self.rule_name contains the name of the style guide rule. run calls the
+test function and passes the text of the to be checked file. Depending
+on the return value of the test function, an error message is printed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>If no violation is found the value of
+GuidelineViolations.NO_VIOLATION is returned. If a line in the
+file contains whitespace at the end
+GuidelineViolations.GENERAL_TRAILING_WHITESPACE is returned</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.trailing_whitespace.test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">txt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.trailing_whitespace.test" title="Permalink to this definition"></a></dt>
+<dd><p>checks line by line the text whether there are trailing whitespace</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>txt</strong> (<em>string</em>) – text of the to be checked file</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>A list of tuples with GuidelineViolations members and the line
+number containing trailing whitespace.</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_guidelines.unique_filenames">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_guidelines.</span></span><span class="sig-name descname"><span class="pre">unique_filenames</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.unique_filenames" title="Permalink to this definition"></a></dt>
+<dd><p>Class to implement the filename uniqueness check</p>
+<p>A task is only executed if a filename of a file is changed.
+A filename is not allowed to occur twice or more in the repository.</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.unique_filenames.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.unique_filenames.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>Displayed keyword for check</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.unique_filenames.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.unique_filenames.run" title="Permalink to this definition"></a></dt>
+<dd><p>calls test function and prints the error message</p>
+<p>A list (in self.input) containing the name of the to be checked file
+is passed as first argument in the task generation. The second argument
+self.rule_name contains the name of the style guide rule. run calls the
+test function and passes all filenames in the repository. Depending on
+the return value of the test function, an error message with all
+duplicates is printed.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>returns 0 for no unique filename rule violation otherwise the value
+of GuidelineViolations.GENERAL_NOT_UNIQUE_FILENAME</p>
+</dd>
+<dt class="field-even">Return type</dt>
+<dd class="field-even"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_guidelines.unique_filenames.test">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">test</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">all_filenames</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_guidelines.unique_filenames.test" title="Permalink to this definition"></a></dt>
+<dd><p>checks whether there are files with the same name in the repository</p>
+<p>The collections.Counter puts all filenames with their count
+in a dictionary. If the count is bigger than one, the filename is
+inserted into the list of duplicates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>all_filenames</strong> (<em>list</em>) – list with all filenames in the repository</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>If the duplicates list is not empty a GuidelineViolations
+GENERAL_NOT_UNIQUE_FILENAME is returned with the duplicates list</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p><a class="reference internal" href="#f_guidelines.GuidelineViolations" title="f_guidelines.GuidelineViolations">GuidelineViolations</a></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+<div class="section" id="test-documentation">
+<h2><span class="section-number">3.1.8.2. </span>Test Documentation<a class="headerlink" href="#test-documentation" title="Permalink to this headline"></a></h2>
+<p>The unit tests of the module are implemented in
+<code class="docutils literal notranslate"><span class="pre">tests/scripts/waf-tools/f_hcg/test_f_guidelines.py</span></code></p>
+<span class="target" id="module-test_f_guidelines"></span><p>Implements tests for the waf tool <code class="docutils literal notranslate"><span class="pre">f_guidelines</span></code>.</p>
+<dl class="py class">
+<dt class="sig sig-object py" id="test_f_guidelines.TestGuidelineMethods">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">test_f_guidelines.</span></span><span class="sig-name descname"><span class="pre">TestGuidelineMethods</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.TestGuidelineMethods" title="Permalink to this definition"></a></dt>
+<dd><p>Unit test class for the <code class="docutils literal notranslate"><span class="pre">f_guidelines</span></code> tool</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="test_f_guidelines.TestGuidelineMethods.general_tester">
+<span class="sig-name descname"><span class="pre">general_tester</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">function_result</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.TestGuidelineMethods.general_tester" title="Permalink to this definition"></a></dt>
+<dd><p>function for reiterative tests</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>result</strong> (<em>list</em>) – list containing the defined results of one test</p></li>
+<li><p><strong>function_result</strong> (<em>list</em>) – list containing the results from the called
+test function</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_f_guidelines.TestGuidelineMethods.test_c_comment_style">
+<span class="sig-name descname"><span class="pre">test_c_comment_style</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.TestGuidelineMethods.test_c_comment_style" title="Permalink to this definition"></a></dt>
+<dd><p>Unit test for c comment style check in c and h files</p>
+<p>test_c_comment_style uses python unittest to check the return value
+of the f_guidelines c_check_comment_style test function. There are forbidden
+comment styles which has to be checked</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_f_guidelines.TestGuidelineMethods.test_c_define_guard">
+<span class="sig-name descname"><span class="pre">test_c_define_guard</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.TestGuidelineMethods.test_c_define_guard" title="Permalink to this definition"></a></dt>
+<dd><p>checks the define guard</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_f_guidelines.TestGuidelineMethods.test_c_sections">
+<span class="sig-name descname"><span class="pre">test_c_sections</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.TestGuidelineMethods.test_c_sections" title="Permalink to this definition"></a></dt>
+<dd><p>Unit test for c section check in c and h files</p>
+<p>test_c_sections uses python unittest to check the return value
+of the f_guidelines c_check_sections test function. There have to be
+section comments in the right order for c and h files.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_f_guidelines.TestGuidelineMethods.test_doxygen">
+<span class="sig-name descname"><span class="pre">test_doxygen</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.TestGuidelineMethods.test_doxygen" title="Permalink to this definition"></a></dt>
+<dd><p>Unit test for FILE LEVEL doxygen comment style in c and h files</p>
+<p>test_doxygen uses python unittest to check the return value
+of the f_guidelines c_check_doxygen test function. There has to be
+a doxygen comment in a specific style.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_f_guidelines.TestGuidelineMethods.test_encoding">
+<span class="sig-name descname"><span class="pre">test_encoding</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.TestGuidelineMethods.test_encoding" title="Permalink to this definition"></a></dt>
+<dd><p>test guideline-check that files MUST be UTF-8</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_f_guidelines.TestGuidelineMethods.test_filenames">
+<span class="sig-name descname"><span class="pre">test_filenames</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.TestGuidelineMethods.test_filenames" title="Permalink to this definition"></a></dt>
+<dd><p>Unit test for valid filenames</p>
+<p>test_filenames uses python unittest to check the return value of the
+f_guidelines filename test function with bad and good filenames.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_f_guidelines.TestGuidelineMethods.test_header">
+<span class="sig-name descname"><span class="pre">test_header</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.TestGuidelineMethods.test_header" title="Permalink to this definition"></a></dt>
+<dd><p>Unit test to check the header</p>
+<p>test_header uses python unittest to check the return value
+of the f_guidelines check_header test function. Depending of the file type
+the file has to start with a specific header.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_f_guidelines.TestGuidelineMethods.test_posix_3_206">
+<span class="sig-name descname"><span class="pre">test_posix_3_206</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.TestGuidelineMethods.test_posix_3_206" title="Permalink to this definition"></a></dt>
+<dd><p>Unit test for empty line at end of text</p>
+<p>test_posix_3_206 uses python unittest to check the return value of the
+f_guidelines posix_3_206 test function. Only one empty line is allowed
+at the end of each text.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_f_guidelines.TestGuidelineMethods.test_rst_heading">
+<span class="sig-name descname"><span class="pre">test_rst_heading</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.TestGuidelineMethods.test_rst_heading" title="Permalink to this definition"></a></dt>
+<dd><p>Unit test for macro including check in rst files</p>
+<p>test_rst_heading uses python unittest to check the return value
+of the f_guidelines rst_check_heading test function. Each rst files must
+have a heading</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_f_guidelines.TestGuidelineMethods.test_rst_macro">
+<span class="sig-name descname"><span class="pre">test_rst_macro</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.TestGuidelineMethods.test_rst_macro" title="Permalink to this definition"></a></dt>
+<dd><p>Unit test for macro including check in rst files</p>
+<p>test_rst_macro uses python unittest to check the return value
+of the f_guidelines rst_check_include test function. Each rst files has to
+include macros.txt</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_f_guidelines.TestGuidelineMethods.test_rst_orphan">
+<span class="sig-name descname"><span class="pre">test_rst_orphan</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.TestGuidelineMethods.test_rst_orphan" title="Permalink to this definition"></a></dt>
+<dd><p>Unit test for macro including check in rst files</p>
+<p>test_rst_orphan uses python unittest to check the return value
+of the f_guidelines rst_check_orphan test function. rst files which are
+not included in other rst files must have :orphan: in the first line</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_f_guidelines.TestGuidelineMethods.test_tabs">
+<span class="sig-name descname"><span class="pre">test_tabs</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.TestGuidelineMethods.test_tabs" title="Permalink to this definition"></a></dt>
+<dd><p>Unit test for no tabs in lines of text</p>
+<p>test_tabs uses python unittest to check the return value
+of the tabs test function. Tabs are not allowed. Whitespace is used
+for indentation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_f_guidelines.TestGuidelineMethods.test_trailing_whitespace">
+<span class="sig-name descname"><span class="pre">test_trailing_whitespace</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.TestGuidelineMethods.test_trailing_whitespace" title="Permalink to this definition"></a></dt>
+<dd><p>Unit test for no trailing whitespace in lines of text</p>
+<p>test_trailing_whitespace uses python unittest to check the return value
+of the f_guidelines trailing_whitespace test function. There should be no
+trailing whitespace at the end of a line.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="test_f_guidelines.TestGuidelineMethods.test_unique_filename">
+<span class="sig-name descname"><span class="pre">test_unique_filename</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.TestGuidelineMethods.test_unique_filename" title="Permalink to this definition"></a></dt>
+<dd><p>Unit test for unique filenames</p>
+<p>test_unique_filename uses python unittest to check the return value
+of the f_guidelines unique_filenames test function. In the repository
+a filename can not exit more than one time.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="test_f_guidelines.get_git_root">
+<span class="sig-prename descclassname"><span class="pre">test_f_guidelines.</span></span><span class="sig-name descname"><span class="pre">get_git_root</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#test_f_guidelines.get_git_root" title="Permalink to this definition"></a></dt>
+<dd><p>helper function to find the repository root</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>path</strong> (<em>string</em>) – path of test_f_guidelines</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>root path of the git repository</p>
+</dd>
+<dt class="field-odd">Return type</dt>
+<dd class="field-odd"><p>root (string)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="test_f_guidelines.get_results">
+<span class="sig-prename descclassname"><span class="pre">test_f_guidelines.</span></span><span class="sig-name descname"><span class="pre">get_results</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tests_folder</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">result_json_file</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.get_results" title="Permalink to this definition"></a></dt>
+<dd><p>returns result json</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>tests_folder</strong> (<em>string</em>) – folder name of the test</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="test_f_guidelines.get_txt">
+<span class="sig-prename descclassname"><span class="pre">test_f_guidelines.</span></span><span class="sig-name descname"><span class="pre">get_txt</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">f</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.get_txt" title="Permalink to this definition"></a></dt>
+<dd><p>returns the content of file</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="test_f_guidelines.main">
+<span class="sig-prename descclassname"><span class="pre">test_f_guidelines.</span></span><span class="sig-name descname"><span class="pre">main</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#test_f_guidelines.main" title="Permalink to this definition"></a></dt>
+<dd><p>main function</p>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="f_git_hooks.html" class="btn btn-neutral float-left" title="3.1.7. Git Hooks" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="f_hcg.html" class="btn btn-neutral float-right" title="3.1.9. HALCoGen" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

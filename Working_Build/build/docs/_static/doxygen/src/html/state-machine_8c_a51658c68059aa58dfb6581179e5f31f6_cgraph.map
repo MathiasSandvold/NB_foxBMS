@@ -1,0 +1,7 @@
+<map id="EG_ProcessInitializationState" name="EG_ProcessInitializationState">
+<area shape="rect" id="node1" title="Processes the initialization state." alt="" coords="5,74,169,115"/>
+<area shape="rect" id="node2" href="$state-machine_8c.html#a27e6bf1e63e5507058042fc4e00e6d09" title="Sets the next substate and the timer value of the state variable." alt="" coords="269,5,389,32"/>
+<area shape="rect" id="node3" href="$state-machine_8c.html#abc5b63fdac232a38e1e55b9ba977ba6a" title="dummy function for initialization substate EG_FSM_SUBSTATE_INITIALIZATION_0" alt="" coords="225,56,432,83"/>
+<area shape="rect" id="node4" href="$state-machine_8c.html#acf61fa89edeeb7cf538a82c8aa7f5b50" title="dummy function for initialization substate EG_FSM_SUBSTATE_INITIALIZATION_1" alt="" coords="225,107,432,133"/>
+<area shape="rect" id="node5" href="$state-machine_8c.html#a3c4d32401332809e5191abb9f2ae01e0" title="dummy function to check if the initialization step of the state machine was successful (EG_FSM_SUBSTA..." alt="" coords="217,157,440,184"/>
+</map>

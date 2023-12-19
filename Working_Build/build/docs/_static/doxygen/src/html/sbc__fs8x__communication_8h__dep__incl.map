@@ -1,0 +1,11 @@
+<map id="sbc_fs8x_communication.h" name="sbc_fs8x_communication.h">
+<area shape="rect" id="node1" title="This file contains functions for SPI/I2C communication." alt="" coords="115,5,295,32"/>
+<area shape="rect" id="node2" href="$sbc__fs8x_8c.html" title="Driver functions for the FS8x SBC." alt="" coords="5,80,91,107"/>
+<area shape="rect" id="node3" href="$sbc__fs8x__communication_8c.html" title="Implementation of communication logic for NXP SBC FS8x." alt="" coords="115,80,295,107"/>
+<area shape="rect" id="node4" href="$nxpfs85xx_8h.html" title="Header for the driver for the FRAM module." alt="" coords="319,80,411,107"/>
+<area shape="rect" id="node5" href="$nxpfs85xx_8c.html" title="Driver for the SBC module." alt="" coords="270,155,362,181"/>
+<area shape="rect" id="node6" href="$sbc_8h.html" title="Header for the driver for the SBC module." alt="" coords="386,155,441,181"/>
+<area shape="rect" id="node7" href="$sbc_8c.html" title="Driver for the SBC module." alt="" coords="307,229,362,256"/>
+<area shape="rect" id="node8" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="386,229,441,256"/>
+<area shape="rect" id="node9" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="465,229,551,256"/>
+</map>

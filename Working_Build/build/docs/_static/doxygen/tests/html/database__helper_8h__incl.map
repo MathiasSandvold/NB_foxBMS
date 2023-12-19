@@ -1,0 +1,13 @@
+<map id="database_helper.h" name="database_helper.h">
+<area shape="rect" id="node1" title="Database module header." alt="" coords="359,5,487,32"/>
+<area shape="rect" id="node2" href="$database__cfg_8h.html" title="Database configuration header." alt="" coords="186,80,297,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="357,379,422,405"/>
+<area shape="rect" id="node3" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="233,155,380,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,379,80,405"/>
+<area shape="rect" id="node10" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="80,304,139,331"/>
+<area shape="rect" id="node11" title=" " alt="" coords="146,155,209,181"/>
+<area shape="rect" id="node4" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="268,229,343,256"/>
+<area shape="rect" id="node5" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="163,304,235,331"/>
+<area shape="rect" id="node9" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="259,304,352,331"/>
+<area shape="rect" id="node8" title=" " alt="" coords="149,379,249,405"/>
+</map>

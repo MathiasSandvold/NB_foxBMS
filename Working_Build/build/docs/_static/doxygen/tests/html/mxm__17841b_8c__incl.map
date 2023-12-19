@@ -1,0 +1,20 @@
+<map id="mxm_17841b.c" name="mxm_17841b.c">
+<area shape="rect" id="node1" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="723,5,834,32"/>
+<area shape="rect" id="node2" href="$mxm__17841b_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="579,80,690,107"/>
+<area shape="rect" id="node6" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="124,528,196,555"/>
+<area shape="rect" id="node8" title=" " alt="" coords="518,603,583,629"/>
+<area shape="rect" id="node10" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="613,528,707,555"/>
+<area shape="rect" id="node16" href="$mxm__bitextract_8h.html" title="Bit extraction function for MXM_17841b." alt="" coords="816,155,939,181"/>
+<area shape="rect" id="node17" href="$mxm__41b__register__map_8h.html" title="Register map of the MAX17841 bridge IC." alt="" coords="1014,304,1186,331"/>
+<area shape="rect" id="node18" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="766,453,813,480"/>
+<area shape="rect" id="node3" href="$mxm__cfg_8h.html" title="Header for the configuration for the Maxim analog front&#45;end." alt="" coords="389,155,475,181"/>
+<area shape="rect" id="node4" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="43,379,189,405"/>
+<area shape="rect" id="node11" href="$spi__cfg_8h.html" title="Headers for the configuration for the SPI module." alt="" coords="300,304,375,331"/>
+<area shape="rect" id="node14" title=" " alt="" coords="339,229,437,256"/>
+<area shape="rect" id="node15" href="$spi_8h.html" title="Headers for the driver for the SPI module." alt="" coords="512,229,563,256"/>
+<area shape="rect" id="node5" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="216,453,291,480"/>
+<area shape="rect" id="node7" title=" " alt="" coords="216,603,291,629"/>
+<area shape="rect" id="node9" title=" " alt="" coords="91,603,191,629"/>
+<area shape="rect" id="node12" title=" " alt="" coords="213,379,288,405"/>
+<area shape="rect" id="node13" title=" " alt="" coords="313,379,386,405"/>
+</map>

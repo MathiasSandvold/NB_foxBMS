@@ -1,0 +1,5 @@
+<map id="FAKE_IsFirstMeasurementCycleFinished" name="FAKE_IsFirstMeasurementCycleFinished">
+<area shape="rect" id="node1" title="return whether the first measurement cycle is finished" alt="" coords="5,23,217,65"/>
+<area shape="rect" id="node2" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="265,5,412,32"/>
+<area shape="rect" id="node3" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="269,56,408,83"/>
+</map>

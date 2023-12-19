@@ -1,0 +1,6 @@
+<map id="testDATA_EntryUpdatedPeriodicallyWithinInterval" name="testDATA_EntryUpdatedPeriodicallyWithinInterval">
+<area shape="rect" id="node1" title=" " alt="" coords="5,35,236,76"/>
+<area shape="rect" id="node2" href="$database__helper_8c.html#a8daaadb48f61b10e8359c2719fe53c47" title="Checks if passed database entry has been periodically updated within the time interval." alt="" coords="284,35,493,76"/>
+<area shape="rect" id="node3" href="$database__helper_8c.html#a8d4b7dce8fee1db81cee64f679a3c2c4" title="Checks if passed database entry has been updated at least once." alt="" coords="541,5,739,47"/>
+<area shape="rect" id="node4" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="577,71,703,98"/>
+</map>

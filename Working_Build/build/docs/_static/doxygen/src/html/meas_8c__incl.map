@@ -1,0 +1,11 @@
+<map id="meas.c" name="meas.c">
+<area shape="rect" id="node1" title="Driver for the measurements needed by the BMS (e.g., I,V,T)." alt="" coords="190,5,255,32"/>
+<area shape="rect" id="node2" href="$meas_8h.html" title="Headers for the driver for the measurements needed by the BMS (e.g., I,V,T)." alt="" coords="190,155,255,181"/>
+<area shape="rect" id="node3" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="92,229,185,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="190,304,255,331"/>
+<area shape="rect" id="node5" title=" " alt="" coords="424,304,498,331"/>
+<area shape="rect" id="node6" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="322,80,469,107"/>
+<area shape="rect" id="node8" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="462,229,534,256"/>
+<area shape="rect" id="node9" href="$afe_8h.html" title="AFE driver header." alt="" coords="42,155,93,181"/>
+<area shape="rect" id="node7" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="358,155,433,181"/>
+</map>

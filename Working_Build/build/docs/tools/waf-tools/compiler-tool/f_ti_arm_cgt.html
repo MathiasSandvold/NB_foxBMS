@@ -1,0 +1,1335 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3.1.1.1. TI ARM CGT &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="3.1.1.2. TI ARM CGT Compiler Configuration Tool" href="f_ti_arm_cgt_cc_options.html" />
+    <link rel="prev" title="3.1.1. TI ARM CGT Tool" href="../ti-arm-compiler-tools.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../waf-tools.html">3. Waf Tools</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../ti-arm-compiler-tools.html">3.1.1. TI ARM CGT Tool</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">3.1.1.1. TI ARM CGT</a></li>
+<li class="toctree-l3"><a class="reference internal" href="f_ti_arm_cgt_cc_options.html">3.1.1.2. TI ARM CGT Compiler Configuration Tool</a></li>
+<li class="toctree-l3"><a class="reference internal" href="f_ti_arm_helper.html">3.1.1.3. TI ARM CGT Helper Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="f_ti_arm_tools.html">3.1.1.4. TI CCS ARM CGT Additional Tools</a></li>
+<li class="toctree-l3"><a class="reference internal" href="f_ti_color_arm_cgt.html">3.1.1.5. TI ARM CGT Console Colorizer Tool</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../f_axivion.html">3.1.2. Axivion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../f_black.html">3.1.3. Black</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../f_bootstrap_library_project.html">3.1.4. Bootstrap Library Project</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../f_check_db_vars.html">3.1.5. Check DB Vars</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../f_clang_format.html">3.1.6. Clang Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../f_git_hooks.html">3.1.7. Git Hooks</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../f_guidelines.html">3.1.8. Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../f_hcg.html">3.1.9. HALCoGen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../f_miniconda_env.html">3.1.10. Miniconda Environment</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../f_ozone.html">3.1.11. Ozone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../f_lauterbach.html">3.1.12. Lauterbach</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../f_j_flash.html">3.1.13. J-Flash</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../f_pylint.html">3.1.14. Pylint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../f_sphinx_build.html">3.1.15. Sphinx</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../f_unit_test.html">3.1.16. Unit Test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../f_vscode.html">3.1.17. VS Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../f_node_helper.html">3.1.18. Node Helper</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../waf-tools.html"><span class="section-number">3. </span>Waf Tools</a> &raquo;</li>
+          <li><a href="../ti-arm-compiler-tools.html"><span class="section-number">3.1.1. </span>TI ARM CGT Tool</a> &raquo;</li>
+      <li><span class="section-number">3.1.1.1. </span>TI ARM CGT</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/tools/waf-tools/compiler-tool/f_ti_arm_cgt.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="ti-arm-cgt">
+<span id="waf-tool-ti-arm-cgt"></span><h1><span class="section-number">3.1.1.1. </span>TI ARM CGT<a class="headerlink" href="#ti-arm-cgt" title="Permalink to this headline"></a></h1>
+<p>The tool is located in <code class="docutils literal notranslate"><span class="pre">tools/waf-tools</span></code>.</p>
+<div class="section" id="module-f_ti_arm_cgt">
+<span id="tool-documentation"></span><h2><span class="section-number">3.1.1.1.1. </span>Tool Documentation<a class="headerlink" href="#module-f_ti_arm_cgt" title="Permalink to this headline"></a></h2>
+<p>Implements a waf tool to use TI ARM CGT (<a class="reference external" href="https://www.ti.com/tool/ARM-CGT">https://www.ti.com/tool/ARM-CGT</a>).</p>
+<dl class="py function">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.accept_node_to_link">
+<span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">accept_node_to_link</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.accept_node_to_link" title="Permalink to this definition"></a></dt>
+<dd><p>filters which output files are not meant to be linked</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.asm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">asm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.asm" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Task.Task</span></code></p>
+<p>class to run the TI ARM CGT compiler in compiler mode to create object
+files from assembler sources.</p>
+<div class="figure align-default" id="asm-to-obj">
+<div class="graphviz"><img src="../../../_images/graphviz-bf4949c97ba6393e7e644b5780af8c1982c73c82.png" alt="digraph ASM_TO_OBJECT {
+    compound=true;
+    rankdir=LR;
+    nd_armcl [label=&quot;armcl&quot;, style=filled, fillcolor=green];
+    nd_asm  [label=&quot;*.asm&quot;, style=filled];
+    nd_obj  [label=&quot;*.obj&quot;, style=filled];
+    subgraph cluster_cmd {
+        label = &quot;Command Line&quot;;
+        rank=same;
+        nd_cflags           [label=&quot;CFLAGS&quot;];
+        nd_cc_compile_only  [label=&quot;CC_COMPILE_ONLY&quot;];
+        nd_incpaths         [label=&quot;INCPATHS&quot;];
+        nd_defines          [label=&quot;DEFINES&quot;];
+    }
+    nd_armcl    -&gt; nd_cflags    [lhead=cluster_cmd];
+    nd_asm      -&gt; nd_cflags    [lhead=cluster_cmd];
+    nd_cflags   -&gt; nd_obj       [ltail=cluster_cmd];
+}" class="graphviz" /></div>
+<p class="caption"><span class="caption-number">Fig. 3.5 </span><span class="caption-text">Input-output relation for assembler source files</span><a class="headerlink" href="#asm-to-obj" title="Permalink to this image"></a></p>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.asm.ext_in">
+<span class="sig-name descname"><span class="pre">ext_in</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['.h']</span></em><a class="headerlink" href="#f_ti_arm_cgt.asm.ext_in" title="Permalink to this definition"></a></dt>
+<dd><p>extensions that trigger a re-build</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.asm.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.asm.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>displayed keyword when assembler source files are compiled</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.asm.run_str">
+<span class="sig-name descname"><span class="pre">run_str</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'${CC}</span> <span class="pre">${CFLAGS}</span> <span class="pre">${CC_COMPILE_ONLY}</span> <span class="pre">${ASM_DIRECTORY}${TGT[0].parent.bldpath()}</span> <span class="pre">${CPPPATH_ST:INCPATHS}</span> <span class="pre">${DEFINES_ST:DEFINES}</span> <span class="pre">${SRC}</span> <span class="pre">${CC_TGT_F}${TGT[0].relpath()}'</span></em><a class="headerlink" href="#f_ti_arm_cgt.asm.run_str" title="Permalink to this definition"></a></dt>
+<dd><p>string to be interpolated to create the command line to compile
+assembler files. See <a class="reference internal" href="#asm-to-obj"><span class="std std-numref">Fig. 3.5</span></a> for a simplified representation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.asm.scan">
+<span class="sig-name descname"><span class="pre">scan</span></span><a class="headerlink" href="#f_ti_arm_cgt.asm.scan" title="Permalink to this definition"></a></dt>
+<dd><p>function to be used as scanner method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>fun</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.asm.vars">
+<span class="sig-name descname"><span class="pre">vars</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['CCDEPS']</span></em><a class="headerlink" href="#f_ti_arm_cgt.asm.vars" title="Permalink to this definition"></a></dt>
+<dd><p>values that effect the signature calculation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.asm_hook">
+<span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">asm_hook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.asm_hook" title="Permalink to this definition"></a></dt>
+<dd><p>creates the compiled task for assembler sources
+<a class="reference internal" href="#f_ti_arm_cgt.create_compiled_task_asm" title="f_ti_arm_cgt.create_compiled_task_asm"><code class="xref py py-meth docutils literal notranslate"><span class="pre">f_ti_arm_cgt.create_compiled_task_asm()</span></code></a>.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.bingen">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">bingen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.bingen" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Task.Task</span></code></p>
+<p>Task create bin file from elf files</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.bingen.after">
+<span class="sig-name descname"><span class="pre">after</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['link_task']</span></em><a class="headerlink" href="#f_ti_arm_cgt.bingen.after" title="Permalink to this definition"></a></dt>
+<dd><p>tasks after that hexgen task can be run</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.bingen.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'CYAN'</span></em><a class="headerlink" href="#f_ti_arm_cgt.bingen.color" title="Permalink to this definition"></a></dt>
+<dd><p>color in which the command line is displayed in the terminal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.bingen.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.bingen.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>displayed keyword when generating the bin file</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.bingen.run_str">
+<span class="sig-name descname"><span class="pre">run_str</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'${TIOBJ2BIN}</span> <span class="pre">${SRC[0].abspath()}</span> <span class="pre">${TGT[0].abspath()}</span> <span class="pre">${ARMOFD}</span> <span class="pre">${ARMHEX}</span> <span class="pre">${MKHEX4BIN}'</span></em><a class="headerlink" href="#f_ti_arm_cgt.bingen.run_str" title="Permalink to this definition"></a></dt>
+<dd><p>string to be interpolated to create the command line to create a
+bin file from an elf file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">c</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.c" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Task.Task</span></code></p>
+<p>This class implements the TI ARM CGT compiler in compiler mode to create
+object files from c sources. Additionally an aux file (user information
+file), a crl files (cross-reference listing file) and a rl file (output
+preprocessor listing) are generated.</p>
+<div class="figure align-default" id="c-to-obj">
+<div class="graphviz"><img src="../../../_images/graphviz-0e4373c14224f55fac03bcfdd752514cde79230e.png" alt="digraph C_TO_OBJECT {
+    compound=true;
+    rankdir=LR;
+    nd_armcl [label=&quot;armcl&quot;, style=filled, fillcolor=green];
+    nd_c    [label=&quot;*.c&quot;, style=filled];
+    nd_obj  [label=&quot;*.obj&quot;, style=filled];
+    nd_aux  [label=&quot;*.aux&quot;, style=filled];
+    nd_crl  [label=&quot;*.crl&quot;, style=filled];
+    nd_rl   [label=&quot;*.rl&quot;, style=filled];
+    subgraph cluster_cmd {
+        label = &quot;Command Line&quot;;
+        rank=same;
+        nd_cflags               [label=&quot;CFLAGS&quot;];
+        nd_cflags_compile_only  [label=&quot;CFLAGS_COMPILE_ONLY&quot;];
+        nd_cc_compile_only      [label=&quot;CC_COMPILE_ONLY&quot;];
+        nd_incpaths             [label=&quot;INCPATHS&quot;];
+        nd_defines              [label=&quot;DEFINES&quot;];
+    }
+    nd_armcl    -&gt;  nd_cflags   [lhead=cluster_cmd];
+    nd_c        -&gt;  nd_cflags   [lhead=cluster_cmd];
+    nd_cflags   -&gt;  nd_obj      [ltail=cluster_cmd];
+    nd_cflags   -&gt;  nd_aux      [ltail=cluster_cmd];
+    nd_cflags   -&gt;  nd_crl      [ltail=cluster_cmd];
+    nd_cflags   -&gt;  nd_rl       [ltail=cluster_cmd];
+}" class="graphviz" /></div>
+<p class="caption"><span class="caption-number">Fig. 3.6 </span><span class="caption-text">Input-output relation for assembler source files</span><a class="headerlink" href="#c-to-obj" title="Permalink to this image"></a></p>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c.ext_in">
+<span class="sig-name descname"><span class="pre">ext_in</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['.h']</span></em><a class="headerlink" href="#f_ti_arm_cgt.c.ext_in" title="Permalink to this definition"></a></dt>
+<dd><p>extensions that trigger a re-build</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.c.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>displayed keyword when source files are compiled</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c.run_str">
+<span class="sig-name descname"><span class="pre">run_str</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'${CC}</span> <span class="pre">${CFLAGS}</span> <span class="pre">${CMD_FILES_ST:CMD_FILES}</span> <span class="pre">${CFLAGS_COMPILE_ONLY}</span> <span class="pre">${CC_COMPILE_ONLY}</span> <span class="pre">${OBJ_DIRECTORY}${TGT[0].parent.bldpath()}</span> <span class="pre">${CPPPATH_ST:INCPATHS}</span> <span class="pre">${DEFINES_ST:DEFINES}</span> <span class="pre">${SRC[0].abspath()}</span> <span class="pre">${CC_TGT_F}${TGT[0].abspath()}'</span></em><a class="headerlink" href="#f_ti_arm_cgt.c.run_str" title="Permalink to this definition"></a></dt>
+<dd><p>string to be interpolated to create the command line to compile C
+files. See <a class="reference internal" href="#c-to-obj"><span class="std std-numref">Fig. 3.6</span></a> for a simplified representation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c.scan">
+<span class="sig-name descname"><span class="pre">scan</span></span><a class="headerlink" href="#f_ti_arm_cgt.c.scan" title="Permalink to this definition"></a></dt>
+<dd><p>function to be used as scanner method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>fun</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c.vars">
+<span class="sig-name descname"><span class="pre">vars</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['CCDEPS',</span> <span class="pre">'CMD_FILES_HASH']</span></em><a class="headerlink" href="#f_ti_arm_cgt.c.vars" title="Permalink to this definition"></a></dt>
+<dd><p>values that effect the signature calculation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_hook">
+<span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">c_hook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.c_hook" title="Permalink to this definition"></a></dt>
+<dd><p>creates all related task generators for C sources, which are</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#f_ti_arm_cgt.create_compiled_task_c" title="f_ti_arm_cgt.create_compiled_task_c"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_compiled_task_c()</span></code></a>,</p></li>
+<li><p><a class="reference internal" href="#f_ti_arm_cgt.create_compiled_task_c_pp" title="f_ti_arm_cgt.create_compiled_task_c_pp"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_compiled_task_c_pp()</span></code></a>,</p></li>
+<li><p><a class="reference internal" href="#f_ti_arm_cgt.create_compiled_task_c_ppi" title="f_ti_arm_cgt.create_compiled_task_c_ppi"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_compiled_task_c_ppi()</span></code></a>,</p></li>
+<li><p><a class="reference internal" href="#f_ti_arm_cgt.create_compiled_task_c_ppd" title="f_ti_arm_cgt.create_compiled_task_c_ppd"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_compiled_task_c_ppd()</span></code></a> and</p></li>
+<li><p><a class="reference internal" href="#f_ti_arm_cgt.create_compiled_task_c_ppm" title="f_ti_arm_cgt.create_compiled_task_c_ppm"><code class="xref py py-meth docutils literal notranslate"><span class="pre">create_compiled_task_c_ppm()</span></code></a>.</p></li>
+</ul>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_pp">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">c_pp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.c_pp" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Task.Task</span></code></p>
+<p>class to run the TI ARM CGT compiler in “preproc_only” mode, to
+have a pp file that includes the preprocess information</p>
+<div class="figure align-default" id="c-to-pp">
+<div class="graphviz"><img src="../../../_images/graphviz-20c1de03ccd689585a8624fc922fa69673019475.png" alt="digraph C_TO_PPI {
+    compound=true;
+    rankdir=LR;
+    nd_armcl [label=&quot;armcl&quot;, style=filled, fillcolor=green];
+    nd_c    [label=&quot;*.c&quot;, style=filled];
+    nd_pp   [label=&quot;*.pp&quot;, style=filled];
+    subgraph cluster_cmd {
+        label = &quot;Command Line&quot;;
+        rank=same;
+        nd_cflags       [label=&quot;CFLAGS&quot;];
+        nd_cflags_pp    [label=&quot;PP&quot;];
+        nd_incpaths     [label=&quot;INCPATHS&quot;];
+        nd_defines      [label=&quot;DEFINES&quot;];
+    }
+    nd_armcl    -&gt;  nd_cflags   [lhead=cluster_cmd];
+    nd_c        -&gt;  nd_cflags   [lhead=cluster_cmd];
+    nd_cflags   -&gt;  nd_ppi      [ltail=cluster_cmd];
+}" class="graphviz" /></div>
+<p class="caption"><span class="caption-number">Fig. 3.7 </span><span class="caption-text">Input-output relation for C source files and preprocess information</span><a class="headerlink" href="#c-to-pp" title="Permalink to this image"></a></p>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_pp.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'CYAN'</span></em><a class="headerlink" href="#f_ti_arm_cgt.c_pp.color" title="Permalink to this definition"></a></dt>
+<dd><p>color in which the command line is displayed in the terminal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_pp.ext_in">
+<span class="sig-name descname"><span class="pre">ext_in</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['.h']</span></em><a class="headerlink" href="#f_ti_arm_cgt.c_pp.ext_in" title="Permalink to this definition"></a></dt>
+<dd><p>extensions that trigger a re-build</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_pp.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.c_pp.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>displayed keyword when source files are parsed for pp information</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_pp.run_str">
+<span class="sig-name descname"><span class="pre">run_str</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'${CC}</span> <span class="pre">${CFLAGS}</span> <span class="pre">${CMD_FILES_ST:CMD_FILES}</span> <span class="pre">${PPO}</span> <span class="pre">${CC_TGT_F}${TGT[0].abspath()}</span> <span class="pre">${CPPPATH_ST:INCPATHS}</span> <span class="pre">${DEFINES_ST:DEFINES}</span> <span class="pre">${SRC[0].abspath()}'</span></em><a class="headerlink" href="#f_ti_arm_cgt.c_pp.run_str" title="Permalink to this definition"></a></dt>
+<dd><p>string to be interpolated to create the command line to get include
+information from C files. See <a class="reference internal" href="#c-to-pp"><span class="std std-numref">Fig. 3.7</span></a> for a simplified
+representation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_pp.scan">
+<span class="sig-name descname"><span class="pre">scan</span></span><a class="headerlink" href="#f_ti_arm_cgt.c_pp.scan" title="Permalink to this definition"></a></dt>
+<dd><p>function to be used as scanner method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>fun</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_pp.vars">
+<span class="sig-name descname"><span class="pre">vars</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['CCDEPS',</span> <span class="pre">'CMD_FILES_HASH']</span></em><a class="headerlink" href="#f_ti_arm_cgt.c_pp.vars" title="Permalink to this definition"></a></dt>
+<dd><p>values that effect the signature calculation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppd">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">c_ppd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.c_ppd" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Task.Task</span></code></p>
+<p>class to run the TI ARM CGT compiler in “preproc_dependency” mode, to
+have a ppd file that includes dependency information</p>
+<div class="figure align-default" id="c-to-ppd">
+<div class="graphviz"><img src="../../../_images/graphviz-c04f7fd98ccb408244803a58a95343fc21ffeae4.png" alt="digraph C_TO_PPD {
+    compound=true;
+    rankdir=LR;
+    nd_armcl [label=&quot;armcl&quot;, style=filled, fillcolor=green];
+    nd_c    [label=&quot;*.c&quot;, style=filled];
+    nd_ppd  [label=&quot;*.ppd&quot;, style=filled];
+    subgraph cluster_cmd {
+        label = &quot;Command Line&quot;;
+        rank=same;
+        nd_cflags       [label=&quot;CFLAGS&quot;];
+        nd_cflags_ppd   [label=&quot;PPD&quot;];
+        nd_incpaths     [label=&quot;INCPATHS&quot;];
+        nd_defines      [label=&quot;DEFINES&quot;];
+    }
+    nd_armcl    -&gt;  nd_cflags   [lhead=cluster_cmd];
+    nd_c        -&gt;  nd_cflags   [lhead=cluster_cmd];
+    nd_cflags   -&gt;  nd_ppd      [ltail=cluster_cmd];
+}" class="graphviz" /></div>
+<p class="caption"><span class="caption-number">Fig. 3.8 </span><span class="caption-text">Input-output relation for C source files and include information</span><a class="headerlink" href="#c-to-ppd" title="Permalink to this image"></a></p>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppd.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'CYAN'</span></em><a class="headerlink" href="#f_ti_arm_cgt.c_ppd.color" title="Permalink to this definition"></a></dt>
+<dd><p>color in which the command line is displayed in the terminal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppd.ext_in">
+<span class="sig-name descname"><span class="pre">ext_in</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['.h']</span></em><a class="headerlink" href="#f_ti_arm_cgt.c_ppd.ext_in" title="Permalink to this definition"></a></dt>
+<dd><p>extensions that trigger a re-build</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppd.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.c_ppd.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>displayed keyword when source files are parsed for ppd information</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppd.run_str">
+<span class="sig-name descname"><span class="pre">run_str</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'${CC}</span> <span class="pre">${CFLAGS}</span> <span class="pre">${CMD_FILES_ST:CMD_FILES}</span> <span class="pre">${PPD}</span> <span class="pre">${CC_TGT_F}${TGT[0].abspath()}</span> <span class="pre">${CPPPATH_ST:INCPATHS}</span> <span class="pre">${DEFINES_ST:DEFINES}</span> <span class="pre">${SRC[0].abspath()}'</span></em><a class="headerlink" href="#f_ti_arm_cgt.c_ppd.run_str" title="Permalink to this definition"></a></dt>
+<dd><p>string to be interpolated to create the command line to get
+dependency information from C files. See <a class="reference internal" href="#c-to-ppd"><span class="std std-numref">Fig. 3.8</span></a> for a
+simplified representation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppd.scan">
+<span class="sig-name descname"><span class="pre">scan</span></span><a class="headerlink" href="#f_ti_arm_cgt.c_ppd.scan" title="Permalink to this definition"></a></dt>
+<dd><p>function to be used as scanner method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>fun</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppd.vars">
+<span class="sig-name descname"><span class="pre">vars</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['CCDEPS',</span> <span class="pre">'CMD_FILES_HASH']</span></em><a class="headerlink" href="#f_ti_arm_cgt.c_ppd.vars" title="Permalink to this definition"></a></dt>
+<dd><p>values that effect the signature calculation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppi">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">c_ppi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.c_ppi" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Task.Task</span></code></p>
+<p>class to run the TI ARM CGT compiler in “preproc_includes” mode, to
+have a ppi file that includes the include information</p>
+<div class="figure align-default" id="c-to-ppi">
+<div class="graphviz"><img src="../../../_images/graphviz-11fbcb9bdbc485ecc2e523481d602d2c17c1af80.png" alt="digraph C_TO_PPI {
+    compound=true;
+    rankdir=LR;
+    nd_armcl [label=&quot;armcl&quot;, style=filled, fillcolor=green];
+    nd_c    [label=&quot;*.c&quot;, style=filled];
+    nd_ppi  [label=&quot;*.ppi&quot;, style=filled];
+    subgraph cluster_cmd {
+        label = &quot;Command Line&quot;;
+        rank=same;
+        nd_cflags       [label=&quot;CFLAGS&quot;];
+        nd_cflags_ppi   [label=&quot;PPI&quot;];
+        nd_incpaths     [label=&quot;INCPATHS&quot;];
+        nd_defines      [label=&quot;DEFINES&quot;];
+    }
+    nd_armcl    -&gt;  nd_cflags   [lhead=cluster_cmd];
+    nd_c        -&gt;  nd_cflags   [lhead=cluster_cmd];
+    nd_cflags   -&gt;  nd_ppi      [ltail=cluster_cmd];
+}" class="graphviz" /></div>
+<p class="caption"><span class="caption-number">Fig. 3.9 </span><span class="caption-text">Input-output relation for C source files and include information</span><a class="headerlink" href="#c-to-ppi" title="Permalink to this image"></a></p>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppi.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'CYAN'</span></em><a class="headerlink" href="#f_ti_arm_cgt.c_ppi.color" title="Permalink to this definition"></a></dt>
+<dd><p>color in which the command line is displayed in the terminal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppi.ext_in">
+<span class="sig-name descname"><span class="pre">ext_in</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['.h']</span></em><a class="headerlink" href="#f_ti_arm_cgt.c_ppi.ext_in" title="Permalink to this definition"></a></dt>
+<dd><p>extensions that trigger a re-build</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppi.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.c_ppi.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>displayed keyword when source files are parsed for ppi information</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppi.run_str">
+<span class="sig-name descname"><span class="pre">run_str</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'${CC}</span> <span class="pre">${CFLAGS}</span> <span class="pre">${CMD_FILES_ST:CMD_FILES}</span> <span class="pre">${PPI}</span> <span class="pre">${CC_TGT_F}${TGT[0].abspath()}</span> <span class="pre">${CPPPATH_ST:INCPATHS}</span> <span class="pre">${DEFINES_ST:DEFINES}</span> <span class="pre">${SRC[0].abspath()}'</span></em><a class="headerlink" href="#f_ti_arm_cgt.c_ppi.run_str" title="Permalink to this definition"></a></dt>
+<dd><p>string to be interpolated to create the command line to get include
+information from C files. See <a class="reference internal" href="#c-to-ppi"><span class="std std-numref">Fig. 3.9</span></a> for a simplified
+representation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppi.scan">
+<span class="sig-name descname"><span class="pre">scan</span></span><a class="headerlink" href="#f_ti_arm_cgt.c_ppi.scan" title="Permalink to this definition"></a></dt>
+<dd><p>function to be used as scanner method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>fun</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppi.vars">
+<span class="sig-name descname"><span class="pre">vars</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['CCDEPS',</span> <span class="pre">'CMD_FILES_HASH']</span></em><a class="headerlink" href="#f_ti_arm_cgt.c_ppi.vars" title="Permalink to this definition"></a></dt>
+<dd><p>values that effect the signature calculation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">c_ppm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.c_ppm" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Task.Task</span></code></p>
+<p>class to run the TI ARM CGT compiler in “preproc_macros” mode, to have
+a ppm file that includes all compile time macros</p>
+<div class="figure align-default" id="c-to-ppm">
+<div class="graphviz"><img src="../../../_images/graphviz-f79166036f36d4a620f73b9f7ca94166b9122f60.png" alt="digraph C_TO_PPM {
+    compound=true;
+    rankdir=LR;
+    nd_armcl [label=&quot;armcl&quot;, style=filled, fillcolor=green];
+    nd_c    [label=&quot;*.c&quot;, style=filled];
+    nd_ppm  [label=&quot;*.ppm&quot;, style=filled];
+    subgraph cluster_cmd {
+        label = &quot;Command Line&quot;;
+        rank=same;
+        nd_cflags       [label=&quot;CFLAGS&quot;];
+        nd_cflags_ppm   [label=&quot;PPM&quot;];
+        nd_incpaths     [label=&quot;INCPATHS&quot;];
+        nd_defines      [label=&quot;DEFINES&quot;];
+    }
+    nd_armcl    -&gt;  nd_cflags   [lhead=cluster_cmd];
+    nd_c        -&gt;  nd_cflags   [lhead=cluster_cmd];
+    nd_cflags   -&gt;  nd_ppm      [ltail=cluster_cmd];
+}" class="graphviz" /></div>
+<p class="caption"><span class="caption-number">Fig. 3.10 </span><span class="caption-text">Input-output relation for C source files and include information</span><a class="headerlink" href="#c-to-ppm" title="Permalink to this image"></a></p>
+</div>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppm.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'CYAN'</span></em><a class="headerlink" href="#f_ti_arm_cgt.c_ppm.color" title="Permalink to this definition"></a></dt>
+<dd><p>color in which the command line is displayed in the terminal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppm.ext_in">
+<span class="sig-name descname"><span class="pre">ext_in</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['.h']</span></em><a class="headerlink" href="#f_ti_arm_cgt.c_ppm.ext_in" title="Permalink to this definition"></a></dt>
+<dd><p>extensions that trigger a re-build</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppm.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.c_ppm.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>displayed keyword when source files are parsed for ppm information</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppm.run_str">
+<span class="sig-name descname"><span class="pre">run_str</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'${CC}</span> <span class="pre">${CFLAGS}</span> <span class="pre">${CMD_FILES_ST:CMD_FILES}</span> <span class="pre">${PPM}</span> <span class="pre">${CC_TGT_F}${TGT[0].abspath()}</span> <span class="pre">${CPPPATH_ST:INCPATHS}</span> <span class="pre">${DEFINES_ST:DEFINES}</span> <span class="pre">${SRC[0].abspath()}'</span></em><a class="headerlink" href="#f_ti_arm_cgt.c_ppm.run_str" title="Permalink to this definition"></a></dt>
+<dd><p>string to be interpolated to create the command line to get
+macro information from C files. See <a class="reference internal" href="#c-to-ppm"><span class="std std-numref">Fig. 3.10</span></a> for a
+simplified representation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppm.scan">
+<span class="sig-name descname"><span class="pre">scan</span></span><a class="headerlink" href="#f_ti_arm_cgt.c_ppm.scan" title="Permalink to this definition"></a></dt>
+<dd><p>function to be used as scanner method</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>fun</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.c_ppm.vars">
+<span class="sig-name descname"><span class="pre">vars</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['CCDEPS',</span> <span class="pre">'CMD_FILES_HASH']</span></em><a class="headerlink" href="#f_ti_arm_cgt.c_ppm.vars" title="Permalink to this definition"></a></dt>
+<dd><p>values that effect the signature calculation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.cgt_flags">
+<span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">cgt_flags</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.cgt_flags" title="Permalink to this definition"></a></dt>
+<dd><p>sets flags and related configuration options of the compiler.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.clean_pp_file">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">clean_pp_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.clean_pp_file" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Task.Task</span></code></p>
+<p>Task to remove some information from the preprocessed files</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.clean_pp_file.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'PINK'</span></em><a class="headerlink" href="#f_ti_arm_cgt.clean_pp_file.color" title="Permalink to this definition"></a></dt>
+<dd><p>color in which the command line is displayed in the terminal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.clean_pp_file.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.clean_pp_file.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>displayed keyword when post-processing the pre-processed files</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.clean_pp_file.remove_str">
+<span class="sig-name descname"><span class="pre">remove_str</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">('#define',</span> <span class="pre">'#pragma',</span> <span class="pre">'#</span> <span class="pre">pragma',</span> <span class="pre">'_Pragma')</span></em><a class="headerlink" href="#f_ti_arm_cgt.clean_pp_file.remove_str" title="Permalink to this definition"></a></dt>
+<dd><p>strings that need to be removed from the preprocessed file</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>tuple</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.clean_pp_file.replace_str">
+<span class="sig-name descname"><span class="pre">replace_str</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">[('__attribute__\\(.*\\)',</span> <span class="pre">'')]</span></em><a class="headerlink" href="#f_ti_arm_cgt.clean_pp_file.replace_str" title="Permalink to this definition"></a></dt>
+<dd><p>regular expressions that should be removed with a certain string</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.clean_pp_file.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.clean_pp_file.run" title="Permalink to this definition"></a></dt>
+<dd><p>Removes empty lines and strips some intrinsics that should not be
+included in the postprocessed file</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.configure">
+<span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">configure</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.configure" title="Permalink to this definition"></a></dt>
+<dd><p>configuration step of the TI ARM CGT compiler tool</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.copy_elf">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">copy_elf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.copy_elf" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Task.Task</span></code></p>
+<p>This class implements the copying of the elf file to another location
+in the build tree</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.copy_elf.after">
+<span class="sig-name descname"><span class="pre">after</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['link_task']</span></em><a class="headerlink" href="#f_ti_arm_cgt.copy_elf.after" title="Permalink to this definition"></a></dt>
+<dd><p>tasks after that hexgen task can be run</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.copy_elf.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'CYAN'</span></em><a class="headerlink" href="#f_ti_arm_cgt.copy_elf.color" title="Permalink to this definition"></a></dt>
+<dd><p>color in which the command line is displayed in the terminal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.copy_elf.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.copy_elf.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>displayed keyword when copying the elf file</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.copy_elf.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.copy_elf.run" title="Permalink to this definition"></a></dt>
+<dd><p>copy the generated elf file to build directory of the variant</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.copy_elf.weight">
+<span class="sig-name descname"><span class="pre">weight</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">3</span></em><a class="headerlink" href="#f_ti_arm_cgt.copy_elf.weight" title="Permalink to this definition"></a></dt>
+<dd><p>priority of the task</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.cprogram">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">cprogram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.cprogram" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Tools.ccroot.link_task</span></code></p>
+<p>class to run the TI ARM CGT compiler in linker mode to create the target</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.cprogram.ext_out">
+<span class="sig-name descname"><span class="pre">ext_out</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['.elf']</span></em><a class="headerlink" href="#f_ti_arm_cgt.cprogram.ext_out" title="Permalink to this definition"></a></dt>
+<dd><p>extensions that trigger a re-build</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.cprogram.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.cprogram.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>displayed keyword when black is linking the target</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.cprogram.parse_output">
+<em class="property"><span class="pre">static</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">parse_output</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pull_config</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">obj_path</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">std</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.cprogram.parse_output" title="Permalink to this definition"></a></dt>
+<dd><p>parses the output of the linker</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.cprogram.vars">
+<span class="sig-name descname"><span class="pre">vars</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['LINKDEPS',</span> <span class="pre">'CMD_FILES_HASH']</span></em><a class="headerlink" href="#f_ti_arm_cgt.cprogram.vars" title="Permalink to this definition"></a></dt>
+<dd><p>values that effect the signature calculation</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.create_compiled_task_asm">
+<span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">create_compiled_task_asm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.create_compiled_task_asm" title="Permalink to this definition"></a></dt>
+<dd><p>creates the assembler task and binds it to the
+<a class="reference internal" href="#f_ti_arm_cgt.asm" title="f_ti_arm_cgt.asm"><code class="xref py py-class docutils literal notranslate"><span class="pre">f_ti_arm_cgt.asm</span></code></a> class.</p>
+<p>The created tasks are appended to the list of <code class="docutils literal notranslate"><span class="pre">compiled_tasks</span></code>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.create_compiled_task_c">
+<span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">create_compiled_task_c</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.create_compiled_task_c" title="Permalink to this definition"></a></dt>
+<dd><p>Creates the assembler task and binds it to the
+<a class="reference internal" href="#f_ti_arm_cgt.c" title="f_ti_arm_cgt.c"><code class="xref py py-class docutils literal notranslate"><span class="pre">f_ti_arm_cgt.c</span></code></a> class.</p>
+<p>The created tasks are appended to the list of <code class="docutils literal notranslate"><span class="pre">compiled_tasks</span></code>.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.create_compiled_task_c_pp">
+<span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">create_compiled_task_c_pp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.create_compiled_task_c_pp" title="Permalink to this definition"></a></dt>
+<dd><p>Creates the pp task and binds it to the
+<a class="reference internal" href="#f_ti_arm_cgt.c_pp" title="f_ti_arm_cgt.c_pp"><code class="xref py py-class docutils literal notranslate"><span class="pre">f_ti_arm_cgt.c_pp</span></code></a> class.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.create_compiled_task_c_ppd">
+<span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">create_compiled_task_c_ppd</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.create_compiled_task_c_ppd" title="Permalink to this definition"></a></dt>
+<dd><p>Creates the ppd task and binds it to the
+<a class="reference internal" href="#f_ti_arm_cgt.c_ppd" title="f_ti_arm_cgt.c_ppd"><code class="xref py py-class docutils literal notranslate"><span class="pre">f_ti_arm_cgt.c_ppd</span></code></a> class.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.create_compiled_task_c_ppi">
+<span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">create_compiled_task_c_ppi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.create_compiled_task_c_ppi" title="Permalink to this definition"></a></dt>
+<dd><p>Creates the ppi task and binds it to the
+<a class="reference internal" href="#f_ti_arm_cgt.c_ppi" title="f_ti_arm_cgt.c_ppi"><code class="xref py py-class docutils literal notranslate"><span class="pre">f_ti_arm_cgt.c_ppi</span></code></a> class.</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.create_compiled_task_c_ppm">
+<span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">create_compiled_task_c_ppm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">self</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">node</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.create_compiled_task_c_ppm" title="Permalink to this definition"></a></dt>
+<dd><p>Creates the ppm task and binds it to the
+<a class="reference internal" href="#f_ti_arm_cgt.c_ppm" title="f_ti_arm_cgt.c_ppm"><code class="xref py py-class docutils literal notranslate"><span class="pre">f_ti_arm_cgt.c_ppm</span></code></a> class.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.create_version_source">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">create_version_source</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.create_version_source" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Task.Task</span></code></p>
+<p>creates the version information file</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.create_version_source.before">
+<span class="sig-name descname"><span class="pre">before</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['c']</span></em><a class="headerlink" href="#f_ti_arm_cgt.create_version_source.before" title="Permalink to this definition"></a></dt>
+<dd><p>specifies task, that this task needs to run before</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.create_version_source.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'BLUE'</span></em><a class="headerlink" href="#f_ti_arm_cgt.create_version_source.color" title="Permalink to this definition"></a></dt>
+<dd><p>color in which the command line is displayed in the terminal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.create_version_source.ext_out">
+<span class="sig-name descname"><span class="pre">ext_out</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['.h']</span></em><a class="headerlink" href="#f_ti_arm_cgt.create_version_source.ext_out" title="Permalink to this definition"></a></dt>
+<dd><p>extensions that trigger a re-build</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.create_version_source.get_remote">
+<span class="sig-name descname"><span class="pre">get_remote</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.create_version_source.get_remote" title="Permalink to this definition"></a></dt>
+<dd><p>returns the git remote</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.create_version_source.get_repo_dirty_from_git">
+<span class="sig-name descname"><span class="pre">get_repo_dirty_from_git</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.create_version_source.get_repo_dirty_from_git" title="Permalink to this definition"></a></dt>
+<dd><p>returns a boolean marking if the project’s working
+directory is dirty (which means it contains unstaged changes)</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.create_version_source.get_version_from_git">
+<span class="sig-name descname"><span class="pre">get_version_from_git</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.create_version_source.get_version_from_git" title="Permalink to this definition"></a></dt>
+<dd><p>returns a version string that is extracted directly
+from the underlying git repository</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.create_version_source.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.create_version_source.run" title="Permalink to this definition"></a></dt>
+<dd><p>Created the version information files</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.create_version_source.sig_explicit_deps">
+<span class="sig-name descname"><span class="pre">sig_explicit_deps</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.create_version_source.sig_explicit_deps" title="Permalink to this definition"></a></dt>
+<dd><p>Defines how to get signature of this task (and thus when to rerun it)</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.create_version_source.weight">
+<span class="sig-name descname"><span class="pre">weight</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">1</span></em><a class="headerlink" href="#f_ti_arm_cgt.create_version_source.weight" title="Permalink to this definition"></a></dt>
+<dd><p>priority of the task</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>int</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.cstlib">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">cstlib</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.cstlib" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#f_ti_arm_cgt.stlink_task" title="f_ti_arm_cgt.stlink_task"><code class="xref py py-class docutils literal notranslate"><span class="pre">f_ti_arm_cgt.stlink_task</span></code></a></p>
+<p>c static library</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.find_armar">
+<span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">find_armar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.find_armar" title="Permalink to this definition"></a></dt>
+<dd><p>configures the archive tool</p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.find_armcl">
+<span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">find_armcl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">conf</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.find_armcl" title="Permalink to this definition"></a></dt>
+<dd><p>configures the compiler, determines the compiler version, and sets the
+default include paths.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.hexgen">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">hexgen</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.hexgen" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Task.Task</span></code></p>
+<p>Task create hex file from elf files</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.hexgen.after">
+<span class="sig-name descname"><span class="pre">after</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">['link_task']</span></em><a class="headerlink" href="#f_ti_arm_cgt.hexgen.after" title="Permalink to this definition"></a></dt>
+<dd><p>tasks after that hexgen task can be run</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>list of str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.hexgen.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'YELLOW'</span></em><a class="headerlink" href="#f_ti_arm_cgt.hexgen.color" title="Permalink to this definition"></a></dt>
+<dd><p>color in which the command line is displayed in the terminal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.hexgen.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.hexgen.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>displayed keyword when generating the hex file</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.hexgen.run_str">
+<span class="sig-name descname"><span class="pre">run_str</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'${ARMHEX}</span> <span class="pre">-q</span> <span class="pre">${HEXGENFLAGS}</span> <span class="pre">--map=${TGT[1].abspath()}</span> <span class="pre">${LINKER_SCRIPT_HEX}</span> <span class="pre">${SRC[0].abspath()}</span> <span class="pre">-o</span> <span class="pre">${TGT[0].abspath()}'</span></em><a class="headerlink" href="#f_ti_arm_cgt.hexgen.run_str" title="Permalink to this definition"></a></dt>
+<dd><p>string to be interpolated to create the command line to create a
+hex file from an elf file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.nm">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">nm</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.nm" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Task.Task</span></code></p>
+<p>Task to run armnm on all input files</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.nm.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'PINK'</span></em><a class="headerlink" href="#f_ti_arm_cgt.nm.color" title="Permalink to this definition"></a></dt>
+<dd><p>color in which the command line is displayed in the terminal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.nm.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.nm.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>displayed keyword when armnm is run on object files</p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.nm.run_str">
+<span class="sig-name descname"><span class="pre">run_str</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'${ARMNM}</span> <span class="pre">${NMFLAGS}</span> <span class="pre">--output=${TGT}</span> <span class="pre">${SRC}'</span></em><a class="headerlink" href="#f_ti_arm_cgt.nm.run_str" title="Permalink to this definition"></a></dt>
+<dd><p>string to be interpolated to create the command line to create a
+nm file from an <code class="docutils literal notranslate"><span class="pre">*.obj</span></code>, <code class="docutils literal notranslate"><span class="pre">*.a</span></code> or <code class="docutils literal notranslate"><span class="pre">*.elf</span></code> file.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.options">
+<span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">options</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">opt</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.options" title="Permalink to this definition"></a></dt>
+<dd><p>Configurable options of the <a class="reference internal" href="#module-f_ti_arm_cgt" title="f_ti_arm_cgt"><code class="xref py py-mod docutils literal notranslate"><span class="pre">f_ti_arm_cgt</span></code></a> tool.</p>
+<p>Furthermore the default formatter gets replaced by
+<code class="xref py py-class docutils literal notranslate"><span class="pre">f_ti_arm_cgt.armclFormatter</span></code>.</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.print_swi">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">print_swi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.print_swi" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Task.Task</span></code></p>
+<p>gathers all swi information in one file</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.print_swi.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.print_swi.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>displayed keyword when this check is run</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.print_swi.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.print_swi.run" title="Permalink to this definition"></a></dt>
+<dd><p>combines all swi information in one file</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.remove_targets">
+<span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">remove_targets</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">task</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.remove_targets" title="Permalink to this definition"></a></dt>
+<dd><p>General helper function to remove targets</p>
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.search_swi">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">search_swi</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.search_swi" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Task.Task</span></code></p>
+<p>Searches for swi aliases based on a regular expression</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.search_swi.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.search_swi.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>displayed keyword when this check is run</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.search_swi.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.search_swi.run" title="Permalink to this definition"></a></dt>
+<dd><p>does the search check</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.size">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">size</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.size" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Task.Task</span></code></p>
+<p>Task to run size on all input files</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.size.color">
+<span class="sig-name descname"><span class="pre">color</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">'BLUE'</span></em><a class="headerlink" href="#f_ti_arm_cgt.size.color" title="Permalink to this definition"></a></dt>
+<dd><p>color in which the command line is displayed in the terminal</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type</dt>
+<dd class="field-odd"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.size.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.size.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>displayed keyword when size is run on object files</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.size.run">
+<span class="sig-name descname"><span class="pre">run</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.size.run" title="Permalink to this definition"></a></dt>
+<dd><p>implements the actual behavior of size and pipes the output into
+a file.</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.stlink_task">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">stlink_task</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Any</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.stlink_task" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">waflib.Tools.ccroot.link_task</span></code></p>
+<p>static link task</p>
+<dl class="py method">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.stlink_task.keyword">
+<span class="sig-name descname"><span class="pre">keyword</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.stlink_task.keyword" title="Permalink to this definition"></a></dt>
+<dd><p>displayed keyword when linking</p>
+</dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="f_ti_arm_cgt.tiprogram">
+<span class="sig-prename descclassname"><span class="pre">f_ti_arm_cgt.</span></span><span class="sig-name descname"><span class="pre">tiprogram</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bld</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">k</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kw</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#f_ti_arm_cgt.tiprogram" title="Permalink to this definition"></a></dt>
+<dd><p>wrapper for bld.program for simpler target configuration.
+The linker script is added as env input/output dependency for the
+target.
+Based on the target name all related targets are created:</p>
+<ul class="simple">
+<li><p>binary: &lt;target&gt;.&lt;format&gt;</p></li>
+<li><p>linker information: &lt;target&gt;.&lt;format&gt;.xml</p></li>
+<li><p>map information: &lt;target&gt;.&lt;format&gt;.map</p></li>
+</ul>
+</dd></dl>
+
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../ti-arm-compiler-tools.html" class="btn btn-neutral float-left" title="3.1.1. TI ARM CGT Tool" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="f_ti_arm_cgt_cc_options.html" class="btn btn-neutral float-right" title="3.1.1.2. TI ARM CGT Compiler Configuration Tool" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

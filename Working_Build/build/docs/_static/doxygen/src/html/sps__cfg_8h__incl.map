@@ -1,0 +1,11 @@
+<map id="sps_cfg.h" name="sps_cfg.h">
+<area shape="rect" id="node1" title="Header for the configuration for the driver for the smart power switches." alt="" coords="386,5,465,32"/>
+<area shape="rect" id="node2" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="121,80,268,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="291,304,357,331"/>
+<area shape="rect" id="node8" href="$sps__types_8h.html" title="Types for the SPS driver." alt="" coords="437,155,531,181"/>
+<area shape="rect" id="node9" title=" " alt="" coords="489,80,551,107"/>
+<area shape="rect" id="node3" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="157,155,232,181"/>
+<area shape="rect" id="node4" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="21,229,93,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="20,304,95,331"/>
+<area shape="rect" id="node7" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="168,229,261,256"/>
+</map>

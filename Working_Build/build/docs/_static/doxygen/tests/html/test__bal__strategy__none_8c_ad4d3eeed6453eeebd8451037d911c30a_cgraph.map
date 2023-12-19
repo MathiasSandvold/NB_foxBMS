@@ -1,0 +1,26 @@
+<map id="testBalancingStrategyNone" name="testBalancingStrategyNone">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,185,108"/>
+<area shape="rect" id="node2" href="$bal_8h.html#a32d6c4872b4b5d616cac7aad172a3427" title="gets the initialization state." alt="" coords="233,31,408,57"/>
+<area shape="rect" id="node3" href="$bal_8h.html#a98f48172bc8beacf09e7a4829be29fb8" title="sets the current state request of the state variable bal_state." alt="" coords="493,5,646,32"/>
+<area shape="rect" id="node7" href="$bal_8h.html#ac47a87986efae1622a9faa1e1f3c5e4b" title="trigger function for the BAL driver state machine." alt="" coords="274,233,367,260"/>
+<area shape="rect" id="node4" href="$bal_8c.html#ace76b9a00c0a0ec922e15d0d677b9315" title="checks the state requests that are made." alt="" coords="744,5,915,32"/>
+<area shape="rect" id="node5" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="756,183,903,209"/>
+<area shape="rect" id="node6" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="760,233,899,260"/>
+<area shape="rect" id="node8" href="$bal_8c.html#abcc9ebddce3db20a980a97a7ec631801" title="re&#45;entrance check of BAL state machine trigger function" alt="" coords="490,208,649,235"/>
+<area shape="rect" id="node9" href="$bal_8c.html#a4c79456adce43c8268210d78a9a635b6" title="Generic initialization function for the balancing module." alt="" coords="534,309,605,336"/>
+<area shape="rect" id="node10" href="$bal__strategy__history_8c.html#a77b842cd6a626ff4ba23feda40f2fef1" title=" " alt="" coords="474,360,665,387"/>
+<area shape="rect" id="node14" href="$bal__strategy__history_8c.html#af32dfaa4971ec041d8ceb9d9cef69970" title="State machine subfunction to check if balancing is allowed." alt="" coords="456,411,683,437"/>
+<area shape="rect" id="node20" href="$bal_8c.html#a6ece6f16bb8b0ea9b4453b05f6435515" title="State machine subfunction to initialize the balancing state machine." alt="" coords="469,461,670,488"/>
+<area shape="rect" id="node21" href="$bal_8c.html#ab3331dbd0bab398573170b9939275f6d" title="State machine subfunction to transfer from an initalized state to &quot;running&quot; states of th state machin..." alt="" coords="476,56,663,83"/>
+<area shape="rect" id="node22" href="$bal_8c.html#a867a5e13f306fbb6dcc7f3a291459af4" title="Substate handling function for BAL_Trigger()" alt="" coords="469,107,669,133"/>
+<area shape="rect" id="node23" href="$bal_8c.html#a5cc889b594af2c8ed7d359f4587f8f1a" title="Saves the last state and the last substate." alt="" coords="497,157,642,184"/>
+<area shape="rect" id="node24" href="$bal_8c.html#aa57af2b5a63cee4a0bc4b6918ce63ac8" title="transfers the current state request to the state machine." alt="" coords="480,259,659,285"/>
+<area shape="rect" id="node11" href="$bal__strategy__history_8c.html#a41534350feec71da2d825e837d332716" title=" " alt="" coords="751,309,908,336"/>
+<area shape="rect" id="node12" href="$bal__strategy__history_8c.html#a9f236a369bc16aa1bb4428e5ef0b0417" title=" " alt="" coords="751,360,908,387"/>
+<area shape="rect" id="node13" href="$bal__strategy__history_8c.html#ab608144bd63e5fa96224e95cec7a3fb3" title="Deactivates history based balancing." alt="" coords="772,411,887,437"/>
+<area shape="rect" id="node15" href="$bal__strategy__history_8c.html#acf508466d14bd8560c1f5b538e86fd94" title=" " alt="" coords="743,461,915,488"/>
+<area shape="rect" id="node19" href="$bms_8c.html#ab900910af6e3c584a5e3650018fe4ed7" title="Returns current battery system state (charging/discharging, resting or in relaxation phase)" alt="" coords="731,512,928,539"/>
+<area shape="rect" id="node16" href="$bal__cfg_8c.html#ae6943eea06cdd64870ce62e3ce1b60c2" title="get balancing threshold" alt="" coords="982,436,1197,463"/>
+<area shape="rect" id="node17" href="$group__state-estimation-api.html#ga74af4e2bdb5a3caa9696292fb9217311" title="look&#45;up table for SOC initialization" alt="" coords="976,487,1203,513"/>
+<area shape="rect" id="node18" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="1251,487,1421,513"/>
+</map>

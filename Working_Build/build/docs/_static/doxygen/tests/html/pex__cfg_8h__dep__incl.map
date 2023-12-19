@@ -1,0 +1,16 @@
+<map id="pex_cfg.h" name="pex_cfg.h">
+<area shape="rect" id="node1" title="Headers for the configuration for the NXP PCA9539 port expander module." alt="" coords="498,5,577,32"/>
+<area shape="rect" id="node2" href="$pex__cfg_8c.html" title="Configuration for the NXP PCA9539 port expander module." alt="" coords="273,80,351,107"/>
+<area shape="rect" id="node3" href="$sps__cfg_8c.html" title="Configuration for the driver for the smart power switches." alt="" coords="375,80,454,107"/>
+<area shape="rect" id="node4" href="$pex_8h.html" title="Header for the driver for the NXP PCA9539 port expander module." alt="" coords="478,80,533,107"/>
+<area shape="rect" id="node12" href="$test__pex_8c.html" title="Tests for the port expander module." alt="" coords="745,155,828,181"/>
+<area shape="rect" id="node13" href="$test__pex__cfg_8c.html" title="Tests for the port expander driver." alt="" coords="608,80,715,107"/>
+<area shape="rect" id="node14" href="$test__ftask__cfg_8c.html" title="Tests for the ftask_cfg driver." alt="" coords="739,80,853,107"/>
+<area shape="rect" id="node5" href="$ltc__6806_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="5,155,88,181"/>
+<area shape="rect" id="node6" href="$ltc__6813-1_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="112,155,205,181"/>
+<area shape="rect" id="node7" href="$nxp__mc33775a__afe_8c.html" title="Configuration for the MC33775A analog front&#45;end." alt="" coords="230,155,375,181"/>
+<area shape="rect" id="node8" href="$can_8c.html" title="Driver for the CAN module." alt="" coords="399,155,454,181"/>
+<area shape="rect" id="node9" href="$pex_8c.html" title="Driver for the NXP PCA9539 port expander module." alt="" coords="478,155,533,181"/>
+<area shape="rect" id="node10" href="$sps_8c.html" title="Driver for the smart power switches." alt="" coords="557,155,611,181"/>
+<area shape="rect" id="node11" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="636,155,721,181"/>
+</map>

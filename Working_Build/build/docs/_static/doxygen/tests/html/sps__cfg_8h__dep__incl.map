@@ -1,0 +1,12 @@
+<map id="sps_cfg.h" name="sps_cfg.h">
+<area shape="rect" id="node1" title="Header for the configuration for the driver for the smart power switches." alt="" coords="231,5,309,32"/>
+<area shape="rect" id="node2" href="$contactor__cfg_8c.html" title="Configuration for the driver for the contactors." alt="" coords="5,80,116,107"/>
+<area shape="rect" id="node3" href="$sps__cfg_8c.html" title="Configuration for the driver for the smart power switches." alt="" coords="140,80,219,107"/>
+<area shape="rect" id="node4" href="$sps_8h.html" title="Headers for the driver for the smart power switches." alt="" coords="243,80,297,107"/>
+<area shape="rect" id="node9" href="$test__bms_8c.html" title="Tests for the bms driver implementation." alt="" coords="321,80,408,107"/>
+<area shape="rect" id="node10" href="$test__sps__cfg_8c.html" title="Tests for the SPS driver." alt="" coords="433,80,539,107"/>
+<area shape="rect" id="node5" href="$contactor_8c.html" title="Driver for the contactors." alt="" coords="84,155,171,181"/>
+<area shape="rect" id="node6" href="$sps_8c.html" title="Driver for the smart power switches." alt="" coords="195,155,249,181"/>
+<area shape="rect" id="node7" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="274,155,359,181"/>
+<area shape="rect" id="node8" href="$test__sps_8c.html" title="Tests for the SPS driver." alt="" coords="383,155,466,181"/>
+</map>

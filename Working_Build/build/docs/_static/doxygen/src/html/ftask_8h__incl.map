@@ -1,0 +1,19 @@
+<map id="ftask.h" name="ftask.h">
+<area shape="rect" id="node1" title="Header of task driver implementation." alt="" coords="693,5,754,32"/>
+<area shape="rect" id="node2" href="$can__cfg_8h.html" title="Headers for the configuration for the CAN module." alt="" coords="556,80,635,107"/>
+<area shape="rect" id="node4" href="$database_8h.html" title="Database module header." alt="" coords="447,155,533,181"/>
+<area shape="rect" id="node10" title=" " alt="" coords="455,603,520,629"/>
+<area shape="rect" id="node15" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="623,453,669,480"/>
+<area shape="rect" id="node16" href="$ftask__cfg_8h.html" title="Task configuration header." alt="" coords="811,379,897,405"/>
+<area shape="rect" id="node17" href="$rtc_8h.html" title="Header file of the RTC driver." alt="" coords="722,453,770,480"/>
+<area shape="rect" id="node3" title=" " alt="" coords="558,155,635,181"/>
+<area shape="rect" id="node5" href="$database__cfg_8h.html" title="Database configuration header." alt="" coords="229,304,340,331"/>
+<area shape="rect" id="node11" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="575,528,669,555"/>
+<area shape="rect" id="node14" href="$database__helper_8h.html" title="Database module header." alt="" coords="322,229,450,256"/>
+<area shape="rect" id="node6" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="114,379,261,405"/>
+<area shape="rect" id="node9" title=" " alt="" coords="78,603,153,629"/>
+<area shape="rect" id="node12" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="42,528,101,555"/>
+<area shape="rect" id="node13" title=" " alt="" coords="336,379,399,405"/>
+<area shape="rect" id="node7" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="198,453,273,480"/>
+<area shape="rect" id="node8" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="125,528,197,555"/>
+</map>

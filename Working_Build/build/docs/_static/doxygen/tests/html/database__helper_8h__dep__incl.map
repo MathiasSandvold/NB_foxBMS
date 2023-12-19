@@ -1,0 +1,196 @@
+<map id="database_helper.h" name="database_helper.h">
+<area shape="rect" id="node1" title="Database module header." alt="" coords="6262,5,6390,32"/>
+<area shape="rect" id="node2" href="$database_8h.html" title="Database module header." alt="" coords="6283,80,6369,107"/>
+<area shape="rect" id="node132" href="$test__can__cbs__tx__cell-temperatures_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="7032,319,7177,360"/>
+<area shape="rect" id="node133" href="$test__can__cbs__tx__cell-voltages_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="6863,319,7008,360"/>
+<area shape="rect" id="node193" href="$database__helper_8c.html" title="Database helper implementation." alt="" coords="6394,80,6522,107"/>
+<area shape="rect" id="node194" href="$test__database__helper_8c.html" title="Tests for the database helper functions." alt="" coords="6546,80,6703,107"/>
+<area shape="rect" id="node3" href="$moving__average_8c.html" title="moving average algorithm" alt="" coords="15588,155,15712,181"/>
+<area shape="rect" id="node4" href="$soc__counting_8c.html" title="SOC module responsible for calculation of SOC." alt="" coords="3192,326,3303,353"/>
+<area shape="rect" id="node5" href="$soe__counting_8c.html" title="SOE module responsible for calculation of SOE." alt="" coords="831,326,941,353"/>
+<area shape="rect" id="node6" href="$sof__trapezoid_8c.html" title="SOX module responsible for current derating calculation." alt="" coords="5,326,116,353"/>
+<area shape="rect" id="node7" href="$state__estimation_8h.html" title="Header for state&#45;estimation module responsible for the estimation of state&#45;of&#45;charge (SOC),..." alt="" coords="1607,155,1736,181"/>
+<area shape="rect" id="node32" href="$bal__strategy__history_8c.html" title="Driver for the Balancing module." alt="" coords="2365,326,2516,353"/>
+<area shape="rect" id="node34" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="4123,326,4209,353"/>
+<area shape="rect" id="node35" href="$bal_8h.html" title="Header for the driver for balancing." alt="" coords="3323,155,3374,181"/>
+<area shape="rect" id="node43" href="$bal__strategy__voltage_8c.html" title="Driver for the Balancing module." alt="" coords="3327,326,3477,353"/>
+<area shape="rect" id="node45" href="$bms_8c.html" title="bms driver implementation" alt="" coords="3727,497,3786,524"/>
+<area shape="rect" id="node48" href="$bms_8h.html" title="bms driver header" alt="" coords="3763,237,3822,263"/>
+<area shape="rect" id="node51" href="$soa_8h.html" title="Header for SOA module, responsible for checking battery parameters against safety limits." alt="" coords="3839,415,3893,442"/>
+<area shape="rect" id="node55" href="$redundancy_8c.html" title="Source file for handling redundancy between redundant cell voltage and cell temperature measurements." alt="" coords="3999,326,4099,353"/>
+<area shape="rect" id="node61" href="$plausibility_8h.html" title="plausibility checks for cell voltage and cell temperatures" alt="" coords="4468,237,4563,263"/>
+<area shape="rect" id="node64" href="$redundancy_8h.html" title="Header fileS for handling redundancy between redundant cell voltage and cell temperature measurements..." alt="" coords="4227,237,4327,263"/>
+<area shape="rect" id="node66" href="$adc_8c.html" title="Driver for the ADC module." alt="" coords="4437,155,4492,181"/>
+<area shape="rect" id="node67" href="$debug__default_8c.html" title="Driver implementation for the fake AFE." alt="" coords="4516,155,4629,181"/>
+<area shape="rect" id="node68" href="$ltc__6806_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="4787,415,4870,442"/>
+<area shape="rect" id="node69" href="$ltc__6813-1_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="5806,415,5899,442"/>
+<area shape="rect" id="node70" href="$ltc__defs_8h.html" title="Headers for the driver for the LTC analog front&#45;end." alt="" coords="5040,155,5119,181"/>
+<area shape="rect" id="node86" href="$mxm__1785x_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="5607,326,5711,353"/>
+<area shape="rect" id="node87" href="$mxm__1785x__tools_8h.html" title="This is a collection of helper functions for the MAX1785x ICs." alt="" coords="5795,155,5934,181"/>
+<area shape="rect" id="node90" href="$mxm__17852_8c.html" title="Operation state machine implementation for the MAX17852." alt="" coords="5735,326,5839,353"/>
+<area shape="rect" id="node98" href="$nxp__mc33775a_8c.html" title="Driver for the MC33775A analog front&#45;end." alt="" coords="6371,415,6492,442"/>
+<area shape="rect" id="node99" href="$nxp__mc33775a__defs_8h.html" title="Definitions for the driver for the MC33775A analog front&#45;end." alt="" coords="6437,155,6589,181"/>
+<area shape="rect" id="node110" href="$can_8c.html" title="Driver for the CAN module." alt="" coords="13211,326,13265,353"/>
+<area shape="rect" id="node111" href="$can__helper_8c.html" title="Helper functions for the CAN module." alt="" coords="7903,326,7999,353"/>
+<area shape="rect" id="node112" href="$can__cbs__tx__debug-response_8c.html" title="Implementation for handling the transmit of debug response messages." alt="" coords="10369,326,10568,353"/>
+<area shape="rect" id="node113" href="$can__cfg_8c.html" title="Configuration for the CAN module." alt="" coords="12713,326,12792,353"/>
+<area shape="rect" id="node114" href="$can__cfg_8h.html" title="Headers for the configuration for the CAN module." alt="" coords="11711,155,11789,181"/>
+<area shape="rect" id="node117" href="$bender__iso165c_8c.html" title="Driver for the insulation monitoring." alt="" coords="12768,497,12892,524"/>
+<area shape="rect" id="node142" href="$can__cfg__rx_8c.html" title="Configuration for the CAN module." alt="" coords="12918,326,13014,353"/>
+<area shape="rect" id="node144" href="$can__cfg__tx_8c.html" title="Configuration for the CAN module." alt="" coords="10593,326,10689,353"/>
+<area shape="rect" id="node154" href="$imd_8h.html" title="API header for the insulation monitoring device." alt="" coords="13360,237,13415,263"/>
+<area shape="rect" id="node156" href="$bender__ir155_8c.html" title="Driver for the insulation monitoring." alt="" coords="14333,415,14439,442"/>
+<area shape="rect" id="node163" href="$no-imd_8c.html" title="Driver for the dummy insulation monitoring driver." alt="" coords="14237,415,14309,442"/>
+<area shape="rect" id="node167" href="$ftask__freertos_8c.html" title="OS specific, i.e., FreeRTOS specific, creation of the tasks." alt="" coords="15008,326,15119,353"/>
+<area shape="rect" id="node168" href="$ftask_8h.html" title="Header of task driver implementation." alt="" coords="14218,237,14279,263"/>
+<area shape="rect" id="node170" href="$rtc_8c.html" title="Implementation of the RTC driver." alt="" coords="15143,326,15191,353"/>
+<area shape="rect" id="node171" href="$database_8c.html" title="Database module implementation." alt="" coords="15447,326,15533,353"/>
+<area shape="rect" id="node180" href="$pex__cfg_8h.html" title="Headers for the configuration for the NXP PCA9539 port expander module." alt="" coords="14900,155,14979,181"/>
+<area shape="rect" id="node185" href="$sps_8c.html" title="Driver for the smart power switches." alt="" coords="15716,326,15771,353"/>
+<area shape="rect" id="node188" href="$htsensor_8c.html" title="Driver for the Sensirion SHT35&#45;DIS I2C humidity/temperature sensor." alt="" coords="15054,155,15137,181"/>
+<area shape="rect" id="node189" href="$i2c_8c.html" title="Driver for the I2C module." alt="" coords="15161,155,15211,181"/>
+<area shape="rect" id="node190" href="$interlock_8c.html" title="Driver for the interlock." alt="" coords="15235,155,15318,181"/>
+<area shape="rect" id="node191" href="$diag__cfg_8c.html" title="Diagnostic module configuration." alt="" coords="15343,155,15424,181"/>
+<area shape="rect" id="node192" href="$test__database_8c.html" title="Tests for the database driver." alt="" coords="15449,155,15563,181"/>
+<area shape="rect" id="node8" href="$soc__counting_8h.html" title="Header for SOC module, responsible for calculation of SOC." alt="" coords="2216,237,2327,263"/>
+<area shape="rect" id="node10" href="$soc__debug_8h.html" title="Header for SOC module, responsible for calculation state&#45;of&#45;charge." alt="" coords="1086,237,1182,263"/>
+<area shape="rect" id="node13" href="$soc__none_8h.html" title="Header for SOC module, responsible for calculation state&#45;of&#45;charge." alt="" coords="1207,237,1296,263"/>
+<area shape="rect" id="node16" href="$test__state__estimation_8c.html" title="Tests for SOH module responsible for calculation of state&#45;of&#45;health." alt="" coords="1236,326,1395,353"/>
+<area shape="rect" id="node17" href="$soe__counting_8h.html" title="Header for SOE module, responsible for calculation of SOE." alt="" coords="1320,237,1431,263"/>
+<area shape="rect" id="node19" href="$soe__debug_8h.html" title="Header for SOE module, responsible for calculation state&#45;of&#45;energy." alt="" coords="1455,237,1551,263"/>
+<area shape="rect" id="node22" href="$soe__none_8h.html" title="Header for SOE module, responsible for calculation state&#45;of&#45;energy." alt="" coords="1627,237,1716,263"/>
+<area shape="rect" id="node25" href="$soh__debug_8h.html" title="Header for SOH module, responsible for calculation state&#45;of&#45;health." alt="" coords="1741,237,1837,263"/>
+<area shape="rect" id="node28" href="$soh__none_8h.html" title="Header for SOH module, responsible for calculation state&#45;of&#45;health." alt="" coords="1871,237,1960,263"/>
+<area shape="rect" id="node31" href="$state__estimation_8c.html" title="State&#45;estimation module responsible for the estimation of state&#45;of&#45; charge (SOC), state&#45;of&#45;energy (SO..." alt="" coords="932,237,1061,263"/>
+<area shape="rect" id="node33" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="3767,326,3821,353"/>
+<area shape="rect" id="node9" href="$test__soc__counting_8c.html" title="Tests for SOC module responsible for calculation of SOC." alt="" coords="2202,326,2341,353"/>
+<area shape="rect" id="node11" href="$soc__debug_8c.html" title="SOC module responsible for calculation of state&#45;of&#45;charge (SOC)" alt="" coords="290,326,386,353"/>
+<area shape="rect" id="node12" href="$test__soc__debug_8c.html" title="Tests for SOC module responsible for calculation of state&#45;of&#45;charge." alt="" coords="141,326,266,353"/>
+<area shape="rect" id="node14" href="$soc__none_8c.html" title="SOC module responsible for calculation of state&#45;of&#45;charge (SOC)" alt="" coords="553,326,643,353"/>
+<area shape="rect" id="node15" href="$test__soc__none_8c.html" title="Tests for SOC module responsible for calculation of state&#45;of&#45;charge." alt="" coords="411,326,529,353"/>
+<area shape="rect" id="node18" href="$test__soe__counting_8c.html" title="Test for the configuration for SOE." alt="" coords="667,326,806,353"/>
+<area shape="rect" id="node20" href="$soe__debug_8c.html" title="SOE module responsible for calculation of state&#45;of&#45;energy (SOE)" alt="" coords="966,326,1062,353"/>
+<area shape="rect" id="node21" href="$test__soe__debug_8c.html" title="Tests for SOE module responsible for calculation of state&#45;of&#45;energy." alt="" coords="1086,326,1211,353"/>
+<area shape="rect" id="node23" href="$soe__none_8c.html" title="SOE module responsible for calculation of state&#45;of&#45;energy (SOE)" alt="" coords="1419,326,1508,353"/>
+<area shape="rect" id="node24" href="$test__soe__none_8c.html" title="Tests for SOE module responsible for calculation of state&#45;of&#45;energy." alt="" coords="1532,326,1651,353"/>
+<area shape="rect" id="node26" href="$soh__debug_8c.html" title="SOH module responsible for calculation of state&#45;of&#45;health (SOH)" alt="" coords="1675,326,1771,353"/>
+<area shape="rect" id="node27" href="$test__soh__debug_8c.html" title="Tests for SOH module responsible for calculation of state&#45;of&#45;health." alt="" coords="1795,326,1921,353"/>
+<area shape="rect" id="node29" href="$soh__none_8c.html" title="SOH module responsible for calculation of state&#45;of&#45;health (SOH)" alt="" coords="1945,326,2035,353"/>
+<area shape="rect" id="node30" href="$test__soh__none_8c.html" title="Tests for SOH module responsible for calculation of state&#45;of&#45;health." alt="" coords="2059,326,2177,353"/>
+<area shape="rect" id="node36" href="$bal_8c.html" title="Driver for the Balancing module." alt="" coords="3323,237,3374,263"/>
+<area shape="rect" id="node37" href="$bal__strategy__history_8h.html" title="Header for the history&#45;based balancing strategy module." alt="" coords="2504,237,2655,263"/>
+<area shape="rect" id="node38" href="$test__bal__strategy__history_8c.html" title="Test of the history based balancing module." alt="" coords="2541,326,2719,353"/>
+<area shape="rect" id="node39" href="$bal__strategy__none_8c.html" title="WEAK Driver for the Balancing module for ICs that to not support balancing." alt="" coords="3449,237,3587,263"/>
+<area shape="rect" id="node40" href="$bal__strategy__none_8h.html" title="Header for the voltage&#45;based balancing strategy module." alt="" coords="2730,237,2869,263"/>
+<area shape="rect" id="node42" href="$bal__strategy__voltage_8h.html" title="Header for the voltage&#45;based balancing strategy module." alt="" coords="3148,237,3299,263"/>
+<area shape="rect" id="node44" href="$test__bal__strategy__voltage_8c.html" title="Test of the voltage based balancing module." alt="" coords="2936,326,3116,353"/>
+<area shape="rect" id="node46" href="$can__cbs__rx__state-request_8c.html" title="CAN driver Rx callback implementation." alt="" coords="11472,326,11655,353"/>
+<area shape="rect" id="node47" href="$test__bal_8c.html" title="Test of the API of the balancing module." alt="" coords="3045,237,3124,263"/>
+<area shape="rect" id="node41" href="$test__bal__strategy__none_8c.html" title="Test of the history based balancing module." alt="" coords="2743,326,2911,353"/>
+<area shape="rect" id="node49" href="$soa__cfg_8h.html" title="Configuration header for SOA." alt="" coords="3664,326,3743,353"/>
+<area shape="rect" id="node52" href="$soa_8c.html" title="SOA module responsible for checking battery parameters against safety limits." alt="" coords="3917,497,3972,524"/>
+<area shape="rect" id="node56" href="$can__cbs__tx__minimum-maximum-values_8c.html" title="CAN driver Tx callback implementation." alt="" coords="7202,319,7351,360"/>
+<area shape="rect" id="node57" href="$can__cbs__tx__pack-state-estimation_8c.html" title="CAN driver Tx callback implementation." alt="" coords="7375,319,7533,360"/>
+<area shape="rect" id="node58" href="$can__cbs__tx__state_8c.html" title="CAN driver Tx callback implementation." alt="" coords="7557,326,7693,353"/>
+<area shape="rect" id="node59" href="$can__cbs__tx__string-state-estimation_8c.html" title="CAN driver Tx callback implementation." alt="" coords="7717,319,7879,360"/>
+<area shape="rect" id="node60" href="$test__bms_8c.html" title="Tests for the bms driver implementation." alt="" coords="3553,326,3640,353"/>
+<area shape="rect" id="node50" href="$soa__cfg_8c.html" title="Configuration for safe&#45;operating area check." alt="" coords="3684,415,3763,442"/>
+<area shape="rect" id="node54" href="$test__soa__cfg_8c.html" title="Test for the configuration for SOX." alt="" coords="3553,415,3659,442"/>
+<area shape="rect" id="node53" href="$test__soa_8c.html" title="Tests for SOX module responsible for calculation of current derating and of SOC." alt="" coords="3810,497,3893,524"/>
+<area shape="rect" id="node62" href="$plausibility_8c.html" title="plausibility checks for cell voltage and cell temperatures" alt="" coords="4535,326,4629,353"/>
+<area shape="rect" id="node63" href="$test__plausibility_8c.html" title="Tests for plausibility checks for cell voltage and cell temperatures." alt="" coords="4387,326,4510,353"/>
+<area shape="rect" id="node65" href="$test__redundancy_8c.html" title="Test of the redundancy module." alt="" coords="4233,326,4363,353"/>
+<area shape="rect" id="node71" href="$ltc__6806__cfg_8h.html" title="Header for the configuration for the LTC 6806 monitoring IC." alt="" coords="4983,326,5090,353"/>
+<area shape="rect" id="node75" href="$ltc__6813-1__cfg_8h.html" title="Header for the configuration for the LTC 6804&#45;1 6811&#45;1, 6812&#45;1, and 6813&#45;1 monitoring IC." alt="" coords="5114,326,5231,353"/>
+<area shape="rect" id="node80" href="$ltc_8h.html" title="Headers for the driver for the LTC analog front&#45;end." alt="" coords="4756,326,4803,353"/>
+<area shape="rect" id="node84" href="$ltc__afe__dma_8h.html" title="Headers for the driver for the DMA module for the LTC." alt="" coords="4939,237,5041,263"/>
+<area shape="rect" id="node72" href="$ltc__6806__cfg_8c.html" title="Configuration for the LTC analog front&#45;end." alt="" coords="5363,415,5470,442"/>
+<area shape="rect" id="node73" href="$test__ltc__6806__cfg_8c.html" title="Tests for the CAN driver." alt="" coords="4895,415,5029,442"/>
+<area shape="rect" id="node74" href="$test__ltc__6806_8c.html" title="Test of the ltc.c module." alt="" coords="4652,415,4763,442"/>
+<area shape="rect" id="node76" href="$ltc__6813-1__cfg_8c.html" title="Configuration for the LTC analog front&#45;end." alt="" coords="5665,415,5782,442"/>
+<area shape="rect" id="node77" href="$test__ltc__6813-1__cfg_8c.html" title="Tests for the CAN driver." alt="" coords="5494,415,5641,442"/>
+<area shape="rect" id="node78" href="$test__ltc__6813-1_8c.html" title="Test of the ltc_6813&#45;1.c module." alt="" coords="5217,415,5339,442"/>
+<area shape="rect" id="node79" href="$test__ltc__6813-1__pec__in__arrays_8c.html" title="Test of the predefined commands in the ltc_6813&#45;1.c module." alt="" coords="5054,408,5193,449"/>
+<area shape="rect" id="node81" href="$ltc__afe_8c.html" title="AFE driver implementation for LTC ICs." alt="" coords="4388,415,4459,442"/>
+<area shape="rect" id="node82" href="$ltc__afe__dma_8c.html" title="Driver for the DMA module for the LTC." alt="" coords="4261,415,4364,442"/>
+<area shape="rect" id="node83" href="$test__ltc__6806__pec__in__arrays_8c.html" title="Test of the PEC values in the arrays in ltc6806.c module." alt="" coords="4483,408,4628,449"/>
+<area shape="rect" id="node85" href="$test__ltc__afe__dma_8c.html" title="Test of the ltc_afe_dma.c module in ltc." alt="" coords="4827,326,4959,353"/>
+<area shape="rect" id="node88" href="$mxm__1785x_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="6083,237,6187,263"/>
+<area shape="rect" id="node91" href="$test__mxm__1785x_8c.html" title="Test for the Maxim 1785x driver." alt="" coords="5975,326,6109,353"/>
+<area shape="rect" id="node92" href="$test__mxm__17852_8c.html" title="Test for the Maxim 17852 driver." alt="" coords="6133,326,6266,353"/>
+<area shape="rect" id="node93" href="$mxm__1785x__tools_8c.html" title="This is a collection of helper functions for the MAX1785x ICs." alt="" coords="5577,237,5715,263"/>
+<area shape="rect" id="node94" href="$mxm__registry_8h.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="5339,237,5451,263"/>
+<area shape="rect" id="node96" href="$test__mxm__registry_8c.html" title="Test for the Maxim registry tool." alt="" coords="5306,326,5447,353"/>
+<area shape="rect" id="node97" href="$test__mxm__1785x__tools_8c.html" title="Test for the Maxim 1785x driver tools." alt="" coords="5841,237,6009,263"/>
+<area shape="rect" id="node89" href="$mxm__afe_8c.html" title="AFE driver implementation." alt="" coords="5864,326,5951,353"/>
+<area shape="rect" id="node95" href="$mxm__registry_8c.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="5471,326,5583,353"/>
+<area shape="rect" id="node100" href="$nxp__mc33775a__cfg_8h.html" title="Header for the configuration for the MC33775A analog front&#45;end." alt="" coords="6441,237,6587,263"/>
+<area shape="rect" id="node101" href="$nxp__mc33775a__cfg_8c.html" title="Configuration for the MC33775A analog front&#45;end." alt="" coords="6341,326,6487,353"/>
+<area shape="rect" id="node102" href="$nxp__mc33775a-ll_8h.html" title=" " alt="" coords="6657,326,6787,353"/>
+<area shape="rect" id="node105" href="$nxp__mc33775a_8h.html" title="Headers for the driver for the MC33775A analog front&#45;end." alt="" coords="6511,326,6632,353"/>
+<area shape="rect" id="node103" href="$nxp__mc33775a-ll_8c.html" title=" " alt="" coords="6835,415,6966,442"/>
+<area shape="rect" id="node104" href="$test__nxp__mc33775a-ll_8c.html" title="Test of some module." alt="" coords="6651,415,6811,442"/>
+<area shape="rect" id="node106" href="$nxp__mc33775a__afe_8c.html" title="Configuration for the MC33775A analog front&#45;end." alt="" coords="13691,415,13836,442"/>
+<area shape="rect" id="node107" href="$nxp__afe__dma__cfg_8c.html" title="Configuration for the DMA module." alt="" coords="6037,415,6172,442"/>
+<area shape="rect" id="node108" href="$nxp__afe__dma_8c.html" title="Driver for the DMA module for the N775." alt="" coords="6516,415,6627,442"/>
+<area shape="rect" id="node109" href="$test__nxp__mc33775a_8c.html" title="Test of some module." alt="" coords="6196,415,6347,442"/>
+<area shape="rect" id="node115" href="$can_8h.html" title="Header for the driver for the CAN module." alt="" coords="10856,237,10911,263"/>
+<area shape="rect" id="node119" href="$can__helper_8h.html" title="Headers for the helper functions for the CAN module." alt="" coords="9722,237,9818,263"/>
+<area shape="rect" id="node141" href="$can__cbs__rx_8h.html" title="CAN callbacks header." alt="" coords="12057,237,12157,263"/>
+<area shape="rect" id="node143" href="$can__cbs__tx_8h.html" title="CAN callbacks header." alt="" coords="8824,237,8924,263"/>
+<area shape="rect" id="node146" href="$can__cbs__tx__unsupported-message_8h.html" title="CAN header." alt="" coords="11023,229,11189,271"/>
+<area shape="rect" id="node147" href="$can__cfg__rx-message-definitions_8h.html" title="Header for the driver for the CAN module." alt="" coords="12223,229,12365,271"/>
+<area shape="rect" id="node149" href="$can__cfg__tx-message-definitions_8h.html" title="Header for the driver for the CAN module." alt="" coords="8492,229,8635,271"/>
+<area shape="rect" id="node150" href="$bender__iso165c__cfg_8h.html" title="Headers for the configuration for the insulation monitoring." alt="" coords="13039,326,13187,353"/>
+<area shape="rect" id="node177" href="$test__can__cfg_8c.html" title="Tests for the CAN driver." alt="" coords="11627,237,11734,263"/>
+<area shape="rect" id="node178" href="$test__can__cfg__rx_8c.html" title="Tests for the CAN driver." alt="" coords="11758,237,11883,263"/>
+<area shape="rect" id="node179" href="$test__can__cfg__tx_8c.html" title="Tests for the CAN driver." alt="" coords="11907,237,12033,263"/>
+<area shape="rect" id="node116" href="$can__cbs__tx__unsupported-message_8c.html" title="CAN." alt="" coords="10713,319,10880,360"/>
+<area shape="rect" id="node118" href="$test__can_8c.html" title="Tests for the CAN driver." alt="" coords="11125,326,11207,353"/>
+<area shape="rect" id="node120" href="$can__cbs__rx__current-sensor_8c.html" title="CAN driver Rx callback implementation." alt="" coords="12039,319,12175,360"/>
+<area shape="rect" id="node121" href="$can__cbs__rx__debug_8c.html" title="CAN driver Rx callback implementation." alt="" coords="12547,326,12689,353"/>
+<area shape="rect" id="node122" href="$can__cbs__rx__imd_8c.html" title="CAN driver Rx callback implementation." alt="" coords="12199,326,12327,353"/>
+<area shape="rect" id="node123" href="$can__cbs__tx__cell-temperatures_8c.html" title="CAN driver Tx callback implementation." alt="" coords="8771,326,8977,353"/>
+<area shape="rect" id="node124" href="$can__cbs__tx__cell-voltages_8c.html" title="CAN driver Tx callback implementation." alt="" coords="9593,326,9771,353"/>
+<area shape="rect" id="node125" href="$can__cbs__tx__limit-values_8c.html" title="CAN driver Tx callback implementation." alt="" coords="8575,326,8746,353"/>
+<area shape="rect" id="node126" href="$can__cbs__tx__system-values_8c.html" title="CAN driver Tx callback implementation." alt="" coords="9001,326,9192,353"/>
+<area shape="rect" id="node127" href="$test__can__cbs__rx__current-sensor_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="11282,319,11447,360"/>
+<area shape="rect" id="node128" href="$test__can__cbs__rx__debug_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="12351,326,12522,353"/>
+<area shape="rect" id="node129" href="$test__can__cbs__rx__imd_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="11679,326,11837,353"/>
+<area shape="rect" id="node130" href="$test__can__cbs__rx__state-request_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="11861,319,12015,360"/>
+<area shape="rect" id="node131" href="$test__can__helper_8c.html" title="Tests for the CAN helper functions." alt="" coords="9795,326,9921,353"/>
+<area shape="rect" id="node134" href="$test__can__cbs__tx__debug-response_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="9945,319,10105,360"/>
+<area shape="rect" id="node135" href="$test__can__cbs__tx__limit-values_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="9217,319,9366,360"/>
+<area shape="rect" id="node136" href="$test__can__cbs__tx__minimum-maximum-values_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="9390,319,9569,360"/>
+<area shape="rect" id="node137" href="$test__can__cbs__tx__pack-state-estimation_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="8024,319,8177,360"/>
+<area shape="rect" id="node138" href="$test__can__cbs__tx__state_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="10129,326,10294,353"/>
+<area shape="rect" id="node139" href="$test__can__cbs__tx__string-state-estimation_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="8202,319,8359,360"/>
+<area shape="rect" id="node140" href="$test__can__cbs__tx__system-values_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="8383,319,8551,360"/>
+<area shape="rect" id="node145" href="$test__can__cbs__tx__unsupported-message_8c.html" title="Tests for the CAN driver callbacks." alt="" coords="10904,319,11100,360"/>
+<area shape="rect" id="node148" href="$test__bender__iso165c_8c.html" title="Test of the Bender iso165c driver." alt="" coords="13105,497,13259,524"/>
+<area shape="rect" id="node151" href="$bender__iso165c_8h.html" title="Headers for the driver for the insulation monitoring." alt="" coords="13309,415,13433,442"/>
+<area shape="rect" id="node152" href="$bender__iso165c__cfg_8c.html" title="Configuration for the insulation monitoring." alt="" coords="13085,415,13233,442"/>
+<area shape="rect" id="node153" href="$test__bender__iso165c__cfg_8c.html" title="Test of Bender iso165c module." alt="" coords="12919,408,13061,449"/>
+<area shape="rect" id="node155" href="$bender__ir155_8h.html" title="Headers for the Bender IR155 driver for the insulation monitoring." alt="" coords="14047,326,14154,353"/>
+<area shape="rect" id="node157" href="$bender__ir155__helper_8h.html" title="Headers for the configuration for the insulation monitoring." alt="" coords="13719,326,13869,353"/>
+<area shape="rect" id="node160" href="$bender__ir155__cfg_8h.html" title="Headers for the configuration for the insulation monitoring." alt="" coords="13893,326,14023,353"/>
+<area shape="rect" id="node161" href="$imd_8c.html" title="Main driver state machine for insulation monitoring driver." alt="" coords="13392,326,13447,353"/>
+<area shape="rect" id="node162" href="$no-imd_8h.html" title="Header for the driver for the dummy insulation monitoring." alt="" coords="13623,326,13695,353"/>
+<area shape="rect" id="node165" href="$test__imd_8c.html" title="Tests for the Insulation Monitoring Device (IMD) driver." alt="" coords="13458,415,13541,442"/>
+<area shape="rect" id="node166" href="$test__ftask__cfg_8c.html" title="Tests for the ftask_cfg driver." alt="" coords="14869,326,14983,353"/>
+<area shape="rect" id="node158" href="$bender__ir155__helper_8c.html" title="Driver for the insulation monitoring." alt="" coords="14063,415,14213,442"/>
+<area shape="rect" id="node159" href="$test__bender__ir155__helper_8c.html" title="Tests for the Bender IR155 driver." alt="" coords="13861,415,14039,442"/>
+<area shape="rect" id="node164" href="$test__no-imd_8c.html" title="Tests for the dummy insulation monitoring driver." alt="" coords="13565,415,13666,442"/>
+<area shape="rect" id="node169" href="$dma_8c.html" title="Driver for the DMA module." alt="" coords="14178,326,14237,353"/>
+<area shape="rect" id="node172" href="$ftask_8c.html" title="Implementation of OS&#45;independent task creators." alt="" coords="14261,326,14322,353"/>
+<area shape="rect" id="node173" href="$os__freertos_8c.html" title="FreeRTOS specific implementation of the tasks and resources used by the system." alt="" coords="14347,326,14444,353"/>
+<area shape="rect" id="node174" href="$os_8c.html" title="Implementation of the tasks and resources used by the system." alt="" coords="14468,326,14515,353"/>
+<area shape="rect" id="node175" href="$test__ftask__freertos_8c.html" title="Test of the ftask implementation for FreeRTOS." alt="" coords="14539,326,14679,353"/>
+<area shape="rect" id="node176" href="$test__ftask_8c.html" title="Test of the ftask module." alt="" coords="14703,326,14794,353"/>
+<area shape="rect" id="node181" href="$pex__cfg_8c.html" title="Configuration for the NXP PCA9539 port expander module." alt="" coords="15111,237,15189,263"/>
+<area shape="rect" id="node182" href="$sps__cfg_8c.html" title="Configuration for the driver for the smart power switches." alt="" coords="15213,237,15292,263"/>
+<area shape="rect" id="node183" href="$pex_8h.html" title="Header for the driver for the NXP PCA9539 port expander module." alt="" coords="14849,237,14904,263"/>
+<area shape="rect" id="node186" href="$test__pex_8c.html" title="Tests for the port expander module." alt="" coords="15609,326,15691,353"/>
+<area shape="rect" id="node187" href="$test__pex__cfg_8c.html" title="Tests for the port expander driver." alt="" coords="14979,237,15086,263"/>
+<area shape="rect" id="node184" href="$pex_8c.html" title="Driver for the NXP PCA9539 port expander module." alt="" coords="15368,326,15423,353"/>
+</map>

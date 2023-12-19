@@ -1,0 +1,10 @@
+<map id="debug_default_cfg.c" name="debug_default_cfg.c">
+<area shape="rect" id="node1" title="Configuration for the fake AFE." alt="" coords="328,5,466,32"/>
+<area shape="rect" id="node2" href="$debug__default__cfg_8h.html" title="Header for the configuration for the fake AFE." alt="" coords="275,80,412,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="274,379,339,405"/>
+<area shape="rect" id="node3" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="96,155,242,181"/>
+<area shape="rect" id="node4" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="132,229,206,256"/>
+<area shape="rect" id="node5" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="21,304,93,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="20,379,94,405"/>
+<area shape="rect" id="node8" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="218,304,312,331"/>
+</map>

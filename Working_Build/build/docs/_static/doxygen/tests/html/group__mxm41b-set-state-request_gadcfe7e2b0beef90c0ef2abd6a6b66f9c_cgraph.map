@@ -1,0 +1,4 @@
+<map id="testOnlyAllowedTransitionFromUnitializedIsInit" name="testOnlyAllowedTransitionFromUnitializedIsInit">
+<area shape="rect" id="node1" title="Test that the only transition from uninitialized is initialization." alt="" coords="5,5,177,47"/>
+<area shape="rect" id="node2" href="$mxm__17841b_8c.html#a09d0707cc15516727d085687d87bba85" title="Set state transition for MAX17841B&#45;state&#45;machine." alt="" coords="225,13,405,39"/>
+</map>

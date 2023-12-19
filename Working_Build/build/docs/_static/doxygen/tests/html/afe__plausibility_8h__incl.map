@@ -1,0 +1,8 @@
+<map id="afe_plausibility.h" name="afe_plausibility.h">
+<area shape="rect" id="node1" title="plausibility checks for cell voltage and cell temperatures" alt="" coords="169,5,287,32"/>
+<area shape="rect" id="node2" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="119,80,191,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="229,155,294,181"/>
+<area shape="rect" id="node6" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="265,80,359,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,80,181"/>
+<area shape="rect" id="node5" title=" " alt="" coords="105,155,205,181"/>
+</map>

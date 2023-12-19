@@ -1,0 +1,10 @@
+<map id="FS85_STATE_s" name="FS85_STATE_s">
+<area shape="rect" id="node1" title=" " alt="" coords="555,131,669,157"/>
+<area shape="rect" id="node2" href="$structSPI__INTERFACE__CONFIG__s.html" title=" " alt="" coords="226,5,418,32"/>
+<area shape="rect" id="node3" href="$structFS85__FS__REGISTER__s.html" title=" " alt="" coords="241,56,403,83"/>
+<area shape="rect" id="node4" href="$structFS85__MAIN__REGISTERS__s.html" title=" " alt="" coords="229,107,415,133"/>
+<area shape="rect" id="node5" href="$structFS85__NVRAM__INFO__s.html" title=" " alt="" coords="243,157,401,184"/>
+<area shape="rect" id="node6" href="$structFRAM__SBC__INIT__s.html" title=" " alt="" coords="5,157,141,184"/>
+<area shape="rect" id="node7" href="$structFS85__FIN__CONFIGURATION__s.html" title=" " alt="" coords="219,208,425,235"/>
+<area shape="rect" id="node8" href="$structfs8x__drv__data__t.html" title="This data structure is used by the FS8x driver (this is the first parameter of most the FS8x function..." alt="" coords="266,259,378,285"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="IMD_SetState" name="IMD_SetState">
+<area shape="rect" id="node1" title="Sets the next state, the next substate and the timer value of the state variable." alt="" coords="5,5,108,32"/>
+<area shape="rect" id="node2" href="$imd_8c.html#accb102b70d5b56a759ed7f429517a67c" title="Sets the next substate and the timer value of the state variable." alt="" coords="156,5,280,32"/>
+</map>

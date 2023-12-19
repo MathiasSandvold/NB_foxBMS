@@ -1,0 +1,30 @@
+<map id="AFE_TriggerIc" name="AFE_TriggerIc">
+<area shape="rect" id="node1" title=" " alt="" coords="5,535,109,561"/>
+<area shape="rect" id="node2" href="$ltc__6806_8c.html#acf30d82064c640d2c4f36cd270c0647b" title="trigger function for the LTC driver state machine." alt="" coords="157,535,248,561"/>
+<area shape="rect" id="node3" href="$ltc__afe__dma_8c.html#a41589e9bbef5ab1714ce39c3202c038f" title="gets the SPI transmit status." alt="" coords="323,5,486,32"/>
+<area shape="rect" id="node4" href="$ltc__afe__dma_8c.html#ae079532d397f92e5636a273f36953034" title="sets the SPI transmit status." alt="" coords="318,56,491,83"/>
+<area shape="rect" id="node5" href="$diag_8c.html#a3e60a00edfbecf928fd6db140626647a" title="DIAG_CheckEvent provides a simple interface to check an event for STD_OK." alt="" coords="596,91,725,117"/>
+<area shape="rect" id="node6" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="808,208,912,235"/>
+<area shape="rect" id="node8" href="$ltc__6806_8c.html#a5df2618318512a77c0fd7c0c3a3b13e6" title="checks if the data received from the daisy&#45;chain is not corrupt." alt="" coords="349,360,461,387"/>
+<area shape="rect" id="node9" href="$ltc__6806_8c.html#ad184ef8adbd5dadb067b1d96257531cc" title="re&#45;entrance check of LTC state machine trigger function" alt="" coords="326,411,483,437"/>
+<area shape="rect" id="node12" href="$ltc__6806_8c.html#ae81b8aa0def104fff84ac45b1832c209" title="condition&#45;based state transition depending on retVal" alt="" coords="301,259,508,285"/>
+<area shape="rect" id="node13" href="$ltc__6806_8c.html#a3c9b0317c936d8bc03fb8e118ac2043d" title="function for setting LTC_Trigger state transitions" alt="" coords="591,309,730,336"/>
+<area shape="rect" id="node14" href="$ltc__6806_8c.html#aaf84ea01e26f5cabd668be8bc46eda9a" title="initialize the daisy&#45;chain." alt="" coords="370,644,439,671"/>
+<area shape="rect" id="node15" href="$ltc__6806_8c.html#ad8da54dbf5d4f08339a5503091d94b7c" title="in the database, initializes the fields related to the LTC drivers." alt="" coords="327,695,482,721"/>
+<area shape="rect" id="node16" href="$ltc__6806_8c.html#a31a0f262a3434597949aa3251b633a79" title="gets the measurement initialization status." alt="" coords="305,462,505,503"/>
+<area shape="rect" id="node17" href="$ltc__6806_8c.html#a2edbd2d522ed4c00589101197aaa4e70" title="send command to the LTC daisy&#45;chain and receives data from the LTC daisy&#45;chain." alt="" coords="339,745,470,772"/>
+<area shape="rect" id="node18" href="$ltc__6806_8c.html#ab465bc3da734177a75cf5d92218f3cd4" title="resets the error table." alt="" coords="332,796,477,823"/>
+<area shape="rect" id="node19" href="$ltc__6806_8c.html#a68ee3c7e86c459f01878d9766ef0c917" title="Saves the last state and the last substate." alt="" coords="333,847,476,873"/>
+<area shape="rect" id="node20" href="$ltc__6806_8c.html#aa337a867e837d819ec51d9729b6b0fc5" title="saves the voltage values read from the LTC daisy&#45;chain." alt="" coords="313,898,496,939"/>
+<area shape="rect" id="node21" href="$ltc__6806_8c.html#aa9babbfd0bbeef2b3107e8b28fb80b99" title="stores the measured voltages in the database." alt="" coords="339,157,470,184"/>
+<area shape="rect" id="node23" href="$ltc__6806_8c.html#a428e368fcc014375016c63a714201070" title="sets the measurement initialization status." alt="" coords="299,527,510,569"/>
+<area shape="rect" id="node24" href="$ltc__6806_8c.html#a4d6cd672e9ee1b77017532fb3c1c8921" title="sets the transfer time needed to receive/send data with the LTC daisy&#45;chain." alt="" coords="328,964,481,991"/>
+<area shape="rect" id="node26" href="$ltc__6806_8c.html#a2784ea1ea6b725911b4da1aa5bd7f0c0" title="tells LTC daisy&#45;chain to start measuring the voltage on GPIOS." alt="" coords="296,1015,513,1041"/>
+<area shape="rect" id="node27" href="$ltc__6806_8c.html#a0a7c52466ebf10c28061886c671582bd" title="tells the LTC daisy&#45;chain to start measuring the voltage on all cells." alt="" coords="303,1065,506,1092"/>
+<area shape="rect" id="node28" href="$ltc__6806_8c.html#a6bc859327ed6f6ac29c02103d71f8b93" title="transfers the current state request to the state machine." alt="" coords="316,593,493,620"/>
+<area shape="rect" id="node7" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="960,208,1083,235"/>
+<area shape="rect" id="node10" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="587,531,734,557"/>
+<area shape="rect" id="node11" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="591,476,730,503"/>
+<area shape="rect" id="node22" href="$afe__plausibility_8c.html#ae3a0cab9bf3aeded2ce65f1d28bdda8b" title="Cell voltage measurement range plausibility check." alt="" coords="561,142,760,183"/>
+<area shape="rect" id="node25" href="$ltc__6806_8c.html#a4fd9d165e4bc619474fe3d1653104833" title="gets the frequency of the SPI clock." alt="" coords="598,964,723,991"/>
+</map>

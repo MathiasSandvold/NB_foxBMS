@@ -1,0 +1,1364 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2. Changelog &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="3. Motivation" href="motivation.html" />
+    <link rel="prev" title="1. Releases" href="releases.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="releases.html">1. Releases</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><span class="section-number">2. </span>Changelog</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/general/changelog.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="changelog">
+<span id="id1"></span><h1><span class="section-number">2. </span>Changelog<a class="headerlink" href="#changelog" title="Permalink to this headline"></a></h1>
+<p>All notable changes to this project will be documented in this file.</p>
+<p>foxBMS 2 uses the following versioning pattern <code class="docutils literal notranslate"><span class="pre">MAJOR.MINOR.PATCH</span></code>
+where <code class="docutils literal notranslate"><span class="pre">MAJOR</span></code>, <code class="docutils literal notranslate"><span class="pre">MINOR</span></code> and <code class="docutils literal notranslate"><span class="pre">PATCH</span></code> are numbers.</p>
+<p>Versioning follows then these rules:</p>
+<ul class="simple">
+<li><p>increasing <code class="docutils literal notranslate"><span class="pre">MAJOR</span></code> introduces significant changes, that require some
+larger work to update a project to this version.</p></li>
+<li><p>increasing <code class="docutils literal notranslate"><span class="pre">MINOR</span></code> introduces changes, that require less work than a major
+update and most of the work should be straight forward in order to update a
+project to this version.</p></li>
+<li><p>increasing <code class="docutils literal notranslate"><span class="pre">PATCH</span></code> introduces minor changes, that only require minor and
+straight forward work to update a project to this version.</p></li>
+</ul>
+<div class="section" id="id2">
+<h2><span class="section-number">2.1. </span>[1.5.0] - 2023-02-03<a class="headerlink" href="#id2" title="Permalink to this headline"></a></h2>
+<div class="section" id="added">
+<h3><span class="section-number">2.1.1. </span>Added<a class="headerlink" href="#added" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added hardware design files (e.g., schematics, layout, BOM and STEP file
+etc.) for the NXP MC33775A monitoring IC.</p></li>
+<li><p>Added driver for the PCF2131 RTC.
+The driver uses I2C to communicate with the IC.</p></li>
+<li><p>A basic GUI to interact with the foxBMS 2 via CAN from a PC.</p></li>
+<li><p>The software version and the die ID can be requested via CAN.</p></li>
+<li><p>The FRAM can now be initialized/reinitialized via CAN.</p></li>
+<li><p>Stub code for the software reset via CAN has been implemented.</p></li>
+<li><p>The precharge abort reason (voltage or current) is now evaluated and the
+result is transmitted via CAN.</p></li>
+<li><p>Now CAN messages with extended identifier can be transmitted and received.
+Four CAN mailboxes (61-63) are reserved for the reception of messages with
+extended identifiers on each CAN.
+The HALCoGen configuration for these mailboxes is overwritten during the
+initialization phase.</p></li>
+<li><p>The I2C driver API was reworked.
+There are now three types of communication:
+read, write and write followed by repeated start followed by read.</p></li>
+<li><p>The I2C communication now uses DMA and is made in a separate task.</p></li>
+<li><p>Basic documentation of defines that can be used to define the application
+behavior.</p></li>
+</ul>
+</div>
+<div class="section" id="changed">
+<h3><span class="section-number">2.1.2. </span>Changed<a class="headerlink" href="#changed" title="Permalink to this headline"></a></h3>
+<ul>
+<li><p>The default interface configuration for BMS-Slaves is the interface 1 on the
+BMS-Interface Boards:</p>
+<ul class="simple">
+<li><p>for LTC-based interfaces: hardware chip select 1 on SPI 1</p></li>
+<li><p>for NXP-based interfaces: hardware chip select 1 on SPI 1</p></li>
+</ul>
+</li>
+<li><p>The chip select configuration has been unified.
+The previous implementation worked like this:</p>
+<ul class="simple">
+<li><p>for software chip select the SPI configuration has been
+configured directly in the configuration struct by setting the member
+<code class="docutils literal notranslate"><span class="pre">csPin</span></code> to a certain pin and the member <code class="docutils literal notranslate"><span class="pre">csType</span></code> to
+<code class="docutils literal notranslate"><span class="pre">SPI_CHIP_SELECT_SOFTWARE``in</span> <span class="pre">a</span> <span class="pre">variable</span> <span class="pre">of</span> <span class="pre">type</span>
+<span class="pre">``SPI_INTERFACE_CONFIG_s</span></code>.</p></li>
+<li><p>For hardware chip select, i.e., <code class="docutils literal notranslate"><span class="pre">csType</span></code> set to
+<code class="docutils literal notranslate"><span class="pre">SPI_CHIP_SELECT_HARDWARE</span></code>, the configuration in <code class="docutils literal notranslate"><span class="pre">csPin</span></code> was ignored,
+and the pin configuration in the member <code class="docutils literal notranslate"><span class="pre">pConfig</span></code> was evaluated.</p></li>
+</ul>
+<p>Now, the SPI configuration is done by setting the chip select type via the
+member <code class="docutils literal notranslate"><span class="pre">csType</span></code> and the pin to be used via the member <code class="docutils literal notranslate"><span class="pre">csPin</span></code> in a
+variable of type <code class="docutils literal notranslate"><span class="pre">SPI_INTERFACE_CONFIG_s</span></code>.
+Therefore there is no need anymore the adapt the <code class="docutils literal notranslate"><span class="pre">spiDAT1_t</span></code> configuration,
+when another chip select should be used.</p>
+</li>
+<li><p>The members in <cite>DATA_BLOCK_ERROR_STATE_s</cite> have been renamed to better reflect
+what each entry actually indicates.</p></li>
+<li><p>The type of all members in <cite>DATA_BLOCK_ERROR_STATE_s</cite> have been changed to
+<cite>bool</cite>.</p></li>
+<li><p>The order of members in <cite>DATA_BLOCK_ERROR_STATE_s</cite> has been changed, so that
+the entries are logically grouped.
+This change is transparent, as long as the application does <strong>not</strong> relay on
+the memory layout.</p></li>
+<li><p>Changed data type for error flags in database entries to boolean.</p></li>
+<li><p>Applied the <em>include-what-you-use</em> paradigm to the foxBMS 2 sources.
+The <a class="reference internal" href="../developer-manual/style-guide/guidelines_c.html#c-coding-guidelines"><span class="std std-ref">C Coding Guidelines</span></a> have been adapted accordingly and generally
+been improved.</p></li>
+<li><p>Added dedicated enum for error flags to .dbc respectively .sym file.</p></li>
+<li><p>Rewrote the CRC implementation for the LTC ICs from scratch and added
+unit tests for the new implementation.</p></li>
+<li><p>Update the static code analysis to Axivion 7.5.0 (from 7.4.6).</p></li>
+<li><p>Software version is now also saved in FRAM version struct. As this is The
+the first FRAM entry, this changes the memory layout and makes FRAM entries
+existing prior to this version invalid.</p></li>
+<li><p>A successful boot is now indicated via CAN by sending</p>
+<ul class="simple">
+<li><p>the magic start sequence,</p></li>
+<li><p>the software version information,</p></li>
+<li><p>the MCU die ID,</p></li>
+<li><p>the MCU lot number,</p></li>
+<li><p>the MCU wafer number and</p></li>
+<li><p>the magic end sequence.</p></li>
+</ul>
+<p>See <code class="docutils literal notranslate"><span class="pre">src/app/engine/config/sys_cfg.c</span></code> for implementation details.</p>
+</li>
+<li><p>Updated the documentation section about Lauterbach debug probes.</p></li>
+<li><p>Removed define <code class="docutils literal notranslate"><span class="pre">BS_MAX_SUPPORTED_CELLS</span></code> from file <code class="docutils literal notranslate"><span class="pre">battery_system_cfg.h</span></code>
+and moved the definition to the individual AFE implementations.</p></li>
+<li><p>Use <code class="docutils literal notranslate"><span class="pre">float_t</span></code> instead of <code class="docutils literal notranslate"><span class="pre">float</span></code>.</p></li>
+<li><p>Aligned the hardware documentation for BMS-Master, BMS-Interface and
+BMS-Slave (see <a class="reference internal" href="../hardware/master.html#master-overview"><span class="std std-ref">Master Overview</span></a>, <a class="reference internal" href="../hardware/interfaces.html#interfaces-overview"><span class="std std-ref">Interfaces Overview</span></a>, and
+<a class="reference internal" href="../hardware/slaves.html#slaves-overview"><span class="std std-ref">Slaves Overview</span></a>)</p></li>
+<li><p>Updated the documentation section about the foxBMS 2 platform</p></li>
+<li><p>The functionality to switch to user mode is now implemented as an inline
+function instead of a macro.</p></li>
+<li><p>The default optimization level is set to -O0 (see
+<code class="docutils literal notranslate"><span class="pre">conf/cc/cc-options.yaml</span></code>).</p></li>
+</ul>
+</div>
+<div class="section" id="deprecated">
+<h3><span class="section-number">2.1.3. </span>Deprecated<a class="headerlink" href="#deprecated" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="removed">
+<h3><span class="section-number">2.1.4. </span>Removed<a class="headerlink" href="#removed" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="fixed">
+<h3><span class="section-number">2.1.5. </span>Fixed<a class="headerlink" href="#fixed" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fixed the hardware readme as it referenced the wrong foxBMS Master Unit version.</p></li>
+<li><p>Fixed the regular expression for checking the validity of macro names.</p></li>
+<li><p>Fixed wrong configured chip select pin for MCU SBC. Chip select 1 instead of
+chip select was configured.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id3">
+<h2><span class="section-number">2.2. </span>[1.4.1] - 2022-10-27<a class="headerlink" href="#id3" title="Permalink to this headline"></a></h2>
+<p>foxBMS 2 updated to TI ARM CGT 20.2.6.LTS.
+Installation instructions are found at <a class="reference internal" href="../getting-started/software-installation.html#css-install"><span class="std std-numref">Section 3.2.2</span></a>.</p>
+<div class="section" id="id4">
+<h3><span class="section-number">2.2.1. </span>Added<a class="headerlink" href="#id4" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>The new default compiler set in <code class="docutils literal notranslate"><span class="pre">conf/env/paths_win32.txt</span></code> and
+<code class="docutils literal notranslate"><span class="pre">conf/env/paths_linux.txt</span></code> is now TI ARM CGT v20.2.6.LTS (shipped with CCS
+<code class="docutils literal notranslate"><span class="pre">12.0.0</span></code>).</p></li>
+<li><p>Added driver for <em>Murata NCU15XH103F6Sxx</em> temperature sensor</p></li>
+</ul>
+</div>
+<div class="section" id="id5">
+<h3><span class="section-number">2.2.2. </span>Changed<a class="headerlink" href="#id5" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Updated the hardware design files (e.g., schematics, layout, BOM and STEP
+file etc.) of the BMS-Master Board  to <code class="docutils literal notranslate"><span class="pre">v1.1.5</span></code> (see
+<a class="reference internal" href="../hardware/master/ti-tms570lc4357-vx.x.x/ti-tms570lc4357-changelog.html#changelog-for-master-tms570-v1-1-5"><span class="std std-ref">v1.1.5</span></a>).</p></li>
+<li><p>Updated documentation of the interface using the MAX17841B transceiver
+chip.</p></li>
+<li><p>The implementation of the CAN driver has been changed to simplify adding
+new messages.
+Furthermore it is now possible to force a certain style on how CAN messages
+are defined in the symbol/dbc files as well as in the source code.
+For further information see <a class="reference internal" href="../software/modules/driver/can/can_how-to.html#how-to-use-the-can-module"><span class="std std-ref">How to Use the CAN Module</span></a>.</p></li>
+<li><p>Updated version of <code class="docutils literal notranslate"><span class="pre">.sym</span></code> file for the definition of the CAN messages and
+signals to v6.0 (from 5.0).</p></li>
+<li><p>Update the static code analysis to Axivion 7.4.6 (from 7.4.0).</p></li>
+</ul>
+</div>
+<div class="section" id="id6">
+<h3><span class="section-number">2.2.3. </span>Deprecated<a class="headerlink" href="#id6" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id7">
+<h3><span class="section-number">2.2.4. </span>Removed<a class="headerlink" href="#id7" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Unused calculation of MOL, RSL and MSL curves for trapezoid algorithm in
+<code class="docutils literal notranslate"><span class="pre">SOF</span></code> module.</p></li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3><span class="section-number">2.2.5. </span>Fixed<a class="headerlink" href="#id8" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>In <code class="docutils literal notranslate"><span class="pre">ADC</span></code> module, corrected formula making the conversion from raw ADC
+reading to voltage in mV.</p></li>
+<li><p>The address of two diagnostic registers in the Smart Power Switch driver
+was wrong.</p></li>
+<li><p>Endianness definition throughout the CAN signals was inconsistent. Not all
+signals were correctly defined as big-endian.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id9">
+<h2><span class="section-number">2.3. </span>[1.4.0] - 2022-07-29<a class="headerlink" href="#id9" title="Permalink to this headline"></a></h2>
+<div class="section" id="id10">
+<h3><span class="section-number">2.3.1. </span>Added<a class="headerlink" href="#id10" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>foxBMS 2 has been certified as open source hardware by the
+Open Source Hardware Association under the
+OSHWA UID <a class="reference external" href="https://certification.oshwa.org/de000128.html">DE000128</a>.
+This information has been added to the README and license documentation
+(see <a class="reference internal" href="license.html#open-source-hardware-certification"><span class="std std-ref">Open Source Hardware Certification</span></a>).</p></li>
+<li><p>Added Axivion configuration (see <code class="docutils literal notranslate"><span class="pre">tests/axivion/addon</span></code>) to check for</p>
+<ul>
+<li><p>source files to be decodable with a specific encoding</p></li>
+<li><p>POSIX 3.206</p></li>
+<li><p>filename uniqueness in the build process</p></li>
+<li><p>file level doxygen comment</p></li>
+<li><p>doxygen comments for extern and static variables, and typedefs</p></li>
+<li><p>the foxBMS 2 license header</p></li>
+<li><p>literal suffixes for numerical assignments</p></li>
+</ul>
+</li>
+<li><p>Added test cases for the Axivion rules (see <code class="docutils literal notranslate"><span class="pre">tests/axivion/addon-test</span></code>)</p></li>
+<li><p>The foxBMS GUI wrapper is now implemented as a module.</p></li>
+<li><p>Added a driver for the NXP MC33775A monitoring IC.
+The driver measures cell voltages, cell temperatures via an I2C multiplexer
+and controls cell balancing.</p></li>
+</ul>
+</div>
+<div class="section" id="id11">
+<h3><span class="section-number">2.3.2. </span>Changed<a class="headerlink" href="#id11" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Updated the hardware design files (e.g., schematics, layout, BOM and STEP
+file etc.) of the BMS-Master Board  to <code class="docutils literal notranslate"><span class="pre">v1.1.3</span></code> (see
+<a class="reference internal" href="../hardware/master/ti-tms570lc4357-vx.x.x/ti-tms570lc4357-changelog.html#changelog-for-master-tms570-v1-1-3"><span class="std std-ref">v1.1.3</span></a>).</p></li>
+<li><p>Function names are now checked by Axivion to conform to the guidelines.</p></li>
+<li><p>Use correct prefix in the</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">version</span></code> module (<a class="reference internal" href="../software/modules/main/version.html#version-module"><span class="std std-ref">Version Module</span></a>)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">assert</span></code> module (<a class="reference internal" href="../software/modules/main/fassert.html#fassert-module"><span class="std std-ref">FASSERT Module</span></a>)</p></li>
+</ul>
+</li>
+<li><p>The behavior of the <code class="docutils literal notranslate"><span class="pre">build_bin</span></code> command, which creates the binary, has been
+improved.
+If the BMS configuration file (<code class="docutils literal notranslate"><span class="pre">conf/bms/bms.json</span></code>) has been changed, the
+project needs to be reconfigured (by running <code class="docutils literal notranslate"><span class="pre">waf</span> <span class="pre">configure</span></code>, see
+<a class="reference internal" href="../software/build/build.html#building-the-application"><span class="std std-ref">Building the Application</span></a>).</p></li>
+<li><p>The following settings in BMS configuration file (<code class="docutils literal notranslate"><span class="pre">conf/bms/bms.json</span></code>) have
+been changed:</p>
+<ul>
+<li><p>The AFE key for the IC has been renamed from <code class="docutils literal notranslate"><span class="pre">chip</span></code> to <code class="docutils literal notranslate"><span class="pre">ic</span></code> in the
+<code class="docutils literal notranslate"><span class="pre">slave-unit/analog-front-end</span></code> section.</p></li>
+<li><p>The balancing strategy has been moved into the <code class="docutils literal notranslate"><span class="pre">application</span></code> section.</p></li>
+<li><p>The operating system key has been renamed from <code class="docutils literal notranslate"><span class="pre">operating-system</span></code> to
+<code class="docutils literal notranslate"><span class="pre">rtos</span></code>.</p></li>
+<li><p>The SOF needs to be configured in the
+<code class="docutils literal notranslate"><span class="pre">application/algorithm/state-estimation</span></code> section.
+Currently <code class="docutils literal notranslate"><span class="pre">&quot;sof&quot;:</span> <span class="pre">&quot;trapezoid&quot;</span></code> is the only valid option.</p></li>
+</ul>
+</li>
+<li><p>Several variables and functions have been renamed to conform to the foxBMS 2
+style guide (<a class="reference internal" href="../developer-manual/style-guide/style-guide.html#style-guide"><span class="std std-ref">Style Guide</span></a>).
+There will be additional changes in future releases as the task of having
+a fully style guide conforming repository is an iterative and timely process.</p></li>
+</ul>
+</div>
+<div class="section" id="id12">
+<h3><span class="section-number">2.3.3. </span>Deprecated<a class="headerlink" href="#id12" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id13">
+<h3><span class="section-number">2.3.4. </span>Removed<a class="headerlink" href="#id13" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id14">
+<h3><span class="section-number">2.3.5. </span>Fixed<a class="headerlink" href="#id14" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>The macro <code class="docutils literal notranslate"><span class="pre">SOC_STRING_CAPACITY_As</span></code> was incorrectly braced, as it had less
+closing than opening braces
+(<code class="docutils literal notranslate"><span class="pre">src/app/application/algorithm/state_estimation/soc/counting/soc_counting_cfg.h</span></code>).
+This however did not reveal as bug, as the calling function fixed the
+incorrect bracing by adding the missing brace correctly
+(<code class="docutils literal notranslate"><span class="pre">src/app/application/algorithm/state_estimation/soc/counting/soc_counting.c</span></code>).</p></li>
+<li><p>The delay between chip select activation and start of SPI transmission and the
+delay between end of SPI transmission and chip select deactivation have been
+increased to avoid SPI transmission errors for AFEs.</p></li>
+<li><p>The CAN2 message boxes were not activated within the HALCoGen configuration.</p></li>
+<li><p>Fix several unit testing warnings due to a misconfiguration with respect to
+<code class="docutils literal notranslate"><span class="pre">BS_NR_OF_STRINGS</span></code>.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id15">
+<h2><span class="section-number">2.4. </span>[1.3.0] - 2022-05-30<a class="headerlink" href="#id15" title="Permalink to this headline"></a></h2>
+<p>foxBMS 2 updated to TI ARM CGT 20.2.5.LTS.
+Installation instructions are found at <a class="reference internal" href="../getting-started/software-installation.html#css-install"><span class="std std-numref">Section 3.2.2</span></a>.</p>
+<p>foxBMS 2 updated to LLVM 13.0.0.
+Installation instructions are found at <a class="reference internal" href="../getting-started/software-installation.html#llvm-install"><span class="std std-numref">Section 3.2.4</span></a>.</p>
+<div class="section" id="id16">
+<h3><span class="section-number">2.4.1. </span>Added<a class="headerlink" href="#id16" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>The new default compiler set in <code class="docutils literal notranslate"><span class="pre">conf/env/paths_win32.txt</span></code> and
+<code class="docutils literal notranslate"><span class="pre">conf/env/paths_linux.txt</span></code> is now TI ARM CGT v20.2.5.LTS (shipped with CCS
+<code class="docutils literal notranslate"><span class="pre">11.0.0</span></code>).</p></li>
+<li><p>Add support for the environment variable <code class="docutils literal notranslate"><span class="pre">FOXBMS_2_CCS_VERSION_STRICT</span></code> to
+check for the exact CCS version.</p></li>
+<li><p>Added hardware specifications for the LTC based slaves to the documentation.</p></li>
+<li><p>Added a superimposed state machine for all insulation monitoring device
+drivers to control the subordinate, device specific driver implementations.</p></li>
+<li><p>Added driver implementation for Bender IR155 insulation monitoring device.</p></li>
+<li><p>Transmit the unique ID of the MCU on which foxBMS 2 is running on startup
+via CAN.</p></li>
+<li><p>Added a mechanism to the <code class="docutils literal notranslate"><span class="pre">algorithm</span></code> module that allows to reinitialize an
+algorithm.</p></li>
+<li><p>Added an API to the <code class="docutils literal notranslate"><span class="pre">MCU</span></code> module that allows to measure microseconds with
+the <code class="docutils literal notranslate"><span class="pre">RTI</span></code> module.</p></li>
+<li><p>Added a can helper that transforms a boolean to an integer value (fitting to
+the CAN messages).</p></li>
+<li><p>The Axivion configuration has been updated to <code class="docutils literal notranslate"><span class="pre">7.2.3</span></code> in the release
+<code class="docutils literal notranslate"><span class="pre">1.1.2</span></code>, however the version setting in the configuration file has not.
+The versions of the Axivion Suite and the configuration files have been
+aligned to <code class="docutils literal notranslate"><span class="pre">7.2.3</span></code>.</p></li>
+<li><p>Added the version information to the header section of all <code class="docutils literal notranslate"><span class="pre">C</span></code> source and
+header files.</p></li>
+<li><p>Added a function to compute CRCs with the MCU hardware.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">FRAM</span></code> module now writes a CRC of the data written to the FRAM. It
+also reads the stored CRC and compares it with the CRC calculated on the
+read data. This makes FRAM entries existing prior to this version invalid.</p></li>
+<li><p>A <code class="docutils literal notranslate"><span class="pre">DIAG</span></code> entry was added for FRAM errors.</p></li>
+<li><p>Added documentation for the <code class="docutils literal notranslate"><span class="pre">FRAM</span></code> and the <code class="docutils literal notranslate"><span class="pre">CRC</span></code> modules.</p></li>
+<li><p>Integrated interaction with the diagnostic module into the Maxim <code class="docutils literal notranslate"><span class="pre">AFE</span></code>
+driver.</p></li>
+<li><p>Added information on debug adapters to the documentation.</p></li>
+<li><p>Documented the rule that pointer parameters to functions must indicate in
+their Doxygen documentation whether they are used as input, output or both.</p></li>
+<li><p>Added a continuously running task with same priority as the 1ms task.
+It is suspended by default if unused.</p></li>
+<li><p>Added documentation on the Maxim driver.</p></li>
+</ul>
+</div>
+<div class="section" id="id17">
+<h3><span class="section-number">2.4.2. </span>Changed<a class="headerlink" href="#id17" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>The linker step now uses <code class="docutils literal notranslate"><span class="pre">--start-group</span></code> and <code class="docutils literal notranslate"><span class="pre">--end-group</span></code> to re-read
+libraries until all symbols are resolved instead of <code class="docutils literal notranslate"><span class="pre">--reread_libs</span></code>.
+This change simplifies the integration of the build into Axivion.</p></li>
+<li><p>FreeRTOS configuration is now validated in
+<code class="docutils literal notranslate"><span class="pre">os_freertos_config-validation.h</span></code>.</p></li>
+<li><p>Updated the documentation of the of the LTC-based interface LTC6820 version
+1.0.3 (see <a class="reference internal" href="../hardware/interfaces/ltc-ltc6820-vx.x.x/ltc-ltc6820-v1.0.3.html#interface-ltc-6820-v1-0-3"><span class="std std-ref">Interface LTC-6820 v1.0.3</span></a>).</p></li>
+<li><p>Updated LLVM to version 13.0.0.</p></li>
+<li><p>Updated the pinout documentation for the BMS-Master Board version 1.1.1
+(see <a class="reference internal" href="../hardware/master/ti-tms570lc4357-vx.x.x/ti-tms570lc4357-v1.1.1.html#master-tms570-v1-1-1"><span class="std std-ref">Master TMS570 v1.1.1</span></a>).</p></li>
+<li><p>Update the static code analysis to Axivion 7.4.0.</p></li>
+<li><p>Increased the size of the variable that describes stack sizes for FreeRTOS,
+allowing for the fully supported stack size of the port.</p></li>
+<li><p>The diagnosis entries for the <code class="docutils literal notranslate"><span class="pre">LTC</span></code> module have been renamed in order to
+reflect that they are relevant for all <code class="docutils literal notranslate"><span class="pre">AFE</span></code> implementations.</p></li>
+<li><p>The schema file for the <code class="docutils literal notranslate"><span class="pre">bms.json</span></code> configuration file has been split into
+several files for readability and <code class="docutils literal notranslate"><span class="pre">code</span></code> has been made aware of the schema.</p></li>
+<li><p>Added a style check that constant values should be on the right hand side of
+a comparison.</p></li>
+<li><p>Updated FreeRTOS to version 10.4.5 (from 10.4.3).</p></li>
+<li><p>Cleaned up the CAN callback for receiving commands.</p></li>
+<li><p>Extended the script for updating the doxygen headers in source files so that
+it fetches first and then compares to the tracking branch.</p></li>
+<li><p>Updated the documentation of the system monitoring module and implemented
+the recording of violations to the persistent memory.</p></li>
+<li><p>Split the definition of CAN callback functions into separate definitions for
+received and transmitted messages in order to better reflect the actual
+implementation and prevent wrong usage.</p></li>
+<li><p>Number of strings now configured to one by default.</p></li>
+<li><p>Renamed the <code class="docutils literal notranslate"><span class="pre">FRAM</span></code> functions to adhere to <em>verb-noun</em> style.</p></li>
+<li><p>Extended the Axivion configuration so that parameters without an assertion
+can be suppressed.</p></li>
+<li><p>The threshold above which balancing is started for a single cell has been
+made configurable by the foxBMS 2 CAN messages that are already defined.</p></li>
+<li><p>MCU specific defines have been moved from <code class="docutils literal notranslate"><span class="pre">general.h</span></code> to <code class="docutils literal notranslate"><span class="pre">mcu.h</span></code>.</p></li>
+<li><p>The static assert macro <code class="docutils literal notranslate"><span class="pre">static_assert</span></code> has been renamed to
+<code class="docutils literal notranslate"><span class="pre">f_static_assert</span></code> to work around compiler limitations.</p></li>
+<li><p>The following defines have been renamed to be aligned with
+<a class="reference internal" href="../introduction/naming-conventions.html#naming-conventions"><span class="std std-ref">Naming Conventions</span></a>:</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">BS_NR_OF_MODULES</span></code> to <code class="docutils literal notranslate"><span class="pre">BS_NR_OF_MODULES_PER_STRING</span></code>,</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">BS_NR_OF_CELLS_PER_MODULE</span></code> to <code class="docutils literal notranslate"><span class="pre">BS_NR_OF_CELL_BLOCKS_PER_MODULE</span></code> and</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">BS_NR_OF_BAT_CELLS</span></code> to <code class="docutils literal notranslate"><span class="pre">BS_NR_OF_CELL_BLOCKS_PER_STRING</span></code>.</p></li>
+</ul>
+</li>
+<li><p>Loop correctly over <code class="docutils literal notranslate"><span class="pre">BS_NR_OF_MODULES_PER_STRING</span></code>,
+<code class="docutils literal notranslate"><span class="pre">BS_NR_OF_CELL_BLOCKS_PER_MODULE</span></code> and <code class="docutils literal notranslate"><span class="pre">BS_NR_OF_CELL_BLOCKS_PER_STRING</span></code>.</p></li>
+<li><p>Function names are now checked by Axivion to conform to the guidelines.</p></li>
+<li><p>Improved the MISRA-C conformance of of the database module
+(<a class="reference internal" href="../software/modules/engine/database/database.html#database-module"><span class="std std-ref">Database Module</span></a>).</p></li>
+<li><p>Fixed the pack current check in <code class="docutils literal notranslate"><span class="pre">SOA_CheckCurrent</span></code>.</p></li>
+<li><p>Fixed LLVM install script to check for permissions before running the script.</p></li>
+</ul>
+</div>
+<div class="section" id="id18">
+<h3><span class="section-number">2.4.3. </span>Deprecated<a class="headerlink" href="#id18" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id19">
+<h3><span class="section-number">2.4.4. </span>Removed<a class="headerlink" href="#id19" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Removed unused function <code class="docutils literal notranslate"><span class="pre">OS_SystemTickHandler()</span></code>.</p></li>
+<li><p>The Cppcheck support and its configuration files as well as the respective
+build and clean commands have been removed.
+The static program analysis of the embedded software is done by Axivion
+Bauhaus Suite (see <a class="reference internal" href="../tools/static-analysis/axivion.html#axivion-bauhaus-suite"><span class="std std-ref">Axivion Bauhaus Suite</span></a>).</p></li>
+</ul>
+</div>
+<div class="section" id="id20">
+<h3><span class="section-number">2.4.5. </span>Fixed<a class="headerlink" href="#id20" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fixed a bug where the <code class="docutils literal notranslate"><span class="pre">update_doxygen_header.py</span></code> script tried to
+<code class="docutils literal notranslate"><span class="pre">git</span> <span class="pre">add</span></code> files that did not exist.</p></li>
+<li><p>The HALCoGen SPI interface chip select configuration is overwritten and all
+hardware chip selects are disabled when using a software chip select.
+This causes all SPI communication using hardware chip selects to fail for
+this SPI interface.
+Now the SPI chip select register are correctly configured before starting a
+SPI transaction.</p></li>
+<li><p>Suppress a superfluous warning during unit test builds concerning the number
+of bytes per word (as this information is used for task sizing).</p></li>
+<li><p>Fixed “unsafe” macros that had not parentheses and added this violation to
+violations that fail the CI.</p></li>
+<li><p>Fixed undesired attempt of installation of git hooks even when the project
+was not stored in a git repository.</p></li>
+<li><p>Fixed import order in Python files.</p></li>
+<li><p>Fixed a static assertion in the Maxim driver (that prevented in some
+constellations compilation due to a logic error).</p></li>
+<li><p>Fixed a timing violation in the Maxim driver (a computationally costly
+operation has been moved out of the 1ms-task).</p></li>
+<li><p>Some defines where invisible to the preprocessor due to missing includes.
+This has been resolved and measures taken that this situation cannot return.</p></li>
+<li><p>The HALCoGen generated startup file <code class="docutils literal notranslate"><span class="pre">HL_sys_startup.c</span></code> does not need to be
+compiled as foxBMS 2 implements the startup in <code class="docutils literal notranslate"><span class="pre">fstartup.c</span></code>.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id21">
+<h2><span class="section-number">2.5. </span>[1.2.1] - 2021-12-08<a class="headerlink" href="#id21" title="Permalink to this headline"></a></h2>
+<p>foxBMS 2 now ships with a new conda environment <code class="docutils literal notranslate"><span class="pre">2021-11-fennec-fox</span></code> and the
+local conda environment needs to be updated (see <a class="reference internal" href="../getting-started/software-installation.html#conda-env-update"><span class="std std-numref">Section 3.3</span></a>).</p>
+<div class="section" id="id22">
+<h3><span class="section-number">2.5.1. </span>Added<a class="headerlink" href="#id22" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added enum typedef for GPIO pin state.</p></li>
+<li><p>Add driver for the temperature sensor <em>NTCLE317E4103SBA</em> from <em>Vishay</em>.</p></li>
+<li><p>Added documentation for Coulomb-counting and extended the documentation of
+the state-estimation-module.</p></li>
+<li><p>Added a define for <code class="docutils literal notranslate"><span class="pre">NULL</span></code>.</p></li>
+<li><p>Make Git a required software installation (see <a class="reference internal" href="../getting-started/software-installation.html#git-install"><span class="std std-ref">Installing Git</span></a>).</p></li>
+<li><p>If a system-wide installation of Git is not found in the build process,
+check for a user installation.</p></li>
+<li><p>Added an API to check whether a certain amount of milliseconds has passed.</p></li>
+<li><p>Added an API to the <code class="docutils literal notranslate"><span class="pre">spi</span></code>-module that allows to check if the interface
+is available.</p></li>
+<li><p>Added a python script that can help with searching for regressions after
+resolving a complete violation category in Axivion.</p></li>
+<li><p>Automatically update the <code class="docutils literal notranslate"><span class="pre">&#64;updated</span></code> doxygen comment before committing when
+pre-commit hooks are activated.</p></li>
+<li><p>Added documentation for the LTC based interface and slaves.</p></li>
+<li><p>In the <code class="docutils literal notranslate"><span class="pre">spi</span></code>-module, hardware Chip Select pins can now be used.
+Until now only software Chip Select pins could be used.</p></li>
+</ul>
+</div>
+<div class="section" id="id23">
+<h3><span class="section-number">2.5.2. </span>Changed<a class="headerlink" href="#id23" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Rewrote the linker script: the sections lengths are no longer hard-coded.</p></li>
+<li><p>The memory layout of <code class="docutils literal notranslate"><span class="pre">OS_TASK_DEFINITION_s</span></code> has been changed.</p></li>
+<li><p>The <code class="docutils literal notranslate"><span class="pre">os</span></code>-module wrapper for task definition now also contains the
+<code class="docutils literal notranslate"><span class="pre">pvParameters</span></code>.</p></li>
+<li><p>Static analysis cleanup of the <code class="docutils literal notranslate"><span class="pre">os</span></code>-module and <code class="docutils literal notranslate"><span class="pre">ftask</span></code>-module wrappers.</p></li>
+<li><p>Tasks are now marked as requiring FPU context, to prevent memory corruption
+during task switching.</p></li>
+<li><p>The Chip Select pin used to drive the external flash memory over SPI is now
+set as output with initial level high, corresponding to a default inactive
+state for the SPI line.</p></li>
+<li><p>Removed a hotfix that has been introduced in v1.0.0: the CAN driver used a
+critical section in order to avoid computation issues when scaling values.
+This has been shown to be connected with the FPU context and can now be
+removed as the root cause has been resolved.</p></li>
+<li><p>Updated the Axivion configuration to use version <code class="docutils literal notranslate"><span class="pre">7.2.6</span></code>.</p></li>
+<li><p>Create the Axivion build directory before running the analysis.</p></li>
+<li><p>The documentation build now treats warnings as errors.</p></li>
+<li><p>Updated the doxygen configuration files to match the doxygen version that
+is shipped in the conda environment.</p></li>
+<li><p>Switched the used C standard to C11.</p></li>
+<li><p>The FreeRTOS specific implementations for the task and queue creation were
+moved into <code class="docutils literal notranslate"><span class="pre">os_freertos.c</span></code> and <code class="docutils literal notranslate"><span class="pre">ftask_freertos.c</span></code>.</p></li>
+<li><p>Greatly enhanced the robustness and code quality of the driver for Maxim
+analog front ends.</p></li>
+</ul>
+</div>
+<div class="section" id="id24">
+<h3><span class="section-number">2.5.3. </span>Deprecated<a class="headerlink" href="#id24" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id25">
+<h3><span class="section-number">2.5.4. </span>Removed<a class="headerlink" href="#id25" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id26">
+<h3><span class="section-number">2.5.5. </span>Fixed<a class="headerlink" href="#id26" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>The error message when <code class="docutils literal notranslate"><span class="pre">bms.json</span></code> had an invalid configuration always
+indicated an invalid <em>analog front-end</em> configuration, independently of what
+option was actually invalid configured.
+The error message now correctly points to the setting, that sets an invalid
+configuration.</p></li>
+<li><p>Fixed several MISRA-C violations and style guide violations.</p></li>
+<li><p>Fixed the conda environment shell update script.</p></li>
+<li><p>The signature of the FreeRTOS tasks was not correct and has been fixed to
+match <code class="docutils literal notranslate"><span class="pre">void</span> <span class="pre">TaskName(void</span> <span class="pre">*pvParameters)</span></code>.</p></li>
+<li><p>Explicitly cast the variables that are passed to the FreeRTOS task creation
+function.</p></li>
+<li><p>Make <code class="docutils literal notranslate"><span class="pre">NULL_PTR</span></code> explicitly <em>unsigned</em>.</p></li>
+<li><p>Fixed product number for the used trace probe in our test setup.</p></li>
+<li><p>Fixed incorrect values for GPIO measurement times in LTC module.</p></li>
+<li><p>Cleaned up <code class="docutils literal notranslate"><span class="pre">spi</span></code>-module and added documentation.
+Removed unused enum (<code class="docutils literal notranslate"><span class="pre">SPI_INTERFACE_e</span></code>).</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id27">
+<h2><span class="section-number">2.6. </span>[1.2.0] - 2021-10-21<a class="headerlink" href="#id27" title="Permalink to this headline"></a></h2>
+<div class="section" id="id28">
+<h3><span class="section-number">2.6.1. </span>Added<a class="headerlink" href="#id28" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added stubs for the Bender IR155 insulation monitoring device driver (i.e.
+<strong>driver is non-functional</strong>).</p></li>
+<li><p>Extended the documentation with a render of the architecture against which
+the foxBMS implementation is checked.</p></li>
+<li><p>Added driver for I2C communication for MCU.</p></li>
+<li><p>Added driver for I2C port expander.</p></li>
+<li><p>Added driver for I2C humidity/temperature sensor.</p></li>
+<li><p>Implemented feedback through auxiliary contacts for the contactor driver.</p></li>
+<li><p>Debug LED is now toggled depending on system state (slow: okay, fast: error)</p></li>
+<li><p>Added an option to install a pre-commit hook in the repository.
+The pre-commit hook runs the guidelines check (see
+<a class="reference internal" href="../tools/waf-tools/f_git_hooks.html#waf-tool-git-hooks"><span class="std std-ref">Git Hooks</span></a>).</p></li>
+<li><p>Added a driver module that allows to use the enhanced PWM features of the
+MCU.</p></li>
+<li><p>Adapted CAN module to receive/transmit messages either via CAN1 or CAN2.</p></li>
+<li><p>Annotate maximum stack size in FreeRTOS so that debugger can catch this
+information.</p></li>
+<li><p>Updated the hardware design files (e.g., schematics, layout, BOM and STEP
+file etc.) of the BMS-Master Board  to <code class="docutils literal notranslate"><span class="pre">v1.1.1</span></code>.</p></li>
+<li><p>Added information on citing the project in <code class="docutils literal notranslate"><span class="pre">CFF</span></code> format.</p></li>
+<li><p>Added driver for interlock.</p></li>
+</ul>
+</div>
+<div class="section" id="id29">
+<h3><span class="section-number">2.6.2. </span>Changed<a class="headerlink" href="#id29" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>The measurement IC (<code class="docutils literal notranslate"><span class="pre">MIC</span></code>) module has been renamed to Analog Front-End
+(<code class="docutils literal notranslate"><span class="pre">AFE</span></code>).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">build_all</span></code> and <code class="docutils literal notranslate"><span class="pre">clean_all</span></code> need to run the Axivion related commands as
+last steps.</p></li>
+<li><p>The file content of the linker script for the elf file is now hashed using
+Unix-style line endings as this is more robust (e.g., downloaded zip files
+from GitHub releases).</p></li>
+<li><p>Sort the SPI formats so that there are no conflicts between the configuration
+on SPI1 and SPI4 (Both are connected to the interface connector).</p></li>
+<li><p>Control the pins of the interface for LTC AFEs with the port expander on the
+foxBMS 2 master board.</p></li>
+<li><p>The documentation build defaults now only to <code class="docutils literal notranslate"><span class="pre">html</span></code> and <code class="docutils literal notranslate"><span class="pre">spelling</span></code>,
+.i.e., <code class="docutils literal notranslate"><span class="pre">linkcheck</span></code> has been removed.</p></li>
+<li><p>Increased stack size of 10ms task to 5120 bytes (from 4096).</p></li>
+<li><p>Declared large database entries as static, so that they are placed in the
+data segment to reduce the stack usage of the respective task.</p></li>
+</ul>
+</div>
+<div class="section" id="id30">
+<h3><span class="section-number">2.6.3. </span>Deprecated<a class="headerlink" href="#id30" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id31">
+<h3><span class="section-number">2.6.4. </span>Removed<a class="headerlink" href="#id31" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Removed unused code in main build script.</p></li>
+</ul>
+</div>
+<div class="section" id="id32">
+<h3><span class="section-number">2.6.5. </span>Fixed<a class="headerlink" href="#id32" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fixed variable name typos in <code class="docutils literal notranslate"><span class="pre">moving_average.c</span></code>.</p></li>
+<li><p>A specific order of build/clean commands related to Axivion build and clean
+commands resulted in build errors.
+Now the build is early aborted if a wrong order is supplied and a
+descriptive error message is printed to stderr.</p></li>
+<li><p>The documentation included a wrong statement about how to configure
+FreeRTOS.</p></li>
+<li><p>Battery voltage is now transmitted correctly via CAN (ID: 0x222).</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id33">
+<h2><span class="section-number">2.7. </span>[1.1.2] - 2021-09-03<a class="headerlink" href="#id33" title="Permalink to this headline"></a></h2>
+<div class="section" id="id34">
+<h3><span class="section-number">2.7.1. </span>Added<a class="headerlink" href="#id34" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>A basic block diagram and description of a battery system and the voltages.
+and the currents that need to be measured have been included in the
+documentation.</p></li>
+<li><p>Add helper script to run the library test build
+(<code class="docutils literal notranslate"><span class="pre">tests/variants/lib-build/lib-build.bat</span></code>).</p></li>
+<li><p>Updated the Axivion configuration to use version <code class="docutils literal notranslate"><span class="pre">7.2.3</span></code>.</p></li>
+<li><p>Added minimal documentation for Axivion setup.</p></li>
+<li><p>Improved the Axivion configuration:</p>
+<ul>
+<li><p>use <code class="docutils literal notranslate"><span class="pre">FAS_ASSERT</span></code> as assert macro in order to be compliant with the style
+guide</p></li>
+<li><p>fix some includes (library-inclusions and unnecessary inclusions)</p></li>
+<li><p>adds the Axivion example for race condition analysis and a minimal
+configuration of entry points</p></li>
+<li><p>updates <code class="docutils literal notranslate"><span class="pre">.axivion.preinc</span></code> with missing symbols</p></li>
+<li><p>makes cafeCC point to the right compiler library</p></li>
+<li><p>excludes vendored code from analysis</p></li>
+<li><p>disables all naming conventions (as they are currently not configured and
+thus horribly noisy)</p></li>
+<li><p>disables the NoImplicitTypeConversion check as it is very noisy and better
+done with appropriate MISRA rules</p></li>
+<li><p>detect unsafe variable access by defining task priorities</p></li>
+<li><p>make Axivion less noisy, by disabling unused style-checks.</p></li>
+<li><p>Made rules for loop-counter variables more strict.</p></li>
+<li><p>enabling more detailed computation of findings (Abstract Interpretation in
+Static Semantic Analysis).</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="id35">
+<h3><span class="section-number">2.7.2. </span>Changed<a class="headerlink" href="#id35" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Improved the code quality of the module <code class="docutils literal notranslate"><span class="pre">foxmath</span></code> so that it is
+MISRA-compliant (<a class="reference internal" href="../software/modules/driver/foxmath/foxmath.html#foxmath"><span class="std std-numref">Section 4.19</span></a>).</p></li>
+<li><p>Refactored <code class="docutils literal notranslate"><span class="pre">cc-options</span></code> parsing to separate tool to simplify the TI ARM CGT
+compiler tool.</p></li>
+</ul>
+</div>
+<div class="section" id="id36">
+<h3><span class="section-number">2.7.3. </span>Deprecated<a class="headerlink" href="#id36" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id37">
+<h3><span class="section-number">2.7.4. </span>Removed<a class="headerlink" href="#id37" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id38">
+<h3><span class="section-number">2.7.5. </span>Fixed<a class="headerlink" href="#id38" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>When HALCoGen was not available, the waf tool nevertheless tried to set the
+respective include path, which lead to exception in Python. This has been
+fixed by not trying to set the include path when HALCoGen is not available.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id39">
+<h2><span class="section-number">2.8. </span>[1.1.1] - 2021-08-06<a class="headerlink" href="#id39" title="Permalink to this headline"></a></h2>
+<div class="section" id="id40">
+<h3><span class="section-number">2.8.1. </span>Added<a class="headerlink" href="#id40" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>All measurement values are now invalidated after startup to prevent invalid
+data on CAN.</p></li>
+<li><p>Add a script for VS Code detection.</p></li>
+<li><p>Added signal data for string related CAN messages</p></li>
+</ul>
+</div>
+<div class="section" id="id41">
+<h3><span class="section-number">2.8.2. </span>Changed<a class="headerlink" href="#id41" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id42">
+<h3><span class="section-number">2.8.3. </span>Deprecated<a class="headerlink" href="#id42" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id43">
+<h3><span class="section-number">2.8.4. </span>Removed<a class="headerlink" href="#id43" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id44">
+<h3><span class="section-number">2.8.5. </span>Fixed<a class="headerlink" href="#id44" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>fixed bug, that multiplexed cell voltages 2+3 were transmitted incorrectly
+via CAN (<code class="docutils literal notranslate"><span class="pre">foxBMS_CellVoltage</span></code>)</p></li>
+<li><p>fixed bug, that current limits were transmitted incorrectly via CAN
+(<code class="docutils literal notranslate"><span class="pre">foxBMS_LimitValues</span></code>)</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id45">
+<h2><span class="section-number">2.9. </span>[1.1.0] - 2021-07-29<a class="headerlink" href="#id45" title="Permalink to this headline"></a></h2>
+<p>foxBMS 2 now defaults to Code Composer Studio 10.3.1 in order to build
+the binaries. If an older version of the compiler should be used, it can be
+configured in <code class="docutils literal notranslate"><span class="pre">conf/env/paths_win32.txt</span></code>. For installation instructions
+see <a class="reference internal" href="../getting-started/software-installation.html#css-install"><span class="std std-numref">Section 3.2.2</span></a>.</p>
+<p>foxBMS 2 now ships with a new conda environment <code class="docutils literal notranslate"><span class="pre">2021-08-arctic-fox</span></code> and the
+local conda environment needs to be updated (see <a class="reference internal" href="../getting-started/software-installation.html#conda-env-update"><span class="std std-numref">Section 3.3</span></a>).</p>
+<div class="section" id="id46">
+<h3><span class="section-number">2.9.1. </span>Added<a class="headerlink" href="#id46" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Diagnosis entries can now be configured specifically for each LTC6813-1
+instance.</p></li>
+<li><p>Endianness is now configurable in CAN module.</p></li>
+<li><p>Add number of balanced cells in each string to database entry
+<code class="docutils literal notranslate"><span class="pre">DATA_BLOCK_ID_BALANCING_CONTROL</span></code>.</p></li>
+<li><p>Added a built-in self-test for the database module that writes and reads an
+entry during startup of the system.</p></li>
+<li><p>Added a helper tool for the maintenance of the list of licenses in the conda
+environment.</p></li>
+<li><p>Added a helper macro for the generation of array initializers
+(<code class="docutils literal notranslate"><span class="pre">REPEAT_U()</span></code>).</p></li>
+<li><p>Documented how to use Ozone to show the location of a failed assertion.</p></li>
+<li><p>Cell voltages and temperatures are each stored in one array containing all
+values. Added database helper functions to get string, module or cell/sensor
+number from index in the global array.</p></li>
+<li><p>Added a block diagram of the foxBMS 2 master hardware.</p></li>
+<li><p>Added a SPI API function that allows to switch the functional state (GIO or
+SPI) of a SPI pin of the MCU.</p></li>
+<li><p>Added testing for different versions of TI CCS (versions <code class="docutils literal notranslate"><span class="pre">10.2.1</span></code>,
+<code class="docutils literal notranslate"><span class="pre">10.3.0</span></code>, <code class="docutils literal notranslate"><span class="pre">10.3.1</span></code> and <code class="docutils literal notranslate"><span class="pre">10.4.0</span></code>).</p></li>
+<li><p>Add fallback compiler detection.</p></li>
+<li><p>Added a link to foxBMS project website with acknowledgment information:</p>
+<ul>
+<li><p>List of funded projects foxBMS has received funding from</p></li>
+<li><p>Instructions on how to reference to foxBMS 2</p></li>
+</ul>
+</li>
+<li><p>Added handling of I2C multiplexers to the Maxim monitoring IC driver.</p></li>
+<li><p>Added a flash tool to the waf toolchain. It is based on SEGGER J-Flash and
+can be invoked by calling <code class="docutils literal notranslate"><span class="pre">waf</span> <span class="pre">install_bin</span></code> or running the <code class="docutils literal notranslate"><span class="pre">Flash:Binary</span></code>
+task in <code class="docutils literal notranslate"><span class="pre">code</span></code>.</p></li>
+<li><p>Added a short note on the installation of PEAK-Drivers (for CAN
+communication) to the installation manual.</p></li>
+<li><p>Added a section on testing the setup of the toolchain.</p></li>
+<li><p>Added configurable reaction type, delay and severity for each diagnosis
+entry.</p></li>
+<li><p>Configuration of failures, that lead to a transition to the error state is
+now done by configuring the severity of the respective diagnosis entry to
+<code class="docutils literal notranslate"><span class="pre">DIAG_FATAL_ERROR</span></code>. The handling of the timing delay to transition into
+error state is done by the BMS module.</p></li>
+<li><p>Implemented CAN messages defined in .dbc file. Only stubs are implemented for
+some CAN messages respectively some signals.</p></li>
+<li><p>Documented workarounds that have to be applied to HALCoGen.</p></li>
+</ul>
+</div>
+<div class="section" id="id47">
+<h3><span class="section-number">2.9.2. </span>Changed<a class="headerlink" href="#id47" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>The schematic of the BMS-Master Board has been updated (<code class="docutils literal notranslate"><span class="pre">v1.0.2</span></code>).</p></li>
+<li><p>The new default compiler set in <code class="docutils literal notranslate"><span class="pre">conf/env/paths_win32.txt</span></code> is now
+TI ARM CGT v20.2.4.LTS (shipped with CCS <code class="docutils literal notranslate"><span class="pre">10.3.1</span></code>).</p></li>
+<li><p>Reorganized the compiler tests in <code class="docutils literal notranslate"><span class="pre">tests/ccs/*</span></code>.</p></li>
+<li><p>Updated the development conda environment to <code class="docutils literal notranslate"><span class="pre">2021-06-arctic-fox</span></code>. Please
+run the <code class="docutils literal notranslate"><span class="pre">conda-update-env.bat</span></code> script in order to update your local
+environment (see <a class="reference internal" href="../getting-started/software-installation.html#conda-env-update"><span class="std std-numref">Section 3.3</span></a>).</p></li>
+<li><p>CAN callback functions are now defined in separate files to increase
+readability.</p></li>
+<li><p>Ring buffer for CAN RX was replaced by a FreeRTOS queue. A DIAG entry was
+added that detects if the queue is full when trying to add an element.</p></li>
+<li><p>Updated the black configuration to match the new python version
+(<code class="docutils literal notranslate"><span class="pre">Python</span> <span class="pre">3.9.5</span></code>).</p></li>
+<li><p>Improved the Ozone configuration so that an data breakpoint is set
+automatically on the symbol <code class="docutils literal notranslate"><span class="pre">fas_assertLocation.pc</span></code>.</p></li>
+<li><p>Run VS Code build tasks as process.</p></li>
+<li><p>Use posix paths in VS Code configuration on all host platforms.</p></li>
+<li><p>Improved the MISRA compliance of the monitoring driver for the family of
+Maxim ICs.</p></li>
+<li><p>Pause the terminal when running <code class="docutils literal notranslate"><span class="pre">ide.bat</span></code>, <code class="docutils literal notranslate"><span class="pre">waf.bat</span></code> and <code class="docutils literal notranslate"><span class="pre">waf.sh</span></code> in
+case the conda base or development environment could not be found. This is
+done to clearly point the user to the error message.</p></li>
+<li><p>Moved the struct storing the version of the software to a fixed location
+(address <code class="docutils literal notranslate"><span class="pre">0x003FFF40</span></code>) in flash memory.</p></li>
+<li><p>Replace all access to registers through the <code class="docutils literal notranslate"><span class="pre">IO_</span></code> functions with an access
+that keeps the volatile keyword on the register.</p></li>
+<li><p>Dropped the requirement for an internal library (<code class="docutils literal notranslate"><span class="pre">pyhameg</span></code>) in the HIL
+test.</p></li>
+<li><p>Updated the unit test framework <code class="docutils literal notranslate"><span class="pre">ceedling</span></code> to version <code class="docutils literal notranslate"><span class="pre">0.31.1</span></code>.</p></li>
+<li><p>Simplified the configuration of the Cppcheck tool.</p></li>
+<li><p>Improved several function names in the <code class="docutils literal notranslate"><span class="pre">ftask</span></code> module.</p></li>
+<li><p>All required Queues are now created in one function (<code class="docutils literal notranslate"><span class="pre">FTSK_CreateQueues</span></code>)
+before the scheduler starts.</p></li>
+<li><p>Split the waf compiler tool into smaller sub-tools to simplify maintenance
+and tests.</p></li>
+</ul>
+</div>
+<div class="section" id="id48">
+<h3><span class="section-number">2.9.3. </span>Deprecated<a class="headerlink" href="#id48" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id49">
+<h3><span class="section-number">2.9.4. </span>Removed<a class="headerlink" href="#id49" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Completely removed dynamic allocation from FreeRTOS and reduced the (unused)
+heap size to 0.</p></li>
+<li><p>Removed deprecated option <code class="docutils literal notranslate"><span class="pre">COLS_IN_ALPHA_INDEX</span></code> from the doxygen
+configurations.</p></li>
+<li><p>Disabled FEE driver in the HALCoGen project as it is currently unused.</p></li>
+<li><p>Removed the hardware design files from the <code class="docutils literal notranslate"><span class="pre">hardware</span></code> directory and
+provided a URL under which the files can be found.</p></li>
+</ul>
+</div>
+<div class="section" id="id50">
+<h3><span class="section-number">2.9.5. </span>Fixed<a class="headerlink" href="#id50" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>The implementation of <code class="docutils literal notranslate"><span class="pre">DIAG_ErrorCurrentOnOpenString()</span></code> had an error where
+the wrong enum has been used leading to an assertion.</p></li>
+<li><p>Fixed bug in SOC/SOE counting module that extrapolated for cell voltages
+below lookup-table range</p></li>
+<li><p>Fixed bug that caused current sensor scaling values to be only recalibrated
+after startup and not while recalibrating SOC/SOE values via LUT when BMS is
+at rest.</p></li>
+<li><p>A race condition between the SOC and SOE calculation lead to a mutual
+overwriting of the state estimation values.</p></li>
+<li><p>Added documentation for the CAN module.</p></li>
+<li><p>The regex to parse the <code class="docutils literal notranslate"><span class="pre">linkcheck</span></code> output in case of a broken URL did not
+match and raised an exception. The regex is now simpler and has a fallback
+option.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">void</span></code> functions used unnecessary <code class="docutils literal notranslate"><span class="pre">return;</span></code> at the end of the function.
+These returns have been removed.</p></li>
+<li><p>Sometimes <code class="docutils literal notranslate"><span class="pre">black</span></code> would fail to write to the cache pickle due to concurrent
+write processes of multiple <code class="docutils literal notranslate"><span class="pre">black</span></code> processes. This issue has been fixed by
+passing all files, that should be checked, at once to <code class="docutils literal notranslate"><span class="pre">black</span></code>.</p></li>
+<li><p>Fixed comparison error in SOF module that compared mA with A.</p></li>
+<li><p>Some C-language guideline checks did not properly take C language global
+excludes into account.</p></li>
+<li><p>Updated links in <a class="reference internal" href="../tools/halcogen/halcogen.html#halcogen-tool-documentation"><span class="std std-numref">Section 5</span></a>.</p></li>
+<li><p>Fixed construction of the path variable in batch scripts.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id51">
+<h2><span class="section-number">2.10. </span>[1.0.2] - 2021-04-30<a class="headerlink" href="#id51" title="Permalink to this headline"></a></h2>
+<div class="section" id="id52">
+<h3><span class="section-number">2.10.1. </span>Added<a class="headerlink" href="#id52" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added number of valid cell voltages and temperatures used for calculating
+minimum, maximum and average values to database entry
+<code class="docutils literal notranslate"><span class="pre">DATA_BLOCK_ID_MIN_MAX</span></code>.</p></li>
+<li><p>Added the build option <code class="docutils literal notranslate"><span class="pre">--skip-doxygen</span></code> to enable faster documentation
+builds, if an API documentation is not required/does not need to be updated.</p></li>
+</ul>
+</div>
+<div class="section" id="id53">
+<h3><span class="section-number">2.10.2. </span>Changed<a class="headerlink" href="#id53" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Do no longer hard code the EOL for the files in the VS Code settings, instead
+just use the system EOL instead.</p></li>
+</ul>
+</div>
+<div class="section" id="id54">
+<h3><span class="section-number">2.10.3. </span>Deprecated<a class="headerlink" href="#id54" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id55">
+<h3><span class="section-number">2.10.4. </span>Removed<a class="headerlink" href="#id55" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id56">
+<h3><span class="section-number">2.10.5. </span>Fixed<a class="headerlink" href="#id56" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Fixed typo in changelog. The LTC 6804-1 is basically an older version of the
+LTC 6811-1 (previously it stated wrongly LTC 6812-1).</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">linkcheck</span></code> and <code class="docutils literal notranslate"><span class="pre">spelling</span></code> were not run when the documentation was built.</p></li>
+<li><p>The GUI searched for the wrong license file during startup routine and
+therefore failed to start successfully.</p></li>
+<li><p>Improved the readability of the engine block schematic in the general
+software documentation.</p></li>
+<li><p>Fixed an issue where the <code class="docutils literal notranslate"><span class="pre">waf.sh</span></code>-wrapper would not print the error message
+when the conda environment could not be found.</p></li>
+<li><p>Removed unused variables in build scripts.</p></li>
+<li><p>Fixed readmes in the tools directory and its subdirectories.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id57">
+<h2><span class="section-number">2.11. </span>[1.0.1] - 2021-04-16<a class="headerlink" href="#id57" title="Permalink to this headline"></a></h2>
+<div class="section" id="id58">
+<h3><span class="section-number">2.11.1. </span>Added<a class="headerlink" href="#id58" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added links to built versions of the documentation to the project README.</p></li>
+<li><p>Added testing for different versions of TI CSS (versions 10.0.0 and 10.1.1).</p></li>
+<li><p>Added a readme to the hardware directory.</p></li>
+<li><p>Added support for LTC 6804-1 (basically an older version of the LTC 6811-1).</p></li>
+<li><p>Added the updated design files of the foxBMS 2 master v1.0.1.</p></li>
+</ul>
+</div>
+<div class="section" id="id59">
+<h3><span class="section-number">2.11.2. </span>Changed<a class="headerlink" href="#id59" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Activated URL availability checking for <a class="reference external" href="https://github.com/foxBMS/foxbms-2">https://github.com/foxBMS/foxbms-2</a>
+when building the documentation.</p></li>
+<li><p>Moved code examples in developer manual to separate source files.</p></li>
+<li><p>The shebang in Python files has been updated from <code class="docutils literal notranslate"><span class="pre">python</span></code> to <code class="docutils literal notranslate"><span class="pre">python3</span></code>.</p></li>
+<li><p>Updated waf to version 2.0.22 (from 2.0.21).</p></li>
+<li><p>Updated database documentation.</p></li>
+<li><p>Updated information on tracing with Segger J-Trace probes.</p></li>
+</ul>
+</div>
+<div class="section" id="id60">
+<h3><span class="section-number">2.11.3. </span>Deprecated<a class="headerlink" href="#id60" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id61">
+<h3><span class="section-number">2.11.4. </span>Removed<a class="headerlink" href="#id61" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Removed external quality check in CI. This functionality has been replaced
+by the “guidelines” feature that is shipped with this repository.</p></li>
+</ul>
+</div>
+<div class="section" id="id62">
+<h3><span class="section-number">2.11.5. </span>Fixed<a class="headerlink" href="#id62" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Use code page 850 as default when using the <code class="docutils literal notranslate"><span class="pre">waf.sh</span></code>/<code class="docutils literal notranslate"><span class="pre">waf.bat</span></code> wrappers.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">without-halcogen_diff-includes.diff</span></code> was unintentionally excluded by
+the regex in <code class="docutils literal notranslate"><span class="pre">.gitignore</span></code>.</p></li>
+<li><p>Fixed repository name in the documentation.</p></li>
+<li><p>Fixed available waf commands and put the table in a separate csv file.</p></li>
+<li><p>Fixed comments in LTC driver build scripts</p></li>
+<li><p>Includes directories were not correctly set for the drivers <em>LTC 6811-1</em> and
+<em>LTC 6812-1</em>.</p></li>
+<li><p>Clarification and correction of the license namings (no changes in the
+licenses themselves).
+The license of the foxBMS 2 software is the <em>BSD 3-Clause License</em>. This
+license is also formally known as <em>BSD 3-Clause “New” or “Revised” License</em>.
+As of this release foxBMS 2 added the SPDX short identifier to the software
+sources (<code class="docutils literal notranslate"><span class="pre">SPDX-License-Identifier:</span> <span class="pre">BSD-3-Clause</span></code>) according to
+<a class="reference external" href="https://spdx.dev/specifications/">SPDX Specification Version 2.2</a>.
+The license text of the
+<a class="reference external" href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
+has been added to the repository. The SPDX short name of this license is
+<code class="docutils literal notranslate"><span class="pre">CC-BY-4.0</span></code>. For more information see <a class="reference internal" href="license.html#license"><span class="std std-ref">License</span></a>.</p></li>
+<li><p>Fixed the names of variables in bash scripts on Windows.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id63">
+<h2><span class="section-number">2.12. </span>[1.0.0] - 2021-04-01<a class="headerlink" href="#id63" title="Permalink to this headline"></a></h2>
+<div class="section" id="id64">
+<h3><span class="section-number">2.12.1. </span>Added<a class="headerlink" href="#id64" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added automated installer script for miniconda3.</p></li>
+<li><p>Added automated installer script for MinGW64.</p></li>
+<li><p>Added automated installer script for LLVM.</p></li>
+</ul>
+</div>
+<div class="section" id="id65">
+<h3><span class="section-number">2.12.2. </span>Changed<a class="headerlink" href="#id65" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Finalize red-fox conda environment <code class="docutils literal notranslate"><span class="pre">2021-04-red-fox</span></code> based on
+<code class="docutils literal notranslate"><span class="pre">red-fox-devel-020</span></code>. No packages are updated, just finalized the name.</p></li>
+<li><p>Removed dependency of configured power lines from overcurrent check in SOA
+module. The overcurrent is now checked against allowed cell, string and pack
+current limits.</p></li>
+<li><p>C source files, that are not vendored, are now <code class="docutils literal notranslate"><span class="pre">ASCII</span></code> encoded.</p></li>
+<li><p>Improved the code quality by adding assertions in various locations and
+removing unused code.</p></li>
+<li><p>Base decisions in <code class="docutils literal notranslate"><span class="pre">bms</span></code> on pack value database entry as this entry contains
+only validated values. Do not directly use current sensor measurements
+anymore.</p></li>
+<li><p>Fixed function names in the system monitoring module.</p></li>
+<li><p>Replace remaining <code class="docutils literal notranslate"><span class="pre">TRUE</span></code> and <code class="docutils literal notranslate"><span class="pre">FALSE</span></code> in embedded sources with <code class="docutils literal notranslate"><span class="pre">true</span></code>
+and <code class="docutils literal notranslate"><span class="pre">false</span></code> respectively from <code class="docutils literal notranslate"><span class="pre">stdbool.h</span></code>.</p></li>
+<li><p>Updated LLVM to version 11.0.1</p></li>
+<li><p>Only compile foxBMS 2 source and operating system sources in <code class="docutils literal notranslate"><span class="pre">strict_ansi</span></code>
+mode</p></li>
+</ul>
+</div>
+<div class="section" id="id66">
+<h3><span class="section-number">2.12.3. </span>Deprecated<a class="headerlink" href="#id66" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id67">
+<h3><span class="section-number">2.12.4. </span>Removed<a class="headerlink" href="#id67" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Removed several unused defines.</p></li>
+</ul>
+</div>
+<div class="section" id="id68">
+<h3><span class="section-number">2.12.5. </span>Fixed<a class="headerlink" href="#id68" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Style guide check did not properly exclude files when checking <code class="docutils literal notranslate"><span class="pre">*.rst</span></code>
+files.</p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span></code> check in Doxygen comments.</p></li>
+<li><p>Fix <code class="docutils literal notranslate"><span class="pre">&#64;prefix</span></code> for modules <code class="docutils literal notranslate"><span class="pre">epcos_b57251v5103j060</span></code>,
+<code class="docutils literal notranslate"><span class="pre">epcos_b57861s0103f045</span></code> and <code class="docutils literal notranslate"><span class="pre">vishay_ntcalug01a103g</span></code>.</p></li>
+<li><p>Do not add <code class="docutils literal notranslate"><span class="pre">__TIME__</span></code> and <code class="docutils literal notranslate"><span class="pre">__DATE__</span></code> macros to list of predefined defines
+in VS Code.</p></li>
+<li><p>Create all build-time created include directories VS Code knows about in
+<code class="docutils literal notranslate"><span class="pre">c_cpp_properties.json</span></code> to remove workspace warnings.</p></li>
+<li><p>Add back <code class="docutils literal notranslate"><span class="pre">Previous</span></code> and <code class="docutils literal notranslate"><span class="pre">Next</span></code> buttons back in rendered documentation.</p></li>
+<li><p>Updated getting started information.</p></li>
+<li><p>Fixed function names and variable names of database structs in the <code class="docutils literal notranslate"><span class="pre">bms</span></code>
+module.</p></li>
+<li><p>Fixed function names and variable names of database structs in the <code class="docutils literal notranslate"><span class="pre">adc</span></code>
+module.</p></li>
+<li><p>Fixed CAN driver problem when cache is enabled.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">conda-init.bat</span></code> used a wrong path to write the <code class="docutils literal notranslate"><span class="pre">.condarc</span></code> file if the
+user name contained whitespace.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id69">
+<h2><span class="section-number">2.13. </span>[0.3.0] - 2021-03-16<a class="headerlink" href="#id69" title="Permalink to this headline"></a></h2>
+<div class="section" id="id70">
+<h3><span class="section-number">2.13.1. </span>Added<a class="headerlink" href="#id70" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Added coverage reports for the unit tests of the waf-tools.</p></li>
+<li><p>Added general safety information.</p></li>
+<li><p>Added a rudimentary hardware change process to the hardware developer manual.</p></li>
+<li><p>Added information on the criticality of used tools.</p></li>
+<li><p>Added the calculation of pack values (current, power, high voltage) to the
+redundancy module.</p></li>
+<li><p>Added a manual on using debugger by Segger or Lauterbach in conjunction with
+the platform.</p></li>
+<li><p>Added a problem matcher to the <code class="docutils literal notranslate"><span class="pre">build_docs</span></code> task in Visual Studio Code
+so that the IDE can parse warnings printed from Doxygen</p></li>
+<li><p>Added documentation stubs for all embedded software modules</p></li>
+<li><p>Added interface description for CAN communication (.dbc and .sym)</p></li>
+</ul>
+</div>
+<div class="section" id="id71">
+<h3><span class="section-number">2.13.2. </span>Changed<a class="headerlink" href="#id71" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>SBC no longer monitors input on FCCU pins as usage of these pins is currently
+not supported</p></li>
+<li><p>The MIC modules are now able to define their own threshold values for
+plausible cell voltage measurements. In order to implement this, the MIC
+has to declare a struct of type <code class="docutils literal notranslate"><span class="pre">MIC_PLAUSIBILITY_VALUES_s</span></code> and pass it to
+the plausibility-functions of the MIC.</p></li>
+<li><p>Improves deployment speed with the internal deployment script.</p></li>
+<li><p>Simplifies the macro that records the program counter in <code class="docutils literal notranslate"><span class="pre">fassert.h</span></code> with
+input from static analysis.</p></li>
+<li><p>Disables the static analysis finding for dead branches in the expansion of
+the <code class="docutils literal notranslate"><span class="pre">FAS_ASSERT</span></code> assertion macro as the assertion should not be hit by
+normal operating code.</p></li>
+<li><p>Clarified the internal merge request template.</p></li>
+<li><p>Asserts that the SPI function <code class="docutils literal notranslate"><span class="pre">SPI_TransmitReceiveDataDma()</span></code> does not
+receive null pointer as parameter.</p></li>
+<li><p>Improved minor code quality issues in the <code class="docutils literal notranslate"><span class="pre">DIAG_Initialize()</span></code> function.</p></li>
+<li><p>Improved the documentation on installing dependencies.</p></li>
+<li><p>Removed function <code class="docutils literal notranslate"><span class="pre">DIAG_configAssert()</span></code> as it is replaced by <code class="docutils literal notranslate"><span class="pre">FAS_ASSERT</span></code>.</p></li>
+<li><p>The diagnosis module has been restructured. The callbacks for each type of
+diagnosis event are now implemented in type specific files, e.g., for the
+current sensor in <code class="docutils literal notranslate"><span class="pre">diag_cbs_current-sensor.c</span></code>. These files are in
+<code class="docutils literal notranslate"><span class="pre">src/app/engine/diag/cbs/</span></code>. Unit tests have been added.</p></li>
+<li><p>Fixed typos related to battery cell and battery system.</p></li>
+<li><p>Enhanced the documentation section on the build process.</p></li>
+<li><p>Improved the documentation of the temperature sensor interface (TSI).</p></li>
+<li><p>Some structs in the database did not conform to the naming conventions.</p></li>
+<li><p>Renamed the hardware directory from <code class="docutils literal notranslate"><span class="pre">hw</span></code> to <code class="docutils literal notranslate"><span class="pre">hardware</span></code>.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">clang-format</span></code>, <code class="docutils literal notranslate"><span class="pre">black</span></code> and <code class="docutils literal notranslate"><span class="pre">pylint</span></code> tools have been moved into the
+guidelines tool. Configuration is now done via <code class="docutils literal notranslate"><span class="pre">rules.json</span></code> as all other
+guidelines.</p></li>
+</ul>
+</div>
+<div class="section" id="id72">
+<h3><span class="section-number">2.13.3. </span>Deprecated<a class="headerlink" href="#id72" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id73">
+<h3><span class="section-number">2.13.4. </span>Removed<a class="headerlink" href="#id73" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id74">
+<h3><span class="section-number">2.13.5. </span>Fixed<a class="headerlink" href="#id74" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Corrected the function <code class="docutils literal notranslate"><span class="pre">LTC_I2CCheckACK()</span></code> that did not check the
+acknowledge signal of multiplexer over I2C communication.</p></li>
+<li><p>Corrected the function <code class="docutils literal notranslate"><span class="pre">LTC_SetMUXChCommand()</span></code> because message content for
+I2C communication with multiplexers was wrong.</p></li>
+<li><p>Corrected several instances in the <code class="docutils literal notranslate"><span class="pre">LTC6813-1</span></code>-driver where the
+loop-counter variable has been declared outside of the loop.</p></li>
+<li><p>Renamed function names in <code class="docutils literal notranslate"><span class="pre">redundancy</span></code> module to adhere to style guide
+rules.</p></li>
+<li><p>Fixed wording and replaced <em>isolation</em> by <em>insulation</em>.</p></li>
+<li><p>Replaced references to LG INR18650MJ1 by generic battery cell configuration.</p></li>
+<li><p>Tasks were not initialized correctly. The IDLE task never run.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id75">
+<h2><span class="section-number">2.14. </span>[0.2.0] - 2021-02-02<a class="headerlink" href="#id75" title="Permalink to this headline"></a></h2>
+<div class="section" id="id76">
+<h3><span class="section-number">2.14.1. </span>Added<a class="headerlink" href="#id76" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>A parser to validate the linker output was added. The parser analyzes the
+output of the linking process to validate that symbols were pulled from the
+specified source. If the symbol is pulled from another source the build
+process throws an error.</p></li>
+<li><p>A parser to validate the style guide rules was added. The parser analyzes the
+files in the repository for style guide rule compliance. If a rule is
+violated the check guidelines and style guide process throws an error.</p></li>
+<li><p>Updated the development conda environment to <code class="docutils literal notranslate"><span class="pre">red-fox-devel-020</span></code> with
+Python version 3.8, updated packages and new packages: <code class="docutils literal notranslate"><span class="pre">mypy</span></code>, <code class="docutils literal notranslate"><span class="pre">rope</span></code>,
+<code class="docutils literal notranslate"><span class="pre">seaborn</span></code>, <code class="docutils literal notranslate"><span class="pre">statsmodels</span></code>, <code class="docutils literal notranslate"><span class="pre">scikit-learn</span></code>, <code class="docutils literal notranslate"><span class="pre">filterpy</span></code>, <code class="docutils literal notranslate"><span class="pre">dask</span></code> and
+<code class="docutils literal notranslate"><span class="pre">scipy</span></code>.</p></li>
+<li><p>Documentation of the development workflow has been added as a draft.</p></li>
+<li><p>Discard return value of <code class="docutils literal notranslate"><span class="pre">memcpy()</span></code> in <code class="docutils literal notranslate"><span class="pre">DATA_Task()</span></code> as the return value
+is not further used.</p></li>
+<li><p>Added first draft of <code class="docutils literal notranslate"><span class="pre">state</span> <span class="pre">estimation</span></code> module. This module is located
+within the <code class="docutils literal notranslate"><span class="pre">algorithm</span></code> module and responsible for calculating state of
+charge <em>SOC</em>, state of energy <em>SOF</em>, state of health <em>SOH</em> and state of
+function <em>SOF</em>. Different calculation methods for each state estimation
+algorithm can be selected via configuration file <code class="docutils literal notranslate"><span class="pre">bms.json</span></code>.</p></li>
+<li><p>Added a dummy insulation monitoring device driver. Non-functional
+Bender iso165c drivers have been added (driver fail to build).</p></li>
+<li><p>Added a driver for Smart Power Switches that is encapsulated by the contactor
+module. The contactor module handles the communication with the Smart Power
+Switch driver and manages the ICs.</p></li>
+<li><p>Added a state of energy <em>SOE</em> estimation implementation based on counting
+energy.</p></li>
+<li><p>Added documentation of the hardware development flow.</p></li>
+<li><p>Enabled the FreeRTOS idle hook in user code. That means that the function
+<code class="docutils literal notranslate"><span class="pre">FTSK_UserCode_Idle()</span></code> will be called every time the OS goes into idle
+state.</p></li>
+<li><p>Extended the conda environment with a sphinx-plugin that provides
+BiBTeX-capabilities. Added this plugin to the documentation build
+in order to generate bibliographies.</p></li>
+<li><p>Extended the API of the Temperature Sensor Interface (TSI) in order to
+return maximum and minimum limits for plausible measurement values.</p></li>
+<li><p>Extended the documentation with a manual for writing unit tests and a
+reference to the C coding standard the we use.</p></li>
+<li><p>Added an initialization function to <code class="docutils literal notranslate"><span class="pre">sys_mon</span></code> module to detect possible
+configuration errors</p></li>
+<li><p>Added more files to the unit test coverage analysis in order to have a more
+complete image of the project and its unit test coverage.</p></li>
+<li><p>The conda environment configuration that is distributed within the
+has now an option to validate that it is working as intended.
+The conda environment can be tested by running
+<code class="docutils literal notranslate"><span class="pre">tools/utils/cmd/run-python-script.bat</span> <span class="pre">tests/env/packages_test.py</span> <span class="pre">-f</span> <span class="pre">tests/env/conda_env_win32.json</span></code>
+from the repository root.</p></li>
+</ul>
+</div>
+<div class="section" id="id77">
+<h3><span class="section-number">2.14.2. </span>Changed<a class="headerlink" href="#id77" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>The <code class="docutils literal notranslate"><span class="pre">algorithm</span></code>-implementation is now able to handle calling a function
+cyclically and calling an additional initialization function. The
+implementation of the algorithm does not need to interact with the
+<code class="docutils literal notranslate"><span class="pre">algorithm</span></code>-API anymore as this is now handled by the module.
+In order to not block the rest of the system with an algorithm that might
+take longer for computation, the algorithm module has been moved into its own
+task with a lower priority.</p></li>
+<li><p>Updated FreeRTOS to version 10.4.3 (from 10.3.0).</p></li>
+<li><p>Updated waf to version 2.0.21 (from 2.0.20).</p></li>
+<li><p>Consequently uses deci degree Celsius as integer-value (instead of degree
+Celsius floats) in the Temperature Sensor Interface (TSI).</p></li>
+<li><p>Moved the <code class="docutils literal notranslate"><span class="pre">slaveplausibility</span></code>-modules into one central module in the MIC
+and renamed it to <code class="docutils literal notranslate"><span class="pre">MIC</span> <span class="pre">plausibility</span></code>.</p></li>
+<li><p>Initialize runner variables in loops correctly as unsigned.</p></li>
+<li><p>Renamed directory <code class="docutils literal notranslate"><span class="pre">measurement-ic</span></code> to <code class="docutils literal notranslate"><span class="pre">mic</span></code>.</p></li>
+<li><p>Renamed directory <code class="docutils literal notranslate"><span class="pre">temperature-sensors</span></code> to <code class="docutils literal notranslate"><span class="pre">ts</span></code>.</p></li>
+<li><p>Changed linker script prefix from <code class="docutils literal notranslate"><span class="pre">ldscript_</span></code> to <code class="docutils literal notranslate"><span class="pre">linker_script_</span></code>.</p></li>
+<li><p>Renamed all references in the build toolchain and documentation from
+<code class="docutils literal notranslate"><span class="pre">linkerscript</span></code> to <code class="docutils literal notranslate"><span class="pre">linker_script</span></code>.</p></li>
+<li><p>Source files are no longer needed to be added manually to the documentation,
+instead sources are linked into the documentation based on the Doxygen
+generated documentation.</p></li>
+<li><p>Sets <code class="docutils literal notranslate"><span class="pre">UNITY_INCLUDE_EXEC_TIME</span></code> in the ceedling configuration in order to
+tell unity to track the time that a single test takes. This information is
+aggregated in the JUnit test report that is generated.</p></li>
+<li><p>Updated the unit test framework <code class="docutils literal notranslate"><span class="pre">ceedling</span></code> to version <code class="docutils literal notranslate"><span class="pre">0.31.0</span></code> and
+vendored the <code class="docutils literal notranslate"><span class="pre">ceedling</span></code> release with the repository in order to have more
+control over the executed version. Simplified the installation of Ruby in
+order to to reflect these changes. Simplified the <code class="docutils literal notranslate"><span class="pre">f_unit_test</span></code> waf-tool.</p></li>
+</ul>
+</div>
+<div class="section" id="id78">
+<h3><span class="section-number">2.14.3. </span>Deprecated<a class="headerlink" href="#id78" title="Permalink to this headline"></a></h3>
+</div>
+<div class="section" id="id79">
+<h3><span class="section-number">2.14.4. </span>Removed<a class="headerlink" href="#id79" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Removed the deprecated Anaconda extension from the list of recommended
+Visual Studio Code plugins that is shipped with the project.</p></li>
+</ul>
+</div>
+<div class="section" id="id80">
+<h3><span class="section-number">2.14.5. </span>Fixed<a class="headerlink" href="#id80" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>If the runtime support library was missing on a machine, the configure step
+failed, although the runtime support library was successfully built by the
+compiler. Now a warning is printed that the runtime support library is
+missing and that it will be built. An error is no longer generated when the
+build succeeds.</p></li>
+<li><p>The Maxim driver did not properly map multiple modules onto internal data
+structures for multi-string systems. This has been fixed.</p></li>
+<li><p>Fixes various comparisons between incompatible enum types.</p></li>
+<li><p>Fixed erroneous behavior of the GUI. The GUI implementation is now <code class="docutils literal notranslate"><span class="pre">black</span></code>
+and <code class="docutils literal notranslate"><span class="pre">pylint</span></code> compliant.</p></li>
+<li><p>Fixes erroneous hard-coded PEC-values in the LTC driver. A regression is
+prevented by added unit tests.</p></li>
+<li><p>The project version number was missing in the documentation build. The
+version information is now properly passed to the documentation build.</p></li>
+<li><p>The top of every documentation page began with <code class="docutils literal notranslate"><span class="pre">orphan:</span></code>.</p></li>
+<li><p>Fixed implicitly defined functions.</p></li>
+<li><p>Fixed the unit test documentation on how to use ceedling directly. The old
+version mentioned a wrong path for the <code class="docutils literal notranslate"><span class="pre">project.yml</span></code> used by ceedling.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id81">
+<h2><span class="section-number">2.15. </span>[0.1.0] - 2020-11-17<a class="headerlink" href="#id81" title="Permalink to this headline"></a></h2>
+<p>Initial version</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="releases.html" class="btn btn-neutral float-left" title="1. Releases" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="motivation.html" class="btn btn-neutral float-right" title="3. Motivation" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

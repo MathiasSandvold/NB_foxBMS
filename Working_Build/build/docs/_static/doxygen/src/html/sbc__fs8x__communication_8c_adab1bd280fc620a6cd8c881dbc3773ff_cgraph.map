@@ -1,0 +1,15 @@
+<map id="FS8x_SPI_TransferData" name="FS8x_SPI_TransferData">
+<area shape="rect" id="node1" title="Performs SPI transfer of the txData. Received frame is saved into rxData structure." alt="" coords="5,56,167,83"/>
+<area shape="rect" id="node2" href="$sbc__fs8x__communication_8c.html#a80544b95c576332d48a6f882957018d8" title="Performs CRC check of the data array." alt="" coords="249,56,373,83"/>
+<area shape="rect" id="node4" href="$sbc__fs8x__communication_8c.html#ae5b596457c82d4c45e811ad4c404b312" title="Creates a raw frame for SPI transfer." alt="" coords="215,5,408,32"/>
+<area shape="rect" id="node5" href="$group__Extern.html#ga1b7c11ee24b9fe8c8e104ae40a350e26" title="This function transfers single frame through blocking SPI communication in both directions...." alt="" coords="232,107,391,133"/>
+<area shape="rect" id="node3" href="$sbc__fs8x__communication_8c.html#a87db6e52e5d345e7ae7be0606196c27d" title="This function calculates CRC value of passed data array. Takes bytes in inverted order due to frame f..." alt="" coords="485,31,599,57"/>
+<area shape="rect" id="node6" href="$spi_8c.html#ac84bc8424de860e2cd89fea2e89dd89a" title="Transmits and receives data on SPI without DMA." alt="" coords="456,107,628,133"/>
+<area shape="rect" id="node7" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="689,5,784,32"/>
+<area shape="rect" id="node8" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="696,56,777,83"/>
+<area shape="rect" id="node9" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="676,107,797,133"/>
+<area shape="rect" id="node10" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="697,208,776,235"/>
+<area shape="rect" id="node13" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="691,157,782,184"/>
+<area shape="rect" id="node11" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="845,157,992,184"/>
+<area shape="rect" id="node12" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="849,208,988,235"/>
+</map>

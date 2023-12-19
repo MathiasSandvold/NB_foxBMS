@@ -1,0 +1,5 @@
+<map id="N775_waitTime" name="N775_waitTime">
+<area shape="rect" id="node1" title="waits for a definite amount of time in ms." alt="" coords="5,31,116,57"/>
+<area shape="rect" id="node2" href="$os__freertos_8c.html#a3ac9f783e38ae9f9c8cfe0634bb3b8fe" title="Delay a task until a specified time." alt="" coords="164,5,299,32"/>
+<area shape="rect" id="node3" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="168,56,295,83"/>
+</map>

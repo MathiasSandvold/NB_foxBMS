@@ -1,0 +1,7 @@
+<map id="testLTC_SetFirstMeasurementCycleFinished" name="testLTC_SetFirstMeasurementCycleFinished">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,204,65"/>
+<area shape="rect" id="node2" href="$ltc__6806_8c.html#aedc383042bee40b29823c29006e1c681" title=" " alt="" coords="252,23,468,65"/>
+<area shape="rect" id="node3" href="$ltc__6806_8c.html#a428e368fcc014375016c63a714201070" title="sets the measurement initialization status." alt="" coords="516,23,727,65"/>
+<area shape="rect" id="node4" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="775,5,921,32"/>
+<area shape="rect" id="node5" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="779,56,917,83"/>
+</map>

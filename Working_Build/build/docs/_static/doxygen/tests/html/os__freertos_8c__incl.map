@@ -1,0 +1,22 @@
+<map id="os_freertos.c" name="os_freertos.c">
+<area shape="rect" id="node1" title="FreeRTOS specific implementation of the tasks and resources used by the system." alt="" coords="249,5,346,32"/>
+<area shape="rect" id="node2" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="385,304,431,331"/>
+<area shape="rect" id="node4" title=" " alt="" coords="427,677,493,704"/>
+<area shape="rect" id="node6" title=" " alt="" coords="297,80,407,107"/>
+<area shape="rect" id="node7" href="$ftask_8h.html" title="Header of task driver implementation." alt="" coords="212,80,273,107"/>
+<area shape="rect" id="node3" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="372,603,465,629"/>
+<area shape="rect" id="node5" title=" " alt="" coords="860,677,935,704"/>
+<area shape="rect" id="node8" href="$can__cfg_8h.html" title="Headers for the configuration for the CAN module." alt="" coords="254,155,333,181"/>
+<area shape="rect" id="node10" href="$database_8h.html" title="Database module header." alt="" coords="509,229,595,256"/>
+<area shape="rect" id="node19" href="$ftask__cfg_8h.html" title="Task configuration header." alt="" coords="93,229,179,256"/>
+<area shape="rect" id="node20" href="$rtc_8h.html" title="Header file of the RTC driver." alt="" coords="181,528,229,555"/>
+<area shape="rect" id="node9" title=" " alt="" coords="304,229,381,256"/>
+<area shape="rect" id="node11" href="$database__cfg_8h.html" title="Database configuration header." alt="" coords="667,379,778,405"/>
+<area shape="rect" id="node18" href="$database__helper_8h.html" title="Database module header." alt="" coords="557,304,685,331"/>
+<area shape="rect" id="node12" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="809,453,956,480"/>
+<area shape="rect" id="node16" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="751,603,809,629"/>
+<area shape="rect" id="node17" title=" " alt="" coords="710,453,773,480"/>
+<area shape="rect" id="node13" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="845,528,920,555"/>
+<area shape="rect" id="node14" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="935,603,1007,629"/>
+<area shape="rect" id="node15" title=" " alt="" coords="959,677,1059,704"/>
+</map>

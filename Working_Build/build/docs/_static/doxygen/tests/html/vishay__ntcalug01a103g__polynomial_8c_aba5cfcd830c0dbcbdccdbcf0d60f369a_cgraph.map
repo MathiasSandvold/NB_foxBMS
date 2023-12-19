@@ -1,0 +1,4 @@
+<map id="TSI_GetTemperature" name="TSI_GetTemperature">
+<area shape="rect" id="node1" title="translate a voltage to a temperature" alt="" coords="5,13,147,39"/>
+<area shape="rect" id="node2" href="$vishay__ntcalug01a103g_8c.html#a47e088f4023835e56cac22e035c66be8" title="returns temperature based on measured ADC voltage" alt="" coords="195,5,396,47"/>
+</map>

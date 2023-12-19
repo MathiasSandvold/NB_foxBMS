@@ -1,0 +1,8 @@
+<map id="CANRX_HandleBalancingRequest" name="CANRX_HandleBalancingRequest">
+<area shape="rect" id="node1" title="handles the balancing request" alt="" coords="5,31,223,57"/>
+<area shape="rect" id="node2" href="$bal_8h.html#a32d6c4872b4b5d616cac7aad172a3427" title="gets the initialization state." alt="" coords="271,5,445,32"/>
+<area shape="rect" id="node3" href="$bal_8h.html#a98f48172bc8beacf09e7a4829be29fb8" title="sets the current state request of the state variable bal_state." alt="" coords="281,56,435,83"/>
+<area shape="rect" id="node4" href="$bal_8c.html#ace76b9a00c0a0ec922e15d0d677b9315" title="checks the state requests that are made." alt="" coords="493,5,664,32"/>
+<area shape="rect" id="node5" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="505,56,652,83"/>
+<area shape="rect" id="node6" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="509,107,648,133"/>
+</map>

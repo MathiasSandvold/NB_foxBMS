@@ -1,0 +1,12 @@
+<map id="testCAN_TxVoltage" name="testCAN_TxVoltage">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,141,83"/>
+<area shape="rect" id="node2" href="$can__cbs__tx_8h.html#a2b521df0225246e64ce10dff8e30cb4a" title="can tx callback function for cell voltages" alt="" coords="189,56,332,83"/>
+<area shape="rect" id="node3" href="$can__helper_8c.html#a6742f6ff56f9a1ec847dcc78cb435f1f" title="Copy CAN data from a 64&#45;bit variable to 8 bytes. This function is used to copy a 64&#45;bit CAN message t..." alt="" coords="380,5,627,32"/>
+<area shape="rect" id="node4" href="$can__helper_8c.html#a6154d80fd840f41da0c4ae44011bab10" title="Puts CAN signal data in a 64&#45;bit variable. This function is used to compose a 64&#45;bit CAN message...." alt="" coords="689,31,886,73"/>
+<area shape="rect" id="node6" href="$can__cbs__tx__cell-voltages_8c.html#adae768e7891a4b69d74c1774cd0b5a0b" title="Helper function for CANTX_CellVoltages()" alt="" coords="423,140,584,167"/>
+<area shape="rect" id="node5" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="948,39,1151,65"/>
+<area shape="rect" id="node7" href="$can__helper_8c.html#ab65f199c20a094c78901a3ad4ef4d1dc" title="Prepare signal data. This function takes the signal data and applies factor, applies offset and compa..." alt="" coords="698,97,877,124"/>
+<area shape="rect" id="node8" href="$database__helper_8c.html#a9e4d4478a0378935683e00367e45fd16" title="Returns cell number of passed cell index." alt="" coords="675,149,900,190"/>
+<area shape="rect" id="node9" href="$database__helper_8c.html#a60712605bf03a4d9878eda0c02fca7be" title="Returns module number of passed cell index." alt="" coords="687,214,888,255"/>
+<area shape="rect" id="node10" href="$database__helper_8c.html#a68e6a9d94a49713d586a14b0b949ddad" title="Returns string number of passed cell index." alt="" coords="953,243,1146,285"/>
+</map>

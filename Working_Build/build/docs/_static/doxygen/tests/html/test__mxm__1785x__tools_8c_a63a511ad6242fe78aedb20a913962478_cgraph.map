@@ -1,0 +1,5 @@
+<map id="testScaleAndConvert2500" name="testScaleAndConvert2500">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,176,57"/>
+<area shape="rect" id="node2" href="$mxm__1785x__tools_8c.html#a2b0a88c10d76ee1f9842969d35c0e676" title="convert a unipolar 14bit&#45;value and shifts it into the 16bit&#45;format" alt="" coords="231,5,417,32"/>
+<area shape="rect" id="node3" href="$mxm__1785x__tools_8c.html#a9b326fed943ba841b17fb6272d79945b" title="convert a voltage value into a unipolar 14bit value" alt="" coords="224,56,424,83"/>
+</map>

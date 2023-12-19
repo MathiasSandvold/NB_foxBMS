@@ -1,0 +1,5 @@
+<map id="SOE_SetValue" name="SOE_SetValue">
+<area shape="rect" id="node1" title="sets SOE value with a parameter between 0.0 and 100.0." alt="" coords="5,46,116,73"/>
+<area shape="rect" id="node2" href="$soe__counting_8c.html#ad6713da865936c6858b60e20afe15543" title="calculates string energy in Wh from passed SOE in percentage" alt="" coords="164,5,371,47"/>
+<area shape="rect" id="node3" href="$soe__counting_8c.html#a91d803600db5f528584b902a06996f99" title="calculates string SOE in percentage from passed string energy in Wh" alt="" coords="167,71,368,112"/>
+</map>

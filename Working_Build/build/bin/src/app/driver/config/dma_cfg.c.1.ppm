@@ -1,0 +1,694 @@
+#define __unsigned_chars__ 1	/* Predefined */
+#define __PRAGMA_REDEFINE_EXTNAME 1	/* Predefined */
+#define __DATE__ "Sep  7 2023"	/* Predefined */
+#define __TIME__ "11:08:38"	/* Predefined */
+#define __STDC__ 1	/* Predefined */
+#define __STDC_VERSION__ 201112L	/* Predefined */
+#define __STDC_UTF_16__ 1	/* Predefined */
+#define __STDC_UTF_32__ 1	/* Predefined */
+#define __STDC_HOSTED__ 1	/* Predefined */
+#define __TI_C99_COMPLEX_ENABLED__ 1	/* Predefined */
+#define __STDC_NO_THREADS__ 1	/* Predefined */
+#define __edg_front_end__ 1	/* Predefined */
+#define __EDG_VERSION__ 413	/* Predefined */
+#define __EDG_SIZE_TYPE__ unsigned int	/* Predefined */
+#define __EDG_PTRDIFF_TYPE__ int	/* Predefined */
+#define __TI_COMPILER_VERSION__ 20002004	/* Predefined */
+#define __COMPILER_VERSION__ 20002004	/* Predefined */
+#define __TI_COMPILER_VERSION_QUAL_ID__ 20344	/* Predefined */
+#define __TI_COMPILER_VERSION_QUAL__ QUAL_LETTER	/* Predefined */
+#define __TMS470__ 1	/* Predefined */
+#define __TI_ARM__ 1	/* Predefined */
+#define __ARM_BIG_ENDIAN 1	/* Predefined */
+#define __32bis__ 1	/* Predefined */
+#define __eabi__ 1	/* Predefined */
+#define __TI_EABI_SUPPORT__ 1	/* Predefined */
+#define __TI_VFPV3D16_SUPPORT__ 1	/* Predefined */
+#define __ARM_FP 12	/* Predefined */
+#define __TI_VFP_SUPPORT__ 1	/* Predefined */
+#define __ARM_FP16_ARGS 1	/* Predefined */
+#define __ARM_FP16_FORMAT_IEEE 1	/* Predefined */
+#define __ARM_PCS_VFP 1	/* Predefined */
+#define __TI_TMS470_V7__ 1	/* Predefined */
+#define __TI_ARM_V7__ 1	/* Predefined */
+#define __ARM_32BIT_STATE 1	/* Predefined */
+#define __ARM_ARCH 7	/* Predefined */
+#define __ARM_ARCH_ISA_THUMB 2	/* Predefined */
+#define __ARM_FEATURE_CLZ 1	/* Predefined */
+#define __ARM_FEATURE_SAT 1	/* Predefined */
+#define __ARM_FEATURE_UNALIGNED 1	/* Predefined */
+#define __ARM_FEATURE_LDREX 15	/* Predefined */
+#define __TI_TMS470_V7R4__ 1	/* Predefined */
+#define __TI_ARM_V7R4__ 1	/* Predefined */
+#define __TI_TMS470_V7R5__ 1	/* Predefined */
+#define __TI_ARM_V7R5__ 1	/* Predefined */
+#define __ARM_ARCH_PROFILE 82	/* Predefined */
+#define __ARM_ACLE 200	/* Predefined */
+#define __ARM_PCS 1	/* Predefined */
+#define __ARM_ARCH_ISA_ARM 1	/* Predefined */
+#define __ARM_FEATURE_DSP 1	/* Predefined */
+#define __ARM_FEATURE_SIMD32 1	/* Predefined */
+#define __SIZE_T_TYPE__ unsigned	/* Predefined */
+#define __PTRDIFF_T_TYPE__ int	/* Predefined */
+#define __ARM_SIZEOF_MINIMAL_ENUM 1	/* Predefined */
+#define __WCHAR_T_TYPE__ unsigned short	/* Predefined */
+#define __ARM_SIZEOF_WCHAR_T 2	/* Predefined */
+#define __TI_EABI__ 1	/* Predefined */
+#define __ELF__ 1	/* Predefined */
+#define __big_endian__ 1	/* Predefined */
+#define __BIG_ENDIAN__ 1	/* Predefined */
+#define __TI_STRICT_ANSI_MODE__ 1	/* Predefined */
+#define __TI_WCHAR_T_BITS__ 16	/* Predefined */
+#define __TI_GNU_ATTRIBUTE_SUPPORT__ 1	/* Predefined */
+#define __TI_STRICT_FP_MODE__ 1	/* Predefined */
+#define __CHAR_BIT__ 8	/* Predefined */
+#define __SCHAR_MAX__ 127	/* Predefined */
+#define __SHRT_MAX__ 32767	/* Predefined */
+#define __INT_MAX__ 2147483647	/* Predefined */
+#define __LONG_MAX__ 2147483647	/* Predefined */
+#define __LONG_LONG_MAX__ 9223372036854775807	/* Predefined */
+#define __SIZEOF_INT__ 4	/* Predefined */
+#define __SIZEOF_SHORT__ 2	/* Predefined */
+#define __SIZEOF_LONG__ 4	/* Predefined */
+#define __SIZEOF_LONG_LONG__ 8	/* Predefined */
+#define __SIZEOF_WCHAR_T__ 2	/* Predefined */
+#define __SIZEOF_FLOAT__ 4	/* Predefined */
+#define __SIZEOF_DOUBLE__ 8	/* Predefined */
+#define __SIZEOF_LONG_DOUBLE__ 8	/* Predefined */
+#define __SIZEOF_SIZE_T__ 4	/* Predefined */
+#define __SIZEOF_WINT_T__ 2	/* Predefined */
+#define __SIZEOF_PTRDIFF_T__ 4	/* Predefined */
+#define _OPTIMIZE_FOR_SPACE 1
+#define ASSERT_LEVEL 0
+#define FOXBMS_AFE_DRIVER_TYPE_FSM 1
+#define FOXBMS_AFE_DRIVER_TYPE_NO_FSM 0
+#define FOXBMS_USES_FREERTOS 1
+#define _INLINE 1
+#define FOXBMS__DMA_CFG_H_ 	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define FOXBMS__BATTERY_SYSTEM_CFG_H_ 	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define FOXBMS__GENERAL_H_ 	/* ..\..\src\app\main\include\general.h */
+#define FOXBMS__FASSERT_H_ 	/* ..\..\src\app\main\include\fassert.h */
+#define __bool_true_false_are_defined 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdbool.h */
+#define __TI_CONFIG_H 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_PROPRIETARY_PRAGMA(arg) _Pragma(arg)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define __TI_PROPRIETARY_STRICT_ANSI_MACRO __TI_STRICT_ANSI_MODE__	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define __TI_PROPRIETARY_STRICT_FP_MACRO __TI_STRICT_FP_MODE__	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define __TI_PROPRIETARY_UNSIGNED_CHARS__ __unsigned_chars__	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_NORETURN _Noreturn	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_NOEXCEPT 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_C99LIB 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_C11LIB 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _TI_NOEXCEPT_CPP14 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_ti_config.h */
+#define _LINKAGE 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _CODE_ACCESS 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _DATA_ACCESS 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _DATA_ACCESS_NEAR 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _IDECL static __inline	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define _IDEFN static __inline	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\linkage.h */
+#define false 0	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdbool.h */
+#define true 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdbool.h */
+#define bool _Bool	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdbool.h */
+#define _STDINT_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\stdint.h */
+#define __STDINT40_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\_stdint40.h */
+#define _SYS_STDINT_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define _SYS_CDEFS_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __BEGIN_DECLS 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __END_DECLS 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GNUCLIKE___TYPEOF 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GNUCLIKE___OFFSETOF 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GNUCLIKE___SECTION 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS_INLINE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS___INLINE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS___INLINE__ 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS___FUNC__ 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS_WARNING 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS_VARADIC_XXX 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CC_SUPPORTS_DYNAMIC_ARRAY_INIT 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GNUC_PREREQ__(ma,mi) 0	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __P(protos) protos	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CONCAT1(x,y) x ## y	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __CONCAT(x,y) __CONCAT1(x,y)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __STRING(x) #x	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __XSTRING(x) __STRING(x)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __const const	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __signed signed	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __volatile volatile	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __weak_symbol __attribute__((__weak__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __dead2 __attribute__((__noreturn__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __pure2 __attribute__((__const__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __unused __attribute__((__unused__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __used __attribute__((__used__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __packed __attribute__((__packed__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __aligned(x) __attribute__((__aligned__(x)))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __section(x) __attribute__((__section__(x)))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __alloc_size(x) __attribute__((__alloc_size__(x)))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __alloc_align(x) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __alignof(x) __alignof__(x)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __generic(expr,t,yes,no) _Generic(expr, t: yes, default: no)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __min_size(x) (x)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __malloc_like 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __pure 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __always_inline __attribute__((__always_inline__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __noinline __attribute__ ((__noinline__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __fastcall 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __result_use_check 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __returns_twice 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __unreachable() ((void)0)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __LONG_LONG_SUPPORTED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __predict_true(exp) (exp)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __predict_false(exp) (exp)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __null_sentinel 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __exported 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __hidden 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __offsetof(type,field) ((__size_t)(__uintptr_t)((const volatile void *)&((type *)0)->field))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __rangeof(type,start,end) (__offsetof(type, end) - __offsetof(type, start))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __containerof(x,s,m) __DEQUALIFY(s *, (const volatile char *)(x) - __offsetof(s, m))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __printflike(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __scanflike(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __format_arg(fmtarg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __strfmonlike(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __strftimelike(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __printf0like(fmtarg,firstvararg) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GLOBL1(sym) __asm__(".globl " #sym)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __GLOBL(sym) __GLOBL1(sym)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __IDSTRING(name,string) static const char name[] __unused = string	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __extension__ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __FBSDID(s) __IDSTRING(__CONCAT(__rcsid_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __RCSID(s) __IDSTRING(__CONCAT(__rcsid_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __RCSID_SOURCE(s) __IDSTRING(__CONCAT(__rcsid_source_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __SCCSID(s) __IDSTRING(__CONCAT(__sccsid_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __COPYRIGHT(s) __IDSTRING(__CONCAT(__copyright_,__LINE__),s)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __DECONST(type,var) ((type)(__uintptr_t)(const void *)(var))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __DEVOLATILE(type,var) ((type)(__uintptr_t)(volatile void *)(var))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __DEQUALIFY(type,var) ((type)(__uintptr_t)(const volatile void *)(var))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __POSIX_VISIBLE 200809	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __XSI_VISIBLE 700	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __BSD_VISIBLE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __ISO_C_VISIBLE 2011	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __EXT1_VISIBLE 1	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define _Nonnull 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define _Nullable 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define _Null_unspecified 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __NULLABILITY_PRAGMA_PUSH 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __NULLABILITY_PRAGMA_POP 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __arg_type_tag(arg_kind,arg_idx,type_tag_idx) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __datatype_type_tag(kind,type) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __lock_annotate(x) 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __lockable __lock_annotate(lockable)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __locks_exclusive(...) __lock_annotate(exclusive_lock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __locks_shared(...) __lock_annotate(shared_lock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __trylocks_exclusive(...) __lock_annotate(exclusive_trylock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __trylocks_shared(...) __lock_annotate(shared_trylock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __unlocks(...) __lock_annotate(unlock_function(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __asserts_exclusive(...) __lock_annotate(assert_exclusive_lock(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __asserts_shared(...) __lock_annotate(assert_shared_lock(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __requires_exclusive(...) __lock_annotate(exclusive_locks_required(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __requires_shared(...) __lock_annotate(shared_locks_required(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __requires_unlocked(...) __lock_annotate(locks_excluded(__VA_ARGS__))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __no_lock_analysis __lock_annotate(no_thread_safety_analysis)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __guarded_by(x) __lock_annotate(guarded_by(x))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define __pt_guarded_by(x) __lock_annotate(pt_guarded_by(x))	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/cdefs.h */
+#define _SYS__TYPES_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_types.h */
+#define _MACHINE__TYPES_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_types.h */
+#define __WCHAR_MIN 0	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_types.h */
+#define __WCHAR_MAX 0xffffu	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_types.h */
+#define __INO64 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_types.h */
+#define _MACHINE__STDINT_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT8_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT16_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT32_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT64_C(c) (c ## LL)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT8_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT16_C(c) (c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT32_C(c) (c ## U)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT64_C(c) (c ## ULL)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTMAX_C(c) INT64_C(c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINTMAX_C(c) UINT64_C(c)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT8_MIN (-0x7f-1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT16_MIN (-0x7fff-1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT32_MIN (-0x7fffffff-1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT64_MIN (-0x7fffffffffffffffLL-1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT8_MAX 0x7f	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT16_MAX 0x7fff	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT32_MAX 0x7fffffff	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT64_MAX 0x7fffffffffffffffLL	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT8_MAX 0xff	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT16_MAX 0xffff	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT32_MAX 0xffffffffU	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT64_MAX 0xffffffffffffffffULL	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST8_MIN INT8_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST16_MIN INT16_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST32_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST64_MIN INT64_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST8_MAX INT8_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST16_MAX INT16_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST32_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_LEAST64_MAX INT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_LEAST8_MAX UINT8_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_LEAST16_MAX UINT16_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_LEAST32_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_LEAST64_MAX UINT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST8_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST16_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST32_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST64_MIN INT64_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST8_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST16_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST32_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INT_FAST64_MAX INT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_FAST8_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_FAST16_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_FAST32_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINT_FAST64_MAX UINT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTPTR_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTPTR_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINTPTR_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTMAX_MIN INT64_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define INTMAX_MAX INT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define UINTMAX_MAX UINT64_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define PTRDIFF_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define PTRDIFF_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define SIG_ATOMIC_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define SIG_ATOMIC_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define SIZE_MAX UINT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define WINT_MIN INT32_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define WINT_MAX INT32_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\machine/_stdint.h */
+#define _SYS__STDINT_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INT8_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INT16_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INT32_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INT64_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINT8_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINT16_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINT32_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINT64_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INTPTR_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINTPTR_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _INTMAX_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define _UINTMAX_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/_stdint.h */
+#define __WORDSIZE 32	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define WCHAR_MIN __WCHAR_MIN	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define WCHAR_MAX __WCHAR_MAX	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define RSIZE_MAX (SIZE_MAX >> 1)	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\sys/stdint.h */
+#define FAS_TRAP (0u == 1u)	/* ..\..\src\app\main\include\fassert.h */
+#define FAS_ASSERT_LEVEL_INF_LOOP_AND_DISABLE_INTERRUPTS (0u)	/* ..\..\src\app\main\include\fassert.h */
+#define FAS_ASSERT_LEVEL_INF_LOOP_FOR_DEBUG (1u)	/* ..\..\src\app\main\include\fassert.h */
+#define FAS_ASSERT_LEVEL_NO_OPERATION (2u)	/* ..\..\src\app\main\include\fassert.h */
+#define FAS_ASSERT_LEVEL FAS_ASSERT_LEVEL_INF_LOOP_AND_DISABLE_INTERRUPTS	/* ..\..\src\app\main\include\fassert.h */
+#define FAS_ASSERT_RECORD() do { uint32_t *pc = (uint32_t *)__curpc(); FAS_StoreAssertLocation(pc, __LINE__); } while (false)	/* ..\..\src\app\main\include\fassert.h */
+#define FAS_ASSERT(x) do { if (!(x)) { FAS_ASSERT_RECORD(); FAS_InfiniteLoop(); } } while (false)	/* ..\..\src\app\main\include\fassert.h */
+#define FAS_STATIC_ASSERT(cond,msg) _Static_assert(cond, msg)	/* ..\..\src\app\main\include\fassert.h */
+#define FOXBMS__FSTD_TYPES_H_ 	/* ..\..\src\app\main\include\fstd_types.h */
+#define NULL ((void *)0u)	/* ..\..\src\app\main\include\fstd_types.h */
+#define NULL_PTR ((void *)(0u))	/* ..\..\src\app\main\include\fstd_types.h */
+#define GEN_SET_BIT(register,bit) ((register) |= (uint32)((uint32)1U << (bit)))	/* ..\..\src\app\main\include\general.h */
+#define GEN_CLEAR_BIT(register,bit) ((register) &= ~(uint32)((uint32)1U << (bit)))	/* ..\..\src\app\main\include\general.h */
+#define GEN_MUST_CHECK_RETURN __attribute__((warn_unused_result))	/* ..\..\src\app\main\include\general.h */
+#define GEN_ALWAYS_INLINE __attribute__((always_inline))	/* ..\..\src\app\main\include\general.h */
+#define UNIT_TEST_WEAK_IMPL 	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U1u(x) (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U2u(x) GEN_REPEAT_U1u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U3u(x) GEN_REPEAT_U2u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U4u(x) GEN_REPEAT_U3u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U5u(x) GEN_REPEAT_U4u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U6u(x) GEN_REPEAT_U5u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U7u(x) GEN_REPEAT_U6u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U8u(x) GEN_REPEAT_U7u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U9u(x) GEN_REPEAT_U8u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U10u(x) GEN_REPEAT_U9u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U11u(x) GEN_REPEAT_U10u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U12u(x) GEN_REPEAT_U11u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U13u(x) GEN_REPEAT_U12u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U14u(x) GEN_REPEAT_U13u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U15u(x) GEN_REPEAT_U14u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U16u(x) GEN_REPEAT_U15u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U17u(x) GEN_REPEAT_U16u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U18u(x) GEN_REPEAT_U17u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U19u(x) GEN_REPEAT_U18u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U20u(x) GEN_REPEAT_U19u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U21u(x) GEN_REPEAT_U20u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U22u(x) GEN_REPEAT_U21u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U23u(x) GEN_REPEAT_U22u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U24u(x) GEN_REPEAT_U23u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U25u(x) GEN_REPEAT_U24u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U26u(x) GEN_REPEAT_U25u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U27u(x) GEN_REPEAT_U26u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U28u(x) GEN_REPEAT_U27u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U29u(x) GEN_REPEAT_U28u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U30u(x) GEN_REPEAT_U29u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U31u(x) GEN_REPEAT_U30u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U32u(x) GEN_REPEAT_U31u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U33u(x) GEN_REPEAT_U32u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U34u(x) GEN_REPEAT_U33u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U35u(x) GEN_REPEAT_U34u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U36u(x) GEN_REPEAT_U35u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U37u(x) GEN_REPEAT_U36u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U38u(x) GEN_REPEAT_U37u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U39u(x) GEN_REPEAT_U38u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U40u(x) GEN_REPEAT_U39u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U41u(x) GEN_REPEAT_U40u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U42u(x) GEN_REPEAT_U41u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U43u(x) GEN_REPEAT_U42u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U44u(x) GEN_REPEAT_U43u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U45u(x) GEN_REPEAT_U44u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U46u(x) GEN_REPEAT_U45u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U47u(x) GEN_REPEAT_U46u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U48u(x) GEN_REPEAT_U47u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U49u(x) GEN_REPEAT_U48u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U50u(x) GEN_REPEAT_U49u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U51u(x) GEN_REPEAT_U50u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U52u(x) GEN_REPEAT_U51u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U53u(x) GEN_REPEAT_U52u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U54u(x) GEN_REPEAT_U53u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U55u(x) GEN_REPEAT_U54u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U56u(x) GEN_REPEAT_U55u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U57u(x) GEN_REPEAT_U56u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U58u(x) GEN_REPEAT_U57u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U59u(x) GEN_REPEAT_U58u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U60u(x) GEN_REPEAT_U59u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U61u(x) GEN_REPEAT_U60u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U62u(x) GEN_REPEAT_U61u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U63u(x) GEN_REPEAT_U62u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U64u(x) GEN_REPEAT_U63u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U65u(x) GEN_REPEAT_U64u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U66u(x) GEN_REPEAT_U65u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U67u(x) GEN_REPEAT_U66u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U68u(x) GEN_REPEAT_U67u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U69u(x) GEN_REPEAT_U68u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U70u(x) GEN_REPEAT_U69u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U71u(x) GEN_REPEAT_U70u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U72u(x) GEN_REPEAT_U71u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U73u(x) GEN_REPEAT_U72u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U74u(x) GEN_REPEAT_U73u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U75u(x) GEN_REPEAT_U74u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U76u(x) GEN_REPEAT_U75u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U77u(x) GEN_REPEAT_U76u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U78u(x) GEN_REPEAT_U77u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U79u(x) GEN_REPEAT_U78u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U80u(x) GEN_REPEAT_U79u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U81u(x) GEN_REPEAT_U80u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U82u(x) GEN_REPEAT_U81u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U83u(x) GEN_REPEAT_U82u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U84u(x) GEN_REPEAT_U83u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U85u(x) GEN_REPEAT_U84u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U86u(x) GEN_REPEAT_U85u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U87u(x) GEN_REPEAT_U86u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U88u(x) GEN_REPEAT_U87u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U89u(x) GEN_REPEAT_U88u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U90u(x) GEN_REPEAT_U89u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U91u(x) GEN_REPEAT_U90u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U92u(x) GEN_REPEAT_U91u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U93u(x) GEN_REPEAT_U92u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U94u(x) GEN_REPEAT_U93u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U95u(x) GEN_REPEAT_U94u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U96u(x) GEN_REPEAT_U95u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U97u(x) GEN_REPEAT_U96u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U98u(x) GEN_REPEAT_U97u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U99u(x) GEN_REPEAT_U98u(x), (x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_Ux(x,n) GEN_REPEAT_U ## n(x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_MAXIMUM_REPETITIONS (99u)	/* ..\..\src\app\main\include\general.h */
+#define GEN_REPEAT_U(x,n) GEN_REPEAT_Ux(x, n)	/* ..\..\src\app\main\include\general.h */
+#define GEN_GET_ARGS(...) __VA_ARGS__	/* ..\..\src\app\main\include\general.h */
+#define GEN_STRIP_PARENS(x) x	/* ..\..\src\app\main\include\general.h */
+#define GEN_STRIP(x) GEN_STRIP_PARENS(GEN_GET_ARGS x)	/* ..\..\src\app\main\include\general.h */
+#define GEN_BYTES_PER_WORD (4u)	/* ..\..\src\app\main\include\general.h */
+#define BS_POSITIVE_DISCHARGE_CURRENT (true)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_NR_OF_STRINGS (1u)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_NR_OF_MODULES_PER_STRING (3u)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_NR_OF_CELL_BLOCKS_PER_MODULE (16u)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_NR_OF_PARALLEL_CELLS_PER_MODULE (1u)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_BALANCING_RESISTANCE_ohm (100.0)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_NR_OF_GPIOS_PER_MODULE (10u)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_NR_OF_GPAS_PER_MODULE (2u)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_NR_OF_TEMP_SENSORS_PER_MODULE (8u)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_NR_OF_CELL_BLOCKS_PER_STRING (BS_NR_OF_MODULES_PER_STRING * BS_NR_OF_CELL_BLOCKS_PER_MODULE)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_NR_OF_TEMP_SENSORS_PER_STRING (BS_NR_OF_MODULES_PER_STRING * BS_NR_OF_TEMP_SENSORS_PER_MODULE)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_NR_OF_TEMP_SENSORS (BS_NR_OF_TEMP_SENSORS_PER_STRING * BS_NR_OF_STRINGS)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_CURRENT_SENSOR_PRESENT (true)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define CURRENT_SENSOR_ISABELLENHUETTE_CYCLIC 	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_CURRENT_MEASUREMENT_RESPONSE_TIMEOUT_ms (200u)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_COULOMB_COUNTING_MEASUREMENT_RESPONSE_TIMEOUT_ms (2000u)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_ENERGY_COUNTING_MEASUREMENT_RESPONSE_TIMEOUT_ms (2000u)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_MAIN_CONTACTORS_MAXIMUM_BREAK_CURRENT_mA (800000)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_MAIN_FUSE_MAXIMUM_TRIGGER_DURATION_ms (30000u)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_MAXIMUM_STRING_CURRENT_mA (780000u)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_MAXIMUM_PACK_CURRENT_mA (780000u * BS_NR_OF_STRINGS)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_IGNORE_INTERLOCK_FEEDBACK (false)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_CHECK_CAN_TIMING (false)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_BALANCING_DEFAULT_INACTIVE (true)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_NR_OF_VOLTAGES_FROM_CURRENT_SENSOR (3u)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_NR_OF_CONTACTORS_OUTSIDE_STRINGS (1u)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_NR_OF_CONTACTORS ((2u * BS_NR_OF_STRINGS) + BS_NR_OF_CONTACTORS_OUTSIDE_STRINGS)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_REST_CURRENT_mA (200)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_RELAXATION_PERIOD_10ms (60000u)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_CS_THRESHOLD_NO_CURRENT_mA (200u)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_MAX_VOLTAGE_DROP_OVER_FUSE_mV (500)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_CHECK_FUSE_PLACED_IN_NORMAL_PATH (true)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_CHECK_FUSE_PLACED_IN_CHARGE_PATH (false)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_STANDBY_PERIODIC_OPEN_WIRE_CHECK (false)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_STANDBY_OPEN_WIRE_PERIOD_ms (600000)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_NORMAL_PERIODIC_OPEN_WIRE_CHECK (false)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_NORMAL_OPEN_WIRE_PERIOD_ms (600000)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_CHARGE_PERIODIC_OPEN_WIRE_CHECK (false)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_CHARGE_OPEN_WIRE_PERIOD_ms (600000)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define BS_ERROR_OPEN_WIRE_PERIOD_ms (30000)	/* ..\..\src\app\application\config\battery_system_cfg.h */
+#define __SPI_H__ 	/* src\hal\include\HL_spi.h */
+#define __REG_SPI_H__ 	/* src\hal\include\HL_reg_spi.h */
+#define __SYS_COMMON_H__ 	/* src\hal\include\HL_sys_common.h */
+#define __HAL_STDTYPES_H__ 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _UINT64_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _UINT32_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _UINT16_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _UINT8_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _BOOLEAN_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _SINT64_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _SINT32_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _SINT16_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _SINT8_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _FLOAT32_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define _FLOAT64_DECLARED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define STATUSTYPEDEFINED 	/* src\hal\include\HL_hal_stdtypes.h */
+#define E_OK 0x00U	/* src\hal\include\HL_hal_stdtypes.h */
+#define E_NOT_OK 0x01U	/* src\hal\include\HL_hal_stdtypes.h */
+#define STD_ON 0x01U	/* src\hal\include\HL_hal_stdtypes.h */
+#define STD_OFF 0x00U	/* src\hal\include\HL_hal_stdtypes.h */
+#define TRUE true	/* src\hal\include\HL_hal_stdtypes.h */
+#define FALSE false	/* src\hal\include\HL_hal_stdtypes.h */
+#define _TBOOLEAN_DECLARED 	/* src\hal\include\HL_sys_common.h */
+#define __little_endian__ 0	/* src\hal\include\HL_sys_common.h */
+#define __LITTLE_ENDIAN__ 0	/* src\hal\include\HL_sys_common.h */
+#define ASSERT(expr) 	/* src\hal\include\HL_sys_common.h */
+#define __REG_GIO_H__ 	/* src\hal\include\HL_reg_gio.h */
+#define gioREG ((gioBASE_t *)0xFFF7BC00U)	/* src\hal\include\HL_reg_gio.h */
+#define gioPORTA ((gioPORT_t *)0xFFF7BC34U)	/* src\hal\include\HL_reg_gio.h */
+#define gioPORTB ((gioPORT_t *)0xFFF7BC54U)	/* src\hal\include\HL_reg_gio.h */
+#define spiREG1 ((spiBASE_t *)0xFFF7F400U)	/* src\hal\include\HL_reg_spi.h */
+#define spiPORT1 ((gioPORT_t *)0xFFF7F418U)	/* src\hal\include\HL_reg_spi.h */
+#define spiREG2 ((spiBASE_t *)0xFFF7F600U)	/* src\hal\include\HL_reg_spi.h */
+#define spiPORT2 ((gioPORT_t *)0xFFF7F618U)	/* src\hal\include\HL_reg_spi.h */
+#define spiREG3 ((spiBASE_t *)0xFFF7F800U)	/* src\hal\include\HL_reg_spi.h */
+#define spiPORT3 ((gioPORT_t *)0xFFF7F818U)	/* src\hal\include\HL_reg_spi.h */
+#define spiREG4 ((spiBASE_t *)0xFFF7FA00U)	/* src\hal\include\HL_reg_spi.h */
+#define spiPORT4 ((gioPORT_t *)0xFFF7FA18U)	/* src\hal\include\HL_reg_spi.h */
+#define spiREG5 ((spiBASE_t *)0xFFF7FC00U)	/* src\hal\include\HL_reg_spi.h */
+#define spiPORT5 ((gioPORT_t *)0xFFF7FC18U)	/* src\hal\include\HL_reg_spi.h */
+#define SPI1_GCR1_CONFIGVALUE (0x01000000U | (uint32)((uint32)1U << 1U) | 1U)	/* src\hal\include\HL_spi.h */
+#define SPI1_INT0_CONFIGVALUE ((uint32)((uint32)1U << 24U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)1U << 6U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 3U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI1_LVL_CONFIGVALUE ((uint32)((uint32)0U << 9U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)0U << 6U) | (uint32)((uint32)0U << 4U) | (uint32)((uint32)0U << 3U) | (uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 1U) | (uint32)((uint32)0U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI1_PC0_CONFIGVALUE ((uint32)((uint32)0U << 0U) | (uint32)((uint32)0U << 1U) | (uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 3U) | (uint32)((uint32)0U << 4U) | (uint32)((uint32)0U << 5U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)1U << 11U) | (uint32)((uint32)1U << 24U) | (uint32)((uint32)1U << 17U) | (uint32)((uint32)1U << 25U))	/* src\hal\include\HL_spi.h */
+#define SPI1_PC1_CONFIGVALUE ((uint32)((uint32)1U << 0U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 3U) | (uint32)((uint32)0U << 4U) | (uint32)((uint32)1U << 5U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)0U << 11U) | (uint32)((uint32)0U << 24U) | (uint32)((uint32)1U << 17U) | (uint32)((uint32)0U << 25U))	/* src\hal\include\HL_spi.h */
+#define SPI1_PC6_CONFIGVALUE ((uint32)((uint32)0U << 0U) | (uint32)((uint32)0U << 1U) | (uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 3U) | (uint32)((uint32)0U << 4U) | (uint32)((uint32)0U << 5U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)0U << 9U) | (uint32)((uint32)0U << 10U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)1U << 11U) | (uint32)((uint32)1U << 24U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)1U << 25U))	/* src\hal\include\HL_spi.h */
+#define SPI1_PC7_CONFIGVALUE ((uint32)((uint32)1U << 0U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 3U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 5U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)0U << 11U) | (uint32)((uint32)0U << 24U) | (uint32)((uint32)1U << 17U) | (uint32)((uint32)0U << 25U))	/* src\hal\include\HL_spi.h */
+#define SPI1_PC8_CONFIGVALUE ((uint32)((uint32)1U << 0U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 3U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 5U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)1U << 11U) | (uint32)((uint32)1U << 24U) | (uint32)((uint32)1U << 17U) | (uint32)((uint32)1U << 25U))	/* src\hal\include\HL_spi.h */
+#define SPI1_DELAY_CONFIGVALUE ((uint32)((uint32)173U << 24U) | (uint32)((uint32)99U << 16U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)0U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI1_FMT0_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)99U << 8U) | (uint32)((uint32)8U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI1_FMT1_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)24U << 8U) | (uint32)((uint32)8U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI1_FMT2_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)49U << 8U) | (uint32)((uint32)16U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI1_FMT3_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)32U << 8U) | (uint32)((uint32)8U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI2_GCR1_CONFIGVALUE (0x01000000U | (uint32)((uint32)1U << 1U) | 1U)	/* src\hal\include\HL_spi.h */
+#define SPI2_INT0_CONFIGVALUE ((uint32)((uint32)1U << 24U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)1U << 6U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 3U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI2_LVL_CONFIGVALUE ((uint32)((uint32)0U << 9U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)0U << 6U) | (uint32)((uint32)0U << 4U) | (uint32)((uint32)0U << 3U) | (uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 1U) | (uint32)((uint32)0U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI2_PC0_CONFIGVALUE ((uint32)((uint32)0U << 0U) | (uint32)((uint32)0U << 1U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)1U << 11U) | (uint32)((uint32)1U << 24U))	/* src\hal\include\HL_spi.h */
+#define SPI2_PC1_CONFIGVALUE ((uint32)((uint32)1U << 0U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)0U << 11U) | (uint32)((uint32)0U << 24U))	/* src\hal\include\HL_spi.h */
+#define SPI2_PC6_CONFIGVALUE ((uint32)((uint32)0U << 0U) | (uint32)((uint32)0U << 1U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)0U << 9U) | (uint32)((uint32)0U << 10U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)1U << 11U) | (uint32)((uint32)1U << 24U))	/* src\hal\include\HL_spi.h */
+#define SPI2_PC7_CONFIGVALUE ((uint32)((uint32)1U << 0U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)0U << 11U) | (uint32)((uint32)0U << 24U))	/* src\hal\include\HL_spi.h */
+#define SPI2_PC8_CONFIGVALUE ((uint32)((uint32)1U << 0U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)1U << 11U) | (uint32)((uint32)1U << 24U))	/* src\hal\include\HL_spi.h */
+#define SPI2_DELAY_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)0U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI2_FMT0_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)9U << 8U) | (uint32)((uint32)8U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI2_FMT1_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)24U << 8U) | (uint32)((uint32)16U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI2_FMT2_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)9U << 8U) | (uint32)((uint32)16U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI2_FMT3_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)99U << 8U) | (uint32)((uint32)16U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI3_GCR1_CONFIGVALUE (0x01000000U | (uint32)((uint32)1U << 1U) | 1U)	/* src\hal\include\HL_spi.h */
+#define SPI3_INT0_CONFIGVALUE ((uint32)((uint32)1U << 24U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)1U << 6U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 3U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI3_LVL_CONFIGVALUE ((uint32)((uint32)0U << 9U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)0U << 6U) | (uint32)((uint32)0U << 4U) | (uint32)((uint32)0U << 3U) | (uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 1U) | (uint32)((uint32)0U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI3_PC0_CONFIGVALUE ((uint32)((uint32)0U << 0U) | (uint32)((uint32)0U << 1U) | (uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 3U) | (uint32)((uint32)0U << 4U) | (uint32)((uint32)0U << 5U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)1U << 11U) | (uint32)((uint32)1U << 24U))	/* src\hal\include\HL_spi.h */
+#define SPI3_PC1_CONFIGVALUE ((uint32)((uint32)1U << 0U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 3U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 5U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)0U << 11U) | (uint32)((uint32)0U << 24U))	/* src\hal\include\HL_spi.h */
+#define SPI3_PC6_CONFIGVALUE ((uint32)((uint32)0U << 0U) | (uint32)((uint32)0U << 1U) | (uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 3U) | (uint32)((uint32)0U << 4U) | (uint32)((uint32)0U << 5U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)0U << 9U) | (uint32)((uint32)0U << 10U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)1U << 11U) | (uint32)((uint32)1U << 24U))	/* src\hal\include\HL_spi.h */
+#define SPI3_PC7_CONFIGVALUE ((uint32)((uint32)1U << 0U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 3U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 5U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)0U << 11U) | (uint32)((uint32)0U << 24U))	/* src\hal\include\HL_spi.h */
+#define SPI3_PC8_CONFIGVALUE ((uint32)((uint32)1U << 0U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 3U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 5U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)1U << 11U) | (uint32)((uint32)1U << 24U))	/* src\hal\include\HL_spi.h */
+#define SPI3_DELAY_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)0U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI3_FMT0_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)24U << 8U) | (uint32)((uint32)16U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI3_FMT1_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)2U << 8U) | (uint32)((uint32)8U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI3_FMT2_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)3U << 8U) | (uint32)((uint32)16U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI3_FMT3_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)99U << 8U) | (uint32)((uint32)16U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI4_GCR1_CONFIGVALUE (0x01000000U | (uint32)((uint32)1U << 1U) | 1U)	/* src\hal\include\HL_spi.h */
+#define SPI4_INT0_CONFIGVALUE ((uint32)((uint32)1U << 24U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)1U << 6U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 3U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI4_LVL_CONFIGVALUE ((uint32)((uint32)0U << 9U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)0U << 6U) | (uint32)((uint32)0U << 4U) | (uint32)((uint32)0U << 3U) | (uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 1U) | (uint32)((uint32)0U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI4_PC0_CONFIGVALUE ((uint32)((uint32)0U << 0U) | (uint32)((uint32)0U << 1U) | (uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 3U) | (uint32)((uint32)0U << 4U) | (uint32)((uint32)0U << 5U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)1U << 11U) | (uint32)((uint32)1U << 24U))	/* src\hal\include\HL_spi.h */
+#define SPI4_PC1_CONFIGVALUE ((uint32)((uint32)0U << 0U) | (uint32)((uint32)0U << 1U) | (uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 3U) | (uint32)((uint32)0U << 4U) | (uint32)((uint32)0U << 5U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)0U << 9U) | (uint32)((uint32)0U << 10U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)1U << 11U) | (uint32)((uint32)1U << 24U))	/* src\hal\include\HL_spi.h */
+#define SPI4_PC6_CONFIGVALUE ((uint32)((uint32)0U << 0U) | (uint32)((uint32)0U << 1U) | (uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 3U) | (uint32)((uint32)0U << 4U) | (uint32)((uint32)0U << 5U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)0U << 9U) | (uint32)((uint32)0U << 10U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)0U << 11U) | (uint32)((uint32)0U << 24U))	/* src\hal\include\HL_spi.h */
+#define SPI4_PC7_CONFIGVALUE ((uint32)((uint32)0U << 0U) | (uint32)((uint32)0U << 1U) | (uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 3U) | (uint32)((uint32)0U << 4U) | (uint32)((uint32)0U << 5U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)1U << 11U) | (uint32)((uint32)1U << 24U))	/* src\hal\include\HL_spi.h */
+#define SPI4_PC8_CONFIGVALUE ((uint32)((uint32)1U << 0U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 3U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 5U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)1U << 11U) | (uint32)((uint32)1U << 24U))	/* src\hal\include\HL_spi.h */
+#define SPI4_DELAY_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)0U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI4_FMT0_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)99U << 8U) | (uint32)((uint32)8U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI4_FMT1_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)24U << 8U) | (uint32)((uint32)8U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI4_FMT2_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)49U << 8U) | (uint32)((uint32)16U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI4_FMT3_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)32U << 8U) | (uint32)((uint32)8U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI5_GCR1_CONFIGVALUE (0x01000000U | (uint32)((uint32)1U << 1U) | 0U)	/* src\hal\include\HL_spi.h */
+#define SPI5_INT0_CONFIGVALUE ((uint32)((uint32)1U << 24U) | (0U << 9U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)1U << 6U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 3U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI5_LVL_CONFIGVALUE ((uint32)((uint32)0U << 9U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)0U << 6U) | (uint32)((uint32)0U << 4U) | (uint32)((uint32)0U << 3U) | (uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 1U) | (uint32)((uint32)0U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI5_PC0_CONFIGVALUE ((uint32)((uint32)1U << 0U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 3U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 5U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)1U << 11U) | (uint32)((uint32)1U << 24U) | (uint32)((uint32)1U << 17U) | (uint32)((uint32)1U << 18U) | (uint32)((uint32)1U << 19U) | (uint32)((uint32)1U << 25U) | (uint32)((uint32)1U << 26U) | (uint32)((uint32)1U << 27U))	/* src\hal\include\HL_spi.h */
+#define SPI5_PC1_CONFIGVALUE ((uint32)((uint32)1U << 0U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 3U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 5U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)0U << 11U) | (uint32)((uint32)0U << 24U) | (uint32)((uint32)1U << 17U) | (uint32)((uint32)1U << 18U) | (uint32)((uint32)1U << 19U) | (uint32)((uint32)0U << 25U) | (uint32)((uint32)0U << 26U) | (uint32)((uint32)0U << 27U))	/* src\hal\include\HL_spi.h */
+#define SPI5_PC6_CONFIGVALUE ((uint32)((uint32)0U << 0U) | (uint32)((uint32)0U << 1U) | (uint32)((uint32)0U << 2U) | (uint32)((uint32)0U << 3U) | (uint32)((uint32)0U << 4U) | (uint32)((uint32)0U << 5U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)0U << 9U) | (uint32)((uint32)0U << 10U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)1U << 11U) | (uint32)((uint32)1U << 24U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)0U << 18U) | (uint32)((uint32)0U << 19U) | (uint32)((uint32)1U << 25U) | (uint32)((uint32)1U << 26U) | (uint32)((uint32)1U << 27U))	/* src\hal\include\HL_spi.h */
+#define SPI5_PC7_CONFIGVALUE ((uint32)((uint32)1U << 0U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 3U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 5U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)0U << 11U) | (uint32)((uint32)0U << 24U) | (uint32)((uint32)1U << 17U) | (uint32)((uint32)1U << 18U) | (uint32)((uint32)1U << 19U) | (uint32)((uint32)0U << 25U) | (uint32)((uint32)0U << 26U) | (uint32)((uint32)0U << 27U))	/* src\hal\include\HL_spi.h */
+#define SPI5_PC8_CONFIGVALUE ((uint32)((uint32)1U << 0U) | (uint32)((uint32)1U << 1U) | (uint32)((uint32)1U << 2U) | (uint32)((uint32)1U << 3U) | (uint32)((uint32)1U << 4U) | (uint32)((uint32)1U << 5U) | (uint32)((uint32)1U << 8U) | (uint32)((uint32)1U << 9U) | (uint32)((uint32)1U << 10U) | (uint32)((uint32)1U << 16U) | (uint32)((uint32)1U << 11U) | (uint32)((uint32)1U << 24U) | (uint32)((uint32)1U << 17U) | (uint32)((uint32)1U << 18U) | (uint32)((uint32)1U << 19U) | (uint32)((uint32)1U << 25U) | (uint32)((uint32)1U << 26U) | (uint32)((uint32)1U << 27U))	/* src\hal\include\HL_spi.h */
+#define SPI5_DELAY_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)0U << 8U) | (uint32)((uint32)0U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI5_FMT0_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)49U << 8U) | (uint32)((uint32)16U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI5_FMT1_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)99U << 8U) | (uint32)((uint32)16U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI5_FMT2_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)99U << 8U) | (uint32)((uint32)16U << 0U))	/* src\hal\include\HL_spi.h */
+#define SPI5_FMT3_CONFIGVALUE ((uint32)((uint32)0U << 24U) | (uint32)((uint32)0U << 23U) | (uint32)((uint32)0U << 22U) | (uint32)((uint32)0U << 21U) | (uint32)((uint32)0U << 20U) | (uint32)((uint32)0U << 17U) | (uint32)((uint32)0U << 16U) | (uint32)((uint32)99U << 8U) | (uint32)((uint32)16U << 0U))	/* src\hal\include\HL_spi.h */
+#define DMA_H_ 	/* src\hal\include\HL_sys_dma.h */
+#define __REG_DMA_H__ 	/* src\hal\include\HL_reg_dma.h */
+#define dmaRAMREG ((dmaRAMBASE_t *)0xFFF80000U)	/* src\hal\include\HL_reg_dma.h */
+#define dmaREG ((dmaBASE_t *)0xFFFFF000U)	/* src\hal\include\HL_reg_dma.h */
+#define DMA_INITIAL_FRAME_COUNTER_POSITION (16u)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_CHANNEL_SPI1_TX (DMA_CH0)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_CHANNEL_SPI1_RX (DMA_CH1)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_CHANNEL_SPI2_TX (DMA_CH2)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_CHANNEL_SPI2_RX (DMA_CH3)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_CHANNEL_SPI3_TX (DMA_CH4)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_CHANNEL_SPI3_RX (DMA_CH5)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_CHANNEL_SPI4_TX (DMA_CH6)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_CHANNEL_SPI4_RX (DMA_CH7)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_CHANNEL_SPI5_TX (DMA_CH8)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_CHANNEL_SPI5_RX (DMA_CH9)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_CHANNEL_I2C1_TX (DMA_CH10)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_CHANNEL_I2C1_RX (DMA_CH11)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_CHANNEL_I2C2_TX (DMA_CH12)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_CHANNEL_I2C2_RX (DMA_CH13)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_SPI1_TX (DMA_REQ1)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_SPI1_RX (DMA_REQ0)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_SPI2_TX (DMA_REQ3)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_SPI2_RX (DMA_REQ2)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_SPI3_TX (DMA_REQ15)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_SPI3_RX (DMA_REQ14)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_SPI4_TX (DMA_REQ25)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_SPI4_RX (DMA_REQ24)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_SPI5_TX (DMA_REQ31)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_SPI5_RX (DMA_REQ30)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_I2C1_TX (DMA_REQ11)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_I2C1_RX (DMA_REQ10)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_I2C2_TX (DMA_REQ33)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_I2C2_RX (DMA_REQ32)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_BIG_ENDIAN_ADDRESS_8BIT (3u)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_BIG_ENDIAN_ADDRESS_16BIT (2u)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_NUMBER_SPI_INTERFACES (5u)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMAREQEN_BIT (0x10000u)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define SPIEN_BIT (0x1000000u)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_LTC_TX (DMA_REQ_LINE_SPI1_TX)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_LTC_RX (DMA_REQ_LINE_SPI1_RX)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_N775_TX (DMA_REQ_LINE_SPI1_TX)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define DMA_REQ_LINE_N775_RX (DMA_REQ_LINE_SPI5_RX)	/* C:\Users\Smit\Documents\foxbms-2\src\app\driver\config\dma_cfg.h */
+#define FOXBMS__SPI_H_ 	/* ..\..\src\app\driver\spi\spi.h */
+#define FOXBMS__SPI_CFG_H_ 	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define __HET_H__ 	/* src\hal\include\HL_het.h */
+#define __REG_HET_H__ 	/* src\hal\include\HL_reg_het.h */
+#define hetREG1 ((hetBASE_t *)0xFFF7B800U)	/* src\hal\include\HL_reg_het.h */
+#define hetPORT1 ((gioPORT_t *)0xFFF7B84CU)	/* src\hal\include\HL_reg_het.h */
+#define hetREG2 ((hetBASE_t *)0xFFF7B900U)	/* src\hal\include\HL_reg_het.h */
+#define hetPORT2 ((gioPORT_t *)0xFFF7B94CU)	/* src\hal\include\HL_reg_het.h */
+#define hetRAM1 ((hetRAMBASE_t *)0xFF460000U)	/* src\hal\include\HL_reg_het.h */
+#define hetRAM2 ((hetRAMBASE_t *)0xFF440000U)	/* src\hal\include\HL_reg_het.h */
+#define NHET1RAMPARLOC (*(volatile uint32 *)0xFF462000U)	/* src\hal\include\HL_reg_het.h */
+#define NHET1RAMLOC (*(volatile uint32 *)0xFF460000U)	/* src\hal\include\HL_reg_het.h */
+#define NHET2RAMPARLOC (*(volatile uint32 *)0xFF442000U)	/* src\hal\include\HL_reg_het.h */
+#define NHET2RAMLOC (*(volatile uint32 *)0xFF440000U)	/* src\hal\include\HL_reg_het.h */
+#define _STRING_H_ 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\string.h */
+#define _SIZE_T_DECLARED 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\string.h */
+#define _OPT_IDECL 	/* C:\ti\ccs1031\ccs\tools\compiler\ti-cgt-arm_20.2.4.LTS\include\string.h */
+#define pwm0 0U	/* src\hal\include\HL_het.h */
+#define pwm1 1U	/* src\hal\include\HL_het.h */
+#define pwm2 2U	/* src\hal\include\HL_het.h */
+#define pwm3 3U	/* src\hal\include\HL_het.h */
+#define pwm4 4U	/* src\hal\include\HL_het.h */
+#define pwm5 5U	/* src\hal\include\HL_het.h */
+#define pwm6 6U	/* src\hal\include\HL_het.h */
+#define pwm7 7U	/* src\hal\include\HL_het.h */
+#define edge0 0U	/* src\hal\include\HL_het.h */
+#define edge1 1U	/* src\hal\include\HL_het.h */
+#define edge2 2U	/* src\hal\include\HL_het.h */
+#define edge3 3U	/* src\hal\include\HL_het.h */
+#define edge4 4U	/* src\hal\include\HL_het.h */
+#define edge5 5U	/* src\hal\include\HL_het.h */
+#define edge6 6U	/* src\hal\include\HL_het.h */
+#define edge7 7U	/* src\hal\include\HL_het.h */
+#define cap0 0U	/* src\hal\include\HL_het.h */
+#define cap1 1U	/* src\hal\include\HL_het.h */
+#define cap2 2U	/* src\hal\include\HL_het.h */
+#define cap3 3U	/* src\hal\include\HL_het.h */
+#define cap4 4U	/* src\hal\include\HL_het.h */
+#define cap5 5U	/* src\hal\include\HL_het.h */
+#define cap6 6U	/* src\hal\include\HL_het.h */
+#define cap7 7U	/* src\hal\include\HL_het.h */
+#define pwmEND_OF_DUTY 2U	/* src\hal\include\HL_het.h */
+#define pwmEND_OF_PERIOD 4U	/* src\hal\include\HL_het.h */
+#define pwmEND_OF_BOTH 6U	/* src\hal\include\HL_het.h */
+#define HET1_DIR_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x02000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000002U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET1_PDR_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00020000U | (uint32)0x00010000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET1_PULDIS_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET1_PSL_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00020000U | (uint32)0x00010000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET1_HRSH_CONFIGVALUE ((uint32)0x00008000U | (uint32)0x00004000U | (uint32)0x00000000U | (uint32)0x00001000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000008U | (uint32)0x00000004U | (uint32)0x00000002U | (uint32)0x00000001U)	/* src\hal\include\HL_het.h */
+#define HET1_AND_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET1_XOR_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET1_PFR_CONFIGVALUE (((uint32)7U << 8U) | (uint32)0U)	/* src\hal\include\HL_het.h */
+#define HET1_PRY_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET1_INTENAC_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET1_INTENAS_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET1_PCR_CONFIGVALUE ((uint32)0x0000000AU)	/* src\hal\include\HL_het.h */
+#define HET1_GCR_CONFIGVALUE ( 0x00000001U | (uint32)((uint32)0U << 24U) | (uint32)((uint32)1U << 16U) | (0x00020000U))	/* src\hal\include\HL_het.h */
+#define HET2_DIR_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00020000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000200U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000004U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET2_PDR_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET2_PULDIS_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00020000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000004U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET2_PSL_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00020000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000004U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET2_HRSH_CONFIGVALUE ((uint32)0x00008000U | (uint32)0x00004000U | (uint32)0x00002000U | (uint32)0x00001000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000008U | (uint32)0x00000004U | (uint32)0x00000002U | (uint32)0x00000001U)	/* src\hal\include\HL_het.h */
+#define HET2_AND_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET2_XOR_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET2_PFR_CONFIGVALUE (((uint32)7U << 8U) | (uint32)0U)	/* src\hal\include\HL_het.h */
+#define HET2_PRY_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET2_INTENAC_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET2_INTENAS_CONFIGVALUE ((uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U | (uint32)0x00000000U)	/* src\hal\include\HL_het.h */
+#define HET2_PCR_CONFIGVALUE ((uint32)0x0000000AU)	/* src\hal\include\HL_het.h */
+#define HET2_GCR_CONFIGVALUE ( 0x00000001U | (uint32)((uint32)0U << 24U) | (uint32)((uint32)1U << 16U) | (0x00020000U))	/* src\hal\include\HL_het.h */
+#define SPI_SPI1_INDEX (0u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_SPI2_INDEX (1u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_SPI3_INDEX (2u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_SPI4_INDEX (3u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_SPI5_INDEX (4u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_NR_SPI_INTERFACES (5u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_CSHOLD_BIT (0x10000000u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_WDEL_BIT (0x04000000u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_HARDWARE_CHIP_SELECT_FIELD_POSITION (16u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_DATA_FORMAT_FIELD_POSITION (24u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_TX_BUFFER_EMPTY_FLAG_POSITION (9u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_PC0_CLEAR_HW_CS_MASK (0xFFFFFF00u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_TX_EMPTY_TIMEOUT_ITERATIONS (6000u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_MAX_NUMBER_HW_CS (6u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_SBC_MCU_CHIP_SELECT_PIN (0u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_LTC_CHIP_SELECT_PIN (1u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_MAXIM_CHIP_SELECT_PIN (0u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_NXP_TX_CHIP_SELECT_PIN (1u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_NXP_RX_CHIP_SELECT_PIN (0u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_FRAM_CHIP_SELECT_PIN (1u)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_SPS_CS_GIOPORT (hetREG2->DOUT)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_SPS_CS_GIOPORT_DIR (hetREG2->DIR)	/* ..\..\src\app\driver\config\spi_cfg.h */
+#define SPI_SPS_CS_PIN (1u)	/* ..\..\src\app\driver\config\spi_cfg.h */

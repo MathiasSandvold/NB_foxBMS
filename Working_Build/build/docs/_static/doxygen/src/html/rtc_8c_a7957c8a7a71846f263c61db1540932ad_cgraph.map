@@ -1,0 +1,31 @@
+<map id="RTC_Initialize" name="RTC_Initialize">
+<area shape="rect" id="node1" title="initialization of the RTC IC." alt="" coords="5,335,107,361"/>
+<area shape="rect" id="node2" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="694,76,798,103"/>
+<area shape="rect" id="node4" href="$i2c_8c.html#a9546fb9b900efe2915ccd3b2b2232883" title="reads from an I2C slave, no register address written first, blocking." alt="" coords="707,411,785,437"/>
+<area shape="rect" id="node10" href="$i2c_8c.html#adeeeebf0d17d996e83390232e8ea8625" title="writes to an I2C slave, no register address written first, blocking." alt="" coords="707,360,785,387"/>
+<area shape="rect" id="node12" href="$i2c_8c.html#af04b33e3964bbbf260a563cd8b012342" title="writes to an I2C slave, no register address written first, using DMA." alt="" coords="693,283,799,309"/>
+<area shape="rect" id="node21" href="$os__freertos_8c.html#a3ac9f783e38ae9f9c8cfe0634bb3b8fe" title="Delay a task until a specified time." alt="" coords="175,436,309,463"/>
+<area shape="rect" id="node22" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="179,487,305,513"/>
+<area shape="rect" id="node23" href="$rtc_8c.html#a0380ff8d4714112489efb86714ea54cd" title="initialize system time with RTC time." alt="" coords="155,218,329,259"/>
+<area shape="rect" id="node3" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="963,5,1086,32"/>
+<area shape="rect" id="node5" href="$i2c_8c.html#a3ff82cda8c1d4a8b2d5fa48a5fc2c4a5" title="Waits for the I2C Rx buffer to be full." alt="" coords="965,512,1085,539"/>
+<area shape="rect" id="node9" href="$i2c_8c.html#a79b77f8447ee8b71cd04895699df54bb" title="Waits for a stop condition to be detected." alt="" coords="973,411,1076,437"/>
+<area shape="rect" id="node6" href="$mcu_8c.html#a298a563701c7fc98c1f2750a1a2b8220" title="Get the current value of the Free Running Counter 0 (FRC0)" alt="" coords="1441,512,1628,539"/>
+<area shape="rect" id="node7" href="$mcu_8c.html#af5a3b75b7431935f913d80e31eb99690" title="Checks if a timeout in microseconds has elapsed." alt="" coords="1221,461,1363,488"/>
+<area shape="rect" id="node8" href="$mcu_8c.html#a357da0bcb906f4ad573ed0d4244dd0a2" title="Convert the counter value FRC0 to a time in microseconds." alt="" coords="1446,446,1623,487"/>
+<area shape="rect" id="node11" href="$i2c_8c.html#a74b8989b1724cc1b675d538a9815861e" title="Waits for the I2C Tx buffer to be empty." alt="" coords="962,461,1087,488"/>
+<area shape="rect" id="node13" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="952,208,1097,235"/>
+<area shape="rect" id="node14" href="$fsystem_8h.html#af23205627be1616c6b1dcdb684060322" title="Switch back to user mode." alt="" coords="937,259,1113,285"/>
+<area shape="rect" id="node15" href="$i2c_8c.html#ac904024d75c223ad5c2a6a4f0467b5c3" title="Clear pending notifications." alt="" coords="950,309,1099,336"/>
+<area shape="rect" id="node17" href="$i2c_8c.html#a2708e6ee456b45b63fd1080bfb79fced" title="Wait for the I2C transmit communication to complete, using notifications." alt="" coords="907,360,1142,387"/>
+<area shape="rect" id="node19" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="951,107,1098,133"/>
+<area shape="rect" id="node20" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="955,157,1094,184"/>
+<area shape="rect" id="node16" href="$os__freertos_8c.html#a25b7418eb914b83dd88bbc0424333139" title="Clear pending notification of a task, with index." alt="" coords="1199,309,1385,336"/>
+<area shape="rect" id="node18" href="$os__freertos_8c.html#a7578e983d03af6f03fd3fe09f293cdb1" title="Wait for a notification, with index." alt="" coords="1191,360,1393,387"/>
+<area shape="rect" id="node24" href="$rtc_8c.html#a1d5240b81fe9ed39eb9ac7db1f6ccb44" title="Reads the time from the RTC IC." alt="" coords="425,228,537,255"/>
+<area shape="rect" id="node27" href="$rtc_8c.html#a042c82a29ff600e510d925fb314992fc" title="set the RTC system timer." alt="" coords="377,177,585,204"/>
+<area shape="rect" id="node25" href="$i2c_8c.html#a87ea81c62fd94d7b0e049c896d0515dc" title="reads from an I2C slave, no register address written first, using DMA." alt="" coords="693,228,799,255"/>
+<area shape="rect" id="node26" href="$i2c_8c.html#aabdf9c7074f69f6486fb02d4297ec7f8" title="Wait for the I2C receive communication to complete, using notifications." alt="" coords="907,56,1143,83"/>
+<area shape="rect" id="node28" href="$rtc_8c.html#aebef46df841323a07f9bf21b390810c9" title="Convert time from RTC_TIME_DATA_s to struct tm format." alt="" coords="655,177,837,204"/>
+<area shape="rect" id="node29" href="$rtc_8c.html#a38419831efb8e12b2275b3f5c16c7b04" title="Set the RTC system timer value." alt="" coords="633,127,859,153"/>
+</map>

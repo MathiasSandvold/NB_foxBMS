@@ -1,0 +1,5 @@
+<map id="CANRX_GetDay" name="CANRX_GetDay">
+<area shape="rect" id="node1" title="Parses the CAN message to retrieve the day information." alt="" coords="5,5,121,32"/>
+<area shape="rect" id="node2" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="169,5,436,32"/>
+<area shape="rect" id="node3" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="484,5,687,32"/>
+</map>

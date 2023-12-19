@@ -1,0 +1,6 @@
+<map id="testMXM_ProcessOpenWireNullPointer" name="testMXM_ProcessOpenWireNullPointer">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,213,65"/>
+<area shape="rect" id="node2" href="$mxm__1785x_8c.html#a675df7a5e83425b1df797b55f963c5c9" title="Processes the retrieved information on open wire." alt="" coords="261,31,425,57"/>
+<area shape="rect" id="node3" href="$mxm__battery__management_8c.html#af80228e32eb53f659c6301f02ab34143" title="Get number of satellites." alt="" coords="473,5,679,32"/>
+<area shape="rect" id="node4" href="$mxm__1785x__tools_8c.html#a2be80ff605cfe34cece5301f5a4c11a0" title="Get the string and module number from a global module number." alt="" coords="481,56,671,83"/>
+</map>

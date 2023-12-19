@@ -1,0 +1,18 @@
+<map id="soc_counting.h" name="soc_counting.h">
+<area shape="rect" id="node1" title="Header for SOC module, responsible for calculation of SOC." alt="" coords="571,5,682,32"/>
+<area shape="rect" id="node2" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="573,379,720,405"/>
+<area shape="rect" id="node6" title=" " alt="" coords="318,603,383,629"/>
+<area shape="rect" id="node8" href="$soc__counting__cfg_8h.html" title="Header for SOC configuration." alt="" coords="697,229,831,256"/>
+<area shape="rect" id="node11" href="$state__estimation_8h.html" title="Header for state&#45;estimation module responsible for the estimation of state&#45;of&#45;charge (SOC),..." alt="" coords="614,80,743,107"/>
+<area shape="rect" id="node3" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="616,453,691,480"/>
+<area shape="rect" id="node4" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="749,528,821,555"/>
+<area shape="rect" id="node5" title=" " alt="" coords="748,603,823,629"/>
+<area shape="rect" id="node7" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="93,528,187,555"/>
+<area shape="rect" id="node9" href="$battery__cell__cfg_8h.html" title="Configuration of the battery cell (e.g., minimum and maximum cell voltage)" alt="" coords="685,304,809,331"/>
+<area shape="rect" id="node10" title=" " alt="" coords="859,379,922,405"/>
+<area shape="rect" id="node12" href="$database_8h.html" title="Database module header." alt="" coords="231,155,318,181"/>
+<area shape="rect" id="node13" href="$database__cfg_8h.html" title="Database configuration header." alt="" coords="427,304,538,331"/>
+<area shape="rect" id="node15" href="$database__helper_8h.html" title="Database module header." alt="" coords="261,229,389,256"/>
+<area shape="rect" id="node16" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="139,453,186,480"/>
+<area shape="rect" id="node14" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="616,528,675,555"/>
+</map>

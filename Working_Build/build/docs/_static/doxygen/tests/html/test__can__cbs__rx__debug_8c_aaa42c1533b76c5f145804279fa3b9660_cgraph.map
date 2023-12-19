@@ -1,0 +1,7 @@
+<map id="testCANRX_CheckIfMcuWaferInformationIsRequested" name="testCANRX_CheckIfMcuWaferInformationIsRequested">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,201,47"/>
+<area shape="rect" id="node2" href="$can__cbs__rx_8h.html#ad520e2753bb0441e4757f2d2a7efd034" title=" " alt="" coords="249,5,463,47"/>
+<area shape="rect" id="node3" href="$can__cbs__rx__debug_8c.html#a1d9a8d0082dcb06f7873c17316f51d31" title="Check if the MCU wafer information is requested." alt="" coords="511,5,748,47"/>
+<area shape="rect" id="node4" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="796,13,1063,39"/>
+<area shape="rect" id="node5" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="1111,13,1313,39"/>
+</map>

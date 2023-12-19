@@ -1,0 +1,5 @@
+<map id="soc_debug.h" name="soc_debug.h">
+<area shape="rect" id="node1" title="Header for SOC module, responsible for calculation state&#45;of&#45;charge." alt="" coords="72,5,168,32"/>
+<area shape="rect" id="node2" href="$soc__debug_8c.html" title="SOC module responsible for calculation of state&#45;of&#45;charge (SOC)" alt="" coords="5,80,101,107"/>
+<area shape="rect" id="node3" href="$test__soc__debug_8c.html" title="Tests for SOC module responsible for calculation of state&#45;of&#45;charge." alt="" coords="125,80,251,107"/>
+</map>

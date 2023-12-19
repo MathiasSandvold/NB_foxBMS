@@ -1,0 +1,68 @@
+<map id="MXM_StateMachine" name="MXM_StateMachine">
+<area shape="rect" id="node1" title="Main state&#45;machine implementation." alt="" coords="5,1391,144,1417"/>
+<area shape="rect" id="node2" href="$diag_8c.html#a3e60a00edfbecf928fd6db140626647a" title="DIAG_CheckEvent provides a simple interface to check an event for STD_OK." alt="" coords="517,5,646,32"/>
+<area shape="rect" id="node5" href="$mxm__battery__management_8c.html#af80228e32eb53f659c6301f02ab34143" title="Get number of satellites." alt="" coords="747,1155,953,1181"/>
+<area shape="rect" id="node6" href="$mxm__battery__management_8c.html#aa0f9d4793384a8b7519aaadae86b9cba" title="Get the value of MXM_5X_INSTANCE_s::numberOfSatellitesIsGood." alt="" coords="192,1053,428,1080"/>
+<area shape="rect" id="node7" href="$mxm__battery__management_8c.html#a9d5b57e8d6ecb30ba6426272f472e630" title="Set state request for the Battery Management Statemachine." alt="" coords="765,1525,935,1552"/>
+<area shape="rect" id="node8" href="$mxm__1785x_8c.html#a2cfdc33409d373e8721922acc6a9a3a9" title="This error handler is used as a last resort and tries a reset of the complete driver." alt="" coords="768,1627,932,1653"/>
+<area shape="rect" id="node9" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="1075,1627,1202,1653"/>
+<area shape="rect" id="node10" href="$mxm__registry_8c.html#a74e9f3adcbc1aa1001ec4e34abb7e8c0" title="Mark devices as connected in the registry and set the address." alt="" coords="198,1627,422,1653"/>
+<area shape="rect" id="node11" href="$mxm__registry_8c.html#a4fb565dedd3fea15359af5b6a6172830" title="Initialize monitoring registry." alt="" coords="236,1677,384,1704"/>
+<area shape="rect" id="node12" href="$mxm__1785x_8c.html#a22499bf1d575d8d09dc565b966339349" title="Execute all preinit selfchecks." alt="" coords="233,229,387,256"/>
+<area shape="rect" id="node29" href="$mxm__1785x_8h.html#a688e7e359e03e17fc0559720f0b8d586" title="State&#45;Machine implementation for operation state." alt="" coords="213,1231,407,1257"/>
+<area shape="rect" id="node3" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="798,5,902,32"/>
+<area shape="rect" id="node4" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="1077,5,1200,32"/>
+<area shape="rect" id="node13" href="$mxm__battery__management_8c.html#a871192ccec4147196c1ad237e68c1b40" title="runs a selfcheck for the address space check" alt="" coords="476,193,687,234"/>
+<area shape="rect" id="node17" href="$mxm__1785x__tools_8c.html#a302164db64e1cd2f77a03bfc022d0509" title="Test the MXM_Convert()&#45;function." alt="" coords="787,629,913,656"/>
+<area shape="rect" id="node21" href="$mxm__crc8_8c.html#ae29207d9e421c9526a6e4f120c39cf44" title="Test the CRC8&#45;algorithm with a known pattern." alt="" coords="512,56,651,83"/>
+<area shape="rect" id="node24" href="$mxm__1785x__tools_8c.html#a60fd59e838633019c105f1fe926a453e" title="Test MXM_ExtractValueFromRegister()." alt="" coords="1312,259,1548,285"/>
+<area shape="rect" id="node25" href="$mxm__1785x__tools_8c.html#aeb55532830ad78b72ee074bfebde6df3" title="Test MXM_FirstSetBit()." alt="" coords="1629,208,1774,235"/>
+<area shape="rect" id="node26" href="$mxm__1785x_8c.html#acd2d5bdda78cd47e0ec8a3dda3eb5385" title="Test the MXM_ParseVoltageReadall()&#45;function." alt="" coords="479,680,683,707"/>
+<area shape="rect" id="node14" href="$mxm__battery__management_8c.html#adcda2712e58935f41533d2b54c90aee5" title="Check if a register address is user accessible." alt="" coords="739,200,961,227"/>
+<area shape="rect" id="node15" href="$mxm__battery__management_8c.html#a9e3c85d541ed2c4301747d8633ba03bc" title="Check if a register address is user accessible in MAX17852." alt="" coords="1028,208,1249,235"/>
+<area shape="rect" id="node16" href="$mxm__battery__management_8c.html#aacd19e9ba1a28a8d4ac5fde5677c93e2" title="Check if a register address is user accessible in MAX17853." alt="" coords="1028,157,1249,184"/>
+<area shape="rect" id="node18" href="$mxm__1785x__tools_8c.html#ab437f79b3d0299bb51e1a22bcfb484d2" title="Convert a measurement value to a voltage value." alt="" coords="1379,608,1481,635"/>
+<area shape="rect" id="node19" href="$mxm__1785x__tools_8c.html#af328199dc46b6eab7f35f08f0f076145" title="Extract a value from a single register." alt="" coords="1596,360,1807,387"/>
+<area shape="rect" id="node20" href="$mxm__1785x__tools_8c.html#a0dc736d94a1c30286d2549d3efa99e2d" title="Find Position of first set bit in bitmask." alt="" coords="1855,284,1975,311"/>
+<area shape="rect" id="node22" href="$mxm__crc8_8c.html#a9371d7335e3bcd1601e34612ea47dbf4" title="Compute CRC8 with initial value set to 0x00." alt="" coords="804,56,896,83"/>
+<area shape="rect" id="node23" href="$mxm__crc8_8c.html#aff7b770d0d6a3773b0fe425eb9bb9d8d" title="Compute CRC8 (0xA6) with initial value." alt="" coords="1054,56,1223,83"/>
+<area shape="rect" id="node27" href="$mxm__1785x_8c.html#a38cc032b4fe5beffa9ba651b8dfd4884" title="Parse a RX buffer containing voltage values." alt="" coords="761,680,939,707"/>
+<area shape="rect" id="node28" href="$mxm__1785x_8c.html#ac8a15260cff9ed6eb1682999e13bb9d3" title="Parse voltage values from a READALL receive buffer into an array." alt="" coords="1037,659,1240,685"/>
+<area shape="rect" id="node30" href="$mxm__registry_8c.html#af2ecdd14cd0568f246b14aa8cdf2c6d7" title="check if one of the devices in the registry has the ALRTRST bit set" alt="" coords="481,498,682,539"/>
+<area shape="rect" id="node33" href="$mxm__1785x_8c.html#ab5680ee1fe73029d746878aff22bcab5" title="Fill the balancing datastructure." alt="" coords="479,1003,683,1029"/>
+<area shape="rect" id="node35" href="$mxm__1785x_8c.html#a5286d61127b58617a6384a8c18b38618" title="Handle the statemachine&#45;transactions for a READALL." alt="" coords="495,1475,667,1501"/>
+<area shape="rect" id="node39" href="$mxm__1785x_8c.html#ae651c3ef761d1b34dab49d85336ea046" title="Handle the statemachine&#45;transactions for a WRITEALL." alt="" coords="495,1627,668,1653"/>
+<area shape="rect" id="node40" href="$mxm__1785x_8c.html#ae17987a0e72b943e2cac791ee60841c8" title="Encapsulation for reading voltages from a register." alt="" coords="504,1205,659,1232"/>
+<area shape="rect" id="node41" href="$mxm__registry_8c.html#a4605575afd03a08a9a5cd8ed33ae4d50" title="Parse ID (1 or 2) into the registry." alt="" coords="483,563,679,605"/>
+<area shape="rect" id="node42" href="$mxm__registry_8c.html#ad95cf43f88a2b7ccd12c48dcd58cf1f3" title="Parse STATUS or FMEA into the registry." alt="" coords="480,367,683,409"/>
+<area shape="rect" id="node43" href="$mxm__registry_8c.html#adcccca2175923f6875c9064d435ba049" title="Parse Version into the registry." alt="" coords="477,433,686,474"/>
+<area shape="rect" id="node44" href="$mxm__1785x_8c.html#a920e0ec9a500bdd62f13a6c2f57a9163" title="Copies measured voltage data into the database." alt="" coords="490,952,673,979"/>
+<area shape="rect" id="node63" href="$mxm__1785x_8c.html#a675df7a5e83425b1df797b55f963c5c9" title="Processes the retrieved information on open wire." alt="" coords="499,1053,663,1080"/>
+<area shape="rect" id="node64" href="$mxm__1785x__tools_8c.html#a2b0a88c10d76ee1f9842969d35c0e676" title="convert a unipolar 14bit&#45;value and shifts it into the 16bit&#45;format" alt="" coords="488,1307,675,1333"/>
+<area shape="rect" id="node65" href="$mxm__1785x__tools_8c.html#a9b326fed943ba841b17fb6272d79945b" title="convert a voltage value into a unipolar 14bit value" alt="" coords="481,1357,681,1384"/>
+<area shape="rect" id="node66" href="$os_8c.html#a834064ee9e9a90768918c776f5cb1bb7" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="478,1409,685,1450"/>
+<area shape="rect" id="node31" href="$foxmath_8c.html#aacaf0845143922c6a31912af37fd9741" title="Returns the minimum of the passed uint8_t values." alt="" coords="753,477,947,504"/>
+<area shape="rect" id="node32" href="$mxm__registry_8c.html#aca0807a445d30190eadbef7467b43ca8" title="Parse number of highest connected device from monitoring&#45; register." alt="" coords="752,411,948,453"/>
+<area shape="rect" id="node34" href="$mxm__1785x__tools_8c.html#a2be80ff605cfe34cece5301f5a4c11a0" title="Get the string and module number from a global module number." alt="" coords="755,1104,945,1131"/>
+<area shape="rect" id="node36" href="$mxm__1785x_8c.html#ab0d9976f05eb48b050415afd432f9415" title="Retrieves data from lower statemachine and writes it to the rx buffer." alt="" coords="735,1205,965,1232"/>
+<area shape="rect" id="node37" href="$mxm__battery__management_8c.html#ad89fd67b1337293d24504cdb05c19a59" title="Returns the last received DC byte." alt="" coords="1057,1448,1220,1475"/>
+<area shape="rect" id="node38" href="$mxm__battery__management_8c.html#a88722a84590c432f0bbfcdd77536c8db" title="Copy RX buffer into variable." alt="" coords="1067,1499,1210,1525"/>
+<area shape="rect" id="node45" href="$afe__plausibility_8c.html#a5f0f388fcad363cade4b5e340f06e211" title="Cell temperature plausibility check." alt="" coords="757,753,943,794"/>
+<area shape="rect" id="node48" href="$afe__plausibility_8c.html#ae3a0cab9bf3aeded2ce65f1d28bdda8b" title="Cell voltage measurement range plausibility check." alt="" coords="751,987,949,1029"/>
+<area shape="rect" id="node49" href="$mxm__registry_8c.html#a15356e31103a0135dcadefd3a7a44096" title="check if a device is connected" alt="" coords="740,1053,960,1080"/>
+<area shape="rect" id="node50" href="$tsi_8h.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="779,936,921,963"/>
+<area shape="rect" id="node46" href="$tsi_8h.html#a161bdb7af8c149fe72731f43f0619dd9" title="Return the maximum plausible temperature." alt="" coords="1013,709,1264,736"/>
+<area shape="rect" id="node47" href="$tsi_8h.html#a9bf06d1c58f3a5ee9c9c8b1d611d1323" title="Return the minimum plausible temperature." alt="" coords="1015,760,1262,787"/>
+<area shape="rect" id="node51" href="$epcos__b57251v5103j060_8c.html#a60e7e40bc4662b44093a0a2b464bd395" title="returns temperature based on measured ADC voltage" alt="" coords="1027,995,1250,1021"/>
+<area shape="rect" id="node53" href="$epcos__b57251v5103j060_8c.html#a22b8fc0a39278f0c1a61c1cca7482b5a" title="returns temperature based on measured ADC voltage" alt="" coords="1036,1214,1241,1255"/>
+<area shape="rect" id="node54" href="$epcos__b57861s0103f045_8c.html#a8bb26a9001e051fc2fee6ba77027b1b6" title="returns temperature based on measured ADC voltage" alt="" coords="1027,1112,1250,1139"/>
+<area shape="rect" id="node55" href="$epcos__b57861s0103f045_8c.html#a3aca9a6a710bb21efc1a5d4ccf49b3e0" title="returns temperature based on measured ADC voltage" alt="" coords="1036,1331,1241,1373"/>
+<area shape="rect" id="node56" href="$fake__none_8c.html#a8519235f1cb368c712566dc0a6615a8a" title="returns a fake temperature" alt="" coords="1027,1397,1250,1424"/>
+<area shape="rect" id="node57" href="$fake__none_8c.html#a8d502a27efdeb0f048997819e3ae4fc4" title="returns a fake temperature" alt="" coords="1037,811,1241,853"/>
+<area shape="rect" id="node58" href="$murata__ncu15xh103f6sxx_8c.html#a0e6cfeee0f7fdf5504234ed54ddfc9b7" title="returns temperature based on measured ADC voltage." alt="" coords="1027,1163,1250,1189"/>
+<area shape="rect" id="node59" href="$murata__ncu15xh103f6sxx_8c.html#a255c099fbd405cdc3b51c39a415c18e3" title="returns temperature based on measured ADC voltage" alt="" coords="1037,929,1241,970"/>
+<area shape="rect" id="node60" href="$vishay__ntcalug01a103g_8c.html#a865b7c323eb0bdbd7420518e6b56cede" title="returns temperature based on measured ADC voltage." alt="" coords="1029,1280,1248,1307"/>
+<area shape="rect" id="node61" href="$vishay__ntcalug01a103g_8c.html#a47e088f4023835e56cac22e035c66be8" title="returns temperature based on measured ADC voltage" alt="" coords="1038,1046,1239,1087"/>
+<area shape="rect" id="node62" href="$vishay__ntcle317e4103sba_8c.html#ae917bb4796f0f8fa36201dbd92aae38c" title="returns temperature based on measured ADC voltage." alt="" coords="1029,877,1248,904"/>
+<area shape="rect" id="node52" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="1345,1112,1515,1139"/>
+</map>

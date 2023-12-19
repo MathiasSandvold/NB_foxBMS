@@ -1,0 +1,7 @@
+<map id="algorithm.h" name="algorithm.h">
+<area shape="rect" id="node1" title="Headers for the driver for the storage in the EEPROM memory." alt="" coords="147,5,233,32"/>
+<area shape="rect" id="node2" href="$algorithm_8c.html" title="Main module to handle the execution of algorithms." alt="" coords="5,80,92,107"/>
+<area shape="rect" id="node3" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="116,80,171,107"/>
+<area shape="rect" id="node4" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="195,80,281,107"/>
+<area shape="rect" id="node5" href="$test__algorithm_8c.html" title="Test of the algorithm module." alt="" coords="305,80,419,107"/>
+</map>

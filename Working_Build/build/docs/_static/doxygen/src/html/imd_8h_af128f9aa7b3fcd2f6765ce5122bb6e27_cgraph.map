@@ -1,0 +1,23 @@
+<map id="IMD_ProcessRunningState" name="IMD_ProcessRunningState">
+<area shape="rect" id="node1" title="Processes the running state." alt="" coords="5,385,184,412"/>
+<area shape="rect" id="node2" href="$bender__iso165c_8c.html#a771d75322b83bd5940ccd1dd285f96cf" title="trigger function for the i165c driver state machine." alt="" coords="265,233,375,260"/>
+<area shape="rect" id="node15" href="$bender__ir155_8c.html#a96bab0870acd1c5cb2153684bea56ca9" title=" " alt="" coords="237,385,403,412"/>
+<area shape="rect" id="node21" href="$no-imd_8c.html#a9d7bbb6571c7a2dd3f22779f7235c493" title="Function to write dummy values into the database." alt="" coords="232,436,408,463"/>
+<area shape="rect" id="node3" href="$can_8c.html#a9c2903798d15d9e00092596501c752e0" title="Sends over CAN the data passed in parameters. This function goes over the message boxes and marks the..." alt="" coords="507,157,620,184"/>
+<area shape="rect" id="node4" href="$bender__iso165c_8c.html#a449e2149282ccf1673de43954c046e28" title="Check if iso165c acknowledged reception of command." alt="" coords="456,208,671,235"/>
+<area shape="rect" id="node8" href="$bender__iso165c_8c.html#ad8ff3235e275ab45117ab68ba30d1087" title="Get IMD Info from iso165c." alt="" coords="761,259,885,285"/>
+<area shape="rect" id="node9" href="$bender__iso165c_8c.html#a2592243a4fac9ebf87ac3edda2d83400" title="Get data in data byte from CAN transmission." alt="" coords="490,309,637,336"/>
+<area shape="rect" id="node10" href="$bender__iso165c_8c.html#abb1379e83199b006d9e1a219115c1453" title="Get data in data word from CAN transmission." alt="" coords="488,360,639,387"/>
+<area shape="rect" id="node11" href="$bender__iso165c_8c.html#a2c51a4bf327fdb02b6bf19b47c2aed19" title="Get data in data word from CAN transmission, for the specific IMD_Info message." alt="" coords="468,411,659,437"/>
+<area shape="rect" id="node12" href="$bender__iso165c_8c.html#ac239b3b41d2b237314edaf4c1a0aeb6c" title="Reset CAN data." alt="" coords="490,5,637,32"/>
+<area shape="rect" id="node13" href="$bender__iso165c_8c.html#a637bbbc00ed0acfa31be15810427b7d2" title="Sets the next state the timer value of the running state variable." alt="" coords="483,56,643,83"/>
+<area shape="rect" id="node14" href="$bender__iso165c_8c.html#a1f601b236eab3f110c3578c1a76f4568" title="Compose CAN message for CAN transmission." alt="" coords="503,107,623,133"/>
+<area shape="rect" id="node5" href="$bender__iso165c_8c.html#acbb12889a40b40d4cfd4e18423458d2e" title="Check if iso165c acknowledged reception of sent message and get corresponding data." alt="" coords="745,208,902,235"/>
+<area shape="rect" id="node6" href="$os__freertos_8c.html#a64fee282d8a9e2abab8b69bb91401421" title="Check if messages are waiting for queue." alt="" coords="976,197,1201,238"/>
+<area shape="rect" id="node7" href="$os__freertos_8c.html#a285b22d2ef1448cae22a8965b5fec186" title="Receive an item from a queue." alt="" coords="1008,263,1169,289"/>
+<area shape="rect" id="node16" href="$bender__ir155__helper_8c.html#ad9130c93fe6b062fc5f0c37595d1f040" title="Interface function which delivers the actual signal measurement (duty cyle) and evaluation...." alt="" coords="462,461,665,488"/>
+<area shape="rect" id="node17" href="$bender__ir155__helper_8c.html#ab701b6c5240b2203342c1de5a9c6681b" title="Calculate insulation resistance from measured dutycycle." alt="" coords="733,487,914,513"/>
+<area shape="rect" id="node18" href="$bender__ir155__helper_8c.html#aed6c211947fd52248508353dbb92a6f3" title="Determines frequency&#45;dependent measurement state." alt="" coords="726,537,921,564"/>
+<area shape="rect" id="node19" href="$bender__ir155__helper_8c.html#a04b9c7e05e1414e76bf855da89113cf2" title="Check if passed duty cycle is within interval limits." alt="" coords="719,385,928,412"/>
+<area shape="rect" id="node20" href="$pwm_8c.html#aa1270c042e32f24252ff3fc65e2c41e9" title="Get dutycycle and frequency of input PWM signal." alt="" coords="754,436,893,463"/>
+</map>

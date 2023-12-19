@@ -1,0 +1,8 @@
+<map id="bender_iso165c_cfg.h" name="bender_iso165c_cfg.h">
+<area shape="rect" id="node1" title="Headers for the configuration for the insulation monitoring." alt="" coords="235,5,383,32"/>
+<area shape="rect" id="node2" href="$bender__iso165c_8h.html" title="Headers for the driver for the insulation monitoring." alt="" coords="87,87,211,114"/>
+<area shape="rect" id="node5" href="$bender__iso165c__cfg_8c.html" title="Configuration for the insulation monitoring." alt="" coords="235,87,383,114"/>
+<area shape="rect" id="node6" href="$test__bender__iso165c__cfg_8c.html" title="Test of Bender iso165c module." alt="" coords="407,80,549,121"/>
+<area shape="rect" id="node3" href="$bender__iso165c_8c.html" title="Driver for the insulation monitoring." alt="" coords="5,169,129,196"/>
+<area shape="rect" id="node4" href="$test__bender__iso165c_8c.html" title="Test of the Bender iso165c driver." alt="" coords="153,169,307,196"/>
+</map>

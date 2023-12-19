@@ -1,0 +1,4 @@
+<map id="DATA_GetModuleNumberFromVoltageIndex" name="DATA_GetModuleNumberFromVoltageIndex">
+<area shape="rect" id="node1" title="Returns module number of passed cell index." alt="" coords="5,5,207,47"/>
+<area shape="rect" id="node2" href="$database__helper_8c.html#a68e6a9d94a49713d586a14b0b949ddad" title="Returns string number of passed cell index." alt="" coords="255,5,448,47"/>
+</map>

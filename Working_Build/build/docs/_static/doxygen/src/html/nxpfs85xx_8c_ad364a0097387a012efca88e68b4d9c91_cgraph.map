@@ -1,0 +1,21 @@
+<map id="SBC_ClearRegisterFlags" name="SBC_ClearRegisterFlags">
+<area shape="rect" id="node1" title="Clears flags in register." alt="" coords="5,81,172,108"/>
+<area shape="rect" id="node2" href="$group__API.html#gab8787e2ae04f3f2810ca95df41b69190" title="Performs a read from a single FS8x register." alt="" coords="223,81,362,108"/>
+<area shape="rect" id="node16" href="$group__API.html#ga45774357f5c85905d3b03812c03a0eb4" title="Sends write command to the FS8x." alt="" coords="223,31,362,57"/>
+<area shape="rect" id="node17" href="$nxpfs85xx_8c.html#a0a1139bd6c03b0a9c2157f1257f04057" title="Updates register values." alt="" coords="220,132,365,159"/>
+<area shape="rect" id="node3" href="$sbc__fs8x__communication_8c.html#adab1bd280fc620a6cd8c881dbc3773ff" title="Performs SPI transfer of the txData. Received frame is saved into rxData structure." alt="" coords="429,56,590,83"/>
+<area shape="rect" id="node4" href="$sbc__fs8x__communication_8c.html#a80544b95c576332d48a6f882957018d8" title="Performs CRC check of the data array." alt="" coords="688,56,812,83"/>
+<area shape="rect" id="node6" href="$sbc__fs8x__communication_8c.html#ae5b596457c82d4c45e811ad4c404b312" title="Creates a raw frame for SPI transfer." alt="" coords="653,5,847,32"/>
+<area shape="rect" id="node7" href="$group__Extern.html#ga1b7c11ee24b9fe8c8e104ae40a350e26" title="This function transfers single frame through blocking SPI communication in both directions...." alt="" coords="671,107,829,133"/>
+<area shape="rect" id="node5" href="$sbc__fs8x__communication_8c.html#a87db6e52e5d345e7ae7be0606196c27d" title="This function calculates CRC value of passed data array. Takes bytes in inverted order due to frame f..." alt="" coords="924,31,1037,57"/>
+<area shape="rect" id="node8" href="$spi_8c.html#ac84bc8424de860e2cd89fea2e89dd89a" title="Transmits and receives data on SPI without DMA." alt="" coords="895,107,1067,133"/>
+<area shape="rect" id="node9" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="1128,5,1223,32"/>
+<area shape="rect" id="node10" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="1135,56,1216,83"/>
+<area shape="rect" id="node11" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="1115,107,1236,133"/>
+<area shape="rect" id="node12" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="1136,208,1215,235"/>
+<area shape="rect" id="node15" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="1130,157,1221,184"/>
+<area shape="rect" id="node13" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1284,157,1431,184"/>
+<area shape="rect" id="node14" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1288,208,1427,235"/>
+<area shape="rect" id="node18" href="$nxpfs85xx_8c.html#a130d5b08f7ef67c6526cbb117a31d32f" title="Updates fail safe register values." alt="" coords="413,169,605,196"/>
+<area shape="rect" id="node19" href="$nxpfs85xx_8c.html#a086a1d3eced35bc26819fb55d6f0dc2b" title="Updates main register values." alt="" coords="423,119,596,145"/>
+</map>

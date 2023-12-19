@@ -1,0 +1,29 @@
+
+file            [index]  value      size  bind  type  vis   shndx  symbol name 
+
+src\hal\source\HL_sys_pmu.asm.1.obj|[0]     |0x00000000|0|LOCL |NONE |DFLT |UNDEF |
+src\hal\source\HL_sys_pmu.asm.1.obj|[3]     |0x00000000|0|LOCL |NONE |HIDN |1     |$a
+src\hal\source\HL_sys_pmu.asm.1.obj|[8]     |0x00000000|0|LOCL |SECT |HIDN |6     |.debug_abbrev
+src\hal\source\HL_sys_pmu.asm.1.obj|[9]     |0x00000000|0|LOCL |SECT |HIDN |7     |.debug_abbrev
+src\hal\source\HL_sys_pmu.asm.1.obj|[10]    |0x00000000|0|LOCL |SECT |HIDN |8     |.debug_aranges
+src\hal\source\HL_sys_pmu.asm.1.obj|[4]     |0x00000000|0|LOCL |SECT |HIDN |2     |.debug_info
+src\hal\source\HL_sys_pmu.asm.1.obj|[5]     |0x00000000|0|LOCL |SECT |HIDN |3     |.debug_info
+src\hal\source\HL_sys_pmu.asm.1.obj|[6]     |0x00000000|0|LOCL |SECT |HIDN |4     |.debug_line
+src\hal\source\HL_sys_pmu.asm.1.obj|[7]     |0x00000000|0|LOCL |SECT |HIDN |5     |.debug_line
+src\hal\source\HL_sys_pmu.asm.1.obj|[11]    |0x00000000|0|LOCL |SECT |HIDN |9     |.debug_pubnames
+src\hal\source\HL_sys_pmu.asm.1.obj|[2]     |0x00000000|0|LOCL |SECT |HIDN |1     |.text
+src\hal\source\HL_sys_pmu.asm.1.obj|[1]     |0x00000000|0|LOCL |FILE |HIDN |ABS   |HL_sys_pmu.asm
+src\hal\source\HL_sys_pmu.asm.1.obj|[12]    |0x00000000|0|WEAK |FUNC |HIDN |UNDEF |Lib$$Request$$armlib
+src\hal\source\HL_sys_pmu.asm.1.obj|[13]    |0x00000000|0|WEAK |FUNC |HIDN |UNDEF |Lib$$Request$$cpplib
+src\hal\source\HL_sys_pmu.asm.1.obj|[24]    |0x0000005c|0|GLOB |FUNC |HIDN |1     |_pmuDisableCountersGlobal_
+src\hal\source\HL_sys_pmu.asm.1.obj|[23]    |0x0000004c|0|GLOB |FUNC |HIDN |1     |_pmuEnableCountersGlobal_
+src\hal\source\HL_sys_pmu.asm.1.obj|[22]    |0x000000b8|0|GLOB |FUNC |HIDN |1     |_pmuGetCycleCount_
+src\hal\source\HL_sys_pmu.asm.1.obj|[15]    |0x000000c0|0|GLOB |FUNC |HIDN |1     |_pmuGetEventCount_
+src\hal\source\HL_sys_pmu.asm.1.obj|[19]    |0x000000cc|0|GLOB |FUNC |HIDN |1     |_pmuGetOverflow_
+src\hal\source\HL_sys_pmu.asm.1.obj|[18]    |0x00000000|0|GLOB |FUNC |HIDN |1     |_pmuInit_
+src\hal\source\HL_sys_pmu.asm.1.obj|[14]    |0x0000008c|0|GLOB |FUNC |HIDN |1     |_pmuResetCounters_
+src\hal\source\HL_sys_pmu.asm.1.obj|[20]    |0x0000006c|0|GLOB |FUNC |HIDN |1     |_pmuResetCycleCounter_
+src\hal\source\HL_sys_pmu.asm.1.obj|[16]    |0x0000007c|0|GLOB |FUNC |HIDN |1     |_pmuResetEventCounters_
+src\hal\source\HL_sys_pmu.asm.1.obj|[21]    |0x000000ac|0|GLOB |FUNC |HIDN |1     |_pmuSetCountEvent_
+src\hal\source\HL_sys_pmu.asm.1.obj|[25]    |0x0000009c|0|GLOB |FUNC |HIDN |1     |_pmuStartCounters_
+src\hal\source\HL_sys_pmu.asm.1.obj|[17]    |0x000000a4|0|GLOB |FUNC |HIDN |1     |_pmuStopCounters_

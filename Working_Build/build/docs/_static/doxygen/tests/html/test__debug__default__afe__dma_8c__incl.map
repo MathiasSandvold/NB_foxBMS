@@ -1,0 +1,19 @@
+<map id="test_debug_default_afe_dma.c" name="test_debug_default_afe_dma.c">
+<area shape="rect" id="node1" title="Test of the debug_default_afe_dma.c module." alt="" coords="248,5,379,47"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,95,67,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="91,95,237,121"/>
+<area shape="rect" id="node4" title=" " alt="" coords="261,95,365,121"/>
+<area shape="rect" id="node5" href="$debug__default__cfg_8h.html" title="Header for the configuration for the fake AFE." alt="" coords="213,244,350,271"/>
+<area shape="rect" id="node13" href="$debug__default__afe__dma_8h.html" title="Header for the driver for the DMA module for the fake AFE driver." alt="" coords="513,95,682,121"/>
+<area shape="rect" id="node6" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="208,319,355,345"/>
+<area shape="rect" id="node10" title=" " alt="" coords="427,543,493,569"/>
+<area shape="rect" id="node7" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="281,393,356,420"/>
+<area shape="rect" id="node8" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="208,468,280,495"/>
+<area shape="rect" id="node9" title=" " alt="" coords="83,543,157,569"/>
+<area shape="rect" id="node12" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="304,468,397,495"/>
+<area shape="rect" id="node11" title=" " alt="" coords="194,543,294,569"/>
+<area shape="rect" id="node14" href="$afe__dma_8h.html" title="Headers for the driver for the general DMA module of monitoring ICs." alt="" coords="556,169,639,196"/>
+<area shape="rect" id="node15" href="$dma__cfg_8h.html" title="Headers for the configuration for the DMA module." alt="" coords="508,244,591,271"/>
+<area shape="rect" id="node16" title=" " alt="" coords="513,319,586,345"/>
+<area shape="rect" id="node17" title=" " alt="" coords="379,319,488,345"/>
+</map>

@@ -1,0 +1,7 @@
+<map id="MXM_5XStateHandler41BFmeaCheck" name="MXM_5XStateHandler41BFmeaCheck">
+<area shape="rect" id="node1" title="Handle the state MXM_STATEMACH_5X_41B_FMEA_CHECK." alt="" coords="5,74,208,115"/>
+<area shape="rect" id="node2" href="$mxm__17841b_8c.html#a09d0707cc15516727d085687d87bba85" title="Set state transition for MAX17841B&#45;state&#45;machine." alt="" coords="256,5,436,32"/>
+<area shape="rect" id="node3" href="$mxm__battery__management_8c.html#afc6212ecb11ce7bc23db37409d4faaff" title="Signal that an error has occurred in a chain of substates." alt="" coords="278,56,414,83"/>
+<area shape="rect" id="node4" href="$mxm__battery__management_8c.html#a08d5ab7b4b3254f41e6661ee677f854e" title="sets all internal state variables so that upon next execution the next substate is entered" alt="" coords="484,107,679,133"/>
+<area shape="rect" id="node5" href="$mxm__battery__management_8c.html#a118ff0964a961d44cf9c4cac85d0f222" title="Signal that a chain of substates has been successfully handled." alt="" coords="267,157,425,184"/>
+</map>

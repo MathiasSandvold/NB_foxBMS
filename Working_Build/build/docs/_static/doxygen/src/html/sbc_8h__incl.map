@@ -1,0 +1,23 @@
+<map id="sbc.h" name="sbc.h">
+<area shape="rect" id="node1" title="Header for the driver for the SBC module." alt="" coords="1213,5,1268,32"/>
+<area shape="rect" id="node2" href="$ftask__cfg_8h.html" title="Task configuration header." alt="" coords="1198,453,1283,480"/>
+<area shape="rect" id="node5" title=" " alt="" coords="853,677,919,704"/>
+<area shape="rect" id="node7" href="$nxpfs85xx_8h.html" title="Header for the driver for the FRAM module." alt="" coords="863,80,955,107"/>
+<area shape="rect" id="node3" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="916,528,963,555"/>
+<area shape="rect" id="node4" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="773,603,866,629"/>
+<area shape="rect" id="node6" title=" " alt="" coords="262,677,337,704"/>
+<area shape="rect" id="node8" href="$fram__cfg_8h.html" title="Headers for the configuration for the FRAM module." alt="" coords="867,379,950,405"/>
+<area shape="rect" id="node13" href="$nxpfs85xx__cfg_8h.html" title="Config header file for SBC module." alt="" coords="1007,304,1123,331"/>
+<area shape="rect" id="node14" href="$sbc__fs8x_8h.html" title="FS8x driver interface." alt="" coords="162,155,247,181"/>
+<area shape="rect" id="node17" href="$spi_8h.html" title="Headers for the driver for the SPI module." alt="" coords="583,304,634,331"/>
+<area shape="rect" id="node21" href="$sbc__fs8x__communication_8h.html" title="This file contains functions for SPI/I2C communication." alt="" coords="364,155,544,181"/>
+<area shape="rect" id="node9" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="387,453,534,480"/>
+<area shape="rect" id="node12" title=" " alt="" coords="908,453,971,480"/>
+<area shape="rect" id="node10" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="498,528,573,555"/>
+<area shape="rect" id="node11" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="489,603,561,629"/>
+<area shape="rect" id="node15" href="$sbc__fs8x__map_8h.html" title="FS8x register map." alt="" coords="43,229,161,256"/>
+<area shape="rect" id="node16" href="$sbc__fs8x__common_8h.html" title="Driver common structures, enums, macros and configuration values." alt="" coords="236,229,379,256"/>
+<area shape="rect" id="node18" href="$spi__cfg_8h.html" title="Headers for the configuration for the SPI module." alt="" coords="571,379,646,405"/>
+<area shape="rect" id="node19" title=" " alt="" coords="707,453,782,480"/>
+<area shape="rect" id="node20" title=" " alt="" coords="609,453,683,480"/>
+</map>

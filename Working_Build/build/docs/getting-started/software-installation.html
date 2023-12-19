@@ -1,0 +1,605 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3. Software Installation &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="4. Creating a Workspace" href="workspace.html" />
+    <link rel="prev" title="2. Repository Structure" href="repository-structure.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><span class="section-number">3. </span>Software Installation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/getting-started/software-installation.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="software-installation">
+<span id="id1"></span><h1><span class="section-number">3. </span>Software Installation<a class="headerlink" href="#software-installation" title="Permalink to this headline"></a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Read the documentation carefully and follow every point exactly as described.
+Otherwise, the configuration workload in later points of the setup or the
+development will be significantly higher.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For some installation tasks, batch scripts are provided to automate the
+installation process as much as possible. However, if you do not want to use
+these scripts, the manual installation process is also described.</p>
+</div>
+<p>Getting started with foxBMS 2 requires getting the sources and installing
+all required software dependencies. These are the required steps:</p>
+<ol class="arabic simple">
+<li><p>getting the foxBMS 2 sources,</p></li>
+<li><p>installing the software dependencies:</p>
+<ol class="arabic simple">
+<li><p>installing Git</p></li>
+<li><p>installing Texas Instruments (TI)’s Code Composer Studio (required for compiling)</p></li>
+<li><p>installing Texas Instruments (TI)’s HALCoGen (required for code generation)</p></li>
+<li><p>installing Continuum’s Miniconda (furnishes the Python environment used
+by foxBMS 2),</p></li>
+<li><p>installing LLVM (required for code formatting)</p></li>
+<li><p>installing Ruby and the Ceedling package (required for unit testing)</p></li>
+<li><p>installing GCC (required for unit testing)</p></li>
+<li><p>installing VS Code (required for developing)</p></li>
+</ol>
+</li>
+<li><p>setting up a development environment</p></li>
+</ol>
+<p>These steps are described below in detail.</p>
+<div class="section" id="getting-the-sources">
+<h2><span class="section-number">3.1. </span>Getting the Sources<a class="headerlink" href="#getting-the-sources" title="Permalink to this headline"></a></h2>
+<p>The sources are available from a Git repository at <a class="reference external" href="https://github.com/foxBMS/">https://github.com/foxBMS/</a> in
+<a class="reference external" href="https://github.com/foxBMS/foxbms-2">https://github.com/foxBMS/foxbms-2</a>.
+The following example shows how to clone (see <a class="reference internal" href="#clone-foxbms-2"><span class="std std-numref">Listing 3.1</span></a>) or
+download (see <a class="reference internal" href="#download-foxbms-2"><span class="std std-numref">Listing 3.2</span></a>) the foxBMS 2 sources from GitHub .</p>
+<p>In the case that you have been supplied with a “library-project” by a partner,
+please use this archive equivalent to the “cloned foxBMS 2 repository” in the
+later steps of this manual.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If your user name contains whitespace (e.g., <code class="docutils literal notranslate"><span class="pre">vulpes</span> <span class="pre">vulpes</span></code>, you <strong>MUST</strong>
+clone or download the repository to another path, that does not contain
+whitespace, e.g., <code class="docutils literal notranslate"><span class="pre">C:\foxbms-2</span></code>).</p>
+</div>
+<div class="literal-block-wrapper docutils container" id="clone-foxbms-2">
+<div class="code-block-caption"><span class="caption-number">Listing 3.1 </span><span class="caption-text">Cloning the foxBMS 2 repository</span><a class="headerlink" href="#clone-foxbms-2" title="Permalink to this code"></a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">C:\Users\vulpes\Documents&gt;git clone https://github.com/foxBMS/foxbms-2</span>
+<span class="go">C:\Users\vulpes\Documents&gt;cd foxbms-2</span>
+</pre></div>
+</div>
+</div>
+<div class="literal-block-wrapper docutils container" id="download-foxbms-2">
+<div class="code-block-caption"><span class="caption-number">Listing 3.2 </span><span class="caption-text">Downloading a release</span><a class="headerlink" href="#download-foxbms-2" title="Permalink to this code"></a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">C:\Users\vulpes\Documents&gt;curl -Ss -L -o foxbms-2-v1.5.0.zip https://github.com/foxBMS/foxbms-2/archive/v1.5.0.zip</span>
+<span class="go">C:\Users\vulpes\Documents&gt;tar -x -f foxbms-2-v1.5.0.zip</span>
+<span class="go">C:\Users\vulpes\Documents&gt;ren foxbms-2-1.5.0 foxbms-2</span>
+<span class="go">C:\Users\vulpes\Documents&gt;cd foxbms-2</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Both <code class="docutils literal notranslate"><span class="pre">git</span></code> and <code class="docutils literal notranslate"><span class="pre">curl</span></code> require a correct proxy setup. This means
+that the environment variables <code class="docutils literal notranslate"><span class="pre">http_proxy</span></code> and <code class="docutils literal notranslate"><span class="pre">https_proxy</span></code> must
+be set accordingly to your network configuration.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Do not clone/download foxBMS 2 into a directory structure that includes
+whitespace.</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 88%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p>Bad</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">C:\bad</span> <span class="pre">directory</span> <span class="pre">name\Documents\foxbms-2</span></code></p></td>
+</tr>
+<tr class="row-even"><td><p>Good</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">C:\Users\vulpes\Documents\foxbms-2</span></code></p></td>
+</tr>
+<tr class="row-odd"><td><p>Good</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">C:\foxbms-2</span></code></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="software-prerequisites">
+<span id="id2"></span><h2><span class="section-number">3.2. </span>Software Prerequisites<a class="headerlink" href="#software-prerequisites" title="Permalink to this headline"></a></h2>
+<div class="admonition-general-hint admonition">
+<p class="admonition-title">General Hint</p>
+<p>No software installation here should alter the <code class="docutils literal notranslate"><span class="pre">PATH</span></code> environment
+variable. When an installer asks during the setup to add something to
+<code class="docutils literal notranslate"><span class="pre">PATH</span></code>, always remove that option, whether it is explicitly mentioned in
+that step or not. The only exception to that rule <strong>MAY</strong> be Git and
+<code class="docutils literal notranslate"><span class="pre">VS</span> <span class="pre">Code</span></code>.</p>
+</div>
+<div class="section" id="installing-git">
+<span id="git-install"></span><h3><span class="section-number">3.2.1. </span>Installing Git<a class="headerlink" href="#installing-git" title="Permalink to this headline"></a></h3>
+<p>Download the latest version of <a class="reference external" href="https://git-scm.com/">Git</a> and run the installer.</p>
+</div>
+<div class="section" id="installing-code-composer-studio">
+<span id="css-install"></span><h3><span class="section-number">3.2.2. </span>Installing Code Composer Studio<a class="headerlink" href="#installing-code-composer-studio" title="Permalink to this headline"></a></h3>
+<p>Download <a class="reference external" href="https://www.ti.com/tool/download/CCSTUDIO/12.0.0">Code Composer Studio</a> (CCS) version <code class="docutils literal notranslate"><span class="pre">12.0.0</span></code> and run the
+installer (chose <code class="docutils literal notranslate"><span class="pre">Windows</span> <span class="pre">single</span> <span class="pre">file</span> <span class="pre">installer</span> <span class="pre">for</span> <span class="pre">CCS</span> <span class="pre">IDE</span></code>).
+Do <strong>not</strong> change the default installation directory chosen by the installer
+and let the installer proceed with the installation into the installation
+directory (e.g., <code class="docutils literal notranslate"><span class="pre">C:\ti\ccs1031</span></code> for CCS <code class="docutils literal notranslate"><span class="pre">10.3.1</span></code>).
+Select the <code class="docutils literal notranslate"><span class="pre">Hercules™</span> <span class="pre">Safety</span> <span class="pre">MCUs</span></code> option during the installation.</p>
+<p>Installing Code Composer Studio may take a while.</p>
+<div class="section" id="installing-halcogen">
+<h4><span class="section-number">3.2.2.1. </span>Installing HALCoGen<a class="headerlink" href="#installing-halcogen" title="Permalink to this headline"></a></h4>
+<p>Download <a class="reference external" href="https://www.ti.com/tool/HALCOGEN">HALCoGen</a> version <code class="docutils literal notranslate"><span class="pre">04.07.01</span></code> and run the installer.
+Do <strong>not</strong> change the default installation directory chosen by the installer
+and let the installer proceed with the installation into the installation
+directory (i.e. <code class="docutils literal notranslate"><span class="pre">C:\ti\...</span></code> for HALCoGen <code class="docutils literal notranslate"><span class="pre">04.07.01</span></code> that means into
+<code class="docutils literal notranslate"><span class="pre">C:\ti\Hercules\HALCoGen\v04.07.01</span></code>).</p>
+<p>Installing HALCoGen may take a while.</p>
+</div>
+</div>
+<div class="section" id="installing-miniconda-and-configuration">
+<span id="miniconda-install-and-configuration"></span><h3><span class="section-number">3.2.3. </span>Installing Miniconda and Configuration<a class="headerlink" href="#installing-miniconda-and-configuration" title="Permalink to this headline"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you already have installed miniconda3 in one of the default miniconda3
+installation directories (<code class="docutils literal notranslate"><span class="pre">%USERPROFILE%\miniconda3</span></code>,
+<code class="docutils literal notranslate"><span class="pre">%LOCALAPPDATA%\Continuum\miniconda3</span></code>) or <code class="docutils literal notranslate"><span class="pre">C:\miniconda3</span></code> you can skip
+this installation of miniconda3 and go on to <code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">configuration</span></code></p>
+</div>
+<ol class="arabic">
+<li><p>Installation of miniconda3</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 66%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Automated Installation</p></th>
+<th class="head"><p>Manual Installation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>For automated installation of miniconda3 according to foxBMS 2 requirements
+just run:</p>
+<div class="literal-block-wrapper docutils container" id="id3">
+<div class="code-block-caption"><span class="caption-number">Listing 3.3 </span><span class="caption-text">Running the automated <code class="docutils literal notranslate"><span class="pre">miniconda3-install.bat</span></code> installer script
+for miniconda3</span><a class="headerlink" href="#id3" title="Permalink to this code"></a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">C:\Users\vulpes\Documents\foxbms-2&gt;tools\utils\miniconda3-install.bat</span>
+</pre></div>
+</div>
+</div>
+</td>
+<td><p>The manual installation
+of miniconda3 is
+described in
+<a class="reference internal" href="miniconda-installation/miniconda-installation.html#manual-miniconda-installation"><span class="std std-ref">Manual Miniconda Installation</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p>conda configuration</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 66%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Automated Configuration</p></th>
+<th class="head"><p>Manual Configuration</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>For automated configuration of conda according to foxBMS 2 requirements just
+run:</p>
+<div class="literal-block-wrapper docutils container" id="id4">
+<div class="code-block-caption"><span class="caption-number">Listing 3.4 </span><span class="caption-text">Running the automated <code class="docutils literal notranslate"><span class="pre">conda-init.bat</span></code> configuration script</span><a class="headerlink" href="#id4" title="Permalink to this code"></a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">C:\Users\vulpes\Documents\foxbms-2&gt;tools\utils\conda-init.bat</span>
+</pre></div>
+</div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the script returns
+“Maybe you need to add “foxbms” to your channels list.”
+please follow the instructions at <a class="reference internal" href="miniconda-installation/conda-configuration.html#condarc-configuration"><span class="std std-ref">Configuration</span></a>.</p>
+</div>
+</td>
+<td><p>The manual configuration
+of conda is described in
+<a class="reference internal" href="miniconda-installation/conda-configuration.html#manual-conda-configuration"><span class="std std-ref">Manual conda Configuration</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+</div>
+<div class="section" id="installing-llvm">
+<span id="llvm-install"></span><h3><span class="section-number">3.2.4. </span>Installing LLVM<a class="headerlink" href="#installing-llvm" title="Permalink to this headline"></a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 66%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Automated Installation</p></th>
+<th class="head"><p>Manual Installation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>For a semi-automated installation of LLVM according to foxBMS 2
+requirements just run in an elevated command prompt (known as “Run as
+administrator”):</p>
+<div class="literal-block-wrapper docutils container" id="id5">
+<div class="code-block-caption"><span class="caption-number">Listing 3.5 </span><span class="caption-text">Running the automated <code class="docutils literal notranslate"><span class="pre">llvm-install.bat</span></code> installer script
+for LLVM</span><a class="headerlink" href="#id5" title="Permalink to this code"></a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">C:\Users\vulpes\Documents\foxbms-2&gt;tools\utils\llvm-install.bat</span>
+</pre></div>
+</div>
+</div>
+</td>
+<td><p>The manual installation
+of LLVM is described in
+<a class="reference internal" href="llvm-installation/llvm-installation.html#manual-llvm-installation"><span class="std std-ref">Manual LLVM Installation</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="installing-ruby-and-required-gems">
+<h3><span class="section-number">3.2.5. </span>Installing Ruby and Required Gems<a class="headerlink" href="#installing-ruby-and-required-gems" title="Permalink to this headline"></a></h3>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 66%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Automated Installation</p></th>
+<th class="head"><p>Manual Installation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>For automated installation of Ruby according to foxBMS 2 requirements just
+run:</p>
+<div class="literal-block-wrapper docutils container" id="id6">
+<div class="code-block-caption"><span class="caption-number">Listing 3.6 </span><span class="caption-text">Running the automated <code class="docutils literal notranslate"><span class="pre">ruby-install.bat</span></code> installer script for
+Ruby</span><a class="headerlink" href="#id6" title="Permalink to this code"></a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">C:\Users\vulpes\Documents\foxbms-2&gt;tools\utils\ruby-install.bat</span>
+</pre></div>
+</div>
+</div>
+<p>Add <code class="docutils literal notranslate"><span class="pre">--http-proxy=http://user:password&#64;server:port</span></code> (adapted to your
+settings) to the installer script if you are behind a proxy.</p>
+</td>
+<td><p>The manual installation
+of Ruby is
+described in
+<a class="reference internal" href="ruby-installation/ruby-installation.html#manual-ruby-installation"><span class="std std-ref">Manual Ruby Installation</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="installing-gcc">
+<h3><span class="section-number">3.2.6. </span>Installing GCC<a class="headerlink" href="#installing-gcc" title="Permalink to this headline"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Installing MinWG64 requires 7-Zip to be installed. 7-Zip can be download
+from <a class="reference external" href="https://7-zip.org/">https://7-zip.org/</a> and should be installed in the default directory.</p>
+</div>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 66%" />
+<col style="width: 34%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Automated Installation</p></th>
+<th class="head"><p>Manual Installation</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>For automated installation of MinGW64 according to foxBMS 2 requirements
+just run:</p>
+<div class="literal-block-wrapper docutils container" id="id7">
+<div class="code-block-caption"><span class="caption-number">Listing 3.7 </span><span class="caption-text">Running the automated <code class="docutils literal notranslate"><span class="pre">mingw64-install.bat</span></code> installer script
+for MinGW64</span><a class="headerlink" href="#id7" title="Permalink to this code"></a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">C:\Users\vulpes\Documents\foxbms-2&gt;tools\utils\mingw64-install.bat</span>
+</pre></div>
+</div>
+</div>
+</td>
+<td><p>The manual installation
+of MinGW64 is
+described in
+<a class="reference internal" href="mingw64-installation/mingw64-installation.html#manual-mingw64-installation"><span class="std std-ref">Manual MinGW64 Installation</span></a>.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="installing-vs-code-and-extensions">
+<h3><span class="section-number">3.2.7. </span>Installing VS Code and Extensions<a class="headerlink" href="#installing-vs-code-and-extensions" title="Permalink to this headline"></a></h3>
+<p>foxBMS 2 supports developing with <a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a> (hereinafter <code class="docutils literal notranslate"><span class="pre">code</span></code>).</p>
+<ol class="arabic">
+<li><p>Download <code class="docutils literal notranslate"><span class="pre">code</span></code> from the project website at <a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code</a>.</p></li>
+<li><p>Install code: foxBMS 2 recommends installing <code class="docutils literal notranslate"><span class="pre">code</span></code> with the
+<code class="docutils literal notranslate"><span class="pre">User</span> <span class="pre">Installer</span></code>, which does not require elevated rights.</p></li>
+<li><p><em>Optional:</em> Let the installer add code to the PATH variable.</p></li>
+<li><p>Install extensions: To get the best development experience the following
+extensions are recommended. <code class="docutils literal notranslate"><span class="pre">code</span></code> will list these among the recommended
+extensions after you have run <code class="docutils literal notranslate"><span class="pre">waf</span> <span class="pre">configure</span></code>.</p>
+<table class="colwidths-given docutils align-default" id="vs-code-extensions">
+<caption><span class="caption-number">Table 3.1 </span><span class="caption-text">VS Code extensions</span><a class="headerlink" href="#vs-code-extensions" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 39%" />
+<col style="width: 61%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Name</p></th>
+<th class="head"><p>Marketplace Link</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>C/C++</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools">C/C++ extension</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Python</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ms-python.python">Python extension</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Assembler</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=maziac.asm-code-lens">ASM extension</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Linker script</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=ZixuanWang.linkerscript">Linker script extension</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Code Spell Checker</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker">Code Spell Checker extension</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>YAML</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml">YAML extension</a></p></td>
+</tr>
+<tr class="row-even"><td><p>TOML</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=bungcip.better-toml">TOML extension</a></p></td>
+</tr>
+<tr class="row-odd"><td><p>Test Explorer</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer">Test Explorer extension</a></p></td>
+</tr>
+<tr class="row-even"><td><p>Test Explorer Ceedling</p></td>
+<td><p><a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=numaru.vscode-ceedling-test-adapter">Test Explorer Ceedling extension</a></p></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<p>All required software is now installed.</p>
+</div>
+</div>
+<div class="section" id="development-environment-setup">
+<span id="conda-env-update"></span><h2><span class="section-number">3.3. </span>Development Environment Setup<a class="headerlink" href="#development-environment-setup" title="Permalink to this headline"></a></h2>
+<p>Open a terminal and navigate into the cloned foxBMS 2 repository and install
+the development environment. The development environment is installed with the
+following command:</p>
+<div class="literal-block-wrapper docutils container" id="updating-the-miniconda-environment">
+<div class="code-block-caption"><span class="caption-number">Listing 3.8 </span><span class="caption-text">Updating the miniconda environment</span><a class="headerlink" href="#updating-the-miniconda-environment" title="Permalink to this code"></a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">C:\Users\vulpes\Documents\foxbms-2&gt;tools\utils\conda-update-env.bat</span>
+</pre></div>
+</div>
+</div>
+<p>This scripts creates a development environment inside the miniconda
+installation.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<dl class="simple">
+<dt>An update of the foxBMS 2 development environment needs to be done</dt><dd><ul class="simple">
+<li><p>the first time a foxBMS 2 project is setup on a computer.</p></li>
+<li><p>each time a new development environment is released. If that is the case
+it is mentioned in the <a class="reference internal" href="../general/changelog.html#changelog"><span class="std std-ref">Changelog</span></a>.</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<p><strong>OPTIONAL</strong>: Verify the miniconda environment by running the following script:</p>
+<div class="literal-block-wrapper docutils container" id="verifying-the-miniconda-environment">
+<div class="code-block-caption"><span class="caption-number">Listing 3.9 </span><span class="caption-text">Verifying the miniconda environment</span><a class="headerlink" href="#verifying-the-miniconda-environment" title="Permalink to this code"></a></div>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">C:\Users\vulpes\Documents\foxbms-2&gt;tools\utils\cmd\run-python-script.bat tests\env\packages_test.py -f tests\env\conda_env_win32.json</span>
+</pre></div>
+</div>
+</div>
+<p><strong>If all the indicated steps have been followed, at this point all the
+required dependencies have been installed/updated.</strong></p>
+</div>
+<div class="section" id="debugger-toolchain-setup">
+<h2><span class="section-number">3.4. </span>Debugger toolchain setup<a class="headerlink" href="#debugger-toolchain-setup" title="Permalink to this headline"></a></h2>
+<p>For the development of an embedded system both a way of downloading the
+software into the target and debugging the running software in the target is
+necessary. Since the setup is highly dependent on the selected toolchain, this
+manual does not give any details on the installation of such a debugger
+toolchain. The manuals of the tool vendors are exhaustive on the topic of
+installation and setup.</p>
+<p>More details on the selection and usage of debugger toolchains can be
+found in <a class="reference internal" href="../tools/debugger/debug-application.html#debugging-the-application"><span class="std std-ref">Debugging the Application</span></a>.</p>
+</div>
+<div class="section" id="optional-can-driver-installation">
+<h2><span class="section-number">3.5. </span>Optional: CAN-Driver installation<a class="headerlink" href="#optional-can-driver-installation" title="Permalink to this headline"></a></h2>
+<p>One way of communicating with the BMS is through the CAN protocol.
+The toolchain of foxBMS 2 is targeted on the usage of CAN interfaces of the
+PCAN series by PEAK System.
+In order to use these probes, the required driver has to be downloaded from the
+<a class="reference external" href="https://www.peak-system.com/">website of the vendor</a>.</p>
+<p>When installing, please make sure that the option for “PCAN-Basic API” is
+selected, as this is required for the foxBMS 2 GUI application.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="repository-structure.html" class="btn btn-neutral float-left" title="2. Repository Structure" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="workspace.html" class="btn btn-neutral float-right" title="4. Creating a Workspace" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

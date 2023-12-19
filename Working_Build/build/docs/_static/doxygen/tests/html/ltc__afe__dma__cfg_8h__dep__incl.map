@@ -1,0 +1,5 @@
+<map id="ltc_afe_dma_cfg.h" name="ltc_afe_dma_cfg.h">
+<area shape="rect" id="node1" title="Headers for the configuration for the DMA module." alt="" coords="88,5,215,32"/>
+<area shape="rect" id="node2" href="$ltc__afe__dma__cfg_8c.html" title="Configuration for the DMA module." alt="" coords="5,80,132,107"/>
+<area shape="rect" id="node3" href="$test__ltc__afe__dma__cfg_8c.html" title="Tests for the CAN driver." alt="" coords="156,80,312,107"/>
+</map>

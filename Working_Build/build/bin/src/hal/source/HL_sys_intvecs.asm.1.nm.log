@@ -1,0 +1,25 @@
+
+file            [index]  value      size  bind  type  vis   shndx  symbol name 
+
+src\hal\source\HL_sys_intvecs.asm.1.obj|[0]     |0x00000000|0|LOCL |NONE |DFLT |UNDEF |
+src\hal\source\HL_sys_intvecs.asm.1.obj|[7]     |0x00000000|0|LOCL |NONE |HIDN |2     |$a
+src\hal\source\HL_sys_intvecs.asm.1.obj|[12]    |0x00000000|0|LOCL |SECT |HIDN |7     |.debug_abbrev
+src\hal\source\HL_sys_intvecs.asm.1.obj|[13]    |0x00000000|0|LOCL |SECT |HIDN |8     |.debug_abbrev
+src\hal\source\HL_sys_intvecs.asm.1.obj|[14]    |0x00000000|0|LOCL |SECT |HIDN |9     |.debug_aranges
+src\hal\source\HL_sys_intvecs.asm.1.obj|[8]     |0x00000000|0|LOCL |SECT |HIDN |3     |.debug_info
+src\hal\source\HL_sys_intvecs.asm.1.obj|[9]     |0x00000000|0|LOCL |SECT |HIDN |4     |.debug_info
+src\hal\source\HL_sys_intvecs.asm.1.obj|[10]    |0x00000000|0|LOCL |SECT |HIDN |5     |.debug_line
+src\hal\source\HL_sys_intvecs.asm.1.obj|[11]    |0x00000000|0|LOCL |SECT |HIDN |6     |.debug_line
+src\hal\source\HL_sys_intvecs.asm.1.obj|[15]    |0x00000000|0|LOCL |SECT |HIDN |10    |.debug_pubnames
+src\hal\source\HL_sys_intvecs.asm.1.obj|[6]     |0x00000000|0|LOCL |SECT |HIDN |2     |.intvecs
+src\hal\source\HL_sys_intvecs.asm.1.obj|[5]     |0x00000000|0|LOCL |SECT |HIDN |1     |.text
+src\hal\source\HL_sys_intvecs.asm.1.obj|[1]     |0x00000000|0|LOCL |FILE |HIDN |ABS   |HL_sys_intvecs.asm
+src\hal\source\HL_sys_intvecs.asm.1.obj|[16]    |0x00000000|0|WEAK |FUNC |HIDN |UNDEF |Lib$$Request$$armlib
+src\hal\source\HL_sys_intvecs.asm.1.obj|[17]    |0x00000000|0|WEAK |FUNC |HIDN |UNDEF |Lib$$Request$$cpplib
+src\hal\source\HL_sys_intvecs.asm.1.obj|[18]    |0x00000000|0|GLOB |NONE |HIDN |UNDEF |_c_int00
+src\hal\source\HL_sys_intvecs.asm.1.obj|[4]     |0x00000010|0|LOCL |FUNC |HIDN |2     |dataEntry
+src\hal\source\HL_sys_intvecs.asm.1.obj|[19]    |0x00000000|0|GLOB |NONE |HIDN |UNDEF |phantomInterrupt
+src\hal\source\HL_sys_intvecs.asm.1.obj|[3]     |0x0000000c|0|LOCL |FUNC |HIDN |2     |prefetchEntry
+src\hal\source\HL_sys_intvecs.asm.1.obj|[20]    |0x00000000|0|GLOB |FUNC |HIDN |2     |resetEntry
+src\hal\source\HL_sys_intvecs.asm.1.obj|[2]     |0x00000004|0|LOCL |FUNC |HIDN |2     |undefEntry
+src\hal\source\HL_sys_intvecs.asm.1.obj|[21]    |0x00000000|0|GLOB |NONE |HIDN |UNDEF |vPortSWI

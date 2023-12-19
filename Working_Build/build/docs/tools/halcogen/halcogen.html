@@ -1,0 +1,280 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5. HALCoGen tool documentation &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="6. Axivion Bauhaus Suite" href="../static-analysis/axivion.html" />
+    <link rel="prev" title="4.2.3. Lauterbach Trace32 Debugger" href="../debugger/debugger-lauterbach.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><span class="section-number">5. </span>HALCoGen tool documentation</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/tools/halcogen/halcogen.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="halcogen-tool-documentation">
+<span id="id1"></span><h1><span class="section-number">5. </span>HALCoGen tool documentation<a class="headerlink" href="#halcogen-tool-documentation" title="Permalink to this headline"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A documentation of the tool HALCoGen can be found in this section, the
+waf-tool wrapper for this project in <a class="reference internal" href="../waf-tools/f_hcg.html#waf-tool-halcogen"><span class="std std-ref">HALCoGen</span></a>, information
+on configuring HALCoGen in the context of the toolchain of this project
+in <a class="reference internal" href="../../software/configuration/configuration.html#hal-configuration"><span class="std std-ref">HALCoGen</span></a> and an example on how to use a pre-generated
+HAL instead of generating it in the compilation step in
+<a class="reference internal" href="../../software/configuration/without-halcogen_how-to.html#how-to-use-generated-sources-from-halcogen"><span class="std std-ref">How to Use Generated Sources from HALCoGen</span></a>.</p>
+</div>
+<p>This part of the manual summarizes the usage of HALCoGen and references
+important documents by TI.</p>
+<div class="section" id="release-notes">
+<h2><span class="section-number">5.1. </span>Release notes<a class="headerlink" href="#release-notes" title="Permalink to this headline"></a></h2>
+<p>When using HALCoGen it is mandatory to be aware of the official
+<a class="reference external" href="https://www.ti.com/lit/ml/spna203/spna203.pdf">release notes SPNA203</a>.
+Special care <strong>SHALL</strong> be taken when reading the section “Known issues and
+limitations”. It has to be screened for issues affecting the particular
+implementation of the BMS.</p>
+<p>Moreover, the most recent revision of the
+<a class="reference external" href="https://software-dl.ti.com/hercules/hercules_docs/latest/hercules/">Hercules Safety MCU Resource Guide</a>
+<strong>SHALL</strong> be read carefully.</p>
+</div>
+<div class="section" id="additional-known-issues">
+<h2><span class="section-number">5.2. </span>Additional known issues<a class="headerlink" href="#additional-known-issues" title="Permalink to this headline"></a></h2>
+<p>In addition to the known issues described in the release notes we have
+encountered additional issues. This section captures the issue, together with
+a reference to correspondence with TI (not necessarily by us) and a description
+of work-around measures. This section refers to HALCoGen in version
+<code class="docutils literal notranslate"><span class="pre">04.07.01</span></code>.</p>
+<div class="section" id="incompatibility-of-enum-definitions-with-newer-compilers-in-strict-ansi-mode">
+<h3><span class="section-number">5.2.1. </span>Incompatibility of enum-definitions with newer compilers in strict ANSI mode<a class="headerlink" href="#incompatibility-of-enum-definitions-with-newer-compilers-in-strict-ansi-mode" title="Permalink to this headline"></a></h3>
+<p>The ARM CGT compilers since version <code class="docutils literal notranslate"><span class="pre">20.2.2.LTS</span></code> (shipped with CCS
+<code class="docutils literal notranslate"><span class="pre">10.2.0.00009</span></code>) contain a bugfix for the underlying data type of enums
+described in <a class="reference external" href="https://sir.ext.ti.com/jira/browse/EXT_EP-10334">EXT_EP-10334</a>.
+The code that is generated by HALCoGen heavily relies on this behavior when
+implementing enums.</p>
+<p>This issue affects compilation of the HAL in strict ANSI mode. In this mode,
+the underlying data type of enums is <em>signed char</em> (as expected by the C
+standard). These enums, however, are used for comparison with
+<em>unsigned integers</em> in the generated HAL. Details can be found in a
+<a class="reference external" href="https://e2e.ti.com/support/tools/ccs/f/code-composer-studio-forum/993701/codecomposer-ccs10-2-0-20-2-2lts-cannot-compile-halcogen-04-07-01-generated-sources-anymore">TI forum post</a>.</p>
+<p>The correct fix for this issue would be to extend all relevant generated enums
+in the HAL with an entry <code class="docutils literal notranslate"><span class="pre">dummy=UCHAR_MAX</span></code> as last entry. This tells the
+compiler to use <em>unsigned char</em> as underlying data type for these enums. Since
+we cannot modify the HAL without loosing the ability to generate it and TI is
+not planning to provide a fix in HALCoGen as stated in the linked forum post,
+a second fix as described in the following paragraph is possible.</p>
+<p>The compilation failure in this case comes from a diagnostic error <code class="docutils literal notranslate"><span class="pre">2142</span></code>
+that is raised to an error in our toolchain. Under the assumption that the
+generated HAL is correct, these warnings can be disabled as described by TI by
+removing <code class="docutils literal notranslate"><span class="pre">--emit_warnings_as_errors</span></code> and <code class="docutils literal notranslate"><span class="pre">--diag_error=2142</span></code> for the
+compilation of the HAL.</p>
+<p>This issue is fixed with the latter option in foxBMS 2 versions <code class="docutils literal notranslate"><span class="pre">v1.1.0</span></code> and
+upwards.</p>
+</div>
+<div class="section" id="message-definitions-in-can4">
+<h3><span class="section-number">5.2.2. </span>Message definitions in CAN4<a class="headerlink" href="#message-definitions-in-can4" title="Permalink to this headline"></a></h3>
+<p>HALCoGen has a bug that prevents it from generating a complete set of message
+definitions for the message boxes 33 to 64. This issue is described in a
+<a class="reference external" href="https://e2e.ti.com/support/microcontrollers/other-microcontrollers-group/other/f/other-microcontrollers-forum/543081/halcogen-not-generating-code-for-can4-mailboxes-32">TI forum post about HALCoGen v04.05.02</a>
+and an additional
+<a class="reference external" href="https://e2e.ti.com/support/microcontrollers/other-microcontrollers-group/other/f/other-microcontrollers-forum/998737/halcogen-not-generating-code-for-can4-mailboxes-32-in-halcogen-04-07-01">TI forum post about HALCoGen v04.07.01</a>.
+TI plans to update the release note of HALCoGen in the third quarter of 2021
+with this information.</p>
+<p>For the workaround, the configuration files of HALCoGen have to be modified.
+To be precise, the file
+<code class="docutils literal notranslate"><span class="pre">C:\ti\Hercules\HALCoGen\v04.07.01\drivers\TMS570LC4357ZWT\CAN4v000.xml</span></code>
+(if HALCoGen is installed into the standard directory) has to be opened and
+the limit of the for-loop in line <code class="docutils literal notranslate"><span class="pre">144</span></code> has to be changed from <code class="docutils literal notranslate"><span class="pre">32</span></code> to
+<code class="docutils literal notranslate"><span class="pre">64</span></code>.</p>
+<p>The result should look like the content of <a class="reference internal" href="#modify-can4-xml"><span class="std std-numref">Listing 5.7</span></a>.</p>
+<div class="literal-block-wrapper docutils container" id="modify-can4-xml">
+<div class="code-block-caption"><span class="caption-number">Listing 5.7 </span><span class="caption-text">Modified line 144 in <code class="docutils literal notranslate"><span class="pre">CAN4v000.xml</span></code></span><a class="headerlink" href="#modify-can4-xml" title="Permalink to this code"></a></div>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="linenos">143</span>      <span class="kd">var</span> <span class="nx">i</span><span class="o">=</span><span class="mf">0</span>
+<span class="hll"><span class="linenos">144</span>   <span class="k">for</span><span class="p">(</span><span class="nx">i</span><span class="o">=</span><span class="mf">1</span><span class="p">;</span><span class="nx">i</span> <span class="o">&amp;</span><span class="nx">lt</span><span class="p">;</span><span class="o">=</span> <span class="mf">64</span><span class="p">;</span><span class="nx">i</span><span class="o">++</span><span class="p">)</span>
+</span><span class="linenos">145</span>         <span class="p">{</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="mailbox-42-configuration-in-can1">
+<h3><span class="section-number">5.2.3. </span>Mailbox 42 configuration in CAN1<a class="headerlink" href="#mailbox-42-configuration-in-can1" title="Permalink to this headline"></a></h3>
+<p>HALCoGen has a bug that the initialization code of CAN1 mailbox 42 is not
+generated whatever is configured in HALCoGen.
+To use this mailbox, the user needs to initialize this mailbox manually (see
+<cite>TI forum post &lt;https://e2e.ti.com/support/microcontrollers/arm-based-microcontrollers-group/arm-based-microcontrollers/f/arm-based-microcontrollers-forum/905953/ccs-tms570lc4357-halcogen-can-message-configuration-bug-can1-message-41-42—can2-message-41-42&gt;</cite>).</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../debugger/debugger-lauterbach.html" class="btn btn-neutral float-left" title="4.2.3. Lauterbach Trace32 Debugger" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../static-analysis/axivion.html" class="btn btn-neutral float-right" title="6. Axivion Bauhaus Suite" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

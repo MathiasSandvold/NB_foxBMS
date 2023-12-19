@@ -1,0 +1,32 @@
+<map id="nxp_mc33775a_afe.c" name="nxp_mc33775a_afe.c">
+<area shape="rect" id="node1" title="Configuration for the MC33775A analog front&#45;end." alt="" coords="702,5,847,32"/>
+<area shape="rect" id="node2" href="$nxp__afe_8h.html" title="AFE driver wrapper layer for NXP ICs." alt="" coords="297,528,375,555"/>
+<area shape="rect" id="node4" title=" " alt="" coords="762,752,827,779"/>
+<area shape="rect" id="node7" href="$afe__dma_8h.html" title="Headers for the driver for the general DMA module of monitoring ICs." alt="" coords="680,379,763,405"/>
+<area shape="rect" id="node15" href="$dma_8h.html" title="Headers for the driver for the DMA module." alt="" coords="800,379,859,405"/>
+<area shape="rect" id="node16" href="$nxp__mc33775a_8h.html" title="Headers for the driver for the MC33775A analog front&#45;end." alt="" coords="763,80,885,107"/>
+<area shape="rect" id="node29" href="$pex_8h.html" title="Header for the driver for the NXP PCA9539 port expander module." alt="" coords="1274,155,1329,181"/>
+<area shape="rect" id="node3" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="664,677,757,704"/>
+<area shape="rect" id="node5" href="$afe_8h.html" title="AFE driver header." alt="" coords="613,603,664,629"/>
+<area shape="rect" id="node6" title=" " alt="" coords="1369,752,1444,779"/>
+<area shape="rect" id="node8" href="$dma__cfg_8h.html" title="Headers for the configuration for the DMA module." alt="" coords="719,453,801,480"/>
+<area shape="rect" id="node9" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="1427,528,1573,555"/>
+<area shape="rect" id="node13" title=" " alt="" coords="601,528,674,555"/>
+<area shape="rect" id="node14" title=" " alt="" coords="699,528,808,555"/>
+<area shape="rect" id="node10" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="1448,603,1523,629"/>
+<area shape="rect" id="node11" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="1573,677,1645,704"/>
+<area shape="rect" id="node12" title=" " alt="" coords="1559,752,1659,779"/>
+<area shape="rect" id="node17" href="$nxp__mc33775a__cfg_8h.html" title="Header for the configuration for the MC33775A analog front&#45;end." alt="" coords="505,155,650,181"/>
+<area shape="rect" id="node18" href="$nxp__afe__dma_8h.html" title="Headers for the driver for the DMA module." alt="" coords="577,304,687,331"/>
+<area shape="rect" id="node19" href="$nxp__mc33775a__defs_8h.html" title="Definitions for the driver for the MC33775A analog front&#45;end." alt="" coords="349,229,501,256"/>
+<area shape="rect" id="node26" href="$spi_8h.html" title="Headers for the driver for the SPI module." alt="" coords="400,379,451,405"/>
+<area shape="rect" id="node20" href="$database_8h.html" title="Database module header." alt="" coords="1005,304,1091,331"/>
+<area shape="rect" id="node21" href="$database__cfg_8h.html" title="Database configuration header." alt="" coords="1265,453,1375,480"/>
+<area shape="rect" id="node24" href="$database__helper_8h.html" title="Database module header." alt="" coords="1035,379,1163,405"/>
+<area shape="rect" id="node25" href="$os_8h.html" title="Declaration of the OS wrapper interface." alt="" coords="963,603,1010,629"/>
+<area shape="rect" id="node22" href="$mcu_8h.html" title="Headers for the driver for the MCU module." alt="" coords="1288,677,1347,704"/>
+<area shape="rect" id="node23" title=" " alt="" coords="1289,528,1351,555"/>
+<area shape="rect" id="node27" href="$spi__cfg_8h.html" title="Headers for the configuration for the SPI module." alt="" coords="451,453,525,480"/>
+<area shape="rect" id="node28" title=" " alt="" coords="451,528,525,555"/>
+<area shape="rect" id="node30" href="$pex__cfg_8h.html" title="Headers for the configuration for the NXP PCA9539 port expander module." alt="" coords="1262,229,1341,256"/>
+</map>

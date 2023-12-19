@@ -1,0 +1,65 @@
+<map id="BMS_Trigger" name="BMS_Trigger">
+<area shape="rect" id="node1" title="trigger function for the BMS driver state machine." alt="" coords="5,973,103,1000"/>
+<area shape="rect" id="node2" href="$bal_8h.html#a98f48172bc8beacf09e7a4829be29fb8" title="sets the current state request of the state variable bal_state." alt="" coords="1015,89,1168,116"/>
+<area shape="rect" id="node6" href="$bms_8c.html#afb0cbd21738abb325b8d9a0e254e3491" title="Checks the state requests made to the BMS state machine." alt="" coords="173,1150,346,1177"/>
+<area shape="rect" id="node7" href="$bms_8c.html#aa61129e4110d3ee0e1d1227a53d37036" title="Check for any open voltage sense wire." alt="" coords="164,694,355,721"/>
+<area shape="rect" id="node8" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="481,745,585,772"/>
+<area shape="rect" id="node10" href="$bms_8c.html#a030960f823eace2d38ba750cbd99527b" title="Checks if the current limitations are violated." alt="" coords="182,796,337,822"/>
+<area shape="rect" id="node11" href="$foxmath_8c.html#a04e47df99d56d9aad4287672285f4a1c" title="Returns the absolute value of passed int32_t value." alt="" coords="469,846,596,873"/>
+<area shape="rect" id="node12" href="$bms_8c.html#ad5057f08e33ca2d5b01dba9ca55b113b" title="re&#45;entrance check of SYS state machine trigger function" alt="" coords="1010,140,1173,166"/>
+<area shape="rect" id="node13" href="$bms_8c.html#a83f5d09abbf04141bfabab7c5ee865de" title="Returns the average current flowing through all strings." alt="" coords="159,1201,360,1228"/>
+<area shape="rect" id="node14" href="$bms_8c.html#aff277b6ef688e140b6aded5907cdaa24" title="Returns ID of string with voltage closest to first closed string voltage." alt="" coords="454,1192,611,1218"/>
+<area shape="rect" id="node16" href="$bms_8c.html#aa8629fa034f46282328df180f5190e2e" title="Get current flow direction, current value as function parameter." alt="" coords="433,922,632,949"/>
+<area shape="rect" id="node17" href="$bms_8c.html#a79c1eacde75dcb1613bdf05408f2ebdf" title="Get first string contactor that should be opened depending on the actual current flow direction." alt="" coords="164,1252,355,1294"/>
+<area shape="rect" id="node18" href="$bms_8c.html#ac7f00f2b32e1b48effa00682864b134c" title="Returns ID of string with highest total voltage." alt="" coords="181,1318,338,1345"/>
+<area shape="rect" id="node19" href="$bms_8c.html#ab46023b9c65354e6b0bee4737d905573" title="Returns ID of string with lowest total voltage." alt="" coords="182,1369,337,1396"/>
+<area shape="rect" id="node20" href="$bms_8c.html#a6be39f54ac7bccab7754c82fe9614517" title=" " alt="" coords="160,1420,359,1446"/>
+<area shape="rect" id="node21" href="$bms_8c.html#af7274f33f364e8b90eaab4db4691756d" title="Get second string contactor that should be opened." alt="" coords="163,1471,356,1512"/>
+<area shape="rect" id="node22" href="$bms_8c.html#aae2219a96d1c1b8040f69c0c4a938ef5" title="Returns voltage difference between first closed string and string ID." alt="" coords="152,948,367,974"/>
+<area shape="rect" id="node23" href="$bms_8c.html#af45381b7833d8b54bebfa00819e46c3a" title="Checks if any error flag is set and handles delay until contactors need to be opened." alt="" coords="151,1588,368,1614"/>
+<area shape="rect" id="node27" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="469,1638,596,1665"/>
+<area shape="rect" id="node28" href="$bms_8c.html#a4fe1f853a46d43cbeddbdbc3e1e26aec" title="Checks if the contactor feedback for a specific contactor is valid need to be opened." alt="" coords="154,1689,365,1716"/>
+<area shape="rect" id="node29" href="$bms_8c.html#adac85d9bf1b7fd02d1a0efbd2c222391" title="transfers the current state request to the state machine." alt="" coords="1000,190,1183,217"/>
+<area shape="rect" id="node30" href="$bms_8c.html#a76058d139f635139e58c6c6fce836c94" title="Updates battery system state variable depending on measured/recent current values." alt="" coords="174,1740,345,1766"/>
+<area shape="rect" id="node31" href="$contactor_8c.html#a2b2ba5d5312f7ea19245ce7012fa38d5" title="checks the feedback of all contactors" alt="" coords="180,593,339,620"/>
+<area shape="rect" id="node36" href="$contactor_8c.html#a359cf64388a3ce1432d648c5d2d74f96" title="Closes the contactor." alt="" coords="456,365,609,392"/>
+<area shape="rect" id="node40" href="$contactor_8c.html#aeca7c362c6d4ae2446f879badaa74830" title="Closes precharge." alt="" coords="181,441,337,468"/>
+<area shape="rect" id="node41" href="$contactor_8c.html#acf5d3ca6d094fc51514959855cf72959" title="Returns the current contactor state." alt="" coords="173,1790,345,1817"/>
+<area shape="rect" id="node42" href="$contactor_8c.html#aec6ecd0c4511790c826a7b8b1ad20d7b" title="Open all currently closed precharge contactors." alt="" coords="417,238,649,265"/>
+<area shape="rect" id="node43" href="$contactor_8c.html#a8218cfd3f2ca325237b40624a6337f03" title="Opens the contactor." alt="" coords="457,289,608,316"/>
+<area shape="rect" id="node44" href="$contactor_8c.html#a7ad52b078cdb28d73da19979843fa3f4" title="Opens precharge." alt="" coords="182,340,337,366"/>
+<area shape="rect" id="node45" href="$diag_8c.html#a7320b7cba18f40437e0d23d587843f89" title="Check if any fatal error is set." alt="" coords="447,1537,618,1564"/>
+<area shape="rect" id="node46" href="$imd_8c.html#a052e0e6f3cd1501d0471060811380ee2" title="Request to activate the actual IMD measurement." alt="" coords="697,480,932,506"/>
+<area shape="rect" id="node49" href="$led_8c.html#a0e678eb65ea5db2ea54a904c5698376d" title="Set debug LED with defined frequency." alt="" coords="189,1841,329,1868"/>
+<area shape="rect" id="node50" href="$meas_8c.html#a4044fa0aaa42b1a6098f304d8a43e318" title="Makes the request to the AFE state machine to perform open&#45;wire check." alt="" coords="427,542,638,569"/>
+<area shape="rect" id="node55" href="$soa_8c.html#aa9aaf8d9321b5c449b4f760ea9ebb6dc" title="checks the abidance by the safe operating area" alt="" coords="191,1049,327,1076"/>
+<area shape="rect" id="node61" href="$soa_8c.html#a7789111342a6f297b6bc1b88108544ed" title="FOR FUTURE COMPATIBILITY; DUMMY FUNCTION; DO NOT USE." alt="" coords="157,1892,361,1918"/>
+<area shape="rect" id="node62" href="$soa_8c.html#a0db3e3d883bf1aa26f21286f6a6bb868" title="checks the abidance by the safe operating area" alt="" coords="173,897,346,924"/>
+<area shape="rect" id="node63" href="$soa_8c.html#a18b76098c31f396882ddeefebfd17e2a" title="checks the abidance by the safe operating area" alt="" coords="187,745,332,772"/>
+<area shape="rect" id="node3" href="$bal_8c.html#ace76b9a00c0a0ec922e15d0d677b9315" title="checks the state requests that are made." alt="" coords="1251,89,1421,116"/>
+<area shape="rect" id="node4" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1263,330,1409,357"/>
+<area shape="rect" id="node5" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1267,254,1405,281"/>
+<area shape="rect" id="node9" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="753,745,876,772"/>
+<area shape="rect" id="node15" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="743,1133,886,1160"/>
+<area shape="rect" id="node24" href="$bms_8c.html#a42c1b8d028f52deab96d0b5c03a134bc" title="Checks all the error flags from diagnosis module with a severity of DIAG_FATAL_ERROR." alt="" coords="436,1588,629,1614"/>
+<area shape="rect" id="node25" href="$diag_8c.html#a5e2190133d0352d1e483ee1c9829c6aa" title="Get configured delay of passed diagnosis entry." alt="" coords="757,1588,872,1614"/>
+<area shape="rect" id="node26" href="$diag_8c.html#a65aa765236a760639d5401524b876378" title="Checks if passed diagnosis entry has been triggered or not." alt="" coords="715,1537,915,1564"/>
+<area shape="rect" id="node32" href="$contactor_8c.html#a6bc75e3a0508862d0624a5b9b2862221" title="Reads the feedback of all contactors." alt="" coords="416,416,649,442"/>
+<area shape="rect" id="node33" href="$sps_8c.html#a9c3bf6cc3ba07d1d11d34f03ec8c4f8e" title="Get feedback value." alt="" coords="980,393,1203,420"/>
+<area shape="rect" id="node34" href="$sps_8c.html#a033367817569ec2519c57fed158ef2a3" title="Get the feedback state of a channel." alt="" coords="713,346,917,373"/>
+<area shape="rect" id="node35" href="$pex_8c.html#a6a7f4e6a2f532e9093c7be8498032590" title="get pin state of port expander pins." alt="" coords="1044,342,1139,369"/>
+<area shape="rect" id="node37" href="$sps_8c.html#a9cb3cd911b7a454365ab9c3cec7319a1" title="Request state of a contactor." alt="" coords="719,289,910,316"/>
+<area shape="rect" id="node38" href="$sps_8c.html#a12055277c605a27340a3938e6f84523a" title="Returns the channel affiliation." alt="" coords="1003,292,1179,318"/>
+<area shape="rect" id="node39" href="$sps_8c.html#acbea831bc7b455fd71f259e3a9e4c0aa" title="Request the functional state of a channel." alt="" coords="1000,241,1183,268"/>
+<area shape="rect" id="node47" href="$imd_8c.html#af71dbb70f367737ded7c75030b93d2f5" title="sets the current state request of the state variable imd_state." alt="" coords="1016,444,1167,470"/>
+<area shape="rect" id="node48" href="$imd_8c.html#a5af47fbf7aebd66487c00967df0c9368" title="checks the state requests that are made." alt="" coords="1252,444,1420,470"/>
+<area shape="rect" id="node51" href="$afe_8h.html#a39dbbdfedd5cba3c54606ab2201b3575" title="Makes the request to the AFE state machine to perform open&#45;wire check." alt="" coords="715,542,914,569"/>
+<area shape="rect" id="node52" href="$ltc__6806_8c.html#a4bb4d1d651bd80b2151b62d35e3a2699" title="sets the current state request of the state variable ltc_state." alt="" coords="1016,494,1167,521"/>
+<area shape="rect" id="node54" href="$nxp__afe_8h.html#a0094205930d9cf9f9cad39e496586571" title=" " alt="" coords="993,545,1190,572"/>
+<area shape="rect" id="node53" href="$ltc__6806_8c.html#a42d4f8653843aeee6f118782dfff2c20" title="checks the state requests that are made." alt="" coords="1252,494,1420,521"/>
+<area shape="rect" id="node56" href="$soa__cfg_8c.html#af23336f7a72fce8c5e2a574075d78bbd" title="Checks if cell current limit is violated." alt="" coords="429,973,636,1000"/>
+<area shape="rect" id="node57" href="$soa__cfg_8c.html#a1b00364be89ccc23d92926da05500192" title="Checks if string current is floating while contactors are open." alt="" coords="437,1024,628,1050"/>
+<area shape="rect" id="node59" href="$soa__cfg_8c.html#a768c8685aef6aedc30b0f65cafb1c049" title="Checks if pack current limit is violated." alt="" coords="425,1074,640,1101"/>
+<area shape="rect" id="node60" href="$soa__cfg_8c.html#aa31aff28740029f1f8f26fd474e63e6f" title="Checks if string current limit is violated." alt="" coords="447,1126,618,1167"/>
+<area shape="rect" id="node58" href="$bms_8c.html#a348c05608a31e56c9675cd88bdad6c79" title="Returns if string is currently precharging or not." alt="" coords="729,1024,900,1050"/>
+</map>

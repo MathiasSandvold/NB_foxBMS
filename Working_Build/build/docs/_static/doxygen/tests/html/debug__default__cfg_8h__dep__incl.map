@@ -1,0 +1,8 @@
+<map id="debug_default_cfg.h" name="debug_default_cfg.h">
+<area shape="rect" id="node1" title="Header for the configuration for the fake AFE." alt="" coords="319,5,456,32"/>
+<area shape="rect" id="node2" href="$debug__default__cfg_8c.html" title="Configuration for the fake AFE." alt="" coords="5,87,143,114"/>
+<area shape="rect" id="node3" href="$test__debug__default__afe_8c.html" title="Test of the debug_default_afe.c module." alt="" coords="167,80,298,121"/>
+<area shape="rect" id="node4" href="$test__debug__default__afe__dma_8c.html" title="Test of the debug_default_afe_dma.c module." alt="" coords="322,80,453,121"/>
+<area shape="rect" id="node5" href="$test__debug__default__cfg_8c.html" title="Test of the debug_default_cfg.c module." alt="" coords="477,80,607,121"/>
+<area shape="rect" id="node6" href="$test__debug__default_8c.html" title="Test of the afe.c module." alt="" coords="632,87,775,114"/>
+</map>

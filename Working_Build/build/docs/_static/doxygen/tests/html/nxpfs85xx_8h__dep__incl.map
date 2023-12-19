@@ -1,0 +1,10 @@
+<map id="nxpfs85xx.h" name="nxpfs85xx.h">
+<area shape="rect" id="node1" title="Header for the driver for the FRAM module." alt="" coords="113,5,205,32"/>
+<area shape="rect" id="node2" href="$nxpfs85xx_8c.html" title="Driver for the SBC module." alt="" coords="16,80,108,107"/>
+<area shape="rect" id="node3" href="$sbc_8h.html" title="Header for the driver for the SBC module." alt="" coords="132,80,187,107"/>
+<area shape="rect" id="node8" href="$test__nxpfs85xx_8c.html" title="Tests for the sbc module." alt="" coords="211,80,332,107"/>
+<area shape="rect" id="node4" href="$sbc_8c.html" title="Driver for the SBC module." alt="" coords="5,155,60,181"/>
+<area shape="rect" id="node5" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="84,155,139,181"/>
+<area shape="rect" id="node6" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="163,155,249,181"/>
+<area shape="rect" id="node7" href="$test__sbc_8c.html" title="Tests for the sbc module." alt="" coords="273,155,355,181"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="TEST_SOF_CalculateVoltageBasedCurrentLimit" name="TEST_SOF_CalculateVoltageBasedCurrentLimit">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node2" href="$sof__trapezoid_8c.html#ace0659b0de9303cd1f927adcbe13141f" title="calculates the SoF from voltage data (i.e., minimum and maximum voltage)" alt="" coords="247,5,437,47"/>
+</map>

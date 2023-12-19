@@ -1,0 +1,1222 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>5.1.2.2. LTC6811-1-based 12-Cell Slave v2.0.3 to v2.1.1 &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+        <script src="../../../_static/jquery.js"></script>
+        <script src="../../../_static/underscore.js"></script>
+        <script src="../../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+    <link rel="next" title="5.1.2.3. LTC6811-1-based 12-Cell Slave v2.1.2 to v2.1.5" href="12-ltc-ltc6811-1-v2.1.2.html" />
+    <link rel="prev" title="5.1.2.1. Changelog for Slave LTC6811-1" href="12-ltc-ltc6811-1-changelog.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../master.html">4. Master Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../slaves.html">5. Slaves Overview</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../12-ltc-ltc6804-1-vx.x.x/12-ltc-ltc6804-1-v1.x.x.html">5.1.1.1. LTC6804-1-based 12-Cell Slave <code class="docutils literal notranslate"><span class="pre">v1.x.x</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="12-ltc-ltc6811-1-changelog.html">5.1.2.1. Changelog for Slave LTC6811-1</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">5.1.2.2. LTC6811-1-based 12-Cell Slave <code class="docutils literal notranslate"><span class="pre">v2.0.3</span> <span class="pre">to</span> <span class="pre">v2.1.1</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="12-ltc-ltc6811-1-v2.1.2.html">5.1.2.3. LTC6811-1-based 12-Cell Slave <code class="docutils literal notranslate"><span class="pre">v2.1.2</span> <span class="pre">to</span> <span class="pre">v2.1.5</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="12-ltc-ltc6811-1-v2.1.6.html">5.1.2.4. LTC6811-1-based 12-Cell Slave <code class="docutils literal notranslate"><span class="pre">v2.1.6</span></code> and above</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../18-ltc-ltc6813-1-vx.x.x/18-ltc-ltc6813-1-changelog.html">5.1.3.1. Changelog for Slave LTC6813-1</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../18-ltc-ltc6813-1-vx.x.x/18-ltc-ltc6813-1-v1.1.3.html">5.1.3.2. LTC6813-1-based 18-Cell Slave <code class="docutils literal notranslate"><span class="pre">v1.1.3</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../18-ltc-ltc6813-1-vx.x.x/18-ltc-ltc6813-1-v1.1.4.html">5.1.3.3. LTC6813-1-based 18-Cell Slave <code class="docutils literal notranslate"><span class="pre">v1.1.4</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../18-ltc-ltc6813-1-vx.x.x/18-ltc-ltc6813-1-v1.1.5.html">5.1.3.4. LTC6813-1-based 18-Cell Slave <code class="docutils literal notranslate"><span class="pre">v1.1.5</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="../14-nxp-mc33775a-vx.x.x/14-nxp-mc33775a-changelog.html">5.2.1.1. Changelog for Slave MC33775</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../14-nxp-mc33775a-vx.x.x/14-nxp-mc33775a-v1.0.0.html">5.2.1.2. MC33775A-based 14-Cell Slave <code class="docutils literal notranslate"><span class="pre">v1.0.0</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../slaves.html"><span class="section-number">5. </span>Slaves Overview</a> &raquo;</li>
+      <li><span class="section-number">5.1.2.2. </span>LTC6811-1-based 12-Cell Slave <code class="docutils literal notranslate"><span class="pre">v2.0.3</span> <span class="pre">to</span> <span class="pre">v2.1.1</span></code></li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../_sources/hardware/slaves/12-ltc-ltc6811-1-vx.x.x/12-ltc-ltc6811-1-v2.0.3.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="ltc6811-1-based-12-cell-slave-v2-0-3-to-v2-1-1">
+<span id="id1"></span><h1><span class="section-number">5.1.2.2. </span>LTC6811-1-based 12-Cell Slave <code class="docutils literal notranslate"><span class="pre">v2.0.3</span> <span class="pre">to</span> <span class="pre">v2.1.1</span></code><a class="headerlink" href="#ltc6811-1-based-12-cell-slave-v2-0-3-to-v2-1-1" title="Permalink to this headline"></a></h1>
+<div class="section" id="overview">
+<h2><span class="section-number">5.1.2.2.1. </span>Overview<a class="headerlink" href="#overview" title="Permalink to this headline"></a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The following description only applies for the LTC6811-1-based 12 cell
+BMS-Slave Board hardware versions <code class="docutils literal notranslate"><span class="pre">2.0.3</span></code> to
+<code class="docutils literal notranslate"><span class="pre">2.1.1</span></code>.</p>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>All connector pinouts described below follow the
+<a class="reference internal" href="../../connectors.html#convention-for-molex-3-0-connector-pin-numbering"><span class="std std-ref">Convention for Molex Micro-Fit 3.0 Connector Pin Numbering</span></a>.</p>
+</div>
+</div>
+<div class="section" id="specifications">
+<h2><span class="section-number">5.1.2.2.2. </span>Specifications<a class="headerlink" href="#specifications" title="Permalink to this headline"></a></h2>
+<div class="section" id="electrical-ratings">
+<h3><span class="section-number">5.1.2.2.2.1. </span>Electrical Ratings<a class="headerlink" href="#electrical-ratings" title="Permalink to this headline"></a></h3>
+<p>The current consumption from the module has been measured at 43.2 V module
+voltage, which is equivalent to a cell voltage of 3.6 V per cell.
+No sense lines have been connected from this measurement (as the impact of cell
+voltage sensing is negligible on the current consumption).</p>
+<p>The DC supply current has been measured with a voltage of 12 V and no
+<code class="docutils literal notranslate"><span class="pre">VBAT</span></code> or cells connected.</p>
+<table class="docutils align-default" id="slave-12cell-v2-0-3-electrical-ratings">
+<caption><span class="caption-number">Table 5.7 </span><span class="caption-text">Electrical Ratings</span><a class="headerlink" href="#slave-12cell-v2-0-3-electrical-ratings" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Description</p></th>
+<th class="head"><p>Minimum</p></th>
+<th class="head"><p>Typical</p></th>
+<th class="head"><p>Maximum</p></th>
+<th class="head"><p>Unit</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Battery Module Voltage</p></td>
+<td><p>11</p></td>
+<td><p>–</p></td>
+<td><p>60</p></td>
+<td><p>V</p></td>
+</tr>
+<tr class="row-odd"><td><p>Single Battery Cell Voltage</p></td>
+<td><p>0</p></td>
+<td><p>–</p></td>
+<td><p>5</p></td>
+<td><p>V</p></td>
+</tr>
+<tr class="row-even"><td><p>Temperature Sensor Inputs</p></td>
+<td><p>–</p></td>
+<td><p>10k</p></td>
+<td><p>–</p></td>
+<td><p><span class="math notranslate nohighlight">\({\Omega}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td><p>Analog Inputs (pin headers)</p></td>
+<td><p>0</p></td>
+<td><p>–</p></td>
+<td><p>5</p></td>
+<td><p>V</p></td>
+</tr>
+<tr class="row-even"><td><p>Digital Inputs/Outputs (pin headers)</p></td>
+<td><p>0</p></td>
+<td><p>–</p></td>
+<td><p>5</p></td>
+<td><p>V</p></td>
+</tr>
+<tr class="row-odd"><td><p>Current consumption: Primary in sleep, Secondary in sleep</p></td>
+<td><p>–</p></td>
+<td><p>9.1</p></td>
+<td><p>–</p></td>
+<td><p><span class="math notranslate nohighlight">\({\mu}A\)</span></p></td>
+</tr>
+<tr class="row-even"><td><p>Current consumption: Primary active, Secondary in sleep</p></td>
+<td><p>–</p></td>
+<td><p>11.64</p></td>
+<td><p>–</p></td>
+<td><p>mA</p></td>
+</tr>
+<tr class="row-odd"><td><p>Current consumption: Primary active, Secondary active</p></td>
+<td><p>–</p></td>
+<td><p>22.33</p></td>
+<td><p>–</p></td>
+<td><p>mA</p></td>
+</tr>
+<tr class="row-even"><td><p>DC supply current: Primary in sleep, Secondary in sleep</p></td>
+<td><p>–</p></td>
+<td><p>4.3</p></td>
+<td><p>–</p></td>
+<td><p>mA</p></td>
+</tr>
+<tr class="row-odd"><td><p>DC supply current: Primary active, Secondary in sleep</p></td>
+<td><p>–</p></td>
+<td><p>73.6</p></td>
+<td><p>–</p></td>
+<td><p>mA</p></td>
+</tr>
+<tr class="row-even"><td><p>DC supply current: Primary active, Secondary active</p></td>
+<td><p>–</p></td>
+<td><p>144.3</p></td>
+<td><p>–</p></td>
+<td><p>mA</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="mechanical-dimensions">
+<h3><span class="section-number">5.1.2.2.2.2. </span>Mechanical Dimensions<a class="headerlink" href="#mechanical-dimensions" title="Permalink to this headline"></a></h3>
+<table class="docutils align-default" id="slave-12cell-v2-0-3-mechanical-dimensions">
+<caption><span class="caption-number">Table 5.8 </span><span class="caption-text">Mechanical Dimensions</span><a class="headerlink" href="#slave-12cell-v2-0-3-mechanical-dimensions" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Description</p></th>
+<th class="head"><p>Value</p></th>
+<th class="head"><p>Unit</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>Width</p></td>
+<td><p>100</p></td>
+<td><p>mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Length</p></td>
+<td><p>160</p></td>
+<td><p>mm</p></td>
+</tr>
+<tr class="row-even"><td><p>Height</p></td>
+<td><p>15</p></td>
+<td><p>mm</p></td>
+</tr>
+<tr class="row-odd"><td><p>Weight</p></td>
+<td><p>83</p></td>
+<td><p>g</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="block-diagram">
+<h3><span class="section-number">5.1.2.2.2.3. </span>Block Diagram<a class="headerlink" href="#block-diagram" title="Permalink to this headline"></a></h3>
+<p>The block diagram of the BMS-Slave Board is shown in
+<a class="reference internal" href="#block-diagram-6811-1-slave-12cell-v2-0-3"><span class="std std-numref">Fig. 5.3</span></a>.</p>
+<div class="figure align-default" id="id2">
+<span id="block-diagram-6811-1-slave-12cell-v2-0-3"></span><a class="reference internal image-reference" href="../../../_images/12-ltc-ltc6811-1-v2.0.3.png"><img alt="../../../_images/12-ltc-ltc6811-1-v2.0.3.png" src="../../../_images/12-ltc-ltc6811-1-v2.0.3.png" style="width: 100%;" /></a>
+<p class="caption"><span class="caption-number">Fig. 5.3 </span><span class="caption-text">BMS-Slave Board 12-Cell Block Diagram</span><a class="headerlink" href="#id2" title="Permalink to this image"></a></p>
+</div>
+</div>
+<div class="section" id="schematic-and-board-layout">
+<h3><span class="section-number">5.1.2.2.2.4. </span>Schematic and Board Layout<a class="headerlink" href="#schematic-and-board-layout" title="Permalink to this headline"></a></h3>
+<p>More information about the board schematic and layout files can be found in
+section <a class="reference internal" href="../../design-resources.html#design-resources"><span class="std std-ref">Design Resources</span></a>.</p>
+</div>
+</div>
+<div class="section" id="functions">
+<h2><span class="section-number">5.1.2.2.3. </span>Functions<a class="headerlink" href="#functions" title="Permalink to this headline"></a></h2>
+<p>The following general description applies to both, the primary and the
+secondary of the BMS-Slave Board.
+If there are any differences in hardware between the primary and the secondary
+they will be marked as such.</p>
+<div class="section" id="cell-voltage-measurement">
+<h3><span class="section-number">5.1.2.2.3.1. </span>Cell Voltage Measurement<a class="headerlink" href="#cell-voltage-measurement" title="Permalink to this headline"></a></h3>
+<p>The cell voltage sense lines are input on the connector X1503.
+The pinout is described in
+<a class="reference internal" href="#slave-12cell-v2-0-3-cell-sense-connector"><span class="std std-numref">Table 5.9</span></a>.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../../_images/molex_connector-24pin.png"><img alt="../../../_images/molex_connector-24pin.png" src="../../../_images/molex_connector-24pin.png" style="width: 50%;" /></a>
+</div>
+<table class="docutils align-default" id="slave-12cell-v2-0-3-cell-sense-connector">
+<caption><span class="caption-number">Table 5.9 </span><span class="caption-text">Cell voltage sense connector</span><a class="headerlink" href="#slave-12cell-v2-0-3-cell-sense-connector" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Signal</p></th>
+<th class="head"><p>Direction</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">VBAT-</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>Battery module negative terminal</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CELL_0+</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>Cell 0 positive terminal</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CELL_2+</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>Cell 2 positive terminal</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CELL_4+</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>Cell 4 positive terminal</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CELL_6+</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>Cell 6 positive terminal</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CELL_8+</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>Cell 8 positive terminal</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CELL_10+</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>Cell 10 positive terminal</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">VBAT+</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>Battery module positive terminal</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p><em>not connected</em></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p><em>not connected</em></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p><em>not connected</em></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p><em>not connected</em></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CELL_0-</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>Cell 0 negative terminal</p></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CELL_1+</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>Cell 1 positive terminal</p></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CELL_3+</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>Cell 3 positive terminal</p></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CELL_5+</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>Cell 5 positive terminal</p></td>
+</tr>
+<tr class="row-even"><td><p>17</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CELL_7+</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>Cell 7 positive terminal</p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CELL_9+</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>Cell 9 positive terminal</p></td>
+</tr>
+<tr class="row-even"><td><p>19</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">CELL_11+</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>Cell 11 positive terminal</p></td>
+</tr>
+<tr class="row-odd"><td><p>20</p></td>
+<td><p><em>not connected</em></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>21</p></td>
+<td><p><em>not connected</em></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>22</p></td>
+<td><p><em>not connected</em></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-even"><td><p>23</p></td>
+<td><p><em>not connected</em></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+<tr class="row-odd"><td><p>24</p></td>
+<td><p><em>not connected</em></p></td>
+<td><p>-</p></td>
+<td><p>-</p></td>
+</tr>
+</tbody>
+</table>
+<p>Each of these lines is protected by a 250mA fast fuse surface mount device
+(F402 - F414) on the board except of the <code class="docutils literal notranslate"><span class="pre">VBAT+</span></code> and <code class="docutils literal notranslate"><span class="pre">VBAT-</span></code> lines which are
+protected by a value of 500mA (F401 and F415).
+This is especially important for a test environment.
+The <code class="docutils literal notranslate"><span class="pre">VBAT+</span></code> and <code class="docutils literal notranslate"><span class="pre">VBAT-</span></code> connections are used for the internal power supply of
+the BMS-Slave Board board.
+If the battery module does not contain these separate wires to the positive and
+negative module terminals, the solder jumpers SJ401 and SJ402 have to be
+shorted.
+In this case the power required by the BMS-Slave Board will be supplied through the
+sense lines <code class="docutils literal notranslate"><span class="pre">CELL_0-</span></code> and <code class="docutils literal notranslate"><span class="pre">CELL_11+</span></code>.
+Running the BMS-Slave Board in this configuration could result in cell measurement
+errors due to voltage drop over the sense wires.</p>
+<p>The cell input lines are filtered by a grounded or differential capacitor
+filter:
+both possibilities are provided on the PCB of the BMS-Slave Board.
+More information on the corner frequency of this filtering can be found in the
+schematic.
+The grounded capacitor filter should be used in environments affected with a
+high noise as it offers a high level of battery voltage ripple rejection.
+The differential capacitor filter can be used when noise is less frequent or
+the design is subjected to cost optimization.</p>
+</div>
+<div class="section" id="passive-cell-balancing">
+<h3><span class="section-number">5.1.2.2.3.2. </span>Passive Cell Balancing<a class="headerlink" href="#passive-cell-balancing" title="Permalink to this headline"></a></h3>
+<p>The passive balancing circuit is realized by a parallel connection of two
+68 <span class="math notranslate nohighlight">\({\Omega}\)</span> discharge resistors that can be connected to each single cell in
+parallel.
+The MOSFET switches (T701 - T712) that control the connection to the cells
+are controlled by the primary LTC6811-1 monitoring IC.
+The secondary LTC6811-1 does not support balancing.
+The resistor value of 2x 68 <span class="math notranslate nohighlight">\({\Omega}\)</span> results in a balancing current of about 100mA
+at a cell voltage of 3.6V.
+This current results in a power dissipation of about 0.36W per balancing
+channel (at 3.6V).</p>
+</div>
+<div class="section" id="global-cell-balancing-feedback">
+<h3><span class="section-number">5.1.2.2.3.3. </span>Global Cell Balancing Feedback<a class="headerlink" href="#global-cell-balancing-feedback" title="Permalink to this headline"></a></h3>
+<p>In order to check the proper function of the balancing process or to detect a
+malfunction in the balancing circuit, a global balancing feedback signal is
+connected to the LTC6811-1.
+This allows the BMS-Master Board to check whether any balancing action is currently
+taking place.
+The feedback signal is connected to the GPIO3 of the LTC6811-1.
+The signal remains in a logic zero state until any balancing action on at least
+one cell in the module starts.</p>
+</div>
+<div class="section" id="temperature-sensor-measurement">
+<h3><span class="section-number">5.1.2.2.3.4. </span>Temperature Sensor Measurement<a class="headerlink" href="#temperature-sensor-measurement" title="Permalink to this headline"></a></h3>
+<p>The cell temperature sensors are connected to the connectors X1506 (primary)
+and X1507 (secondary).
+The pinout is identical for the primary and secondary and is described in
+<a class="reference internal" href="#slave-12cell-v2-0-3-temp-sense-connector"><span class="std std-numref">Table 5.10</span></a>.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../../_images/molex_connector-16pin.png"><img alt="../../../_images/molex_connector-16pin.png" src="../../../_images/molex_connector-16pin.png" style="width: 30%;" /></a>
+</div>
+<table class="docutils align-default" id="slave-12cell-v2-0-3-temp-sense-connector">
+<caption><span class="caption-number">Table 5.10 </span><span class="caption-text">Temperature sensor connector</span><a class="headerlink" href="#slave-12cell-v2-0-3-temp-sense-connector" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Signal</p></th>
+<th class="head"><p>Direction</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>T-SENSOR_0</p></td>
+<td><p>Input</p></td>
+<td><p>NTC Sensor 0 terminal 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>T-SENSOR_1</p></td>
+<td><p>Input</p></td>
+<td><p>NTC Sensor 1 terminal 1</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>T-SENSOR_2</p></td>
+<td><p>Input</p></td>
+<td><p>NTC Sensor 2 terminal 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>T-SENSOR_3</p></td>
+<td><p>Input</p></td>
+<td><p>NTC Sensor 3 terminal 1</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>T-SENSOR_4</p></td>
+<td><p>Input</p></td>
+<td><p>NTC Sensor 4 terminal 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>T-SENSOR_5</p></td>
+<td><p>Input</p></td>
+<td><p>NTC Sensor 5 terminal 1</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>T-SENSOR_6</p></td>
+<td><p>Input</p></td>
+<td><p>NTC Sensor 6 terminal 1</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>T-SENSOR_7</p></td>
+<td><p>Input</p></td>
+<td><p>NTC Sensor 7 terminal 1</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FUSED_VBAT-</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>NTC Sensor 0 terminal 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FUSED_VBAT-</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>NTC Sensor 1 terminal 2</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FUSED_VBAT-</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>NTC Sensor 2 terminal 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FUSED_VBAT-</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>NTC Sensor 3 terminal 2</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FUSED_VBAT-</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>NTC Sensor 4 terminal 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FUSED_VBAT-</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>NTC Sensor 5 terminal 2</p></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FUSED_VBAT-</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>NTC Sensor 6 terminal 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FUSED_VBAT-</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>NTC Sensor 7 terminal 2</p></td>
+</tr>
+</tbody>
+</table>
+<p>Standard 10<span class="math notranslate nohighlight">\({k\Omega}\)</span> NTC resistors are recommended for use.
+When using other values than these, the series resistors
+(R901-R908 / R1001-R1008) on the board may have to be adjusted.
+Please note that the accuracy of the internal voltage reference VREF2 decreases
+heavily with a load of over 3mA.
+Using 8x 10<span class="math notranslate nohighlight">\({k\Omega}\)</span> NTC resistors with the corresponding 10<span class="math notranslate nohighlight">\({k\Omega}\)</span> series
+resistors results in a current of 1.2mA (at 20°C) which is drawn from VREF2.</p>
+<p>Each of the 8 temperature sensors are connected to an analog multiplexer.
+The analog multiplexer can be controlled via I<sup>2</sup>C by the LTC6811-1
+(7-bit address: 0x4C).
+In order to ensure fast settling times after switching the multiplexer input,
+the output signal of the multiplexer is buffered by an operational amplifier.
+Finally the analog voltage of the selected sensor is measured on the GPIO1 pin
+of the LTC6811-1.</p>
+</div>
+<div class="section" id="on-board-eeprom">
+<h3><span class="section-number">5.1.2.2.3.5. </span>On-board EEPROM<a class="headerlink" href="#on-board-eeprom" title="Permalink to this headline"></a></h3>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The BMS-Slave Board hardware versions <code class="docutils literal notranslate"><span class="pre">2.1.0</span></code> and above use a different
+EEPROM IC (ST M24M02) than all other previous hardware versions.</p>
+</div>
+<p>The primary as well as the secondary unit of the BMS-Slave Board board is equipped
+with an EEPROM (IC1301 / IC1401).
+The EEPROM for example can be used for storing data such as calibration values
+or minimum and maximum temperatures seen by the module during its lifetime.
+Similar to the analog multiplexers, the EEPROM device is connected to the
+I<sup>2</sup>C bus of the LTC6811-1 (7-bit address: 0x50).</p>
+</div>
+<div class="section" id="on-board-ambient-temperature-sensor">
+<h3><span class="section-number">5.1.2.2.3.6. </span>On-board Ambient Temperature Sensor<a class="headerlink" href="#on-board-ambient-temperature-sensor" title="Permalink to this headline"></a></h3>
+<p>For an additional monitoring of the ambient temperature an on-board temperature
+sensor is used.
+This temperature sensor can be read by the LTC6811-1 via the I<sup>2</sup>C bus
+(7-bit address: 0x48).
+It is possible to program an alert temperature level.
+Once the measured temperature reaches this alert temperature level, the alert
+pin of the IC is set to a logic low level.
+Currently, this signal is not used on the BMS-Slave Board board, but it is
+accessible on the connector X1508.</p>
+</div>
+<div class="section" id="additional-inputs-and-outputs">
+<h3><span class="section-number">5.1.2.2.3.7. </span>Additional Inputs and Outputs<a class="headerlink" href="#additional-inputs-and-outputs" title="Permalink to this headline"></a></h3>
+<p>Several additional analog and digital inputs and outputs are provided on the
+BMS-Slave Board board via pin headers.
+Each 16 analog inputs are provided on connector X1501 (primary) and X1502
+(secondary).
+The pinout for the connectors for the primary and secondary unit is identical
+and is described in
+<a class="reference internal" href="#slave-12cell-v2-0-3-analog-in-connector"><span class="std std-numref">Table 5.11</span></a>.</p>
+<table class="docutils align-default" id="slave-12cell-v2-0-3-analog-in-connector">
+<caption><span class="caption-number">Table 5.11 </span><span class="caption-text">Connector for analog inputs</span><a class="headerlink" href="#slave-12cell-v2-0-3-analog-in-connector" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Signal</p></th>
+<th class="head"><p>Direction</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>ANALOG-IN_0</p></td>
+<td><p>Input</p></td>
+<td><p>Analog input 0</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>ANALOG-IN_1</p></td>
+<td><p>Input</p></td>
+<td><p>Analog input 1</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>ANALOG-IN_2</p></td>
+<td><p>Input</p></td>
+<td><p>Analog input 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>ANALOG-IN_3</p></td>
+<td><p>Input</p></td>
+<td><p>Analog input 3</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>ANALOG-IN_4</p></td>
+<td><p>Input</p></td>
+<td><p>Analog input 4</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>ANALOG-IN_5</p></td>
+<td><p>Input</p></td>
+<td><p>Analog input 5</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>ANALOG-IN_6</p></td>
+<td><p>Input</p></td>
+<td><p>Analog input 6</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>ANALOG-IN_7</p></td>
+<td><p>Input</p></td>
+<td><p>Analog input 7</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>ANALOG-IN_8</p></td>
+<td><p>Input</p></td>
+<td><p>Analog input 8</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>ANALOG-IN_9</p></td>
+<td><p>Input</p></td>
+<td><p>Analog input 9</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>ANALOG-IN_10</p></td>
+<td><p>Input</p></td>
+<td><p>Analog input 10</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>ANALOG-IN_11</p></td>
+<td><p>Input</p></td>
+<td><p>Analog input 11</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>ANALOG-IN_12</p></td>
+<td><p>Input</p></td>
+<td><p>Analog input 12</p></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>ANALOG-IN_13</p></td>
+<td><p>Input</p></td>
+<td><p>Analog input 13</p></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>ANALOG-IN_14</p></td>
+<td><p>Input</p></td>
+<td><p>Analog input 14</p></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>ANALOG-IN_15</p></td>
+<td><p>Input</p></td>
+<td><p>Analog input 15</p></td>
+</tr>
+<tr class="row-even"><td><p>17</p></td>
+<td><p>+3.0V_VREF2</p></td>
+<td><p>Output</p></td>
+<td><p>LTC6811-1 3.0V voltage reference</p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FUSED_VBAT-</span></code></p></td>
+<td><p>Output</p></td>
+<td><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+<p>Each 8 analog inputs are connected to an analog multiplexer.
+The analog multiplexers can be controlled via I<sup>2</sup>C by the LTC6811-1
+(7-bit addresses: 0x4D and 0x4E).
+In order to ensure fast settling times after switching the multiplexer input,
+the output signals of the multiplexers are buffered by operational amplifiers.
+Finally the analog voltage of the selected sensor can be measured on the GPIO2
+pin of the LTC6811-1.</p>
+<p>Each 8 digital inputs/outputs are provided on the connectors X1504 (primary)
+and X1505 (secondary).
+The pinout for the connectors for the primary and secondary unit is identical
+and is described in
+<a class="reference internal" href="#slave-12cell-v2-0-3-digital-io-connector"><span class="std std-numref">Table 5.12</span></a>.</p>
+<table class="docutils align-default" id="slave-12cell-v2-0-3-digital-io-connector">
+<caption><span class="caption-number">Table 5.12 </span><span class="caption-text">Connector for digital IOs</span><a class="headerlink" href="#slave-12cell-v2-0-3-digital-io-connector" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Signal</p></th>
+<th class="head"><p>Direction</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>DIGITAL-IO_0</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Digital input/output 0</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>DIGITAL-IO_1</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Digital input/output 1</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>DIGITAL-IO_2</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Digital input/output 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>DIGITAL-IO_3</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Digital input/output 3</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>DIGITAL-IO_4</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Digital input/output 4</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>DIGITAL-IO_5</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Digital input/output 5</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>DIGITAL-IO_6</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Digital input/output 6</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>+5.0V_VREG</p></td>
+<td><p>Output</p></td>
+<td><p>LTC6811-1 5.0V regulated voltage</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FUSED_VBAT-</span></code></p></td>
+<td><p>Output</p></td>
+<td><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+<p>Each 8 digital inputs/outputs are connected to an I<sup>2</sup>C controlled port
+expander (7-bit address: 0x20).
+The direction of the inputs/outputs as well as the logic levels on the pins can
+be selected by register settings.
+Each of the 8 digital inputs/outputs has a discrete pull up resistor that for
+example can be used for directly connecting a tactile switch.</p>
+</div>
+<div class="section" id="isospi-daisy-chain-connection">
+<h3><span class="section-number">5.1.2.2.3.8. </span>isoSPI Daisy Chain Connection<a class="headerlink" href="#isospi-daisy-chain-connection" title="Permalink to this headline"></a></h3>
+<p>The data transmission between the slaves and between the slaves and the basic
+board takes place using the isoSPI interface.
+The isoSPI signals are input on the connectors X1509 (primary) and X1511
+(secondary).
+The isoSPI signals for daisy-chaining are output on the connectors X1510
+(primary) and X1512 (secondary).
+The isoSPI connections are isolated galvanically using pulse transformers
+(TR201 / TR301).
+The voltage amplitude of the differential signal can be adjusted by setting
+resistors (see paragraph <a class="reference internal" href="12-ltc-ltc6811-1-v2.1.2.html#hw-slave-daisy-current-12cell"><span class="std std-ref">Daisy Chain Communication Current</span></a>).</p>
+<p>The pinout of the isoSPI connectors is described in
+<a class="reference internal" href="#slave-12cell-v2-0-3-daisy-input-connectors"><span class="std std-numref">Table 5.13</span></a> and
+<a class="reference internal" href="#slave-12cell-v2-0-3-daisy-output-connectors"><span class="std std-numref">Table 5.14</span></a>.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../../_images/molex_connector-2pin.png"><img alt="../../../_images/molex_connector-2pin.png" src="../../../_images/molex_connector-2pin.png" style="width: 5%;" /></a>
+</div>
+<table class="docutils align-default" id="slave-12cell-v2-0-3-daisy-input-connectors">
+<caption><span class="caption-number">Table 5.13 </span><span class="caption-text">isoSPI Daisy Chain Input Connectors</span><a class="headerlink" href="#slave-12cell-v2-0-3-daisy-input-connectors" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Daisy Chain</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IN+</span></code> (Primary/Secondary LTC6811-1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">IN-</span></code> (Primary/Secondary LTC6811-1)</p></td>
+</tr>
+</tbody>
+</table>
+<table class="docutils align-default" id="slave-12cell-v2-0-3-daisy-output-connectors">
+<caption><span class="caption-number">Table 5.14 </span><span class="caption-text">isoSPI Daisy Chain Output Connectors</span><a class="headerlink" href="#slave-12cell-v2-0-3-daisy-output-connectors" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Daisy Chain</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">OUT+</span></code> (Primary/Secondary LTC6811-1)</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">OUT-</span></code> (Primary/Secondary LTC6811-1)</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="hardware-settings-options">
+<h3><span class="section-number">5.1.2.2.3.9. </span>Hardware Settings / Options<a class="headerlink" href="#hardware-settings-options" title="Permalink to this headline"></a></h3>
+<div class="section" id="software-timer">
+<h4><span class="section-number">5.1.2.2.3.9.1. </span>Software Timer<a class="headerlink" href="#software-timer" title="Permalink to this headline"></a></h4>
+<p>The internal software timer of the LTC6811-1 can be enabled/disabled by a
+dedicated external pin (SWTEN, pin 36).
+In order to support all features, the BMS-Slave Board board offers a possibility to
+switch the software timer.
+The software timer is disabled in the standard configuration, which means pin
+36 is pulled to GND via a zero-ohm resistor (R219/R319).
+The timer can be enabled by removing the resistor R219/R319 and placing a
+zero-ohm resistor to R220/R320.</p>
+</div>
+<div class="section" id="daisy-chain-communication-current">
+<span id="hw-slave-daisy-current-12"></span><h4><span class="section-number">5.1.2.2.3.9.2. </span>Daisy Chain Communication Current<a class="headerlink" href="#daisy-chain-communication-current" title="Permalink to this headline"></a></h4>
+<p>The daisy chain communication current can be set by the resistors R205/R305 and
+R207/R307.
+The default value is 820 <span class="math notranslate nohighlight">\({\Omega}\)</span> for R205/R305 and 1.21<span class="math notranslate nohighlight">\({k\Omega}\)</span> for R207/R307.
+This values result in a bias current of approximately 1mA and a differential
+signal amplitude of 1.18V.
+Theses values are suitable for high noise environments with cable lengths of
+over 50m.
+More information can be found in the LTC6811-1 data sheet.</p>
+</div>
+<div class="section" id="status-led">
+<h4><span class="section-number">5.1.2.2.3.9.3. </span>Status LED<a class="headerlink" href="#status-led" title="Permalink to this headline"></a></h4>
+<p>The status LEDs LD201 and LD301 show the current mode of each, the primary and
+secondary LTC6811-1.
+The LED is on in STANDBY, REFUP or MEASURE mode, whereas the LED is off in
+SLEEP mode.
+The LED can be disabled by removing the resistor R205 (primary) or R305
+(secondary).</p>
+</div>
+<div class="section" id="gpio-extension-connector">
+<h4><span class="section-number">5.1.2.2.3.9.4. </span>GPIO Extension Connector<a class="headerlink" href="#gpio-extension-connector" title="Permalink to this headline"></a></h4>
+<p>The internal GPIO lines of the primary or secondary LTC6811-1 can be
+connected to the GPIO extension pin header X1508 via optional zero-ohm
+resistors.
+In the standard configuration these resistors are not placed.
+Of course it is possible to place each both resistors for a parallel connection
+of the internal signals to the GPIO extension connector.
+For more information see page 2/3 of the schematic file.
+The placement of the resistors and the resulting connection is shown in
+<a class="reference internal" href="#slave-12cell-v2-0-3-gpio-extension-connector"><span class="std std-numref">Table 5.15</span></a>.</p>
+<table class="docutils align-default" id="slave-12cell-v2-0-3-gpio-extension-connector">
+<caption><span class="caption-number">Table 5.15 </span><span class="caption-text">GPIO extension connector</span><a class="headerlink" href="#slave-12cell-v2-0-3-gpio-extension-connector" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>GPIO</p></th>
+<th class="head"><p>connect to pin header</p></th>
+<th class="head"><p>connect to internal function</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>R209/R309</p></td>
+<td><p>R208/R308 (default)</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>R211/R311</p></td>
+<td><p>R210/R310 (default)</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>R213/R313</p></td>
+<td><p>R212/R312 (default)</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>R215/R315</p></td>
+<td><p>R214/R314 (default)</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>R217/R317</p></td>
+<td><p>R216/R316 (default)</p></td>
+</tr>
+</tbody>
+</table>
+<p>The pinout of the extension connector X1508 is described in
+<a class="reference internal" href="#slave-12cell-v2-0-3-extension-connector"><span class="std std-numref">Table 5.16</span></a>.</p>
+<table class="docutils align-default" id="slave-12cell-v2-0-3-extension-connector">
+<caption><span class="caption-number">Table 5.16 </span><span class="caption-text">Extension connector</span><a class="headerlink" href="#slave-12cell-v2-0-3-extension-connector" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Signal</p></th>
+<th class="head"><p>Direction</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>+3.0V_VREF2_0</p></td>
+<td><p>Output</p></td>
+<td><p>Primary LTC6811-1 3.0V reference voltage 2</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p>+3.0V_VREF2_1</p></td>
+<td><p>Output</p></td>
+<td><p>Secondary LTC6811-1 3.0V reference voltage 2</p></td>
+</tr>
+<tr class="row-even"><td><p>3</p></td>
+<td><p>+5.0V_VREG_0</p></td>
+<td><p>Output</p></td>
+<td><p>Primary LTC6811-1 5.0V regulated voltage</p></td>
+</tr>
+<tr class="row-odd"><td><p>4</p></td>
+<td><p>+5.0V_VREG_1</p></td>
+<td><p>Output</p></td>
+<td><p>Secondary LTC6811-1 5.0V regulated voltage</p></td>
+</tr>
+<tr class="row-even"><td><p>5</p></td>
+<td><p>PRIMARY-GPIO1-OPT</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Primary LTC6811-1 GPIO1</p></td>
+</tr>
+<tr class="row-odd"><td><p>6</p></td>
+<td><p>SECONDARY-GPIO1-OPT</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Secondary LTC6811-1 GPIO1</p></td>
+</tr>
+<tr class="row-even"><td><p>7</p></td>
+<td><p>PRIMARY-GPIO2-OPT</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Primary LTC6811-1 GPIO2</p></td>
+</tr>
+<tr class="row-odd"><td><p>8</p></td>
+<td><p>SECONDARY-GPIO2-OPT</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Secondary LTC6811-1 GPIO2</p></td>
+</tr>
+<tr class="row-even"><td><p>9</p></td>
+<td><p>PRIMARY-GPIO3-OPT</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Primary LTC6811-1 GPIO3</p></td>
+</tr>
+<tr class="row-odd"><td><p>10</p></td>
+<td><p>SECONDARY-GPIO3-OPT</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Secondary LTC6811-1 GPIO3</p></td>
+</tr>
+<tr class="row-even"><td><p>11</p></td>
+<td><p>PRIMARY-GPIO4-OPT</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Primary LTC6811-1 GPIO4</p></td>
+</tr>
+<tr class="row-odd"><td><p>12</p></td>
+<td><p>SECONDARY-GPIO4-OPT</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Secondary LTC6811-1 GPIO4</p></td>
+</tr>
+<tr class="row-even"><td><p>13</p></td>
+<td><p>PRIMARY-GPIO5-OPT</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Primary LTC6811-1 GPIO5</p></td>
+</tr>
+<tr class="row-odd"><td><p>14</p></td>
+<td><p>SECONDARY-GPIO5-OPT</p></td>
+<td><p>Input/Output</p></td>
+<td><p>Secondary LTC6811-1 GPIO5</p></td>
+</tr>
+<tr class="row-even"><td><p>15</p></td>
+<td><p>PRIMARY-WDT</p></td>
+<td><p>Output</p></td>
+<td><p>Primary LTC6811-1 watchdog output</p></td>
+</tr>
+<tr class="row-odd"><td><p>16</p></td>
+<td><p>SECONDARY-WDT</p></td>
+<td><p>Output</p></td>
+<td><p>Secondary LTC6811-1 watchdog output</p></td>
+</tr>
+<tr class="row-even"><td><p>17</p></td>
+<td><p>PRIMARY-TEMP-ALERT</p></td>
+<td><p>Output</p></td>
+<td><p>Primary board T-sensor alarm output</p></td>
+</tr>
+<tr class="row-odd"><td><p>18</p></td>
+<td><p>SECONDARY-TEMP-ALERT</p></td>
+<td><p>Output</p></td>
+<td><p>Secondary board T-sensor alarm output</p></td>
+</tr>
+<tr class="row-even"><td><p>19</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FUSED_VBAT-</span></code></p></td>
+<td><p>Output</p></td>
+<td><p>GND</p></td>
+</tr>
+<tr class="row-odd"><td><p>20</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">FUSED_VBAT-</span></code></p></td>
+<td><p>Output</p></td>
+<td><p>GND</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="external-isolated-dc-supply">
+<h3><span class="section-number">5.1.2.2.3.10. </span>External Isolated <code class="docutils literal notranslate"><span class="pre">DC-</span></code> Supply<a class="headerlink" href="#external-isolated-dc-supply" title="Permalink to this headline"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The external isolated <code class="docutils literal notranslate"><span class="pre">DC-</span></code> supply is only available in the BMS-Slave Board
+hardware versions <code class="docutils literal notranslate"><span class="pre">2.1.0</span></code> and above.</p>
+</div>
+<p>It is possible to supply the BMS-Slave Board by an external DC power supply with a
+voltage range of 8V to 24V.
+The DC input is protected against reverse voltage and over-current
+(with a 1.25A fuse).
+The external DC supply has to be connected on connector X1513 or X1514 (both
+connectors are in parallel for daisy chaining the supply).
+The pinout of the connectors X1513 and X1514 is shown in
+<a class="reference internal" href="#slave-12cell-v2-0-3-external-dc-supply-connector"><span class="std std-numref">Table 5.17</span></a>.</p>
+<div class="figure align-default">
+<a class="reference internal image-reference" href="../../../_images/molex_connector-2pin.png"><img alt="../../../_images/molex_connector-2pin.png" src="../../../_images/molex_connector-2pin.png" style="width: 5%;" /></a>
+</div>
+<table class="docutils align-default" id="slave-12cell-v2-0-3-external-dc-supply-connector">
+<caption><span class="caption-number">Table 5.17 </span><span class="caption-text">External DC supply connector</span><a class="headerlink" href="#slave-12cell-v2-0-3-external-dc-supply-connector" title="Permalink to this table"></a></caption>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Pin</p></th>
+<th class="head"><p>Signal</p></th>
+<th class="head"><p>Direction</p></th>
+<th class="head"><p>Description</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>1</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">DC+</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>positive supply terminal</p></td>
+</tr>
+<tr class="row-odd"><td><p>2</p></td>
+<td><p><code class="docutils literal notranslate"><span class="pre">DC-</span></code></p></td>
+<td><p>Input</p></td>
+<td><p>negative supply terminal</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="12-ltc-ltc6811-1-changelog.html" class="btn btn-neutral float-left" title="5.1.2.1. Changelog for Slave LTC6811-1" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="12-ltc-ltc6811-1-v2.1.2.html" class="btn btn-neutral float-right" title="5.1.2.3. LTC6811-1-based 12-Cell Slave v2.1.2 to v2.1.5" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

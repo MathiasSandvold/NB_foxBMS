@@ -1,0 +1,11 @@
+<map id="epcos_b57251v5103j060.c" name="epcos_b57251v5103j060.c">
+<area shape="rect" id="node1" title="Resistive divider used for measuring temperature." alt="" coords="262,5,436,32"/>
+<area shape="rect" id="node2" href="$epcos__b57251v5103j060_8h.html" title="Resistive divider used for measuring temperature." alt="" coords="28,87,203,114"/>
+<area shape="rect" id="node3" title=" " alt="" coords="172,169,238,196"/>
+<area shape="rect" id="node4" href="$foxmath_8h.html" title="math library for often used math functions" alt="" coords="440,87,519,114"/>
+<area shape="rect" id="node5" title=" " alt="" coords="364,169,427,196"/>
+<area shape="rect" id="node8" href="$temperature__sensor__defs_8h.html" title="TODO." alt="" coords="227,80,364,121"/>
+<area shape="rect" id="node9" title=" " alt="" coords="544,87,618,114"/>
+<area shape="rect" id="node6" title=" " alt="" coords="451,169,508,196"/>
+<area shape="rect" id="node7" title=" " alt="" coords="533,169,597,196"/>
+</map>

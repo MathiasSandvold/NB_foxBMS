@@ -1,0 +1,6 @@
+<map id="MXM_5XUserAccessibleAddressSpaceCheckerSelfCheck" name="MXM_5XUserAccessibleAddressSpaceCheckerSelfCheck">
+<area shape="rect" id="node1" title="runs a selfcheck for the address space check" alt="" coords="5,23,216,65"/>
+<area shape="rect" id="node2" href="$mxm__battery__management_8c.html#adcda2712e58935f41533d2b54c90aee5" title="Check if a register address is user accessible." alt="" coords="264,31,485,57"/>
+<area shape="rect" id="node3" href="$mxm__battery__management_8c.html#a9e3c85d541ed2c4301747d8633ba03bc" title="Check if a register address is user accessible in MAX17852." alt="" coords="533,5,755,32"/>
+<area shape="rect" id="node4" href="$mxm__battery__management_8c.html#aacd19e9ba1a28a8d4ac5fde5677c93e2" title="Check if a register address is user accessible in MAX17853." alt="" coords="533,56,755,83"/>
+</map>

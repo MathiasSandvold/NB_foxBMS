@@ -1,0 +1,6 @@
+<map id="testLED_SetToggleTime" name="testLED_SetToggleTime">
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,168,83"/>
+<area shape="rect" id="node2" href="$led_8c.html#a0e678eb65ea5db2ea54a904c5698376d" title="Set debug LED with defined frequency." alt="" coords="233,5,373,32"/>
+<area shape="rect" id="node3" href="$led_8c.html#af4a8362d76d9a62757654f989de90dd3" title=" " alt="" coords="216,56,391,83"/>
+<area shape="rect" id="node4" href="$led_8c.html#a0eb8c6fe66d639b7a72c6ee2a4e3e39f" title=" " alt="" coords="216,107,391,133"/>
+</map>

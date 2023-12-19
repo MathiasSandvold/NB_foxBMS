@@ -1,0 +1,11 @@
+<map id="sys_mon_cfg.h" name="sys_mon_cfg.h">
+<area shape="rect" id="node1" title="configuration of the system monitoring module" alt="" coords="223,5,333,32"/>
+<area shape="rect" id="node2" href="$sys__mon__cfg_8c.html" title="configuration of the system monitoring module" alt="" coords="72,80,183,107"/>
+<area shape="rect" id="node3" href="$diag__cbs__sys-mon_8c.html" title="Diagnosis driver implementation." alt="" coords="207,80,349,107"/>
+<area shape="rect" id="node4" href="$sys__mon_8h.html" title="system monitoring module" alt="" coords="373,80,460,107"/>
+<area shape="rect" id="node5" href="$can__cbs__rx__state-request_8c.html" title="CAN driver Rx callback implementation." alt="" coords="5,155,188,181"/>
+<area shape="rect" id="node6" href="$can__cbs__tx__state_8c.html" title="CAN driver Tx callback implementation." alt="" coords="213,155,349,181"/>
+<area shape="rect" id="node7" href="$sys__mon_8c.html" title="system monitoring module" alt="" coords="373,155,460,181"/>
+<area shape="rect" id="node8" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="485,155,570,181"/>
+<area shape="rect" id="node9" href="$ftask_8c.html" title="Implementation of OS&#45;independent task creators." alt="" coords="594,155,655,181"/>
+</map>

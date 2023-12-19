@@ -1,0 +1,4 @@
+<map id="testDIAG_ErrorOvercurrentChargeInvalidInput" name="testDIAG_ErrorOvercurrentChargeInvalidInput">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,181,47"/>
+<area shape="rect" id="node2" href="$diag__cbs_8h.html#ad230205309e2879cab3745866f055872" title="diagnosis callback function for overcurrent charge events" alt="" coords="229,13,424,39"/>
+</map>

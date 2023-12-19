@@ -1,0 +1,13 @@
+<map id="nxpfs85xx_cfg.h" name="nxpfs85xx_cfg.h">
+<area shape="rect" id="node1" title="Config header file for SBC module." alt="" coords="133,5,249,32"/>
+<area shape="rect" id="node2" href="$nxpfs85xx__cfg_8c.html" title="Config source file for SBC module." alt="" coords="5,80,121,107"/>
+<area shape="rect" id="node3" href="$nxpfs85xx_8h.html" title="Header for the driver for the FRAM module." alt="" coords="145,80,237,107"/>
+<area shape="rect" id="node11" href="$test__nxpfs85xx__cfg_8c.html" title="Tests for the CAN driver." alt="" coords="261,80,407,107"/>
+<area shape="rect" id="node4" href="$nxpfs85xx_8c.html" title="Driver for the SBC module." alt="" coords="48,155,140,181"/>
+<area shape="rect" id="node5" href="$sbc_8h.html" title="Header for the driver for the SBC module." alt="" coords="164,155,219,181"/>
+<area shape="rect" id="node10" href="$test__nxpfs85xx_8c.html" title="Tests for the sbc module." alt="" coords="243,155,364,181"/>
+<area shape="rect" id="node6" href="$sbc_8c.html" title="Driver for the SBC module." alt="" coords="37,229,92,256"/>
+<area shape="rect" id="node7" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="116,229,171,256"/>
+<area shape="rect" id="node8" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="195,229,281,256"/>
+<area shape="rect" id="node9" href="$test__sbc_8c.html" title="Tests for the sbc module." alt="" coords="305,229,387,256"/>
+</map>

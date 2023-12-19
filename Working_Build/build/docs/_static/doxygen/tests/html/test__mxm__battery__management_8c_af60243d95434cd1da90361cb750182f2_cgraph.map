@@ -1,0 +1,7 @@
+<map id="testSelfCheckAddressSpaceChecker" name="testSelfCheckAddressSpaceChecker">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,193,65"/>
+<area shape="rect" id="node2" href="$mxm__battery__management_8c.html#a871192ccec4147196c1ad237e68c1b40" title="runs a selfcheck for the address space check" alt="" coords="241,23,452,65"/>
+<area shape="rect" id="node3" href="$mxm__battery__management_8c.html#adcda2712e58935f41533d2b54c90aee5" title="Check if a register address is user accessible." alt="" coords="500,31,721,57"/>
+<area shape="rect" id="node4" href="$mxm__battery__management_8c.html#a9e3c85d541ed2c4301747d8633ba03bc" title="Check if a register address is user accessible in MAX17852." alt="" coords="769,5,991,32"/>
+<area shape="rect" id="node5" href="$mxm__battery__management_8c.html#aacd19e9ba1a28a8d4ac5fde5677c93e2" title="Check if a register address is user accessible in MAX17853." alt="" coords="769,56,991,83"/>
+</map>

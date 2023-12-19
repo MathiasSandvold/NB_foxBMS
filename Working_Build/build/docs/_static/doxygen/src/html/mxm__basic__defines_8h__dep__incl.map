@@ -1,0 +1,13 @@
+<map id="mxm_basic_defines.h" name="mxm_basic_defines.h">
+<area shape="rect" id="node1" title="Basic defines for the complete Maxim driver." alt="" coords="322,5,470,32"/>
+<area shape="rect" id="node2" href="$mxm__1785x_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="507,229,611,256"/>
+<area shape="rect" id="node6" href="$mxm__1785x__tools_8h.html" title="This is a collection of helper functions for the MAX1785x ICs." alt="" coords="243,155,381,181"/>
+<area shape="rect" id="node8" href="$mxm__registry_8h.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="5,229,117,256"/>
+<area shape="rect" id="node10" href="$mxm__battery__management_8h.html" title="Headers for the driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="374,80,565,107"/>
+<area shape="rect" id="node3" href="$mxm__afe_8c.html" title="AFE driver implementation." alt="" coords="643,304,730,331"/>
+<area shape="rect" id="node4" href="$mxm__1785x_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="411,304,515,331"/>
+<area shape="rect" id="node5" href="$mxm__17852_8c.html" title="Operation state machine implementation for the MAX17852." alt="" coords="271,304,375,331"/>
+<area shape="rect" id="node7" href="$mxm__1785x__tools_8c.html" title="This is a collection of helper functions for the MAX1785x ICs." alt="" coords="141,229,280,256"/>
+<area shape="rect" id="node9" href="$mxm__registry_8c.html" title="Functions in order to have a registry of monitoring ICs." alt="" coords="5,304,117,331"/>
+<area shape="rect" id="node11" href="$mxm__battery__management_8c.html" title="Driver for the MAX17841B ASCI and MAX1785x analog front&#45;end." alt="" coords="558,155,749,181"/>
+</map>

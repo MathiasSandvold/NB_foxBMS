@@ -1,0 +1,8 @@
+<map id="mxm_crc8.h" name="mxm_crc8.h">
+<area shape="rect" id="node1" title="Headers for the CRC8 calculation for Maxim Integrated Monitoring devices." alt="" coords="177,5,271,32"/>
+<area shape="rect" id="node2" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="103,80,177,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="130,229,195,256"/>
+<area shape="rect" id="node6" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="177,155,271,181"/>
+<area shape="rect" id="node3" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="31,155,103,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,229,80,256"/>
+</map>

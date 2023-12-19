@@ -1,0 +1,12 @@
+<map id="sbc_fs8x_map.h" name="sbc_fs8x_map.h">
+<area shape="rect" id="node1" title="FS8x register map." alt="" coords="69,5,187,32"/>
+<area shape="rect" id="node2" href="$sbc__fs8x_8c.html" title="Driver functions for the FS8x SBC." alt="" coords="5,155,91,181"/>
+<area shape="rect" id="node3" href="$sbc__fs8x_8h.html" title="FS8x driver interface." alt="" coords="85,80,171,107"/>
+<area shape="rect" id="node10" href="$sbc__fs8x__communication_8c.html" title="Implementation of communication logic for NXP SBC FS8x." alt="" coords="195,80,375,107"/>
+<area shape="rect" id="node4" href="$nxpfs85xx_8h.html" title="Header for the driver for the FRAM module." alt="" coords="115,155,207,181"/>
+<area shape="rect" id="node5" href="$nxpfs85xx_8c.html" title="Driver for the SBC module." alt="" coords="66,229,158,256"/>
+<area shape="rect" id="node6" href="$sbc_8h.html" title="Header for the driver for the SBC module." alt="" coords="182,229,237,256"/>
+<area shape="rect" id="node7" href="$sbc_8c.html" title="Driver for the SBC module." alt="" coords="103,304,158,331"/>
+<area shape="rect" id="node8" href="$sys_8c.html" title="Sys driver implementation." alt="" coords="182,304,237,331"/>
+<area shape="rect" id="node9" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="261,304,347,331"/>
+</map>

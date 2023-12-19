@@ -1,0 +1,9 @@
+<map id="canMessageNotification" name="canMessageNotification">
+<area shape="rect" id="node1" title=" " alt="" coords="5,97,165,123"/>
+<area shape="rect" id="node2" href="$can_8c.html#a05d26837076ad4f7a00fe6c690785d05" title="Called in case of CAN RX interrupt." alt="" coords="213,71,332,98"/>
+<area shape="rect" id="node7" href="$can_8c.html#a73a982c8ffb040e47c95119f68b7e857" title="Called in case of CAN TX interrupt." alt="" coords="214,122,331,149"/>
+<area shape="rect" id="node3" href="$can_8c.html#a03647b71ab417a726f8cc499dbee3344" title="get pointer CAN node configuration struct from register address" alt="" coords="397,5,580,47"/>
+<area shape="rect" id="node4" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="437,71,541,98"/>
+<area shape="rect" id="node6" href="$os__freertos_8c.html#a49b4595b9a639074eb75e638b93a9c32" title="Post an item to the back the provided queue during an ISR." alt="" coords="380,122,597,149"/>
+<area shape="rect" id="node5" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="645,71,768,98"/>
+</map>

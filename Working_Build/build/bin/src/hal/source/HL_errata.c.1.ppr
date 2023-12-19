@@ -1,0 +1,562 @@
+# pragma diag_push
+# pragma CHECK_MISRA("-19.7")
+# pragma CHECK_MISRA("-19.4")
+# pragma CHECK_MISRA("-19.1")
+# pragma CHECK_MISRA("-19.15")
+# pragma diag_pop
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("CHECK_MISRA(\"-19.1\")")
+_Pragma("CHECK_MISRA(\"-19.6\")")
+#pragma diag_push
+#pragma CHECK_MISRA("-19.4")
+#pragma diag_pop
+_Pragma("diag_pop")
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.1\")")
+_Pragma("CHECK_MISRA(\"-19.7\")")
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.7\")")
+_Pragma("diag_pop")
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"none\")")
+_Pragma("diag_pop")
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-6.3\")")
+typedef	signed char		__int8_t;
+typedef	unsigned char		__uint8_t;
+typedef	short			__int16_t;
+typedef	unsigned short		__uint16_t;
+typedef	int			__int32_t;
+typedef	unsigned int		__uint32_t;
+typedef	long long		__int64_t;
+typedef	unsigned long long	__uint64_t;
+typedef	__uint32_t	__clock_t;
+typedef	__int32_t	__critical_t;
+typedef	double		__double_t;
+typedef	float		__float_t;
+typedef	__int32_t	__intfptr_t;
+typedef	__int64_t	__intmax_t;
+typedef	__int32_t	__intptr_t;
+typedef	__int32_t	__int_fast8_t;
+typedef	__int32_t	__int_fast16_t;
+typedef	__int32_t	__int_fast32_t;
+typedef	__int64_t	__int_fast64_t;
+typedef	__int8_t	__int_least8_t;
+typedef	__int16_t	__int_least16_t;
+typedef	__int32_t	__int_least32_t;
+typedef	__int64_t	__int_least64_t;
+typedef	__int32_t	__ptrdiff_t;
+typedef	__int32_t	__register_t;
+typedef	__int32_t	__segsz_t;
+typedef	__uint32_t	__size_t;
+typedef	__int32_t	__ssize_t;
+typedef __uint32_t      __time_t;
+typedef	__uint32_t	__uintfptr_t;
+typedef	__uint64_t	__uintmax_t;
+typedef	__uint32_t	__uintptr_t;
+typedef	__uint32_t	__uint_fast8_t;
+typedef	__uint32_t	__uint_fast16_t;
+typedef	__uint32_t	__uint_fast32_t;
+typedef	__uint64_t	__uint_fast64_t;
+typedef	__uint8_t	__uint_least8_t;
+typedef	__uint16_t	__uint_least16_t;
+typedef	__uint32_t	__uint_least32_t;
+typedef	__uint64_t	__uint_least64_t;
+typedef	__uint32_t	__u_register_t;
+typedef	__uint32_t	__vm_offset_t;
+typedef	__uint32_t	__vm_paddr_t;
+typedef	__uint32_t	__vm_size_t;
+typedef	unsigned short ___wchar_t;
+typedef long _off_t;
+typedef struct __va_list_t {
+    void * __ap;
+} __va_list;
+_Pragma("diag_pop")
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-6.3\")")
+typedef	__int32_t	__blksize_t;
+typedef	__int64_t	__blkcnt_t;
+typedef	__int32_t	__clockid_t;
+typedef	__uint32_t	__fflags_t;
+typedef	__uint64_t	__fsblkcnt_t;
+typedef	__uint64_t	__fsfilcnt_t;
+typedef	__uint32_t	__gid_t;
+typedef	__int64_t	__id_t;
+typedef	__uint64_t	__ino_t;
+typedef	long		__key_t;
+typedef	__int32_t	__lwpid_t;
+typedef	__uint16_t	__mode_t;
+typedef	int		__accmode_t;
+typedef	int		__nl_item;
+typedef	__uint64_t	__nlink_t;
+typedef	_off_t	        __off_t;
+typedef	__int64_t	__off64_t;
+typedef	__int32_t	__pid_t;
+typedef	__int64_t	__rlim_t;
+typedef	__uint8_t	__sa_family_t;
+typedef	__uint32_t	__socklen_t;
+typedef	long		__suseconds_t;
+typedef	struct __timer	*__timer_t;
+typedef	struct __mq	*__mqd_t;
+typedef	__uint32_t	__uid_t;
+typedef	unsigned int	__useconds_t;
+typedef	int		__cpuwhich_t;
+typedef	int		__cpulevel_t;
+typedef int		__cpusetid_t;
+typedef	int		__ct_rune_t;
+typedef	__ct_rune_t	__rune_t;
+typedef	__ct_rune_t	__wint_t;
+typedef	__uint_least16_t __char16_t;
+typedef	__uint_least32_t __char32_t;
+typedef struct {
+	long long __max_align1 __attribute__((aligned(_Alignof(long long))));
+	long double __max_align2 __attribute__((aligned(_Alignof(long double))));
+} __max_align_t;
+typedef	__uint64_t	__dev_t;
+typedef	__uint32_t	__fixpt_t;
+typedef int _Mbstatet;
+typedef _Mbstatet __mbstate_t;
+typedef __uintmax_t     __rman_res_t;
+_Pragma("diag_pop")
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("CHECK_MISRA(\"-19.7\")")
+_Pragma("CHECK_MISRA(\"-19.13\")")
+_Pragma("diag_pop")
+typedef	__int8_t		int8_t;
+typedef	__int16_t		int16_t;
+typedef	__int32_t		int32_t;
+typedef	__int64_t		int64_t;
+typedef	__uint8_t		uint8_t;
+typedef	__uint16_t		uint16_t;
+typedef	__uint32_t		uint32_t;
+typedef	__uint64_t		uint64_t;
+typedef	__intptr_t		intptr_t;
+typedef	__uintptr_t		uintptr_t;
+typedef	__intmax_t		intmax_t;
+typedef	__uintmax_t		uintmax_t;
+typedef	__int_least8_t		int_least8_t;
+typedef	__int_least16_t		int_least16_t;
+typedef	__int_least32_t		int_least32_t;
+typedef	__int_least64_t		int_least64_t;
+typedef	__uint_least8_t		uint_least8_t;
+typedef	__uint_least16_t	uint_least16_t;
+typedef	__uint_least32_t	uint_least32_t;
+typedef	__uint_least64_t	uint_least64_t;
+typedef	__int_fast8_t		int_fast8_t;
+typedef	__int_fast16_t		int_fast16_t;
+typedef	__int_fast32_t		int_fast32_t;
+typedef	__int_fast64_t		int_fast64_t;
+typedef	__uint_fast8_t		uint_fast8_t;
+typedef	__uint_fast16_t		uint_fast16_t;
+typedef	__uint_fast32_t		uint_fast32_t;
+typedef	__uint_fast64_t		uint_fast64_t;
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-10.1\")")
+_Pragma("diag_pop")
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("diag_pop")
+_Pragma("diag_pop")
+_Pragma("diag_push")
+_Pragma("CHECK_MISRA(\"-19.4\")")
+_Pragma("CHECK_MISRA(\"-19.11\")")
+_Pragma("diag_pop")
+typedef uint64_t uint64;
+typedef uint32_t uint32;
+typedef uint16_t uint16;
+typedef uint8_t uint8;
+typedef _Bool boolean;
+typedef int64_t sint64;
+typedef int32_t sint32;
+typedef int16_t sint16;
+typedef int8_t sint8;
+typedef float float32;
+typedef double float64;
+typedef uint8 Std_ReturnType;
+typedef struct
+{
+    uint16 vendorID;
+    uint16 moduleID;
+    uint8  instanceID;
+    uint8  sw_major_version;
+    uint8  sw_minor_version;
+    uint8  sw_patch_version;
+} Std_VersionInfoType;
+  typedef unsigned char StatusType;
+typedef boolean tBoolean;
+typedef enum loopBackType
+{
+    Digital_Lbk = 0U,
+    Analog_Lbk = 1U
+}loopBackType_t;
+typedef enum config_value_type
+{
+	InitialValue,
+	CurrentValue
+}config_value_type_t;
+typedef volatile struct pbistBase
+{
+    uint32 RAMT;
+    uint32 DLR;
+    uint32 rsvd1[6U];
+    uint32 PACT;
+    uint32 PBISTID;
+    uint32 OVER;
+    uint32 rsvd2;
+    uint32 FSRF0;
+    uint32 FSRF1;
+    uint32 FSRC0;
+    uint32 FSRC1;
+    uint32 FSRA0;
+    uint32 FSRA1;
+    uint32 FSRDL0;
+    uint32 rsvd3;
+    uint32 FSRDL1;
+    uint32 rsvd4[3U];
+    uint32 ROM;
+    uint32 ALGO;
+    uint32 RINFOL;
+    uint32 RINFOU;
+} pbistBASE_t;
+typedef volatile struct gioBase
+{
+    uint32 GCR0;
+    uint32   rsvd;
+    uint32 INTDET;
+    uint32 POL;
+    uint32 ENASET;
+    uint32 ENACLR;
+    uint32 LVLSET;
+    uint32 LVLCLR;
+    uint32 FLG;
+    uint32 OFF1;
+    uint32 OFF2;
+    uint32 EMU1;
+	uint32 EMU2;
+} gioBASE_t;
+typedef volatile struct gioPort
+{
+    uint32 DIR;
+    uint32 DIN;
+    uint32 DOUT;
+    uint32 DSET;
+    uint32 DCLR;
+    uint32 PDR;
+    uint32 PULDIS;
+    uint32 PSL;
+} gioPORT_t;
+typedef volatile struct systemBase1
+{
+    uint32 SYSPC1;
+    uint32 SYSPC2;
+    uint32 SYSPC3;
+    uint32 SYSPC4;
+    uint32 SYSPC5;
+    uint32 SYSPC6;
+    uint32 SYSPC7;
+    uint32 SYSPC8;
+    uint32 SYSPC9;
+    uint32 rsvd1;
+    uint32 rsvd2;
+    uint32 rsvd3;
+    uint32 CSDIS;
+    uint32 CSDISSET;
+    uint32 CSDISCLR;
+    uint32 CDDIS;
+    uint32 CDDISSET;
+    uint32 CDDISCLR;
+    uint32 GHVSRC;
+    uint32 VCLKASRC;
+    uint32 RCLKSRC;
+    uint32 CSVSTAT;
+    uint32 MSTGCR;
+    uint32 MINITGCR;
+    uint32 MSINENA;
+    uint32 MSTFAIL;
+    uint32 MSTCGSTAT;
+    uint32 MINISTAT;
+    uint32 PLLCTL1;
+    uint32 PLLCTL2;
+    uint32 SYSPC10;
+    uint32 DIEIDL;
+    uint32 DIEIDH;
+    uint32 rsvd4;
+    uint32 LPOMONCTL;
+    uint32 CLKTEST;
+    uint32 DFTCTRLREG1;
+    uint32 DFTCTRLREG2;
+    uint32 rsvd5;
+    uint32 rsvd6;
+    uint32 GPREG1;
+    uint32 rsvd7;
+    uint32 rsvd8;
+    uint32 rsvd9;
+    uint32 SSIR1;
+    uint32 SSIR2;
+    uint32 SSIR3;
+    uint32 SSIR4;
+    uint32 RAMGCR;
+    uint32 BMMCR1;
+    uint32 rsvd10;
+    uint32 CPURSTCR;
+    uint32 CLKCNTL;
+    uint32 ECPCNTL;
+    uint32 rsvd11;
+    uint32 DEVCR1;
+    uint32 SYSECR;
+    uint32 SYSESR;
+    uint32 SYSTASR;
+    uint32 GBLSTAT;
+    uint32 DEVID;
+    uint32 SSIVEC;
+    uint32 SSIF;
+} systemBASE1_t;
+typedef volatile struct systemBase2
+{
+    uint32 PLLCTL3;
+    uint32 rsvd1;
+    uint32 STCCLKDIV;
+    uint32 rsvd2[6U];
+    uint32 ECPCNTL;
+    uint32 ECPCNTL1;
+    uint32 rsvd3[4U];
+    uint32 CLK2CNTRL;
+    uint32 VCLKACON1;
+    uint32 rsvd4[4U];
+    uint32 HCLKCNTL;
+    uint32 rsvd5[6U];
+    uint32 CLKSLIP;
+    uint32 rsvd6;
+	uint32 IP1ECCERREN;
+	uint32 rsvd7[28U];
+    uint32 EFC_CTLEN;
+    uint32 DIEIDL_REG0;
+    uint32 DIEIDH_REG1;
+    uint32 DIEIDL_REG2;
+    uint32 DIEIDH_REG3;
+} systemBASE2_t;
+void errata_PBIST_4(void);
+void errataFailNotification(uint32 flag);
+void _coreInitRegisters_(void);
+void _coreInitStackPointer_(void);
+uint32 _getCPSRValue_(void);
+void _checkMemInitOn_(void);
+void _gotoCPUIdle_(void);
+void _coreEnableIrqVicOffset_(void);
+void _coreEnableVfp_(void);
+void _coreEnableEventBusExport_(void);
+void _coreDisableEventBusExport_(void);
+uint32 _coreGetDataFault_(void);
+void _coreClearDataFault_(void);
+uint32 _coreGetInstructionFault_(void);
+void _coreClearInstructionFault_(void);
+uint32 _coreGetDataFaultAddress_(void);
+void _coreClearDataFaultAddress_(void);
+uint32 _coreGetInstructionFaultAddress_(void);
+void _coreClearInstructionFaultAddress_(void);
+uint32 _coreGetAuxiliaryDataFault_(void);
+void _coreClearAuxiliaryDataFault_(void);
+uint32 _coreGetAuxiliaryInstructionFault_(void);
+void _coreClearAuxiliaryInstructionFault_(void);
+void _disable_IRQ_interrupt_(void);
+void _enable_IRQ_interrupt_(void);
+void _enable_interrupt_(void);
+void _esmCcmErrorsClear_(void);
+void _memInit_(void);
+void _cacheEnable_(void);
+void _cacheDisable_(void);
+void _dCacheInvalidate_(void);
+void _iCacheInvalidate_(void);
+enum pmuEvent
+{
+    PMU_INST_CACHE_MISS                     = 0x01U,
+    PMU_DATA_CACHE_MISS                     = 0x03U,
+    PMU_DATA_CACHE_ACCESS                   = 0x04U,
+    PMU_DATA_READ_ARCH_EXECUTED             = 0x06U,
+    PMU_DATA_WRITE_ARCH_EXECUTED            = 0x07U,
+    PMU_INST_ARCH_EXECUTED                  = 0x08U,
+    PMU_EXCEPTION_TAKEN                     = 0x09U,
+    PMU_EXCEPTION_RETURN_ARCH_EXECUTED      = 0x0AU,
+    PMU_CHANGE_TO_CONTEXT_ID_EXECUTED       = 0x0BU,
+    PMU_SW_CHANGE_OF_PC_ARCH_EXECUTED       = 0x0CU,
+    PMU_BRANCH_IMM_INST_ARCH_EXECUTED       = 0x0DU,
+    PMU_PROC_RETURN_ARCH_EXECUTED           = 0x0EU,
+    PMU_UNALIGNED_ACCESS_ARCH_EXECUTED      = 0x0FU,
+    PMU_BRANCH_MISSPREDICTED                = 0x10U,
+    PMU_CYCLE_COUNT                         = 0x11U,
+    PMU_PREDICTABLE_BRANCHES                = 0x12U,
+    PMU_INST_BUFFER_STALL                   = 0x40U,
+    PMU_DATA_DEPENDENCY_INST_STALL          = 0x41U,
+    PMU_DATA_CACHE_WRITE_BACK               = 0x42U,
+    PMU_EXT_MEMORY_REQUEST                  = 0x43U,
+    PMU_LSU_BUSY_STALL                      = 0x44U,
+    PMU_FORCED_DRAIN_OFSTORE_BUFFER         = 0x45U,
+    PMU_FIQ_DISABLED_CYCLE_COUNT            = 0x46U,
+    PMU_IRQ_DISABLED_CYCLE_COUNT            = 0x47U,
+    PMU_ETMEXTOUT_0                         = 0x48U,
+    PMU_ETMEXTOUT_1                         = 0x49U,
+    PMU_INST_CACHE_TAG_ECC_ERROR            = 0x4AU,
+    PMU_INST_CACHE_DATA_ECC_ERROR           = 0x4BU,
+    PMU_DATA_CACHE_TAG_ECC_ERROR            = 0x4CU,
+    PMU_DATA_CACHE_DATA_ECC_ERROR           = 0x4DU,
+    PMU_TCM_FATAL_ECC_ERROR_PREFETCH        = 0x4EU,
+    PMU_TCM_FATAL_ECC_ERROR_LOAD_STORE      = 0x4FU,
+    PMU_STORE_BUFFER_MERGE                  = 0x50U,
+    PMU_LSU_STALL_STORE_BUFFER_FULL         = 0x51U,
+    PMU_LSU_STALL_STORE_QUEUE_FULL          = 0x52U,
+    PMU_INTEGER_DIV_EXECUTED                = 0x53U,
+    PMU_STALL_INTEGER_DIV                   = 0x54U,
+    PMU_PLD_INST_LINE_FILL                  = 0x55U,
+    PMU_PLD_INST_NO_LINE_FILL               = 0x56U,
+    PMU_NON_CACHEABLE_ACCESS_AXI_MASTER     = 0x57U,
+    PMU_INST_CACHE_ACCESS                   = 0x58U,
+    PMU_DOUBLE_DATA_CACHE_ISSUE             = 0x59U,
+    PMU_DUAL_ISSUE_CASE_A                   = 0x5AU,
+    PMU_DUAL_ISSUE_CASE_B1_B2_F2_F2D        = 0x5BU,
+    PMU_DUAL_ISSUE_OTHER                    = 0x5CU,
+    PMU_DP_FLOAT_INST_EXCECUTED             = 0x5DU,
+    PMU_DUAL_ISSUED_PAIR_INST_ARCH_EXECUTED = 0x5EU,
+    PMU_DATA_CACHE_DATA_FATAL_ECC_ERROR     = 0x60U,
+    PMU_DATA_CACHE_TAG_FATAL_ECC_ERROR      = 0x61U,
+    PMU_PROCESSOR_LIVE_LOCK                 = 0x62U,
+    PMU_ATCM_MULTI_BIT_ECC_ERROR            = 0x64U,
+    PMU_B0TCM_MULTI_BIT_ECC_ERROR           = 0x65U,
+    PMU_B1TCM_MULTI_BIT_ECC_ERROR           = 0x66U,
+    PMU_ATCM_SINGLE_BIT_ECC_ERROR           = 0x67U,
+    PMU_B0TCM_SINGLE_BIT_ECC_ERROR          = 0x68U,
+    PMU_B1TCM_SINGLE_BIT_ECC_ERROR          = 0x69U,
+    PMU_TCM_COR_ECC_ERROR_LOAD_STORE        = 0x6AU,
+    PMU_TCM_COR_ECC_ERROR_PREFETCH          = 0x6BU,
+    PMU_TCM_FATAL_ECC_ERROR_AXI_SLAVE       = 0x6CU,
+    PMU_TCM_COR_ECC_ERROR_AXI_SLAVE         = 0x6DU,
+    PMU_ALL_CORRECTABLE_EVENTS              = 0x6EU,
+    PMU_ALL_FATAL_EVENTS                    = 0x6FU,
+    PMU_ALL_CORRECTABLE_FAULTS              = 0x70U,
+    PMU_ALL_FATAL_FAULTS                    = 0x71U,
+    PMU_ACP_DCACHE_ACCESS_LOOKUP_INVALIDATE = 0x72U,
+    PMU_ACP_DCACHE_INVALIDATE               = 0x73U
+};
+void _pmuInit_(void);
+void _pmuEnableCountersGlobal_(void);
+void _pmuDisableCountersGlobal_(void);
+void _pmuResetCycleCounter_(void);
+void _pmuResetEventCounters_(void);
+void _pmuResetCounters_(void);
+void _pmuStartCounters_(uint32 counters);
+void _pmuStopCounters_(uint32 counters);
+void _pmuSetCountEvent_(uint32 counter, uint32 event);
+uint32 _pmuGetCycleCount_(void);
+uint32 _pmuGetEventCount_(uint32 counter);
+uint32 _pmuGetOverflow_(void);
+#pragma WEAK(errataFailNotification)
+void errataFailNotification(uint32 flag)
+{
+}
+void errata_PBIST_4(void)
+{
+    volatile uint32 i = 0U;
+    uint8 ROM_count;
+    sint32 PBIST_wait_done_loop;
+    uint32 pmuCalibration, pmuCount;
+	_pmuInit_();
+    _pmuEnableCountersGlobal_();
+    _pmuResetCounters_();
+    _pmuStartCounters_(0x80000000U);
+    _pmuStopCounters_(0x80000000U);
+    pmuCalibration=_pmuGetCycleCount_();
+    *(volatile uint32 *)0xFFFF0400U = 0x0000000AU;
+    *(volatile uint32 *)0xFFFF040CU = 0x0000EE0AU;
+    for (ROM_count = 0U; ROM_count < 4U; ROM_count++)
+    {
+        PBIST_wait_done_loop = 0;
+        ((pbistBASE_t *)0xFFFFE560U)->PACT = 0x0U;
+        if(((pbistBASE_t *)0xFFFFE560U)->PACT != 0x0U )
+        {
+            errataFailNotification(3U);
+        }
+        else
+        {
+            ((systemBASE1_t *)0xFFFFFF00U)->MSTGCR = 0x00000205U;
+            ((systemBASE1_t *)0xFFFFFF00U)->MINITGCR = 0x5U;
+            ((systemBASE1_t *)0xFFFFFF00U)->MSTGCR = 0x0000020AU;
+            ((systemBASE1_t *)0xFFFFFF00U)->MSTCGSTAT = 0x1U;
+            ((systemBASE1_t *)0xFFFFFF00U)->MSINENA = 0x1U;
+            for (i=0U; i<(64U + (64U * 1U)); i++){   }
+            ((pbistBASE_t *)0xFFFFE560U)->PACT = 0x3U;
+            ((pbistBASE_t *)0xFFFFE560U)->DLR = 0x10U;
+            *(volatile uint32 *)0xFFFFE400U = 0x00000001U;
+            *(volatile uint32 *)0xFFFFE440U = 0x00000025U;
+            *(volatile uint32 *)0xFFFFE404U = 0x62400001U;
+            *(volatile uint32 *)0xFFFFE444U = 0x00000004U;
+            *(volatile uint32 *)0xFFFFE408U = 0x00068003U;
+            *(volatile uint32 *)0xFFFFE448U = 0x00000000U;
+            *(volatile uint32 *)0xFFFFE40CU = 0x00000004U;
+            *(volatile uint32 *)0xFFFFE44CU = 0x00006860U;
+            *(volatile uint32 *)0xFFFFE410U = 0x00000000U;
+            *(volatile uint32 *)0xFFFFE450U = 0x00000001U;
+            *(volatile uint32 *)0xFFFFE540U = 0x000003E8U;
+            *(volatile uint32 *)0xFFFFE550U = 0x00000001U;
+            *(volatile uint32 *)0xFFFFE530U = 0x00000000U;
+            if (ROM_count == 0U)
+            {
+                *(volatile uint32 *)0xFFFFE520U = 0xFFF0007CU;
+                *(volatile uint32 *)0xFFFFE524U = 0x07B3FFFFU;
+                ((pbistBASE_t *)0xFFFFE560U)->RAMT                  = 0x0E01200CU;
+				((pbistBASE_t *)0xFFFFE560U)->rsvd1[4U]    = 1U;
+            }
+            else if (ROM_count == 1U)
+            {
+                *(volatile uint32 *)0xFFFFE520U = 0xA88FA473U;
+                *(volatile uint32 *)0xFFFFE524U = 0x00BD719DU;
+                ((pbistBASE_t *)0xFFFFE560U)->RAMT                  = 0x0E02200CU;
+				((pbistBASE_t *)0xFFFFE560U)->rsvd1[4U]    = 2U;
+            }
+            else if (ROM_count == 2U)
+            {
+                *(volatile uint32 *)0xFFFFE520U = 0xFFF0007CU;
+                *(volatile uint32 *)0xFFFFE524U = 0x06E3FFFFU;
+                ((pbistBASE_t *)0xFFFFE560U)->RAMT                  = 0x0F01200CU;
+				((pbistBASE_t *)0xFFFFE560U)->rsvd1[4U]    = 1U;
+            }
+			else if (ROM_count == 3U)
+            {
+                *(volatile uint32 *)0xFFFFE520U = 0x00000002U;
+                *(volatile uint32 *)0xFFFFE524U = 0x00000000U;
+                ((pbistBASE_t *)0xFFFFE560U)->RAMT                  = 0x0101200CU;
+				((pbistBASE_t *)0xFFFFE560U)->rsvd1[4U]    = 1U;
+            }
+			else
+			{
+			}
+            ((pbistBASE_t *)0xFFFFE560U)->rsvd1[0U]    = 8U;
+			_pmuResetCounters_();
+            _pmuStartCounters_(0x80000000U);
+            ((pbistBASE_t *)0xFFFFE560U)->rsvd1[1U]    = 1U;
+            while ((((systemBASE1_t *)0xFFFFFF00U)->MSTCGSTAT & 0x1U) != 0x1U)
+            {
+            }
+            _pmuStopCounters_(0x80000000U);
+            pmuCount =_pmuGetCycleCount_();
+			pmuCount = pmuCount - pmuCalibration;
+            PBIST_wait_done_loop = ((sint32)pmuCount/4) - 1000;
+            if ((((pbistBASE_t *)0xFFFFE560U)->FSRA0 | ((pbistBASE_t *)0xFFFFE560U)->FSRA1 | ((pbistBASE_t *)0xFFFFE560U)->FSRDL0 | ((pbistBASE_t *)0xFFFFE560U)->rsvd3 |
+                 ((pbistBASE_t *)0xFFFFE560U)->FSRDL1 | ((pbistBASE_t *)0xFFFFE560U)->rsvd4[0U] | ((pbistBASE_t *)0xFFFFE560U)->rsvd4[1U]) != 0U)
+            {
+                errataFailNotification(1U);
+            }
+			if ((PBIST_wait_done_loop <= 20) || (PBIST_wait_done_loop >= 200))
+            {
+                errataFailNotification(2U);
+            }
+            ((pbistBASE_t *)0xFFFFE560U)->PACT = 0x0U;
+            ((systemBASE1_t *)0xFFFFFF00U)->MSTGCR &= 0xFFFFFFF0U;
+            ((systemBASE1_t *)0xFFFFFF00U)->MSTGCR |= 0x5U;
+        }
+    }
+    *(volatile uint32 *)0xFFFF040CU = 0x0000AA0AU;
+    *(volatile uint32 *)0xFFFF040CU = 0x0000AA05U;
+	*(volatile uint32 *)0xFFFF0400U = 0x00000005U;
+	_pmuDisableCountersGlobal_();
+}

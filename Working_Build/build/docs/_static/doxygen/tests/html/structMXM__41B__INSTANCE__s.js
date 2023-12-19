@@ -1,0 +1,26 @@
+var structMXM__41B__INSTANCE__s =
+[
+    [ "extendMessageBytes", "structMXM__41B__INSTANCE__s.html#aeb51ae10204a68ff074693df94214fff", null ],
+    [ "hwMaskRevision", "structMXM__41B__INSTANCE__s.html#a452cd5bcf3e3692775a82fb784603c06", null ],
+    [ "hwModel", "structMXM__41B__INSTANCE__s.html#a58275c1fbd150e48a35eca4bdd6a09ea", null ],
+    [ "payloadLength", "structMXM__41B__INSTANCE__s.html#afb33e3269438aa557793fb77a5a0646c", null ],
+    [ "pPayload", "structMXM__41B__INSTANCE__s.html#a1d52476fe2be760f4bf7ab2424c6b3ac", null ],
+    [ "processed", "structMXM__41B__INSTANCE__s.html#a6bb55bc21e87fd57fbce6c555de1ed6f", null ],
+    [ "pRxBuffer", "structMXM__41B__INSTANCE__s.html#a10fc32abcc71e2dfbefccb457807ba7f", null ],
+    [ "regConfig1", "structMXM__41B__INSTANCE__s.html#ac217ac26260b5cff98914c8b9ee6986e", null ],
+    [ "regConfig2", "structMXM__41B__INSTANCE__s.html#a3489260941c751b8132414dba97db9a0", null ],
+    [ "regConfig3", "structMXM__41B__INSTANCE__s.html#ac5555aacd7b6d868e5907637bfb974c8", null ],
+    [ "regFmea", "structMXM__41B__INSTANCE__s.html#a3e63556744b726689e99c2376e58f855", null ],
+    [ "regRXIntEnable", "structMXM__41B__INSTANCE__s.html#a092d0d6fe9b44a45018814a0c8e15b34", null ],
+    [ "regRxSpace", "structMXM__41B__INSTANCE__s.html#a9948677d96a3613fb98eddb9d282dbb1", null ],
+    [ "regRXStatus", "structMXM__41B__INSTANCE__s.html#a4605daf2188a3ba49abad9b73e04dd52", null ],
+    [ "regTXIntEnable", "structMXM__41B__INSTANCE__s.html#a20c9368f44ec90c792332fcff0b6881d", null ],
+    [ "regTXStatus", "structMXM__41B__INSTANCE__s.html#aeea8ed597d19d9cb1f15cc12675bdd8a", null ],
+    [ "rxBufferLength", "structMXM__41B__INSTANCE__s.html#a595ae5950af707211e4a3603da8b7129", null ],
+    [ "shutdownTimeStamp", "structMXM__41B__INSTANCE__s.html#aafbb53b0ef6a4a41e4fe2cbd55fe544d", null ],
+    [ "spiRXBuffer", "structMXM__41B__INSTANCE__s.html#a7afbbf3044c546906a34a6c4ddf5ba1a", null ],
+    [ "spiTXBuffer", "structMXM__41B__INSTANCE__s.html#a7feeeec327d9d70531ab7057afcdf352", null ],
+    [ "state", "structMXM__41B__INSTANCE__s.html#ad6e15ee3d5d903b6d49da1622931c0ce", null ],
+    [ "substate", "structMXM__41B__INSTANCE__s.html#ab368197f41d4312070212c4cf1435746", null ],
+    [ "waitCounter", "structMXM__41B__INSTANCE__s.html#a7858611e4cf5c9ab4552e687750be78e", null ]
+];

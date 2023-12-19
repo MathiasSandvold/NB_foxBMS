@@ -1,0 +1,16 @@
+<map id="N775_BalanceControl" name="N775_BalanceControl">
+<area shape="rect" id="node1" title="manages balancing." alt="" coords="5,198,152,225"/>
+<area shape="rect" id="node2" href="$nxp__mc33775a_8c.html#a8571aaaf79c88879eed3c17d362a1df7" title="setups balancing." alt="" coords="200,223,340,250"/>
+<area shape="rect" id="node3" href="$nxp__mc33775a-ll_8c.html#a9184e5d6d106688f9a701245d749987d" title="Write a value into a specific register in a specific device." alt="" coords="388,198,568,225"/>
+<area shape="rect" id="node4" href="$nxp__mc33775a-ll_8c.html#add44c631a1af3073bdf7c3bf91ae2de6" title="Composes a message." alt="" coords="637,5,841,47"/>
+<area shape="rect" id="node5" href="$nxp__mc33775a-ll_8c.html#a8f9a40f5c6c25d931b57b51703e7e0f3" title="Copies a message to the buffer to be passed to the SPI transmit functions." alt="" coords="637,71,840,98"/>
+<area shape="rect" id="node6" href="$nxp__mc33775a-ll_8c.html#a2e3ed760407a7d6dcb460ac68c02be41" title="Wait for the SPI transmit communication to complete, using notifications." alt="" coords="616,122,861,149"/>
+<area shape="rect" id="node8" href="$os__freertos_8c.html#a25b7418eb914b83dd88bbc0424333139" title="Clear pending notification of a task, with index." alt="" coords="645,173,832,199"/>
+<area shape="rect" id="node9" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="937,223,1084,250"/>
+<area shape="rect" id="node10" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="941,274,1080,301"/>
+<area shape="rect" id="node11" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="950,426,1071,453"/>
+<area shape="rect" id="node12" href="$spi_8c.html#a2a0f36d8cb7e54304284f758cc108c36" title="Transmits and receives data on SPI with DMA." alt="" coords="639,325,838,351"/>
+<area shape="rect" id="node7" href="$os__freertos_8c.html#a7578e983d03af6f03fd3fe09f293cdb1" title="Wait for a notification, with index." alt="" coords="909,122,1112,149"/>
+<area shape="rect" id="node13" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="938,325,1083,351"/>
+<area shape="rect" id="node14" href="$fsystem_8h.html#af23205627be1616c6b1dcdb684060322" title="Switch back to user mode." alt="" coords="923,375,1099,402"/>
+</map>

@@ -1,0 +1,11 @@
+<map id="ltc.h" name="ltc.h">
+<area shape="rect" id="node1" title="Headers for the driver for the LTC analog front&#45;end." alt="" coords="418,5,465,32"/>
+<area shape="rect" id="node2" href="$ltc__6806_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="5,87,88,114"/>
+<area shape="rect" id="node3" href="$ltc__6813-1_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="112,87,205,114"/>
+<area shape="rect" id="node4" href="$ltc__afe_8c.html" title="AFE driver implementation for LTC ICs." alt="" coords="230,87,301,114"/>
+<area shape="rect" id="node5" href="$ltc__afe__dma_8c.html" title="Driver for the DMA module for the LTC." alt="" coords="325,87,427,114"/>
+<area shape="rect" id="node6" href="$test__ltc__6806_8c.html" title="Test of the ltc.c module." alt="" coords="451,87,562,114"/>
+<area shape="rect" id="node7" href="$test__ltc__6806__pec__in__arrays_8c.html" title="Test of the PEC values in the arrays in ltc6806.c module." alt="" coords="586,80,731,121"/>
+<area shape="rect" id="node8" href="$test__ltc__6813-1_8c.html" title="Test of the ltc_6813&#45;1.c module." alt="" coords="756,87,879,114"/>
+<area shape="rect" id="node9" href="$test__ltc__6813-1__pec__in__arrays_8c.html" title="Test of the predefined commands in the ltc_6813&#45;1.c module." alt="" coords="903,80,1041,121"/>
+</map>

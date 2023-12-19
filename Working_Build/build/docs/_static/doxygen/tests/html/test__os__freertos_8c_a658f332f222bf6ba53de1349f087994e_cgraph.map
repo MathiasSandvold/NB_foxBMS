@@ -1,0 +1,4 @@
+<map id="testOS_GetNumberOfStoredMessagesInQueue" name="testOS_GetNumberOfStoredMessagesInQueue">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,192,47"/>
+<area shape="rect" id="node2" href="$os__freertos_8c.html#a64fee282d8a9e2abab8b69bb91401421" title="Check if messages are waiting for queue." alt="" coords="240,5,465,47"/>
+</map>

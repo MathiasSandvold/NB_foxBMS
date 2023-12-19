@@ -1,0 +1,4 @@
+<map id="testDIAG_ErrorCurrentSensorInvalidInput" name="testDIAG_ErrorCurrentSensorInvalidInput">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,199,47"/>
+<area shape="rect" id="node2" href="$diag__cbs_8h.html#a60b8fabde3ccb9b0efae9f11f6cfb213" title="diagnosis callback function for current sensor related events" alt="" coords="247,13,417,39"/>
+</map>

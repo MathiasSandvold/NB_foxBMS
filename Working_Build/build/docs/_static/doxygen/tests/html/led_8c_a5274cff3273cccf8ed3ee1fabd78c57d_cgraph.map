@@ -1,0 +1,4 @@
+<map id="LED_SetDebugLed" name="LED_SetDebugLed">
+<area shape="rect" id="node1" title="Turn debug LED on." alt="" coords="5,5,137,32"/>
+<area shape="rect" id="node2" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="185,5,267,32"/>
+</map>

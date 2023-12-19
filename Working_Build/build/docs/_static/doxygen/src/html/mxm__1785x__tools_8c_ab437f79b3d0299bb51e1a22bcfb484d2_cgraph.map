@@ -1,0 +1,5 @@
+<map id="MXM_Convert" name="MXM_Convert">
+<area shape="rect" id="node1" title="Convert a measurement value to a voltage value." alt="" coords="5,5,107,32"/>
+<area shape="rect" id="node2" href="$mxm__1785x__tools_8c.html#af328199dc46b6eab7f35f08f0f076145" title="Extract a value from a single register." alt="" coords="155,5,365,32"/>
+<area shape="rect" id="node3" href="$mxm__1785x__tools_8c.html#a0dc736d94a1c30286d2549d3efa99e2d" title="Find Position of first set bit in bitmask." alt="" coords="413,5,533,32"/>
+</map>

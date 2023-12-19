@@ -1,0 +1,10 @@
+<map id="test_nxp_afe.c" name="test_nxp_afe.c">
+<area shape="rect" id="node1" title="Test of the afe.c module." alt="" coords="183,5,289,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="5,80,67,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="91,80,232,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="257,80,367,107"/>
+<area shape="rect" id="node5" href="$afe_8h.html" title="AFE driver header." alt="" coords="392,80,443,107"/>
+<area shape="rect" id="node6" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="287,155,380,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="342,229,407,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="455,155,529,181"/>
+</map>

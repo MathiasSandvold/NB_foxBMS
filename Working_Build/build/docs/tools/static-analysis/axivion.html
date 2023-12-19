@@ -1,0 +1,309 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>6. Axivion Bauhaus Suite &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="1. Preface" href="../../developer-manual/preface.html" />
+    <link rel="prev" title="5. HALCoGen tool documentation" href="../halcogen/halcogen.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><span class="section-number">6. </span>Axivion Bauhaus Suite</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/tools/static-analysis/axivion.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="axivion-bauhaus-suite">
+<span id="id1"></span><h1><span class="section-number">6. </span>Axivion Bauhaus Suite<a class="headerlink" href="#axivion-bauhaus-suite" title="Permalink to this headline"></a></h1>
+<p>Static Analysis tries to uncover potential errors in software by analyzing the
+source code.
+In this project one of the tools that are used is the Axivion Bauhaus Suite.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The following part of the documentation describes setting up the tool
+Axivion Bauhaus Suite.
+This tool is a commercial tool by <a class="reference external" href="https://www.axivion.com/en/">Axivion</a>.
+Please contact Axivion if you are interested in acquiring a license.</p>
+</div>
+<div class="section" id="setup">
+<h2><span class="section-number">6.1. </span>Setup<a class="headerlink" href="#setup" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Install OpenJDK and make it available in PATH.</p></li>
+<li><p>Install Python 3.8 from <a class="reference external" href="https://www.python.org/downloads/windows/">https://www.python.org/downloads/windows/</a>. Use the
+user installer and make sure to install the Python launcher. Leave all other
+options as they are selected.</p></li>
+<li><p>Extract Axivion Bauhaus Suite from the zip-file and copy it in a versioned
+directory e.g., <code class="docutils literal notranslate"><span class="pre">C:\Bauhaus\x.y.z</span></code> and add <code class="docutils literal notranslate"><span class="pre">C:\Bauhaus\x.y.z\bin</span></code> to the
+user PATH environment variable.</p></li>
+<li><p>Copy the license file into <code class="docutils literal notranslate"><span class="pre">%USERPROFILE%\.bauhaus\</span></code>.</p></li>
+<li><p>Name the certificate of the dashboard server <code class="docutils literal notranslate"><span class="pre">auto.cert</span></code> and copy it into
+the folder <code class="docutils literal notranslate"><span class="pre">%USERPROFILE%\.bauhaus\</span></code>.</p></li>
+<li><p><strong>Optional:</strong> If there is an Axivion Dashboard server running: Set the user
+environment variable <code class="docutils literal notranslate"><span class="pre">AXIVION_PASSWORD=xyz</span></code> to the user token obtained from
+the dashboard.</p></li>
+</ul>
+<p>To verify the installation and create an initialization of the local database,
+the following command has to be run once inside a terminal (please make sure
+that the terminal is freshly spawned so that it inherits the previously set
+environment variables):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">C:\Users\vulpes\Documents\foxbms-2&gt;tests\axivion\scripts\start_local_analysis.bat</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="local-builds-and-results">
+<h2><span class="section-number">6.2. </span>Local Builds And Results<a class="headerlink" href="#local-builds-and-results" title="Permalink to this headline"></a></h2>
+<ul>
+<li><p>Run the following command to start a local dashserver and <strong>do not</strong> close
+the terminal afterwards (follow the instructions printed on the terminal to
+see the results):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">C:\Users\vulpes\Documents\foxbms-2&gt;tests\axivion\scripts\start_local_dashserver.bat</span>
+</pre></div>
+</div>
+</li>
+<li><p>Run the following command to update the analysis result (the local dashboard
+will not be available during the execution of the local analysis):</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">C:\Users\vulpes\Documents\foxbms-2&gt;tests\axivion\scripts\start_local_analysis.bat</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</div>
+<div class="section" id="vs-code-setup">
+<h2><span class="section-number">6.3. </span>VS Code Setup<a class="headerlink" href="#vs-code-setup" title="Permalink to this headline"></a></h2>
+<div class="section" id="usage">
+<h3><span class="section-number">6.3.1. </span>Usage<a class="headerlink" href="#usage" title="Permalink to this headline"></a></h3>
+<div class="section" id="running-the-tests">
+<h4><span class="section-number">6.3.1.1. </span>Running the Tests<a class="headerlink" href="#running-the-tests" title="Permalink to this headline"></a></h4>
+<p>Press <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">Shift</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">B</kbd></kbd> and run the task <em>axivion analysis</em>. This task
+runs the Axivion analysis script
+<code class="docutils literal notranslate"><span class="pre">tests/axivion/scripts/start_local_analysis.bat</span></code>.</p>
+</div>
+<div class="section" id="issues">
+<h4><span class="section-number">6.3.1.2. </span>Issues<a class="headerlink" href="#issues" title="Permalink to this headline"></a></h4>
+<p>Open command palette by pressing <kbd class="kbd compound docutils literal notranslate"><kbd class="kbd docutils literal notranslate">Ctrl</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">Shift</kbd> <kbd class="kbd docutils literal notranslate"></kbd>+<kbd class="kbd docutils literal notranslate"></kbd> <kbd class="kbd docutils literal notranslate">P</kbd></kbd> and search for
+<em>axivion</em>.</p>
+</div>
+</div>
+<div class="section" id="local-builds">
+<h3><span class="section-number">6.3.2. </span>Local Builds<a class="headerlink" href="#local-builds" title="Permalink to this headline"></a></h3>
+<p>If VS Code is installed the VS Code’s <code class="docutils literal notranslate"><span class="pre">settings.json</span></code> is automatically
+correctly configured for Axivion usage.</p>
+</div>
+<div class="section" id="ci-builds">
+<h3><span class="section-number">6.3.3. </span>CI Builds<a class="headerlink" href="#ci-builds" title="Permalink to this headline"></a></h3>
+<p>To get CI build results in VS Code add the following configuration to the
+VS Code User settings:</p>
+<div class="highlight-json notranslate"><div class="highlight"><pre><span></span><span class="nt">&quot;axivion.dashboards&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;user friendly Dashboard name&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;path-to-dashboard&gt;&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;username&quot;</span><span class="p">:</span> <span class="s2">&quot;&lt;username&gt;&quot;</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="advanced-usage">
+<h2><span class="section-number">6.4. </span>Advanced Usage<a class="headerlink" href="#advanced-usage" title="Permalink to this headline"></a></h2>
+<div class="section" id="race-condition-analysis">
+<h3><span class="section-number">6.4.1. </span>Race Condition Analysis<a class="headerlink" href="#race-condition-analysis" title="Permalink to this headline"></a></h3>
+<p>Go into the directory <cite>racepdfs</cite> and execute the wrapper batch file. This
+should generate a directory with call graphs to variables that are accessed in
+a potential unsafe manner. These can be used for closer investigation.</p>
+</div>
+</div>
+<div class="section" id="updating-the-architecture">
+<h2><span class="section-number">6.5. </span>Updating the architecture<a class="headerlink" href="#updating-the-architecture" title="Permalink to this headline"></a></h2>
+<p>The current architecture is described in <cite>architecture.gxl</cite>.
+This file is automatically embedded and verified against during the
+architecture analysis run by this tool.
+In order to update the architecture, it can be changed according to the
+user manual of the tool in <cite>gravis</cite> and the exported in place of
+<cite>architecture.gxl</cite>.</p>
+<p>When updating the architecture, a new render should be created in order to
+update the documentation at <a class="reference internal" href="../../software/architecture/architecture.html#software-architecture"><span class="std std-ref">Software Architecture</span></a>.
+This can be done through the export feature of <cite>gravis</cite>.
+For the developer’s convenience a helper script has been created.
+Call</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gravis --script tests/axivion/gravis_export_architecture_svg.py
+</pre></div>
+</div>
+<p>from a shell in the root of the project and the image will be
+automatically updated.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../halcogen/halcogen.html" class="btn btn-neutral float-left" title="5. HALCoGen tool documentation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="../../developer-manual/preface.html" class="btn btn-neutral float-right" title="1. Preface" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

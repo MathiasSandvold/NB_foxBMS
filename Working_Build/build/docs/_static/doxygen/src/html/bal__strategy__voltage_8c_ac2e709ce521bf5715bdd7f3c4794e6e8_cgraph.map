@@ -1,0 +1,7 @@
+<map id="BAL_ProcessStateBalancing" name="BAL_ProcessStateBalancing">
+<area shape="rect" id="node1" title="State machine subfunction to balance the battery cell." alt="" coords="5,81,196,108"/>
+<area shape="rect" id="node2" href="$bal__strategy__voltage_8c.html#a8131e88ee2fae18827d094bb10c1585d" title="Activates voltage based balancing." alt="" coords="264,5,421,32"/>
+<area shape="rect" id="node3" href="$bal__cfg_8c.html#ae6943eea06cdd64870ce62e3ce1b60c2" title="get balancing threshold" alt="" coords="489,31,704,57"/>
+<area shape="rect" id="node4" href="$bal__strategy__voltage_8c.html#ab608144bd63e5fa96224e95cec7a3fb3" title="Deactivates voltage based balancing." alt="" coords="285,107,400,133"/>
+<area shape="rect" id="node5" href="$bms_8c.html#ab900910af6e3c584a5e3650018fe4ed7" title="Returns current battery system state (charging/discharging, resting or in relaxation phase)" alt="" coords="244,157,441,184"/>
+</map>

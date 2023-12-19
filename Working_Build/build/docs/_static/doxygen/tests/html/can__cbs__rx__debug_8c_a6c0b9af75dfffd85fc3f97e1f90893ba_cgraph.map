@@ -1,0 +1,7 @@
+<map id="CANRX_ProcessSoftwareResetMux" name="CANRX_ProcessSoftwareResetMux">
+<area shape="rect" id="node1" title="Parses CAN message to handle software related requests, e.g., a software reset of the BMS." alt="" coords="5,42,235,69"/>
+<area shape="rect" id="node2" href="$can__cbs__rx__debug_8c.html#a5535e0f454e41e00aaf92e77b563f558" title="Check if a software reset is requested." alt="" coords="283,5,481,47"/>
+<area shape="rect" id="node5" href="$reset_8c.html#a61214f27599c0125bcbb2ee8edf12fd1" title="Trigger a software reset of the BMS." alt="" coords="293,71,471,98"/>
+<area shape="rect" id="node3" href="$can__helper_8c.html#ad6206f20af5736a526257873d3c04bd6" title="Gets CAN signal data from a 64&#45;bit variable. This function is used to get signal data from a 64&#45;bit C..." alt="" coords="529,13,796,39"/>
+<area shape="rect" id="node4" href="$can__helper_8c.html#a0d38948df89b374965b8541588148819" title="Convert bit start in big endian case. In the big endian case for CAN, the bit start is set to the MSB..." alt="" coords="844,13,1047,39"/>
+</map>

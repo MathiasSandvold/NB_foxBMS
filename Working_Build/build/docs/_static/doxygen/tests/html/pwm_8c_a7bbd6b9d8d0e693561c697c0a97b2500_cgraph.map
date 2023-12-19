@@ -1,0 +1,4 @@
+<map id="PWM_StartPwm" name="PWM_StartPwm">
+<area shape="rect" id="node1" title="Start the PWM (starts all configured ePWM channels)" alt="" coords="5,5,124,32"/>
+<area shape="rect" id="node2" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="172,5,317,32"/>
+</map>

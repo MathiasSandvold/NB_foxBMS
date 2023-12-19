@@ -1,0 +1,4 @@
+<map id="testEnablePeriodic" name="testEnablePeriodic">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,136,32"/>
+<area shape="rect" id="node2" href="$can_8c.html#afa63875d5e305fa3e37da47b90929f34" title="Enables periodic sending per CAN. This is used to prevent sending uninitialized data per CAN (e...." alt="" coords="184,5,327,32"/>
+</map>

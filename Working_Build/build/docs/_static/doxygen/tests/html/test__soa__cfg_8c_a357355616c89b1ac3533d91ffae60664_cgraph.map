@@ -1,0 +1,6 @@
+<map id="testSOA_IsCurrentOnOpenString" name="testSOA_IsCurrentOnOpenString">
+<area shape="rect" id="node1" title=" " alt="" coords="5,31,219,57"/>
+<area shape="rect" id="node2" href="$soa__cfg_8c.html#a1b00364be89ccc23d92926da05500192" title="Checks if string current is floating while contactors are open." alt="" coords="267,31,457,57"/>
+<area shape="rect" id="node3" href="$bms_8c.html#a9f55fb5189151b979687657b450e3ef2" title="Returns string state (closed or open)" alt="" coords="519,5,662,32"/>
+<area shape="rect" id="node4" href="$bms_8c.html#a348c05608a31e56c9675cd88bdad6c79" title="Returns if string is currently precharging or not." alt="" coords="505,56,676,83"/>
+</map>

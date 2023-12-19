@@ -1,0 +1,7 @@
+<map id="vishay_ntcalug01a103g.h" name="vishay_ntcalug01a103g.h">
+<area shape="rect" id="node1" title="Resistive divider used for measuring temperature." alt="" coords="272,5,439,32"/>
+<area shape="rect" id="node2" href="$vishay__ntcalug01a103g__lookup-table_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="5,80,161,121"/>
+<area shape="rect" id="node3" href="$vishay__ntcalug01a103g__polynomial_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="185,80,341,121"/>
+<area shape="rect" id="node4" href="$vishay__ntcalug01a103g_8c.html" title="Resistive divider used for measuring temperature." alt="" coords="365,87,532,114"/>
+<area shape="rect" id="node5" href="$test__vishay__ntcalug01a103g_8c.html" title="Tests for the vishay_ntcalug01a103g module." alt="" coords="556,87,752,114"/>
+</map>

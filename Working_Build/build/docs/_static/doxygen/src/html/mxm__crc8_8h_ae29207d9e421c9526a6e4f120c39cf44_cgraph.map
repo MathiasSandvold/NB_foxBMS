@@ -1,0 +1,5 @@
+<map id="MXM_CRC8SelfTest" name="MXM_CRC8SelfTest">
+<area shape="rect" id="node1" title="Test the CRC8&#45;algorithm with a known pattern." alt="" coords="5,5,144,32"/>
+<area shape="rect" id="node2" href="$mxm__crc8_8c.html#a9371d7335e3bcd1601e34612ea47dbf4" title="Compute CRC8 with initial value set to 0x00." alt="" coords="192,5,284,32"/>
+<area shape="rect" id="node3" href="$mxm__crc8_8c.html#aff7b770d0d6a3773b0fe425eb9bb9d8d" title="Compute CRC8 (0xA6) with initial value." alt="" coords="332,5,501,32"/>
+</map>

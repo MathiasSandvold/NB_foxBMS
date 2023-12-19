@@ -1,0 +1,12 @@
+<map id="vishay_ntcalug01a103g.c" name="vishay_ntcalug01a103g.c">
+<area shape="rect" id="node1" title="Resistive divider used for measuring temperature." alt="" coords="273,5,440,32"/>
+<area shape="rect" id="node2" href="$vishay__ntcalug01a103g_8h.html" title="Resistive divider used for measuring temperature." alt="" coords="5,87,172,114"/>
+<area shape="rect" id="node3" title=" " alt="" coords="229,169,295,196"/>
+<area shape="rect" id="node4" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="247,87,319,114"/>
+<area shape="rect" id="node5" title=" " alt="" coords="319,169,394,196"/>
+<area shape="rect" id="node6" href="$foxmath_8h.html" title="math library for often used math functions" alt="" coords="608,87,687,114"/>
+<area shape="rect" id="node7" title=" " alt="" coords="528,169,591,196"/>
+<area shape="rect" id="node10" href="$temperature__sensor__defs_8h.html" title="TODO." alt="" coords="395,80,532,121"/>
+<area shape="rect" id="node8" title=" " alt="" coords="704,169,761,196"/>
+<area shape="rect" id="node9" title=" " alt="" coords="615,169,679,196"/>
+</map>

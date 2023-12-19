@@ -1,0 +1,262 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4.30. Supported Analog Front-Ends &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../../../" id="documentation_options" src="../../../../_static/documentation_options.js"></script>
+        <script src="../../../../_static/jquery.js"></script>
+        <script src="../../../../_static/underscore.js"></script>
+        <script src="../../../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../../search.html" />
+    <link rel="next" title="4.30.1. LTC 6804-1" href="ltc/6804-1.html" />
+    <link rel="prev" title="4.29. Analog Front-End API" href="afe.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../modules.html">4. Software Modules</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../../application/algorithm/algorithm.html">4.1. Algorithm Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../application/bal/bal.html">4.2. Balancing Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../application/bms/bms.html">4.3. BMS Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../application/plausibility/plausibility.html">4.4. Plausibility Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../application/redundancy/redundancy.html">4.5. Redundancy Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../application/soa/soa.html">4.6. SOA Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engine/database/database.html">4.7. Database Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engine/diag/diag.html">4.8. Diagnosis Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engine/hwinfo/hwinfo.html">4.9. Hardware Info Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engine/sys/sys.html">4.10. System Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../engine/sys_mon/sys_mon.html">4.11. System Monitoring Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../task/ftask/ftask.html">4.12. FTASK Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../task/os/os.html">4.13. OS Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../adc/adc.html">4.14. ADC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../can/can.html">4.15. CAN</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../crc/crc.html">4.16. CRC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contactor/contactor.html">4.17. Contactor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../dma/dma.html">4.18. DMA</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../foxmath/foxmath.html">4.19. foxmath</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../foxmath/utils.html">4.20. utils</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../fram/fram.html">4.21. FRAM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../htsen/htsen.html">4.22. Humidity/Temperature Sensor Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../i2c/i2c.html">4.23. I2C Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../imd/imd.html">4.24. Insulation Measurement Device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../interlock/interlock.html">4.25. Interlock</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../io/io.html">4.26. IO Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../meas/meas.html">4.27. Measurement Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../mcu/mcu.html">4.28. MCU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="afe.html">4.29. Analog Front-End API</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">4.30. Supported Analog Front-Ends</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="ltc/6804-1.html">4.30.1. LTC 6804-1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ltc/6806.html">4.30.2. LTC 6806</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ltc/6811-1.html">4.30.3. LTC 6811-1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ltc/6812-1.html">4.30.4. LTC 6812-1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="ltc/6813-1.html">4.30.5. LTC 6813-1</a></li>
+<li class="toctree-l3"><a class="reference internal" href="maxim/max1785x.html">4.30.6. MAX1785x</a></li>
+<li class="toctree-l3"><a class="reference internal" href="nxp/mc33775a.html">4.30.7. NXP MC33775A</a></li>
+<li class="toctree-l3"><a class="reference internal" href="debug/default.html">4.30.8. Debug Default</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../pex/pex.html">4.31. Port Expander Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../pwm/pwm.html">4.32. PWM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../rtc/rtc.html">4.33. RTC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sbc/sbc.html">4.34. SBC</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../spi/spi.html">4.35. SPI</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../sps/sps.html">4.36. SPS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ts/ts.html">4.37. Temperature Sensor API</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../ts/ts-sensors.html">4.38. Supported Temperature Sensors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../main/startup.html">4.39. Embedded Software Startup</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../main/version.html">4.40. Version Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../main/fassert.html">4.41. FASSERT Module</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../developer-manual/public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="../../modules.html"><span class="section-number">4. </span>Software Modules</a> &raquo;</li>
+      <li><span class="section-number">4.30. </span>Supported Analog Front-Ends</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../../../_sources/software/modules/driver/afe/supported-afes.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="supported-analog-front-ends">
+<span id="id1"></span><h1><span class="section-number">4.30. </span>Supported Analog Front-Ends<a class="headerlink" href="#supported-analog-front-ends" title="Permalink to this headline"></a></h1>
+<p>foxBMS 2 supports various AFE from different manufacturers as the list below
+shows.
+This is achieved by drivers that follow the <a class="reference internal" href="afe.html#analog-front-end-api"><span class="std std-ref">Analog Front-End API</span></a>.</p>
+<div class="toctree-wrapper compound">
+<p class="caption" role="heading"><span class="caption-text">List of supported AFEs</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="ltc/6804-1.html">4.30.1. LTC 6804-1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ltc/6806.html">4.30.2. LTC 6806</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ltc/6811-1.html">4.30.3. LTC 6811-1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ltc/6812-1.html">4.30.4. LTC 6812-1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ltc/6813-1.html">4.30.5. LTC 6813-1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="maxim/max1785x.html">4.30.6. MAX1785x</a></li>
+<li class="toctree-l1"><a class="reference internal" href="nxp/mc33775a.html">4.30.7. NXP MC33775A</a></li>
+<li class="toctree-l1"><a class="reference internal" href="debug/default.html">4.30.8. Debug Default</a></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="afe.html" class="btn btn-neutral float-left" title="4.29. Analog Front-End API" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="ltc/6804-1.html" class="btn btn-neutral float-right" title="4.30.1. LTC 6804-1" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

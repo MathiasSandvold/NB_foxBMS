@@ -1,0 +1,7 @@
+<map id="IMD_RequestMeasurementStop" name="IMD_RequestMeasurementStop">
+<area shape="rect" id="node1" title="Request to deactivate the actual IMD measurement." alt="" coords="5,56,212,83"/>
+<area shape="rect" id="node2" href="$imd_8c.html#af71dbb70f367737ded7c75030b93d2f5" title="sets the current state request of the state variable imd_state." alt="" coords="260,56,411,83"/>
+<area shape="rect" id="node3" href="$imd_8c.html#a5af47fbf7aebd66487c00967df0c9368" title="checks the state requests that are made." alt="" coords="459,5,627,32"/>
+<area shape="rect" id="node4" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="469,56,616,83"/>
+<area shape="rect" id="node5" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="473,107,612,133"/>
+</map>

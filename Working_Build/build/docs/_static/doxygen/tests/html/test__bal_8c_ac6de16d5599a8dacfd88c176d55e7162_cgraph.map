@@ -1,0 +1,6 @@
+<map id="testFiniteStateMachineTransferStateRequestFunction" name="testFiniteStateMachineTransferStateRequestFunction">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,208,65"/>
+<area shape="rect" id="node2" href="$bal_8c.html#aa57af2b5a63cee4a0bc4b6918ce63ac8" title="transfers the current state request to the state machine." alt="" coords="256,31,435,57"/>
+<area shape="rect" id="node3" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="483,5,629,32"/>
+<area shape="rect" id="node4" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="487,56,625,83"/>
+</map>

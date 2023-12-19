@@ -1,0 +1,44 @@
+<map id="testStateDefault" name="testStateDefault">
+<area shape="rect" id="node1" title=" " alt="" coords="5,331,120,357"/>
+<area shape="rect" id="node2" href="$mxm__17841b_8c.html#a0ea1ec4dd5b5f45e291edd394772ea46" title="Execute state&#45;machine for the MAX17841B." alt="" coords="168,331,329,357"/>
+<area shape="rect" id="node3" href="$group__mxm-41b-state-handlers.html#gafd5389790a0314574db4f6927aef0ddc" title="state handler for &quot;check fmea&quot;" alt="" coords="387,472,614,499"/>
+<area shape="rect" id="node17" href="$mxm__17841b_8c.html#a4a89dee3ef42402bf77a05f83ab55d0f" title="Transition into idle, mark as an error occurred." alt="" coords="684,259,883,285"/>
+<area shape="rect" id="node21" href="$group__mxm-41b-state-handlers.html#ga660930e423c39dfb48ce3304564b894f" title="state handler for &quot;clear receive buffer&quot;" alt="" coords="407,107,594,149"/>
+<area shape="rect" id="node25" href="$group__mxm-41b-state-handlers.html#ga1367e1670ab7be0ea72a917396e6c813" title="state handler for &quot;clear transmit buffer&quot;" alt="" coords="407,225,594,266"/>
+<area shape="rect" id="node26" href="$group__mxm-41b-state-handlers.html#gaf38f0269d733292924c94ca632bbbb60" title="state handler for &quot;get version&quot;" alt="" coords="390,421,611,448"/>
+<area shape="rect" id="node27" href="$group__mxm-41b-state-handlers.html#ga4be4712292676110d4389d45d2b0edf3" title="state handler for &quot;idle&quot;" alt="" coords="413,573,589,600"/>
+<area shape="rect" id="node28" href="$group__mxm-41b-state-handlers.html#gafed0c8a844b5fa7197d9257b159eca61" title="init state handler" alt="" coords="414,523,587,549"/>
+<area shape="rect" id="node36" href="$group__mxm-41b-state-handlers.html#gad0516f91d78f46e8d6beaac3ec78b2af" title="state handler for &quot;read status register&quot;" alt="" coords="389,290,613,331"/>
+<area shape="rect" id="node37" href="$group__mxm-41b-state-handlers.html#gab36b0cda14a8403e19a2efcda97ebe8c" title="state handler for &quot;uart transaction&quot;" alt="" coords="377,56,624,83"/>
+<area shape="rect" id="node42" href="$group__mxm-41b-state-handlers.html#gabb3eaec950481073e72929edfaf87144" title="state handler for &quot;write conf and int register&quot;" alt="" coords="407,355,594,397"/>
+<area shape="rect" id="node4" href="$mxm__17841b_8c.html#a70233222d0d1b152129a1b518ceb8937" title="Read one or multiple registers of MAX17841B." alt="" coords="704,360,863,387"/>
+<area shape="rect" id="node18" href="$mxm__17841b_8c.html#aae8820bfff22c08f9ab9cfc015f1cf6c" title="Transition into idle, mark as successful." alt="" coords="672,309,895,336"/>
+<area shape="rect" id="node19" href="$mxm__cfg_8c.html#a4b68e64640670902e28f9db8742008df" title="Return whether SPI interface is ready." alt="" coords="699,461,867,488"/>
+<area shape="rect" id="node5" href="$mxm__cfg_8c.html#a116a8b81cf7c1912c50c1212aa0ff9a8" title="Send and Receive data over SPI." alt="" coords="1205,360,1335,387"/>
+<area shape="rect" id="node6" href="$diag_8c.html#a3e60a00edfbecf928fd6db140626647a" title="DIAG_CheckEvent provides a simple interface to check an event for STD_OK." alt="" coords="1412,296,1541,323"/>
+<area shape="rect" id="node9" href="$spi_8c.html#ac84bc8424de860e2cd89fea2e89dd89a" title="Transmits and receives data on SPI without DMA." alt="" coords="1391,448,1563,475"/>
+<area shape="rect" id="node7" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="1619,296,1723,323"/>
+<area shape="rect" id="node8" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="1792,296,1915,323"/>
+<area shape="rect" id="node10" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="1624,499,1719,525"/>
+<area shape="rect" id="node11" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="1631,549,1712,576"/>
+<area shape="rect" id="node12" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="1611,448,1732,475"/>
+<area shape="rect" id="node13" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="1632,347,1711,373"/>
+<area shape="rect" id="node16" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="1626,397,1717,424"/>
+<area shape="rect" id="node14" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1780,347,1927,373"/>
+<area shape="rect" id="node15" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1784,397,1923,424"/>
+<area shape="rect" id="node20" href="$spi_8c.html#a4e790e1a3c19c32a5f02a32053e96040" title="Returns STD_OK if the SPI interface can be used again." alt="" coords="953,445,1139,472"/>
+<area shape="rect" id="node22" href="$mxm__17841b_8c.html#a1e6810277173e48449155251562be540" title="Write one or multiple registers of MAX17841B." alt="" coords="966,208,1126,235"/>
+<area shape="rect" id="node23" href="$mxm__cfg_8c.html#ae7cec69276fadde6665026fadc7eb390" title="Transmit data over SPI." alt="" coords="1213,259,1327,285"/>
+<area shape="rect" id="node24" href="$spi_8c.html#abdf760fa10bbc7f0f6b93ef0ddda41de" title="Transmits data on SPI without DMA." alt="" coords="1413,397,1540,424"/>
+<area shape="rect" id="node29" href="$mxm__17841b_8c.html#a23f72a19d061e3fd2d4095f4e6b10d8c" title="Write the config register of MAX17841B." alt="" coords="685,411,881,437"/>
+<area shape="rect" id="node30" href="$mxm__17841b_8c.html#a578f763e28fa1230a131616778099702" title="Reset register copies to default." alt="" coords="695,715,871,757"/>
+<area shape="rect" id="node31" href="$mxm__cfg_8c.html#ae15c13f7eb4e91ae8876eb7d9562357f" title="Pulls the shutdown of the bridge IC high." alt="" coords="1197,664,1343,691"/>
+<area shape="rect" id="node32" href="$mxm__cfg_8c.html#aca1a692c6b1650c116b1580f5edcfd0d" title="Pulls the shutdown of the bridge IC low." alt="" coords="1395,549,1559,576"/>
+<area shape="rect" id="node33" href="$os_8c.html#a53166653cb8fe3f7c0bfb86af6217fe5" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="693,512,873,539"/>
+<area shape="rect" id="node35" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="983,563,1109,589"/>
+<area shape="rect" id="node34" href="$os_8c.html#a834064ee9e9a90768918c776f5cb1bb7" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="943,497,1149,538"/>
+<area shape="rect" id="node38" href="$mxm__17841b_8c.html#acf55cee5ae15654177643f937054c952" title="Write a buffer transaction to MAX17841B." alt="" coords="973,107,1119,133"/>
+<area shape="rect" id="node39" href="$mxm__17841b_8c.html#abe201e911023d8c53709b38f447aa3ca" title="Read the value of a register function." alt="" coords="679,5,888,32"/>
+<area shape="rect" id="node40" href="$mxm__bitextract_8c.html#aac9f739280cfb96575a7dc1e860dae41" title="read a value from a register supplied as variable" alt="" coords="975,5,1117,32"/>
+<area shape="rect" id="node41" href="$mxm__bitextract_8c.html#a99ab333298a01410347cff8b97125e12" title="Extract a bit value function." alt="" coords="1235,5,1305,32"/>
+</map>

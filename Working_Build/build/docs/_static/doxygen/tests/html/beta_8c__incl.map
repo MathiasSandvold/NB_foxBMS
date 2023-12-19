@@ -1,0 +1,10 @@
+<map id="beta.c" name="beta.c">
+<area shape="rect" id="node1" title="Resistive divider used for measuring temperature." alt="" coords="99,5,158,32"/>
+<area shape="rect" id="node2" href="$beta_8h.html" title="Resistive divider used for measuring temperature." alt="" coords="33,80,91,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,68,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="92,155,157,181"/>
+<area shape="rect" id="node5" href="$foxmath_8h.html" title="math library for often used math functions" alt="" coords="167,80,245,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="270,80,345,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="181,155,239,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="263,155,327,181"/>
+</map>

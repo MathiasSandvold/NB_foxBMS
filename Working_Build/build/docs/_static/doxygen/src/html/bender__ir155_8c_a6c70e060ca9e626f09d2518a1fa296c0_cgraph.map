@@ -1,0 +1,4 @@
+<map id="IMD_ProcessEnableState" name="IMD_ProcessEnableState">
+<area shape="rect" id="node1" title="Processes the IMD enable state." alt="" coords="5,5,176,32"/>
+<area shape="rect" id="node2" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="224,5,305,32"/>
+</map>

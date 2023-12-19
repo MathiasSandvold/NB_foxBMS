@@ -1,0 +1,12 @@
+<map id="dma.h" name="dma.h">
+<area shape="rect" id="node1" title="Headers for the driver for the DMA module." alt="" coords="543,5,602,32"/>
+<area shape="rect" id="node2" href="$nxp__mc33775a__afe_8c.html" title="Configuration for the MC33775A analog front&#45;end." alt="" coords="5,80,151,107"/>
+<area shape="rect" id="node3" href="$nxp__afe__dma_8c.html" title="Driver for the DMA module for the N775." alt="" coords="175,80,285,107"/>
+<area shape="rect" id="node4" href="$nxp__mc33775a-ll_8c.html" title=" " alt="" coords="310,80,441,107"/>
+<area shape="rect" id="node5" href="$dma_8c.html" title="Driver for the DMA module." alt="" coords="465,80,523,107"/>
+<area shape="rect" id="node6" href="$i2c_8c.html" title="Driver for the I2C module." alt="" coords="547,80,598,107"/>
+<area shape="rect" id="node7" href="$spi_8c.html" title="Driver for the SPI module." alt="" coords="622,80,673,107"/>
+<area shape="rect" id="node8" href="$main_8c.html" title="Main function." alt="" coords="697,80,758,107"/>
+<area shape="rect" id="node9" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="782,80,867,107"/>
+<area shape="rect" id="node10" href="$test__dma_8c.html" title="Tests for the dma module." alt="" coords="892,80,979,107"/>
+</map>

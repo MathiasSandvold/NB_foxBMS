@@ -1,0 +1,31 @@
+<map id="FTSK_CreateTaskEngine" name="FTSK_CreateTaskEngine">
+<area shape="rect" id="node1" title="Database&#45;Task." alt="" coords="5,433,173,460"/>
+<area shape="rect" id="node2" href="$ftask__cfg_8c.html#a1e587bbc77563e5b36509f0d19dd9393" title="Initializes the database." alt="" coords="221,316,428,343"/>
+<area shape="rect" id="node20" href="$ftask__cfg_8c.html#a2bc283fc8beb546d8dd8de36e6217a04" title="Engine task for the database and the system monitoring module." alt="" coords="233,433,416,460"/>
+<area shape="rect" id="node24" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="1126,563,1253,589"/>
+<area shape="rect" id="node28" href="$os__freertos_8c.html#a4a7551f4fb9b1a8a50eab73b4b381bff" title="Marks the current task as requiring FPU context." alt="" coords="226,485,423,526"/>
+<area shape="rect" id="node29" href="$sys__mon_8c.html#a3f451806bc94e7340bc876ab4001596d" title="Sets needed bits to indicate that a task is running." alt="" coords="917,5,1017,32"/>
+<area shape="rect" id="node3" href="$database_8c.html#aef38ce0bc9c0f9fb78ce31769054235c" title="Initialization of database manager." alt="" coords="477,215,588,241"/>
+<area shape="rect" id="node5" href="$fram_8c.html#a0236db97eeaadf90877aba70585b4d76" title="Initializes the addresses to be written in the FRAM." alt="" coords="476,291,589,317"/>
+<area shape="rect" id="node18" href="$sys__mon_8c.html#a771b7cdc2c57c57adff93647578ac382" title="initialization function for system monitoring" alt="" coords="491,341,575,368"/>
+<area shape="rect" id="node4" href="$database_8c.html#a2a7c86bb3cde097681e3f65a428af73a" title=" " alt="" coords="648,208,807,235"/>
+<area shape="rect" id="node6" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="915,411,1019,437"/>
+<area shape="rect" id="node8" href="$fram_8c.html#ac33e9fde66e31d43c22bfc9a2f8aebf7" title="Reads a variable from the FRAM." alt="" coords="666,259,789,285"/>
+<area shape="rect" id="node7" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="1128,411,1251,437"/>
+<area shape="rect" id="node9" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="901,360,1032,387"/>
+<area shape="rect" id="node10" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="919,107,1014,133"/>
+<area shape="rect" id="node11" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="926,157,1007,184"/>
+<area shape="rect" id="node12" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="865,208,1068,235"/>
+<area shape="rect" id="node13" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="906,309,1027,336"/>
+<area shape="rect" id="node14" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="927,56,1006,83"/>
+<area shape="rect" id="node17" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="921,259,1012,285"/>
+<area shape="rect" id="node15" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1116,31,1263,57"/>
+<area shape="rect" id="node16" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1120,81,1259,108"/>
+<area shape="rect" id="node19" href="$sys__mon_8c.html#acc9a5d05dfff9a46afd4f0a665cba32c" title="Copy from the from entry to the to entry." alt="" coords="646,360,809,387"/>
+<area shape="rect" id="node21" href="$database_8c.html#a1585d5c7665504898be0371c5c6295b9" title="trigger of database manager" alt="" coords="487,433,578,460"/>
+<area shape="rect" id="node26" href="$sys__mon_8c.html#a37f31886bd1e99d17fc5ac5d944b91a7" title="overall system monitoring" alt="" coords="640,528,815,555"/>
+<area shape="rect" id="node22" href="$database_8c.html#a2457542b9b35e65267a0aaa0a7be0c5c" title=" " alt="" coords="637,411,817,453"/>
+<area shape="rect" id="node25" href="$os__freertos_8c.html#a285b22d2ef1448cae22a8965b5fec186" title="Receive an item from a queue." alt="" coords="647,477,808,504"/>
+<area shape="rect" id="node23" href="$database_8c.html#afed1a594f60622f1e922ce814a7703e8" title=" " alt="" coords="907,461,1027,488"/>
+<area shape="rect" id="node27" href="$sys__mon_8c.html#a6d8bc10b85e958ed850f6ec3ce99d7f4" title="Records the violation of a timing in non volatile memory." alt="" coords="869,512,1065,539"/>
+</map>

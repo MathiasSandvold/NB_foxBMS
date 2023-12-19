@@ -1,0 +1,9 @@
+<map id="masterinfo.c" name="masterinfo.c">
+<area shape="rect" id="node1" title="General foxBMS&#45;master system information." alt="" coords="120,5,213,32"/>
+<area shape="rect" id="node2" href="$masterinfo_8h.html" title="General foxBMS&#45;master system information." alt="" coords="36,80,129,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="129,155,194,181"/>
+<area shape="rect" id="node5" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="215,80,287,107"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,155,104,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="219,155,293,181"/>
+<area shape="rect" id="node7" title=" " alt="" coords="318,155,418,181"/>
+</map>

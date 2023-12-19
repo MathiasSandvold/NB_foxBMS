@@ -1,0 +1,11 @@
+<map id="fram_cfg.c" name="fram_cfg.c">
+<area shape="rect" id="node1" title="Configuration for the FRAM module." alt="" coords="370,5,452,32"/>
+<area shape="rect" id="node2" href="$fram__cfg_8h.html" title="Headers for the configuration for the FRAM module." alt="" coords="310,80,392,107"/>
+<area shape="rect" id="node7" title=" " alt="" coords="240,379,305,405"/>
+<area shape="rect" id="node3" href="$battery__system__cfg_8h.html" title="Configuration of the battery system (e.g., number of battery modules, battery cells,..." alt="" coords="76,155,223,181"/>
+<area shape="rect" id="node8" href="$fstd__types_8h.html" title="Definition of foxBMS standard types." alt="" coords="268,304,362,331"/>
+<area shape="rect" id="node9" title=" " alt="" coords="320,155,382,181"/>
+<area shape="rect" id="node4" href="$general_8h.html" title="General macros and definitions for the whole platform." alt="" coords="112,229,187,256"/>
+<area shape="rect" id="node5" href="$fassert_8h.html" title="Assert macro implementation." alt="" coords="20,304,92,331"/>
+<area shape="rect" id="node6" title=" " alt="" coords="19,379,94,405"/>
+</map>

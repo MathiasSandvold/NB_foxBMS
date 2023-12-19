@@ -1,0 +1,5 @@
+<map id="test_pec_helper.h" name="test_pec_helper.h">
+<area shape="rect" id="node1" title="helper module for testing the validity of the PEC in LTC commands" alt="" coords="98,5,223,32"/>
+<area shape="rect" id="node2" href="$test__ltc__6806__pec__in__arrays_8c.html" title="Test of the PEC values in the arrays in ltc6806.c module." alt="" coords="5,80,151,121"/>
+<area shape="rect" id="node3" href="$test__ltc__6813-1__pec__in__arrays_8c.html" title="Test of the predefined commands in the ltc_6813&#45;1.c module." alt="" coords="175,80,314,121"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="I165C_CheckMeasurementMode" name="I165C_CheckMeasurementMode">
+<area shape="rect" id="node1" title="Check measurement mode." alt="" coords="5,5,216,32"/>
+<area shape="rect" id="node2" href="$bender__iso165c_8c.html#a2c51a4bf327fdb02b6bf19b47c2aed19" title="Get data in data word from CAN transmission, for the specific IMD_Info message." alt="" coords="264,5,455,32"/>
+</map>

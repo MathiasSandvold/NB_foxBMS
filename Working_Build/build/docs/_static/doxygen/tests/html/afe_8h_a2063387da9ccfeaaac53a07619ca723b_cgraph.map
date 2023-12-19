@@ -1,0 +1,202 @@
+<map id="AFE_TriggerIc" name="AFE_TriggerIc">
+<area shape="rect" id="node1" title=" " alt="" coords="5,1732,109,1759"/>
+<area shape="rect" id="node2" href="$mxm__afe_8c.html#ab03833bf09e30722e8ef6b9e90cc353d" title=" " alt="" coords="158,2053,261,2080"/>
+<area shape="rect" id="node33" href="$debug__default_8c.html#a3ff9b601ec0d377a3a78d8ce735c7971" title="Trigger function for the driver, called to advance the state machine." alt="" coords="1182,1031,1305,1057"/>
+<area shape="rect" id="node35" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="2345,929,2492,956"/>
+<area shape="rect" id="node36" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="2349,1220,2488,1247"/>
+<area shape="rect" id="node46" href="$ltc__6806_8c.html#acf30d82064c640d2c4f36cd270c0647b" title="trigger function for the LTC driver state machine." alt="" coords="1198,1732,1289,1759"/>
+<area shape="rect" id="node68" href="$mxm__afe_8c.html#a02d37173d2d5d1f7173c843c5a9bc92e" title="Tick function." alt="" coords="168,4173,251,4200"/>
+<area shape="rect" id="node163" href="$nxp__afe_8h.html#ae6df9bbde43f01a4a74a0e34d48cd844" title=" " alt="" coords="157,628,261,655"/>
+<area shape="rect" id="node3" href="$mxm__cfg_8c.html#a417b5a6e2fac6c926405a19edcc4c378" title="Initialize the pins connected to the MAX17841B." alt="" coords="313,2013,503,2040"/>
+<area shape="rect" id="node7" href="$mxm__1785x_8c.html#a22499bf1d575d8d09dc565b966339349" title="Execute all preinit selfchecks." alt="" coords="890,2939,1045,2965"/>
+<area shape="rect" id="node27" href="$mxm__afe_8c.html#aaffcb81a4a3d59c74740a345fe57e519" title="Initialize the state structs." alt="" coords="316,2086,500,2127"/>
+<area shape="rect" id="node4" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="2083,2249,2177,2276"/>
+<area shape="rect" id="node5" href="$io_8c.html#a41154d1d77ad0873d462c803ce831f68" title="Set pin to output by writing in pin direction register." alt="" coords="585,1977,771,2004"/>
+<area shape="rect" id="node6" href="$spi_8c.html#a38bf6ba5f5b17b01e9385983ed860f72" title="Sets the functional of a SPI pin." alt="" coords="613,1927,743,1953"/>
+<area shape="rect" id="node8" href="$diag_8c.html#a3e60a00edfbecf928fd6db140626647a" title="DIAG_CheckEvent provides a simple interface to check an event for STD_OK." alt="" coords="1757,2581,1886,2608"/>
+<area shape="rect" id="node11" href="$mxm__battery__management_8c.html#a871192ccec4147196c1ad237e68c1b40" title="runs a selfcheck for the address space check" alt="" coords="1138,4123,1349,4165"/>
+<area shape="rect" id="node15" href="$mxm__1785x__tools_8c.html#a302164db64e1cd2f77a03bfc022d0509" title="Test the MXM_Convert()&#45;function." alt="" coords="1758,2913,1885,2940"/>
+<area shape="rect" id="node19" href="$mxm__crc8_8c.html#ae29207d9e421c9526a6e4f120c39cf44" title="Test the CRC8&#45;algorithm with a known pattern." alt="" coords="1174,4705,1313,4732"/>
+<area shape="rect" id="node22" href="$mxm__1785x__tools_8c.html#a60fd59e838633019c105f1fe926a453e" title="Test MXM_ExtractValueFromRegister()." alt="" coords="1703,2796,1939,2823"/>
+<area shape="rect" id="node23" href="$mxm__1785x__tools_8c.html#aeb55532830ad78b72ee074bfebde6df3" title="Test MXM_FirstSetBit()." alt="" coords="2346,2981,2491,3008"/>
+<area shape="rect" id="node24" href="$mxm__1785x_8c.html#acd2d5bdda78cd47e0ec8a3dda3eb5385" title="Test the MXM_ParseVoltageReadall()&#45;function." alt="" coords="1141,2948,1345,2975"/>
+<area shape="rect" id="node9" href="$diag_8c.html#a9ccc8d9e39ec632833371523168c4927" title="DIAG_Handler provides generic error handling, based on diagnosis group." alt="" coords="2078,2492,2182,2519"/>
+<area shape="rect" id="node10" href="$diag_8c.html#a58cadf1515b7deb987a0ddef0549e270" title="DIAG_EntryWrite adds an error entry." alt="" coords="2357,2492,2480,2519"/>
+<area shape="rect" id="node12" href="$mxm__battery__management_8c.html#adcda2712e58935f41533d2b54c90aee5" title="Check if a register address is user accessible." alt="" coords="1414,4488,1635,4515"/>
+<area shape="rect" id="node13" href="$mxm__battery__management_8c.html#a9e3c85d541ed2c4301747d8633ba03bc" title="Check if a register address is user accessible in MAX17852." alt="" coords="1711,4463,1932,4489"/>
+<area shape="rect" id="node14" href="$mxm__battery__management_8c.html#aacd19e9ba1a28a8d4ac5fde5677c93e2" title="Check if a register address is user accessible in MAX17853." alt="" coords="1711,4513,1932,4540"/>
+<area shape="rect" id="node16" href="$mxm__1785x__tools_8c.html#ab437f79b3d0299bb51e1a22bcfb484d2" title="Convert a measurement value to a voltage value." alt="" coords="2079,3167,2181,3193"/>
+<area shape="rect" id="node17" href="$mxm__1785x__tools_8c.html#af328199dc46b6eab7f35f08f0f076145" title="Extract a value from a single register." alt="" coords="2313,3268,2524,3295"/>
+<area shape="rect" id="node18" href="$mxm__1785x__tools_8c.html#a0dc736d94a1c30286d2549d3efa99e2d" title="Find Position of first set bit in bitmask." alt="" coords="2572,3125,2692,3152"/>
+<area shape="rect" id="node20" href="$mxm__crc8_8c.html#a9371d7335e3bcd1601e34612ea47dbf4" title="Compute CRC8 with initial value set to 0x00." alt="" coords="1479,4647,1571,4673"/>
+<area shape="rect" id="node21" href="$mxm__crc8_8c.html#aff7b770d0d6a3773b0fe425eb9bb9d8d" title="Compute CRC8 (0xA6) with initial value." alt="" coords="1737,4647,1906,4673"/>
+<area shape="rect" id="node25" href="$mxm__1785x_8c.html#a38cc032b4fe5beffa9ba651b8dfd4884" title="Parse a RX buffer containing voltage values." alt="" coords="1435,3167,1614,3193"/>
+<area shape="rect" id="node26" href="$mxm__1785x_8c.html#ac8a15260cff9ed6eb1682999e13bb9d3" title="Parse voltage values from a READALL receive buffer into an array." alt="" coords="1720,3167,1923,3193"/>
+<area shape="rect" id="node28" href="$mxm__17841b_8c.html#aa8c348a44f50adf5f26f84b20bcbda67" title="Initializes the state struct with default values." alt="" coords="581,2129,775,2156"/>
+<area shape="rect" id="node30" href="$mxm__battery__management_8c.html#a051c244b0a5462914545ddecdab9a56d" title="Initializes the state struct with default values." alt="" coords="582,2180,774,2207"/>
+<area shape="rect" id="node31" href="$mxm__1785x_8c.html#ad1231f10015aa3b85cc57a8de972dec3" title="Initializes the state structs with default values." alt="" coords="593,2079,763,2105"/>
+<area shape="rect" id="node29" href="$mxm__17841b_8c.html#a578f763e28fa1230a131616778099702" title="Reset register copies to default." alt="" coords="879,2366,1055,2407"/>
+<area shape="rect" id="node32" href="$mxm__1785x_8h.html#a6233260ebe7abdd7645e6cb9d175f6de" title="returns the model ID of the daisy chain" alt="" coords="866,2079,1069,2105"/>
+<area shape="rect" id="node34" href="$debug__default_8c.html#a17637e356b7871fff832fcf62a41862b" title="check for multiple calls of state machine trigger function" alt="" coords="2043,929,2217,956"/>
+<area shape="rect" id="node37" href="$debug__default_8c.html#aeb6e23ce50d19e616aab642a7bee7bd7" title="Defines the state transitions." alt="" coords="1441,1031,1608,1057"/>
+<area shape="rect" id="node38" href="$debug__default_8c.html#a10a87d31f072da72d5f1d47a8baa4413" title="Processes the initialization state." alt="" coords="1731,1082,1911,1123"/>
+<area shape="rect" id="node44" href="$debug__default_8c.html#a57644736c49d43c02a23f57a5813d6ec" title="Processes the running state." alt="" coords="1726,1031,1917,1057"/>
+<area shape="rect" id="node45" href="$debug__default_8c.html#a9a894ac1dfc077dd766fa461b593f395" title="Sets the next state, the next substate and the timer value of the state variable." alt="" coords="1764,980,1879,1007"/>
+<area shape="rect" id="node39" href="$debug__default_8c.html#aab8534c5be8d61cb3f1f9f335d15e652" title="return whether the first measurement cycle is finished" alt="" coords="2024,1147,2236,1189"/>
+<area shape="rect" id="node40" href="$debug__default_8c.html#a16164818c401d35ed3e28bfa13b282db" title="Write temperature measurement data." alt="" coords="2033,1082,2227,1123"/>
+<area shape="rect" id="node41" href="$debug__default_8c.html#a136ef9e582647d6e404737c350daec02" title="Write voltage measurement data." alt="" coords="1995,1031,2265,1057"/>
+<area shape="rect" id="node42" href="$debug__default_8c.html#a1a89964c5c8faba29fe50b76e53271f1" title="Sets the indicator that one full measurement cycles was successful." alt="" coords="2035,1213,2225,1254"/>
+<area shape="rect" id="node43" href="$debug__default_8c.html#aed7fa787a0f37e83b1664a3f2f3030bc" title="Sets the next substate and the timer value of the state variable." alt="" coords="2062,980,2198,1007"/>
+<area shape="rect" id="node47" href="$ltc__afe__dma_8c.html#a41589e9bbef5ab1714ce39c3202c038f" title="gets the SPI transmit status." alt="" coords="1443,1732,1606,1759"/>
+<area shape="rect" id="node48" href="$ltc__afe__dma_8c.html#ae079532d397f92e5636a273f36953034" title="sets the SPI transmit status." alt="" coords="1438,1783,1611,1809"/>
+<area shape="rect" id="node49" href="$ltc__6806_8c.html#a5df2618318512a77c0fd7c0c3a3b13e6" title="checks if the data received from the daisy&#45;chain is not corrupt." alt="" coords="1469,1833,1581,1860"/>
+<area shape="rect" id="node50" href="$ltc__6806_8c.html#ad184ef8adbd5dadb067b1d96257531cc" title="re&#45;entrance check of LTC state machine trigger function" alt="" coords="2051,1395,2209,1421"/>
+<area shape="rect" id="node51" href="$ltc__6806_8c.html#ae81b8aa0def104fff84ac45b1832c209" title="condition&#45;based state transition depending on retVal" alt="" coords="1421,1935,1628,1961"/>
+<area shape="rect" id="node52" href="$ltc__6806_8c.html#a3c9b0317c936d8bc03fb8e118ac2043d" title="function for setting LTC_Trigger state transitions" alt="" coords="1752,2087,1891,2113"/>
+<area shape="rect" id="node53" href="$ltc__6806_8c.html#aaf84ea01e26f5cabd668be8bc46eda9a" title="initialize the daisy&#45;chain." alt="" coords="1490,1985,1559,2012"/>
+<area shape="rect" id="node54" href="$ltc__6806_8c.html#ad8da54dbf5d4f08339a5503091d94b7c" title="in the database, initializes the fields related to the LTC drivers." alt="" coords="1447,2036,1602,2063"/>
+<area shape="rect" id="node55" href="$ltc__6806_8c.html#a31a0f262a3434597949aa3251b633a79" title="gets the measurement initialization status." alt="" coords="2030,1446,2230,1487"/>
+<area shape="rect" id="node56" href="$ltc__6806_8c.html#a2edbd2d522ed4c00589101197aaa4e70" title="send command to the LTC daisy&#45;chain and receives data from the LTC daisy&#45;chain." alt="" coords="1459,2087,1590,2113"/>
+<area shape="rect" id="node57" href="$ltc__6806_8c.html#ab465bc3da734177a75cf5d92218f3cd4" title="resets the error table." alt="" coords="1452,1463,1597,1489"/>
+<area shape="rect" id="node58" href="$ltc__6806_8c.html#a68ee3c7e86c459f01878d9766ef0c917" title="Saves the last state and the last substate." alt="" coords="1453,1513,1596,1540"/>
+<area shape="rect" id="node59" href="$ltc__6806_8c.html#aa337a867e837d819ec51d9729b6b0fc5" title="saves the voltage values read from the LTC daisy&#45;chain." alt="" coords="1433,1565,1616,1606"/>
+<area shape="rect" id="node60" href="$ltc__6806_8c.html#aa9babbfd0bbeef2b3107e8b28fb80b99" title="stores the measured voltages in the database." alt="" coords="1459,2644,1590,2671"/>
+<area shape="rect" id="node62" href="$ltc__6806_8c.html#a428e368fcc014375016c63a714201070" title="sets the measurement initialization status." alt="" coords="2025,1278,2235,1319"/>
+<area shape="rect" id="node63" href="$ltc__6806_8c.html#a4d6cd672e9ee1b77017532fb3c1c8921" title="sets the transfer time needed to receive/send data with the LTC daisy&#45;chain." alt="" coords="1448,1260,1601,1287"/>
+<area shape="rect" id="node65" href="$ltc__6806_8c.html#a2784ea1ea6b725911b4da1aa5bd7f0c0" title="tells LTC daisy&#45;chain to start measuring the voltage on GPIOS." alt="" coords="1416,1631,1633,1657"/>
+<area shape="rect" id="node66" href="$ltc__6806_8c.html#a0a7c52466ebf10c28061886c671582bd" title="tells the LTC daisy&#45;chain to start measuring the voltage on all cells." alt="" coords="1423,1681,1626,1708"/>
+<area shape="rect" id="node67" href="$ltc__6806_8c.html#a6bc859327ed6f6ac29c02103d71f8b93" title="transfers the current state request to the state machine." alt="" coords="2041,1344,2219,1371"/>
+<area shape="rect" id="node61" href="$afe__plausibility_8c.html#ae3a0cab9bf3aeded2ce65f1d28bdda8b" title="Cell voltage measurement range plausibility check." alt="" coords="1722,2650,1921,2691"/>
+<area shape="rect" id="node64" href="$ltc__6806_8c.html#a4fd9d165e4bc619474fe3d1653104833" title="gets the frequency of the SPI clock." alt="" coords="1759,1260,1884,1287"/>
+<area shape="rect" id="node69" href="$mxm__17841b_8c.html#a0ea1ec4dd5b5f45e291edd394772ea46" title="Execute state&#45;machine for the MAX17841B." alt="" coords="327,2537,489,2564"/>
+<area shape="rect" id="node92" href="$os_8c.html#a53166653cb8fe3f7c0bfb86af6217fe5" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="1153,4291,1333,4317"/>
+<area shape="rect" id="node102" href="$mxm__battery__management_8c.html#a325538715bf432ee4826598277aa29e3" title="Execute state&#45;machine for Battery Management Protocol." alt="" coords="602,4984,754,5011"/>
+<area shape="rect" id="node120" href="$mxm__1785x_8c.html#a1179710d3b5b7a5c11863c4d0569b95a" title="Function that checks if the error counter can be reset." alt="" coords="309,4225,507,4266"/>
+<area shape="rect" id="node121" href="$mxm__1785x_8c.html#a2cfdc33409d373e8721922acc6a9a3a9" title="This error handler is used as a last resort and tries a reset of the complete driver." alt="" coords="1443,3920,1607,3947"/>
+<area shape="rect" id="node122" href="$mxm__1785x_8c.html#aca60f84fd030e06f1ab2c57ba6bb8e7d" title="Main state&#45;machine implementation." alt="" coords="609,3920,747,3947"/>
+<area shape="rect" id="node70" href="$group__mxm-41b-state-handlers.html#gafd5389790a0314574db4f6927aef0ddc" title="state handler for &quot;check fmea&quot;" alt="" coords="565,2596,791,2623"/>
+<area shape="rect" id="node77" href="$mxm__17841b_8c.html#a4a89dee3ef42402bf77a05f83ab55d0f" title="Transition into idle, mark as an error occurred." alt="" coords="868,2432,1067,2459"/>
+<area shape="rect" id="node81" href="$group__mxm-41b-state-handlers.html#ga660930e423c39dfb48ce3304564b894f" title="state handler for &quot;clear receive buffer&quot;" alt="" coords="585,2282,771,2323"/>
+<area shape="rect" id="node85" href="$group__mxm-41b-state-handlers.html#ga1367e1670ab7be0ea72a917396e6c813" title="state handler for &quot;clear transmit buffer&quot;" alt="" coords="585,2347,771,2389"/>
+<area shape="rect" id="node86" href="$group__mxm-41b-state-handlers.html#gaf38f0269d733292924c94ca632bbbb60" title="state handler for &quot;get version&quot;" alt="" coords="567,2647,789,2673"/>
+<area shape="rect" id="node87" href="$group__mxm-41b-state-handlers.html#ga4be4712292676110d4389d45d2b0edf3" title="state handler for &quot;idle&quot;" alt="" coords="590,2413,766,2440"/>
+<area shape="rect" id="node88" href="$group__mxm-41b-state-handlers.html#gafed0c8a844b5fa7197d9257b159eca61" title="init state handler" alt="" coords="591,2697,765,2724"/>
+<area shape="rect" id="node95" href="$group__mxm-41b-state-handlers.html#gad0516f91d78f46e8d6beaac3ec78b2af" title="state handler for &quot;read status register&quot;" alt="" coords="566,2530,790,2571"/>
+<area shape="rect" id="node96" href="$group__mxm-41b-state-handlers.html#gab36b0cda14a8403e19a2efcda97ebe8c" title="state handler for &quot;uart transaction&quot;" alt="" coords="555,2748,801,2775"/>
+<area shape="rect" id="node101" href="$group__mxm-41b-state-handlers.html#gabb3eaec950481073e72929edfaf87144" title="state handler for &quot;write conf and int register&quot;" alt="" coords="585,2465,771,2506"/>
+<area shape="rect" id="node71" href="$mxm__17841b_8c.html#a70233222d0d1b152129a1b518ceb8937" title="Read one or multiple registers of MAX17841B." alt="" coords="888,2584,1047,2611"/>
+<area shape="rect" id="node78" href="$mxm__17841b_8c.html#aae8820bfff22c08f9ab9cfc015f1cf6c" title="Transition into idle, mark as successful." alt="" coords="856,2483,1079,2509"/>
+<area shape="rect" id="node79" href="$mxm__cfg_8c.html#a4b68e64640670902e28f9db8742008df" title="Return whether SPI interface is ready." alt="" coords="883,2635,1051,2661"/>
+<area shape="rect" id="node72" href="$mxm__cfg_8c.html#a116a8b81cf7c1912c50c1212aa0ff9a8" title="Send and Receive data over SPI." alt="" coords="1459,2441,1590,2468"/>
+<area shape="rect" id="node73" href="$spi_8c.html#ac84bc8424de860e2cd89fea2e89dd89a" title="Transmits and receives data on SPI without DMA." alt="" coords="1735,2289,1907,2316"/>
+<area shape="rect" id="node74" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="2089,2351,2171,2377"/>
+<area shape="rect" id="node75" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="2358,351,2479,377"/>
+<area shape="rect" id="node76" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="2091,2300,2169,2327"/>
+<area shape="rect" id="node80" href="$spi_8c.html#a4e790e1a3c19c32a5f02a32053e96040" title="Returns STD_OK if the SPI interface can be used again." alt="" coords="1150,2399,1337,2425"/>
+<area shape="rect" id="node82" href="$mxm__17841b_8c.html#a1e6810277173e48449155251562be540" title="Write one or multiple registers of MAX17841B." alt="" coords="1163,2297,1323,2324"/>
+<area shape="rect" id="node83" href="$mxm__cfg_8c.html#ae7cec69276fadde6665026fadc7eb390" title="Transmit data over SPI." alt="" coords="1467,2492,1582,2519"/>
+<area shape="rect" id="node84" href="$spi_8c.html#abdf760fa10bbc7f0f6b93ef0ddda41de" title="Transmits data on SPI without DMA." alt="" coords="1758,2340,1885,2367"/>
+<area shape="rect" id="node89" href="$mxm__17841b_8c.html#a23f72a19d061e3fd2d4095f4e6b10d8c" title="Write the config register of MAX17841B." alt="" coords="869,2533,1065,2560"/>
+<area shape="rect" id="node90" href="$mxm__cfg_8c.html#ae15c13f7eb4e91ae8876eb7d9562357f" title="Pulls the shutdown of the bridge IC high." alt="" coords="895,2837,1040,2864"/>
+<area shape="rect" id="node91" href="$mxm__cfg_8c.html#aca1a692c6b1650c116b1580f5edcfd0d" title="Pulls the shutdown of the bridge IC low." alt="" coords="885,2685,1049,2712"/>
+<area shape="rect" id="node94" href="$os__freertos_8c.html#ad3f7d896375245539ecf9303a8f4bb84" title="Returns OS based system tick value." alt="" coords="1758,4072,1885,4099"/>
+<area shape="rect" id="node93" href="$os_8c.html#a834064ee9e9a90768918c776f5cb1bb7" title="This function checks if timeToPass has passed since the last timestamp to now." alt="" coords="1421,4174,1628,4215"/>
+<area shape="rect" id="node97" href="$mxm__17841b_8c.html#acf55cee5ae15654177643f937054c952" title="Write a buffer transaction to MAX17841B." alt="" coords="895,2787,1040,2813"/>
+<area shape="rect" id="node98" href="$mxm__17841b_8c.html#abe201e911023d8c53709b38f447aa3ca" title="Read the value of a register function." alt="" coords="1139,4341,1348,4368"/>
+<area shape="rect" id="node99" href="$mxm__bitextract_8c.html#aac9f739280cfb96575a7dc1e860dae41" title="read a value from a register supplied as variable" alt="" coords="1453,4539,1596,4565"/>
+<area shape="rect" id="node100" href="$mxm__bitextract_8c.html#a99ab333298a01410347cff8b97125e12" title="Extract a bit value function." alt="" coords="1787,4777,1856,4804"/>
+<area shape="rect" id="node103" href="$mxm__battery__management_8c.html#afc6212ecb11ce7bc23db37409d4faaff" title="Signal that an error has occurred in a chain of substates." alt="" coords="1175,5263,1311,5289"/>
+<area shape="rect" id="node105" href="$mxm__battery__management_8c.html#a0702ba6d1b8e19c6a003232838a0d159" title="Handle the state MXM_STATEMACH_5X_41B_FMEA_CHECK." alt="" coords="866,5061,1069,5102"/>
+<area shape="rect" id="node108" href="$mxm__battery__management_8c.html#ade338957069ff6f62cdfbfcebffc270a" title="Handle the state MXM_STATEMACH_5X_INIT." alt="" coords="885,4807,1049,4833"/>
+<area shape="rect" id="node115" href="$mxm__battery__management_8c.html#a1df234e14c5b40e2798364aebc9e19f9" title="Handle the state MXM_STATEMACH_5X_READALL." alt="" coords="871,5009,1063,5036"/>
+<area shape="rect" id="node117" href="$mxm__battery__management_8c.html#a8338520796dd87a45d39dd40a035e3bd" title="Handle the states MXM_STATEMACH_5X_WRITEALL and MXM_STATEMACH_5X_WRITE_DEVICE." alt="" coords="878,4959,1057,4985"/>
+<area shape="rect" id="node104" href="$mxm__battery__management_8c.html#a08d5ab7b4b3254f41e6661ee677f854e" title="sets all internal state variables so that upon next execution the next substate is entered" alt="" coords="1427,5085,1622,5112"/>
+<area shape="rect" id="node106" href="$mxm__17841b_8c.html#a09d0707cc15516727d085687d87bba85" title="Set state transition for MAX17841B&#45;state&#45;machine." alt="" coords="1153,5060,1333,5087"/>
+<area shape="rect" id="node107" href="$mxm__battery__management_8c.html#a118ff0964a961d44cf9c4cac85d0f222" title="Signal that a chain of substates has been successfully handled." alt="" coords="1164,5009,1323,5036"/>
+<area shape="rect" id="node109" href="$mxm__17841b_8c.html#a1ec8677952d5efa533f6dc3286d1d4fd" title="Write a register function." alt="" coords="1138,4857,1349,4884"/>
+<area shape="rect" id="node111" href="$mxm__battery__management_8c.html#aa010e38d1a6ca643a16f3d1cbe9aef47" title="clears the command buffer and writes HELLOALL into the buffer" alt="" coords="1133,4443,1353,4485"/>
+<area shape="rect" id="node113" href="$mxm__battery__management_8c.html#a897cfb71c20c5967d5b552ccf1155763" title="handles the error of the underlying state&#45;machine (by resetting it and counting the error)" alt="" coords="1146,4908,1341,4935"/>
+<area shape="rect" id="node114" href="$mxm__battery__management_8c.html#ae9b6bf4e5053d27542645a88c68503b9" title="repeat the current substate (by resetting to the entry state)" alt="" coords="1140,4807,1347,4833"/>
+<area shape="rect" id="node110" href="$mxm__bitextract_8c.html#a935209b68c7ac65dd559d91d93a8a7e0" title="write a value to a register supplied as variable" alt="" coords="1453,4817,1596,4844"/>
+<area shape="rect" id="node112" href="$mxm__battery__management_8c.html#a50b3a6cf0784bcc3ec9ed55af937447b" title="Clear the command&#45;buffer." alt="" coords="1427,4589,1622,4616"/>
+<area shape="rect" id="node116" href="$mxm__battery__management_8c.html#a3104abb7090df5484e17abc4a226cbbb" title="clears the command buffer and writes READALL into the buffer" alt="" coords="1133,4639,1353,4681"/>
+<area shape="rect" id="node118" href="$mxm__battery__management_8c.html#a37cd677bbc5d05d70dfb76a0a5eb4624" title="clears the command buffer and writes WRITEALL into the buffer" alt="" coords="1133,4574,1353,4615"/>
+<area shape="rect" id="node119" href="$mxm__battery__management_8c.html#ae0d3c986bdb0719700b05d295c0cbae3" title="clears the command buffer and writes a WRITEDEVICE message" alt="" coords="1133,4509,1353,4550"/>
+<area shape="rect" id="node123" href="$mxm__battery__management_8c.html#af80228e32eb53f659c6301f02ab34143" title="Get number of satellites." alt="" coords="1422,3217,1627,3244"/>
+<area shape="rect" id="node124" href="$mxm__battery__management_8c.html#aa0f9d4793384a8b7519aaadae86b9cba" title="Get the value of MXM_5X_INSTANCE_s::numberOfSatellitesIsGood." alt="" coords="849,4123,1085,4149"/>
+<area shape="rect" id="node125" href="$mxm__battery__management_8c.html#a9d5b57e8d6ecb30ba6426272f472e630" title="Set state request for the Battery Management Statemachine." alt="" coords="1439,3639,1610,3665"/>
+<area shape="rect" id="node126" href="$mxm__registry_8c.html#a74e9f3adcbc1aa1001ec4e34abb7e8c0" title="Mark devices as connected in the registry and set the address." alt="" coords="855,3971,1079,3997"/>
+<area shape="rect" id="node127" href="$mxm__registry_8c.html#a4fb565dedd3fea15359af5b6a6172830" title="Initialize monitoring registry." alt="" coords="893,4021,1041,4048"/>
+<area shape="rect" id="node128" href="$mxm__1785x_8h.html#a688e7e359e03e17fc0559720f0b8d586" title="State&#45;Machine implementation for operation state." alt="" coords="870,3540,1065,3567"/>
+<area shape="rect" id="node129" href="$mxm__registry_8c.html#af2ecdd14cd0568f246b14aa8cdf2c6d7" title="check if one of the devices in the registry has the ALRTRST bit set" alt="" coords="1143,3383,1344,3425"/>
+<area shape="rect" id="node132" href="$mxm__1785x_8c.html#ab5680ee1fe73029d746878aff22bcab5" title="Fill the balancing datastructure." alt="" coords="1141,3049,1345,3076"/>
+<area shape="rect" id="node134" href="$mxm__1785x_8c.html#a5286d61127b58617a6384a8c18b38618" title="Handle the statemachine&#45;transactions for a READALL." alt="" coords="1157,3616,1329,3643"/>
+<area shape="rect" id="node138" href="$mxm__1785x_8c.html#ae651c3ef761d1b34dab49d85336ea046" title="Handle the statemachine&#45;transactions for a WRITEALL." alt="" coords="1157,3819,1330,3845"/>
+<area shape="rect" id="node139" href="$mxm__1785x_8c.html#ae17987a0e72b943e2cac791ee60841c8" title="Encapsulation for reading voltages from a register." alt="" coords="1166,3515,1321,3541"/>
+<area shape="rect" id="node140" href="$mxm__registry_8c.html#a4605575afd03a08a9a5cd8ed33ae4d50" title="Parse ID (1 or 2) into the registry." alt="" coords="1145,3449,1341,3490"/>
+<area shape="rect" id="node141" href="$mxm__registry_8c.html#ad95cf43f88a2b7ccd12c48dcd58cf1f3" title="Parse STATUS or FMEA into the registry." alt="" coords="1142,3253,1345,3294"/>
+<area shape="rect" id="node142" href="$mxm__registry_8c.html#adcccca2175923f6875c9064d435ba049" title="Parse Version into the registry." alt="" coords="1139,3318,1348,3359"/>
+<area shape="rect" id="node143" href="$mxm__1785x_8c.html#a920e0ec9a500bdd62f13a6c2f57a9163" title="Copies measured voltage data into the database." alt="" coords="1152,2897,1335,2924"/>
+<area shape="rect" id="node160" href="$mxm__1785x_8c.html#a675df7a5e83425b1df797b55f963c5c9" title="Processes the retrieved information on open wire." alt="" coords="1161,3151,1325,3177"/>
+<area shape="rect" id="node161" href="$mxm__1785x__tools_8c.html#a2b0a88c10d76ee1f9842969d35c0e676" title="convert a unipolar 14bit&#45;value and shifts it into the 16bit&#45;format" alt="" coords="1150,3717,1337,3744"/>
+<area shape="rect" id="node162" href="$mxm__1785x__tools_8c.html#a9b326fed943ba841b17fb6272d79945b" title="convert a voltage value into a unipolar 14bit value" alt="" coords="1143,3768,1343,3795"/>
+<area shape="rect" id="node130" href="$foxmath_8c.html#aacaf0845143922c6a31912af37fd9741" title="Returns the minimum of the passed uint8_t values." alt="" coords="1427,3436,1622,3463"/>
+<area shape="rect" id="node131" href="$mxm__registry_8c.html#aca0807a445d30190eadbef7467b43ca8" title="Parse number of highest connected device from monitoring&#45; register." alt="" coords="1427,3370,1623,3411"/>
+<area shape="rect" id="node133" href="$mxm__1785x__tools_8c.html#a2be80ff605cfe34cece5301f5a4c11a0" title="Get the string and module number from a global module number." alt="" coords="1429,3116,1620,3143"/>
+<area shape="rect" id="node135" href="$mxm__1785x_8c.html#ab0d9976f05eb48b050415afd432f9415" title="Retrieves data from lower statemachine and writes it to the rx buffer." alt="" coords="1409,3588,1640,3615"/>
+<area shape="rect" id="node136" href="$mxm__battery__management_8c.html#ad89fd67b1337293d24504cdb05c19a59" title="Returns the last received DC byte." alt="" coords="1740,3588,1903,3615"/>
+<area shape="rect" id="node137" href="$mxm__battery__management_8c.html#a88722a84590c432f0bbfcdd77536c8db" title="Copy RX buffer into variable." alt="" coords="1750,3639,1893,3665"/>
+<area shape="rect" id="node144" href="$afe__plausibility_8c.html#a5f0f388fcad363cade4b5e340f06e211" title="Cell temperature plausibility check." alt="" coords="1431,3050,1618,3091"/>
+<area shape="rect" id="node147" href="$mxm__registry_8c.html#a15356e31103a0135dcadefd3a7a44096" title="check if a device is connected" alt="" coords="1415,2948,1635,2975"/>
+<area shape="rect" id="node148" href="$tsi_8h.html#aba5cfcd830c0dbcbdccdbcf0d60f369a" title="translate a voltage to a temperature" alt="" coords="1751,1892,1892,1919"/>
+<area shape="rect" id="node145" href="$tsi_8h.html#a161bdb7af8c149fe72731f43f0619dd9" title="Return the maximum plausible temperature." alt="" coords="1696,3083,1947,3109"/>
+<area shape="rect" id="node146" href="$tsi_8h.html#a9bf06d1c58f3a5ee9c9c8b1d611d1323" title="Return the minimum plausible temperature." alt="" coords="1698,3032,1945,3059"/>
+<area shape="rect" id="node149" href="$epcos__b57251v5103j060_8c.html#a60e7e40bc4662b44093a0a2b464bd395" title="returns temperature based on measured ADC voltage" alt="" coords="2019,1745,2241,1772"/>
+<area shape="rect" id="node150" href="$epcos__b57251v5103j060_8c.html#a22b8fc0a39278f0c1a61c1cca7482b5a" title="returns temperature based on measured ADC voltage" alt="" coords="2027,1797,2233,1838"/>
+<area shape="rect" id="node151" href="$epcos__b57861s0103f045_8c.html#a8bb26a9001e051fc2fee6ba77027b1b6" title="returns temperature based on measured ADC voltage" alt="" coords="2019,1863,2241,1889"/>
+<area shape="rect" id="node152" href="$epcos__b57861s0103f045_8c.html#a3aca9a6a710bb21efc1a5d4ccf49b3e0" title="returns temperature based on measured ADC voltage" alt="" coords="2027,1914,2233,1955"/>
+<area shape="rect" id="node153" href="$fake__none_8c.html#a8519235f1cb368c712566dc0a6615a8a" title="returns a fake temperature" alt="" coords="2019,1980,2241,2007"/>
+<area shape="rect" id="node154" href="$fake__none_8c.html#a8d502a27efdeb0f048997819e3ae4fc4" title="returns a fake temperature" alt="" coords="2028,2031,2232,2073"/>
+<area shape="rect" id="node155" href="$murata__ncu15xh103f6sxx_8c.html#a0e6cfeee0f7fdf5504234ed54ddfc9b7" title="returns temperature based on measured ADC voltage." alt="" coords="2019,2097,2241,2124"/>
+<area shape="rect" id="node156" href="$murata__ncu15xh103f6sxx_8c.html#a255c099fbd405cdc3b51c39a415c18e3" title="returns temperature based on measured ADC voltage" alt="" coords="2028,1511,2232,1553"/>
+<area shape="rect" id="node157" href="$vishay__ntcalug01a103g_8c.html#a865b7c323eb0bdbd7420518e6b56cede" title="returns temperature based on measured ADC voltage." alt="" coords="2021,1577,2239,1604"/>
+<area shape="rect" id="node158" href="$vishay__ntcalug01a103g_8c.html#a47e088f4023835e56cac22e035c66be8" title="returns temperature based on measured ADC voltage" alt="" coords="2029,1629,2231,1670"/>
+<area shape="rect" id="node159" href="$vishay__ntcle317e4103sba_8c.html#ae917bb4796f0f8fa36201dbd92aae38c" title="returns temperature based on measured ADC voltage." alt="" coords="2021,1695,2239,1721"/>
+<area shape="rect" id="node164" href="$nxp__mc33775a_8c.html#a3070b8e13795304fe674477f6df441c6" title="trigger function for the N775 driver state machine." alt="" coords="633,476,723,503"/>
+<area shape="rect" id="node165" href="$nxp__mc33775a_8c.html#aa81fd560e8265b72b955ebb46f182737" title="manages balancing." alt="" coords="894,400,1041,427"/>
+<area shape="rect" id="node175" href="$nxp__mc33775a_8c.html#afc1dcfe689c94c9ee6111fa16616d14e" title="captures the measurement." alt="" coords="1152,603,1335,629"/>
+<area shape="rect" id="node185" href="$nxp__mc33775a_8c.html#a82372002e47ee422bd199755efa681cb" title="updates index in mux sequence." alt="" coords="881,248,1053,275"/>
+<area shape="rect" id="node186" href="$nxp__mc33775a_8c.html#ae64a47f72602e769feb46164566036d9" title="updates index in string sequence." alt="" coords="863,299,1071,325"/>
+<area shape="rect" id="node187" href="$nxp__mc33775a_8c.html#a15f3fac0a564b09f9ecaae192c76a5ee" title="initializes the N775 driver." alt="" coords="929,197,1005,224"/>
+<area shape="rect" id="node193" href="$nxp__mc33775a_8c.html#ad03d73a396ac386aaa8844520ce040c9" title="in the database, initializes the fields related to the N775 driver." alt="" coords="887,349,1048,376"/>
+<area shape="rect" id="node194" href="$nxp__mc33775a_8c.html#afe1591129140f226d47b807b34ae6494" title="gets the measurement initialization status." alt="" coords="2027,747,2233,789"/>
+<area shape="rect" id="node195" href="$nxp__mc33775a_8c.html#ae1bf7c68687ab59af539be98536dcc9b" title="reset index in string sequence." alt="" coords="875,501,1060,528"/>
+<area shape="rect" id="node196" href="$nxp__mc33775a_8c.html#a5602db5a94720a823c9164d0034be703" title="sets the measurement initialization status." alt="" coords="2038,813,2222,854"/>
+<area shape="rect" id="node197" href="$nxp__mc33775a_8c.html#a4a176399622dc88cd2ad6616ae82858a" title="sets mux channel." alt="" coords="1168,425,1319,452"/>
+<area shape="rect" id="node198" href="$nxp__mc33775a_8c.html#a8aa7f6c3b5555207650d0d3cb0e705fb" title="tranmit over I2C on NXP slave." alt="" coords="1180,476,1307,503"/>
+<area shape="rect" id="node166" href="$nxp__mc33775a_8c.html#a8571aaaf79c88879eed3c17d362a1df7" title="setups balancing." alt="" coords="1173,273,1313,300"/>
+<area shape="rect" id="node167" href="$nxp__mc33775a-ll_8c.html#a9184e5d6d106688f9a701245d749987d" title="Write a value into a specific register in a specific device." alt="" coords="1435,223,1615,249"/>
+<area shape="rect" id="node168" href="$nxp__mc33775a-ll_8c.html#add44c631a1af3073bdf7c3bf91ae2de6" title="Composes a message." alt="" coords="2028,158,2232,199"/>
+<area shape="rect" id="node169" href="$nxp__mc33775a-ll_8c.html#a8f9a40f5c6c25d931b57b51703e7e0f3" title="Copies a message to the buffer to be passed to the SPI transmit functions." alt="" coords="2029,107,2231,133"/>
+<area shape="rect" id="node170" href="$nxp__mc33775a-ll_8c.html#a2e3ed760407a7d6dcb460ac68c02be41" title="Wait for the SPI transmit communication to complete, using notifications." alt="" coords="1699,5,1944,32"/>
+<area shape="rect" id="node172" href="$os__freertos_8c.html#a25b7418eb914b83dd88bbc0424333139" title="Clear pending notification of a task, with index." alt="" coords="1728,273,1915,300"/>
+<area shape="rect" id="node173" href="$spi_8c.html#a2a0f36d8cb7e54304284f758cc108c36" title="Transmits and receives data on SPI with DMA." alt="" coords="2031,427,2229,453"/>
+<area shape="rect" id="node171" href="$os__freertos_8c.html#a7578e983d03af6f03fd3fe09f293cdb1" title="Wait for a notification, with index." alt="" coords="2317,115,2520,141"/>
+<area shape="rect" id="node174" href="$fsystem_8h.html#ab56416f94911a74e20326d9840b08d31" title="Raise privilege." alt="" coords="2346,452,2491,479"/>
+<area shape="rect" id="node176" href="$nxp__mc33775a-ll_8c.html#ac7c3bbdc384429e36a82340281a4eb13" title="Read a value from a specific register in a specific device." alt="" coords="1435,425,1614,452"/>
+<area shape="rect" id="node177" href="$nxp__mc33775a-ll_8c.html#a05b00b3020b3f7d8df2fc4e2ca529274" title="Read multiple values from specific registers in a specific device." alt="" coords="1709,427,1933,453"/>
+<area shape="rect" id="node181" href="$nxp__mc33775a__cfg_8c.html#a81540ab7ac1887ef0beb8cf366aa1f6e" title="converts a raw voltage from multiplexer to a temperature value in deci °C." alt="" coords="1401,1311,1648,1337"/>
+<area shape="rect" id="node182" href="$nxp__mc33775a_8c.html#ad6ae7586b69aefee6453bc6e53f612b5" title="handles error when doing measurements." alt="" coords="1456,679,1593,705"/>
+<area shape="rect" id="node183" href="$nxp__mc33775a_8c.html#afc150ee43bb68b0ee5a389d8535c734a" title="waits for a definite amount of time in ms." alt="" coords="1469,375,1580,401"/>
+<area shape="rect" id="node178" href="$nxp__mc33775a-ll_8c.html#a1ed98da6256705c1d38cf5529e2509bb" title="Decomposes and analysis a message." alt="" coords="2021,529,2239,570"/>
+<area shape="rect" id="node179" href="$nxp__mc33775a-ll_8c.html#a6cce353892b34e03c69c9ab238ad7b80" title="Wait for the SPI receive communication to complete, using notifications." alt="" coords="2007,224,2253,251"/>
+<area shape="rect" id="node180" href="$spi_8c.html#a997dce9b156595fa4486a547f7c55453" title="Transmits and receives data on SPI with DMA." alt="" coords="2030,477,2230,504"/>
+<area shape="rect" id="node184" href="$os__freertos_8c.html#a3ac9f783e38ae9f9c8cfe0634bb3b8fe" title="Delay a task until a specified time." alt="" coords="1754,679,1889,705"/>
+<area shape="rect" id="node188" href="$nxp__mc33775a_8c.html#a002c81d4708c5bcabc3d945a6b7c3eb8" title="enumerates the N775 slaves." alt="" coords="1182,375,1305,401"/>
+<area shape="rect" id="node190" href="$nxp__mc33775a_8c.html#a2cf5af89e683813c9bb763915fb578af" title="init I2C for the N775 slaves." alt="" coords="1197,121,1290,148"/>
+<area shape="rect" id="node191" href="$nxp__mc33775a_8c.html#a98343dc944bc706be1b9d0d6f7b12964" title="resets index in mux sequence." alt="" coords="1169,172,1318,199"/>
+<area shape="rect" id="node192" href="$nxp__mc33775a_8c.html#a4e2865fd124f42c05bb3772e76c2f9da" title="starts the measurement." alt="" coords="1160,223,1327,249"/>
+<area shape="rect" id="node189" href="$nxp__mc33775a-ll_8c.html#a851d36b2dc4875a2eb4132705d0d67a0" title="Reset the message counter for one or all devices." alt="" coords="1429,273,1620,300"/>
+<area shape="rect" id="node199" href="$os__freertos_8c.html#a285b22d2ef1448cae22a8965b5fec186" title="Receive an item from a queue." alt="" coords="1444,577,1605,604"/>
+<area shape="rect" id="node200" href="$os__freertos_8c.html#abfcdf77954b6a87dca01c31efaf4d0b3" title="Post an item to the back the provided queue." alt="" coords="1438,527,1611,553"/>
+</map>

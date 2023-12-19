@@ -1,0 +1,31 @@
+<map id="SE_RunStateEstimations" name="SE_RunStateEstimations">
+<area shape="rect" id="node1" title="Main function to perform state estimations." alt="" coords="5,389,176,415"/>
+<area shape="rect" id="node2" href="$group__state-estimation-api.html#ga05100e8613ecece359b67067efd8c1e6" title="periodically called algorithm to calculate state&#45;of&#45;charge (SOC)" alt="" coords="224,190,411,217"/>
+<area shape="rect" id="node22" href="$group__state-estimation-api.html#gaf8ed0a0fff7dc920bed68494104253c3" title="periodically called algorithm to calculate state&#45;of&#45;energy (SOE)" alt="" coords="224,389,411,415"/>
+<area shape="rect" id="node29" href="$group__state-estimation-api.html#gaa5a769fda6e26f07d6b7cdac26644498" title="calculates state&#45;of&#45;health (SOH)" alt="" coords="226,439,409,466"/>
+<area shape="rect" id="node3" href="$bms_8c.html#ab900910af6e3c584a5e3650018fe4ed7" title="Returns current battery system state (charging/discharging, resting or in relaxation phase)" alt="" coords="479,278,677,305"/>
+<area shape="rect" id="node4" href="$fram_8c.html#ad5c5ec1fd0a6c3667185d3b75064e359" title="Writes a variable to the FRAM." alt="" coords="1077,215,1201,242"/>
+<area shape="rect" id="node15" href="$soc__counting_8c.html#a9974946566282ad572f522b214bba23a" title="Check if all database SOC percentage values are within [0.0, 100.0] Limits SOC values to limit values..." alt="" coords="1020,5,1259,47"/>
+<area shape="rect" id="node16" href="$soc__counting_8c.html#a4b0c7f60f8cb2f10673a5b1b4e6433ea" title="initializes database and FRAM SOC values via lookup table (average, minimum and maximum)." alt="" coords="487,212,669,253"/>
+<area shape="rect" id="node21" href="$soc__counting_8c.html#a346855562c7897f40a8afca336ff57a4" title="Set SOC&#45;related values in non&#45;volatile memory." alt="" coords="1058,71,1221,98"/>
+<area shape="rect" id="node5" href="$crc_8c.html#a45b6a4ef5b5984e50927215ab001c01d" title="Computes CRC of data flow." alt="" coords="1343,38,1473,65"/>
+<area shape="rect" id="node6" href="$io_8c.html#a9a2db1f5acc298fe408a8af231de55ad" title="Reset pin by writing in pin output register." alt="" coords="1361,89,1455,115"/>
+<area shape="rect" id="node7" href="$io_8c.html#a7bfc1c1b5a7779778a23ad040043a169" title="Set pin by writing in pin output register." alt="" coords="1367,139,1449,166"/>
+<area shape="rect" id="node8" href="$mcu_8c.html#a9cd55b20e69a018ff26f46a5c9975647" title="Wait blocking a certain time in microseconds." alt="" coords="1352,190,1464,217"/>
+<area shape="rect" id="node9" href="$spi_8c.html#a75292d5df7f435fec6d457c80a9082ec" title="Transmits and receives data on SPI without DMA, wrapper for FRAM." alt="" coords="1307,241,1509,267"/>
+<area shape="rect" id="node10" href="$spi_8c.html#ad14e64eda89eab297290fc3c0b030be6" title="Returns index of SPI node." alt="" coords="1347,291,1469,318"/>
+<area shape="rect" id="node11" href="$spi_8c.html#a87efe82f0f460cf54b53405c4891c1cd" title="Locks SPI interfaces." alt="" coords="1369,393,1447,419"/>
+<area shape="rect" id="node14" href="$spi_8c.html#aa17e9150e0bdf244755f0165aa11154b" title="Unlocks SPI interfaces." alt="" coords="1363,342,1453,369"/>
+<area shape="rect" id="node12" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1557,393,1704,419"/>
+<area shape="rect" id="node13" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="1561,342,1700,369"/>
+<area shape="rect" id="node17" href="$group__state-estimation-api.html#ga74af4e2bdb5a3caa9696292fb9217311" title="look&#45;up table for SOC initialization" alt="" coords="745,266,972,293"/>
+<area shape="rect" id="node19" href="$soc__counting_8c.html#a50305973c5dd0dd3ff8cd500e5bc517d" title="sets SOC value with a parameter between 0.0 and 100.0." alt="" coords="803,114,914,141"/>
+<area shape="rect" id="node18" href="$foxmath_8c.html#aaad002515d8ea67e92a1e1397a15b492" title="Linear inter&#45;/extrapolates a third point according to two given points." alt="" coords="1054,411,1225,438"/>
+<area shape="rect" id="node20" href="$soc__counting_8c.html#a01db1621391900ad0b8833bf5f8173e3" title="calculates string SOC in percentage from passed string charge in As" alt="" coords="1039,123,1240,164"/>
+<area shape="rect" id="node23" href="$soe__counting_8c.html#af288d5e4ee8e1dcadbefa093f9cc407b" title="Check if all database SOE percentage values are within [0.0, 100.0] Limits SOE values to limit values..." alt="" coords="459,447,697,488"/>
+<area shape="rect" id="node24" href="$soe__counting_8c.html#ad6713da865936c6858b60e20afe15543" title="calculates string energy in Wh from passed SOE in percentage" alt="" coords="1036,548,1243,589"/>
+<area shape="rect" id="node25" href="$soe__counting_8c.html#a91d803600db5f528584b902a06996f99" title="calculates string SOE in percentage from passed string energy in Wh" alt="" coords="1039,469,1240,511"/>
+<area shape="rect" id="node26" href="$soe__counting_8c.html#a0f41f00c22be43378473c506838dc238" title="initializes database and FRAM SOE values via lookup table (average, min and max)." alt="" coords="487,381,669,423"/>
+<area shape="rect" id="node27" href="$soe__counting_8c.html#a7461d3a1c3bf7a1a79c841b92c21ca59" title="look&#45;up table for SOE initialization" alt="" coords="783,418,935,445"/>
+<area shape="rect" id="node28" href="$soe__counting_8c.html#a49ca0abf4d8a626c265b4e7e05e4ec28" title="sets SOE value with a parameter between 0.0 and 100.0." alt="" coords="803,469,914,495"/>
+</map>

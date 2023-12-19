@@ -1,0 +1,5 @@
+<map id="LTC_SendEepromReadCommand" name="LTC_SendEepromReadCommand">
+<area shape="rect" id="node1" title="sends data to the LTC daisy&#45;chain to read EEPROM on slaves." alt="" coords="5,31,221,57"/>
+<area shape="rect" id="node2" href="$ltc__6813-1_8c.html#aef9bb34ca8083f1afaf3077e2b38138c" title="configures the data that will be sent to the LTC daisy&#45;chain to read EEPROM on slaves." alt="" coords="269,5,476,32"/>
+<area shape="rect" id="node3" href="$ltc__6813-1_8c.html#a8cc4616cd88973c4eff35c1a5490bee0" title="sends command and data to the LTC daisy&#45;chain." alt="" coords="307,56,438,83"/>
+</map>

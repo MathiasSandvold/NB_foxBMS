@@ -1,0 +1,4 @@
+<map id="testBETA_ResistanceFromTemperatureFixedValues" name="testBETA_ResistanceFromTemperatureFixedValues">
+<area shape="rect" id="node1" title=" " alt="" coords="5,5,257,47"/>
+<area shape="rect" id="node2" href="$beta_8c.html#a0f7ede231ef65a884c6a1fa8d6cbcb2a" title="returns NTC resistance corresponding to temperature, used to compute Vmin and Vmax of the divider" alt="" coords="305,13,536,39"/>
+</map>

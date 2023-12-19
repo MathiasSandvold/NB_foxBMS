@@ -1,0 +1,335 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>2.1. General Rules &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+        <script src="../../_static/jquery.js"></script>
+        <script src="../../_static/underscore.js"></script>
+        <script src="../../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="2.2. C Coding Guidelines" href="guidelines_c.html" />
+    <link rel="prev" title="2. Style Guide" href="style-guide.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../preface.html">1. Preface</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="style-guide.html">2. Style Guide</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">2.1. General Rules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_c.html">2.2. C Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_python.html">2.3. Python Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_rst.html">2.4. reStructuredText Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_batch_shell.html">2.5. Batch and Shell Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_yaml.html">2.6. YAML Coding Guidelines</a></li>
+<li class="toctree-l2"><a class="reference internal" href="guidelines_overview.html">2.7. Table of Rules</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware-developer-manual.html">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../../index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="style-guide.html"><span class="section-number">2. </span>Style Guide</a> &raquo;</li>
+      <li><span class="section-number">2.1. </span>General Rules</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../../_sources/developer-manual/style-guide/guidelines_general.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="general-rules">
+<span id="id1"></span><h1><span class="section-number">2.1. </span>General Rules<a class="headerlink" href="#general-rules" title="Permalink to this headline"></a></h1>
+<p>The following rules generally apply and follow the naming schema
+<code class="docutils literal notranslate"><span class="pre">GENERAL:&lt;ongoing-number&gt;</span></code>.</p>
+<div class="section" id="filenames-general-001">
+<span id="rule-general-filenames"></span><h2><span class="section-number">2.1.1. </span>Filenames (<code class="docutils literal notranslate"><span class="pre">GENERAL:001</span></code>)<a class="headerlink" href="#filenames-general-001" title="Permalink to this headline"></a></h2>
+<p>Generally file naming rules are not necessary, but for reasons
+of consistency there are some rules for that within the project.</p>
+<div class="admonition-filenames admonition">
+<p class="admonition-title">Filenames</p>
+<p>Filenames as well as directory names <strong>SHOULD</strong> only consist of lowercase
+alphanumeric characters and may include underscores (<code class="docutils literal notranslate"><span class="pre">_</span></code>), dashes
+(<code class="docutils literal notranslate"><span class="pre">-</span></code>) and dots (<code class="docutils literal notranslate"><span class="pre">.</span></code>).
+A correct file or directory name matches the regular expression
+<code class="docutils literal notranslate"><span class="pre">^[a-z0-9_\-.]*$</span></code>. Valid exceptions are e.g., <code class="docutils literal notranslate"><span class="pre">README.md</span></code> and
+<code class="docutils literal notranslate"><span class="pre">CHANGELOG.md</span></code>.</p>
+</div>
+</div>
+<div class="section" id="filename-uniqueness-general-002">
+<span id="rule-general-filename-uniqueness"></span><h2><span class="section-number">2.1.2. </span>Filename uniqueness (<code class="docutils literal notranslate"><span class="pre">GENERAL:002</span></code>)<a class="headerlink" href="#filename-uniqueness-general-002" title="Permalink to this headline"></a></h2>
+<p>Unique filenames help to avoid confusion.
+Furthermore in case of file includes or imports non-unique filenames might lead
+to undesired behavior as wrong files might be used.</p>
+<div class="admonition-filename-uniqueness admonition">
+<p class="admonition-title">Filename Uniqueness</p>
+<ul class="simple">
+<li><p>Filenames <strong>SHOULD BE</strong> be unique. Valid exceptions are e.g.,
+<code class="docutils literal notranslate"><span class="pre">README.md</span></code> to explain the content of a directory, or directory-local
+<code class="docutils literal notranslate"><span class="pre">.gitignore</span></code> files.</p></li>
+<li><p>Source files <strong>MUST</strong> use unique filenames.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="encoding-general-003">
+<span id="rule-general-text-file-encoding"></span><h2><span class="section-number">2.1.3. </span>Encoding (<code class="docutils literal notranslate"><span class="pre">GENERAL:003</span></code>)<a class="headerlink" href="#encoding-general-003" title="Permalink to this headline"></a></h2>
+<div class="admonition-encoding admonition">
+<p class="admonition-title">Encoding</p>
+<ul class="simple">
+<li><p>All plain text files <strong>SHOULD</strong> use <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code> encoding.</p></li>
+<li><p>Files <strong>MAY</strong> use other encodings if these are required by standards or
+other tools. Valid exceptions are</p>
+<ul>
+<li><p><code class="docutils literal notranslate"><span class="pre">*.c*</span></code> and <code class="docutils literal notranslate"><span class="pre">*.h</span></code> files <strong>MUST</strong> use <code class="docutils literal notranslate"><span class="pre">ASCII</span></code> encoding</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">*.sym</span></code> and <code class="docutils literal notranslate"><span class="pre">*.dbc</span></code> files <strong>MUST</strong> use <code class="docutils literal notranslate"><span class="pre">ASCII</span></code> encoding.</p></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="end-of-file-general-004">
+<span id="rule-general-eof"></span><h2><span class="section-number">2.1.4. </span>End-of-File (<code class="docutils literal notranslate"><span class="pre">GENERAL:004</span></code>)<a class="headerlink" href="#end-of-file-general-004" title="Permalink to this headline"></a></h2>
+<div class="admonition-end-of-file admonition">
+<p class="admonition-title">End of File</p>
+<p>All plain text files <strong>MUST</strong> end with a single empty line
+(<a class="reference external" href="https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/V1_chap03.html#tag_03_206">POSIX, 3.206 Line</a>).</p>
+</div>
+</div>
+<div class="section" id="no-trailing-whitespace-general-005">
+<span id="rule-general-no-trailing-whitespace"></span><h2><span class="section-number">2.1.5. </span>No trailing whitespace (<code class="docutils literal notranslate"><span class="pre">GENERAL:005</span></code>)<a class="headerlink" href="#no-trailing-whitespace-general-005" title="Permalink to this headline"></a></h2>
+<p>Undesired changes in whitespace make diffs more hard to read and are
+unnecessary.
+To reduce this problem, trailing whitespace is not allowed.</p>
+<div class="admonition-no-trailing-whitespace admonition">
+<p class="admonition-title">No trailing whitespace</p>
+<p>All plain text files <strong>MUST NOT</strong> add trailing whitespace.</p>
+</div>
+</div>
+<div class="section" id="indentation-general-006">
+<span id="rule-general-indentation"></span><h2><span class="section-number">2.1.6. </span>Indentation (<code class="docutils literal notranslate"><span class="pre">GENERAL:006</span></code>)<a class="headerlink" href="#indentation-general-006" title="Permalink to this headline"></a></h2>
+<p>Undesired changes in whitespace make diffs more hard to read and are
+unnecessary. To reduce this problem, all indentations <strong>MUST</strong> be of one type.</p>
+<div class="admonition-indentation admonition">
+<p class="admonition-title">Indentation</p>
+<ul class="simple">
+<li><p>All plain text files <strong>MUST</strong> use spaces for indentation. Use
+4 spaces at a time.</p></li>
+<li><p>Tabs <strong>MUST NOT</strong> be used.</p></li>
+</ul>
+</div>
+<p>You should set your editor to automatically replace tabs with spaces to ease
+development.</p>
+</div>
+<div class="section" id="further-general-rules">
+<span id="id2"></span><h2><span class="section-number">2.1.7. </span>Further General Rules<a class="headerlink" href="#further-general-rules" title="Permalink to this headline"></a></h2>
+<ul class="simple">
+<li><p>Optimize for readability using descriptive names that would be clear even to
+people on a different team.</p></li>
+<li><p>Use names that describe the purpose or intent of the object.
+Do not worry about saving horizontal space as it is far more important to
+make your code immediately understandable to a new reader.
+Minimize the use of abbreviations that would likely be unknown to someone
+outside your project (especially acronyms and initialisms).
+Do not abbreviate by deleting letters within a word.
+As a rule of thumb, an abbreviation is probably ok if it’s listed in
+Wikipedia.
+Generally speaking, descriptiveness should be proportional to the name’s
+scope of visibility.
+For example, <code class="docutils literal notranslate"><span class="pre">n</span></code> may be a fine name within a 5-line function, but within
+the scope of a file, it’s likely too vague.</p></li>
+<li><p>For the purposes of the naming rules below, a “word” is anything that you
+would write in English without internal spaces.
+This includes abbreviations and acronyms; e.g., for “camel case” or “Pascal
+case,” in which the first letter of each word is capitalized, use a name like
+<code class="docutils literal notranslate"><span class="pre">StartRpc()</span></code>, not <code class="docutils literal notranslate"><span class="pre">StartRPC()</span></code>.</p></li>
+<li><p>Non-ASCII characters should be rare, and <strong>MUST</strong> use <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code> encoding. You
+<strong>SHOULD NOT</strong> hard-code user-facing text in source code, even English, so
+use of non-ASCII characters should be rare. However, in certain cases it is
+appropriate to include such words in your code.
+For example, if your code parses data files from foreign sources, it may be
+appropriate to hard-code the non-ASCII string(s) used in those data files as
+delimiters.
+More commonly, unit test code (which does not need to be localized) might
+contain non-ASCII strings.
+In such cases, you should use <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code>, since that is an encoding understood
+by most tools able to handle more than just ASCII.
+Hex encoding is also ok, and encouraged where it enhances readability - for
+example, “\xEF\xBB\xBF”, or, even more simply, u8”\uFEFF”, is the Unicode
+zero-width no-break space character, which would be invisible if included in
+the source as straight <code class="docutils literal notranslate"><span class="pre">UTF-8</span></code>.</p></li>
+<li><p>When referring to files inside the repository the UNIX-style path
+separator <strong>MUST</strong> be used.
+When referring to files outside the repository the platform specific path
+separator <strong>MUST</strong> be used (e.g., <code class="docutils literal notranslate"><span class="pre">src/app/main/main.c</span></code> and
+<code class="docutils literal notranslate"><span class="pre">C:\Users\vulpes</span></code>).</p></li>
+<li><p>References to functions should be kept as simple and maintainable as
+possible.
+For example when referring to a function with the declaration
+<code class="docutils literal notranslate"><span class="pre">uint8_t</span> <span class="pre">ABC_MyFunction(uint8_t</span> <span class="pre">a,</span> <span class="pre">bool</span> <span class="pre">b)</span></code> the reference <strong>SHOULD</strong> only
+use <code class="docutils literal notranslate"><span class="pre">ABC_MyFunction()</span></code> without arguments or ellipses.
+If the context requires specific arguments they <strong>MAY</strong> be provided.
+The ellipses form <strong>MUST NOT</strong> be used (see
+<a class="reference external" href="https://en.wikipedia.org/wiki/Ellipsis">https://en.wikipedia.org/wiki/Ellipsis</a>), e.g., do <strong>not</strong> use
+<code class="docutils literal notranslate"><span class="pre">ABC_MyFunction(...)</span></code>.</p></li>
+</ul>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="style-guide.html" class="btn btn-neutral float-left" title="2. Style Guide" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="guidelines_c.html" class="btn btn-neutral float-right" title="2.2. C Coding Guidelines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

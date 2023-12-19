@@ -1,0 +1,7 @@
+<map id="ltc_6806_cfg.h" name="ltc_6806_cfg.h">
+<area shape="rect" id="node1" title="Header for the configuration for the LTC 6806 monitoring IC." alt="" coords="191,5,297,32"/>
+<area shape="rect" id="node2" href="$ltc__6806__cfg_8c.html" title="Configuration for the LTC analog front&#45;end." alt="" coords="5,80,112,107"/>
+<area shape="rect" id="node3" href="$ltc__6806_8c.html" title="Driver for the LTC analog front&#45;end." alt="" coords="136,80,219,107"/>
+<area shape="rect" id="node4" href="$test__ltc__6806__cfg_8c.html" title="Tests for the CAN driver." alt="" coords="243,80,378,107"/>
+<area shape="rect" id="node5" href="$test__ltc__6806_8c.html" title="Test of the ltc.c module." alt="" coords="402,80,513,107"/>
+</map>

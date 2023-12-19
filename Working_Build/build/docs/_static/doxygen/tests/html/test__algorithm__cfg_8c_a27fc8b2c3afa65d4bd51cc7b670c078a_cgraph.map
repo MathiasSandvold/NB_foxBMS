@@ -1,0 +1,6 @@
+<map id="testIllegalAccessInMarkAsReinit" name="testIllegalAccessInMarkAsReinit">
+<area shape="rect" id="node1" title=" " alt="" coords="5,23,181,65"/>
+<area shape="rect" id="node2" href="$algorithm__cfg_8c.html#aa2f5546d0dc8402b6edab797aa8d2c79" title="mark a algorithm as requiring a reinitialization." alt="" coords="229,31,372,57"/>
+<area shape="rect" id="node3" href="$os__freertos_8c.html#ab8517d65da4e4805a64eda3fbec933de" title="Enter Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="420,5,567,32"/>
+<area shape="rect" id="node4" href="$os__freertos_8c.html#a83489428a970d8f77f122f41f4b6bc0a" title="Exit Critical interface function for use in FreeRTOS&#45;Tasks and FreeRTOS&#45;ISR." alt="" coords="424,56,563,83"/>
+</map>

@@ -1,0 +1,266 @@
+<!-- https://stackoverflow.com/a/53329712 -->
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4. Hardware Developer Manual &mdash; foxBMS 2 1.5.0 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/graphviz.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme_overrides.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/favicon.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+        <script>mermaid.initialize({startOnLoad:true});</script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="5. Public Release Process" href="public-release-process.html" />
+    <link rel="prev" title="3.6. Software Tools" href="software/software-tools.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="../index.html" class="icon icon-home"> foxBMS 2
+            <img src="../_static/foxbms250px.png" class="logo" alt="Logo"/>
+          </a>
+              <div class="version">
+                1.5.0
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">General Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../general/releases.html">1. Releases</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/changelog.html">2. Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/motivation.html">3. Motivation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/safety/safety.html">4. Safety</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/license.html">5. License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../general/team.html">6. Team</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Introduction</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/abbreviations-definitions.html">1. Abbreviations and Definitions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/naming-conventions.html">2. Naming Conventions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/bms-overview.html">3. The foxBMS 2 Platform</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../introduction/use-case.html">4. Use Case</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Getting Started</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/getting-started.html">1. Getting Started with foxBMS 2</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/repository-structure.html">2. Repository Structure</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/software-installation.html">3. Software Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/workspace.html">4. Creating a Workspace</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../getting-started/first-steps-on-hardware.html">5. First Steps on Hardware</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Software Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../software/configuration/configuration.html">1. Configuration</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/build/build.html">2. Building the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/overview/sw-overview.html">3. Software Structure Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/modules/modules.html">4. Software Modules</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/unit-tests/unit-tests.html">5. Unit Tests</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/build-process/build-process.html">6. Build Process</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/build-environment/build-environment.html">7. Build Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/how-to/how-to.html">8. How-to</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/linker-script/linker-script.html">9. Linker Script</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/architecture/architecture.html">10. Software Architecture</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../software/api/overview.html">11. API</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Hardware Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/hardware.html">1. Hardware</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/design-resources.html">2. Design Resources</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/connectors.html">3. Connectors</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/master.html">4. Master Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/slaves.html">5. Slaves Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../hardware/interfaces.html">6. Interfaces Overview</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">System Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../system/system-introduction.html">1. System Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../system/system-voltage-and-current-monitoring.html">2. System Voltage And Current Monitoring</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tools Documentation</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../tools/dbc.html">1. DBC File</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/gui/gui.html">2. foxBMS 2 GUI</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/waf-tools/waf-tools.html">3. Waf Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/debugger/debug-application.html">4. Debugging the Application</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/halcogen/halcogen.html">5. HALCoGen tool documentation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../tools/static-analysis/axivion.html">6. Axivion Bauhaus Suite</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Developer Manual</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="preface.html">1. Preface</a></li>
+<li class="toctree-l1"><a class="reference internal" href="style-guide/style-guide.html">2. Style Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="software-developer-manual.html">3. Software Developer Manual</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">4. Hardware Developer Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="public-release-process.html">5. Public Release Process</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Miscellaneous Information</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../misc/acknowledgements.html">1. Acknowledgements</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/indices-and-tables.html">2. Indices and Tables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../misc/bibliography.html">3. Bibliography</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">foxBMS 2</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li><span class="section-number">4. </span>Hardware Developer Manual</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/developer-manual/hardware-developer-manual.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+
+           <div itemprop="articleBody">
+             
+  <div class="section" id="hardware-developer-manual">
+<span id="id1"></span><h1><span class="section-number">4. </span>Hardware Developer Manual<a class="headerlink" href="#hardware-developer-manual" title="Permalink to this headline"></a></h1>
+<p>This developer manual describes the development workflow of the foxBMS 2
+hardware components. Changes to this document have to be tracked in version
+control and have to go through change management.</p>
+<div class="section" id="project-naming-scheme">
+<h2><span class="section-number">4.1. </span>Project naming scheme<a class="headerlink" href="#project-naming-scheme" title="Permalink to this headline"></a></h2>
+<p>A design <strong>MUST</strong> have a name that clearly distinguishes it from other
+designs. The name <strong>SHOULD</strong> be constructed from the project acronym, the
+type or family of design and an identifier.</p>
+<p>As an example the master board of a BMS in the project XMPL could be named
+<code class="docutils literal notranslate"><span class="pre">xmpl-master</span></code>. If necessary an additional identifier could be added if
+several similar designs exist.</p>
+</div>
+<div class="section" id="design-and-development-process">
+<h2><span class="section-number">4.2. </span>Design and development process<a class="headerlink" href="#design-and-development-process" title="Permalink to this headline"></a></h2>
+<p>The designer has to adhere to best practice during the design. This entails
+using the pre-defined set of templates, design rules and release processes.
+Releasing through the release process of Altium helps to make sure that all
+changes are committed and that no design rule violations remain.</p>
+<p>Violations should only be waived or suppressed in justified cases. This
+justification <strong>MUST</strong> be noted in the waived rule.</p>
+</div>
+<div class="section" id="release-process">
+<span id="id2"></span><h2><span class="section-number">4.3. </span>Release process<a class="headerlink" href="#release-process" title="Permalink to this headline"></a></h2>
+<p>The release process has the following steps:</p>
+<ol class="arabic simple">
+<li><p>Create the necessary footprints and components in a versioned DBLib.</p></li>
+<li><p>Derive a new project from a project template and put it under version
+control.</p></li>
+<li><p>Define the schematic of the project and the design of the printed
+circuit board.</p></li>
+<li><p>Review the project together with a team member.</p></li>
+<li><p>Create a release with the predefined set of output jobs.</p></li>
+<li><p>Store the release in a pre-defined location so that it can be found.</p></li>
+<li><p>Mark the released version in version control with a tag.</p></li>
+</ol>
+</div>
+<div class="section" id="modification-process">
+<h2><span class="section-number">4.4. </span>Modification process<a class="headerlink" href="#modification-process" title="Permalink to this headline"></a></h2>
+<p>If modifications to the hardware are necessary, the following process has to
+be followed:</p>
+<ol class="arabic simple">
+<li><p>Create an issue in the issue tracker of the hardware component project.</p></li>
+<li><p>Describe the necessary changes as precise as possible.</p></li>
+<li><p>Describe the impact of the changes to the software.</p></li>
+<li><p>Describe the impact of the changes to the tests.</p></li>
+<li><p>Enter the hardware release process <a class="reference internal" href="#release-process"><span class="std std-numref">Section 4.3</span></a> with
+these changes.</p></li>
+</ol>
+</div>
+<div class="section" id="checklist-for-releases">
+<h2><span class="section-number">4.5. </span>Checklist for releases<a class="headerlink" href="#checklist-for-releases" title="Permalink to this headline"></a></h2>
+<p>This checklist should be used for reviewing a release.</p>
+<div class="section" id="basics">
+<h3><span class="section-number">4.5.1. </span>Basics:<a class="headerlink" href="#basics" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Is a layer marker on the PCB?</p></li>
+<li><p>Is a white field for marking the assembled board on the PCB?</p></li>
+<li><p>Is the name of the component on the PCB?</p></li>
+<li><p>Is a release version on the board? Is the version corresponding to the
+parameter in the Altium project?</p></li>
+<li><p>Are fiducial markers on the board?</p></li>
+<li><p>Are mounting points specified in the board?</p></li>
+</ul>
+</div>
+<div class="section" id="bom">
+<h3><span class="section-number">4.5.2. </span>BOM:<a class="headerlink" href="#bom" title="Permalink to this headline"></a></h3>
+<ul class="simple">
+<li><p>Is everything on the BOM available?</p></li>
+<li><p>Is the correct distributor selected for each component?</p></li>
+<li><p>Are similar components grouped into one (e.g., reduce amount of different
+footprints for capacitors with same value)?</p></li>
+</ul>
+</div>
+</div>
+</div>
+
+
+           </div>
+          </div>
+<a href="https://github.com/foxBMS/foxbms-2">
+    <img style="position: absolute; top: 0; right: 0; border: 0;"
+        src="../_static/forkme.png" alt="Fork me on GitHub">
+</a>
+
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="software/software-tools.html" class="btn btn-neutral float-left" title="3.6. Software Tools" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="public-release-process.html" class="btn btn-neutral float-right" title="5. Public Release Process" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2010 - 2023, Fraunhofer-Gesellschaft zur Foerderung der angewandten Forschung e.V. All rights reserved. See license section for further information.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

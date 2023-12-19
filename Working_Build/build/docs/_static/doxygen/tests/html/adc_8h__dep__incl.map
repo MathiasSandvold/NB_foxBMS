@@ -1,0 +1,7 @@
+<map id="adc.h" name="adc.h">
+<area shape="rect" id="node1" title="Headers for the driver for the ADC module." alt="" coords="136,5,191,32"/>
+<area shape="rect" id="node2" href="$adc_8c.html" title="Driver for the ADC module." alt="" coords="5,80,60,107"/>
+<area shape="rect" id="node3" href="$main_8c.html" title="Main function." alt="" coords="85,80,146,107"/>
+<area shape="rect" id="node4" href="$ftask__cfg_8c.html" title="Task configuration." alt="" coords="170,80,255,107"/>
+<area shape="rect" id="node5" href="$test__adc_8c.html" title="Tests for the ADC driver." alt="" coords="279,80,362,107"/>
+</map>

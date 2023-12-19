@@ -1,0 +1,10 @@
+<map id="test_led.c" name="test_led.c">
+<area shape="rect" id="node1" title="Tests for the led module." alt="" coords="122,5,201,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="56,155,118,181"/>
+<area shape="rect" id="node3" title=" " alt="" coords="23,80,98,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="122,80,201,107"/>
+<area shape="rect" id="node5" href="$led_8h.html" title="Header file of the debug LED driver." alt="" coords="390,80,440,107"/>
+<area shape="rect" id="node7" href="$test__assert__helper_8h.html" title="Helper for unit tests." alt="" coords="225,80,365,107"/>
+<area shape="rect" id="node6" title=" " alt="" coords="382,155,448,181"/>
+<area shape="rect" id="node8" title=" " alt="" coords="245,155,345,181"/>
+</map>
